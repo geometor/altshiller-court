@@ -12,8 +12,120 @@
         518,
         514
       ],
-      "caption": "Fig. 9. Circular locus of the midpoints M of chords AB of circle (O) passing through a fixed point P (\u00a7 11, Locus 8).",
-      "white_point": 238
+      "caption": "Fig. 9. Circular locus of the midpoints M of chords AB of circle (O) passing through a fixed point P (§ 11, Locus 8).",
+      "white_point": 238,
+      "svg_file": "0032.g1.svg",
+      "article": "11.8",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "O": {
+            "x": 258.61,
+            "y": 258.68,
+            "label": "O",
+            "label_x": 270,
+            "label_y": 241
+          },
+          "A": {
+            "x": 64.51,
+            "y": 401.72,
+            "label": "A",
+            "label_x": 49,
+            "label_y": 421
+          },
+          "P": {
+            "x": 152.12,
+            "y": 400.64,
+            "label": "P",
+            "label_x": 147,
+            "label_y": 427
+          },
+          "M": {
+            "x": 260.42,
+            "y": 399.31,
+            "label": "M",
+            "label_x": 272,
+            "label_y": 425
+          },
+          "B": {
+            "x": 455.5,
+            "y": 396.91,
+            "label": "B",
+            "label_x": 471,
+            "label_y": 415
+          }
+        },
+        "elements": [
+          {
+            "id": "cir_O",
+            "type": "circle",
+            "cx": 258.3,
+            "cy": 260.47,
+            "r": 239.8,
+            "ref": "( O )",
+            "aliases": [
+              "( O A )"
+            ]
+          },
+          {
+            "id": "cir_OP",
+            "type": "circle",
+            "cx": 206.17,
+            "cy": 331.5,
+            "r": 88.64,
+            "ref": "( O P )",
+            "aliases": [
+              "( O M P )"
+            ]
+          },
+          {
+            "id": "seg_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "ref": "/ A B /"
+          },
+          {
+            "id": "seg_OP",
+            "type": "segment",
+            "p1": "O",
+            "p2": "P",
+            "ref": "/ O P /"
+          },
+          {
+            "id": "seg_OM",
+            "type": "segment",
+            "p1": "O",
+            "p2": "M",
+            "ref": "/ O M /"
+          },
+          {
+            "id": "seg_AM",
+            "type": "segment",
+            "p1": "A",
+            "p2": "M",
+            "style": "overlay",
+            "ref": "/ A M /"
+          },
+          {
+            "id": "seg_MB",
+            "type": "segment",
+            "p1": "M",
+            "p2": "B",
+            "style": "overlay",
+            "ref": "/ M B /"
+          },
+          {
+            "id": "ang_OMP",
+            "type": "angle",
+            "vertex": "M",
+            "p1": "O",
+            "p2": "P",
+            "radius": 28,
+            "ref": "< O M P )"
+          }
+        ]
+      }
     }
   ]
 }

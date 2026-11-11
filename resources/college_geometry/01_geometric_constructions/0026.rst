@@ -6,22 +6,26 @@
 :language: en
 :status: ok
 
-**8. Problem.** *On two given circles find two points a given distance apart and such that the line joining them shall have a given direction.*
+.. enunciation::
 
-ANALYSIS. Let :math:`P, Q` be the required points on the two given circles :math:`(A), (B)`. Through the center :math:`A` of :math:`(A)` (Fig. 4) draw a parallel to :math:`PQ` and lay off :math:`AR = PQ`. In the parallelogram :math:`APQR` we have :math:`RQ = AP`. But :math:`AP` is a radius of a given circle; hence the length :math:`RQ` is known. On the other hand the point :math:`R` is known, for both the direction and the length of :math:`AR` are given; hence the point :math:`Q` may be constructed. The point :math:`P` is then readily found.
+   **8. Problem.** *On two given circles find two points a given distance apart and such that the line joining them shall have a given direction.*
 
-CONSTRUCTION. Through the center :math:`A` of one of the two given circles, :math:`(A)`, draw a line having the given direction and lay off :math:`AR` equal to the given length, :math:`m`. With :math:`R` as center and radius equal to the radius of :math:`(A)` draw a circle :math:`(A')`, meeting the second given circle in a point :math:`Q`. Through :math:`Q` draw a parallel to :math:`AR` and lay off :math:`QP = AR`, so as to form a parallelogram in which :math:`AR` is a side (and not a diagonal). The points :math:`P, Q` satisfy the conditions of the problem.
+ANALYSIS. Let :g:`P <0026.g1:P>`, :g:`Q <0026.g1:Q>` be the required points on the two given circles :g:`(A) <0026.g1:( A )>`, :g:`(B) <0026.g1:( B )>`. Through the center :g:`A <0026.g1:A>` of :g:`(A) <0026.g1:( A )>` (Fig. 4) draw a parallel to :g:`PQ <0026.g1:/ P Q />` and lay off :eq:`AR = PQ <0026.g1:/ A R / = 0026.g1:/ P Q />`. In the parallelogram :g:`APQR <0026.g1:< A P Q R >>` we have :eq:`RQ = AP <0026.g1:/ R Q / = 0026.g1:/ A P />`. But :g:`AP <0026.g1:/ A P />` is a radius of a given circle; hence the length :g:`RQ <0026.g1:/ R Q />` is known. On the other hand the point :g:`R <0026.g1:R>` is known, for both the direction and the length of :g:`AR <0026.g1:/ A R />` are given; hence the point :g:`Q <0026.g1:Q>` may be constructed. The point :g:`P <0026.g1:P>` is then readily found.
 
-PROOF. The segment :math:`PQ` has the given length and the given direction, by construction. The point :math:`Q` was taken on the circle :math:`(B)`. In order to show that :math:`P` lies on the circle :math:`(A)` it is enough to point out that in the parallelogram :math:`ARQP` we have :math:`AP = RQ`, and :math:`RQ` is equal to the radius of :math:`(A)`, by construction.
+CONSTRUCTION. Through the center :g:`A <0026.g1:A>` of one of the two given circles, :g:`(A) <0026.g1:( A )>`, draw a line having the given direction and lay off :g:`AR <0026.g1:/ A R />` :eq:`equal <0026.g1:/ A R / = 0026.g1:/ m />` to the given length, :g:`m <0026.g1:/ m />`. With :g:`R <0026.g1:R>` as center and radius equal to the radius of :g:`(A) <0026.g1:( A )>` draw a circle :math:`(A')`, meeting the :g:`second given circle <0026.g1:( B )>` in a point :g:`Q <0026.g1:Q>`. Through :g:`Q <0026.g1:Q>` draw a parallel to :g:`AR <0026.g1:/ A R />` and lay off :eq:`QP = AR <0026.g1:/ Q P / = 0026.g1:/ A R />`, so as to form a :g:`parallelogram <0026.g1:< A P Q R >>` in which :g:`AR <0026.g1:/ A R />` is a side (and not a diagonal). The points :g:`P <0026.g1:P>`, :g:`Q <0026.g1:Q>` satisfy the conditions of the problem.
 
-.. picture:: 0026.g1.png
+.. assertion::
+
+   PROOF. The segment :g:`PQ <0026.g1:/ P Q />` has the given length and the given direction, by construction. The point :g:`Q <0026.g1:Q>` was taken on the circle :g:`(B) <0026.g1:( B )>`. In order to show that :g:`P <0026.g1:P>` lies on the circle :g:`(A) <0026.g1:( A )>` it is enough to point out that in the parallelogram :g:`ARQP <0026.g1:< A R Q P >>` we have :eq:`AP = RQ <0026.g1:/ A P / = 0026.g1:/ R Q />`, and :g:`RQ <0026.g1:/ R Q />` is equal to the radius of :g:`(A) <0026.g1:( A )>`, by construction.
+
+.. picture:: 0026.g1.svg
    :alt: Fig. 4 — Translation of circle (A) by vector AR of length m to intersect circle (B) at Q
    :caption: FIG. 4
 
-.. picture:: 0026.g2.png
+.. picture:: 0026.g2.svg
    :alt: Fig. 5 — Four-solution configuration of § 8 via symmetric translated centers R and R'
    :caption: FIG. 5
 
-DISCUSSION. It is always possible to draw through :math:`A` a line having the given direction. The point :math:`R` may then be marked on either side of :math:`A`, so that we always have for :math:`R` two positions, :math:`R` and :math:`R'`. The circle with either of these points as center and radius equal to the radius of :math:`(A)` may cut :math:`(B)` in two points, or may be tangent to :math:`(B)`, or may not cut :math:`(B)` at all. Consequently the problem may have four, three, two, one, or no solutions.
+DISCUSSION. It is always possible to draw through :g:`A <0026.g2:A>` a :g:`line <0026.g2:/ R' R />` having the given direction. The point :g:`R <0026.g2:R>` may then be marked on either side of :g:`A <0026.g2:A>`, so that we always have for :g:`R <0026.g2:R>` two positions, :g:`R <0026.g2:R>` and :g:`R' <0026.g2:Rprime>`. The circle with either of these points as center and radius equal to the radius of :g:`(A) <0026.g2:( A )>` may cut :g:`(B) <0026.g2:( B )>` in two points, or may be tangent to :g:`(B) <0026.g2:( B )>`, or may not cut :g:`(B) <0026.g2:( B )>` at all. Consequently the problem may have four, three, two, one, or no solutions.
 
-Figure 5 illustrates the case when there are four solutions.
+Figure 5 illustrates the case when there are :g:`four solutions <0026.g2:/ P_1 Q_1 /; 0026.g2:/ P_2 Q_2 /; 0026.g2:/ P_1' Q_1' /; 0026.g2:/ P_2' Q_2' />`.

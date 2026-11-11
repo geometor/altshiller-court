@@ -19,15 +19,17 @@ D. INDIRECT ELEMENTS
 
 Among the conditions which a figure to be constructed may be required to satisfy, elements may be given which do not occur directly in the figure in question. For instance, it may be required that the sum of two sides of a triangle shall have a given length, or that the difference of the base angles shall have a given magnitude, etc. In order to arrive at a method of solution of such a problem, it is necessary to introduce this “:term:`indirect element <indirect-elements>`” in the analysis of the problem.
 
-**15. Problem.** *Construct a triangle given the perimeter, the angle opposite the base, and the altitude to the base* :math:`(2p, A, h_a)`.
+.. enunciation::
 
-.. picture:: 0040.g1.png
+   **15. Problem.** *Construct a* :g:`triangle <0040.g1:< A B C >>` *given the* :g:`perimeter <0040.g1:/ E F />`\ *, the* :g:`angle <0040.g1:< B A C )>` *opposite the* :g:`base <0040.g1:/ B C />`\ *, and the* :g:`altitude <0040.g1:/ A D />` *to the base* :math:`(2p, A, h_a)`.
+
+.. picture:: 0040.g1.svg
    :alt: Fig. 17 — Auxiliary triangle AEF of base EF = 2p unfolded from triangle ABC by laying off BE = BA and CF = CA
    :caption: FIG. 17
 
-Let :math:`ABC` (Fig. 17) be the required triangle. Produce :math:`BC` on both sides and lay off :math:`BE = BA`, :math:`CF = CA`. Thus :math:`EF = 2p`.
+Let :g:`ABC <0040.g1:< A B C >>` (Fig. 17) be the required triangle. Produce :g:`BC <0040.g1:[ B C ]>` on both sides and lay off :eq:`BE = BA <0040.g1:/ B E / = 0040.g1:/ B A />`, :eq:`CF = CA <0040.g1:/ C F / = 0040.g1:/ C A />`. Thus :g:`EF <0040.g1:/ E F />` :math:`= 2p`.
 
-The triangles :math:`EAB, FCA` are isosceles, hence:
+The triangles :g:`EAB <0040.g1:< E A B >>`, :g:`FCA <0040.g1:< F C A >>` are isosceles, hence:
 
 .. math::
 

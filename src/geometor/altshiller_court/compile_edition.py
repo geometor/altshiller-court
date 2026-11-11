@@ -14,6 +14,8 @@ import shutil
 from pathlib import Path
 from typing import Any
 
+from .svg_compiler import compile_all_svgs
+
 
 def apparatus_slug(key: str) -> str:
     """Deterministic anchor slug matching ``photon_platform.publish.roles.geometry._apparatus_slug``."""
@@ -244,10 +246,10 @@ def depaginate_folios(
             i = 0
             while i < len(raw_split):
                 if (
-                    raw_split[i].endswith("given points :math:`A, B`")
+                    _ends_mid_sentence(raw_split[i])
                     and i + 3 < len(raw_split)
-                    and raw_split[i + 1].startswith(".. picture:: 0038.g1.png")
-                    and raw_split[i + 2].startswith(".. picture:: 0038.g2.png")
+                    and raw_split[i + 1].startswith(".. picture:: 0038.g1.")
+                    and raw_split[i + 2].startswith(".. picture:: 0038.g2.")
                 ):
                     reordered.append(raw_split[i] + " " + raw_split[i + 3].lstrip())
                     reordered.append(raw_split[i + 1])
@@ -336,11 +338,15 @@ def build_chapter_unit(
     folio_span = f"{chapter['folio_start']}–{chapter['folio_end']}"
     page_span = f"{chapter['page_start']}–{chapter['page_end']}"
 
-    # Copy any calibrated .g*.png and .g*.inverted.png crops into unit_dir for PictureDirective
+    # Copy any calibrated .g*.png, .g*.inverted.png, and .g*.svg diagrams into unit_dir for PictureDirective
     copied_graphics = 0
     for g_png in sorted(chap_dir.glob("*.g*.png")):
         shutil.copy2(g_png, unit_dir / g_png.name)
         copied_graphics += 1
+    copied_svgs = 0
+    for g_svg in sorted(chap_dir.glob("*.g*.svg")):
+        shutil.copy2(g_svg, unit_dir / g_svg.name)
+        copied_svgs += 1
 
     transcribed_entries: list[tuple[str, str, dict[str, str], str]] = []
     notes_entries: list[tuple[str, str, str]] = []
@@ -533,6 +539,7 @@ def build_chapter_unit(
         "transcribed_count": len(transcribed_entries),
         "total_folios": len(chapter_folios),
         "copied_graphics": copied_graphics,
+        "copied_svgs": copied_svgs,
     }
 
 
@@ -727,8 +734,13 @@ def build_apparatus_pages(
         rst_exists = (volume_dir / cdir / f"{fid}.rst").is_file()
         json_path = volume_dir / cdir / f"{fid}.json"
         diag_count = 0
+        svg_count = 0
         if json_path.is_file():
-            diag_count = len(json.loads(json_path.read_text(encoding="utf-8")).get("graphics", []))
+            g_list = json.loads(json_path.read_text(encoding="utf-8")).get("graphics", [])
+            diag_count = len(g_list)
+            svg_count = sum(
+                1 for g in g_list if g.get("svg_file") and (volume_dir / cdir / g["svg_file"]).is_file()
+            )
         rev = reviews.get(f"college_geometry:{fid}", {}).get("status")
         if rev == "verified":
             status_disp = "verified (RST + Notes)"
@@ -740,10 +752,14 @@ def build_apparatus_pages(
             status_disp = "300 DPI scan ready"
 
         arts = f_entry.get("articles") or []
-        arts_str = f" (🗾 §§ {arts[0]}–{arts[-1]})" if len(arts) > 1 else (f" (§ {arts[0]})" if len(arts) == 1 else "")
-        arts_str = arts_str.replace("🗾 ", "")
+        arts_str = f" (§§ {arts[0]}–{arts[-1]})" if len(arts) > 1 else (f" (§ {arts[0]})" if len(arts) == 1 else "")
         sec_disp = f"{f_entry.get('section_code', '')}{arts_str}".strip() or "—"
-        diag_disp = f"{diag_count} crop(s)" if diag_count else "—"
+        if svg_count:
+            diag_disp = f"{svg_count} SVG + crop(s)"
+        elif diag_count:
+            diag_disp = f"{diag_count} crop(s)"
+        else:
+            diag_disp = "—"
 
         inv_lines.extend([
             f"   * - ``{fid}``",
@@ -885,6 +901,8 @@ def compile_edition(repo_root: Path) -> dict[str, Any]:
     book_doc_dir = repo_root / "docsrc" / "college_geometry"
     book_doc_dir.mkdir(parents=True, exist_ok=True)
 
+    svg_info = compile_all_svgs(volume_dir)
+
     structure: dict[str, Any] = json.loads(
         (volume_dir / "structure_map.json").read_text(encoding="utf-8")
     )
@@ -906,13 +924,15 @@ def compile_edition(repo_root: Path) -> dict[str, Any]:
         "transcribed_folios": sum(u["transcribed_count"] for u in unit_summaries),
         "total_folios": apparatus_counts["folios"],
         "verified_folios": apparatus_counts["verified"],
+        "svgs_compiled": svg_info["svgs_compiled"],
+        "svgs_copied": sum(u["copied_svgs"] for u in unit_summaries),
         "graphics_copied": sum(u["copied_graphics"] for u in unit_summaries),
         "apparatus": apparatus_counts,
     }
 
 
 def get_edition_status(repo_root: Path) -> dict[str, Any]:
-    """Return a diagnostic summary of ingested scans, transcriptions, graphics, and reviews."""
+    """Return a diagnostic summary of ingested scans, transcriptions, graphics, SVGs, and reviews."""
     volume_dir = repo_root / "resources" / "college_geometry"
     structure = json.loads((volume_dir / "structure_map.json").read_text(encoding="utf-8"))
     reviews_path = volume_dir / "folio_reviews.json"
@@ -923,6 +943,7 @@ def get_edition_status(repo_root: Path) -> dict[str, Any]:
     notes_count = 0
     json_count = 0
     crop_count = 0
+    svg_count = 0
 
     for f_entry in structure["folios"]:
         cdir = volume_dir / f_entry["chapter_dir"]
@@ -939,6 +960,8 @@ def get_edition_status(repo_root: Path) -> dict[str, Any]:
             for g in json.loads(jp.read_text(encoding="utf-8")).get("graphics", []):
                 if (cdir / g["file"]).is_file():
                     crop_count += 1
+                if g.get("svg_file") and (cdir / g["svg_file"]).is_file():
+                    svg_count += 1
 
     return {
         "total_folios": len(structure["folios"]),
@@ -947,5 +970,6 @@ def get_edition_status(repo_root: Path) -> dict[str, Any]:
         "notes_present": notes_count,
         "folios_with_graphics": json_count,
         "diagram_crops": crop_count,
+        "svg_diagrams": svg_count,
         "verified_reviews": sum(1 for r in reviews.values() if r.get("status") == "verified"),
     }

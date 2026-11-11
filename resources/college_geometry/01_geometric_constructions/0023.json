@@ -12,8 +12,248 @@
         664,
         611
       ],
-      "caption": "Fig. 1. Secant CA'B' through C meeting parallel lines x, y so that AA' : BB' = p : q (\u00a7 5).",
-      "white_point": 238
+      "caption": "Fig. 1. Secant CA'B' through C meeting parallel lines x, y so that AA' : BB' = p : q (§ 5).",
+      "white_point": 238,
+      "svg_file": "0023.g1.svg",
+      "article": "5",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "O": {
+            "x": 221.82,
+            "y": 53.56,
+            "label": "O",
+            "label_x": 221,
+            "label_y": 29
+          },
+          "C": {
+            "x": 192.23,
+            "y": 117.38,
+            "label": "C",
+            "label_x": 168,
+            "label_y": 111
+          },
+          "A'": {
+            "x": 163.24,
+            "y": 179.91,
+            "label": "A'",
+            "label_x": 138,
+            "label_y": 175
+          },
+          "B'": {
+            "x": 62.35,
+            "y": 397.49,
+            "label": "B'",
+            "label_x": 36,
+            "label_y": 398
+          },
+          "A": {
+            "x": 310.59,
+            "y": 179.28,
+            "label": "A",
+            "label_x": 331,
+            "label_y": 155
+          },
+          "B": {
+            "x": 462.35,
+            "y": 394.21,
+            "label": "B",
+            "label_x": 476,
+            "label_y": 370
+          },
+          "X_end": {
+            "x": 455.99,
+            "y": 178.66,
+            "hidden": true
+          },
+          "Y_end": {
+            "x": 620.98,
+            "y": 392.91,
+            "hidden": true
+          },
+          "x": {
+            "x": 441,
+            "y": 157,
+            "label": "x",
+            "label_x": 441,
+            "label_y": 157,
+            "label_only": true
+          },
+          "y": {
+            "x": 606,
+            "y": 369,
+            "label": "y",
+            "label_x": 606,
+            "label_y": 369,
+            "label_only": true
+          },
+          "P1": {
+            "x": 146.0,
+            "y": 482.53,
+            "hidden": true
+          },
+          "P2": {
+            "x": 407.99,
+            "y": 481.02,
+            "hidden": true
+          },
+          "p": {
+            "x": 126,
+            "y": 488,
+            "label": "p",
+            "label_x": 126,
+            "label_y": 488,
+            "label_only": true
+          },
+          "Q1": {
+            "x": 145.99,
+            "y": 590.23,
+            "hidden": true
+          },
+          "Q2": {
+            "x": 641.99,
+            "y": 586.48,
+            "hidden": true
+          },
+          "q": {
+            "x": 128,
+            "y": 589,
+            "label": "q",
+            "label_x": 128,
+            "label_y": 589,
+            "label_only": true
+          }
+        },
+        "elements": [
+          {
+            "id": "sec_left",
+            "type": "line",
+            "p1": "O",
+            "p2": "B'",
+            "ref": "[ C B' ]",
+            "aliases": [
+              "[ C A' B' ]",
+              "[ A' B' ]",
+              "[ O C ]",
+              "[ C O ]"
+            ]
+          },
+          {
+            "id": "sec_right",
+            "type": "line",
+            "p1": "O",
+            "p2": "B",
+            "ref": "[ A B ]",
+            "aliases": [
+              "[ O B ]"
+            ]
+          },
+          {
+            "id": "line_x",
+            "type": "line",
+            "p1": "A'",
+            "p2": "X_end",
+            "ref": "[ x ]",
+            "aliases": [
+              "[ A A' ]"
+            ]
+          },
+          {
+            "id": "line_y",
+            "type": "line",
+            "p1": "B'",
+            "p2": "Y_end",
+            "ref": "[ y ]",
+            "aliases": [
+              "[ B B' ]"
+            ]
+          },
+          {
+            "id": "seg_p",
+            "type": "segment",
+            "p1": "P1",
+            "p2": "P2",
+            "ref": "/ p /"
+          },
+          {
+            "id": "seg_q",
+            "type": "segment",
+            "p1": "Q1",
+            "p2": "Q2",
+            "ref": "/ q /"
+          },
+          {
+            "id": "seg_AAp",
+            "type": "segment",
+            "p1": "A",
+            "p2": "A'",
+            "style": "overlay",
+            "ref": "/ A A' /"
+          },
+          {
+            "id": "seg_BBp",
+            "type": "segment",
+            "p1": "B",
+            "p2": "B'",
+            "style": "overlay",
+            "ref": "/ B B' /"
+          },
+          {
+            "id": "seg_AO",
+            "type": "segment",
+            "p1": "A",
+            "p2": "O",
+            "style": "overlay",
+            "ref": "/ A O /"
+          },
+          {
+            "id": "seg_BO",
+            "type": "segment",
+            "p1": "B",
+            "p2": "O",
+            "style": "overlay",
+            "ref": "/ B O /"
+          },
+          {
+            "id": "seg_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "style": "overlay",
+            "ref": "/ A B /"
+          },
+          {
+            "id": "seg_OC",
+            "type": "segment",
+            "p1": "O",
+            "p2": "C",
+            "style": "overlay",
+            "ref": "/ O C /"
+          },
+          {
+            "id": "tri_OAAp",
+            "type": "polygon",
+            "points": [
+              "O",
+              "A",
+              "A'"
+            ],
+            "style": "overlay",
+            "ref": "< O A A' >"
+          },
+          {
+            "id": "tri_OBBp",
+            "type": "polygon",
+            "points": [
+              "O",
+              "B",
+              "B'"
+            ],
+            "style": "overlay",
+            "ref": "< O B B' >"
+          }
+        ]
+      }
     }
   ]
 }

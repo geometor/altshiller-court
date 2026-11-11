@@ -12,8 +12,191 @@
         608,
         553
       ],
-      "caption": "Fig. 16. Point M on circle (A, B) whose joins AM, BM cut line FPQ in given ratio FP : FQ from F (\u00a7 14).",
-      "white_point": 238
+      "caption": "Fig. 16. Point M on circle (A, B) whose joins AM, BM cut line FPQ in given ratio FP : FQ from F (§ 14).",
+      "white_point": 238,
+      "svg_file": "0039.g1.svg",
+      "article": "14",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "A": {
+            "x": 181.01,
+            "y": 54.41,
+            "label": "A",
+            "label_x": 168,
+            "label_y": 31
+          },
+          "B": {
+            "x": 513.19,
+            "y": 131.69,
+            "label": "B",
+            "label_x": 531,
+            "label_y": 118
+          },
+          "M": {
+            "x": 236.35,
+            "y": 497.37,
+            "label": "M",
+            "label_x": 234,
+            "label_y": 526
+          },
+          "P": {
+            "x": 215.77,
+            "y": 332.62,
+            "label": "P",
+            "label_x": 196,
+            "label_y": 360
+          },
+          "Q": {
+            "x": 361.2,
+            "y": 334.03,
+            "label": "Q",
+            "label_x": 377,
+            "label_y": 362
+          },
+          "F": {
+            "x": 490.84,
+            "y": 335.29,
+            "label": "F",
+            "label_x": 482,
+            "label_y": 364
+          },
+          "L": {
+            "x": 347.76,
+            "y": 206.01,
+            "label": "L",
+            "label_x": 350,
+            "label_y": 177
+          },
+          "S_L": {
+            "x": 20.01,
+            "y": 330.73,
+            "hidden": true
+          },
+          "S_R": {
+            "x": 587.0,
+            "y": 336.22,
+            "hidden": true
+          }
+        },
+        "elements": [
+          {
+            "id": "cir_ABM",
+            "type": "circle",
+            "cx": 307.43,
+            "cy": 263.55,
+            "r": 244.38,
+            "ref": "( A B M )"
+          },
+          {
+            "id": "line_FPQ",
+            "type": "line",
+            "p1": "S_L",
+            "p2": "S_R",
+            "ref": "[ F P Q ]",
+            "aliases": [
+              "[ P Q ]"
+            ]
+          },
+          {
+            "id": "seg_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "ref": "/ A B /"
+          },
+          {
+            "id": "seg_AM",
+            "type": "segment",
+            "p1": "A",
+            "p2": "M",
+            "ref": "/ A M /",
+            "aliases": [
+              "[ A M ]",
+              "/ M A /"
+            ]
+          },
+          {
+            "id": "seg_BM",
+            "type": "segment",
+            "p1": "B",
+            "p2": "M",
+            "ref": "/ B M /",
+            "aliases": [
+              "[ B M ]",
+              "[ B Q ]"
+            ]
+          },
+          {
+            "id": "seg_AF",
+            "type": "segment",
+            "p1": "A",
+            "p2": "F",
+            "ref": "/ F A /",
+            "aliases": [
+              "[ F A ]"
+            ]
+          },
+          {
+            "id": "seg_LB",
+            "type": "segment",
+            "p1": "L",
+            "p2": "B",
+            "style": "dashed",
+            "ref": "/ L B /"
+          },
+          {
+            "id": "seg_LQ",
+            "type": "segment",
+            "p1": "L",
+            "p2": "Q",
+            "style": "dashed",
+            "ref": "/ Q L /"
+          },
+          {
+            "id": "seg_FL",
+            "type": "segment",
+            "p1": "F",
+            "p2": "L",
+            "style": "overlay",
+            "ref": "/ F L /"
+          },
+          {
+            "id": "seg_FQ",
+            "type": "segment",
+            "p1": "F",
+            "p2": "Q",
+            "style": "overlay",
+            "ref": "/ F Q /"
+          },
+          {
+            "id": "seg_FP",
+            "type": "segment",
+            "p1": "F",
+            "p2": "P",
+            "style": "overlay",
+            "ref": "/ F P /"
+          },
+          {
+            "id": "ang_LQB",
+            "type": "angle",
+            "vertex": "Q",
+            "p1": "L",
+            "p2": "B",
+            "radius": 42,
+            "ref": "< L Q B )"
+          },
+          {
+            "id": "ang_AMB",
+            "type": "angle",
+            "vertex": "M",
+            "p1": "A",
+            "p2": "B",
+            "radius": 48,
+            "ref": "< A M B )"
+          }
+        ]
+      }
     }
   ]
 }

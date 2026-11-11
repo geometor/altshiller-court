@@ -12,8 +12,146 @@
         585,
         424
       ],
-      "caption": "Fig. 4. Points P, Q on circles (A), (B) at given distance m and given direction \u2014 Analysis (\u00a7 8).",
-      "white_point": 238
+      "caption": "Fig. 4. Points P, Q on circles (A), (B) at given distance m and given direction — Analysis (§ 8).",
+      "white_point": 238,
+      "svg_file": "0026.g1.svg",
+      "article": "8",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "A": {
+            "x": 83.86,
+            "y": 326.4,
+            "label": "A",
+            "label_x": 76,
+            "label_y": 355
+          },
+          "B": {
+            "x": 437.28,
+            "y": 194.46,
+            "label": "B",
+            "label_x": 461,
+            "label_y": 195,
+            "dot": true
+          },
+          "P": {
+            "x": 205.06,
+            "y": 162.01,
+            "label": "P",
+            "label_x": 218,
+            "label_y": 136
+          },
+          "Q": {
+            "x": 533.02,
+            "y": 161.99,
+            "label": "Q",
+            "label_x": 553,
+            "label_y": 162
+          },
+          "R": {
+            "x": 411.82,
+            "y": 325.87,
+            "label": "R",
+            "label_x": 407,
+            "label_y": 352
+          },
+          "M1": {
+            "x": 204.0,
+            "y": 45.78,
+            "hidden": true
+          },
+          "M2": {
+            "x": 533.0,
+            "y": 46.58,
+            "hidden": true
+          },
+          "m": {
+            "x": 368,
+            "y": 27,
+            "label": "m",
+            "label_x": 368,
+            "label_y": 27,
+            "label_only": true
+          }
+        },
+        "elements": [
+          {
+            "id": "arc_A",
+            "type": "arc",
+            "cx": 82.13,
+            "cy": 330.48,
+            "r": 207.47,
+            "start_deg": -107.81,
+            "end_deg": 25.35,
+            "ccw": false,
+            "ref": "( A P )",
+            "aliases": [
+              "( A )"
+            ]
+          },
+          {
+            "id": "cir_B",
+            "type": "circle",
+            "cx": 437.28,
+            "cy": 194.46,
+            "r": 100.53,
+            "ref": "( B Q )",
+            "aliases": [
+              "( B )"
+            ]
+          },
+          {
+            "id": "seg_m",
+            "type": "segment",
+            "p1": "M1",
+            "p2": "M2",
+            "ref": "/ m /"
+          },
+          {
+            "id": "seg_PQ",
+            "type": "segment",
+            "p1": "P",
+            "p2": "Q",
+            "ref": "/ P Q /"
+          },
+          {
+            "id": "seg_AR",
+            "type": "segment",
+            "p1": "A",
+            "p2": "R",
+            "ref": "/ A R /"
+          },
+          {
+            "id": "seg_AP",
+            "type": "segment",
+            "p1": "A",
+            "p2": "P",
+            "ref": "/ A P /"
+          },
+          {
+            "id": "seg_RQ",
+            "type": "segment",
+            "p1": "R",
+            "p2": "Q",
+            "ref": "/ R Q /"
+          },
+          {
+            "id": "poly_APQR",
+            "type": "polygon",
+            "points": [
+              "A",
+              "P",
+              "Q",
+              "R"
+            ],
+            "style": "overlay",
+            "ref": "< A P Q R >",
+            "aliases": [
+              "< A R Q P >"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "g2",
@@ -25,8 +163,183 @@
         606,
         439
       ],
-      "caption": "Fig. 5. Four solutions for points on circles (A), (B) at given distance and direction (\u00a7 8).",
-      "white_point": 238
+      "caption": "Fig. 5. Four solutions for points on circles (A), (B) at given distance and direction (§ 8).",
+      "white_point": 238,
+      "svg_file": "0026.g2.svg",
+      "article": "8",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "A": {
+            "x": 274.41,
+            "y": 303.39,
+            "label": "A",
+            "label_x": 271,
+            "label_y": 333,
+            "dot": true
+          },
+          "B": {
+            "x": 352.08,
+            "y": 169.26,
+            "label": "B",
+            "label_x": 380,
+            "label_y": 168,
+            "dot": true
+          },
+          "R'": {
+            "x": 97.95,
+            "y": 285.48,
+            "label": "R'",
+            "label_x": 91,
+            "label_y": 314
+          },
+          "R": {
+            "x": 450.87,
+            "y": 321.3,
+            "label": "R",
+            "label_x": 449,
+            "label_y": 346
+          },
+          "P_1": {
+            "x": 79.38,
+            "y": 136.57,
+            "label": "P_1",
+            "label_x": 52,
+            "label_y": 126
+          },
+          "Q_1": {
+            "x": 255.35,
+            "y": 156.78,
+            "label": "Q_1",
+            "label_x": 281,
+            "label_y": 164
+          },
+          "P_2": {
+            "x": 204.0,
+            "y": 55.59,
+            "label": "P_2",
+            "label_x": 201,
+            "label_y": 30
+          },
+          "Q_2": {
+            "x": 379.97,
+            "y": 75.8,
+            "label": "Q_2",
+            "label_x": 368,
+            "label_y": 92
+          },
+          "Q_1'": {
+            "x": 278.77,
+            "y": 104.93,
+            "label": "Q_1'",
+            "label_x": 246,
+            "label_y": 101
+          },
+          "P_1'": {
+            "x": 455.72,
+            "y": 120.54,
+            "label": "P_1'",
+            "label_x": 485,
+            "label_y": 99
+          },
+          "Q_2'": {
+            "x": 352.8,
+            "y": 266.79,
+            "label": "Q_2'",
+            "label_x": 356,
+            "label_y": 239
+          },
+          "P_2'": {
+            "x": 529.75,
+            "y": 282.4,
+            "label": "P_2'",
+            "label_x": 561,
+            "label_y": 294
+          }
+        },
+        "elements": [
+          {
+            "id": "arc_A",
+            "type": "arc",
+            "cx": 274.9,
+            "cy": 301.09,
+            "r": 255.53,
+            "start_deg": 164.68,
+            "end_deg": 26.84,
+            "ccw": false,
+            "ref": "( A )",
+            "aliases": [
+              "( A P_1 )"
+            ]
+          },
+          {
+            "id": "cir_B",
+            "type": "circle",
+            "cx": 352.08,
+            "cy": 169.26,
+            "r": 97.53,
+            "ref": "( B )",
+            "aliases": [
+              "( B Q_1 )"
+            ]
+          },
+          {
+            "id": "seg_RpR",
+            "type": "segment",
+            "p1": "R'",
+            "p2": "R",
+            "ref": "/ R' R /"
+          },
+          {
+            "id": "seg_AR",
+            "type": "segment",
+            "p1": "A",
+            "p2": "R",
+            "style": "overlay",
+            "ref": "/ A R /"
+          },
+          {
+            "id": "seg_ARp",
+            "type": "segment",
+            "p1": "A",
+            "p2": "R'",
+            "style": "overlay",
+            "ref": "/ A R' /"
+          },
+          {
+            "id": "sol_1",
+            "type": "segment",
+            "p1": "P_1",
+            "p2": "Q_1",
+            "style": "dashed",
+            "ref": "/ P_1 Q_1 /"
+          },
+          {
+            "id": "sol_2",
+            "type": "segment",
+            "p1": "P_2",
+            "p2": "Q_2",
+            "style": "dashed",
+            "ref": "/ P_2 Q_2 /"
+          },
+          {
+            "id": "sol_3",
+            "type": "segment",
+            "p1": "Q_1'",
+            "p2": "P_1'",
+            "style": "dashed",
+            "ref": "/ P_1' Q_1' /"
+          },
+          {
+            "id": "sol_4",
+            "type": "segment",
+            "p1": "Q_2'",
+            "p2": "P_2'",
+            "style": "dashed",
+            "ref": "/ P_2' Q_2' /"
+          }
+        ]
+      }
     }
   ]
 }

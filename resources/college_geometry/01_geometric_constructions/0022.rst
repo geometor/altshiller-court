@@ -29,4 +29,6 @@ On the other hand, we do know definitely what the problem is — we know what fi
 
 The following examples illustrate the method.
 
-**5. Problem.** *Two points* :math:`A, B` *are marked on two given parallel lines* :math:`x, y`. *Through a given point* :math:`C`, *not on either of these lines, to draw a secant* :math:`CA'B'` *meeting* :math:`x, y` *in* :math:`A', B'` *so that the segments* :math:`AA', BB'` *shall be proportional to two given segments* :math:`p, q`.
+.. enunciation::
+
+   **5. Problem.** *Two points* :g:`A <0023.g1:A>`, :g:`B <0023.g1:B>` *are marked on two given parallel lines* :g:`x <0023.g1:[ x ]>`, :g:`y <0023.g1:[ y ]>`. *Through a given point* :g:`C <0023.g1:C>`, *not on either of these lines, to draw a secant* :g:`CA'B' <0023.g1:[ C A' B' ]>` *meeting* :g:`x <0023.g1:[ x ]>`, :g:`y <0023.g1:[ y ]>` *in* :g:`A' <0023.g1:Aprime>`, :g:`B' <0023.g1:Bprime>` *so that the segments* :g:`AA' <0023.g1:/ A A' />`, :g:`BB' <0023.g1:/ B B' />` *shall be proportional to two given segments* :g:`p <0023.g1:/ p />`, :g:`q <0023.g1:/ q />`.

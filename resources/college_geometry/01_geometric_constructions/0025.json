@@ -12,8 +12,224 @@
         663,
         513
       ],
-      "caption": "Fig. 3. Points D, E on sides AB, AC of triangle ABC such that AD = DE = EC (\u00a7 7).",
-      "white_point": 238
+      "caption": "Fig. 3. Points D, E on sides AB, AC of triangle ABC such that AD = DE = EC (§ 7).",
+      "white_point": 238,
+      "svg_file": "0025.g1.svg",
+      "article": "7",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "L'": {
+            "x": 129.57,
+            "y": 40.53,
+            "label": "L'",
+            "label_x": 158,
+            "label_y": 30
+          },
+          "A": {
+            "x": 198.14,
+            "y": 104.92,
+            "label": "A",
+            "label_x": 213,
+            "label_y": 81
+          },
+          "B": {
+            "x": 56.4,
+            "y": 415.43,
+            "label": "B",
+            "label_x": 32,
+            "label_y": 415
+          },
+          "C": {
+            "x": 524.89,
+            "y": 411.77,
+            "label": "C",
+            "label_x": 543,
+            "label_y": 394
+          },
+          "D": {
+            "x": 83.38,
+            "y": 356.32,
+            "label": "D",
+            "label_x": 59,
+            "label_y": 343
+          },
+          "E": {
+            "x": 328.2,
+            "y": 227.06,
+            "label": "E",
+            "label_x": 345,
+            "label_y": 208
+          },
+          "K": {
+            "x": 359.11,
+            "y": 256.09,
+            "label": "K",
+            "label_x": 381,
+            "label_y": 236
+          },
+          "L": {
+            "x": 606.13,
+            "y": 488.06,
+            "label": "L",
+            "label_x": 631,
+            "label_y": 495
+          }
+        },
+        "elements": [
+          {
+            "id": "line_AC",
+            "type": "line",
+            "p1": "L'",
+            "p2": "L",
+            "ref": "[ A C ]",
+            "aliases": [
+              "[ L' L ]"
+            ]
+          },
+          {
+            "id": "seg_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "ref": "/ A B /"
+          },
+          {
+            "id": "seg_BC",
+            "type": "segment",
+            "p1": "B",
+            "p2": "C",
+            "ref": "/ B C /"
+          },
+          {
+            "id": "seg_DE",
+            "type": "segment",
+            "p1": "D",
+            "p2": "E",
+            "ref": "/ D E /"
+          },
+          {
+            "id": "seg_BK",
+            "type": "segment",
+            "p1": "B",
+            "p2": "K",
+            "ref": "/ B K /"
+          },
+          {
+            "id": "seg_DC",
+            "type": "segment",
+            "p1": "D",
+            "p2": "C",
+            "ref": "/ D C /"
+          },
+          {
+            "id": "seg_BL",
+            "type": "segment",
+            "p1": "B",
+            "p2": "L",
+            "ref": "/ B L /"
+          },
+          {
+            "id": "seg_AD",
+            "type": "segment",
+            "p1": "A",
+            "p2": "D",
+            "style": "overlay",
+            "ref": "/ A D /"
+          },
+          {
+            "id": "seg_EC",
+            "type": "segment",
+            "p1": "E",
+            "p2": "C",
+            "style": "overlay",
+            "ref": "/ E C /"
+          },
+          {
+            "id": "seg_KL",
+            "type": "segment",
+            "p1": "K",
+            "p2": "L",
+            "style": "overlay",
+            "ref": "/ K L /"
+          },
+          {
+            "id": "seg_AC",
+            "type": "segment",
+            "p1": "A",
+            "p2": "C",
+            "style": "overlay",
+            "ref": "/ A C /"
+          },
+          {
+            "id": "tri_ABC",
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ],
+            "style": "overlay",
+            "ref": "< A B C >"
+          },
+          {
+            "id": "tri_ADE",
+            "type": "polygon",
+            "points": [
+              "A",
+              "D",
+              "E"
+            ],
+            "style": "overlay",
+            "ref": "< A D E >"
+          },
+          {
+            "id": "tri_ABK",
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "K"
+            ],
+            "style": "overlay",
+            "ref": "< A B K >"
+          },
+          {
+            "id": "tri_DEC",
+            "type": "polygon",
+            "points": [
+              "D",
+              "E",
+              "C"
+            ],
+            "style": "overlay",
+            "ref": "< D E C >"
+          },
+          {
+            "id": "tri_BKL",
+            "type": "polygon",
+            "points": [
+              "B",
+              "K",
+              "L"
+            ],
+            "style": "overlay",
+            "ref": "< B K L >"
+          },
+          {
+            "id": "ang_BAC",
+            "type": "angle",
+            "vertex": "A",
+            "p1": "B",
+            "p2": "C",
+            "radius": 38,
+            "ref": "< B A C )",
+            "aliases": [
+              "< A )"
+            ]
+          }
+        ]
+      }
     }
   ]
 }

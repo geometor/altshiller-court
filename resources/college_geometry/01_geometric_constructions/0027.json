@@ -12,8 +12,416 @@
         801,
         722
       ],
-      "caption": "Fig. 6. Construction of a square PQRS whose sides pass through four given points A, B, C, D (\u00a7 9).",
-      "white_point": 238
+      "caption": "Fig. 6. Construction of a square PQRS whose sides pass through four given points A, B, C, D (§ 9).",
+      "white_point": 238,
+      "svg_file": "0027.g1.svg",
+      "article": "9",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "P": {
+            "x": 296.55,
+            "y": 362.22,
+            "label": "P",
+            "label_x": 277,
+            "label_y": 341
+          },
+          "Q": {
+            "x": 295.87,
+            "y": 671.82,
+            "label": "Q",
+            "label_x": 292,
+            "label_y": 697
+          },
+          "R": {
+            "x": 602.76,
+            "y": 672.98,
+            "label": "R",
+            "label_x": 600,
+            "label_y": 698
+          },
+          "S": {
+            "x": 602.77,
+            "y": 363.95,
+            "label": "S",
+            "label_x": 599,
+            "label_y": 342
+          },
+          "A": {
+            "x": 296.18,
+            "y": 530.27,
+            "label": "A",
+            "label_x": 274,
+            "label_y": 533
+          },
+          "B": {
+            "x": 369.0,
+            "y": 672.1,
+            "label": "B",
+            "label_x": 368,
+            "label_y": 698
+          },
+          "C": {
+            "x": 602.77,
+            "y": 413.73,
+            "label": "C",
+            "label_x": 627,
+            "label_y": 415
+          },
+          "D": {
+            "x": 417.95,
+            "y": 362.91,
+            "label": "D",
+            "label_x": 432,
+            "label_y": 341
+          },
+          "F": {
+            "x": 538.04,
+            "y": 672.74,
+            "label": "F",
+            "label_x": 539,
+            "label_y": 698
+          },
+          "F'": {
+            "x": 299.62,
+            "y": 57.64,
+            "label": "F'",
+            "label_x": 332,
+            "label_y": 57
+          },
+          "K": {
+            "x": 602.76,
+            "y": 554.97,
+            "label": "K",
+            "label_x": 629,
+            "label_y": 560
+          },
+          "L": {
+            "x": 180.01,
+            "y": 361.57,
+            "label": "L",
+            "label_x": 177,
+            "label_y": 340
+          },
+          "P2": {
+            "x": 343.38,
+            "y": 445.18,
+            "hidden": true
+          },
+          "Q2": {
+            "x": 352.28,
+            "y": 524.05,
+            "hidden": true
+          },
+          "R2": {
+            "x": 435.53,
+            "y": 513.96,
+            "hidden": true
+          },
+          "S2": {
+            "x": 426.26,
+            "y": 435.29,
+            "hidden": true
+          },
+          "T_left": {
+            "x": 21.0,
+            "y": 360.67,
+            "hidden": true
+          },
+          "T_right": {
+            "x": 780.99,
+            "y": 364.96,
+            "hidden": true
+          },
+          "B_left": {
+            "x": 21.0,
+            "y": 670.78,
+            "hidden": true
+          },
+          "B_right": {
+            "x": 781.01,
+            "y": 673.65,
+            "hidden": true
+          },
+          "PQ_top": {
+            "x": 296.75,
+            "y": 269.0,
+            "hidden": true
+          },
+          "DF_top": {
+            "x": 281.13,
+            "y": 9.95,
+            "hidden": true
+          },
+          "D_bot": {
+            "x": 454.22,
+            "y": 672.42,
+            "hidden": true
+          }
+        },
+        "elements": [
+          {
+            "id": "line_SP",
+            "type": "line",
+            "p1": "T_left",
+            "p2": "T_right",
+            "ref": "[ S P ]"
+          },
+          {
+            "id": "line_QR",
+            "type": "line",
+            "p1": "B_left",
+            "p2": "B_right",
+            "ref": "[ Q R ]"
+          },
+          {
+            "id": "line_PQ",
+            "type": "line",
+            "p1": "Q",
+            "p2": "PQ_top",
+            "ref": "[ P Q ]"
+          },
+          {
+            "id": "seg_RS",
+            "type": "segment",
+            "p1": "R",
+            "p2": "S",
+            "ref": "/ R S /"
+          },
+          {
+            "id": "seg_AC",
+            "type": "segment",
+            "p1": "A",
+            "p2": "C",
+            "ref": "/ A C /"
+          },
+          {
+            "id": "seg_QK",
+            "type": "segment",
+            "p1": "Q",
+            "p2": "K",
+            "ref": "/ Q K /"
+          },
+          {
+            "id": "seg_QL",
+            "type": "segment",
+            "p1": "Q",
+            "p2": "L",
+            "ref": "/ Q L /"
+          },
+          {
+            "id": "line_DF",
+            "type": "line",
+            "p1": "DF_top",
+            "p2": "F",
+            "ref": "[ D F ]"
+          },
+          {
+            "id": "tick_Fp",
+            "type": "segment",
+            "x1": 289.62,
+            "y1": 61.64,
+            "x2": 309.62,
+            "y2": 53.64,
+            "style": "tick"
+          },
+          {
+            "id": "seg_FpB",
+            "type": "segment",
+            "p1": "F'",
+            "p2": "B",
+            "ref": "/ F' B /"
+          },
+          {
+            "id": "seg_Dbot",
+            "type": "segment",
+            "p1": "D",
+            "p2": "D_bot"
+          },
+          {
+            "id": "seg_CP2",
+            "type": "segment",
+            "p1": "C",
+            "p2": "P2"
+          },
+          {
+            "id": "seg_AR2",
+            "type": "segment",
+            "p1": "A",
+            "p2": "R2"
+          },
+          {
+            "id": "sq2_top",
+            "type": "segment",
+            "p1": "P2",
+            "p2": "S2",
+            "style": "bold"
+          },
+          {
+            "id": "sq2_right",
+            "type": "segment",
+            "p1": "S2",
+            "p2": "R2",
+            "style": "bold"
+          },
+          {
+            "id": "sq2_bot",
+            "type": "segment",
+            "p1": "R2",
+            "p2": "Q2",
+            "style": "bold"
+          },
+          {
+            "id": "sq2_left",
+            "type": "segment",
+            "p1": "Q2",
+            "p2": "P2",
+            "style": "bold"
+          },
+          {
+            "id": "seg_PQ",
+            "type": "segment",
+            "p1": "P",
+            "p2": "Q",
+            "style": "overlay",
+            "ref": "/ P Q /",
+            "aliases": [
+              "/ Q P /"
+            ]
+          },
+          {
+            "id": "seg_QR",
+            "type": "segment",
+            "p1": "Q",
+            "p2": "R",
+            "style": "overlay",
+            "ref": "/ Q R /"
+          },
+          {
+            "id": "seg_SP",
+            "type": "segment",
+            "p1": "S",
+            "p2": "P",
+            "style": "overlay",
+            "ref": "/ S P /"
+          },
+          {
+            "id": "seg_DF",
+            "type": "segment",
+            "p1": "D",
+            "p2": "F",
+            "style": "overlay",
+            "ref": "/ D F /"
+          },
+          {
+            "id": "seg_DFp",
+            "type": "segment",
+            "p1": "D",
+            "p2": "F'",
+            "style": "overlay",
+            "ref": "/ D F' /"
+          },
+          {
+            "id": "seg_BF",
+            "type": "segment",
+            "p1": "B",
+            "p2": "F",
+            "style": "overlay",
+            "ref": "/ B F /"
+          },
+          {
+            "id": "sq_PQRS",
+            "type": "polygon",
+            "points": [
+              "P",
+              "Q",
+              "R",
+              "S"
+            ],
+            "style": "overlay",
+            "ref": "< P Q R S >"
+          },
+          {
+            "id": "sq_2",
+            "type": "polygon",
+            "points": [
+              "P2",
+              "Q2",
+              "R2",
+              "S2"
+            ],
+            "style": "overlay",
+            "ref": "< P2 Q2 R2 S2 >"
+          },
+          {
+            "id": "tri_PQL",
+            "type": "polygon",
+            "points": [
+              "P",
+              "Q",
+              "L"
+            ],
+            "style": "overlay",
+            "ref": "< P Q L >"
+          },
+          {
+            "id": "tri_QRK",
+            "type": "polygon",
+            "points": [
+              "Q",
+              "R",
+              "K"
+            ],
+            "style": "overlay",
+            "ref": "< Q R K >"
+          },
+          {
+            "id": "ang_PQL",
+            "type": "angle",
+            "vertex": "Q",
+            "p1": "P",
+            "p2": "L",
+            "radius": 48,
+            "ref": "< P Q L )"
+          },
+          {
+            "id": "ang_LQR",
+            "type": "angle",
+            "vertex": "Q",
+            "p1": "L",
+            "p2": "R",
+            "radius": 58,
+            "ref": "< L Q R )"
+          },
+          {
+            "id": "ang_PQR",
+            "type": "angle",
+            "vertex": "Q",
+            "p1": "P",
+            "p2": "R",
+            "radius": 38,
+            "ref": "< P Q R )"
+          },
+          {
+            "id": "ang_LQK",
+            "type": "angle",
+            "vertex": "Q",
+            "p1": "L",
+            "p2": "K",
+            "radius": 52,
+            "ref": "< L Q K )"
+          },
+          {
+            "id": "ang_KQR",
+            "type": "angle",
+            "vertex": "Q",
+            "p1": "K",
+            "p2": "R",
+            "radius": 64,
+            "ref": "< K Q R )"
+          }
+        ]
+      }
     }
   ]
 }

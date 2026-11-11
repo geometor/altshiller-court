@@ -60,6 +60,7 @@ def test_edition_status_and_assets() -> None:
     assert status["notes_present"] >= 40
     assert status["folios_with_graphics"] >= 15
     assert status["diagram_crops"] >= 17
+    assert status["svg_diagrams"] >= 17
     assert status["verified_reviews"] >= 40
 
 
@@ -101,6 +102,8 @@ def test_compile_edition_codex_units() -> None:
     """Verify 2-Track Book Codex compilation produces all 13 units and apparatus pages."""
     summary = compile_edition(REPO_ROOT)
     assert summary["units_compiled"] == 13
+    assert summary["svgs_compiled"] >= 17
+    assert summary["svgs_copied"] >= 17
     assert summary["apparatus"]["citations"] >= 31
     assert summary["apparatus"]["persons"] >= 67
     assert summary["apparatus"]["glossary"] >= 55
@@ -125,5 +128,5 @@ def test_compile_edition_codex_units() -> None:
     assert ":layout: book" in en_text
     assert ".. _ch01-geometric-constructions-en:" in en_text
     assert ".. folio:: 0020" in en_text
-    assert ".. picture:: 0023.g1.png" in en_text
-    assert ".. picture:: 0040.g1.png" in en_text
+    assert ".. picture:: 0023.g1.svg" in en_text
+    assert ".. picture:: 0040.g1.svg" in en_text

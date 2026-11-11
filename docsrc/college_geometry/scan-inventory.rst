@@ -154,37 +154,37 @@
      - ``4``
      - ``01_geometric_constructions``
      - (§ 5)
-     - 1 crop(s)
+     - 1 SVG + crop(s)
      - verified (RST + Notes)
    * - ``0024``
      - ``5``
      - ``01_geometric_constructions``
      - (§ 6)
-     - 1 crop(s)
+     - 1 SVG + crop(s)
      - verified (RST + Notes)
    * - ``0025``
      - ``6``
      - ``01_geometric_constructions``
      - (§ 7)
-     - 1 crop(s)
+     - 1 SVG + crop(s)
      - verified (RST + Notes)
    * - ``0026``
      - ``7``
      - ``01_geometric_constructions``
      - (§ 8)
-     - 2 crop(s)
+     - 2 SVG + crop(s)
      - verified (RST + Notes)
    * - ``0027``
      - ``8``
      - ``01_geometric_constructions``
      - (§ 9)
-     - 1 crop(s)
+     - 1 SVG + crop(s)
      - verified (RST + Notes)
    * - ``0028``
      - ``9``
      - ``01_geometric_constructions``
      - (§§ 9–10)
-     - 1 crop(s)
+     - 1 SVG + crop(s)
      - verified (RST + Notes)
    * - ``0029``
      - ``10``
@@ -202,31 +202,31 @@
      - ``12``
      - ``01_geometric_constructions``
      - (§ 11)
-     - 1 crop(s)
+     - 1 SVG + crop(s)
      - verified (RST + Notes)
    * - ``0032``
      - ``13``
      - ``01_geometric_constructions``
      - (§ 11)
-     - 1 crop(s)
+     - 1 SVG + crop(s)
      - verified (RST + Notes)
    * - ``0033``
      - ``14``
      - ``01_geometric_constructions``
      - (§ 11)
-     - 1 crop(s)
+     - 1 SVG + crop(s)
      - verified (RST + Notes)
    * - ``0034``
      - ``15``
      - ``01_geometric_constructions``
      - (§ 11)
-     - 1 crop(s)
+     - 1 SVG + crop(s)
      - verified (RST + Notes)
    * - ``0035``
      - ``16``
      - ``01_geometric_constructions``
      - (§ 11)
-     - 1 crop(s)
+     - 1 SVG + crop(s)
      - verified (RST + Notes)
    * - ``0036``
      - ``17``
@@ -238,25 +238,25 @@
      - ``18``
      - ``01_geometric_constructions``
      - (§§ 12–13)
-     - 1 crop(s)
+     - 1 SVG + crop(s)
      - verified (RST + Notes)
    * - ``0038``
      - ``19``
      - ``01_geometric_constructions``
      - (§§ 13–14)
-     - 2 crop(s)
+     - 2 SVG + crop(s)
      - verified (RST + Notes)
    * - ``0039``
      - ``20``
      - ``01_geometric_constructions``
      - (§ 14)
-     - 1 crop(s)
+     - 1 SVG + crop(s)
      - verified (RST + Notes)
    * - ``0040``
      - ``21``
      - ``01_geometric_constructions``
      - (§ 15)
-     - 1 crop(s)
+     - 1 SVG + crop(s)
      - verified (RST + Notes)
    * - ``0041``
      - ``22``

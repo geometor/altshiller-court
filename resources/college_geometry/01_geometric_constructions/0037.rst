@@ -6,32 +6,36 @@
 :language: en
 :status: ok
 
-.. picture:: 0037.g1.png
+.. picture:: 0037.g1.svg
    :alt: Fig. 13 — Circle (O) through A and B subtending given angle at C via intersection of two Apollonian circles
    :caption: FIG. 13
 
-CONSTRUCTION. On the internal bisector :math:`PQ` of the given angle :math:`P` take an arbitrary point :math:`Q` and drop the perpendicular :math:`QR` upon one of the sides. Divide each of the two given segments :math:`AC, BC` internally and externally in the ratio :math:`QR : QP` in the points :math:`E, F` and :math:`G, H`, respectively. A point :math:`O` common to the two circles having :math:`EF` and :math:`GH` for diameters is the center of the required circle.
+CONSTRUCTION. On the internal bisector :math:`PQ` of the given angle :math:`P` take an arbitrary point :math:`Q` and drop the perpendicular :math:`QR` upon one of the sides. Divide each of the two given segments :g:`AC <0037.g1:/ A C />`, :g:`BC <0037.g1:/ B C />` internally and externally in the ratio :math:`QR : QP` in the points :math:`E, F` and :math:`G, H`, respectively. A point :g:`O <0037.g1:O>` common to the two circles having :math:`EF` and :math:`GH` for diameters is the center of the :g:`required circle <0037.g1:( O )>`.
 
 The proof and the discussion are left to the student.
 
-**13. Problem.** *Through two given points of a circle to draw two parallel chords whose sum shall have a given length.*
+.. enunciation::
 
-ANALYSIS. Let :math:`A, B` be the two given points of the circle, center :math:`O`, and let :math:`AC, BD` be the two required chords. In the isosceles trapezoid :math:`ABDC` (Fig. 14) :math:`CD = AB`, and the length :math:`AB` is known; hence :math:`CD` is tangent to a known circle having :math:`O` for center and touching :math:`CD` at its midpoint :math:`F` (§ 11, locus 9).
+   **13. Problem.** *Through two given* :g:`points <0038.g1:A; 0038.g1:B>` *of a* :g:`circle <0038.g1:( O )>` *to draw two parallel* :g:`chords <0038.g1:/ A C /; 0038.g1:/ B D />` *whose sum shall have a given length.*
 
-If :math:`E` is the midpoint of :math:`AB` we have:
+ANALYSIS. Let :g:`A <0038.g1:A>`, :g:`B <0038.g1:B>` be the two given points of the :g:`circle <0038.g1:( O )>`, center :g:`O <0038.g1:O>`, and let :g:`AC <0038.g1:/ A C />`, :g:`BD <0038.g1:/ B D />` be the two required chords. In the isosceles trapezoid :g:`ABDC <0038.g1:< A B D C >>` (Fig. 14) :eq:`CD = AB <0038.g1:/ C D / = 0038.g1:/ A B />`, and the length :g:`AB <0038.g1:/ A B />` is known; hence :g:`CD <0038.g1:/ C D />` is tangent to a :g:`known circle <0038.g1:( O E )>` having :g:`O <0038.g1:O>` for center and touching :g:`CD <0038.g1:/ C D />` at its midpoint :g:`F <0038.g1:F>` (§ 11, locus 9).
+
+If :g:`E <0038.g1:E>` is the midpoint of :g:`AB <0038.g1:/ A B />` we have:
 
 .. math::
 
    2\,EF = AC + BD.
 
-Now the point :math:`E` and the length :math:`AC + BD` are known; hence we have a second locus for the point :math:`F`.
+Now the point :g:`E <0038.g1:E>` and the length :math:`AC + BD` are known; hence we have a :g:`second locus <0038.g1:( E F )>` for the point :g:`F <0038.g1:F>`.
 
-CONSTRUCTION. Draw the circle :math:`(O, OE)`. If :math:`2s` is the given length, draw the circle :math:`(E, s)` meeting :math:`(O, OE)` in :math:`F`. The tangent to :math:`(O, OE)` at :math:`F` meets the given circle :math:`(O)` in :math:`C` and :math:`D`. The lines :math:`AC, BD` are the required chords.
+CONSTRUCTION. Draw the circle :g:`(O, OE) <0038.g1:( O E )>`. If :math:`2s` is the given length, draw the circle :g:`(E, s) <0038.g1:( E F )>` meeting :g:`(O, OE) <0038.g1:( O E )>` in :g:`F <0038.g1:F>`. The :g:`tangent <0038.g1:/ C D />` to :g:`(O, OE) <0038.g1:( O E )>` at :g:`F <0038.g1:F>` meets the given circle :g:`(O) <0038.g1:( O )>` in :g:`C <0038.g1:C>` and :g:`D <0038.g1:D>`. The lines :g:`AC <0038.g1:/ A C />`, :g:`BD <0038.g1:/ B D />` are the required chords.
 
-PROOF. The two chords :math:`AB, CD` are equal, for they are equidistant from the center :math:`O` of the given circle :math:`(O)`. Hence :math:`ABDC` is an isosceles trapezoid, and therefore:
+.. assertion:: [§ 11, Locus 9]
 
-.. math::
+   PROOF. The two chords :g:`AB <0038.g1:/ A B />`, :g:`CD <0038.g1:/ C D />` are :eq:`equal <0038.g1:/ A B / = 0038.g1:/ C D />`, for they are equidistant from the center :g:`O <0038.g1:O>` of the given circle :g:`(O) <0038.g1:( O )>`. Hence :g:`ABDC <0038.g1:< A B D C >>` is an isosceles trapezoid, and therefore:
 
-   AC + BD = 2\,EF.
+   .. math::
 
-Now :math:`EF = s`, by construction; hence :math:`AC + BD` has the required length.
+      AC + BD = 2\,EF.
+
+   Now :math:`EF = s`, by construction; hence :math:`AC + BD` has the required length.

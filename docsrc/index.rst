@@ -28,4 +28,5 @@ Historical Context & Architecture
 ---------------------------------
 
 * :ref:`Nathan Altshiller-Court (1881–1968) & Digital Scriptorium Methodology <about-altshiller-court>`
+* :ref:`Scanned PDF Optical Ingestion & Interactive SVG Vectorization Guide <pdf-parsing-guide>`
 * :doc:`Python Pipeline API Reference <modules/index>`

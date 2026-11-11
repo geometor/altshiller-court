@@ -6,19 +6,23 @@
 :language: en
 :status: ok
 
-If the point :math:`P` lies outside of :math:`(O)`, any point :math:`M` of the locus must lie on the circle having :math:`OP` for diameter, but not every point of this circle belongs to the locus. The locus consists of the part of the circle :math:`(OP)` which lies within the given circle :math:`(O)`.
+If the point :g:`P <0032.g1:P>` lies outside of :g:`(O) <0032.g1:( O )>`, any point :g:`M <0032.g1:M>` of the locus must lie on the :g:`circle <0032.g1:( O P )>` having :g:`OP <0032.g1:/ O P />` for diameter, but not every point of this circle belongs to the locus. The locus consists of the part of the circle :g:`(OP) <0032.g1:( O P )>` which lies within the given circle :g:`(O) <0032.g1:( O )>`.
 
-LOCUS 9. *The locus of the midpoints of all the chords of given length drawn in a given circle is a circle concentric with the given circle.*
+.. enunciation::
 
-.. picture:: 0033.g1.png
+   LOCUS 9. *The locus of the midpoints of all the chords of given length drawn in a given circle is a circle concentric with the given circle.*
+
+.. picture:: 0033.g1.svg
    :alt: Fig. 10 — Triangle ABM with median MO and altitude MD for Locus 10 (sum of squares of distances)
    :caption: FIG. 10
 
 The chords are all tangent to this circle at their respective midpoints.
 
-LOCUS 10. *The locus of a point the sum of the squares of whose distances from two given points is equal to a given constant is a circle having for center the midpoint of the given segment.*
+.. enunciation::
 
-Let :math:`M` (Fig. 10) be a point on the locus. Join :math:`M` to the midpoint :math:`O` of the segment :math:`AB` determined by the two given points :math:`A, B` and drop the perpendicular :math:`MD` from :math:`M` upon :math:`AB`. From the triangles :math:`AOM` and :math:`BOM` we have:
+   LOCUS 10. *The locus of a point the sum of the squares of whose distances from two given points is equal to a given constant is a circle having for center the midpoint of the given segment.*
+
+Let :g:`M <0033.g1:M>` (Fig. 10) be a point on the locus. Join :g:`M <0033.g1:M>` to the :eq:`midpoint <0033.g1:/ O A / = 0033.g1:/ O B />` :g:`O <0033.g1:O>` of the segment :g:`AB <0033.g1:/ A B />` determined by the two given points :g:`A <0033.g1:A>`, :g:`B <0033.g1:B>` and drop the perpendicular :g:`MD <0033.g1:/ M D />` from :g:`M <0033.g1:M>` upon :g:`AB <0033.g1:/ A B />`. From the triangles :g:`AOM <0033.g1:< A O M >>` and :g:`BOM <0033.g1:< B O M >>` we have:
 
 .. math::
 
@@ -36,12 +40,14 @@ hence, adding, we have:
 
    AM^2 + BM^2 = 2\,OM^2 + 2\,OA^2.
 
-Now :math:`AM^2 + BM^2` is, by assumption, equal to a given constant, say :math:`s^2`, and :math:`OA^2 = a^2`, where :math:`2a` represents the length of the known segment :math:`AB`. Hence:
+Now :math:`AM^2 + BM^2` is, by assumption, equal to a given constant, say :math:`s^2`, and :math:`OA^2 = a^2`, where :math:`2a` represents the length of the known segment :g:`AB <0033.g1:/ A B />`. Hence:
 
 .. math::
 
    (1) \qquad OM^2 = \tfrac{1}{2}\,s^2 - a^2.
 
-Thus the point :math:`M` lies at a fixed distance :math:`OM` from the fixed point :math:`O`, and therefore the locus of :math:`M` is a circle with :math:`O` as center.
+.. assertion::
 
-The radius :math:`OM` may be constructed from the formula (1) as follows. :math:`OM` is one leg of a right triangle which has for its other leg half the
+   Thus the point :g:`M <0033.g1:M>` lies at a fixed distance :g:`OM <0033.g1:/ O M />` from the fixed point :g:`O <0033.g1:O>`, and therefore the locus of :g:`M <0033.g1:M>` is a circle with :g:`O <0033.g1:O>` as center.
+
+The radius :g:`OM <0033.g1:/ O M />` may be constructed from the formula (1) as follows. :g:`OM <0033.g1:/ O M />` is one leg of a right triangle which has for its other leg half the

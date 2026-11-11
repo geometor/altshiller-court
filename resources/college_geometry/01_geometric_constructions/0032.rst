@@ -6,20 +6,26 @@
 :language: en
 :status: ok
 
-:math:`A, B, M`. At any point :math:`M'` of the arc :math:`AMB` the segment :math:`AB` subtends the same angle as at :math:`M`; hence every point of the arc :math:`AMB` belongs to the required locus. On the other hand, any point :math:`N` not on the arc :math:`AMB` will lie either inside or outside this arc. In the first case the angle :math:`ANB` will be larger, and in the second case smaller, than the angle :math:`AMB`. Hence :math:`N` does not belong to the locus.
+:g:`A <0031.g1:A>`, :g:`B <0031.g1:B>`, :g:`M <0031.g1:M>`. At any point :g:`M' <0031.g1:Mprime>` of the arc :g:`AMB <0031.g1:( A M B )>` the segment :g:`AB <0031.g1:/ A B />` subtends the same angle as at :g:`M <0031.g1:M>`; hence every point of the arc :g:`AMB <0031.g1:( A M B )>` belongs to the required locus. On the other hand, any point :g:`N <0031.g1:N>` not on the arc :g:`AMB <0031.g1:( A M B )>` will lie either inside or outside this arc. In the first case the angle :g:`ANB <0031.g1:< A N B )>` will be larger, and in the second case smaller, than the angle :g:`AMB <0031.g1:< A M B )>`. Hence :g:`N <0031.g1:N>` does not belong to the locus.
 
-The tangent :math:`AT` to the circle :math:`AMB` at the point :math:`A` makes an angle with :math:`AB` equal to the angle :math:`AMB`. Hence :math:`AT` may be drawn. The construction of the circle :math:`AMB` is therefore reduced to the problem of drawing a circle tangent to a given line :math:`AT` at a given point :math:`A`, and passing through another given point :math:`B`.
+.. assertion::
 
-If the condition that the point :math:`M` is to lie on a given side of the line :math:`AB` is disregarded, the required locus consists of two arcs of circles congruent to each other and located on opposite sides of :math:`AB`.
+   The tangent :g:`AT <0031.g1:/ A T />` to the circle :g:`AMB <0031.g1:( A M B )>` at the point :g:`A <0031.g1:A>` makes an :g:`angle <0031.g1:< B A T )>` with :g:`AB <0031.g1:/ A B />` :eq:`equal <0031.g1:< B A T ) = 0031.g1:< A M B )>` to the angle :g:`AMB <0031.g1:< A M B )>`. Hence :g:`AT <0031.g1:/ A T />` may be drawn. The construction of the circle :g:`AMB <0031.g1:( A M B )>` is therefore reduced to the problem of drawing a circle tangent to a given line :g:`AT <0031.g1:[ A T ]>` at a given point :g:`A <0031.g1:A>`, and passing through another given point :g:`B <0031.g1:B>`.
+
+If the condition that the point :g:`M <0031.g1:M>` is to lie on a given side of the line :g:`AB <0031.g1:[ A B ]>` is disregarded, the required locus consists of two arcs of circles congruent to each other and located on opposite sides of :g:`AB <0031.g1:/ A B />`.
 
 If the given angle is a right angle, the two arcs will be two semicircles of the same radius, and we have: *The locus of a point at which a given segment subtends a right angle is the circle having this segment for diameter.*
 
-LOCUS 8. *The locus of the midpoints of the chords of a given circle which pass through a fixed point is a circle when the point lies inside of or on the circle.*
+.. enunciation::
 
-Let :math:`P` (Fig. 9) be the given point, and :math:`M` the midpoint of a chord :math:`AB` of the given circle :math:`(O)`, the chord passing through the given point :math:`P`.
+   LOCUS 8. *The locus of the midpoints of the chords of a given circle which pass through a fixed point is a circle when the point lies inside of or on the circle.*
 
-.. picture:: 0032.g1.png
+Let :g:`P <0032.g1:P>` (Fig. 9) be the given point, and :g:`M <0032.g1:M>` the :eq:`midpoint <0032.g1:/ A M / = 0032.g1:/ M B />` of a chord :g:`AB <0032.g1:/ A B />` of the given circle :g:`(O) <0032.g1:( O )>`, the chord passing through the given point :g:`P <0032.g1:P>`.
+
+.. picture:: 0032.g1.svg
    :alt: Fig. 9 — Circle on diameter OP as locus of midpoints M of chords AB of circle (O) through P
    :caption: FIG. 9
 
-The segment :math:`OP` subtends a right angle at :math:`M`; hence :math:`M` lies on the circle having :math:`OP` for diameter (locus 7). On the other hand, any point :math:`M` of this circle joined to :math:`P` determines a chord of the circle :math:`(O)` which is perpendicular to :math:`OM` at :math:`M`. Hence :math:`M` is the midpoint of this chord and therefore belongs to the required locus.
+.. assertion:: [Locus 7]
+
+   The segment :g:`OP <0032.g1:/ O P />` subtends a :g:`right angle <0032.g1:< O M P )>` at :g:`M <0032.g1:M>`; hence :g:`M <0032.g1:M>` lies on the :g:`circle <0032.g1:( O P )>` having :g:`OP <0032.g1:/ O P />` for diameter (locus 7). On the other hand, any point :g:`M <0032.g1:M>` of this circle joined to :g:`P <0032.g1:P>` determines a :g:`chord <0032.g1:/ A B />` of the circle :g:`(O) <0032.g1:( O )>` which is perpendicular to :g:`OM <0032.g1:/ O M />` at :g:`M <0032.g1:M>`. Hence :g:`M <0032.g1:M>` is the :eq:`midpoint <0032.g1:/ A M / = 0032.g1:/ M B />` of this chord and therefore belongs to the required locus.

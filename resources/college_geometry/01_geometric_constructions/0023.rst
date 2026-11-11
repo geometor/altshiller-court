@@ -6,36 +6,40 @@
 :language: en
 :status: ok
 
-.. picture:: 0023.g1.png
+.. picture:: 0023.g1.svg
    :alt: Fig. 1 — Secant CA'B' meeting parallel lines x, y so that AA' : BB' = p : q
    :caption: FIG. 1
 
-ANALYSIS. Let :math:`CA'B'` be the required line, so that (Fig. 1):
+ANALYSIS. Let :g:`CA'B' <0023.g1:[ C A' B' ]>` be the required line, so that (Fig. 1):
 
 .. math::
 
    AA' : BB' = p : q,
 
-and let :math:`O = (AB, A'B')`. The two triangles :math:`OAA', OBB'` are similar; hence:
+and let :g:`O <0023.g1:O>` :math:`= (`\ :g:`AB <0023.g1:[ A B ]>`, :g:`A'B' <0023.g1:[ A' B' ]>`\ :math:`)`. The two triangles :g:`OAA' <0023.g1:< O A A' >>`, :g:`OBB' <0023.g1:< O B B' >>` are similar; hence:
 
 .. math::
 
    AO : BO = AA' : BB'.
 
-But the latter ratio is known; hence the point :math:`O` divides the given segment :math:`AB` in the given ratio :math:`p : q`. Thus we may construct :math:`O`, and :math:`OC` is the required line.
+.. assertion::
 
-CONSTRUCTION. Construct the point :math:`O` such that:
+   But the latter ratio is known; hence the point :g:`O <0023.g1:O>` divides the given segment :g:`AB <0023.g1:/ A B />` in the given ratio :g:`p <0023.g1:/ p />` :math:`:` :g:`q <0023.g1:/ q />`. Thus we may construct :g:`O <0023.g1:O>`, and :g:`OC <0023.g1:[ O C ]>` is the required line.
+
+CONSTRUCTION. Construct the point :g:`O <0023.g1:O>` such that:
 
 .. math::
 
    AO : BO = p : q.
 
-The points :math:`O` and :math:`C` determine the required line.
+The points :g:`O <0023.g1:O>` and :g:`C <0023.g1:C>` determine the :g:`required line <0023.g1:[ O C ]>`.
 
 PROOF. Left to the student.
 
-DISCUSSION. There are two points, :math:`O` and :math:`O'`, which divide the given segment :math:`AB` in the given ratio :math:`p : q`, one externally and the other internally, and we can always construct these two points; hence the problem has two solutions if neither of the lines :math:`CO, CO'` is parallel to the lines :math:`x, y`.
+DISCUSSION. There are two points, :g:`O <0023.g1:O>` and :math:`O'`, which divide the given segment :g:`AB <0023.g1:/ A B />` in the given ratio :g:`p <0023.g1:/ p />` :math:`:` :g:`q <0023.g1:/ q />`, one externally and the other internally, and we can always construct these two points; hence the problem has two solutions if neither of the lines :g:`CO <0023.g1:[ C O ]>`, :math:`CO'` is parallel to the lines :g:`x <0023.g1:[ x ]>`, :g:`y <0023.g1:[ y ]>`.
 
-Consider the case when :math:`p = q`.
+Consider the case when :eq:`p = q <0023.g1:/ p / = 0023.g1:/ q />`.
 
-**6. Problem.** *Through a given point, outside a given circle, to draw a secant so that the chord intercepted on it by the circle shall subtend at the center an angle equal to the acute angle between the required secant and the diameter, produced, passing through the given point.*
+.. enunciation::
+
+   **6. Problem.** *Through a given* :g:`point <0024.g1:M>`\ *, outside a given* :g:`circle <0024.g1:( O )>`\ *, to draw a* :g:`secant <0024.g1:[ M B A ]>` *so that the* :g:`chord <0024.g1:/ A B />` *intercepted on it by the circle shall subtend at the* :g:`center <0024.g1:O>` *an* :g:`angle <0024.g1:< A O B )>` :eq:`*equal* <0024.g1:< A O B ) = 0024.g1:< O M A )>` *to the* :g:`acute angle <0024.g1:< O M A )>` *between the required secant and the* :g:`diameter, produced <0024.g1:/ M O />`\ *, passing through the given point.*

@@ -10,6 +10,7 @@ from pathlib import Path
 from .compile_edition import compile_edition, get_edition_status
 from .graphics import extract_all_graphics
 from .ingest import ingest_folios
+from .svg_compiler import compile_all_svgs, verify_all_svgs
 
 
 def _default_repo_root() -> Path:
@@ -35,8 +36,16 @@ def build_parser() -> argparse.ArgumentParser:
     p_ingest.add_argument("--force", action="store_true", help="Re-extract existing folio PNGs.")
 
     sub.add_parser("graphics", help="Crop and normalize light/dark diagram PNGs from <NNNN>.json files.")
+    sub.add_parser("svg", help="Compile formal <NNNN>.json geometry definitions into interactive SVGs.")
+    p_verify = sub.add_parser("verify-svg", help="Verify SVG ink overlap against 300 DPI diagram crops.")
+    p_verify.add_argument(
+        "--overlays",
+        type=Path,
+        default=None,
+        help="Optional directory to write RGB overlap diagnostic PNGs.",
+    )
     sub.add_parser("compile", help="Compile de-paginated 2-Track Book Codex and apparatus into docsrc/.")
-    sub.add_parser("status", help="Show archival scan, transcription, graphics, and review counts.")
+    sub.add_parser("status", help="Show archival scan, transcription, graphics, SVG, and review counts.")
 
     return parser
 
@@ -51,6 +60,13 @@ def main(argv: Sequence[str] | None = None) -> int:
         result = ingest_folios(repo_root, dpi=args.dpi, force=args.force)
     elif args.command == "graphics":
         result = extract_all_graphics(repo_root / "resources" / "college_geometry")
+    elif args.command == "svg":
+        result = compile_all_svgs(repo_root / "resources" / "college_geometry")
+    elif args.command == "verify-svg":
+        result = verify_all_svgs(
+            repo_root / "resources" / "college_geometry",
+            overlay_dir=args.overlays,
+        )
     elif args.command == "compile":
         result = compile_edition(repo_root)
     elif args.command == "status":

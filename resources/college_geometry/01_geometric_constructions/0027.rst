@@ -6,24 +6,28 @@
 :language: en
 :status: ok
 
-**9. Problem.** *Construct a square so that each side, or the side produced, shall pass through a given point.*
+.. enunciation::
 
-ANALYSIS. Let :math:`PQRS` be a square whose sides :math:`PQ, QR, RS, SP` pass, respectively, through the given points :math:`A, B, C, D` (Fig. 6).
+   **9. Problem.** *Construct a square so that each side, or the side produced, shall pass through a given point.*
 
-If the perpendicular from :math:`D` upon :math:`AC` meets the line :math:`QR` in :math:`F`, then :math:`DF = AC`. Indeed, if we leave the line :math:`DF` fixed while we revolve the square, and the line :math:`AC` with it, around its center by an angle of :math:`90^\circ` so that the sides :math:`PQ, QR, RS, SP` shall occupy the present positions of :math:`QR, RS, SP, PQ`, respectively, the line :math:`AC` will become parallel to :math:`DF`; hence :math:`AC = DF`.
+ANALYSIS. Let :g:`PQRS <0027.g1:< P Q R S >>` be a square whose sides :g:`PQ <0027.g1:/ P Q />`, :g:`QR <0027.g1:/ Q R />`, :g:`RS <0027.g1:/ R S />`, :g:`SP <0027.g1:/ S P />` pass, respectively, through the given points :g:`A <0027.g1:A>`, :g:`B <0027.g1:B>`, :g:`C <0027.g1:C>`, :g:`D <0027.g1:D>` (Fig. 6).
 
-.. picture:: 0027.g1.png
+If the perpendicular from :g:`D <0027.g1:D>` upon :g:`AC <0027.g1:/ A C />` meets the line :g:`QR <0027.g1:[ Q R ]>` in :g:`F <0027.g1:F>`, then :eq:`DF = AC <0027.g1:/ D F / = 0027.g1:/ A C />`. Indeed, if we leave the line :g:`DF <0027.g1:/ D F />` fixed while we revolve the :g:`square <0027.g1:< P Q R S >>`, and the line :g:`AC <0027.g1:/ A C />` with it, around its center by an angle of :math:`90^\circ` so that the sides :g:`PQ <0027.g1:/ P Q />`, :g:`QR <0027.g1:/ Q R />`, :g:`RS <0027.g1:/ R S />`, :g:`SP <0027.g1:/ S P />` shall occupy the present positions of :g:`QR <0027.g1:/ Q R />`, :g:`RS <0027.g1:/ R S />`, :g:`SP <0027.g1:/ S P />`, :g:`PQ <0027.g1:/ P Q />`, respectively, the line :g:`AC <0027.g1:/ A C />` will become parallel to :g:`DF <0027.g1:/ D F />`; hence :eq:`AC = DF <0027.g1:/ A C / = 0027.g1:/ D F />`.
+
+.. picture:: 0027.g1.svg
    :alt: Fig. 6 — Square PQRS circumscribed about four given points A, B, C, D with DF perpendicular and equal to AC
    :caption: FIG. 6
 
-That :math:`DF = AC` may also be seen in another way. Let the parallels through :math:`Q` to the lines :math:`AC, DF` meet :math:`RS, SP` in the points :math:`K, L`. In the right triangles :math:`PQL, QRK` we have:
+That :eq:`DF = AC <0027.g1:/ D F / = 0027.g1:/ A C />` may also be seen in another way. Let the parallels through :g:`Q <0027.g1:Q>` to the lines :g:`AC <0027.g1:/ A C />`, :g:`DF <0027.g1:/ D F />` meet :g:`RS <0027.g1:/ R S />`, :g:`SP <0027.g1:[ S P ]>` in the points :g:`K <0027.g1:K>`, :g:`L <0027.g1:L>`. In the right triangles :g:`PQL <0027.g1:< P Q L >>`, :g:`QRK <0027.g1:< Q R K >>` we have:
 
 .. math::
 
    \angle PQL = \angle LQR - \angle PQR = \angle LQR - \angle LQK = \angle KQR.
 
-Thus the two triangles are equiangular, and since :math:`PQ = QR`, by assumption, they are congruent; hence :math:`QL = QK`. But :math:`QL = DF`, :math:`QK = AC`; hence :math:`AC = DF`.
+.. assertion::
+
+   Thus the :g:`two triangles <0027.g1:< P Q L >; 0027.g1:< Q R K >>` are equiangular, and since :eq:`PQ = QR <0027.g1:/ P Q / = 0027.g1:/ Q R />`, by assumption, they are :eq:`congruent <0027.g1:< P Q L > = 0027.g1:< Q R K >>`; hence :eq:`QL = QK <0027.g1:/ Q L / = 0027.g1:/ Q K />`. But :eq:`QL = DF <0027.g1:/ Q L / = 0027.g1:/ D F />`, :eq:`QK = AC <0027.g1:/ Q K / = 0027.g1:/ A C />`; hence :eq:`AC = DF <0027.g1:/ A C / = 0027.g1:/ D F />`.
 
 The equality of these two segments suggests the following
 
-CONSTRUCTION. From the given point :math:`D` drop a perpendicular :math:`DF` upon the given line :math:`AC` and lay off :math:`DF = AC`. Join :math:`F` to the fourth given point :math:`B`, and through :math:`D` draw a parallel to :math:`BF`. These two parallel lines and the perpendiculars to them through :math:`A` and :math:`C` form the required square :math:`PQRS`.
+CONSTRUCTION. From the given point :g:`D <0027.g1:D>` drop a perpendicular :g:`DF <0027.g1:/ D F />` upon the given line :g:`AC <0027.g1:/ A C />` and lay off :eq:`DF = AC <0027.g1:/ D F / = 0027.g1:/ A C />`. Join :g:`F <0027.g1:F>` to the fourth given point :g:`B <0027.g1:B>`, and through :g:`D <0027.g1:D>` draw a :g:`parallel <0027.g1:[ P S ]>` to :g:`BF <0027.g1:/ B F />`. These two parallel lines and the perpendiculars to them through :g:`A <0027.g1:A>` and :g:`C <0027.g1:C>` form the required square :g:`PQRS <0027.g1:< P Q R S >>`.

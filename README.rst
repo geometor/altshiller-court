@@ -39,13 +39,18 @@ Repository Layout
   - ``structure_map.json``: Complete 334-folio mapping of PDF pages ``0001``–``0334`` to printed
     pages ``[iii]``–``313``, chapters ``00_frontmatter``–``12_index``, sections, and articles ``§§ 1–699``.
   - ``00_frontmatter/`` .. ``12_index/``: Standardized 300 DPI folio PNGs (``<NNNN>.png``),
-    verbatim visually verified RST transcriptions (``<NNNN>.rst``), scholarly notes
-    (``<NNNN>.notes.rst``), and calibrated diagram bounding boxes (``<NNNN>.json`` ->
-    ``<NNNN>.g<k>.png`` & ``<NNNN>.g<k>.inverted.png``).
+    verbatim multimodal-vision-verified RST transcriptions (``<NNNN>.rst``, wired with interactive
+    ``:g:`` and ``:eq:`` geometric roles—never relying on embedded PDF OCR), scholarly notes
+    (``<NNNN>.notes.rst``), and calibrated diagram bounding boxes & declarative Euclidean models
+    (``<NNNN>.json`` -> ``<NNNN>.g<k>.png``, ``<NNNN>.g<k>.inverted.png``, and interactive
+    ``<NNNN>.g<k>.svg``).
   - ``persons.json`` (67 entries), ``citations.json`` (31 entries), ``glossary.json`` (55 entries),
     ``folio_reviews.json``: Interactive scholarly apparatus registries.
 
-- ``src/geometor/altshiller_court/``: Python ingestion, figure extraction, and Book Codex compiler.
+- ``src/geometor/altshiller_court/``: Python ingestion, figure extraction, semantic SVG compiler/verifier,
+  and Book Codex compiler.
+- ``SVG_CREATION.md`` & ``docsrc/about/pdf-parsing-guide.rst``: Canonical guides for multimodal-vision-over-OCR
+  ingestion, exact Euclidean SVG reconstruction, quantitative ink-overlap verification, and interactive text wiring.
 - ``docsrc/``: Sphinx documentation source and compiled 2-Track Book Codex (``docsrc/college_geometry/``).
 
 Workflow Commands
@@ -59,14 +64,20 @@ Workflow Commands
    # 2. Extract calibrated light & dark-mode (.inverted.png) figure crops
    uv run --no-sync python -m geometor.altshiller_court graphics
 
-   # 3. Compile de-paginated 2-Track Book Codex and apparatus into docsrc/college_geometry/
+   # 3. Compile declarative Euclidean geometry models into interactive euclid-graphic SVGs
+   uv run --no-sync python -m geometor.altshiller_court svg
+
+   # 4. Quantitatively verify SVG ink overlap (>= 95%) against 300 DPI scan crops
+   uv run --no-sync python -m geometor.altshiller_court verify-svg
+
+   # 5. Compile de-paginated 2-Track Book Codex and apparatus into docsrc/college_geometry/
    uv run --no-sync python -m geometor.altshiller_court compile
 
-   # 4. Inspect edition transcription, diagram, and review status
+   # 6. Inspect edition transcription, diagram, SVG, and review status
    uv run --no-sync python -m geometor.altshiller_court status
 
-   # 5. Launch interactive Folio Review workbench
+   # 7. Launch interactive Folio Review workbench
    publish folio
 
-   # 6. Build HTML documentation into docs/
+   # 8. Build HTML documentation into docs/
    publish build

@@ -123,61 +123,71 @@ On the other hand, we do know definitely what the problem is — we know what fi
 
 The following examples illustrate the method.
 
-**5. Problem.** *Two points* :math:`A, B` *are marked on two given parallel lines* :math:`x, y`. *Through a given point* :math:`C`, *not on either of these lines, to draw a secant* :math:`CA'B'` *meeting* :math:`x, y` *in* :math:`A', B'` *so that the segments* :math:`AA', BB'` *shall be proportional to two given segments* :math:`p, q`.
+.. enunciation::
+
+   **5. Problem.** *Two points* :g:`A <0023.g1:A>`, :g:`B <0023.g1:B>` *are marked on two given parallel lines* :g:`x <0023.g1:[ x ]>`, :g:`y <0023.g1:[ y ]>`. *Through a given point* :g:`C <0023.g1:C>`, *not on either of these lines, to draw a secant* :g:`CA'B' <0023.g1:[ C A' B' ]>` *meeting* :g:`x <0023.g1:[ x ]>`, :g:`y <0023.g1:[ y ]>` *in* :g:`A' <0023.g1:Aprime>`, :g:`B' <0023.g1:Bprime>` *so that the segments* :g:`AA' <0023.g1:/ A A' />`, :g:`BB' <0023.g1:/ B B' />` *shall be proportional to two given segments* :g:`p <0023.g1:/ p />`, :g:`q <0023.g1:/ q />`.
 
 .. folio:: 0023
    :page: 4
 
-.. picture:: 0023.g1.png
+.. picture:: 0023.g1.svg
    :alt: Fig. 1 — Secant CA'B' meeting parallel lines x, y so that AA' : BB' = p : q
    :caption: FIG. 1
 
-ANALYSIS. Let :math:`CA'B'` be the required line, so that (Fig. 1):
+ANALYSIS. Let :g:`CA'B' <0023.g1:[ C A' B' ]>` be the required line, so that (Fig. 1):
 
 .. math::
 
    AA' : BB' = p : q,
 
-and let :math:`O = (AB, A'B')`. The two triangles :math:`OAA', OBB'` are similar; hence:
+and let :g:`O <0023.g1:O>` :math:`= (`\ :g:`AB <0023.g1:[ A B ]>`, :g:`A'B' <0023.g1:[ A' B' ]>`\ :math:`)`. The two triangles :g:`OAA' <0023.g1:< O A A' >>`, :g:`OBB' <0023.g1:< O B B' >>` are similar; hence:
 
 .. math::
 
    AO : BO = AA' : BB'.
 
-But the latter ratio is known; hence the point :math:`O` divides the given segment :math:`AB` in the given ratio :math:`p : q`. Thus we may construct :math:`O`, and :math:`OC` is the required line.
+.. assertion::
 
-CONSTRUCTION. Construct the point :math:`O` such that:
+   But the latter ratio is known; hence the point :g:`O <0023.g1:O>` divides the given segment :g:`AB <0023.g1:/ A B />` in the given ratio :g:`p <0023.g1:/ p />` :math:`:` :g:`q <0023.g1:/ q />`. Thus we may construct :g:`O <0023.g1:O>`, and :g:`OC <0023.g1:[ O C ]>` is the required line.
+
+CONSTRUCTION. Construct the point :g:`O <0023.g1:O>` such that:
 
 .. math::
 
    AO : BO = p : q.
 
-The points :math:`O` and :math:`C` determine the required line.
+The points :g:`O <0023.g1:O>` and :g:`C <0023.g1:C>` determine the :g:`required line <0023.g1:[ O C ]>`.
 
 PROOF. Left to the student.
 
-DISCUSSION. There are two points, :math:`O` and :math:`O'`, which divide the given segment :math:`AB` in the given ratio :math:`p : q`, one externally and the other internally, and we can always construct these two points; hence the problem has two solutions if neither of the lines :math:`CO, CO'` is parallel to the lines :math:`x, y`.
+DISCUSSION. There are two points, :g:`O <0023.g1:O>` and :math:`O'`, which divide the given segment :g:`AB <0023.g1:/ A B />` in the given ratio :g:`p <0023.g1:/ p />` :math:`:` :g:`q <0023.g1:/ q />`, one externally and the other internally, and we can always construct these two points; hence the problem has two solutions if neither of the lines :g:`CO <0023.g1:[ C O ]>`, :math:`CO'` is parallel to the lines :g:`x <0023.g1:[ x ]>`, :g:`y <0023.g1:[ y ]>`.
 
-Consider the case when :math:`p = q`.
+Consider the case when :eq:`p = q <0023.g1:/ p / = 0023.g1:/ q />`.
 
-**6. Problem.** *Through a given point, outside a given circle, to draw a secant so that the chord intercepted on it by the circle shall subtend at the center an angle equal to the acute angle between the required secant and the diameter, produced, passing through the given point.*
+.. enunciation::
+
+   **6. Problem.** *Through a given* :g:`point <0024.g1:M>`\ *, outside a given* :g:`circle <0024.g1:( O )>`\ *, to draw a* :g:`secant <0024.g1:[ M B A ]>` *so that the* :g:`chord <0024.g1:/ A B />` *intercepted on it by the circle shall subtend at the* :g:`center <0024.g1:O>` *an* :g:`angle <0024.g1:< A O B )>` :eq:`*equal* <0024.g1:< A O B ) = 0024.g1:< O M A )>` *to the* :g:`acute angle <0024.g1:< O M A )>` *between the required secant and the* :g:`diameter, produced <0024.g1:/ M O />`\ *, passing through the given point.*
 
 .. folio:: 0024
    :page: 5
 
-ANALYSIS. Let the required secant :math:`MBA` (Fig. 2) through the given point :math:`M` cut the given circle, center :math:`O`, in :math:`A` and :math:`B`. The two triangles :math:`AOB, AOM` have the angle :math:`A` in common and, by assumption, angle :math:`AOB =` angle :math:`M`; hence the two triangles are equiangular. But the triangle :math:`AOB` is isosceles; hence the triangle :math:`AOM` is also isosceles, and :math:`MA = MO`. Now the length :math:`MO` is known; hence the distance :math:`MA` of the point :math:`A` from :math:`M` is known, so that the point :math:`A` may be constructed, and the secant :math:`MA` may be drawn.
+ANALYSIS. Let the required secant :g:`MBA <0024.g1:[ M B A ]>` (Fig. 2) through the given point :g:`M <0024.g1:M>` cut the given circle, center :g:`O <0024.g1:O>`, in :g:`A <0024.g1:A>` and :g:`B <0024.g1:B>`. The two triangles :g:`AOB <0024.g1:< A O B >>`, :g:`AOM <0024.g1:< A O M >>` have the angle :g:`A <0024.g1:< O A B )>` in common and, by assumption, angle :g:`AOB <0024.g1:< A O B )>` :eq:`= <0024.g1:< A O B ) = 0024.g1:< O M A )>` angle :g:`M <0024.g1:< O M A )>`; hence the two triangles are equiangular. But the triangle :g:`AOB <0024.g1:< A O B >>` is :eq:`isosceles <0024.g1:/ O A / = 0024.g1:/ O B />`; hence the triangle :g:`AOM <0024.g1:< A O M >>` is also isosceles, and :eq:`MA = MO <0024.g1:/ M A / = 0024.g1:/ M O />`. Now the length :g:`MO <0024.g1:/ M O />` is known; hence the distance :g:`MA <0024.g1:/ M A />` of the point :g:`A <0024.g1:A>` from :g:`M <0024.g1:M>` is known, so that the point :g:`A <0024.g1:A>` may be constructed, and the secant :g:`MA <0024.g1:[ M A ]>` may be drawn.
 
-CONSTRUCTION. Draw the circle :math:`(M, MO)`. If :math:`A` is a point common to the two circles, the line :math:`MA` satisfies the conditions of the problem.
+CONSTRUCTION. Draw the circle :g:`(M, MO) <0024.g1:( M O )>`. If :g:`A <0024.g1:A>` is a point common to the two circles, the line :g:`MA <0024.g1:[ M A ]>` satisfies the conditions of the problem.
 
-PROOF. Let the line :math:`MA` meet the given circle again in :math:`B`. The triangles :math:`AOB, AOM` are isosceles, for :math:`OA = OB`, :math:`MA = MO`, as radii of the same circle, and the angle :math:`A` is a common base angle in the two triangles; hence the angles :math:`AOB` and :math:`M` opposite the respective bases :math:`AB` and :math:`AO` in the two triangles are equal. Thus :math:`MA` is the required line.
+PROOF. Let the line :g:`MA <0024.g1:[ M A ]>` meet the given circle again in :g:`B <0024.g1:B>`. The triangles :g:`AOB <0024.g1:< A O B >>`, :g:`AOM <0024.g1:< A O M >>` are isosceles, for :eq:`OA = OB <0024.g1:/ O A / = 0024.g1:/ O B />`, :eq:`MA = MO <0024.g1:/ M A / = 0024.g1:/ M O />`, as radii of the same circle, and the angle :g:`A <0024.g1:< O A B )>` is a common base angle in the two triangles;
 
-.. picture:: 0024.g1.png
+.. assertion::
+
+   hence the angles :g:`AOB <0024.g1:< A O B )>` and :g:`M <0024.g1:< O M A )>` opposite the respective bases :g:`AB <0024.g1:/ A B />` and :g:`AO <0024.g1:/ A O />` in the two triangles are :eq:`equal <0024.g1:< A O B ) = 0024.g1:< O M A )>`. Thus :g:`MA <0024.g1:[ M A ]>` is the required line.
+
+.. picture:: 0024.g1.svg
    :alt: Fig. 2 — Secant MBA from exterior point M to circle (O) with MA = MO
    :caption: FIG. 2
 
-DISCUSSION. We can always draw the circle :math:`(M, MO)` which will cut the given circle in two points :math:`A` and :math:`A'`; hence the problem always has two solutions, symmetrical with respect to the line :math:`MO`.
+DISCUSSION. We can always draw the circle :g:`(M, MO) <0024.g1:( M O )>` which will cut the given circle in two points :g:`A <0024.g1:A>` and :g:`A' <0024.g1:Aprime>`; hence the problem always has two solutions, symmetrical with respect to the line :g:`MO <0024.g1:/ M O />`.
 
-Could the line :math:`MBA` be drawn so that the angle :math:`AOB` would be equal to the *obtuse* angle between :math:`MBA` and :math:`MO`? If that were possible, we would have:
+Could the line :g:`MBA <0024.g1:[ M B A ]>` be drawn so that the angle :g:`AOB <0024.g1:< A O B )>` would be equal to the *obtuse* angle between :g:`MBA <0024.g1:[ M B A ]>` and :g:`MO <0024.g1:/ M O />`? If that were possible, we would have:
 
 .. math::
 
@@ -192,7 +202,7 @@ hence:
 .. folio:: 0025
    :page: 6
 
-But in the triangle :math:`OBM` we have:
+But in the triangle :g:`OBM <0024.g1:< O B M >>` we have:
 
 .. math::
 
@@ -200,92 +210,106 @@ But in the triangle :math:`OBM` we have:
 
 We are thus led to a contradiction; hence a line satisfying the imposed condition cannot be drawn.
 
-Consider the problem when the point :math:`M` is given inside the given circle, or on the given circle.
+Consider the problem when the point :g:`M <0024.g1:M>` is given inside the :g:`given circle <0024.g1:( O )>`, or on the given circle.
 
-.. picture:: 0025.g1.png
+.. picture:: 0025.g1.svg
    :alt: Fig. 3 — Equal three-segment chain AD = DE = EC on triangle ABC via auxiliary circles (B, BA) and (K, BA)
    :caption: FIG. 3
 
-**7. Problem.** *On the sides* :math:`AB, AC`, *produced if necessary, of the triangle* :math:`ABC` *to find two points* :math:`D, E` *such that the segments* :math:`AD, DE`, *and* :math:`EC` *shall be equal* (Fig. 3).
+.. enunciation::
 
-ANALYSIS. Suppose that the points :math:`D, E` satisfy the conditions of the problem, and let the parallels through :math:`B` to the lines :math:`DE, DC` meet :math:`AC` in :math:`K, L`. The two triangles :math:`ADE, ABK` are similar, and since :math:`AD = DE`, by assumption, we have :math:`AB = BK`, and the point :math:`K` is readily constructed.
+   **7. Problem.** *On the sides* :g:`AB <0025.g1:/ A B />`, :g:`AC <0025.g1:/ A C />`, *produced if necessary, of the triangle* :g:`ABC <0025.g1:< A B C >>` *to find two points* :g:`D <0025.g1:D>`, :g:`E <0025.g1:E>` *such that the segments* :g:`AD <0025.g1:/ A D />`, :g:`DE <0025.g1:/ D E />`, *and* :g:`EC <0025.g1:/ E C />` *shall be* :eq:`*equal* <0025.g1:/ A D / = 0025.g1:/ D E / = 0025.g1:/ E C />` (Fig. 3).
 
-Again, the triangles :math:`DEC, BKL` are similar, and since :math:`DE = EC`, by assumption, we have :math:`BK = KL`; hence :math:`L` is known.
+ANALYSIS. Suppose that the points :g:`D <0025.g1:D>`, :g:`E <0025.g1:E>` satisfy the conditions of the problem, and let the parallels through :g:`B <0025.g1:B>` to the lines :g:`DE <0025.g1:/ D E />`, :g:`DC <0025.g1:/ D C />` meet :g:`AC <0025.g1:[ A C ]>` in :g:`K <0025.g1:K>`, :g:`L <0025.g1:L>`. The two triangles :g:`ADE <0025.g1:< A D E >>`, :g:`ABK <0025.g1:< A B K >>` are similar, and since :eq:`AD = DE <0025.g1:/ A D / = 0025.g1:/ D E />`, by assumption, we have :eq:`AB = BK <0025.g1:/ A B / = 0025.g1:/ B K />`, and the point :g:`K <0025.g1:K>` is readily constructed.
 
-CONSTRUCTION. Draw the circle :math:`(B, BA)` cutting :math:`AC` again in :math:`K`. Draw the circle :math:`(K, BA)` cutting :math:`AC` in :math:`L`. The parallel through :math:`C` to :math:`BL` meets the line :math:`AB` in the first required point :math:`D`, and the parallel through :math:`D` to :math:`BK` meets :math:`AC` in the second required point :math:`E`.
+.. assertion::
+
+   Again, the triangles :g:`DEC <0025.g1:< D E C >>`, :g:`BKL <0025.g1:< B K L >>` are similar, and since :eq:`DE = EC <0025.g1:/ D E / = 0025.g1:/ E C />`, by assumption, we have :eq:`BK = KL <0025.g1:/ B K / = 0025.g1:/ K L />`; hence :g:`L <0025.g1:L>` is known.
+
+CONSTRUCTION. Draw the circle :math:`(B, BA)` cutting :g:`AC <0025.g1:[ A C ]>` again in :g:`K <0025.g1:K>`. Draw the circle :math:`(K, BA)` cutting :g:`AC <0025.g1:[ A C ]>` in :g:`L <0025.g1:L>`. The parallel through :g:`C <0025.g1:C>` to :g:`BL <0025.g1:/ B L />` meets the line :g:`AB <0025.g1:/ A B />` in the first required point :g:`D <0025.g1:D>`, and the parallel through :g:`D <0025.g1:D>` to :g:`BK <0025.g1:/ B K />` meets :g:`AC <0025.g1:[ A C ]>` in the second required point :g:`E <0025.g1:E>`.
 
 PROOF. The steps in the proof are the same as those in the analysis, but taken in reverse order.
 
-DISCUSSION. The point :math:`K` always has one and only one position. When :math:`K` is constructed we find two positions for :math:`L`, and we have two solutions, :math:`DE` and :math:`D'E'`, for the problem.
+DISCUSSION. The point :g:`K <0025.g1:K>` always has one and only one position. When :g:`K <0025.g1:K>` is constructed we find :g:`two positions <0025.g1:L; 0025.g1:Lprime>` for :g:`L <0025.g1:L>`, and we have two solutions, :g:`DE <0025.g1:/ D E />` and :math:`D'E'`, for the problem.
 
-If :math:`A` is a right angle the problem becomes trivial.
+If :g:`A <0025.g1:< B A C )>` is a right angle the problem becomes trivial.
 
 .. folio:: 0026
    :page: 7
 
-**8. Problem.** *On two given circles find two points a given distance apart and such that the line joining them shall have a given direction.*
+.. enunciation::
 
-ANALYSIS. Let :math:`P, Q` be the required points on the two given circles :math:`(A), (B)`. Through the center :math:`A` of :math:`(A)` (Fig. 4) draw a parallel to :math:`PQ` and lay off :math:`AR = PQ`. In the parallelogram :math:`APQR` we have :math:`RQ = AP`. But :math:`AP` is a radius of a given circle; hence the length :math:`RQ` is known. On the other hand the point :math:`R` is known, for both the direction and the length of :math:`AR` are given; hence the point :math:`Q` may be constructed. The point :math:`P` is then readily found.
+   **8. Problem.** *On two given circles find two points a given distance apart and such that the line joining them shall have a given direction.*
 
-CONSTRUCTION. Through the center :math:`A` of one of the two given circles, :math:`(A)`, draw a line having the given direction and lay off :math:`AR` equal to the given length, :math:`m`. With :math:`R` as center and radius equal to the radius of :math:`(A)` draw a circle :math:`(A')`, meeting the second given circle in a point :math:`Q`. Through :math:`Q` draw a parallel to :math:`AR` and lay off :math:`QP = AR`, so as to form a parallelogram in which :math:`AR` is a side (and not a diagonal). The points :math:`P, Q` satisfy the conditions of the problem.
+ANALYSIS. Let :g:`P <0026.g1:P>`, :g:`Q <0026.g1:Q>` be the required points on the two given circles :g:`(A) <0026.g1:( A )>`, :g:`(B) <0026.g1:( B )>`. Through the center :g:`A <0026.g1:A>` of :g:`(A) <0026.g1:( A )>` (Fig. 4) draw a parallel to :g:`PQ <0026.g1:/ P Q />` and lay off :eq:`AR = PQ <0026.g1:/ A R / = 0026.g1:/ P Q />`. In the parallelogram :g:`APQR <0026.g1:< A P Q R >>` we have :eq:`RQ = AP <0026.g1:/ R Q / = 0026.g1:/ A P />`. But :g:`AP <0026.g1:/ A P />` is a radius of a given circle; hence the length :g:`RQ <0026.g1:/ R Q />` is known. On the other hand the point :g:`R <0026.g1:R>` is known, for both the direction and the length of :g:`AR <0026.g1:/ A R />` are given; hence the point :g:`Q <0026.g1:Q>` may be constructed. The point :g:`P <0026.g1:P>` is then readily found.
 
-PROOF. The segment :math:`PQ` has the given length and the given direction, by construction. The point :math:`Q` was taken on the circle :math:`(B)`. In order to show that :math:`P` lies on the circle :math:`(A)` it is enough to point out that in the parallelogram :math:`ARQP` we have :math:`AP = RQ`, and :math:`RQ` is equal to the radius of :math:`(A)`, by construction.
+CONSTRUCTION. Through the center :g:`A <0026.g1:A>` of one of the two given circles, :g:`(A) <0026.g1:( A )>`, draw a line having the given direction and lay off :g:`AR <0026.g1:/ A R />` :eq:`equal <0026.g1:/ A R / = 0026.g1:/ m />` to the given length, :g:`m <0026.g1:/ m />`. With :g:`R <0026.g1:R>` as center and radius equal to the radius of :g:`(A) <0026.g1:( A )>` draw a circle :math:`(A')`, meeting the :g:`second given circle <0026.g1:( B )>` in a point :g:`Q <0026.g1:Q>`. Through :g:`Q <0026.g1:Q>` draw a parallel to :g:`AR <0026.g1:/ A R />` and lay off :eq:`QP = AR <0026.g1:/ Q P / = 0026.g1:/ A R />`, so as to form a :g:`parallelogram <0026.g1:< A P Q R >>` in which :g:`AR <0026.g1:/ A R />` is a side (and not a diagonal). The points :g:`P <0026.g1:P>`, :g:`Q <0026.g1:Q>` satisfy the conditions of the problem.
 
-.. picture:: 0026.g1.png
+.. assertion::
+
+   PROOF. The segment :g:`PQ <0026.g1:/ P Q />` has the given length and the given direction, by construction. The point :g:`Q <0026.g1:Q>` was taken on the circle :g:`(B) <0026.g1:( B )>`. In order to show that :g:`P <0026.g1:P>` lies on the circle :g:`(A) <0026.g1:( A )>` it is enough to point out that in the parallelogram :g:`ARQP <0026.g1:< A R Q P >>` we have :eq:`AP = RQ <0026.g1:/ A P / = 0026.g1:/ R Q />`, and :g:`RQ <0026.g1:/ R Q />` is equal to the radius of :g:`(A) <0026.g1:( A )>`, by construction.
+
+.. picture:: 0026.g1.svg
    :alt: Fig. 4 — Translation of circle (A) by vector AR of length m to intersect circle (B) at Q
    :caption: FIG. 4
 
-.. picture:: 0026.g2.png
+.. picture:: 0026.g2.svg
    :alt: Fig. 5 — Four-solution configuration of § 8 via symmetric translated centers R and R'
    :caption: FIG. 5
 
-DISCUSSION. It is always possible to draw through :math:`A` a line having the given direction. The point :math:`R` may then be marked on either side of :math:`A`, so that we always have for :math:`R` two positions, :math:`R` and :math:`R'`. The circle with either of these points as center and radius equal to the radius of :math:`(A)` may cut :math:`(B)` in two points, or may be tangent to :math:`(B)`, or may not cut :math:`(B)` at all. Consequently the problem may have four, three, two, one, or no solutions.
+DISCUSSION. It is always possible to draw through :g:`A <0026.g2:A>` a :g:`line <0026.g2:/ R' R />` having the given direction. The point :g:`R <0026.g2:R>` may then be marked on either side of :g:`A <0026.g2:A>`, so that we always have for :g:`R <0026.g2:R>` two positions, :g:`R <0026.g2:R>` and :g:`R' <0026.g2:Rprime>`. The circle with either of these points as center and radius equal to the radius of :g:`(A) <0026.g2:( A )>` may cut :g:`(B) <0026.g2:( B )>` in two points, or may be tangent to :g:`(B) <0026.g2:( B )>`, or may not cut :g:`(B) <0026.g2:( B )>` at all. Consequently the problem may have four, three, two, one, or no solutions.
 
-Figure 5 illustrates the case when there are four solutions.
+Figure 5 illustrates the case when there are :g:`four solutions <0026.g2:/ P_1 Q_1 /; 0026.g2:/ P_2 Q_2 /; 0026.g2:/ P_1' Q_1' /; 0026.g2:/ P_2' Q_2' />`.
 
 .. folio:: 0027
    :page: 8
 
-**9. Problem.** *Construct a square so that each side, or the side produced, shall pass through a given point.*
+.. enunciation::
 
-ANALYSIS. Let :math:`PQRS` be a square whose sides :math:`PQ, QR, RS, SP` pass, respectively, through the given points :math:`A, B, C, D` (Fig. 6).
+   **9. Problem.** *Construct a square so that each side, or the side produced, shall pass through a given point.*
 
-If the perpendicular from :math:`D` upon :math:`AC` meets the line :math:`QR` in :math:`F`, then :math:`DF = AC`. Indeed, if we leave the line :math:`DF` fixed while we revolve the square, and the line :math:`AC` with it, around its center by an angle of :math:`90^\circ` so that the sides :math:`PQ, QR, RS, SP` shall occupy the present positions of :math:`QR, RS, SP, PQ`, respectively, the line :math:`AC` will become parallel to :math:`DF`; hence :math:`AC = DF`.
+ANALYSIS. Let :g:`PQRS <0027.g1:< P Q R S >>` be a square whose sides :g:`PQ <0027.g1:/ P Q />`, :g:`QR <0027.g1:/ Q R />`, :g:`RS <0027.g1:/ R S />`, :g:`SP <0027.g1:/ S P />` pass, respectively, through the given points :g:`A <0027.g1:A>`, :g:`B <0027.g1:B>`, :g:`C <0027.g1:C>`, :g:`D <0027.g1:D>` (Fig. 6).
 
-.. picture:: 0027.g1.png
+If the perpendicular from :g:`D <0027.g1:D>` upon :g:`AC <0027.g1:/ A C />` meets the line :g:`QR <0027.g1:[ Q R ]>` in :g:`F <0027.g1:F>`, then :eq:`DF = AC <0027.g1:/ D F / = 0027.g1:/ A C />`. Indeed, if we leave the line :g:`DF <0027.g1:/ D F />` fixed while we revolve the :g:`square <0027.g1:< P Q R S >>`, and the line :g:`AC <0027.g1:/ A C />` with it, around its center by an angle of :math:`90^\circ` so that the sides :g:`PQ <0027.g1:/ P Q />`, :g:`QR <0027.g1:/ Q R />`, :g:`RS <0027.g1:/ R S />`, :g:`SP <0027.g1:/ S P />` shall occupy the present positions of :g:`QR <0027.g1:/ Q R />`, :g:`RS <0027.g1:/ R S />`, :g:`SP <0027.g1:/ S P />`, :g:`PQ <0027.g1:/ P Q />`, respectively, the line :g:`AC <0027.g1:/ A C />` will become parallel to :g:`DF <0027.g1:/ D F />`; hence :eq:`AC = DF <0027.g1:/ A C / = 0027.g1:/ D F />`.
+
+.. picture:: 0027.g1.svg
    :alt: Fig. 6 — Square PQRS circumscribed about four given points A, B, C, D with DF perpendicular and equal to AC
    :caption: FIG. 6
 
-That :math:`DF = AC` may also be seen in another way. Let the parallels through :math:`Q` to the lines :math:`AC, DF` meet :math:`RS, SP` in the points :math:`K, L`. In the right triangles :math:`PQL, QRK` we have:
+That :eq:`DF = AC <0027.g1:/ D F / = 0027.g1:/ A C />` may also be seen in another way. Let the parallels through :g:`Q <0027.g1:Q>` to the lines :g:`AC <0027.g1:/ A C />`, :g:`DF <0027.g1:/ D F />` meet :g:`RS <0027.g1:/ R S />`, :g:`SP <0027.g1:[ S P ]>` in the points :g:`K <0027.g1:K>`, :g:`L <0027.g1:L>`. In the right triangles :g:`PQL <0027.g1:< P Q L >>`, :g:`QRK <0027.g1:< Q R K >>` we have:
 
 .. math::
 
    \angle PQL = \angle LQR - \angle PQR = \angle LQR - \angle LQK = \angle KQR.
 
-Thus the two triangles are equiangular, and since :math:`PQ = QR`, by assumption, they are congruent; hence :math:`QL = QK`. But :math:`QL = DF`, :math:`QK = AC`; hence :math:`AC = DF`.
+.. assertion::
+
+   Thus the :g:`two triangles <0027.g1:< P Q L >; 0027.g1:< Q R K >>` are equiangular, and since :eq:`PQ = QR <0027.g1:/ P Q / = 0027.g1:/ Q R />`, by assumption, they are :eq:`congruent <0027.g1:< P Q L > = 0027.g1:< Q R K >>`; hence :eq:`QL = QK <0027.g1:/ Q L / = 0027.g1:/ Q K />`. But :eq:`QL = DF <0027.g1:/ Q L / = 0027.g1:/ D F />`, :eq:`QK = AC <0027.g1:/ Q K / = 0027.g1:/ A C />`; hence :eq:`AC = DF <0027.g1:/ A C / = 0027.g1:/ D F />`.
 
 The equality of these two segments suggests the following
 
-CONSTRUCTION. From the given point :math:`D` drop a perpendicular :math:`DF` upon the given line :math:`AC` and lay off :math:`DF = AC`. Join :math:`F` to the fourth given point :math:`B`, and through :math:`D` draw a parallel to :math:`BF`. These two parallel lines and the perpendiculars to them through :math:`A` and :math:`C` form the required square :math:`PQRS`.
+CONSTRUCTION. From the given point :g:`D <0027.g1:D>` drop a perpendicular :g:`DF <0027.g1:/ D F />` upon the given line :g:`AC <0027.g1:/ A C />` and lay off :eq:`DF = AC <0027.g1:/ D F / = 0027.g1:/ A C />`. Join :g:`F <0027.g1:F>` to the fourth given point :g:`B <0027.g1:B>`, and through :g:`D <0027.g1:D>` draw a :g:`parallel <0027.g1:[ P S ]>` to :g:`BF <0027.g1:/ B F />`. These two parallel lines and the perpendiculars to them through :g:`A <0027.g1:A>` and :g:`C <0027.g1:C>` form the required square :g:`PQRS <0027.g1:< P Q R S >>`.
 
 .. folio:: 0028
    :page: 9
 
-.. picture:: 0028.g1.png
+.. picture:: 0028.g1.svg
    :alt: Fig. 7 — Six-solution configuration of squares passing through four given points A, B, C, D
    :caption: FIG. 7
 
-PROOF. From the construction it follows immediately that :math:`PQRS` is a rectangle whose sides pass respectively through the given points :math:`A, B, C, D`.
+PROOF. From the construction it follows immediately that :g:`PQRS <0027.g1:< P Q R S >>` is a rectangle whose sides pass respectively through the given points :g:`A <0027.g1:A>`, :g:`B <0027.g1:B>`, :g:`C <0027.g1:C>`, :g:`D <0027.g1:D>`.
 
-To show that this rectangle is a square we consider again the triangles :math:`PQL, QRK`, and, as in the analysis, we show that they are equiangular. Now :math:`DF = AC`, by construction; hence :math:`QL = QK`; therefore the triangles are congruent, and :math:`QP = QR`.
+.. assertion::
 
-DISCUSSION. We obtain a second solution if we make the symmetric :math:`F'` of :math:`F` with respect to :math:`D` play the role of the point :math:`F`.
+   To show that this rectangle is a square we consider again the triangles :g:`PQL <0027.g1:< P Q L >>`, :g:`QRK <0027.g1:< Q R K >>`, and, as in the analysis, we show that they are equiangular. Now :eq:`DF = AC <0027.g1:/ D F / = 0027.g1:/ A C />`, by construction; hence :eq:`QL = QK <0027.g1:/ Q L / = 0027.g1:/ Q K />`; therefore the triangles are :eq:`congruent <0027.g1:< P Q L > = 0027.g1:< Q R K >>`, and :eq:`QP = QR <0027.g1:/ Q P / = 0027.g1:/ Q R />`.
 
-Moreover, the perpendicular from :math:`D` may also be dropped upon either of the other two sides :math:`AB, BC` of the triangle :math:`ABC`, and we will obtain two more pairs of solutions. The problem thus has, in general, six different solutions. It is, of course, immaterial to which of the four given points we assign the role of the point :math:`D`.
+DISCUSSION. We obtain a :g:`second solution <0027.g1:< P2 Q2 R2 S2 >>` if we make the symmetric :g:`F' <0027.g1:Fprime>` of :g:`F <0027.g1:F>` with respect to :g:`D <0027.g1:D>` play the role of the point :g:`F <0027.g1:F>`.
 
-Should the point :math:`F` happen to coincide with :math:`B`, the direction of the line :math:`BF` becomes indeterminate, that is, any line through :math:`B` may be taken as a side of the required square, and the figure completed accordingly. Thus if the segment joining two of the four given points is equal to and perpendicular to the segment joining the remaining two points, the problem has an infinite number of solutions.
+Moreover, the perpendicular from :g:`D <0028.g1:D>` may also be dropped upon either of the other two sides :g:`AB <0028.g1:/ A B />`, :g:`BC <0028.g1:/ B C />` of the triangle :g:`ABC <0028.g1:< A B C >>`, and we will obtain two more pairs of solutions. The problem thus has, in general, six different solutions. It is, of course, immaterial to which of the :g:`four given points <0028.g1:A; 0028.g1:B; 0028.g1:C; 0028.g1:D>` we assign the role of the point :g:`D <0028.g1:D>`.
 
-Figure 7 presents the case when the problem has six solutions.
+Should the point :g:`F <0027.g1:F>` happen to coincide with :g:`B <0027.g1:B>`, the direction of the line :g:`BF <0027.g1:/ B F />` becomes indeterminate, that is, any line through :g:`B <0027.g1:B>` may be taken as a side of the required square, and the figure completed accordingly. Thus if the segment joining two of the four given points is equal to and perpendicular to the segment joining the remaining two points, the problem has an infinite number of solutions.
+
+Figure 7 presents the case when the problem has :g:`six solutions <0028.g1:< P Q R S >; 0028.g1:< S2_1 S2_2 S2_3 S2_4 >; 0028.g1:< S3_1 S3_2 S3_3 S3_4 >; 0028.g1:< S4_1 S4_2 S4_3 S4_4 >; 0028.g1:< S5_1 S5_2 S5_3 S5_4 >; 0028.g1:< S6_1 S6_2 S6_3 S6_4 >>`.
 
 **10. Suggestions.** The figure for the analysis may be drawn freehand and the given elements arranged as conveniently as possible to give a correct idea of the problem and to exhibit the existing interrelations between the elements involved.
 
@@ -338,65 +362,89 @@ Knowledge about a considerable number of geometric loci may often enable one to 
 .. folio:: 0031
    :page: 12
 
-.. picture:: 0031.g1.png
+.. picture:: 0031.g1.svg
    :alt: Fig. 8 — Capable arc AMB on chord AB with tangent AT making angle BAT = angle AMB
    :caption: FIG. 8
 
 The following are the most important and the most frequently useful geometric loci:
 
-LOCUS 1. *The locus of a point in a plane at a given distance from a given point is a circle having the given point for center and the given distance for radius.*
+.. enunciation::
 
-LOCUS 2. *The locus of a point from which tangents of given length can be drawn to a given circle is a circle concentric with the given circle.*
+   LOCUS 1. *The locus of a point in a plane at a given distance from a given point is a circle having the given point for center and the given distance for radius.*
 
-LOCUS 3. *The locus of a point at a given distance from a given line consists of two lines parallel to the given line.*
+.. enunciation::
 
-LOCUS 4. *The locus of a point equidistant from two given points is the perpendicular bisector of the segment determined by the two points.*
+   LOCUS 2. *The locus of a point from which tangents of given length can be drawn to a given circle is a circle concentric with the given circle.*
+
+.. enunciation::
+
+   LOCUS 3. *The locus of a point at a given distance from a given line consists of two lines parallel to the given line.*
+
+.. enunciation::
+
+   LOCUS 4. *The locus of a point equidistant from two given points is the perpendicular bisector of the segment determined by the two points.*
 
 For the sake of brevity the expression *perpendicular bisector* may be replaced conveniently by the term :term:`mediator <mediator>`.
 
-LOCUS 5. *The locus of a point equidistant from two intersecting lines indefinitely produced consists of the two bisectors of the angles formed by the two given lines.*
+.. enunciation::
 
-LOCUS 6. *The locus of a point such that the tangents from it to a given circle form a given angle, or, more briefly, at which the circle subtends a given angle, is a circle concentric with the given circle.*
+   LOCUS 5. *The locus of a point equidistant from two intersecting lines indefinitely produced consists of the two bisectors of the angles formed by the two given lines.*
 
-LOCUS 7. *The* :term:`locus of a point <subtended-angle-locus>`\ *, on one side of a given segment, at which this segment subtends a given angle is an arc of a circle passing through the ends of the segment.*
+.. enunciation::
 
-Let :math:`M` (Fig. 8) be a point of the locus so that the angle :math:`AMB` is equal to the given angle. Pass a circle through the three points :math:`A, B, M`. At any point :math:`M'` of the arc :math:`AMB` the segment :math:`AB` subtends the same angle as at :math:`M`; hence every point of the arc :math:`AMB` belongs to the required locus. On the other hand, any point :math:`N` not on the arc :math:`AMB` will lie either inside or outside this arc. In the first case the angle :math:`ANB` will be larger, and in the second case smaller, than the angle :math:`AMB`. Hence :math:`N` does not belong to the locus.
+   LOCUS 6. *The locus of a point such that the tangents from it to a given circle form a given angle, or, more briefly, at which the circle subtends a given angle, is a circle concentric with the given circle.*
+
+.. enunciation::
+
+   LOCUS 7. *The* :term:`locus of a point <subtended-angle-locus>`\ *, on one side of a given segment, at which this segment subtends a given angle is an arc of a circle passing through the ends of the segment.*
+
+Let :g:`M <0031.g1:M>` (Fig. 8) be a point of the locus so that the angle :g:`AMB <0031.g1:< A M B )>` is equal to the given angle. Pass a :g:`circle <0031.g1:( A M B )>` through the three points :g:`A <0031.g1:A>`, :g:`B <0031.g1:B>`, :g:`M <0031.g1:M>`. At any point :g:`M' <0031.g1:Mprime>` of the arc :g:`AMB <0031.g1:( A M B )>` the segment :g:`AB <0031.g1:/ A B />` subtends the same angle as at :g:`M <0031.g1:M>`; hence every point of the arc :g:`AMB <0031.g1:( A M B )>` belongs to the required locus. On the other hand, any point :g:`N <0031.g1:N>` not on the arc :g:`AMB <0031.g1:( A M B )>` will lie either inside or outside this arc. In the first case the angle :g:`ANB <0031.g1:< A N B )>` will be larger, and in the second case smaller, than the angle :g:`AMB <0031.g1:< A M B )>`. Hence :g:`N <0031.g1:N>` does not belong to the locus.
 
 .. folio:: 0032
    :page: 13
 
-The tangent :math:`AT` to the circle :math:`AMB` at the point :math:`A` makes an angle with :math:`AB` equal to the angle :math:`AMB`. Hence :math:`AT` may be drawn. The construction of the circle :math:`AMB` is therefore reduced to the problem of drawing a circle tangent to a given line :math:`AT` at a given point :math:`A`, and passing through another given point :math:`B`.
+.. assertion::
 
-If the condition that the point :math:`M` is to lie on a given side of the line :math:`AB` is disregarded, the required locus consists of two arcs of circles congruent to each other and located on opposite sides of :math:`AB`.
+   The tangent :g:`AT <0031.g1:/ A T />` to the circle :g:`AMB <0031.g1:( A M B )>` at the point :g:`A <0031.g1:A>` makes an :g:`angle <0031.g1:< B A T )>` with :g:`AB <0031.g1:/ A B />` :eq:`equal <0031.g1:< B A T ) = 0031.g1:< A M B )>` to the angle :g:`AMB <0031.g1:< A M B )>`. Hence :g:`AT <0031.g1:/ A T />` may be drawn. The construction of the circle :g:`AMB <0031.g1:( A M B )>` is therefore reduced to the problem of drawing a circle tangent to a given line :g:`AT <0031.g1:[ A T ]>` at a given point :g:`A <0031.g1:A>`, and passing through another given point :g:`B <0031.g1:B>`.
+
+If the condition that the point :g:`M <0031.g1:M>` is to lie on a given side of the line :g:`AB <0031.g1:[ A B ]>` is disregarded, the required locus consists of two arcs of circles congruent to each other and located on opposite sides of :g:`AB <0031.g1:/ A B />`.
 
 If the given angle is a right angle, the two arcs will be two semicircles of the same radius, and we have: *The locus of a point at which a given segment subtends a right angle is the circle having this segment for diameter.*
 
-LOCUS 8. *The locus of the midpoints of the chords of a given circle which pass through a fixed point is a circle when the point lies inside of or on the circle.*
+.. enunciation::
 
-Let :math:`P` (Fig. 9) be the given point, and :math:`M` the midpoint of a chord :math:`AB` of the given circle :math:`(O)`, the chord passing through the given point :math:`P`.
+   LOCUS 8. *The locus of the midpoints of the chords of a given circle which pass through a fixed point is a circle when the point lies inside of or on the circle.*
 
-.. picture:: 0032.g1.png
+Let :g:`P <0032.g1:P>` (Fig. 9) be the given point, and :g:`M <0032.g1:M>` the :eq:`midpoint <0032.g1:/ A M / = 0032.g1:/ M B />` of a chord :g:`AB <0032.g1:/ A B />` of the given circle :g:`(O) <0032.g1:( O )>`, the chord passing through the given point :g:`P <0032.g1:P>`.
+
+.. picture:: 0032.g1.svg
    :alt: Fig. 9 — Circle on diameter OP as locus of midpoints M of chords AB of circle (O) through P
    :caption: FIG. 9
 
-The segment :math:`OP` subtends a right angle at :math:`M`; hence :math:`M` lies on the circle having :math:`OP` for diameter (locus 7). On the other hand, any point :math:`M` of this circle joined to :math:`P` determines a chord of the circle :math:`(O)` which is perpendicular to :math:`OM` at :math:`M`. Hence :math:`M` is the midpoint of this chord and therefore belongs to the required locus.
+.. assertion:: [Locus 7]
+
+   The segment :g:`OP <0032.g1:/ O P />` subtends a :g:`right angle <0032.g1:< O M P )>` at :g:`M <0032.g1:M>`; hence :g:`M <0032.g1:M>` lies on the :g:`circle <0032.g1:( O P )>` having :g:`OP <0032.g1:/ O P />` for diameter (locus 7). On the other hand, any point :g:`M <0032.g1:M>` of this circle joined to :g:`P <0032.g1:P>` determines a :g:`chord <0032.g1:/ A B />` of the circle :g:`(O) <0032.g1:( O )>` which is perpendicular to :g:`OM <0032.g1:/ O M />` at :g:`M <0032.g1:M>`. Hence :g:`M <0032.g1:M>` is the :eq:`midpoint <0032.g1:/ A M / = 0032.g1:/ M B />` of this chord and therefore belongs to the required locus.
 
 .. folio:: 0033
    :page: 14
 
-If the point :math:`P` lies outside of :math:`(O)`, any point :math:`M` of the locus must lie on the circle having :math:`OP` for diameter, but not every point of this circle belongs to the locus. The locus consists of the part of the circle :math:`(OP)` which lies within the given circle :math:`(O)`.
+If the point :g:`P <0032.g1:P>` lies outside of :g:`(O) <0032.g1:( O )>`, any point :g:`M <0032.g1:M>` of the locus must lie on the :g:`circle <0032.g1:( O P )>` having :g:`OP <0032.g1:/ O P />` for diameter, but not every point of this circle belongs to the locus. The locus consists of the part of the circle :g:`(OP) <0032.g1:( O P )>` which lies within the given circle :g:`(O) <0032.g1:( O )>`.
 
-LOCUS 9. *The locus of the midpoints of all the chords of given length drawn in a given circle is a circle concentric with the given circle.*
+.. enunciation::
 
-.. picture:: 0033.g1.png
+   LOCUS 9. *The locus of the midpoints of all the chords of given length drawn in a given circle is a circle concentric with the given circle.*
+
+.. picture:: 0033.g1.svg
    :alt: Fig. 10 — Triangle ABM with median MO and altitude MD for Locus 10 (sum of squares of distances)
    :caption: FIG. 10
 
 The chords are all tangent to this circle at their respective midpoints.
 
-LOCUS 10. *The locus of a point the sum of the squares of whose distances from two given points is equal to a given constant is a circle having for center the midpoint of the given segment.*
+.. enunciation::
 
-Let :math:`M` (Fig. 10) be a point on the locus. Join :math:`M` to the midpoint :math:`O` of the segment :math:`AB` determined by the two given points :math:`A, B` and drop the perpendicular :math:`MD` from :math:`M` upon :math:`AB`. From the triangles :math:`AOM` and :math:`BOM` we have:
+   LOCUS 10. *The locus of a point the sum of the squares of whose distances from two given points is equal to a given constant is a circle having for center the midpoint of the given segment.*
+
+Let :g:`M <0033.g1:M>` (Fig. 10) be a point on the locus. Join :g:`M <0033.g1:M>` to the :eq:`midpoint <0033.g1:/ O A / = 0033.g1:/ O B />` :g:`O <0033.g1:O>` of the segment :g:`AB <0033.g1:/ A B />` determined by the two given points :g:`A <0033.g1:A>`, :g:`B <0033.g1:B>` and drop the perpendicular :g:`MD <0033.g1:/ M D />` from :g:`M <0033.g1:M>` upon :g:`AB <0033.g1:/ A B />`. From the triangles :g:`AOM <0033.g1:< A O M >>` and :g:`BOM <0033.g1:< B O M >>` we have:
 
 .. math::
 
@@ -414,34 +462,40 @@ hence, adding, we have:
 
    AM^2 + BM^2 = 2\,OM^2 + 2\,OA^2.
 
-Now :math:`AM^2 + BM^2` is, by assumption, equal to a given constant, say :math:`s^2`, and :math:`OA^2 = a^2`, where :math:`2a` represents the length of the known segment :math:`AB`. Hence:
+Now :math:`AM^2 + BM^2` is, by assumption, equal to a given constant, say :math:`s^2`, and :math:`OA^2 = a^2`, where :math:`2a` represents the length of the known segment :g:`AB <0033.g1:/ A B />`. Hence:
 
 .. math::
 
    (1) \qquad OM^2 = \tfrac{1}{2}\,s^2 - a^2.
 
-Thus the point :math:`M` lies at a fixed distance :math:`OM` from the fixed point :math:`O`, and therefore the locus of :math:`M` is a circle with :math:`O` as center.
+.. assertion::
 
-The radius :math:`OM` may be constructed from the formula (1) as follows. :math:`OM` is one leg of a right triangle which has for its other leg half the length of the given segment :math:`AB`, and for hypotenuse the side of a square whose diagonal is equal to :math:`s`.
+   Thus the point :g:`M <0033.g1:M>` lies at a fixed distance :g:`OM <0033.g1:/ O M />` from the fixed point :g:`O <0033.g1:O>`, and therefore the locus of :g:`M <0033.g1:M>` is a circle with :g:`O <0033.g1:O>` as center.
+
+The radius :g:`OM <0033.g1:/ O M />` may be constructed from the formula (1) as follows. :g:`OM <0033.g1:/ O M />` is one leg of a right triangle which has for its other leg half the length of the given segment :g:`AB <0033.g1:/ A B />`, and for hypotenuse the side of a square whose diagonal is equal to :math:`s`.
 
 .. folio:: 0034
    :page: 15
 
-LOCUS 11. *The locus of a point the ratio of whose distances from two fixed points is constant, is a circle, called the circle of* :person:`Apollonius <apollonius>`, *or the* :term:`Apollonian circle <apollonian-circle>`.
+.. enunciation::
 
-Let :math:`A, B` be the two given points (Fig. 11) and :math:`p : q` the given ratio. Let the points :math:`C, D` divide the segment :math:`AB` internally and externally in the given ratio, and let :math:`M` be any point of the locus. We have thus:
+   LOCUS 11. *The locus of a point the ratio of whose distances from two fixed points is constant, is a circle, called the circle of* :person:`Apollonius <apollonius>`, *or the* :term:`Apollonian circle <apollonian-circle>`.
+
+Let :g:`A <0034.g1:A>`, :g:`B <0034.g1:B>` be the two given points (Fig. 11) and :math:`p : q` the given ratio. Let the points :g:`C <0034.g1:C>`, :g:`D <0034.g1:D>` divide the segment :g:`AB <0034.g1:/ A B />` internally and externally in the given ratio, and let :g:`M <0034.g1:M>` be any point of the locus. We have thus:
 
 .. math::
 
    AC : CB = AD : DB = AM : MB = p : q.
 
-The lines :math:`MC, MD` divide the side :math:`AB` of the triangle :math:`ABM` internally and externally in the ratio of the sides :math:`MA, MB`; hence :math:`MC, MD` are the internal and external bisectors of the angle :math:`AMB`, and therefore are perpendicular to each other. Thus at any point :math:`M` of the required locus the known segment :math:`CD` subtends a right angle; hence :math:`M` lies on the circle having :math:`CD` for diameter (§ 11, locus 7).
+.. assertion:: [§ 11, Locus 7]
 
-.. picture:: 0034.g1.png
+   The lines :g:`MC <0034.g1:/ M C />`, :g:`MD <0034.g1:/ M D />` divide the side :g:`AB <0034.g1:/ A B />` of the triangle :g:`ABM <0034.g1:< A B M >>` internally and externally in the ratio of the sides :g:`MA <0034.g1:/ M A />`, :g:`MB <0034.g1:/ M B />`; hence :g:`MC <0034.g1:/ M C />`, :g:`MD <0034.g1:/ M D />` are the internal and external bisectors of the angle :g:`AMB <0034.g1:< A M B )>`, and therefore are perpendicular to each other. Thus at any point :g:`M <0034.g1:M>` of the required locus the known segment :g:`CD <0034.g1:/ C D />` subtends a :g:`right angle <0034.g1:< C M D )>`; hence :g:`M <0034.g1:M>` lies on the :g:`circle <0034.g1:( C D )>` having :g:`CD <0034.g1:/ C D />` for diameter (§ 11, locus 7).
+
+.. picture:: 0034.g1.svg
    :alt: Fig. 11 — Apollonian circle on diameter CD dividing AB internally and externally in ratio p : q
    :caption: FIG. 11
 
-CONVERSELY. Let us take any point :math:`M` on this circle and show that this point belongs to the required locus. Through the point :math:`B` draw the parallels :math:`BE, BF` to the lines :math:`MC, MD` meeting :math:`AM` in :math:`E, F`, respectively. We thus have:
+CONVERSELY. Let us take any point :g:`M <0034.g1:M>` on this :g:`circle <0034.g1:( C D )>` and show that this point belongs to the required locus. Through the point :g:`B <0034.g1:B>` draw the parallels :g:`BE <0034.g1:/ B E />`, :g:`BF <0034.g1:/ B F />` to the lines :g:`MC <0034.g1:/ M C />`, :g:`MD <0034.g1:/ M D />` meeting :g:`AM <0034.g1:[ A M ]>` in :g:`E <0034.g1:E>`, :g:`F <0034.g1:F>`, respectively. We thus have:
 
 .. math::
 
@@ -462,25 +516,27 @@ therefore:
 .. folio:: 0035
    :page: 16
 
-Thus :math:`M` is the midpoint of the segment :math:`EF`. But :math:`EBF` is a right angle, for its sides are parallel to the sides of the right angle :math:`CMD`, and in the right triangle :math:`EBF` the line :math:`MB` is equal to half the hypotenuse :math:`EF`; hence, replacing in the first proportion of (1) the segment :math:`ME` by the equal segment :math:`MB`, we obtain:
+Thus :g:`M <0034.g1:M>` is the :eq:`midpoint <0034.g1:/ M E / = 0034.g1:/ M F />` of the segment :g:`EF <0034.g1:/ E F />`. But :g:`EBF <0034.g1:< E B F )>` is a right angle, for its sides are parallel to the sides of the right angle :g:`CMD <0034.g1:< C M D )>`, and in the right triangle :g:`EBF <0034.g1:< E B F >>` the line :g:`MB <0034.g1:/ M B />` is :eq:`equal <0034.g1:/ M B / = 0034.g1:/ M E / = 0034.g1:/ M F />` to half the hypotenuse :g:`EF <0034.g1:/ E F />`; hence, replacing in the first proportion of (1) the segment :g:`ME <0034.g1:/ M E />` by the :eq:`equal <0034.g1:/ M E / = 0034.g1:/ M B />` segment :g:`MB <0034.g1:/ M B />`, we obtain:
 
 .. math::
 
    AM : MB = AC : CB = p : q,
 
-which shows that :math:`M` belongs to the locus.
+which shows that :g:`M <0034.g1:M>` belongs to the locus.
 
-Where, in this converse proof, has the fact been used that :math:`M` is a point of the circle?
+Where, in this converse proof, has the fact been used that :g:`M <0034.g1:M>` is a point of the :g:`circle <0034.g1:( C D )>`?
 
-*Note.* The point :math:`C` divides the segment :math:`AB` internally so that :math:`AC : CB = p : q`. But we may also construct the point :math:`C'` such that :math:`BC' : C'A = p : q`. Similarly for the external point of division. Thus the locus actually consists of two :term:`Apollonian circles <apollonian-circle>`, unless the order in which the two given points are to be taken is specified in the statement of the locus. In actual applications the nature of the problem often indicates the order in which the points are to be considered.
+*Note.* The point :g:`C <0034.g1:C>` divides the segment :g:`AB <0034.g1:/ A B />` internally so that :math:`AC : CB = p : q`. But we may also construct the point :math:`C'` such that :math:`BC' : C'A = p : q`. Similarly for the external point of division. Thus the locus actually consists of two :term:`Apollonian circles <apollonian-circle>`, unless the order in which the two given points are to be taken is specified in the statement of the locus. In actual applications the nature of the problem often indicates the order in which the points are to be considered.
 
-.. picture:: 0035.g1.png
+.. picture:: 0035.g1.svg
    :alt: Fig. 12 — Perpendicular MC to line AB for Locus 12 (constant difference of squares AM^2 - BM^2 = d^2)
    :caption: FIG. 12
 
-LOCUS 12. *The locus of a point the difference of the squares of whose distances from two given points is constant, is a straight line perpendicular to the line joining the given points.*
+.. enunciation::
 
-Let :math:`A, B` (Fig. 12) be the two given points, and let :math:`M` be a point such that:
+   LOCUS 12. *The locus of a point the difference of the squares of whose distances from two given points is constant, is a straight line perpendicular to the line joining the given points.*
+
+Let :g:`A <0035.g1:A>`, :g:`B <0035.g1:B>` (Fig. 12) be the two given points, and let :g:`M <0035.g1:M>` be a point such that:
 
 .. math::
 
@@ -488,7 +544,7 @@ Let :math:`A, B` (Fig. 12) be the two given points, and let :math:`M` be a point
 
 where :math:`d` is given.
 
-If :math:`MC` is the perpendicular from :math:`M` to :math:`AB`, we have from right triangles:
+If :g:`MC <0035.g1:/ M C />` is the perpendicular from :g:`M <0035.g1:M>` to :g:`AB <0035.g1:/ A B />`, we have from :g:`right triangles <0035.g1:< A C M >; 0035.g1:< B C M >>`:
 
 .. math::
 
@@ -509,15 +565,17 @@ or:
 .. folio:: 0036
    :page: 17
 
-and therefore, denoting :math:`AC + BC = AB` by :math:`a`:
+and therefore, denoting :g:`AC <0035.g1:/ A C />` + :g:`BC <0035.g1:/ B C />` = :g:`AB <0035.g1:/ A B />` by :math:`a`:
 
 .. math::
 
    AC - BC = d^2 \div a.
 
-This equality gives the difference of the segments :math:`AC` and :math:`BC`, while the sum of these segments is equal to :math:`a`. Thus these segments may be constructed, and the point :math:`C` located on the line :math:`AB`. Hence the foot :math:`C` of the perpendicular dropped upon :math:`AB` from any point :math:`M` of the locus is a fixed point of :math:`AB`. Consequently the point :math:`M` lies on the perpendicular to the line :math:`AB` at the point :math:`C`. It is readily shown that, conversely, every point of this perpendicular belongs to the locus.
+.. assertion::
 
-*Note.* We will obtain a different line for the locus of :math:`M` if we consider that :math:`BM^2 - AM^2 = d^2`. In fact, the locus actually consists of two straight lines, unless the order in which the two given points are to be considered is specified in the statement of the locus.
+   This equality gives the difference of the segments :g:`AC <0035.g1:/ A C />` and :g:`BC <0035.g1:/ B C />`, while the sum of these segments is equal to :math:`a`. Thus these segments may be constructed, and the point :g:`C <0035.g1:C>` located on the line :g:`AB <0035.g1:[ A B ]>`. Hence the foot :g:`C <0035.g1:C>` of the perpendicular dropped upon :g:`AB <0035.g1:/ A B />` from any point :g:`M <0035.g1:M>` of the locus is a fixed point of :g:`AB <0035.g1:/ A B />`. Consequently the point :g:`M <0035.g1:M>` lies on the :g:`perpendicular <0035.g1:[ M C ]>` to the line :g:`AB <0035.g1:[ A B ]>` at the point :g:`C <0035.g1:C>`. It is readily shown that, conversely, every point of this :g:`perpendicular <0035.g1:[ M C ]>` belongs to the locus.
+
+*Note.* We will obtain a different line for the locus of :g:`M <0035.g1:M>` if we consider that :math:`BM^2 - AM^2 = d^2`. In fact, the locus actually consists of two straight lines, unless the order in which the two given points are to be considered is specified in the statement of the locus.
 
 EXERCISES
 ~~~~~~~~~
@@ -529,76 +587,86 @@ EXERCISES
 
 The following are examples of the use of loci in the solution of problems.
 
-**12. Problem.** *Draw a circle passing through two given points and subtending a given angle at a third given point.*
+.. enunciation::
 
-ANALYSIS. Let :math:`(O)` be the required circle passing through the two given points :math:`A, B` (Fig. 13). The angle formed by the tangents :math:`CT, CT'` from the given point :math:`C` to :math:`(O)` is given; hence in the right triangle :math:`OTC` we know the acute angle :math:`OCT`, i.e., we know the shape of this triangle. Thus the ratio :math:`OT : OC` is known, therefore also the ratios:
+   **12. Problem.** *Draw a* :g:`circle <0037.g1:( O )>` *passing through two given* :g:`points <0037.g1:A; 0037.g1:B>` *and subtending a given* :g:`angle <0037.g1:< T C T' )>` *at a third given* :g:`point <0037.g1:C>`\ *.*
+
+ANALYSIS. Let :g:`(O) <0037.g1:( O )>` be the required circle passing through the two given points :g:`A <0037.g1:A>`, :g:`B <0037.g1:B>` (Fig. 13). The :g:`angle <0037.g1:< T C T' )>` formed by the tangents :g:`CT <0037.g1:/ C T />`, :g:`CT' <0037.g1:/ C T' />` from the given point :g:`C <0037.g1:C>` to :g:`(O) <0037.g1:( O )>` is given; hence in the right triangle :g:`OTC <0037.g1:< O T C >>` we know the acute angle :g:`OCT <0037.g1:< O C T )>`, i.e., we know the shape of this triangle. Thus the ratio :g:`OT <0037.g1:/ O T />` :math:`:` :g:`OC <0037.g1:/ O C />` is known, therefore also the ratios:
 
 .. math::
 
    OA : OC = OB : OC.
 
-Consequently we have two loci for the point :math:`O` (two :term:`Apollonian circles <apollonian-circle>`), and the point may be found.
+.. assertion:: [§ 11, Locus 11]
+
+   Consequently we have two loci for the point :g:`O <0037.g1:O>` (two :term:`Apollonian circles <apollonian-circle>`), and the point may be found.
 
 .. folio:: 0037
    :page: 18
 
-.. picture:: 0037.g1.png
+.. picture:: 0037.g1.svg
    :alt: Fig. 13 — Circle (O) through A and B subtending given angle at C via intersection of two Apollonian circles
    :caption: FIG. 13
 
-CONSTRUCTION. On the internal bisector :math:`PQ` of the given angle :math:`P` take an arbitrary point :math:`Q` and drop the perpendicular :math:`QR` upon one of the sides. Divide each of the two given segments :math:`AC, BC` internally and externally in the ratio :math:`QR : QP` in the points :math:`E, F` and :math:`G, H`, respectively. A point :math:`O` common to the two circles having :math:`EF` and :math:`GH` for diameters is the center of the required circle.
+CONSTRUCTION. On the internal bisector :math:`PQ` of the given angle :math:`P` take an arbitrary point :math:`Q` and drop the perpendicular :math:`QR` upon one of the sides. Divide each of the two given segments :g:`AC <0037.g1:/ A C />`, :g:`BC <0037.g1:/ B C />` internally and externally in the ratio :math:`QR : QP` in the points :math:`E, F` and :math:`G, H`, respectively. A point :g:`O <0037.g1:O>` common to the two circles having :math:`EF` and :math:`GH` for diameters is the center of the :g:`required circle <0037.g1:( O )>`.
 
 The proof and the discussion are left to the student.
 
-**13. Problem.** *Through two given points of a circle to draw two parallel chords whose sum shall have a given length.*
+.. enunciation::
 
-ANALYSIS. Let :math:`A, B` be the two given points of the circle, center :math:`O`, and let :math:`AC, BD` be the two required chords. In the isosceles trapezoid :math:`ABDC` (Fig. 14) :math:`CD = AB`, and the length :math:`AB` is known; hence :math:`CD` is tangent to a known circle having :math:`O` for center and touching :math:`CD` at its midpoint :math:`F` (§ 11, locus 9).
+   **13. Problem.** *Through two given* :g:`points <0038.g1:A; 0038.g1:B>` *of a* :g:`circle <0038.g1:( O )>` *to draw two parallel* :g:`chords <0038.g1:/ A C /; 0038.g1:/ B D />` *whose sum shall have a given length.*
 
-If :math:`E` is the midpoint of :math:`AB` we have:
+ANALYSIS. Let :g:`A <0038.g1:A>`, :g:`B <0038.g1:B>` be the two given points of the :g:`circle <0038.g1:( O )>`, center :g:`O <0038.g1:O>`, and let :g:`AC <0038.g1:/ A C />`, :g:`BD <0038.g1:/ B D />` be the two required chords. In the isosceles trapezoid :g:`ABDC <0038.g1:< A B D C >>` (Fig. 14) :eq:`CD = AB <0038.g1:/ C D / = 0038.g1:/ A B />`, and the length :g:`AB <0038.g1:/ A B />` is known; hence :g:`CD <0038.g1:/ C D />` is tangent to a :g:`known circle <0038.g1:( O E )>` having :g:`O <0038.g1:O>` for center and touching :g:`CD <0038.g1:/ C D />` at its midpoint :g:`F <0038.g1:F>` (§ 11, locus 9).
+
+If :g:`E <0038.g1:E>` is the midpoint of :g:`AB <0038.g1:/ A B />` we have:
 
 .. math::
 
    2\,EF = AC + BD.
 
-Now the point :math:`E` and the length :math:`AC + BD` are known; hence we have a second locus for the point :math:`F`.
+Now the point :g:`E <0038.g1:E>` and the length :math:`AC + BD` are known; hence we have a :g:`second locus <0038.g1:( E F )>` for the point :g:`F <0038.g1:F>`.
 
-CONSTRUCTION. Draw the circle :math:`(O, OE)`. If :math:`2s` is the given length, draw the circle :math:`(E, s)` meeting :math:`(O, OE)` in :math:`F`. The tangent to :math:`(O, OE)` at :math:`F` meets the given circle :math:`(O)` in :math:`C` and :math:`D`. The lines :math:`AC, BD` are the required chords.
+CONSTRUCTION. Draw the circle :g:`(O, OE) <0038.g1:( O E )>`. If :math:`2s` is the given length, draw the circle :g:`(E, s) <0038.g1:( E F )>` meeting :g:`(O, OE) <0038.g1:( O E )>` in :g:`F <0038.g1:F>`. The :g:`tangent <0038.g1:/ C D />` to :g:`(O, OE) <0038.g1:( O E )>` at :g:`F <0038.g1:F>` meets the given circle :g:`(O) <0038.g1:( O )>` in :g:`C <0038.g1:C>` and :g:`D <0038.g1:D>`. The lines :g:`AC <0038.g1:/ A C />`, :g:`BD <0038.g1:/ B D />` are the required chords.
 
-PROOF. The two chords :math:`AB, CD` are equal, for they are equidistant from the center :math:`O` of the given circle :math:`(O)`. Hence :math:`ABDC` is an isosceles trapezoid, and therefore:
+.. assertion:: [§ 11, Locus 9]
 
-.. math::
+   PROOF. The two chords :g:`AB <0038.g1:/ A B />`, :g:`CD <0038.g1:/ C D />` are :eq:`equal <0038.g1:/ A B / = 0038.g1:/ C D />`, for they are equidistant from the center :g:`O <0038.g1:O>` of the given circle :g:`(O) <0038.g1:( O )>`. Hence :g:`ABDC <0038.g1:< A B D C >>` is an isosceles trapezoid, and therefore:
 
-   AC + BD = 2\,EF.
+   .. math::
 
-Now :math:`EF = s`, by construction; hence :math:`AC + BD` has the required length.
+      AC + BD = 2\,EF.
+
+   Now :math:`EF = s`, by construction; hence :math:`AC + BD` has the required length.
 
 .. folio:: 0038
    :page: 19
 
-DISCUSSION. The circle :math:`(E, s)` will not cut the circle :math:`(O, OE)`, if :math:`s` is greater than :math:`2\,OE`. If :math:`s < 2\,OE`, we obtain two points of intersection :math:`F` and :math:`F'`, and therefore two solutions.
+DISCUSSION. The circle :g:`(E, s) <0038.g1:( E F )>` will not cut the circle :g:`(O, OE) <0038.g1:( O E )>`, if :math:`s` is greater than :math:`2\,OE`. If :math:`s < 2\,OE`, we obtain two points of intersection :g:`F <0038.g1:F>` and :g:`F' <0038.g1:Fprime>`, and therefore :g:`two solutions <0038.g1:< A B D C >; 0038.g1:< A B D' C' >>`.
 
-The tangent to the circle :math:`(O, OE)` at :math:`F` determines the two points :math:`C, D` on the circle :math:`(O)`. These two points and the given points :math:`A, B` determine four lines, namely two sides and the two diagonals of the isosceles trapezoid. The figure will show which two of these four lines are those required.
+The :g:`tangent <0038.g1:/ C D />` to the circle :g:`(O, OE) <0038.g1:( O E )>` at :g:`F <0038.g1:F>` determines the two points :g:`C <0038.g1:C>`, :g:`D <0038.g1:D>` on the circle :g:`(O) <0038.g1:( O )>`. These two points and the given points :g:`A <0038.g1:A>`, :g:`B <0038.g1:B>` determine four lines, namely two sides and the two diagonals of the :g:`isosceles trapezoid <0038.g1:< A B D C >>`. The figure will show which two of these four lines are those required.
 
-.. picture:: 0038.g1.png
+.. picture:: 0038.g1.svg
    :alt: Fig. 14 — Isosceles trapezoid ABDC inscribed in circle (O) with midline EF = s tangent to (O, OE)
    :caption: FIG. 14
 
-.. picture:: 0038.g2.png
+.. picture:: 0038.g2.svg
    :alt: Fig. 15 — Crossed-trapezoid regime when s < EG so tangent at F crosses chord AB
    :caption: FIG. 15
 
-Let :math:`G` (Fig. 15) be the point of contact of the second tangent issued from :math:`A` to the circle :math:`(O, OE)`. If :math:`s < EG`, the tangent to :math:`(O, OE)` at :math:`F` will cross the chord :math:`AB`, and in the resulting trapezoid the line :math:`AB` will be a diagonal. The line :math:`EF` is equal to one-half the difference of the two bases.
+Let :g:`G <0038.g2:G>` (Fig. 15) be the point of contact of the :g:`second tangent <0038.g2:/ A G />` issued from :g:`A <0038.g2:A>` to the circle :g:`(O, OE) <0038.g2:( O E )>`. If :math:`s < EG`, the :g:`tangent <0038.g2:/ C D />` to :g:`(O, OE) <0038.g2:( O E )>` at :g:`F <0038.g2:F>` will cross the chord :g:`AB <0038.g2:/ A B />`, and in the :g:`resulting trapezoid <0038.g2:< A C B D >>` the line :g:`AB <0038.g2:/ A B />` will be a diagonal. The line :g:`EF <0038.g2:/ E F />` is equal to one-half the difference of the :g:`two bases <0038.g2:/ A C /; 0038.g2:/ B D />`.
 
 Consider the case when the two chords are required to have a given difference.
 
-**14. Problem.** *On a given circle to find a point such that the lines joining it to two given points on this circle shall meet a given line in two points the ratio of whose distances from a given point on this line shall have a given value.*
+.. enunciation::
 
-Let the lines :math:`AM, BM` joining the given points :math:`A, B` on the circle to the required point :math:`M` meet the given line :math:`FPQ` in the points :math:`P, Q` (Fig. 16). If :math:`F` is the given fixed point and the parallel :math:`QL` to :math:`MA` through :math:`Q` meets the line :math:`FA` in :math:`L`, we have angle :math:`LQB = AMB`, and the latter angle is known, for the chord :math:`AB` is given.
+   **14. Problem.** *On a given* :g:`circle <0039.g1:( A B M )>` *to find a* :g:`point <0039.g1:M>` *such that the* :g:`lines <0039.g1:[ A M ]; 0039.g1:[ B M ]>` *joining it to two given* :g:`points <0039.g1:A; 0039.g1:B>` *on this circle shall meet a given* :g:`line <0039.g1:[ F P Q ]>` *in two* :g:`points <0039.g1:P; 0039.g1:Q>` *the ratio of whose distances from a given* :g:`point <0039.g1:F>` *on this line shall have a given value.*
+
+Let the lines :g:`AM <0039.g1:[ A M ]>`, :g:`BM <0039.g1:[ B M ]>` joining the given points :g:`A <0039.g1:A>`, :g:`B <0039.g1:B>` on the :g:`circle <0039.g1:( A B M )>` to the required point :g:`M <0039.g1:M>` meet the given line :g:`FPQ <0039.g1:[ F P Q ]>` in the points :g:`P <0039.g1:P>`, :g:`Q <0039.g1:Q>` (Fig. 16). If :g:`F <0039.g1:F>` is the given fixed point and the parallel :g:`QL <0039.g1:/ Q L />` to :g:`MA <0039.g1:/ A M />` through :g:`Q <0039.g1:Q>` meets the line :g:`FA <0039.g1:[ F A ]>` in :g:`L <0039.g1:L>`, we have angle :eq:`LQB = AMB <0039.g1:< L Q B ) = 0039.g1:< A M B )>`, and the latter angle is known, for the chord :g:`AB <0039.g1:/ A B />` is given.
 
 .. folio:: 0039
    :page: 20
 
-.. picture:: 0039.g1.png
+.. picture:: 0039.g1.svg
    :alt: Fig. 16 — Point M on circle projecting A, B onto line FPQ with given ratio FQ : FP via capable arc on LB
    :caption: FIG. 16
 
@@ -608,7 +676,9 @@ On the other hand we have:
 
    FL : FA = FQ : FP,
 
-and the second ratio is given; hence the point :math:`L` is known. Thus the known segment :math:`LB` subtends a given angle at the point :math:`Q`, which gives a locus for this point (§ 11, locus 7). The point :math:`Q` lies at the intersection of this locus with the given line :math:`FPQ`. The line :math:`BQ` meets the circle in the required point :math:`M`.
+.. assertion:: [§ 11, Locus 7]
+
+   and the second ratio is given; hence the point :g:`L <0039.g1:L>` is known. Thus the known segment :g:`LB <0039.g1:/ L B />` subtends a :g:`given angle <0039.g1:< L Q B )>` at the point :g:`Q <0039.g1:Q>`, which gives a locus for this point (§ 11, locus 7). The point :g:`Q <0039.g1:Q>` lies at the intersection of this locus with the given line :g:`FPQ <0039.g1:[ F P Q ]>`. The line :g:`BQ <0039.g1:[ B Q ]>` meets the :g:`circle <0039.g1:( A B M )>` in the required point :g:`M <0039.g1:M>`.
 
 The proof and discussion are left to the reader.
 
@@ -656,15 +726,17 @@ D. INDIRECT ELEMENTS
 
 Among the conditions which a figure to be constructed may be required to satisfy, elements may be given which do not occur directly in the figure in question. For instance, it may be required that the sum of two sides of a triangle shall have a given length, or that the difference of the base angles shall have a given magnitude, etc. In order to arrive at a method of solution of such a problem, it is necessary to introduce this “:term:`indirect element <indirect-elements>`” in the analysis of the problem.
 
-**15. Problem.** *Construct a triangle given the perimeter, the angle opposite the base, and the altitude to the base* :math:`(2p, A, h_a)`.
+.. enunciation::
 
-.. picture:: 0040.g1.png
+   **15. Problem.** *Construct a* :g:`triangle <0040.g1:< A B C >>` *given the* :g:`perimeter <0040.g1:/ E F />`\ *, the* :g:`angle <0040.g1:< B A C )>` *opposite the* :g:`base <0040.g1:/ B C />`\ *, and the* :g:`altitude <0040.g1:/ A D />` *to the base* :math:`(2p, A, h_a)`.
+
+.. picture:: 0040.g1.svg
    :alt: Fig. 17 — Auxiliary triangle AEF of base EF = 2p unfolded from triangle ABC by laying off BE = BA and CF = CA
    :caption: FIG. 17
 
-Let :math:`ABC` (Fig. 17) be the required triangle. Produce :math:`BC` on both sides and lay off :math:`BE = BA`, :math:`CF = CA`. Thus :math:`EF = 2p`.
+Let :g:`ABC <0040.g1:< A B C >>` (Fig. 17) be the required triangle. Produce :g:`BC <0040.g1:[ B C ]>` on both sides and lay off :eq:`BE = BA <0040.g1:/ B E / = 0040.g1:/ B A />`, :eq:`CF = CA <0040.g1:/ C F / = 0040.g1:/ C A />`. Thus :g:`EF <0040.g1:/ E F />` :math:`= 2p`.
 
-The triangles :math:`EAB, FCA` are isosceles, hence:
+The triangles :g:`EAB <0040.g1:< E A B >>`, :g:`FCA <0040.g1:< F C A >>` are isosceles, hence:
 
 .. math::
 
