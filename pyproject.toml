@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geometor-altshiller-court"
+authors = [{name = "phi ARCHITECT", email = "phi@geometor.com"}]
+description = "Digital scholarly edition and constructive analysis of Nathan Altshiller-Court's College Geometry (1952)."
+readme = "README.rst"
+requires-python = ">=3.11"
+dynamic = ["version"]
+dependencies = [
+    "Pillow",
+    "PyYAML",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[project.scripts]
+altshiller-court = "geometor.altshiller_court.__main__:main"
+geometor-altshiller-court = "geometor.altshiller_court.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["geometor*"]
+namespaces = true
+
+[tool.setuptools.dynamic]
+version = {attr = "geometor.altshiller_court.__version__"}
