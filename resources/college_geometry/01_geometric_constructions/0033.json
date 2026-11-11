@@ -1,0 +1,19 @@
+{
+  "folio": "0033",
+  "page": "14",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0033.g1.png",
+      "bbox": [
+        406,
+        488,
+        612,
+        386
+      ],
+      "caption": "Fig. 10. Locus of a point M the sum of the squares of whose distances from A and B is constant (\u00a7 11, Locus 10).",
+      "white_point": 238
+    }
+  ]
+}

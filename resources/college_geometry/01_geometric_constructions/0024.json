@@ -1,0 +1,19 @@
+{
+  "folio": "0024",
+  "page": "5",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0024.g1.png",
+      "bbox": [
+        407,
+        1018,
+        608,
+        488
+      ],
+      "caption": "Fig. 2. Secant MBA from external point M cutting circle (O) so that central angle AOB equals angle M (\u00a7 6).",
+      "white_point": 238
+    }
+  ]
+}

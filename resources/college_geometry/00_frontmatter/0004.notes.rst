@@ -1,0 +1,27 @@
+Folio 0004 (Page [v]) — Diplomatic & Mathematical Notes
+=======================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0003 (Page [iv], Copyright)
+- **Current Folio** (``0004.rst``): Page ``[v]``, Frontmatter [``00_frontmatter``] — Status: ``ok``
+- **Following Folio**: Folio 0005 (Page [vi], Blank Verso)
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: Unnumbered dedication recto (printed page ``[v]``): ``To My Wife``.
+- **Document Headings on Folio**: ``To My Wife``
+- **Line-Break Hyphenations Resolved**: None
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+Dedicated to Sophie Altshiller-Court (née Taylor), Nathan Altshiller-Court's wife and collaborator.
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``00_frontmatter/0004.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan)

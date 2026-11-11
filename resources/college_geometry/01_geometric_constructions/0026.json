@@ -1,0 +1,32 @@
+{
+  "folio": "0026",
+  "page": "7",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0026.g1.png",
+      "bbox": [
+        95,
+        1248,
+        585,
+        424
+      ],
+      "caption": "Fig. 4. Points P, Q on circles (A), (B) at given distance m and given direction \u2014 Analysis (\u00a7 8).",
+      "white_point": 238
+    },
+    {
+      "id": "g2",
+      "type": "diagram",
+      "file": "0026.g2.png",
+      "bbox": [
+        720,
+        1225,
+        606,
+        439
+      ],
+      "caption": "Fig. 5. Four solutions for points on circles (A), (B) at given distance and direction (\u00a7 8).",
+      "white_point": 238
+    }
+  ]
+}

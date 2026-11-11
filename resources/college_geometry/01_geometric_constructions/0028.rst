@@ -1,0 +1,25 @@
+:folio: 0028
+:page: 9
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: General Method of Solution — p. 9 (§§ 9–10, Fig. 7)
+:language: en
+:status: ok
+
+.. picture:: 0028.g1.png
+   :alt: Fig. 7 — Six-solution configuration of squares passing through four given points A, B, C, D
+   :caption: FIG. 7
+
+PROOF. From the construction it follows immediately that :math:`PQRS` is a rectangle whose sides pass respectively through the given points :math:`A, B, C, D`.
+
+To show that this rectangle is a square we consider again the triangles :math:`PQL, QRK`, and, as in the analysis, we show that they are equiangular. Now :math:`DF = AC`, by construction; hence :math:`QL = QK`; therefore the triangles are congruent, and :math:`QP = QR`.
+
+DISCUSSION. We obtain a second solution if we make the symmetric :math:`F'` of :math:`F` with respect to :math:`D` play the role of the point :math:`F`.
+
+Moreover, the perpendicular from :math:`D` may also be dropped upon either of the other two sides :math:`AB, BC` of the triangle :math:`ABC`, and we will obtain two more pairs of solutions. The problem thus has, in general, six different solutions. It is, of course, immaterial to which of the four given points we assign the role of the point :math:`D`.
+
+Should the point :math:`F` happen to coincide with :math:`B`, the direction of the line :math:`BF` becomes indeterminate, that is, any line through :math:`B` may be taken as a side of the required square, and the figure completed accordingly. Thus if the segment joining two of the four given points is equal to and perpendicular to the segment joining the remaining two points, the problem has an infinite number of solutions.
+
+Figure 7 presents the case when the problem has six solutions.
+
+**10. Suggestions.** The figure for the analysis may be drawn freehand and the given elements arranged as conveniently as possible to give a correct idea of the problem and to exhibit the existing interrelations between the elements involved.

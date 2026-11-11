@@ -1,0 +1,19 @@
+{
+  "folio": "0039",
+  "page": "20",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0039.g1.png",
+      "bbox": [
+        409,
+        162,
+        608,
+        553
+      ],
+      "caption": "Fig. 16. Point M on circle (A, B) whose joins AM, BM cut line FPQ in given ratio FP : FQ from F (\u00a7 14).",
+      "white_point": 238
+    }
+  ]
+}

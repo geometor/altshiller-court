@@ -1,0 +1,19 @@
+{
+  "folio": "0035",
+  "page": "16",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0035.g1.png",
+      "bbox": [
+        419,
+        1020,
+        585,
+        368
+      ],
+      "caption": "Fig. 12. Perpendicular line locus of a point M where AM\u00b2 - BM\u00b2 = d\u00b2 is constant (\u00a7 11, Locus 12).",
+      "white_point": 238
+    }
+  ]
+}

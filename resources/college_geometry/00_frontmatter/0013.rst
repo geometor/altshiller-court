@@ -1,0 +1,68 @@
+:folio: 0013
+:page: xiv
+:book: Frontmatter
+:section: 00_frontmatter
+:title: Contents (concluded) — p. xiv
+:language: en
+:status: ok
+
+.. list-table::
+   :widths: 82 18
+   :header-rows: 0
+
+   * - **9  INVERSION**
+     - 230
+   * -  Exercises
+     - 242
+   * - **10  RECENT GEOMETRY OF THE TRIANGLE**
+     - 244
+   * -  A. Poles and Polars with Respect to a Triangle
+     - 244
+   * -   Exercises
+     - 246
+   * -  B. Lemoine Geometry
+     - 247
+   * -   a. Symmedians
+     - 247
+   * -    Exercises
+     - 252
+   * -   b. The Lemoine Point
+     - 252
+   * -    Exercises
+     - 256
+   * -   c. The Lemoine Circles
+     - 257
+   * -    Exercises
+     - 260
+   * -  C. The Apollonian Circles
+     - 260
+   * -   Exercises
+     - 266
+   * -  D. Isogonal Lines
+     - 267
+   * -   Exercises
+     - 269, 273
+   * -  E. Brocard Geometry
+     - 274
+   * -   a. The Brocard Points
+     - 274
+   * -    Exercises
+     - 278
+   * -   b. The Brocard Circle
+     - 279
+   * -    Exercises
+     - 284
+   * -  F. Tucker Circles
+     - 284
+   * -  G. The Orthopole
+     - 287
+   * -   Exercises
+     - 291
+   * -   Supplementary Exercises
+     - 291
+   * - **HISTORICAL AND BIBLIOGRAPHICAL NOTES**
+     - 295
+   * - **LIST OF NAMES**
+     - 307
+   * - **INDEX**
+     - 310

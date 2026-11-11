@@ -1,0 +1,19 @@
+{
+  "folio": "0032",
+  "page": "13",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0032.g1.png",
+      "bbox": [
+        451,
+        1291,
+        518,
+        514
+      ],
+      "caption": "Fig. 9. Circular locus of the midpoints M of chords AB of circle (O) passing through a fixed point P (\u00a7 11, Locus 8).",
+      "white_point": 238
+    }
+  ]
+}

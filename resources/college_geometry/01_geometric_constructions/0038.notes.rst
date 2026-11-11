@@ -1,0 +1,33 @@
+Folio 0038 (Page 19) — Diplomatic & Mathematical Notes
+======================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0037 (Page 18, §§ 12–13)
+- **Current Folio** (``0038.rst``): Page ``19``, Chapter I [``01_geometric_constructions``] — Status: ``ok``
+- **Following Folio**: Folio 0039 (Page 20, Fig. 16, conclusion of § 14, and Exercises 1–16)
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: Page ``19`` (running header ``Ch. I, §§ 13, 14] / GEOMETRIC LOCI / 19``), presenting the Discussion of § 13 with side-by-side ``FIG. 14`` (``0038.g1.png``) and ``FIG. 15`` (``0038.g2.png``), and starting § 14 (*Problem*).
+- **Document Headings on Folio**: ``14. Problem.``
+- **Line-Break Hyphenations Resolved**: ``intersec-tion``
+
+Calibrated Diagrams on Folio
+----------------------------
+
+- ``0038.g1.png`` (bbox ``[107, 458, 607, 619]``, white-point ``238``): Fig. 14. Parallel chords AC, BD through A, B in circle (O) having a given sum 2s (§ 13).
+- ``0038.g2.png`` (bbox ``[732, 543, 593, 530]``, white-point ``238``): Fig. 15. Case where tangent crosses chord AB, yielding difference of bases 2EF (§ 13).
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+Raw OCR misread ``2 OE`` as ``2 OR`` and ``FIG. 15`` as ``FIG. 16``; verified against ``0038.png``. Note the topological transition at :math:`s = EG` in § 13: when :math:`s < EG`, the parallel chords cross inside the circle so that :math:`2\,EF = |AC - BD|` instead of :math:`AC + BD`, immediately solving the companion difference problem!
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``01_geometric_constructions/0038.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan)

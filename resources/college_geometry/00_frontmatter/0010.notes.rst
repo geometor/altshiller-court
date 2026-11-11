@@ -1,0 +1,27 @@
+Folio 0010 (Page xi) — Diplomatic & Mathematical Notes
+======================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0009 (Page [x], Blank Verso)
+- **Current Folio** (``0010.rst``): Page ``xi``, Frontmatter [``00_frontmatter``] — Status: ``ok``
+- **Following Folio**: Folio 0011 (Page xii, Contents continued)
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: First page of ``CONTENTS`` (printed page ``xi``), listing Frontmatter, Chapter 1 (*Geometric Constructions*), Chapter 2 (*Similitude and Homothecy*), and Chapter 3 sections A–B.
+- **Document Headings on Folio**: ``CONTENTS``
+- **Line-Break Hyphenations Resolved**: None
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+Formatted as a clean two-column alignment preserving the hierarchy and multi-page exercise locators of the 1952 print.
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``00_frontmatter/0010.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan)

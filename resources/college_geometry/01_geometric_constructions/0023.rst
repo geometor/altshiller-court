@@ -1,0 +1,41 @@
+:folio: 0023
+:page: 4
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: General Method of Solution — p. 4 (§§ 5–6, Fig. 1)
+:language: en
+:status: ok
+
+.. picture:: 0023.g1.png
+   :alt: Fig. 1 — Secant CA'B' meeting parallel lines x, y so that AA' : BB' = p : q
+   :caption: FIG. 1
+
+ANALYSIS. Let :math:`CA'B'` be the required line, so that (Fig. 1):
+
+.. math::
+
+   AA' : BB' = p : q,
+
+and let :math:`O = (AB, A'B')`. The two triangles :math:`OAA', OBB'` are similar; hence:
+
+.. math::
+
+   AO : BO = AA' : BB'.
+
+But the latter ratio is known; hence the point :math:`O` divides the given segment :math:`AB` in the given ratio :math:`p : q`. Thus we may construct :math:`O`, and :math:`OC` is the required line.
+
+CONSTRUCTION. Construct the point :math:`O` such that:
+
+.. math::
+
+   AO : BO = p : q.
+
+The points :math:`O` and :math:`C` determine the required line.
+
+PROOF. Left to the student.
+
+DISCUSSION. There are two points, :math:`O` and :math:`O'`, which divide the given segment :math:`AB` in the given ratio :math:`p : q`, one externally and the other internally, and we can always construct these two points; hence the problem has two solutions if neither of the lines :math:`CO, CO'` is parallel to the lines :math:`x, y`.
+
+Consider the case when :math:`p = q`.
+
+**6. Problem.** *Through a given point, outside a given circle, to draw a secant so that the chord intercepted on it by the circle shall subtend at the center an angle equal to the acute angle between the required secant and the diameter, produced, passing through the given point.*

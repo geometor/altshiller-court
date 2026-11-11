@@ -1,0 +1,27 @@
+Folio 0008 (Page ix) — Diplomatic & Mathematical Notes
+======================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0007 (Page viii, Preface)
+- **Current Folio** (``0008.rst``): Page ``ix``, Frontmatter [``00_frontmatter``] — Status: ``ok``
+- **Following Folio**: Folio 0009 (Page [x], Blank Verso)
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: Recto page ``ix`` (``ACKNOWLEDGMENTS``), thanking J. H. Butchart, L. Wayne Johnson, Arthur Bernhart, and the Barnes & Noble editorial staff.
+- **Document Headings on Folio**: ``ACKNOWLEDGMENTS``
+- **Line-Break Hyphenations Resolved**: ``impor-tant``, ``Depart-ment``, ``inex-haustible``
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+Signed ``N. A.-C.`` at lower right.
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``00_frontmatter/0008.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan)

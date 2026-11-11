@@ -1,0 +1,16 @@
+:folio: 0001
+:page: [cover]
+:book: Frontmatter
+:section: 00_frontmatter
+:title: Front Cover — Dover Edition (2007)
+:language: en
+:status: ok
+
+.. container:: title-page
+
+   | *An Introduction to the Modern Geometry*
+   | *of the Triangle and the Circle*
+   |
+   | **COLLEGE GEOMETRY**
+   |
+   | :person:`Nathan Altshiller-Court <altshiller-court>`

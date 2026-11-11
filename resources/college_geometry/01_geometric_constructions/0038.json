@@ -1,0 +1,32 @@
+{
+  "folio": "0038",
+  "page": "19",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0038.g1.png",
+      "bbox": [
+        107,
+        458,
+        607,
+        619
+      ],
+      "caption": "Fig. 14. Parallel chords AC, BD through A, B in circle (O) having a given sum 2s (\u00a7 13).",
+      "white_point": 238
+    },
+    {
+      "id": "g2",
+      "type": "diagram",
+      "file": "0038.g2.png",
+      "bbox": [
+        732,
+        543,
+        593,
+        530
+      ],
+      "caption": "Fig. 15. Case where tangent crosses chord AB, yielding difference of bases 2EF (\u00a7 13).",
+      "white_point": 238
+    }
+  ]
+}

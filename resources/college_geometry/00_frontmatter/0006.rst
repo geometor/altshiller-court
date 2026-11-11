@@ -1,0 +1,22 @@
+:folio: 0006
+:page: vii
+:book: Frontmatter
+:section: 00_frontmatter
+:title: Preface — p. vii
+:language: en
+:status: ok
+
+PREFACE
+=======
+
+Before the :cite:`first edition of this book <court:1925>` appeared, a generation or more ago, modern geometry was practically nonexistent as a subject in the curriculum of American colleges and universities. Moreover, the educational experts, both in the academic world and in the editorial offices of publishing houses, were almost unanimous in their opinion that the colleges felt no need for this subject and would take no notice of it if an avenue of access to it were opened to them.
+
+The academic climate confronting this :cite:`second edition <court:1952>` is radically different. College geometry has a firm footing in the vast majority of schools of collegiate level in this country, both large and small, including a considerable number of predominantly technical schools. Competent and often even enthusiastic personnel are available to teach the subject.
+
+These changes naturally had to be considered in preparing a new edition. The plan of the book, which gained for it so many sincere friends and consistent users, has been retained in its entirety, but it was deemed necessary to rewrite practically all of the text and to broaden its horizon by adding a large amount of new material.
+
+Construction problems continue to be stressed in the first part of the book, though some of the less important topics have been omitted in favor of other types of material. All other topics in the original edition have been amplified and new topics have been added. These changes are particularly evident in the chapter dealing with the recent geometry of the triangle. A new chapter on the quadrilateral has been included.
+
+Many proofs have been simplified. For a considerable number of others, new proofs, shorter and more appealing, have been substituted. The illustrative examples have in most cases been replaced by new ones.
+
+The :term:`harmonic ratio <harmonic-division>` is now introduced much earlier in the course. This change offered an opportunity to simplify the presentation of some topics and enhance their interest.

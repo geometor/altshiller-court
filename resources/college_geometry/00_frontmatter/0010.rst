@@ -1,0 +1,73 @@
+:folio: 0010
+:page: xi
+:book: Frontmatter
+:section: 00_frontmatter
+:title: Contents — p. xi
+:language: en
+:status: ok
+
+CONTENTS
+========
+
+.. list-table::
+   :widths: 82 18
+   :header-rows: 0
+
+   * - **PREFACE**
+     - vii
+   * - **ACKNOWLEDGMENTS**
+     - ix
+   * - **TO THE INSTRUCTOR**
+     - xv
+   * - **TO THE STUDENT**
+     - xvii
+   * - **1  GEOMETRIC CONSTRUCTIONS**
+     - 1
+   * -  A. Preliminaries
+     - 1
+   * -   Exercises
+     - 2
+   * -  B. General Method of Solution of Construction Problems
+     - 3
+   * -   Exercises
+     - 10
+   * -  C. Geometric Loci
+     - 11
+   * -   Exercises
+     - 20
+   * -  D. Indirect Elements
+     - 21
+   * -   Exercises
+     - 22, 23, 24, 25, 27, 28
+   * -   Supplementary Exercises
+     - 28
+   * -   Review Exercises
+     - 29
+   * -    Constructions
+     - 29
+   * -    Propositions
+     - 30
+   * -    Loci
+     - 32
+   * - **2  SIMILITUDE AND HOMOTHECY**
+     - 34
+   * -  A. Similitude
+     - 34
+   * -   Exercises
+     - 37
+   * -  B. Homothecy
+     - 38
+   * -   Exercises
+     - 43, 45, 49, 51
+   * -   Supplementary Exercises
+     - 52
+   * - **3  PROPERTIES OF THE TRIANGLE**
+     - 53
+   * -  A. Preliminaries
+     - 53
+   * -   Exercises
+     - 57
+   * -  B. The Circumcircle
+     - 57
+   * -   Exercises
+     - 59, 64

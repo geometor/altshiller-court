@@ -1,0 +1,27 @@
+Folio 0006 (Page vii) — Diplomatic & Mathematical Notes
+=======================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0005 (Page [vi], Blank Verso)
+- **Current Folio** (``0006.rst``): Page ``vii``, Frontmatter [``00_frontmatter``] — Status: ``ok``
+- **Following Folio**: Folio 0007 (Page viii, Preface concluded)
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: Opening recto of the ``PREFACE`` (printed page ``vii``), contrasting the reception of the 1925 first edition with the widespread collegiate adoption of modern geometry by 1952 and summarizing the structural additions: Chapter IV (*The Quadrilateral*), expanded Chapter X (*Recent Geometry of the Triangle*), and the early introduction of harmonic division (Chapter II, §§ 59–61).
+- **Document Headings on Folio**: ``PREFACE``
+- **Line-Break Hyphenations Resolved**: ``edu-cational``, ``includ-ing``
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+Altshiller-Court's decision to introduce the harmonic ratio in Chapter II (§ 59) rather than waiting until Chapter VII allows harmonic conjugates, Apollonian circles, and centers of similitude to illuminate triangle geometry throughout Chapter III.
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``00_frontmatter/0006.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan)

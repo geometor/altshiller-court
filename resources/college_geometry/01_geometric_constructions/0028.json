@@ -1,0 +1,19 @@
+{
+  "folio": "0028",
+  "page": "9",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0028.g1.png",
+      "bbox": [
+        327,
+        160,
+        774,
+        596
+      ],
+      "caption": "Fig. 7. General configuration of six squares whose sides pass through four given points A, B, C, D (\u00a7 9).",
+      "white_point": 238
+    }
+  ]
+}

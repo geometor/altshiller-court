@@ -1,0 +1,9 @@
+:folio: 0018
+:page: xix
+:book: Frontmatter
+:section: 00_frontmatter
+:title: To the Student (concluded) — p. xix
+:language: en
+:status: ok
+
+it does, as it often may, well and good. But, in most cases, a question requires, above all, patience. A number of unsuccessful starts is not unusual, and need not cause discouragement. The successful solver of problems is the one whose determination — whose will to overcome obstacles — grows and increases with the resistance encountered. Then, after the light breaks through, and the goal has been reached, his is the reward of a gratifying sense of triumph, of achievement.

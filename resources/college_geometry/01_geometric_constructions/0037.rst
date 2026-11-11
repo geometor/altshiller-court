@@ -1,0 +1,37 @@
+:folio: 0037
+:page: 18
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Geometric Loci — p. 18 (§§ 12–13, Fig. 13)
+:language: en
+:status: ok
+
+.. picture:: 0037.g1.png
+   :alt: Fig. 13 — Circle (O) through A and B subtending given angle at C via intersection of two Apollonian circles
+   :caption: FIG. 13
+
+CONSTRUCTION. On the internal bisector :math:`PQ` of the given angle :math:`P` take an arbitrary point :math:`Q` and drop the perpendicular :math:`QR` upon one of the sides. Divide each of the two given segments :math:`AC, BC` internally and externally in the ratio :math:`QR : QP` in the points :math:`E, F` and :math:`G, H`, respectively. A point :math:`O` common to the two circles having :math:`EF` and :math:`GH` for diameters is the center of the required circle.
+
+The proof and the discussion are left to the student.
+
+**13. Problem.** *Through two given points of a circle to draw two parallel chords whose sum shall have a given length.*
+
+ANALYSIS. Let :math:`A, B` be the two given points of the circle, center :math:`O`, and let :math:`AC, BD` be the two required chords. In the isosceles trapezoid :math:`ABDC` (Fig. 14) :math:`CD = AB`, and the length :math:`AB` is known; hence :math:`CD` is tangent to a known circle having :math:`O` for center and touching :math:`CD` at its midpoint :math:`F` (§ 11, locus 9).
+
+If :math:`E` is the midpoint of :math:`AB` we have:
+
+.. math::
+
+   2\,EF = AC + BD.
+
+Now the point :math:`E` and the length :math:`AC + BD` are known; hence we have a second locus for the point :math:`F`.
+
+CONSTRUCTION. Draw the circle :math:`(O, OE)`. If :math:`2s` is the given length, draw the circle :math:`(E, s)` meeting :math:`(O, OE)` in :math:`F`. The tangent to :math:`(O, OE)` at :math:`F` meets the given circle :math:`(O)` in :math:`C` and :math:`D`. The lines :math:`AC, BD` are the required chords.
+
+PROOF. The two chords :math:`AB, CD` are equal, for they are equidistant from the center :math:`O` of the given circle :math:`(O)`. Hence :math:`ABDC` is an isosceles trapezoid, and therefore:
+
+.. math::
+
+   AC + BD = 2\,EF.
+
+Now :math:`EF = s`, by construction; hence :math:`AC + BD` has the required length.

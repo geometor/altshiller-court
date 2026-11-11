@@ -1,0 +1,19 @@
+{
+  "folio": "0027",
+  "page": "8",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0027.g1.png",
+      "bbox": [
+        313,
+        668,
+        801,
+        722
+      ],
+      "caption": "Fig. 6. Construction of a square PQRS whose sides pass through four given points A, B, C, D (\u00a7 9).",
+      "white_point": 238
+    }
+  ]
+}

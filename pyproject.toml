@@ -31,3 +31,7 @@ namespaces = true
 
 [tool.setuptools.dynamic]
 version = {attr = "geometor.altshiller_court.__version__"}
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

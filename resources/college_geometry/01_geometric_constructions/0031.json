@@ -1,0 +1,19 @@
+{
+  "folio": "0031",
+  "page": "12",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0031.g1.png",
+      "bbox": [
+        433,
+        162,
+        553,
+        673
+      ],
+      "caption": "Fig. 8. Arc of circle AMB as the locus of points on one side of AB subtending a given angle, with tangent AT (\u00a7 11, Locus 7).",
+      "white_point": 238
+    }
+  ]
+}

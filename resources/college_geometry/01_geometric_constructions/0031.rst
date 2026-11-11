@@ -1,0 +1,31 @@
+:folio: 0031
+:page: 12
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Geometric Loci — p. 12 (§ 11, Loci 1–7, Fig. 8)
+:language: en
+:status: ok
+
+.. picture:: 0031.g1.png
+   :alt: Fig. 8 — Capable arc AMB on chord AB with tangent AT making angle BAT = angle AMB
+   :caption: FIG. 8
+
+The following are the most important and the most frequently useful geometric loci:
+
+LOCUS 1. *The locus of a point in a plane at a given distance from a given point is a circle having the given point for center and the given distance for radius.*
+
+LOCUS 2. *The locus of a point from which tangents of given length can be drawn to a given circle is a circle concentric with the given circle.*
+
+LOCUS 3. *The locus of a point at a given distance from a given line consists of two lines parallel to the given line.*
+
+LOCUS 4. *The locus of a point equidistant from two given points is the perpendicular bisector of the segment determined by the two points.*
+
+For the sake of brevity the expression *perpendicular bisector* may be replaced conveniently by the term :term:`mediator <mediator>`.
+
+LOCUS 5. *The locus of a point equidistant from two intersecting lines indefinitely produced consists of the two bisectors of the angles formed by the two given lines.*
+
+LOCUS 6. *The locus of a point such that the tangents from it to a given circle form a given angle, or, more briefly, at which the circle subtends a given angle, is a circle concentric with the given circle.*
+
+LOCUS 7. *The* :term:`locus of a point <subtended-angle-locus>`\ *, on one side of a given segment, at which this segment subtends a given angle is an arc of a circle passing through the ends of the segment.*
+
+Let :math:`M` (Fig. 8) be a point of the locus so that the angle :math:`AMB` is equal to the given angle. Pass a circle through the three points

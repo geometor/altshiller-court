@@ -1,0 +1,88 @@
+:folio: 0011
+:page: xii
+:book: Frontmatter
+:section: 00_frontmatter
+:title: Contents (continued) — p. xii
+:language: en
+:status: ok
+
+.. list-table::
+   :widths: 82 18
+   :header-rows: 0
+
+   * -  C. Medians
+     - 65
+   * -   Exercises
+     - 67, 69, 71
+   * -  D. Tritangent Circles
+     - 72
+   * -   a. Bisectors
+     - 72
+   * -    Exercises
+     - 73
+   * -   b. Tritangent Centers
+     - 73
+   * -    Exercises
+     - 78
+   * -   c. Tritangent Radii
+     - 78
+   * -    Exercises
+     - 87
+   * -   d. Points of Contact
+     - 87
+   * -    Exercises
+     - 93
+   * -  E. Altitudes
+     - 94
+   * -   a. The Orthocenter
+     - 94
+   * -    Exercises
+     - 96
+   * -   b. The Orthic Triangle
+     - 97
+   * -    Exercises
+     - 99, 101
+   * -   c. The Euler Line
+     - 101
+   * -    Exercises
+     - 102
+   * -  F. The Nine-Point Circle
+     - 103
+   * -   Exercises
+     - 108
+   * -  G. The Orthocentric Quadrilateral
+     - 109
+   * -   Exercises
+     - 111, 115
+   * -   Review Exercises
+     - 115
+   * -    The Circumcircle
+     - 115
+   * -    Medians
+     - 116
+   * -    Tritangent Circles
+     - 116
+   * -    Altitudes
+     - 118
+   * -    The Nine-Point Circle
+     - 119
+   * -    Miscellaneous Exercises
+     - 120
+   * - **4  THE QUADRILATERAL**
+     - 124
+   * -  A. The General Quadrilateral
+     - 124
+   * -   Exercises
+     - 127
+   * -  B. The Cyclic Quadrilateral
+     - 127
+   * -   Exercises
+     - 134
+   * -  C. Other Quadrilaterals
+     - 135
+   * -   Exercises
+     - 138
+   * - **5  THE SIMSON LINE**
+     - 140
+   * -  Exercises
+     - 145, 149

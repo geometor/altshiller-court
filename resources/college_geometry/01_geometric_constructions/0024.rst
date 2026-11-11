@@ -1,0 +1,31 @@
+:folio: 0024
+:page: 5
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: General Method of Solution — p. 5 (§ 6, Fig. 2)
+:language: en
+:status: ok
+
+ANALYSIS. Let the required secant :math:`MBA` (Fig. 2) through the given point :math:`M` cut the given circle, center :math:`O`, in :math:`A` and :math:`B`. The two triangles :math:`AOB, AOM` have the angle :math:`A` in common and, by assumption, angle :math:`AOB =` angle :math:`M`; hence the two triangles are equiangular. But the triangle :math:`AOB` is isosceles; hence the triangle :math:`AOM` is also isosceles, and :math:`MA = MO`. Now the length :math:`MO` is known; hence the distance :math:`MA` of the point :math:`A` from :math:`M` is known, so that the point :math:`A` may be constructed, and the secant :math:`MA` may be drawn.
+
+CONSTRUCTION. Draw the circle :math:`(M, MO)`. If :math:`A` is a point common to the two circles, the line :math:`MA` satisfies the conditions of the problem.
+
+PROOF. Let the line :math:`MA` meet the given circle again in :math:`B`. The triangles :math:`AOB, AOM` are isosceles, for :math:`OA = OB`, :math:`MA = MO`, as radii of the same circle, and the angle :math:`A` is a common base angle in the two triangles; hence the angles :math:`AOB` and :math:`M` opposite the respective bases :math:`AB` and :math:`AO` in the two triangles are equal. Thus :math:`MA` is the required line.
+
+.. picture:: 0024.g1.png
+   :alt: Fig. 2 — Secant MBA from exterior point M to circle (O) with MA = MO
+   :caption: FIG. 2
+
+DISCUSSION. We can always draw the circle :math:`(M, MO)` which will cut the given circle in two points :math:`A` and :math:`A'`; hence the problem always has two solutions, symmetrical with respect to the line :math:`MO`.
+
+Could the line :math:`MBA` be drawn so that the angle :math:`AOB` would be equal to the *obtuse* angle between :math:`MBA` and :math:`MO`? If that were possible, we would have:
+
+.. math::
+
+   \angle AOB + \angle OMA = 180^\circ;
+
+hence:
+
+.. math::
+
+   \angle OMA = \angle OAB + \angle OBA.

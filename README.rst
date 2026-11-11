@@ -23,10 +23,10 @@ ecosystem as the definitive 20th-century synthetic bridge connecting:
   pattern for geometric construction problems—**Analysis, Construction, Proof, Discussion**—together
   with the **Method of Geometric Loci**, **Indirect Elements**, and **Similitude & Homothecy**.
 - **Clark Kimberling's** *Encyclopedia of Triangle Centers* (``geometor/etc``): Classical synthetic
-  foundations for $X(1)$ Incenter, $X(2)$ Centroid, $X(3)$ Circumcenter, $X(4)$ Orthocenter,
-  $X(5)$ Nine-Point Center, $X(6)$ Symmedian / Lemoine Point, $X(7)$ Gergonne Point,
-  $X(8)$ Nagel Point, $X(10)$ Spieker Center, $X(11)$ Feuerbach Point, $X(15), X(16)$ Isodynamic Points,
-  $X(98)$ Tarry Point, $X(99)$ Steiner Point, Brocard Points $\Omega, \Omega'$, Tucker Circles,
+  foundations for ``X(1)`` Incenter, ``X(2)`` Centroid, ``X(3)`` Circumcenter, ``X(4)`` Orthocenter,
+  ``X(5)`` Nine-Point Center, ``X(6)`` Symmedian / Lemoine Point, ``X(7)`` Gergonne Point,
+  ``X(8)`` Nagel Point, ``X(10)`` Spieker Center, ``X(11)`` Feuerbach Point, ``X(15), X(16)`` Isodynamic Points,
+  ``X(98)`` Tarry Point, ``X(99)`` Steiner Point, Brocard Points ``Ω, Ω'``, Tucker Circles,
   and the Orthopole.
 
 Repository Layout
@@ -42,8 +42,8 @@ Repository Layout
     verbatim visually verified RST transcriptions (``<NNNN>.rst``), scholarly notes
     (``<NNNN>.notes.rst``), and calibrated diagram bounding boxes (``<NNNN>.json`` ->
     ``<NNNN>.g<k>.png`` & ``<NNNN>.g<k>.inverted.png``).
-  - ``persons.json``, ``citations.json``, ``glossary.json``, ``folio_reviews.json``: Interactive
-    scholarly apparatus registries.
+  - ``persons.json`` (67 entries), ``citations.json`` (31 entries), ``glossary.json`` (55 entries),
+    ``folio_reviews.json``: Interactive scholarly apparatus registries.
 
 - ``src/geometor/altshiller_court/``: Python ingestion, figure extraction, and Book Codex compiler.
 - ``docsrc/``: Sphinx documentation source and compiled 2-Track Book Codex (``docsrc/college_geometry/``).
@@ -62,8 +62,11 @@ Workflow Commands
    # 3. Compile de-paginated 2-Track Book Codex and apparatus into docsrc/college_geometry/
    uv run --no-sync python -m geometor.altshiller_court compile
 
-   # 4. Launch interactive Folio Review workbench
+   # 4. Inspect edition transcription, diagram, and review status
+   uv run --no-sync python -m geometor.altshiller_court status
+
+   # 5. Launch interactive Folio Review workbench
    publish folio
 
-   # 5. Build HTML documentation into docs/
+   # 6. Build HTML documentation into docs/
    publish build

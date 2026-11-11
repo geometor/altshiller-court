@@ -1,0 +1,37 @@
+:folio: 0003
+:page: [iv]
+:book: Frontmatter
+:section: 00_frontmatter
+:title: Copyright, Bibliographical Note & Cataloging-in-Publication Data
+:language: en
+:status: ok
+
+Copyright
+---------
+
+| Copyright © 1952 by :person:`Nathan Altshiller-Court <altshiller-court>`
+| Copyright © Renewed 1980 by :person:`Arnold Court <court-arnold>`
+| All rights reserved.
+
+Bibliographical Note
+--------------------
+
+This Dover edition, first published in 2007, is an unabridged republication of the :cite:`second edition of the work <court:1952>`, originally published by Barnes & Noble, Inc., New York, in 1952.
+
+Library of Congress Cataloging-in-Publication Data
+--------------------------------------------------
+
+| Altshiller-Court, Nathan, b. 1881.
+|   College geometry : an introduction to the modern geometry of the triangle and the circle / Nathan Altshiller-Court. — Dover ed.
+|       p. cm.
+|   Originally published: 2nd ed., rev. and enl. New York : Barnes & Noble, 1952.
+|   Includes bibliographical references and index.
+|   ISBN 0-486-45805-9
+|    1. Geometry, Modern—Plane. I. Title.
+|
+| QA474.C6 2007
+| 516.22—dc22
+|                                                               2006102940
+
+| Manufactured in the United States of America
+| Dover Publications, Inc., 31 East 2nd Street, Mineola, N.Y. 11501

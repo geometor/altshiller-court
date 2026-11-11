@@ -1,0 +1,27 @@
+Folio 0015 (Page [xvi]) — Diplomatic & Mathematical Notes
+=========================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0014 (Page xv, To the Instructor)
+- **Current Folio** (``0015.rst``): Page ``[xvi]``, Frontmatter [``00_frontmatter``] — Status: ``blank``
+- **Following Folio**: Folio 0016 (Page xvii, To the Student)
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: Intentionally blank verso (printed page ``[xvi]``) preceding ``TO THE STUDENT``.
+- **Document Headings on Folio**: None
+- **Line-Break Hyphenations Resolved**: None
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+Ensures ``TO THE STUDENT`` opens on recto page ``xvii``.
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``00_frontmatter/0015.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``blank`` (visually verified against raster scan)

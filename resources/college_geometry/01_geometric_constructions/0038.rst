@@ -1,0 +1,29 @@
+:folio: 0038
+:page: 19
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Geometric Loci — p. 19 (§§ 13–14, Figs. 14–15)
+:language: en
+:status: ok
+
+DISCUSSION. The circle :math:`(E, s)` will not cut the circle :math:`(O, OE)`, if :math:`s` is greater than :math:`2\,OE`. If :math:`s < 2\,OE`, we obtain two points of intersection :math:`F` and :math:`F'`, and therefore two solutions.
+
+The tangent to the circle :math:`(O, OE)` at :math:`F` determines the two points :math:`C, D` on the circle :math:`(O)`. These two points and the given points :math:`A, B`
+
+.. picture:: 0038.g1.png
+   :alt: Fig. 14 — Isosceles trapezoid ABDC inscribed in circle (O) with midline EF = s tangent to (O, OE)
+   :caption: FIG. 14
+
+.. picture:: 0038.g2.png
+   :alt: Fig. 15 — Crossed-trapezoid regime when s < EG so tangent at F crosses chord AB
+   :caption: FIG. 15
+
+determine four lines, namely two sides and the two diagonals of the isosceles trapezoid. The figure will show which two of these four lines are those required.
+
+Let :math:`G` (Fig. 15) be the point of contact of the second tangent issued from :math:`A` to the circle :math:`(O, OE)`. If :math:`s < EG`, the tangent to :math:`(O, OE)` at :math:`F` will cross the chord :math:`AB`, and in the resulting trapezoid the line :math:`AB` will be a diagonal. The line :math:`EF` is equal to one-half the difference of the two bases.
+
+Consider the case when the two chords are required to have a given difference.
+
+**14. Problem.** *On a given circle to find a point such that the lines joining it to two given points on this circle shall meet a given line in two points the ratio of whose distances from a given point on this line shall have a given value.*
+
+Let the lines :math:`AM, BM` joining the given points :math:`A, B` on the circle to the required point :math:`M` meet the given line :math:`FPQ` in the points :math:`P, Q` (Fig. 16). If :math:`F` is the given fixed point and the parallel :math:`QL` to :math:`MA` through :math:`Q` meets the line :math:`FA` in :math:`L`, we have angle :math:`LQB = AMB`, and the latter angle is known, for the chord :math:`AB` is given.

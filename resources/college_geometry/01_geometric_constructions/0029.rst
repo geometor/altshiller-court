@@ -1,0 +1,30 @@
+:folio: 0029
+:page: 10
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: General Method of Solution — p. 10 (§ 10, Exercises 1–13)
+:language: en
+:status: ok
+
+The construction should be carried out with ruler and compasses. The given magnitudes, like segments and angles, should be set down before any construction is attempted, and used in the actual construction. If the problem involves points and lines given in position, these data should be marked in the figure before any constructional operations are begun.
+
+In the discussion each step of the construction should be examined for the number of ways it may be carried out and for the number of lines or points of intersection the considered step will yield.
+
+The different aspects which the problem may assume, as indicated by the discussion, should be illustrated by suitable figures. As a general rule a problem or a figure has many more possibilities than is at first apparent. A careful study of a problem will often reveal vistas which in a more casual treatment may readily escape notice.
+
+EXERCISES
+~~~~~~~~~
+
+1. Through a given point to draw a line making equal angles with the sides of a given angle.
+2. Through a given point to draw a line so that two given parallel lines shall intercept on it a segment of given length.
+3. Through one of the two points of intersection of two equal circles to draw two equal chords, one in each circle, forming a given angle.
+4. Through a given point of a circle to draw a chord which shall be twice as long as the distance of this chord from the center of the circle.
+5. On a produced diameter of a given circle to find a point such that the tangents drawn from it to this circle shall be equal to the radius of the circle.
+6. With a given point as center to describe a circle which shall bisect a given circle, that is, the common chord shall be a diameter of the given circle.
+7. Through two given points to draw a circle so that its common chord with a given circle shall be parallel to a given line.
+8. Construct a parallelogram so that three of its sides shall have for midpoints three given points.
+9. On a given leg of a right triangle to find a point equidistant from the hypotenuse and from the vertex of the right angle.
+10. With two given points as centers to draw equal circles so that one of their common tangents shall (i) pass through a (third) given point; (ii) be tangent to a given circle.
+11. Through a given point to draw a line so that the two chords intercepted on it by two given equal circles shall be equal.
+12. To a given circle, located between two parallel lines, to draw a tangent so that the segment intercepted on it by the given parallels shall have a given length.
+13. Construct a right triangle given the hypotenuse and the distance from the middle point of the hypotenuse to one leg.

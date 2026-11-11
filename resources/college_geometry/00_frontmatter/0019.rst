@@ -1,0 +1,11 @@
+:folio: 0019
+:page: [xx]
+:book: Frontmatter
+:section: 00_frontmatter
+:title: Blank Verso — p. [xx]
+:language: en
+:status: blank
+
+.. note::
+
+   *[Intentionally blank verso — page [xx], preceding Chapter 1 (page 1).]*

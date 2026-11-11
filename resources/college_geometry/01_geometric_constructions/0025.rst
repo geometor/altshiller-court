@@ -1,0 +1,35 @@
+:folio: 0025
+:page: 6
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: General Method of Solution — p. 6 (§§ 6–7, Fig. 3)
+:language: en
+:status: ok
+
+But in the triangle :math:`OBM` we have:
+
+.. math::
+
+   \angle M < \angle OBA.
+
+We are thus led to a contradiction; hence a line satisfying the imposed condition cannot be drawn.
+
+Consider the problem when the point :math:`M` is given inside the given circle, or on the given circle.
+
+.. picture:: 0025.g1.png
+   :alt: Fig. 3 — Equal three-segment chain AD = DE = EC on triangle ABC via auxiliary circles (B, BA) and (K, BA)
+   :caption: FIG. 3
+
+**7. Problem.** *On the sides* :math:`AB, AC`, *produced if necessary, of the triangle* :math:`ABC` *to find two points* :math:`D, E` *such that the segments* :math:`AD, DE`, *and* :math:`EC` *shall be equal* (Fig. 3).
+
+ANALYSIS. Suppose that the points :math:`D, E` satisfy the conditions of the problem, and let the parallels through :math:`B` to the lines :math:`DE, DC` meet :math:`AC` in :math:`K, L`. The two triangles :math:`ADE, ABK` are similar, and since :math:`AD = DE`, by assumption, we have :math:`AB = BK`, and the point :math:`K` is readily constructed.
+
+Again, the triangles :math:`DEC, BKL` are similar, and since :math:`DE = EC`, by assumption, we have :math:`BK = KL`; hence :math:`L` is known.
+
+CONSTRUCTION. Draw the circle :math:`(B, BA)` cutting :math:`AC` again in :math:`K`. Draw the circle :math:`(K, BA)` cutting :math:`AC` in :math:`L`. The parallel through :math:`C` to :math:`BL` meets the line :math:`AB` in the first required point :math:`D`, and the parallel through :math:`D` to :math:`BK` meets :math:`AC` in the second required point :math:`E`.
+
+PROOF. The steps in the proof are the same as those in the analysis, but taken in reverse order.
+
+DISCUSSION. The point :math:`K` always has one and only one position. When :math:`K` is constructed we find two positions for :math:`L`, and we have two solutions, :math:`DE` and :math:`D'E'`, for the problem.
+
+If :math:`A` is a right angle the problem becomes trivial.

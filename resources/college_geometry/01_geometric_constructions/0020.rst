@@ -1,0 +1,39 @@
+:folio: 0020
+:page: 1
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Geometric Constructions — p. 1 (§§ 1–2)
+:language: en
+:status: ok
+
+1 · GEOMETRIC CONSTRUCTIONS
+===========================
+
+A. PRELIMINARIES
+----------------
+
+**1. Notation.** We shall frequently denote by:
+
+:math:`A, B, C, \dots` the vertices or the corresponding angles of a polygon;
+
+:math:`a, b, c, \dots` the sides of the polygon (in the case of a triangle, the small letter will denote the side opposite the vertex indicated by the same capital letter);
+
+:math:`2p` the perimeter of a triangle;
+
+:math:`h_a, h_b, h_c` the altitudes and :math:`m_a, m_b, m_c` the medians of a triangle :math:`ABC` corresponding to the sides :math:`a, b, c`;
+
+:math:`t_a, t_b, t_c` the internal, and :math:`t_a', t_b', t_c'` the external, bisectors of the angles :math:`A, B, C`;
+
+:math:`R, r` the radii of the circumscribed and inscribed circles (for the sake of brevity, we shall use the terms *circumcircle*, *circumradius*, :term:`circumcenter <circumcircle>`, and *incircle*, *inradius*, :term:`incenter <incircle>`);
+
+:math:`(A, r)` the circle having the point :math:`A` for center and the segment :math:`r` for radius;
+
+:math:`M = (PQ, RS)` the point of intersection :math:`M` of the two lines :math:`PQ` and :math:`RS`.
+
+**2. Basic Constructions.** Frequent use will be made of the following constructions:
+
+To divide a given segment into a given number of equal parts.
+
+To divide a given segment in a given ratio (i) internally; (ii) externally (§ 54).
+
+To construct the :term:`fourth proportional <fourth-proportional>` to three given segments.

@@ -1,0 +1,27 @@
+Folio 0007 (Page viii) — Diplomatic & Mathematical Notes
+========================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0006 (Page vii, Preface)
+- **Current Folio** (``0007.rst``): Page ``viii``, Frontmatter [``00_frontmatter``] — Status: ``ok``
+- **Following Folio**: Folio 0008 (Page ix, Acknowledgments)
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: Conclusion of the ``PREFACE`` (printed page ``viii``, running header ``PREFACE``), highlighting the role of the exercises as standalone geometric theorems and signed ``N. A.-C. / Norman, Oklahoma``.
+- **Document Headings on Folio**: None
+- **Line-Break Hyphenations Resolved**: ``note-worthy``
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+Many of the exercises in the 1952 edition originate in problem departments of *Mathesis*, *Nouvelles Annales*, *Educational Times*, and *The American Mathematical Monthly*.
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``00_frontmatter/0007.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan)

@@ -1,0 +1,32 @@
+:folio: 0022
+:page: 3
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: General Method of Solution — p. 3 (§§ 4–5)
+:language: en
+:status: ok
+
+B. GENERAL METHOD OF SOLUTION OF CONSTRUCTION PROBLEMS
+------------------------------------------------------
+
+**4. Analytic Method.** Some construction problems are direct applications of known propositions and their solutions are almost immediately apparent. Example: Construct an equilateral triangle.
+
+If the solution of a problem is more involved, but the solution is known, it may be presented by starting with an operation which we know how to perform, followed by a series of operations of this kind, until the goal is reached.
+
+This procedure is called the :term:`synthetic method <synthetic-method>` of solution of problems. It is used to present the solutions of problems in textbooks.
+
+However, this method cannot be followed when one is confronted with a problem the solution of which is not apparent, for it offers no clue as to what the first step shall be, and the possible first steps are far too numerous to be tried at random.
+
+On the other hand, we do know definitely what the problem is — we know what figure we want to obtain in the end. It is therefore helpful to start with this very figure, provisionally taken for granted. By a careful and attentive study of this figure a way may be discovered leading to the desired solution. The procedure, which is called the :term:`analytic method <analytic-method>` of solving problems, consists, in outline, of the following steps:
+
+:term:`ANALYSIS <analysis-step>`. Assuming the problem solved, draw a figure approximately satisfying the conditions of the problem and investigate how the given parts and the unknown parts of the figure are related to one another, until you discover a relation that may be used for the construction of the required figure.
+
+:term:`CONSTRUCTION <construction-step>`. Utilizing the information obtained in the analysis, carry out the actual construction.
+
+:term:`PROOF <proof-step>`. Show that the figure thus constructed satisfies all the requirements of the problem.
+
+:term:`DISCUSSION <discussion-step>`. Discuss the problem as to the conditions of its possibility, the number of solutions, etc.
+
+The following examples illustrate the method.
+
+**5. Problem.** *Two points* :math:`A, B` *are marked on two given parallel lines* :math:`x, y`. *Through a given point* :math:`C`, *not on either of these lines, to draw a secant* :math:`CA'B'` *meeting* :math:`x, y` *in* :math:`A', B'` *so that the segments* :math:`AA', BB'` *shall be proportional to two given segments* :math:`p, q`.

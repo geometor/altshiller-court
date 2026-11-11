@@ -1,0 +1,51 @@
+:folio: 0035
+:page: 16
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Geometric Loci — p. 16 (§ 11, Loci 11–12, Fig. 12)
+:language: en
+:status: ok
+
+Thus :math:`M` is the midpoint of the segment :math:`EF`. But :math:`EBF` is a right angle, for its sides are parallel to the sides of the right angle :math:`CMD`, and in the right triangle :math:`EBF` the line :math:`MB` is equal to half the hypotenuse :math:`EF`; hence, replacing in the first proportion of (1) the segment :math:`ME` by the equal segment :math:`MB`, we obtain:
+
+.. math::
+
+   AM : MB = AC : CB = p : q,
+
+which shows that :math:`M` belongs to the locus.
+
+Where, in this converse proof, has the fact been used that :math:`M` is a point of the circle?
+
+*Note.* The point :math:`C` divides the segment :math:`AB` internally so that :math:`AC : CB = p : q`. But we may also construct the point :math:`C'` such that :math:`BC' : C'A = p : q`. Similarly for the external point of division. Thus the locus actually consists of two :term:`Apollonian circles <apollonian-circle>`, unless the order in which the two given points are to be taken is specified in the statement of the locus. In actual applications the nature of the problem often indicates the order in which the points are to be considered.
+
+.. picture:: 0035.g1.png
+   :alt: Fig. 12 — Perpendicular MC to line AB for Locus 12 (constant difference of squares AM^2 - BM^2 = d^2)
+   :caption: FIG. 12
+
+LOCUS 12. *The locus of a point the difference of the squares of whose distances from two given points is constant, is a straight line perpendicular to the line joining the given points.*
+
+Let :math:`A, B` (Fig. 12) be the two given points, and let :math:`M` be a point such that:
+
+.. math::
+
+   AM^2 - BM^2 = d^2,
+
+where :math:`d` is given.
+
+If :math:`MC` is the perpendicular from :math:`M` to :math:`AB`, we have from right triangles:
+
+.. math::
+
+   AM^2 - AC^2 = MC^2 = MB^2 - BC^2;
+
+hence:
+
+.. math::
+
+   AM^2 - MB^2 = AC^2 - BC^2 = d^2,
+
+or:
+
+.. math::
+
+   (AC - BC)(AC + BC) = d^2,

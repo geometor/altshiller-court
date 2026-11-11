@@ -1,0 +1,1033 @@
+{
+  "analysis-step": {
+    "slug": "analysis-step",
+    "headword": "Analysis (Step I of Construction)",
+    "language": "Constructive Method (§ 4)",
+    "translation": "Step 1 of 4-Part Pattern",
+    "definition": "First stage of Altshiller-Court's canonical four-part solution of a construction problem: assume the problem solved, draw a tentative sketch containing both given and required elements, and deduce auxiliary relations that uniquely locate the unknown elements.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0022",
+        "page": "3",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Analysis (Step I of Construction)"
+      }
+    ]
+  },
+  "analytic-method": {
+    "slug": "analytic-method",
+    "headword": "analytic method (geometric analysis)",
+    "language": "Constructive Method (§ 4)",
+    "translation": "Method of Resolution (ἀνάλυσις)",
+    "definition": "Regressive method of solving a construction problem or discovering a proof by assuming the required figure already constructed, studying the geometric relations among its given and sought elements, and reducing the problem step-by-step to previously known elementary constructions.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0022",
+        "page": "3",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "analytic method (geometric analysis)"
+      }
+    ]
+  },
+  "anticenter": {
+    "slug": "anticenter",
+    "headword": "anticenter of a cyclic quadrilateral",
+    "language": "Quadrilateral Geometry (§ 260)",
+    "translation": "Point symmetric to circumcenter across centroid",
+    "definition": "Point of concurrency of the four perpendiculars dropped from the midpoint of each side of a cyclic quadrilateral to the opposite side (called 'mathothetic' / Mathot point).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0151",
+        "page": "132",
+        "book": "Chapter IV",
+        "section": "resources",
+        "display": "anticenter of a cyclic quadrilateral"
+      }
+    ]
+  },
+  "anticomplementary-triangle": {
+    "slug": "anticomplementary-triangle",
+    "headword": "anticomplementary triangle",
+    "language": "Triangle Geometry (§ 99)",
+    "translation": "Triangle through A, B, C parallel to opposite sides",
+    "definition": "Triangle formed by the lines through vertices A, B, C parallel to BC, CA, AB respectively; homothetic to ABC from the centroid G = X(2) with ratio -2.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0087",
+        "page": "68",
+        "book": "Chapter III",
+        "section": "resources",
+        "display": "anticomplementary triangle"
+      }
+    ]
+  },
+  "apollonian-circle": {
+    "slug": "apollonian-circle",
+    "headword": "Apollonian circle",
+    "language": "Locus & Triangle Geometry (§ 11, § 61, § 597)",
+    "translation": "Circle of Apollonius",
+    "definition": "The locus of a point whose distances from two fixed points A, B have a constant ratio m : n (m ≠ n); its diameter joins the two points C, D that divide AB internally and externally in the ratio m : n (§ 11, Locus 11; § 61). For a triangle ABC, the three Apollonian circles pass through each vertex and the feet of the internal and external angle bisectors on the opposite side (§ 597), intersecting in the two isodynamic points X(15), X(16).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0034",
+        "page": "15",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Apollonian circle"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0035",
+        "page": "16",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Apollonian circles"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0036",
+        "page": "17",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Apollonian circles"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0039",
+        "page": "20",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Apollonian circle"
+      }
+    ]
+  },
+  "brocard-circle": {
+    "slug": "brocard-circle",
+    "headword": "Brocard circle",
+    "language": "Brocard Geometry (§ 666)",
+    "translation": "Seven-point circle on diameter OK, center X(182)",
+    "definition": "Circle having the segment joining the circumcenter O = X(3) and Lemoine point K = X(6) as diameter; passes through O, K, the two Brocard points Ω, Ω', and the three vertices of Brocard's first triangle.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0298",
+        "page": "279",
+        "book": "Chapter X",
+        "section": "resources",
+        "display": "Brocard circle"
+      }
+    ]
+  },
+  "brocard-points": {
+    "slug": "brocard-points",
+    "headword": "Brocard points and Brocard angle",
+    "language": "Brocard Geometry (§ 650, § 654)",
+    "translation": "Ω, Ω' and angle ω: cot ω = cot A + cot B + cot C",
+    "definition": "Unique interior points Ω (direct) and Ω' (retrograde), isogonal conjugates of each other, satisfying ∠ΩBC = ∠ΩCA = ∠ΩAB = ω and ∠Ω'CB = ∠Ω'BA = ∠Ω'AC = ω, where cot ω = cot A + cot B + cot C = (a² + b² + c²) / (4Δ).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0293",
+        "page": "274",
+        "book": "Chapter X",
+        "section": "resources",
+        "display": "Brocard points and Brocard angle"
+      }
+    ]
+  },
+  "centers-of-similitude": {
+    "slug": "centers-of-similitude",
+    "headword": "centers of similitude",
+    "language": "Circle & Homothecy Geometry (§ 39, § 394)",
+    "translation": "Direct (external) and inverse (internal) homothetic centers",
+    "definition": "Two circles of unequal radii are homothetic in two ways: via their external (direct) center of similitude (positive ratio +R/R') and their internal (inverse) center of similitude (negative ratio -R/R'), which divide the line of centers harmonically. For the circumcircle and incircle of a triangle, these correspond to Kimberling centers X(56) and X(55).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0060",
+        "page": "41",
+        "book": "Chapter II",
+        "section": "resources",
+        "display": "centers of similitude"
+      }
+    ]
+  },
+  "centroid": {
+    "slug": "centroid",
+    "headword": "centroid (center of gravity)",
+    "language": "Triangle Geometry (§ 1, § 89)",
+    "translation": "G = X(2)",
+    "definition": "Point of concurrency of the three medians AA', BB', CC' of a triangle, trisecting each median in the ratio AG : GA' = 2 : 1 (Kimberling center X(2)).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0085",
+        "page": "66",
+        "book": "Chapter III",
+        "section": "resources",
+        "display": "centroid (center of gravity)"
+      }
+    ]
+  },
+  "cevian": {
+    "slug": "cevian",
+    "headword": "cevian",
+    "language": "Triangle Geometry (§ 326)",
+    "translation": "Line from a vertex to the opposite sideline",
+    "definition": "Any line segment or line joining a vertex of a triangle to a point on the opposite sideline (medians, altitudes, angle bisectors, and symmedians are special cevians).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0178",
+        "page": "159",
+        "book": "Chapter VI",
+        "section": "resources",
+        "display": "cevian"
+      }
+    ]
+  },
+  "circumcircle": {
+    "slug": "circumcircle",
+    "headword": "circumcircle and circumcenter",
+    "language": "Triangle Geometry (§ 1, § 68)",
+    "translation": "(O), radius R, center O = X(3)",
+    "definition": "Unique circle passing through the three vertices A, B, C of a triangle; its center O (Kimberling X(3)) is the intersection of the three perpendicular bisectors of the sides.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0020",
+        "page": "1",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "circumcircle and circumcenter"
+      }
+    ]
+  },
+  "coaxal-circles": {
+    "slug": "coaxal-circles",
+    "headword": "coaxal (coaxial) pencil of circles",
+    "language": "Circle Geometry (§ 440)",
+    "translation": "Intersecting, tangent, and non-intersecting pencils; limiting points",
+    "definition": "One-parameter family of circles every pair of which shares the same radical axis; a non-intersecting pencil possesses two point-circles (Poncelet's limiting points L, L') that are inverse with respect to every circle of the pencil, while the orthogonal circles form the conjugate coaxal pencil through L and L'.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0220",
+        "page": "201",
+        "book": "Chapter VIII",
+        "section": "resources",
+        "display": "coaxal (coaxial) pencil of circles"
+      }
+    ]
+  },
+  "complementary-triangle": {
+    "slug": "complementary-triangle",
+    "headword": "complementary (medial) triangle",
+    "language": "Triangle Geometry (§ 96)",
+    "translation": "Medial triangle A'B'C'",
+    "definition": "Triangle formed by the midpoints A', B', C' of the sides BC, CA, AB of reference triangle ABC; homothetic to ABC from the centroid G = X(2) with ratio -1/2.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0087",
+        "page": "68",
+        "book": "Chapter III",
+        "section": "resources",
+        "display": "complementary (medial) triangle"
+      }
+    ]
+  },
+  "complete-quadrilateral": {
+    "slug": "complete-quadrilateral",
+    "headword": "complete quadrangle and complete quadrilateral",
+    "language": "Projective Geometry (§ 354)",
+    "translation": "Dual four-point and four-line configurations",
+    "definition": "A complete quadrangle consists of four points (no three collinear) and their six joining sides meeting in three diagonal points; dual to a complete quadrilateral of four lines and six vertices, generating harmonic ranges automatically via straightedge alone.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0189",
+        "page": "170",
+        "book": "Chapter VII",
+        "section": "resources",
+        "display": "complete quadrangle and complete quadrilateral"
+      }
+    ]
+  },
+  "construction-step": {
+    "slug": "construction-step",
+    "headword": "Construction (Step II of Construction)",
+    "language": "Constructive Method (§ 4)",
+    "translation": "Step 2 of 4-Part Pattern",
+    "definition": "Second stage of the four-part constructive pattern: state the explicit ruler-and-compass steps derived from the Analysis that actually produce the required geometric figure from the given data.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0022",
+        "page": "3",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Construction (Step II of Construction)"
+      }
+    ]
+  },
+  "directed-segments": {
+    "slug": "directed-segments",
+    "headword": "directed (signed) segments",
+    "language": "Projective & Metric Geometry (§ 306)",
+    "translation": "AB = -BA; Chasles' relation AB + BC + CA = 0",
+    "definition": "Segments on an oriented line endowed with algebraic sign according to sense, unifying internal and external division formulas across Menelaus', Ceva's, and harmonic theorems.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0170",
+        "page": "151",
+        "book": "Chapter VI",
+        "section": "resources",
+        "display": "directed (signed) segments"
+      }
+    ]
+  },
+  "discussion-step": {
+    "slug": "discussion-step",
+    "headword": "Discussion (Step IV of Construction)",
+    "language": "Constructive Method (§ 4)",
+    "translation": "Step 4 of 4-Part Pattern (διορισμός)",
+    "definition": "Fourth stage of the four-part constructive pattern (Greek diorismos): determine the exact conditions on the given data for a solution to exist, count the number of distinct solutions, and examine limiting or degenerate configurations.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0022",
+        "page": "3",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Discussion (Step IV of Construction)"
+      }
+    ]
+  },
+  "euler-line": {
+    "slug": "euler-line",
+    "headword": "Euler line",
+    "language": "Triangle Geometry (§ 202)",
+    "translation": "Collinearity of O, G, N, H",
+    "definition": "Line containing the circumcenter O = X(3), centroid G = X(2), nine-point center F/N = X(5), and orthocenter H = X(4) of any non-equilateral triangle, satisfying OG : GH = 1 : 2 and ON : NH = 1 : 1.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0121",
+        "page": "102",
+        "book": "Chapter III",
+        "section": "resources",
+        "display": "Euler line"
+      }
+    ]
+  },
+  "feuerbach-theorem": {
+    "slug": "feuerbach-theorem",
+    "headword": "Feuerbach's theorem and Feuerbach point",
+    "language": "Triangle Geometry (§ 215, § 540)",
+    "translation": "Tangency of Nine-Point Circle with Tritangent Circles; X(11)",
+    "definition": "Theorem (Feuerbach, 1822) that the nine-point circle of a triangle is internally tangent to the incircle (at the Feuerbach point X(11)) and externally tangent to each of the three excircles.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0124",
+        "page": "105",
+        "book": "Chapter III",
+        "section": "resources",
+        "display": "Feuerbach's theorem and Feuerbach point"
+      }
+    ]
+  },
+  "fourth-proportional": {
+    "slug": "fourth-proportional",
+    "headword": "fourth proportional and mean proportional",
+    "language": "Basic Constructions (§ 2)",
+    "translation": "a : b = c : x and a : x = x : b",
+    "definition": "Classical Euclidean ruler-and-compass proportion constructions (Elements VI.12 and VI.13): given three segments a, b, c, the fourth proportional satisfies x = bc/a via parallel intercepts; given two segments p, q, the mean (geometric) proportional satisfies x² = pq via the altitude to the hypotenuse of a semicircle.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0020",
+        "page": "1",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "fourth proportional"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0021",
+        "page": "2",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "mean proportional"
+      }
+    ]
+  },
+  "geometric-locus": {
+    "slug": "geometric-locus",
+    "headword": "geometric locus",
+    "language": "Constructive Method (§ 11)",
+    "translation": "Method of Loci",
+    "definition": "Set of all points (and only those points) satisfying a specified geometric condition. In the Method of Loci, an unknown point is constructed as the intersection of two independent loci obtained by setting aside one condition at a time.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0030",
+        "page": "11",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "geometric locus"
+      }
+    ]
+  },
+  "gergonne-point": {
+    "slug": "gergonne-point",
+    "headword": "Gergonne point",
+    "language": "Triangle Centers (§ 331)",
+    "translation": "X(7)",
+    "definition": "Point of concurrency of the three cevians joining the vertices of a triangle to the points of contact of the inscribed circle with the opposite sides (Kimberling center X(7)).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0179",
+        "page": "160",
+        "book": "Chapter VI",
+        "section": "resources",
+        "display": "Gergonne point"
+      }
+    ]
+  },
+  "harmonic-division": {
+    "slug": "harmonic-division",
+    "headword": "harmonic division and harmonic conjugates",
+    "language": "Projective Geometry (§ 59, § 345)",
+    "translation": "(ABCD) = -1",
+    "definition": "Four collinear points A, B, C, D form a harmonic range when C and D divide AB internally and externally in the same numerical ratio, so (AC/CB) : (AD/DB) = -1.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0006",
+        "page": "vii",
+        "book": "Frontmatter",
+        "section": "00_frontmatter",
+        "display": "harmonic ratio"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0034",
+        "page": "15",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "harmonic range"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0185",
+        "page": "166",
+        "book": "Chapter VII",
+        "section": "resources",
+        "display": "harmonic division and harmonic conjugates"
+      }
+    ]
+  },
+  "homothecy": {
+    "slug": "homothecy",
+    "headword": "homothecy (homothety)",
+    "language": "Transformation Geometry (§ 31)",
+    "translation": "Central dilation / Homothetic transformation",
+    "definition": "Transformation (also spelled homothety) mapping each point M to M' collinear with a fixed homothetic center S (center of similitude) such that SM' / SM = k is a non-zero signed constant (the homothetic ratio).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0057",
+        "page": "38",
+        "book": "Chapter II",
+        "section": "resources",
+        "display": "homothecy (homothety)"
+      }
+    ]
+  },
+  "incircle": {
+    "slug": "incircle",
+    "headword": "incircle, inradius, and incenter",
+    "language": "Triangle Geometry (§ 1, § 116)",
+    "translation": "(I, r), radius r, center I = X(1)",
+    "definition": "Circle internally tangent to all three sides of a triangle ABC; its center I (the incenter, Kimberling center X(1)) is the point of concurrency of the three internal angle bisectors, equidistant by the inradius r from the three sides.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0020",
+        "page": "1",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "incenter"
+      }
+    ]
+  },
+  "indirect-elements": {
+    "slug": "indirect-elements",
+    "headword": "indirect elements",
+    "language": "Constructive Method (§§ 15–22)",
+    "translation": "Sums, differences, and auxiliary elements",
+    "definition": "Composite or derived data given in place of primary triangle elements—such as the perimeter 2s, sum or difference of two sides (b + c, b - c), sum or difference of angles, medians, altitudes, or radii—translated into constructible auxiliary triangles.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0040",
+        "page": "21",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "indirect elements"
+      }
+    ]
+  },
+  "inverse-points": {
+    "slug": "inverse-points",
+    "headword": "inverse points with respect to a circle",
+    "language": "Circle Geometry (§ 358)",
+    "translation": "OP · OP' = R²",
+    "definition": "Two points P, P' on the same ray from the center O of a circle of radius R satisfying OP · OP' = R²; every circle through P and P' cuts the reference circle orthogonally (§ 366).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0191",
+        "page": "172",
+        "book": "Chapter VIII",
+        "section": "resources",
+        "display": "inverse points with respect to a circle"
+      }
+    ]
+  },
+  "inversion": {
+    "slug": "inversion",
+    "headword": "circular inversion",
+    "language": "Transformation Geometry (§ 518)",
+    "translation": "(O, k): OP · OP' = k",
+    "definition": "Involutory conformal point transformation mapping P ≠ O to P' on ray OP (or opposite ray when k < 0) with OP · OP' = k; maps lines and circles not through O to circles, and circles through O to straight lines.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0249",
+        "page": "230",
+        "book": "Chapter IX",
+        "section": "resources",
+        "display": "circular inversion"
+      }
+    ]
+  },
+  "isodynamic-points": {
+    "slug": "isodynamic-points",
+    "headword": "isodynamic points",
+    "language": "Triangle Centers (§ 606)",
+    "translation": "W, W' = X(15), X(16)",
+    "definition": "The two common intersections of the three Apollonian circles of a triangle (Kimberling centers X(15) and X(16)); inverse to one another in the circumcircle, collinear with O and K on the Brocard axis, and having equilateral pedal triangles.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0034",
+        "page": "15",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "isodynamic points"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0039",
+        "page": "20",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "isodynamic points"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0281",
+        "page": "262",
+        "book": "Chapter X",
+        "section": "resources",
+        "display": "isodynamic points"
+      }
+    ]
+  },
+  "isogonal-conjugates": {
+    "slug": "isogonal-conjugates",
+    "headword": "isogonal lines and isogonal conjugates",
+    "language": "Modern Triangle Geometry (§ 625, § 632)",
+    "translation": "Reflection across angle bisectors",
+    "definition": "Two rays through a vertex symmetric about the angle bisector are isogonal; if cevians to P concur, their isogonals concur at the isogonal conjugate P' (e.g., orthocenter H = X(4) ↔ circumcenter O = X(3); centroid G = X(2) ↔ Lemoine point K = X(6); incenter I = X(1) self-conjugate).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0286",
+        "page": "267",
+        "book": "Chapter X",
+        "section": "resources",
+        "display": "isogonal lines and isogonal conjugates"
+      }
+    ]
+  },
+  "isotomic-conjugates": {
+    "slug": "isotomic-conjugates",
+    "headword": "isotomic points and isotomic conjugate",
+    "language": "Triangle Geometry (§ 329, § 334)",
+    "translation": "Symmetric division about side midpoints",
+    "definition": "Two points on a triangle side equidistant from its midpoint are isotomic; if cevians to three points concur at P, the cevians to their isotomic points concur at the isotomic conjugate P' (e.g., Gergonne X(7) and Nagel X(8)).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0179",
+        "page": "160",
+        "book": "Chapter VI",
+        "section": "resources",
+        "display": "isotomic points and isotomic conjugate"
+      }
+    ]
+  },
+  "lemoine-circles": {
+    "slug": "lemoine-circles",
+    "headword": "Lemoine circles (first and second/cosine)",
+    "language": "Lemoine Geometry (§§ 588–596)",
+    "translation": "Concyclic six-point intersections through K = X(6)",
+    "definition": "The First Lemoine Circle cuts the sides in six points formed by lines through K parallel to the sides; the Second Lemoine (Cosine) Circle cuts the sides in six points formed by antiparallels through K, with chord lengths proportional to cos A, cos B, cos C.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0276",
+        "page": "257",
+        "book": "Chapter X",
+        "section": "resources",
+        "display": "Lemoine circles (first and second/cosine)"
+      }
+    ]
+  },
+  "lemoine-point": {
+    "slug": "lemoine-point",
+    "headword": "Lemoine point (symmedian point)",
+    "language": "Triangle Centers (§ 572)",
+    "translation": "K = X(6)",
+    "definition": "Point of concurrency of the three symmedians of a triangle (Kimberling center X(6)); minimizes the sum of squares of perpendicular distances to the three sides (§ 581), with distances proportional to the side lengths a, b, c.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0271",
+        "page": "252",
+        "book": "Chapter X",
+        "section": "resources",
+        "display": "Lemoine point (symmedian point)"
+      }
+    ]
+  },
+  "mediator": {
+    "slug": "mediator",
+    "headword": "mediator (perpendicular bisector)",
+    "language": "Triangle & Locus Geometry (§ 11)",
+    "translation": "Perpendicular bisector of a segment",
+    "definition": "The line perpendicular to a given segment AB at its midpoint—the locus of all points equidistant from A and B (§ 11, Locus 3; Euclid I.10, I.11). The three mediators of a triangle concur at the circumcenter O = X(3).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0031",
+        "page": "12",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "mediator (perpendicular bisector)"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0037",
+        "page": "18",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "mediator"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0040",
+        "page": "21",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "mediators"
+      }
+    ]
+  },
+  "nagel-point": {
+    "slug": "nagel-point",
+    "headword": "Nagel point",
+    "language": "Triangle Centers (§ 333)",
+    "translation": "X(8)",
+    "definition": "Point of concurrency of the three cevians joining the vertices of a triangle to the points of contact of the corresponding excircles with the opposite sides (Kimberling center X(8)); isotomic conjugate of the Gergonne point X(7).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0179",
+        "page": "160",
+        "book": "Chapter VI",
+        "section": "resources",
+        "display": "Nagel point"
+      }
+    ]
+  },
+  "nine-point-circle": {
+    "slug": "nine-point-circle",
+    "headword": "nine-point circle",
+    "language": "Triangle Geometry (§ 206)",
+    "translation": "Euler / Feuerbach / Terquem circle, center X(5)",
+    "definition": "Circle of radius R/2 centered at the midpoint X(5) of OH that passes through nine classic points: the three side midpoints, the three altitude feet, and the three Euler points (midpoints of AH, BH, CH).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0122",
+        "page": "103",
+        "book": "Chapter III",
+        "section": "resources",
+        "display": "nine-point circle"
+      }
+    ]
+  },
+  "orthic-triangle": {
+    "slug": "orthic-triangle",
+    "headword": "orthic triangle",
+    "language": "Triangle Geometry (§ 183)",
+    "translation": "Pedal triangle DEF of the orthocenter",
+    "definition": "Triangle DEF whose vertices are the feet of the altitudes of ABC; for an acute triangle, its incenter is H and it solves Fagnano's minimum-perimeter inscribed triangle problem (§ 194).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0116",
+        "page": "97",
+        "book": "Chapter III",
+        "section": "resources",
+        "display": "orthic triangle"
+      }
+    ]
+  },
+  "orthocenter": {
+    "slug": "orthocenter",
+    "headword": "orthocenter",
+    "language": "Triangle Geometry (§ 1, § 176)",
+    "translation": "H = X(4)",
+    "definition": "Point of concurrency of the three altitudes AD, BE, CF of a triangle ABC (Kimberling center X(4)); any of the four points A, B, C, H is the orthocenter of the triangle formed by the other three.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0113",
+        "page": "94",
+        "book": "Chapter III",
+        "section": "resources",
+        "display": "orthocenter"
+      }
+    ]
+  },
+  "orthocentric-quadrilateral": {
+    "slug": "orthocentric-quadrilateral",
+    "headword": "orthocentric group (orthocentric quadrilateral)",
+    "language": "Triangle Geometry (§ 220)",
+    "translation": "Four points each the orthocenter of the other three",
+    "definition": "Quadruple of points A, B, C, H in which each point is the orthocenter of the triangle formed by the remaining three; all four component triangles share the exact same nine-point circle (§ 224).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0128",
+        "page": "109",
+        "book": "Chapter III",
+        "section": "resources",
+        "display": "orthocentric group (orthocentric quadrilateral)"
+      }
+    ]
+  },
+  "orthogonal-circles": {
+    "slug": "orthogonal-circles",
+    "headword": "orthogonal circles",
+    "language": "Circle Geometry (§ 363)",
+    "translation": "r₁² + r₂² = d²",
+    "definition": "Two intersecting circles whose tangents (and radii) at each point of intersection are perpendicular.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0193",
+        "page": "174",
+        "book": "Chapter VIII",
+        "section": "resources",
+        "display": "orthogonal circles"
+      }
+    ]
+  },
+  "orthopole": {
+    "slug": "orthopole",
+    "headword": "orthopole of a line",
+    "language": "Modern Triangle Geometry (§ 690)",
+    "translation": "Neuberg's concurrency of perpendiculars from projections",
+    "definition": "Given a line m and triangle ABC, if A', B', C' are the orthogonal projections of A, B, C onto m, then the perpendiculars from A', B', C' to BC, CA, AB respectively concur at a single point M: the orthopole of line m for triangle ABC.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0306",
+        "page": "287",
+        "book": "Chapter X",
+        "section": "resources",
+        "display": "orthopole of a line"
+      }
+    ]
+  },
+  "pole-and-polar": {
+    "slug": "pole-and-polar",
+    "headword": "pole and polar",
+    "language": "Circle & Projective Geometry (§ 374)",
+    "translation": "Reciprocal point-line duality w.r.t. a circle",
+    "definition": "For a point P and circle (O, R), the polar of P is the line perpendicular to OP through the inverse point P' of P; enjoys La Hire's reciprocity: Q lies on the polar of P iff P lies on the polar of Q (§ 379).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0197",
+        "page": "178",
+        "book": "Chapter VIII",
+        "section": "resources",
+        "display": "pole and polar"
+      }
+    ]
+  },
+  "power-of-a-point": {
+    "slug": "power-of-a-point",
+    "headword": "power of a point with respect to a circle",
+    "language": "Circle Geometry (§ 412)",
+    "translation": "d² - R² = PA · PB",
+    "definition": "Constant signed product PA · PB of the directed segments from P to the intersections A, B of any secant through P with circle (O, R), equal to PO² - R² (Steiner, 1826).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0210",
+        "page": "191",
+        "book": "Chapter VIII",
+        "section": "resources",
+        "display": "power of a point with respect to a circle"
+      }
+    ]
+  },
+  "problem-of-apollonius": {
+    "slug": "problem-of-apollonius",
+    "headword": "Problem of Apollonius",
+    "language": "Circle Constructions (§ 506)",
+    "translation": "Circle tangent to three given circles (PPP..CCC)",
+    "definition": "Celebrated problem of constructing a circle tangent to three given elements (points, lines, or circles—ten cases I–X), culminating in Gergonne's simultaneous construction of complementary pairs of up to eight tangent circles (§ 517).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0241",
+        "page": "222",
+        "book": "Chapter VIII",
+        "section": "resources",
+        "display": "Problem of Apollonius"
+      }
+    ]
+  },
+  "proof-step": {
+    "slug": "proof-step",
+    "headword": "Proof (Step III of Construction)",
+    "language": "Constructive Method (§ 4)",
+    "translation": "Step 3 of 4-Part Pattern",
+    "definition": "Third stage of the four-part constructive pattern: demonstrate deductively that the figure produced by the Construction steps genuinely satisfies every condition demanded in the problem statement.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0022",
+        "page": "3",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Proof (Step III of Construction)"
+      }
+    ]
+  },
+  "radical-axis": {
+    "slug": "radical-axis",
+    "headword": "radical axis and radical center",
+    "language": "Circle Geometry (§ 422, § 492)",
+    "translation": "Locus of equal powers",
+    "definition": "The radical axis of two non-concentric circles is the straight line of points having equal power with respect to both circles; the three radical axes of three circles taken in pairs concur at their radical center (§ 492).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0029",
+        "page": "10",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "radical axis"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0035",
+        "page": "16",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "radical axis"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0213",
+        "page": "194",
+        "book": "Chapter VIII",
+        "section": "resources",
+        "display": "radical axis and radical center"
+      }
+    ]
+  },
+  "similitude": {
+    "slug": "similitude",
+    "headword": "method of similitude",
+    "language": "Transformation Geometry (§ 23)",
+    "translation": "Scaling / Similarity method",
+    "definition": "Constructive technique that temporarily disregards one linear metric condition to construct any figure of the required shape (species), and then scales it to the required size by homothecy or fourth proportionals.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0053",
+        "page": "34",
+        "book": "Chapter II",
+        "section": "resources",
+        "display": "method of similitude"
+      }
+    ]
+  },
+  "simson-line": {
+    "slug": "simson-line",
+    "headword": "Simson line (Wallace-Simson line)",
+    "language": "Triangle & Circle Geometry (§ 283)",
+    "translation": "Collinear pedal projections of a circumcircle point",
+    "definition": "Line containing the feet of the perpendiculars dropped from any point P on the circumcircle of triangle ABC onto its three sidelines BC, CA, AB; bisects the segment PH joining P to the orthocenter (§ 299).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0160",
+        "page": "141",
+        "book": "Chapter V",
+        "section": "resources",
+        "display": "Simson line (Wallace-Simson line)"
+      }
+    ]
+  },
+  "steiner-and-tarry-points": {
+    "slug": "steiner-and-tarry-points",
+    "headword": "Steiner point and Tarry point",
+    "language": "Triangle Centers (§ 679, § 680)",
+    "translation": "Steiner R = X(99), Tarry N = X(98)",
+    "definition": "Diametrically opposite points on the circumcircle associated with Brocard's first triangle: parallels through A, B, C to the sides of Brocard's first triangle concur at the Steiner point X(99), while perpendiculars concur at the Tarry point X(98).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0301",
+        "page": "282",
+        "book": "Chapter X",
+        "section": "resources",
+        "display": "Steiner point and Tarry point"
+      }
+    ]
+  },
+  "subtended-angle-locus": {
+    "slug": "subtended-angle-locus",
+    "headword": "capable arc (locus of constant subtended angle)",
+    "language": "Locus Geometry (§ 11, Locus 7)",
+    "translation": "Arc AMB subtending given ∠α on chord AB",
+    "definition": "Set of points on a given side of segment AB at which AB subtends a given angle α (Euclid III.21, III.33); when α = 90°, the two symmetric arcs unite into the circle on diameter AB (Thales' locus, Euclid III.31).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0031",
+        "page": "12",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "locus of a point"
+      }
+    ]
+  },
+  "symmedian": {
+    "slug": "symmedian",
+    "headword": "symmedian",
+    "language": "Lemoine Geometry (§ 558)",
+    "translation": "Reflection of median across angle bisector",
+    "definition": "Line through a vertex of a triangle symmetric to the median with respect to the internal bisector of that vertex angle; locus of midpoints of antiparallels to the opposite side.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0266",
+        "page": "247",
+        "book": "Chapter X",
+        "section": "resources",
+        "display": "symmedian"
+      }
+    ]
+  },
+  "synthetic-method": {
+    "slug": "synthetic-method",
+    "headword": "synthetic method",
+    "language": "Constructive Method (§ 4)",
+    "translation": "Method of Composition (σύνθεσις)",
+    "definition": "Progressive exposition that starts from elementary given data and executes constructions step-by-step without revealing the heuristic reasoning by which those steps were discovered.",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0022",
+        "page": "3",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "synthetic method"
+      }
+    ]
+  },
+  "trilinear-polar": {
+    "slug": "trilinear-polar",
+    "headword": "trilinear pole and trilinear polar",
+    "language": "Modern Triangle Geometry (§ 549)",
+    "translation": "Harmonic axis of a point w.r.t. a triangle",
+    "definition": "Given a point P not on the sides of ABC, the intersections of its cevians AP, BP, CP with the opposite sides yield harmonic conjugates whose three points are collinear on the trilinear polar of P (for P = centroid G, the line at infinity; for P = symmedian point K, the Lemoine axis).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0263",
+        "page": "244",
+        "book": "Chapter X",
+        "section": "resources",
+        "display": "trilinear pole and trilinear polar"
+      }
+    ]
+  },
+  "tritangent-circles": {
+    "slug": "tritangent-circles",
+    "headword": "tritangent circles (incircle and excircles)",
+    "language": "Triangle Geometry (§ 1, § 118)",
+    "translation": "(I), (Ia), (Ib), (Ic); incenter I = X(1)",
+    "definition": "The four circles simultaneously tangent to all three sidelines BC, CA, AB of a triangle: the inscribed circle (incircle, center I = X(1), radius r) and the three escribed circles (excircles, centers Ia, Ib, Ic, radii ra, rb, rc).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0092",
+        "page": "73",
+        "book": "Chapter III",
+        "section": "resources",
+        "display": "tritangent circles (incircle and excircles)"
+      }
+    ]
+  },
+  "tucker-circles": {
+    "slug": "tucker-circles",
+    "headword": "Tucker circles and Taylor circle",
+    "language": "Modern Triangle Geometry (§§ 684–689)",
+    "translation": "Generalized six-point circles centered on OK",
+    "definition": "One-parameter family of six-point circles generated by homothetic triangles inscribed with antiparallel/parallel chords, encompassing the circumcircle, first and second Lemoine circles, and the Taylor circle (§ 689).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0303",
+        "page": "284",
+        "book": "Chapter X",
+        "section": "resources",
+        "display": "Tucker circles and Taylor circle"
+      }
+    ]
+  }
+}

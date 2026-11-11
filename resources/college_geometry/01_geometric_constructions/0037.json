@@ -1,0 +1,19 @@
+{
+  "folio": "0037",
+  "page": "18",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0037.g1.png",
+      "bbox": [
+        403,
+        162,
+        618,
+        466
+      ],
+      "caption": "Fig. 13. Circle (O) passing through A and B and subtending a given angle at external point C (\u00a7 12).",
+      "white_point": 238
+    }
+  ]
+}

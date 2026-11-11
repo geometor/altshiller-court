@@ -1,0 +1,32 @@
+Folio 0040 (Page 21) — Diplomatic & Mathematical Notes
+======================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0039 (Page 20, § 14, Exercises 1–16)
+- **Current Folio** (``0040.rst``): Page ``21``, Chapter I [``01_geometric_constructions``] — Status: ``ok``
+- **Following Folio**: Folio 0041 (Page 22, conclusion of § 15: 'and therefore the angle EAF is known. The altitude AD of the triangle ABC is also the altitude of AEF...')
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: Page ``21`` (running header ``Ch. I, §§ 14, 15] / INDIRECT ELEMENTS / 21``), completing Locus Exercises 17–23, introducing Section D (*Indirect Elements*), and presenting § 15 (*Problem*: constructing :math:`\triangle ABC` from :math:`(2p, A, h_a)`) with ``FIG. 17`` (``0040.g1.png``). Ends with a comma at the bottom of page ``21``, continuing onto folio ``0041`` (page ``22``).
+- **Document Headings on Folio**: ``D. INDIRECT ELEMENTS``, ``15. Problem.``
+- **Line-Break Hyphenations Resolved**: ``adja-cent``, ``dif-ference``, ``neces-sary``, ``op-posite``
+
+Calibrated Diagrams on Folio
+----------------------------
+
+- ``0040.g1.png`` (bbox ``[247, 1400, 923, 330]``, white-point ``238``): Fig. 17. Construction of triangle ABC given perimeter 2p, vertical angle A, and altitude h_a via indirect triangle AEF (§ 15).
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+In § 15, unfolding :math:`BA` and :math:`CA` onto line :math:`BC` turns the indirect perimeter :math:`2p` into the single segment :math:`EF = 2p` of auxiliary triangle :math:`AEF`, which is constructed from base :math:`EF = 2p`, capable arc for :math:`\angle EAF = 90^\circ + \frac{1}{2}A` (Locus 7), and parallel line at height :math:`h_a` (Locus 3); on folio ``0041`` (p. 22), vertices :math:`B, C` are recovered as the traces on :math:`EF` of the :term:`mediators <mediator>` of :math:`AE` and :math:`AF`!
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``01_geometric_constructions/0040.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan)

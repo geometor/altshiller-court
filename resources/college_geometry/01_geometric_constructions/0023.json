@@ -1,0 +1,19 @@
+{
+  "folio": "0023",
+  "page": "4",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0023.g1.png",
+      "bbox": [
+        383,
+        162,
+        664,
+        611
+      ],
+      "caption": "Fig. 1. Secant CA'B' through C meeting parallel lines x, y so that AA' : BB' = p : q (\u00a7 5).",
+      "white_point": 238
+    }
+  ]
+}

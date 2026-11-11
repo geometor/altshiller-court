@@ -1,0 +1,41 @@
+:folio: 0034
+:page: 15
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Geometric Loci — p. 15 (§ 11, Loci 10–11, Fig. 11)
+:language: en
+:status: ok
+
+length of the given segment :math:`AB`, and for hypotenuse the side of a square whose diagonal is equal to :math:`s`.
+
+LOCUS 11. *The locus of a point the ratio of whose distances from two fixed points is constant, is a circle, called the circle of* :person:`Apollonius <apollonius>`, *or the* :term:`Apollonian circle <apollonian-circle>`.
+
+Let :math:`A, B` be the two given points (Fig. 11) and :math:`p : q` the given ratio. Let the points :math:`C, D` divide the segment :math:`AB` internally and externally in the given ratio, and let :math:`M` be any point of the locus. We have thus:
+
+.. math::
+
+   AC : CB = AD : DB = AM : MB = p : q.
+
+The lines :math:`MC, MD` divide the side :math:`AB` of the triangle :math:`ABM` internally and externally in the ratio of the sides :math:`MA, MB`; hence :math:`MC, MD` are the internal and external bisectors of the angle :math:`AMB`, and therefore are perpendicular to each other. Thus at any point :math:`M` of the required locus the known segment :math:`CD` subtends a right angle; hence :math:`M` lies on the circle having :math:`CD` for diameter (§ 11, locus 7).
+
+.. picture:: 0034.g1.png
+   :alt: Fig. 11 — Apollonian circle on diameter CD dividing AB internally and externally in ratio p : q
+   :caption: FIG. 11
+
+CONVERSELY. Let us take any point :math:`M` on this circle and show that this point belongs to the required locus. Through the point :math:`B` draw the parallels :math:`BE, BF` to the lines :math:`MC, MD` meeting :math:`AM` in :math:`E, F`, respectively. We thus have:
+
+.. math::
+
+   (1) \qquad AM : ME = AC : CB, \qquad AM : FM = AD : BD.
+
+But the second ratios in these proportions are equal, by construction, hence:
+
+.. math::
+
+   AM : ME = AM : FM;
+
+therefore:
+
+.. math::
+
+   ME = MF.

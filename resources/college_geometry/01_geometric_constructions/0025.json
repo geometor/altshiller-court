@@ -1,0 +1,19 @@
+{
+  "folio": "0025",
+  "page": "6",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0025.g1.png",
+      "bbox": [
+        380,
+        530,
+        663,
+        513
+      ],
+      "caption": "Fig. 3. Points D, E on sides AB, AC of triangle ABC such that AD = DE = EC (\u00a7 7).",
+      "white_point": 238
+    }
+  ]
+}

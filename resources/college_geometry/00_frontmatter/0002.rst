@@ -1,0 +1,21 @@
+:folio: 0002
+:page: [iii]
+:book: Frontmatter
+:section: 00_frontmatter
+:title: Title Page — College Geometry (2nd ed., 1952 / Dover 2007)
+:language: en
+:status: ok
+
+College Geometry
+================
+
+.. rubric:: An Introduction to the Modern Geometry of the Triangle and the Circle
+
+.. container:: title-page
+
+   | :person:`Nathan Altshiller-Court <altshiller-court>`
+   | *Second Edition*
+   | *Revised and Enlarged*
+   |
+   | :cite:`Dover Publications, Inc. <court:1952>`
+   | Mineola, New York

@@ -1,0 +1,1093 @@
+{
+  "brocard:1881": {
+    "key": "brocard:1881",
+    "author_key": "brocard",
+    "work_key": "brocard:1881",
+    "locus": "AFAS Alger (1881)",
+    "author": "Brocard, Henri (1845–1922)",
+    "bib_anchor": "bib-brocard",
+    "work": "Étude d'un nouveau cercle du plan du triangle, Association Française pour l'Avancement des Sciences, Congrès d'Alger (1881), 138–159",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0298",
+        "page": "279",
+        "book": "Chapter X",
+        "section": "10_recent_geometry_of_the_triangle",
+        "display": "Brocard (1881) on the Brocard Circle"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0298",
+        "page": "279",
+        "book": "Chapter X",
+        "section": "10_recent_geometry_of_the_triangle",
+        "display": "Brocard (1881) on the Brocard Circle"
+      }
+    ]
+  },
+  "casey:sequel:1892": {
+    "key": "casey:sequel:1892",
+    "author_key": "casey",
+    "work_key": "casey:sequel",
+    "locus": "6th ed. (1892)",
+    "author": "Casey, John (1820–1891)",
+    "bib_anchor": "bib-casey",
+    "work": "A Sequel to the First Six Books of the Elements of Euclid (6th ed., Dublin: Hodges, Figgis & Co., 1892)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0230",
+        "page": "211",
+        "book": "Chapter VIII",
+        "section": "08_circles",
+        "display": "Casey, A Sequel to Euclid"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0230",
+        "page": "211",
+        "book": "Chapter VIII",
+        "section": "08_circles",
+        "display": "Casey, A Sequel to Euclid"
+      }
+    ]
+  },
+  "ceva:1678": {
+    "key": "ceva:1678",
+    "author_key": "ceva",
+    "work_key": "ceva:1678",
+    "locus": "Milan (1678)",
+    "author": "Ceva, Giovanni (1647–1734)",
+    "bib_anchor": "bib-ceva",
+    "work": "De lineis rectis se invicem secantibus statica constructio (Milan, 1678)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0178",
+        "page": "159",
+        "book": "Chapter VI",
+        "section": "06_transversals",
+        "display": "Ceva (1678) on Concurrent Cevians"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0178",
+        "page": "159",
+        "book": "Chapter VI",
+        "section": "06_transversals",
+        "display": "Ceva (1678) on Concurrent Cevians"
+      }
+    ]
+  },
+  "chl": {
+    "key": "chl",
+    "author_key": "chasles",
+    "work_key": "chl",
+    "locus": "p. 295 (A. Books: Chl.)",
+    "author": "Chasles, Michel (1793–1880)",
+    "bib_anchor": "bib-chasles",
+    "work": "Traité de géométrie supérieure (2nd ed., Paris: Gauthier-Villars, 1880)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "Chl. — M. Chasles, Traité de géométrie supérieure, 2nd ed. (Paris, 1880)"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "Chl. — M. Chasles, Traité de géométrie supérieure, 2nd ed. (Paris, 1880)"
+      }
+    ]
+  },
+  "cn": {
+    "key": "cn",
+    "author_key": "catalan",
+    "work_key": "cn",
+    "locus": "p. 295 (A. Books: Cn.)",
+    "author": "Catalan, Eugène Charles (1814–1894)",
+    "bib_anchor": "bib-catalan",
+    "work": "Théorèmes et problèmes de géométrie élémentaire (6th ed., Paris: Dunod, 1879)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0027",
+        "page": "8",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Catalan's"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "Cn. — E. Catalan, Théorèmes et problèmes de géométrie élémentaire, 6th ed. (Paris, 1879)"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0027",
+        "page": "8",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Catalan's"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "Cn. — E. Catalan, Théorèmes et problèmes de géométrie élémentaire, 6th ed. (Paris, 1879)"
+      }
+    ]
+  },
+  "court:1925": {
+    "key": "court:1925",
+    "author_key": "altshiller-court",
+    "work_key": "court:1925",
+    "locus": "1st ed. (1925)",
+    "author": "Altshiller-Court, Nathan (1881–1968)",
+    "bib_anchor": "bib-altshiller-court",
+    "work": "College Geometry: A Second Course in Plane Geometry for Colleges and Normal Schools (Richmond, VA: Johnson Publishing Co., 1925)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0002",
+        "page": "[iii]",
+        "book": "Frontmatter",
+        "section": "00_frontmatter",
+        "display": "1st ed., 1925"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0006",
+        "page": "vii",
+        "book": "Preface",
+        "section": "00_frontmatter",
+        "display": "First Edition of College Geometry (1925)"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0002",
+        "page": "[iii]",
+        "book": "Frontmatter",
+        "section": "00_frontmatter",
+        "display": "1st ed., 1925"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0006",
+        "page": "vii",
+        "book": "Preface",
+        "section": "00_frontmatter",
+        "display": "First Edition of College Geometry (1925)"
+      }
+    ]
+  },
+  "court:1952": {
+    "key": "court:1952",
+    "author_key": "altshiller-court",
+    "work_key": "court:1952",
+    "locus": "2nd ed. (1952 / Dover 2007)",
+    "author": "Altshiller-Court, Nathan (1881–1968)",
+    "bib_anchor": "bib-altshiller-court",
+    "work": "College Geometry: An Introduction to the Modern Geometry of the Triangle and the Circle (2nd ed., rev. and enlarged, New York: Barnes & Noble, 1952; repub. Mineola, NY: Dover Publications, 2007, ISBN 978-0-486-45805-2)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0001",
+        "page": "[cover]",
+        "book": "Frontmatter",
+        "section": "00_frontmatter",
+        "display": "College Geometry"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0002",
+        "page": "[iii]",
+        "book": "Frontmatter",
+        "section": "00_frontmatter",
+        "display": "College Geometry, 2nd Revised & Enlarged Edition (1952; Dover 2007)"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0003",
+        "page": "[iv]",
+        "book": "Frontmatter",
+        "section": "00_frontmatter",
+        "display": "second edition of the work"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0006",
+        "page": "vii",
+        "book": "Frontmatter",
+        "section": "00_frontmatter",
+        "display": "second edition"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0001",
+        "page": "[cover]",
+        "book": "Frontmatter",
+        "section": "00_frontmatter",
+        "display": "College Geometry"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0002",
+        "page": "[iii]",
+        "book": "Frontmatter",
+        "section": "00_frontmatter",
+        "display": "College Geometry, 2nd Revised & Enlarged Edition (1952; Dover 2007)"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0003",
+        "page": "[iv]",
+        "book": "Frontmatter",
+        "section": "00_frontmatter",
+        "display": "second edition of the work"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0006",
+        "page": "vii",
+        "book": "Frontmatter",
+        "section": "00_frontmatter",
+        "display": "second edition"
+      }
+    ]
+  },
+  "crt": {
+    "key": "crt",
+    "author_key": "altshiller-court",
+    "work_key": "crt",
+    "locus": "p. 295 (A. Books: Crt.)",
+    "author": "Altshiller-Court, Nathan (1881–1968)",
+    "bib_anchor": "bib-altshiller-court",
+    "work": "Modern Pure Solid Geometry (New York: Macmillan, 1935)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "Crt. — N. Altshiller-Court, Modern Pure Solid Geometry (New York, 1935)"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "Crt. — N. Altshiller-Court, Modern Pure Solid Geometry (New York, 1935)"
+      }
+    ]
+  },
+  "ech": {
+    "key": "ech",
+    "author_key": "altshiller-court",
+    "work_key": "ech",
+    "locus": "p. 295 (A. Books: Ech.)",
+    "author": "Echols, William Holding (1859–1934)",
+    "bib_anchor": "bib-altshiller-court",
+    "work": "Some Properties of Symmetric and Anti-Symmetric Determinants and Rational Functions / University of Virginia Geometric Monographs (Charlottesville, 1923–1932)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "Ech. — W. H. Echols (p. 295)"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "Ech. — W. H. Echols (p. 295)"
+      }
+    ]
+  },
+  "euclid:elements": {
+    "key": "euclid:elements",
+    "author_key": "euclid",
+    "work_key": "euclid:elements",
+    "locus": "Books I–VI",
+    "author": "Euclid of Alexandria (trans. Sir Thomas L. Heath)",
+    "bib_anchor": "bib-euclid",
+    "work": "The Thirteen Books of Euclid's Elements (2nd ed., Cambridge University Press, 1926; GEOMETOR Digital Edition: geometor/euclid & geometor/elements)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0016",
+        "page": "xvii",
+        "book": "Frontmatter",
+        "section": "00_frontmatter",
+        "display": "Euclid's Elements"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0020",
+        "page": "1",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Euclid's Elements, Books I–VI"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0021",
+        "page": "2",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Euclid VI.13, II.14, I.47, and III.17"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0022",
+        "page": "3",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Euclid I.1"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0032",
+        "page": "13",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Euclid III.21, III.31, III.32, and III.33"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0016",
+        "page": "xvii",
+        "book": "Frontmatter",
+        "section": "00_frontmatter",
+        "display": "Euclid's Elements"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0020",
+        "page": "1",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Euclid's Elements, Books I–VI"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0021",
+        "page": "2",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Euclid VI.13, II.14, I.47, and III.17"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0022",
+        "page": "3",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Euclid I.1"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0032",
+        "page": "13",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Euclid III.21, III.31, III.32, and III.33"
+      }
+    ]
+  },
+  "euler:1765": {
+    "key": "euler:1765",
+    "author_key": "euler",
+    "work_key": "euler:1765",
+    "locus": "Novi Comm. Petrop. XI (1765)",
+    "author": "Euler, Leonhard (1707–1783)",
+    "bib_anchor": "bib-euler",
+    "work": "Solutio facilis problematum quorumdam geometricorum difficillimorum, Novi Commentarii Academiae Scientiarum Petropolitanae 11 (1765), 103–123",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0120",
+        "page": "101",
+        "book": "Chapter III",
+        "section": "03_properties_of_the_triangle",
+        "display": "Euler (1765) on Triangle Centers & Euler Line"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0120",
+        "page": "101",
+        "book": "Chapter III",
+        "section": "03_properties_of_the_triangle",
+        "display": "Euler (1765) on Triangle Centers & Euler Line"
+      }
+    ]
+  },
+  "feuerbach:1822": {
+    "key": "feuerbach:1822",
+    "author_key": "feuerbach",
+    "work_key": "feuerbach:1822",
+    "locus": "Nuremberg (1822)",
+    "author": "Feuerbach, Karl Wilhelm (1800–1834)",
+    "bib_anchor": "bib-feuerbach",
+    "work": "Eigenschaften einiger merkwürdigen Punkte des geradlinigen Dreiecks und mehrerer durch sie bestimmten Linien und Figuren (Nuremberg: Riegel & Wiessner, 1822)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0124",
+        "page": "105",
+        "book": "Chapter III",
+        "section": "03_properties_of_the_triangle",
+        "display": "Feuerbach (1822) on the Nine-Point Circle & Tritangent Tangency"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0124",
+        "page": "105",
+        "book": "Chapter III",
+        "section": "03_properties_of_the_triangle",
+        "display": "Feuerbach (1822) on the Nine-Point Circle & Tritangent Tangency"
+      }
+    ]
+  },
+  "gy": {
+    "key": "gy",
+    "author_key": "gallatly",
+    "work_key": "gy",
+    "locus": "p. 295 (A. Books: Gy.)",
+    "author": "Gallatly, William (c. 1850 – c. 1928)",
+    "bib_anchor": "bib-gallatly",
+    "work": "The Modern Geometry of the Triangle (2nd ed., London: Francis Hodgson, 1913)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "Gy. — W. Gallatly, The Modern Geometry of the Triangle, 2nd ed. (London, 1913)"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "Gy. — W. Gallatly, The Modern Geometry of the Triangle, 2nd ed. (London, 1913)"
+      }
+    ]
+  },
+  "kimberling:etc": {
+    "key": "kimberling:etc",
+    "author_key": "kimberling",
+    "work_key": "kimberling:etc",
+    "locus": "X(1)–X(n)",
+    "author": "Kimberling, Clark (b. 1942)",
+    "bib_anchor": "bib-kimberling",
+    "work": "Encyclopedia of Triangle Centers (ETC), University of Evansville (GEOMETOR Project: geometor/etc)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0072",
+        "page": "53",
+        "book": "Chapter III",
+        "section": "03_properties_of_the_triangle",
+        "display": "Kimberling, Encyclopedia of Triangle Centers (ETC)"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0072",
+        "page": "53",
+        "book": "Chapter III",
+        "section": "03_properties_of_the_triangle",
+        "display": "Kimberling, Encyclopedia of Triangle Centers (ETC)"
+      }
+    ]
+  },
+  "lemoine:1873": {
+    "key": "lemoine:1873",
+    "author_key": "lemoine",
+    "work_key": "lemoine:1873",
+    "locus": "AFAS Lyon (1873)",
+    "author": "Lemoine, Émile (1840–1912)",
+    "bib_anchor": "bib-lemoine",
+    "work": "Note sur un point remarquable du plan du triangle, Association Française pour l'Avancement des Sciences, Congrès de Lyon (1873), 90–95",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0271",
+        "page": "252",
+        "book": "Chapter X",
+        "section": "10_recent_geometry_of_the_triangle",
+        "display": "Lemoine (1873) on the Symmedian Point"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0271",
+        "page": "252",
+        "book": "Chapter X",
+        "section": "10_recent_geometry_of_the_triangle",
+        "display": "Lemoine (1873) on the Symmedian Point"
+      }
+    ]
+  },
+  "lhr": {
+    "key": "lhr",
+    "author_key": "lhuilier",
+    "work_key": "lhr",
+    "locus": "p. 295 (A. Books: LHr.)",
+    "author": "L'Huilier, Simon Antoine Jean (1750–1840)",
+    "bib_anchor": "bib-lhuilier",
+    "work": "Éléments d'analyse géométrique et d'analyse algébrique appliquées à la recherche des lieux géométriques (Paris & Geneva, 1809)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0030",
+        "page": "11",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Simon L'Huilier (1809)"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "LHr. — Simon L'Huilier, Éléments d'analyse géométrique et d'analyse algébrique (Paris, 1809)"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0030",
+        "page": "11",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Simon L'Huilier (1809)"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "LHr. — Simon L'Huilier, Éléments d'analyse géométrique et d'analyse algébrique (Paris, 1809)"
+      }
+    ]
+  },
+  "pappus:collection:VII": {
+    "key": "pappus:collection:VII",
+    "author_key": "pappus",
+    "work_key": "pappus:collection",
+    "locus": "Book VII (Treasury of Analysis)",
+    "author": "Pappus of Alexandria (c. 290 – c. 350 AD)",
+    "bib_anchor": "bib-pappus",
+    "work": "Mathematical Collection (Συναγωγή), Book VII: On the Domain of Analysis (GEOMETOR Project: geometor/pappus)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0022",
+        "page": "3",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Pappus, Mathematical Collection, Book VII"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0022",
+        "page": "3",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Pappus, Mathematical Collection, Book VII"
+      }
+    ]
+  },
+  "per:bull": {
+    "key": "per:bull",
+    "author_key": "altshiller-court",
+    "work_key": "per:bull",
+    "locus": "p. 295 (B. Periodicals: Bull.)",
+    "author": "Société Mathématique de France / American Mathematical Society",
+    "bib_anchor": "bib-altshiller-court",
+    "work": "Bulletin des sciences mathématiques et astronomiques (Darboux, Paris)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "Bull. — Bulletin des sciences mathématiques (Paris)"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "Bull. — Bulletin des sciences mathématiques (Paris)"
+      }
+    ]
+  },
+  "per:edinb": {
+    "key": "per:edinb",
+    "author_key": "altshiller-court",
+    "work_key": "per:edinb",
+    "locus": "p. 295 (B. Periodicals: Edinb.)",
+    "author": "Edinburgh Mathematical Society",
+    "bib_anchor": "bib-altshiller-court",
+    "work": "Proceedings of the Edinburgh Mathematical Society (Edinburgh, founded 1883)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "Edinb. — Proceedings of the Edinburgh Mathematical Society"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "Edinb. — Proceedings of the Edinburgh Mathematical Society"
+      }
+    ]
+  },
+  "per:et": {
+    "key": "per:et",
+    "author_key": "altshiller-court",
+    "work_key": "per:et",
+    "locus": "p. 295 (B. Periodicals: ET.)",
+    "author": "Educational Times (W. J. C. Miller, ed.)",
+    "bib_anchor": "bib-altshiller-court",
+    "work": "Mathematical Questions and Solutions from the 'Educational Times' (London, 1864–1918)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "ET. — Mathematical Questions from the Educational Times (London)"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "ET. — Mathematical Questions from the Educational Times (London)"
+      }
+    ]
+  },
+  "per:gam": {
+    "key": "per:gam",
+    "author_key": "gergonne",
+    "work_key": "per:gam",
+    "locus": "p. 295 (B. Periodicals: GAM.)",
+    "author": "Gergonne, Joseph Diaz (ed.)",
+    "bib_anchor": "bib-gergonne",
+    "work": "Annales de mathématiques pures et appliquées ('Annales de Gergonne', Nîmes, Vols. 1–22, 1810–1832)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "GAM. — Gergonne's Annales de mathématiques pures et appliquées (1810–1832)"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "GAM. — Gergonne's Annales de mathématiques pures et appliquées (1810–1832)"
+      }
+    ]
+  },
+  "per:jme": {
+    "key": "per:jme",
+    "author_key": "altshiller-court",
+    "work_key": "per:jme",
+    "locus": "p. 295 (B. Periodicals: JME.)",
+    "author": "Bourget, J. & Koehler / de Longchamps, G. (eds.)",
+    "bib_anchor": "bib-altshiller-court",
+    "work": "Journal de mathématiques élémentaires (Paris, Vuibert / Delagrave, founded 1877)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "JME. — Journal de mathématiques élémentaires (Paris)"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "JME. — Journal de mathématiques élémentaires (Paris)"
+      }
+    ]
+  },
+  "per:jms": {
+    "key": "per:jms",
+    "author_key": "altshiller-court",
+    "work_key": "per:jms",
+    "locus": "p. 295 (B. Periodicals: JMS.)",
+    "author": "Bourget, J. & de Longchamps, G. (eds.)",
+    "bib_anchor": "bib-altshiller-court",
+    "work": "Journal de mathématiques spéciales (Paris, founded 1882)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "JMS. — Journal de mathématiques spéciales (Paris)"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "JMS. — Journal de mathématiques spéciales (Paris)"
+      }
+    ]
+  },
+  "per:mathesis": {
+    "key": "per:mathesis",
+    "author_key": "neuberg",
+    "work_key": "per:mathesis",
+    "locus": "p. 295 (B. Periodicals: Mathesis.)",
+    "author": "Mansion, Paul & Neuberg, Joseph (eds.)",
+    "bib_anchor": "bib-neuberg",
+    "work": "Mathesis: Recueil mathématique à l'usage des écoles spéciales et des établissements d'instruction moyenne (Ghent & Brussels, founded 1881)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "Mathesis. — Mathesis: Recueil mathématique (Ghent & Brussels)"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "Mathesis. — Mathesis: Recueil mathématique (Ghent & Brussels)"
+      }
+    ]
+  },
+  "per:monthly": {
+    "key": "per:monthly",
+    "author_key": "altshiller-court",
+    "work_key": "per:monthly",
+    "locus": "p. 296 (B. Periodicals: Monthly.)",
+    "author": "Mathematical Association of America",
+    "bib_anchor": "bib-altshiller-court",
+    "work": "The American Mathematical Monthly (founded 1894 by B. F. Finkel)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0315",
+        "page": "296",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "Monthly. — The American Mathematical Monthly"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0315",
+        "page": "296",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "Monthly. — The American Mathematical Monthly"
+      }
+    ]
+  },
+  "per:na": {
+    "key": "per:na",
+    "author_key": "altshiller-court",
+    "work_key": "per:na",
+    "locus": "p. 296 (B. Periodicals: NA.)",
+    "author": "Terquem, Olry & Gerono, Camille-Christophe (eds.)",
+    "bib_anchor": "bib-altshiller-court",
+    "work": "Nouvelles annales de mathématiques (Paris, 1842–1927)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0315",
+        "page": "296",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "NA. — Nouvelles annales de mathématiques (Paris)"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0315",
+        "page": "296",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "NA. — Nouvelles annales de mathématiques (Paris)"
+      }
+    ]
+  },
+  "per:nc": {
+    "key": "per:nc",
+    "author_key": "catalan",
+    "work_key": "per:nc",
+    "locus": "p. 296 (B. Periodicals: NC.)",
+    "author": "Catalan, Eugène & Mansion, Paul (eds.)",
+    "bib_anchor": "bib-catalan",
+    "work": "Nouvelle correspondance mathématique (Brussels, Vols. 1–6, 1874–1880; predecessor to Mathesis)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0315",
+        "page": "296",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "NC. — Nouvelle correspondance mathématique (Brussels, 1874–1880)"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0315",
+        "page": "296",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "NC. — Nouvelle correspondance mathématique (Brussels, 1874–1880)"
+      }
+    ]
+  },
+  "pt": {
+    "key": "pt",
+    "author_key": "petersen",
+    "work_key": "pt",
+    "locus": "p. 295 (A. Books: Pt.)",
+    "author": "Petersen, Julius (1839–1910)",
+    "bib_anchor": "bib-petersen",
+    "work": "Methods and Theories for the Solution of Problems of Geometrical Constructions (Copenhagen, 1866; London: Sampson Low, 1879)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0026",
+        "page": "7",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Methods and Theories"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0030",
+        "page": "11",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Julius Petersen (1866/1879)"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "Pt. — Julius Petersen, Methods and Theories for the Solution of Problems of Geometrical Constructions (Copenhagen, 1879)"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0026",
+        "page": "7",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Methods and Theories"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0030",
+        "page": "11",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Julius Petersen (1866/1879)"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "Pt. — Julius Petersen, Methods and Theories for the Solution of Problems of Geometrical Constructions (Copenhagen, 1879)"
+      }
+    ]
+  },
+  "rouche": {
+    "key": "rouche",
+    "author_key": "rouche",
+    "work_key": "rouche",
+    "locus": "p. 295 (A. Books: Rouché.)",
+    "author": "Rouché, Eugène & Comberousse, Charles de (with J. Neuberg)",
+    "bib_anchor": "bib-rouche",
+    "work": "Traité de géométrie, Première Partie: Géométrie plane (7th ed., Paris: Gauthier-Villars, 1900)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "Rouché. — E. Rouché et Ch. de Comberousse, Traité de géométrie, Part I, 7th ed. (Paris, 1900)"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0314",
+        "page": "295",
+        "book": "Historical Notes",
+        "section": "11_historical_and_bibliographical_notes",
+        "display": "Rouché. — E. Rouché et Ch. de Comberousse, Traité de géométrie, Part I, 7th ed. (Paris, 1900)"
+      }
+    ]
+  },
+  "simson:loci-plani:1749": {
+    "key": "simson:loci-plani:1749",
+    "author_key": "simson",
+    "work_key": "simson:loci-plani",
+    "locus": "Book II (1749)",
+    "author": "Simson, Robert (1687–1768)",
+    "bib_anchor": "bib-simson",
+    "work": "Apollonii Pergaei Locorum Planorum Libri II, restituti a Roberto Simson (Glasgow: Foulis, 1749)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0034",
+        "page": "15",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Apollonius, Plane Loci, restored by Robert Simson (1749)"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0034",
+        "page": "15",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "Apollonius, Plane Loci, restored by Robert Simson (1749)"
+      }
+    ]
+  },
+  "stewart:1746": {
+    "key": "stewart:1746",
+    "author_key": "stewart",
+    "work_key": "stewart:1746",
+    "locus": "Prop. 2 (1746)",
+    "author": "Stewart, Matthew (1717–1785)",
+    "bib_anchor": "bib-stewart",
+    "work": "Some General Theorems of Considerable Use in the Higher Parts of Mathematics (Edinburgh, 1746)",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0171",
+        "page": "152",
+        "book": "Chapter VI",
+        "section": "06_transversals",
+        "display": "Stewart (1746) on Cevian Metric Relation"
+      }
+    ],
+    "work_occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0171",
+        "page": "152",
+        "book": "Chapter VI",
+        "section": "06_transversals",
+        "display": "Stewart (1746) on Cevian Metric Relation"
+      }
+    ]
+  }
+}

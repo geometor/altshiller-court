@@ -1,0 +1,40 @@
+:folio: 0040
+:page: 21
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Indirect Elements — p. 21 (§§ 14–15, Fig. 17)
+:language: en
+:status: ok
+
+17. With a given radius to draw a circle so that it shall touch a given circle and have its center on a given line.
+18. With a given radius to draw a circle so that it shall pass through a given point and the tangents drawn to this circle from another given point shall be of given length.
+19. In a given circle to inscribe a right triangle so that each leg shall pass through a given point.
+20. Construct a triangle given the base, the opposite angle, and the point in which the bisector of this angle meets the base.
+21. Construct a triangle given the base and the angles which the median to the base makes with the other two sides.
+22. About a given circle to circumscribe a triangle given a side and one of its adjacent angles, so that the vertex of this angle shall lie on a given line.
+23. Construct a triangle given the base, an adjacent angle, and the angle which the median issued from the vertex of this angle makes with the side opposite the vertex of this angle.
+
+D. INDIRECT ELEMENTS
+--------------------
+
+Among the conditions which a figure to be constructed may be required to satisfy, elements may be given which do not occur directly in the figure in question. For instance, it may be required that the sum of two sides of a triangle shall have a given length, or that the difference of the base angles shall have a given magnitude, etc. In order to arrive at a method of solution of such a problem, it is necessary to introduce this “:term:`indirect element <indirect-elements>`” in the analysis of the problem.
+
+**15. Problem.** *Construct a triangle given the perimeter, the angle opposite the base, and the altitude to the base* :math:`(2p, A, h_a)`.
+
+.. picture:: 0040.g1.png
+   :alt: Fig. 17 — Auxiliary triangle AEF of base EF = 2p unfolded from triangle ABC by laying off BE = BA and CF = CA
+   :caption: FIG. 17
+
+Let :math:`ABC` (Fig. 17) be the required triangle. Produce :math:`BC` on both sides and lay off :math:`BE = BA`, :math:`CF = CA`. Thus :math:`EF = 2p`.
+
+The triangles :math:`EAB, FCA` are isosceles, hence:
+
+.. math::
+
+   \angle E = \angle EAB = \tfrac{1}{2}\,\angle ABC, \qquad \angle F = \angle FAC = \tfrac{1}{2}\,\angle ACB;
+
+hence:
+
+.. math::
+
+   \angle EAF = \tfrac{1}{2}\,B + A + \tfrac{1}{2}\,C = \tfrac{1}{2}(A + B + C) + \tfrac{1}{2}\,A = 90^\circ + \tfrac{1}{2}\,A,

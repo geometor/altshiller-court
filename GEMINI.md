@@ -11,9 +11,10 @@ Digital Scriptorium and 2-Track **Book Codex** edition of **Nathan Altshiller-Co
    against the 300 DPI folio scan (`<NNNN>.png`).
 2. **Pure Scholarly Treatise (No Embedded Python Construction Scripts)**: Like `geometor/hoenen`
    and `geometor/euclid`, this repository preserves the faithful treatise text, calibrated historical
-   diagrams, semantic roles (`:g:`, `:term:`, `:person:`, `:cite:`, `:just:`), and Track 2 commentary
-   cross-referencing Euclid's *Elements* (`I.1`–`VI.*`), `geometor/pappus`, `geometor/fundamentals`,
-   and Clark Kimberling's *Encyclopedia of Triangle Centers* (`X(1)`–`X(n)` in `geometor/etc`).
+   diagrams (`.. picture::`), folio provenance anchors (`.. folio::`), semantic roles (`:math:`,
+   `:term:`, `:person:`, `:cite:`), and Track 2 commentary cross-referencing Euclid's *Elements*
+   (`I.1`–`VI.*`), `geometor/pappus`, `geometor/fundamentals`, and Clark Kimberling's *Encyclopedia
+   of Triangle Centers* (`X(1)`–`X(n)` in `geometor/etc`).
    Do **not** embed `py_file` construction scripts inside the treatise edition.
 3. **Native `photon-platform/publish` Integration**: Do not create custom Flask apps. `resources/college_geometry/`
    plugs directly into `publish folio` (`FolioScanner` + `ReviewManager`), and `docsrc/college_geometry/`
@@ -36,4 +37,4 @@ Digital Scriptorium and 2-Track **Book Codex** edition of **Nathan Altshiller-Co
 - `compile_edition.py`: Compiles folio `.rst` and `.notes.rst` files into the de-paginated 2-Track
   Book Codex (`docsrc/college_geometry/`) and generates `bibliography.rst`, `persons.rst`,
   `glossary.rst`, and `scan-inventory.rst`.
-- `__main__.py`: Unified CLI (`ingest`, `graphics`, `compile`, `all`).
+- `__main__.py`: Unified CLI (`ingest`, `graphics`, `compile`, `status`).

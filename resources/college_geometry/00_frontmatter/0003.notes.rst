@@ -1,0 +1,27 @@
+Folio 0003 (Page [iv]) — Diplomatic & Mathematical Notes
+========================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0002 (Page [iii], Title Page)
+- **Current Folio** (``0003.rst``): Page ``[iv]``, Frontmatter [``00_frontmatter``] — Status: ``ok``
+- **Following Folio**: Folio 0004 (Page [v], Dedication)
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: Copyright verso (printed page ``[iv]``) recording the 1952 copyright, 1980 renewal by Arnold Court, 2007 Dover bibliographical note, and Library of Congress CIP record (LCCN ``2006102940``, LCC ``QA474.C6 2007``, DDC ``516.22``).
+- **Document Headings on Folio**: ``Copyright``, ``Bibliographical Note``, ``Library of Congress Cataloging-in-Publication Data``
+- **Line-Break Hyphenations Resolved**: ``tri-angle``
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+Raw OCR misreads ``516.22-dc22`` as ``5l6.22-dc22``; corrected against ``0003.png``.
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``00_frontmatter/0003.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan)

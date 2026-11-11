@@ -1,0 +1,37 @@
+:folio: 0036
+:page: 17
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Geometric Loci — p. 17 (§§ 11–12, Exercises 1–4)
+:language: en
+:status: ok
+
+and therefore, denoting :math:`AC + BC = AB` by :math:`a`:
+
+.. math::
+
+   AC - BC = d^2 \div a.
+
+This equality gives the difference of the segments :math:`AC` and :math:`BC`, while the sum of these segments is equal to :math:`a`. Thus these segments may be constructed, and the point :math:`C` located on the line :math:`AB`. Hence the foot :math:`C` of the perpendicular dropped upon :math:`AB` from any point :math:`M` of the locus is a fixed point of :math:`AB`. Consequently the point :math:`M` lies on the perpendicular to the line :math:`AB` at the point :math:`C`. It is readily shown that, conversely, every point of this perpendicular belongs to the locus.
+
+*Note.* We will obtain a different line for the locus of :math:`M` if we consider that :math:`BM^2 - AM^2 = d^2`. In fact, the locus actually consists of two straight lines, unless the order in which the two given points are to be considered is specified in the statement of the locus.
+
+EXERCISES
+~~~~~~~~~
+
+1. A variable parallel to the base :math:`BC` of a triangle :math:`ABC` meets :math:`AB, AC` in :math:`D, E`. Show that the locus of the point :math:`M = (BE, CD)` is a straight line.
+2. On the sides :math:`AB, AC` of a triangle :math:`ABC` are laid off two equal segments :math:`AB', AC'` of variable length. The perpendiculars to :math:`AB, AC` at :math:`B', C'` meet in :math:`D`. Show that the locus of the point :math:`D` is a straight line. Find the locus of the projection of :math:`D` upon the line :math:`B'C'`.
+3. Find the locus of a point at which two consecutive segments :math:`AB, BC` of the same straight line subtend equal angles.
+4. The base :math:`BC` of a variable triangle :math:`ABC` is fixed, and the sum :math:`AB + AC` is constant. The line :math:`DP` drawn through the midpoint :math:`D` of :math:`BC` parallel to :math:`AB` meets the parallel :math:`CP` through :math:`C` to the internal bisector of the angle :math:`A`, in :math:`P`. Show that the locus of :math:`P` is a circle having :math:`D` for center.
+
+The following are examples of the use of loci in the solution of problems.
+
+**12. Problem.** *Draw a circle passing through two given points and subtending a given angle at a third given point.*
+
+ANALYSIS. Let :math:`(O)` be the required circle passing through the two given points :math:`A, B` (Fig. 13). The angle formed by the tangents :math:`CT, CT'` from the given point :math:`C` to :math:`(O)` is given; hence in the right triangle :math:`OTC` we know the acute angle :math:`OCT`, i.e., we know the shape of this triangle. Thus the ratio :math:`OT : OC` is known, therefore also the ratios:
+
+.. math::
+
+   OA : OC = OB : OC.
+
+Consequently we have two loci for the point :math:`O` (two :term:`Apollonian circles <apollonian-circle>`), and the point may be found.

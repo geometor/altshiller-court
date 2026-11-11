@@ -1,0 +1,21 @@
+:folio: 0017
+:page: xviii
+:book: Frontmatter
+:section: 00_frontmatter
+:title: To the Student (continued) — p. xviii
+:language: en
+:status: ok
+
+*The Exercises.* The purpose of exercises in the study of mathematics is usually two-fold. They provide the reader with a check on his mastery of the contents of the course, and also with an opportunity to test his ability to use the material by applying the methods presented in the book. These two phases are, of course, not unrelated.
+
+It goes without saying that the student cannot possibly solve a problem if he does not know what the problem is. To argue the contrary would be nothing short of ridiculous. In the light of experience, however, it may be useful to insist on this point. We begin our problem-solving career with such simple statements that there is no doubt as to our understanding their contents. When, in the course of time, conditions change radically, we continue, by force of habit, to assume an instantaneous knowledge of the statement of the problem.
+
+Like the problems in most books on geometry, nearly all the problems in *College Geometry* are verbal problems. Nevertheless, surprising as it may sound, it is often difficult to know what a given problem is. More or less effort may be required to determine its meaning. Clearly, this effort of understanding the problem must be made first, however, before any steps toward a solution are undertaken. In fact, the mastery of the meaning of the problem may be the principal part, and often is the most difficult part, of its solution.
+
+To make sure that he understands the statement of the question, the student should repeat its text verbally, without using the book, or, still better, write the text in full, from memory. Moreover, he must have in mind so clearly the meaning of the spoken or written sentences that he will be able to explain a problem, in his own words, to anyone, equipped with the necessary information, who has never before heard of the problem.
+
+Finally, it is essential to draw the figure the question deals with. A simple free-hand illustration will usually suffice. In some cases a carefully executed drawing may provide valuable suggestions.
+
+Obviously, no infallible rule can be given which will lead to the solution of all problems. When the student has made sure of the meaning of the problem, has listed accurately the given elements of the problem and the elements wanted, and has before him an adequate figure, he will be well armed for his task, and with such help even a recalcitrant question may eventually become more manageable.
+
+The student must not expect that a solution will invariably occur to him as soon as he has finished reading the text of a question. If

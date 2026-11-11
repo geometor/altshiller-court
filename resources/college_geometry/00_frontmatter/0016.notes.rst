@@ -1,0 +1,27 @@
+Folio 0016 (Page xvii) — Diplomatic & Mathematical Notes
+========================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0015 (Page [xvi], Blank Verso)
+- **Current Folio** (``0016.rst``): Page ``xvii``, Frontmatter [``00_frontmatter``] — Status: ``ok``
+- **Following Folio**: Folio 0017 (Page xviii, To the Student continued)
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: Opening page of ``TO THE STUDENT`` (printed page ``xvii``), containing the sections ``The text.`` and ``Figures.`` on deductive memory, marginal cross-referencing to Euclidean elementary geometry, bidirectional 'forward' article links, and active diagram sketching.
+- **Document Headings on Folio**: ``TO THE STUDENT``
+- **Line-Break Hyphenations Resolved**: ``mathe-matical``, ``refer-ences``, ``prop-ositions``
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+Altshiller-Court's vision of marginal links back to :cite:`Euclid's Elements <euclid:elements>` and forward cross-references across articles §§ 1–699 anticipates the exact hypertextual DAG realized in the GEOMETOR Digital Scriptorium.
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``00_frontmatter/0016.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan)

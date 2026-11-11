@@ -1,0 +1,29 @@
+:folio: 0027
+:page: 8
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: General Method of Solution — p. 8 (§ 9, Fig. 6)
+:language: en
+:status: ok
+
+**9. Problem.** *Construct a square so that each side, or the side produced, shall pass through a given point.*
+
+ANALYSIS. Let :math:`PQRS` be a square whose sides :math:`PQ, QR, RS, SP` pass, respectively, through the given points :math:`A, B, C, D` (Fig. 6).
+
+If the perpendicular from :math:`D` upon :math:`AC` meets the line :math:`QR` in :math:`F`, then :math:`DF = AC`. Indeed, if we leave the line :math:`DF` fixed while we revolve the square, and the line :math:`AC` with it, around its center by an angle of :math:`90^\circ` so that the sides :math:`PQ, QR, RS, SP` shall occupy the present positions of :math:`QR, RS, SP, PQ`, respectively, the line :math:`AC` will become parallel to :math:`DF`; hence :math:`AC = DF`.
+
+.. picture:: 0027.g1.png
+   :alt: Fig. 6 — Square PQRS circumscribed about four given points A, B, C, D with DF perpendicular and equal to AC
+   :caption: FIG. 6
+
+That :math:`DF = AC` may also be seen in another way. Let the parallels through :math:`Q` to the lines :math:`AC, DF` meet :math:`RS, SP` in the points :math:`K, L`. In the right triangles :math:`PQL, QRK` we have:
+
+.. math::
+
+   \angle PQL = \angle LQR - \angle PQR = \angle LQR - \angle LQK = \angle KQR.
+
+Thus the two triangles are equiangular, and since :math:`PQ = QR`, by assumption, they are congruent; hence :math:`QL = QK`. But :math:`QL = DF`, :math:`QK = AC`; hence :math:`AC = DF`.
+
+The equality of these two segments suggests the following
+
+CONSTRUCTION. From the given point :math:`D` drop a perpendicular :math:`DF` upon the given line :math:`AC` and lay off :math:`DF = AC`. Join :math:`F` to the fourth given point :math:`B`, and through :math:`D` draw a parallel to :math:`BF`. These two parallel lines and the perpendiculars to them through :math:`A` and :math:`C` form the required square :math:`PQRS`.

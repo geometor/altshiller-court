@@ -1,0 +1,27 @@
+Folio 0005 (Page [vi]) — Diplomatic & Mathematical Notes
+========================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0004 (Page [v], Dedication)
+- **Current Folio** (``0005.rst``): Page ``[vi]``, Frontmatter [``00_frontmatter``] — Status: ``blank``
+- **Following Folio**: Folio 0006 (Page vii, Preface)
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: Intentionally blank verso (printed page ``[vi]``) preceding the Preface.
+- **Document Headings on Folio**: None
+- **Line-Break Hyphenations Resolved**: None
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+Standard typographic blank verso ensuring ``PREFACE`` opens on recto page ``vii``.
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``00_frontmatter/0005.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``blank`` (visually verified against raster scan)

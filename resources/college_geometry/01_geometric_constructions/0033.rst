@@ -1,0 +1,47 @@
+:folio: 0033
+:page: 14
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Geometric Loci — p. 14 (§ 11, Loci 8–10, Fig. 10)
+:language: en
+:status: ok
+
+If the point :math:`P` lies outside of :math:`(O)`, any point :math:`M` of the locus must lie on the circle having :math:`OP` for diameter, but not every point of this circle belongs to the locus. The locus consists of the part of the circle :math:`(OP)` which lies within the given circle :math:`(O)`.
+
+LOCUS 9. *The locus of the midpoints of all the chords of given length drawn in a given circle is a circle concentric with the given circle.*
+
+.. picture:: 0033.g1.png
+   :alt: Fig. 10 — Triangle ABM with median MO and altitude MD for Locus 10 (sum of squares of distances)
+   :caption: FIG. 10
+
+The chords are all tangent to this circle at their respective midpoints.
+
+LOCUS 10. *The locus of a point the sum of the squares of whose distances from two given points is equal to a given constant is a circle having for center the midpoint of the given segment.*
+
+Let :math:`M` (Fig. 10) be a point on the locus. Join :math:`M` to the midpoint :math:`O` of the segment :math:`AB` determined by the two given points :math:`A, B` and drop the perpendicular :math:`MD` from :math:`M` upon :math:`AB`. From the triangles :math:`AOM` and :math:`BOM` we have:
+
+.. math::
+
+   AM^2 = OM^2 + OA^2 - 2\,OA \cdot OD, \qquad BM^2 = OM^2 + OB^2 + 2\,OB \cdot OD.
+
+But:
+
+.. math::
+
+   OA = OB = \tfrac{1}{2}\,AB;
+
+hence, adding, we have:
+
+.. math::
+
+   AM^2 + BM^2 = 2\,OM^2 + 2\,OA^2.
+
+Now :math:`AM^2 + BM^2` is, by assumption, equal to a given constant, say :math:`s^2`, and :math:`OA^2 = a^2`, where :math:`2a` represents the length of the known segment :math:`AB`. Hence:
+
+.. math::
+
+   (1) \qquad OM^2 = \tfrac{1}{2}\,s^2 - a^2.
+
+Thus the point :math:`M` lies at a fixed distance :math:`OM` from the fixed point :math:`O`, and therefore the locus of :math:`M` is a circle with :math:`O` as center.
+
+The radius :math:`OM` may be constructed from the formula (1) as follows. :math:`OM` is one leg of a right triangle which has for its other leg half the

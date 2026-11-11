@@ -1,0 +1,11 @@
+:folio: 0004
+:page: [v]
+:book: Frontmatter
+:section: 00_frontmatter
+:title: Dedication — p. [v]
+:language: en
+:status: ok
+
+.. epigraph::
+
+   *To My Wife*

@@ -1,0 +1,19 @@
+{
+  "folio": "0040",
+  "page": "21",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0040.g1.png",
+      "bbox": [
+        247,
+        1400,
+        923,
+        330
+      ],
+      "caption": "Fig. 17. Construction of triangle ABC given perimeter 2p, vertical angle A, and altitude h_a via indirect triangle AEF (\u00a7 15).",
+      "white_point": 238
+    }
+  ]
+}
