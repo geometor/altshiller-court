@@ -2,7 +2,14 @@
 Changelog
 =========
 
-0.1.0 (Unreleased)
+0.2.0 (2026-11-12)
+------------------
+
+- **refactored**: Reparsed ``docsrc/college_geometry/`` into a Euclid-style hierarchical **one-item-per-web-page** Book Codex (``Book -> Chapters -> Sections -> Items``) using ``.. collection::`` cards with inline ``.euclid-graphic`` SVG thumbnails and enunciation excerpts at every heading level.
+- **added**: Completed multimodal-vision transcription, ``.notes.rst`` commentary, and quantitative Ink-to-Vector SVG calibration across the remainder of Chapter I (folios ``0041``–``0052``, ``§§ 15–22`` *D. Indirect Elements* and *Review Exercises 1–74*, ``FIG. 18``–``FIG. 22`` at ``99.97%``–``100.00%`` scan overlap).
+- **added**: Dedicated sub-collection pages for ``§ 11`` (*Important Loci*, ``LOCUS 1``–``LOCUS 12``) and per-item ``commentary.rst`` tracks, updating apparatus back-links across ``205`` compiled HTML pages with zero broken references.
+
+0.1.0 (2026-11-11)
 ------------------
 
 - Initial repository scaffold for ``geometor-altshiller-court``.
