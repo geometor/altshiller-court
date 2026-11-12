@@ -91,7 +91,7 @@
         <li><p><strong>Archival Fidelity (`resources/college_geometry/`)</strong>: Every PDF page (<cite>0001</cite>–<cite>0334</cite>) is rasterized at 300 DPI (<cite>1421 × 2225</cite> px) and organized into 13 structural directories (<cite>00_frontmatter</cite> through <cite>12_index</cite>) governed by <code class="docutils literal notranslate"><span class="pre">structure_map.json</span></code>.</p></li>
         <li><p><strong>Atomic Folio Verification (`publish folio`)</strong>: Each folio is transcribed into an atomic <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.rst</span></code> file paired with diplomatic/mathematical notes in <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.notes.rst</span></code>, bounding-box figure coordinates in <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.json</span></code>, normalized light/dark diagram crops (<code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.g&lt;k&gt;.png</span></code> and <code class="docutils literal notranslate"><span class="pre">.inverted.png</span></code>), and verification checklists in <code class="docutils literal notranslate"><span class="pre">folio_reviews.json</span></code>.</p></li>
         <li><p><strong>Interactive Semantic SVG Diagrams (`svg_compiler.py`)</strong>: Calibrated 300-DPI crops are reconstructed into exact Euclidean vector models inside <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.json</span></code> (<cite>99.97%</cite>–<cite>100.00%</cite> ink overlap) and compiled into inline <code class="docutils literal notranslate"><span class="pre">euclid-graphic</span></code> SVGs wired to <code class="docutils literal notranslate"><span class="pre">:g:</span></code>, <code class="docutils literal notranslate"><span class="pre">:eq:</span></code>, <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">enunciation::</span></code>, and <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">assertion::</span></code> roles and directives.</p></li>
-        <li><p><strong>2-Track Book Codex (`docsrc/college_geometry/`)</strong>: <code class="docutils literal notranslate"><span class="pre">geometor.altshiller_court.compile_edition</span></code> de-paginates consecutive folios into continuous reading chapters with marginal <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">folio::</span></code> milestones (<cite>English</cite> track) paired side-by-side with constructive and ecosystem commentary (<cite>Commentary</cite> track).</p></li>
+        <li><p><strong>Hierarchical Item-Per-Page Book Codex (`docsrc/college_geometry/`)</strong>: <code class="docutils literal notranslate"><span class="pre">geometor.altshiller_court.compile_edition</span></code> and <code class="docutils literal notranslate"><span class="pre">codex_items</span></code> decompose depaginated folios into a multi-level Euclid-style <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">collection::</span></code> hierarchy (<code class="docutils literal notranslate"><span class="pre">Book</span> <span class="pre">→</span> <span class="pre">Chapters</span> <span class="pre">→</span> <span class="pre">Sections</span> <span class="pre">→</span> <span class="pre">Items</span> <span class="pre">→</span> <span class="pre">Loci</span></code>), giving every article, problem, locus, and exercise set its own dedicated web page (<cite>index.rst</cite>), co-located <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> SVG(s), marginal <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">folio::</span></code> milestones, and paired <code class="docutils literal notranslate"><span class="pre">Commentary</span></code> track (<cite>commentary.rst</cite>).</p></li>
         <li><p><strong>Bridge to Symbolic Geometry (`geometor.model`)</strong>: Altshiller-Court’s constructive problems (<cite>Analysis</cite>, <cite>Construction</cite>, <cite>Proof</cite>, <cite>Discussion</cite>) translate directly into exact algebraic ruler-and-compass DAGs in <code class="docutils literal notranslate"><span class="pre">geometor/model</span></code>, harmonic range detectors in <code class="docutils literal notranslate"><span class="pre">geometor/divine</span></code>, and Kimberling center catalogs in <code class="docutils literal notranslate"><span class="pre">geometor/etc</span></code>.</p></li>
         </ol>
         <div class="toctree-wrapper compound">
@@ -139,6 +139,16 @@
         </form>
       </div>
     </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../types/chapter.html">chapter</a></li>
+        <li><a href="../types/commentary.html">commentary</a></li>
+        <li><a href="../types/item.html">item</a></li>
+        <li><a href="../types/locus.html">locus</a></li>
+        <li><a href="../types/section.html">section</a></li>
+      </ul>
+    </aside>
   </div>
   <footer>
     <hr />
@@ -151,7 +161,7 @@
 
   <script src="../_static/jquery.js?v=5d32c60e"></script>
   <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../_static/documentation_options.js?v=938c9ccc"></script>
   <script src="../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>

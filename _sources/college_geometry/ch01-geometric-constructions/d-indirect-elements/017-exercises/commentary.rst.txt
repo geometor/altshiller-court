@@ -1,0 +1,43 @@
+:layout: book
+:type: commentary
+:canonical_id: Ch.I.17.Ex.commentary
+:title: Commentary on § 17. Exercises (1–9)
+:folio: 0042
+:page: 23
+:folios: 0042
+:pages: 23
+
+.. _ch01-art-017-exercises-commentary:
+
+Commentary on § 17. Exercises (1–9)
+===================================
+
+Back to :ref:`§ 17. Exercises (1–9) <ch01-art-017-exercises>`.
+
+Folio 0042 (Page 23) — Diplomatic & Mathematical Notes
+------------------------------------------------------
+
+Summary & Folio Continuity
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **Preceding Folio**: Folio 0041 (Page 22, §§ 15–17, Fig. 18)
+- **Current Folio** (``0042.rst``): Page ``23``, Chapter I [``01_geometric_constructions``] — Status: ``ok``
+- **Following Folio**: Folio 0043 (Page 24, conclusion of § 18, Fig. 19, Exercises 1–6, and § 19)
+
+Structural & Diplomatic Observations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **Overview**: Page ``23`` (running header ``Ch. I, §§ 17, 18] / INDIRECT ELEMENTS / 23``), completing § 17 (*Discussion* and *Note* deriving :math:`\angle BCD = 90^\circ - \frac{1}{2}(B - C)`), listing Exercises 1–9 (typeset in a three-column grid for items 1–8 plus full-width item 9), and beginning § 18 (*Problem*: constructing :math:`\triangle ABC` from :math:`(a, A, b - c)`). Note minor omitted trailing periods on printed items ``4`` and ``8`` normalized to standard list punctuation.
+- **Document Headings on Folio**: ``EXERCISES``, ``18. Problem.``
+- **Line-Break Hyphenations Resolved**: none across line wraps requiring de-hyphenation.
+
+Mathematical & Constructive Commentary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In § 17's *Discussion*, because :math:`BC = a < b + c = BD` in auxiliary :math:`\triangle BCD`, the known angle :math:`\angle D = \frac{1}{2}A` lies opposite the shorter side :math:`a`, producing the classic SSA (ambiguous case) bifurcation (two, one, or zero triangles depending on :math:`a \gtrless (b + c)\sin\frac{1}{2}A`). Moreover, the identity :math:`\angle BCD = 90^\circ - \frac{1}{2}(B - C)` couples the side-sum :math:`b + c` directly to the angle-difference :math:`B - C`, powering Exercises 6–9 and anticipating Mollweide's formula.
+
+Scan Quality & Verification
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **Archival Scan**: ``01_geometric_constructions/0042.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan)

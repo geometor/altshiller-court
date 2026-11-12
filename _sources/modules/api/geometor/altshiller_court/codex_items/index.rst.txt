@@ -1,0 +1,254 @@
+geometor.altshiller_court.codex_items
+=====================================
+
+.. py:module:: geometor.altshiller_court.codex_items
+
+.. autoapi-nested-parse::
+
+   Folio depagination and item-per-page decomposition for *College Geometry*.
+
+   Transforms atomic diplomatic folio files (``<NNNN>.rst`` and ``<NNNN>.notes.rst``)
+   into structured chapter sections, leaf items, and sub-collections (such as the
+   twelve fundamental loci of ``§ 11``) with co-located ``.euclid-graphic`` SVGs and
+   paired ``commentary.rst`` companion tracks.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.altshiller_court.codex_items.HEADING_CHARS
+   geometor.altshiller_court.codex_items.ARTICLE_INLINE_RE
+   geometor.altshiller_court.codex_items.PROBLEM_ENUN_RE
+   geometor.altshiller_court.codex_items.LOCUS_ENUN_RE
+   geometor.altshiller_court.codex_items.PICTURE_RE
+   geometor.altshiller_court.codex_items.GEOM_GID_RE
+   geometor.altshiller_court.codex_items.ENUM_ITEM_RE
+   geometor.altshiller_court.codex_items.CH01_SECTION_META
+   geometor.altshiller_court.codex_items.FRONTMATTER_UNITS
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.altshiller_court.codex_items.FolioBlock
+   geometor.altshiller_court.codex_items.CodexItem
+   geometor.altshiller_court.codex_items.CodexSection
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.altshiller_court.codex_items.parse_folio_rst
+   geometor.altshiller_court.codex_items.demote_headings
+   geometor.altshiller_court.codex_items.strip_top_heading
+   geometor.altshiller_court.codex_items.heading_info
+   geometor.altshiller_court.codex_items.extract_depaginated_blocks
+   geometor.altshiller_court.codex_items.render_blocks_with_folios
+   geometor.altshiller_court.codex_items.decompose_chapter_one
+   geometor.altshiller_court.codex_items.decompose_frontmatter
+   geometor.altshiller_court.codex_items.copy_referenced_graphics
+
+
+Module Contents
+---------------
+
+.. py:data:: HEADING_CHARS
+
+.. py:data:: ARTICLE_INLINE_RE
+
+.. py:data:: PROBLEM_ENUN_RE
+
+.. py:data:: LOCUS_ENUN_RE
+
+.. py:data:: PICTURE_RE
+
+.. py:data:: GEOM_GID_RE
+
+.. py:data:: ENUM_ITEM_RE
+
+.. py:class:: FolioBlock
+
+   A single top-level RST block carrying its source folio provenance.
+
+
+   .. py:attribute:: text
+      :type:  str
+
+
+   .. py:attribute:: folios
+      :type:  list[tuple[str, str]]
+      :value: []
+
+
+
+   .. py:property:: primary_folio
+      :type: tuple[str, str]
+
+
+      Return ``(folio_id, page_str)`` where this block begins.
+
+
+.. py:class:: CodexItem
+
+   A single compiled leaf page (or ``§ 11`` locus sub-collection) with commentary.
+
+
+   .. py:attribute:: slug
+      :type:  str
+
+
+   .. py:attribute:: title
+      :type:  str
+
+
+   .. py:attribute:: anchor
+      :type:  str
+
+
+   .. py:attribute:: item_type
+      :type:  str
+
+
+   .. py:attribute:: order
+      :type:  int
+
+
+   .. py:attribute:: canonical_id
+      :type:  str
+
+
+   .. py:attribute:: blocks
+      :type:  list[FolioBlock]
+      :value: []
+
+
+
+   .. py:attribute:: children
+      :type:  list[CodexItem]
+      :value: []
+
+
+
+   .. py:attribute:: child_collection_type
+      :type:  str | None
+      :value: None
+
+
+
+   .. py:attribute:: excerpt
+      :type:  str | None
+      :value: None
+
+
+
+   .. py:method:: all_folios() -> list[tuple[str, str]]
+
+      Ordered unique ``(folio_id, page_str)`` pairs spanned by this item and its children.
+
+
+
+.. py:class:: CodexSection
+
+   A chapter section container holding intro blocks and ordered ``CodexItem`` children.
+
+
+   .. py:attribute:: slug
+      :type:  str
+
+
+   .. py:attribute:: code
+      :type:  str
+
+
+   .. py:attribute:: title
+      :type:  str
+
+
+   .. py:attribute:: anchor
+      :type:  str
+
+
+   .. py:attribute:: canonical_id
+      :type:  str
+
+
+   .. py:attribute:: order
+      :type:  int
+
+
+   .. py:attribute:: overview
+      :type:  str
+
+
+   .. py:attribute:: intro_blocks
+      :type:  list[FolioBlock]
+      :value: []
+
+
+
+   .. py:attribute:: items
+      :type:  list[CodexItem]
+      :value: []
+
+
+
+.. py:function:: parse_folio_rst(rst_path: pathlib.Path) -> tuple[dict[str, str], str]
+
+   Parse ``:key: value`` metadata header and RST body from a ``<NNNN>.rst`` file.
+
+
+.. py:function:: demote_headings(text: str, map_chars: dict[str, str]) -> str
+
+   Rewrite RST underline characters according to ``map_chars``.
+
+
+.. py:function:: strip_top_heading(body: str, underline_char: str = '=') -> str
+
+   Remove top RST heading underlined with ``underline_char`` if present.
+
+
+.. py:function:: heading_info(block_text: str) -> tuple[str, str] | None
+
+   If ``block_text`` is a 2-line RST heading, return ``(title, underline_char)``.
+
+
+.. py:function:: extract_depaginated_blocks(folio_entries: list[tuple[str, str, dict[str, str], str]], strip_chapter_heading: bool = False, demote_frontmatter: bool = False) -> list[FolioBlock]
+
+   Convert consecutive folios into ``FolioBlock`` items, reflowing mid-sentence splits.
+
+
+.. py:function:: render_blocks_with_folios(blocks: list[FolioBlock]) -> str
+
+   Render ``FolioBlock`` list to RST, emitting ``.. folio::`` milestones at folio transitions.
+
+
+.. py:data:: CH01_SECTION_META
+   :type:  dict[str, tuple[str, str, str, str]]
+
+.. py:function:: decompose_chapter_one(folio_entries: list[tuple[str, str, dict[str, str], str]]) -> list[CodexSection]
+
+   Decompose Chapter I (``0020``–``0052``) into 5 ``CodexSection`` containers and leaf items.
+
+
+.. py:data:: FRONTMATTER_UNITS
+   :type:  list[tuple[str, str, str, str, str, str]]
+   :value: [('01-cover', 'Dover Front Cover', '0001', '0001', 'Frontmatter.Cover', "Unabridged 2007 Dover...
+
+
+.. py:function:: decompose_frontmatter(folio_entries: list[tuple[str, str, dict[str, str], str]]) -> list[CodexItem]
+
+   Decompose Frontmatter (``0001``–``0019``) into 6 leaf ``CodexItem`` units.
+
+
+.. py:function:: copy_referenced_graphics(blocks: list[FolioBlock], source_chap_dir: pathlib.Path, dest_item_dir: pathlib.Path) -> tuple[int, int]
+
+   Copy ONLY the ``.g*.svg`` and ``.g*.png`` files referenced by ``.. picture::`` in ``blocks``.
+
+

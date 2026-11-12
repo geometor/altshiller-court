@@ -1,0 +1,43 @@
+:layout: book
+:type: commentary
+:canonical_id: Ch.I.11.Ex.commentary
+:title: Commentary on § 11. Exercises (1–4)
+:folio: 0036
+:page: 17
+:folios: 0036
+:pages: 17
+
+.. _ch01-art-011-exercises-commentary:
+
+Commentary on § 11. Exercises (1–4)
+===================================
+
+Back to :ref:`§ 11. Exercises (1–4) <ch01-art-011-exercises>`.
+
+Folio 0036 (Page 17) — Diplomatic & Mathematical Notes
+------------------------------------------------------
+
+Summary & Folio Continuity
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **Preceding Folio**: Folio 0035 (Page 16, Locus 12: '(AC - BC)(AC + BC) = d^2,')
+- **Current Folio** (``0036.rst``): Page ``17``, Chapter I [``01_geometric_constructions``] — Status: ``ok``
+- **Following Folio**: Folio 0037 (Page 18, Fig. 13, Construction of § 12, and § 13)
+
+Structural & Diplomatic Observations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **Overview**: Page ``17`` (running header ``Ch. I, §§ 11, 12] / GEOMETRIC LOCI / 17``), concluding ``LOCUS 12`` (constructing :math:`AC - BC = d^2 \div a` via fourth proportional and sum-and-difference of segments, § 2), listing Locus Exercises 1–4, and presenting the enunciation and Analysis of § 12 (*Problem*).
+- **Document Headings on Folio**: ``EXERCISES``, ``12. Problem.``
+- **Line-Break Hyphenations Resolved**: ``con-sider``, ``con-stant``
+
+Mathematical & Constructive Commentary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Raw OCR corrupted :math:`AC - BC = d^2 \div a` to ``dl-, a``; verified against ``0036.png``. Note Exercise 1 (the median through :math:`A` is the locus of :math:`M = (BE, CD)` by harmonic properties of trapezoids, Ch. VII) and Exercise 3 (an Apollonian circle on :math:`AC` passing through :math:`B`, since :math:`MB` bisects :math:`\angle AMC` iff :math:`MA : MC = AB : BC`!).
+
+Scan Quality & Verification
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **Archival Scan**: ``01_geometric_constructions/0036.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan)

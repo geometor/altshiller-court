@@ -1,0 +1,473 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.altshiller_court.codex_items &mdash; GEOMETOR • altshiller-court</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <h1>GEOMETOR • altshiller-court</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">altshiller-court</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../college_geometry/index.html"  >COLLEGE GEOMETRY</a>
+        </li>
+        <li>
+          <a href="../../../../../about/index.html"  >Nathan Altshiller-Court & the Digital Scriptorium</a>
+        </li>
+        <li>
+          <a href="../../../../index.html" class="is-active" aria-selected="true" >modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; altshiller-court</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../index.html">GEOMETOR • altshiller-court</a>
+          </div>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
+            <a class="book-crumb-link" href="../../../../index.html">modules</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../__main__/index.html" title="geometor.altshiller_court.__main__">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../compile_edition/index.html" title="geometor.altshiller_court.compile_edition"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="module-geometor.altshiller_court.codex_items">
+        <span id="geometor-altshiller-court-codex-items"></span><h1>geometor.altshiller_court.codex_items<a class="headerlink" href="#module-geometor.altshiller_court.codex_items" title="Link to this heading">¶</a></h1>
+        <p>Folio depagination and item-per-page decomposition for <em>College Geometry</em>.</p>
+        <p>Transforms atomic diplomatic folio files (<code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.rst</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.notes.rst</span></code>)
+        into structured chapter sections, leaf items, and sub-collections (such as the
+        twelve fundamental loci of <code class="docutils literal notranslate"><span class="pre">§</span> <span class="pre">11</span></code>) with co-located <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> SVGs and
+        paired <code class="docutils literal notranslate"><span class="pre">commentary.rst</span></code> companion tracks.</p>
+        <section class="level-2" id="attributes">
+        <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.altshiller_court.codex_items.HEADING_CHARS" title="geometor.altshiller_court.codex_items.HEADING_CHARS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HEADING_CHARS</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.altshiller_court.codex_items.ARTICLE_INLINE_RE" title="geometor.altshiller_court.codex_items.ARTICLE_INLINE_RE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ARTICLE_INLINE_RE</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.altshiller_court.codex_items.PROBLEM_ENUN_RE" title="geometor.altshiller_court.codex_items.PROBLEM_ENUN_RE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PROBLEM_ENUN_RE</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.altshiller_court.codex_items.LOCUS_ENUN_RE" title="geometor.altshiller_court.codex_items.LOCUS_ENUN_RE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LOCUS_ENUN_RE</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.altshiller_court.codex_items.PICTURE_RE" title="geometor.altshiller_court.codex_items.PICTURE_RE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PICTURE_RE</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.altshiller_court.codex_items.GEOM_GID_RE" title="geometor.altshiller_court.codex_items.GEOM_GID_RE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GEOM_GID_RE</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.altshiller_court.codex_items.ENUM_ITEM_RE" title="geometor.altshiller_court.codex_items.ENUM_ITEM_RE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ENUM_ITEM_RE</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.altshiller_court.codex_items.CH01_SECTION_META" title="geometor.altshiller_court.codex_items.CH01_SECTION_META"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CH01_SECTION_META</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.altshiller_court.codex_items.FRONTMATTER_UNITS" title="geometor.altshiller_court.codex_items.FRONTMATTER_UNITS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FRONTMATTER_UNITS</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.altshiller_court.codex_items.FolioBlock" title="geometor.altshiller_court.codex_items.FolioBlock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FolioBlock</span></code></a></p></td>
+        <td><p>A single top-level RST block carrying its source folio provenance.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.altshiller_court.codex_items.CodexItem" title="geometor.altshiller_court.codex_items.CodexItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CodexItem</span></code></a></p></td>
+        <td><p>A single compiled leaf page (or <code class="docutils literal notranslate"><span class="pre">§</span> <span class="pre">11</span></code> locus sub-collection) with commentary.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.altshiller_court.codex_items.CodexSection" title="geometor.altshiller_court.codex_items.CodexSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CodexSection</span></code></a></p></td>
+        <td><p>A chapter section container holding intro blocks and ordered <code class="docutils literal notranslate"><span class="pre">CodexItem</span></code> children.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.altshiller_court.codex_items.parse_folio_rst" title="geometor.altshiller_court.codex_items.parse_folio_rst"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_folio_rst</span></code></a>(rst_path) → tuple[dict[str, str], str]</p></td>
+        <td><p>Parse <code class="docutils literal notranslate"><span class="pre">:key:</span> <span class="pre">value</span></code> metadata header and RST body from a <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.rst</span></code> file.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.altshiller_court.codex_items.demote_headings" title="geometor.altshiller_court.codex_items.demote_headings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">demote_headings</span></code></a>(text, map_chars) → str</p></td>
+        <td><p>Rewrite RST underline characters according to <code class="docutils literal notranslate"><span class="pre">map_chars</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.altshiller_court.codex_items.strip_top_heading" title="geometor.altshiller_court.codex_items.strip_top_heading"><code class="xref py py-obj docutils literal notranslate"><span class="pre">strip_top_heading</span></code></a>(body[, underline_char]) → str</p></td>
+        <td><p>Remove top RST heading underlined with <code class="docutils literal notranslate"><span class="pre">underline_char</span></code> if present.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.altshiller_court.codex_items.heading_info" title="geometor.altshiller_court.codex_items.heading_info"><code class="xref py py-obj docutils literal notranslate"><span class="pre">heading_info</span></code></a>(block_text) → tuple[str, str] | None</p></td>
+        <td><p>If <code class="docutils literal notranslate"><span class="pre">block_text</span></code> is a 2-line RST heading, return <code class="docutils literal notranslate"><span class="pre">(title,</span> <span class="pre">underline_char)</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.altshiller_court.codex_items.extract_depaginated_blocks" title="geometor.altshiller_court.codex_items.extract_depaginated_blocks"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract_depaginated_blocks</span></code></a>(folio_entries[, ...]) → list[FolioBlock]</p></td>
+        <td><p>Convert consecutive folios into <code class="docutils literal notranslate"><span class="pre">FolioBlock</span></code> items, reflowing mid-sentence splits.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.altshiller_court.codex_items.render_blocks_with_folios" title="geometor.altshiller_court.codex_items.render_blocks_with_folios"><code class="xref py py-obj docutils literal notranslate"><span class="pre">render_blocks_with_folios</span></code></a>(blocks) → str</p></td>
+        <td><p>Render <code class="docutils literal notranslate"><span class="pre">FolioBlock</span></code> list to RST, emitting <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">folio::</span></code> milestones at folio transitions.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.altshiller_court.codex_items.decompose_chapter_one" title="geometor.altshiller_court.codex_items.decompose_chapter_one"><code class="xref py py-obj docutils literal notranslate"><span class="pre">decompose_chapter_one</span></code></a>(folio_entries) → list[CodexSection]</p></td>
+        <td><p>Decompose Chapter I (<code class="docutils literal notranslate"><span class="pre">0020</span></code>–<code class="docutils literal notranslate"><span class="pre">0052</span></code>) into 5 <code class="docutils literal notranslate"><span class="pre">CodexSection</span></code> containers and leaf items.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.altshiller_court.codex_items.decompose_frontmatter" title="geometor.altshiller_court.codex_items.decompose_frontmatter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">decompose_frontmatter</span></code></a>(folio_entries) → list[CodexItem]</p></td>
+        <td><p>Decompose Frontmatter (<code class="docutils literal notranslate"><span class="pre">0001</span></code>–<code class="docutils literal notranslate"><span class="pre">0019</span></code>) into 6 leaf <code class="docutils literal notranslate"><span class="pre">CodexItem</span></code> units.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.altshiller_court.codex_items.copy_referenced_graphics" title="geometor.altshiller_court.codex_items.copy_referenced_graphics"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy_referenced_graphics</span></code></a>(blocks, source_chap_dir, ...) → tuple[int, int]</p></td>
+        <td><p>Copy ONLY the <code class="docutils literal notranslate"><span class="pre">.g*.svg</span></code> and <code class="docutils literal notranslate"><span class="pre">.g*.png</span></code> files referenced by <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">picture::</span></code> in <code class="docutils literal notranslate"><span class="pre">blocks</span></code>.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.HEADING_CHARS">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.codex_items.</span></span><span class="sig-name descname"><span class="pre">HEADING_CHARS</span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.HEADING_CHARS" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.ARTICLE_INLINE_RE">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.codex_items.</span></span><span class="sig-name descname"><span class="pre">ARTICLE_INLINE_RE</span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.ARTICLE_INLINE_RE" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.PROBLEM_ENUN_RE">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.codex_items.</span></span><span class="sig-name descname"><span class="pre">PROBLEM_ENUN_RE</span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.PROBLEM_ENUN_RE" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.LOCUS_ENUN_RE">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.codex_items.</span></span><span class="sig-name descname"><span class="pre">LOCUS_ENUN_RE</span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.LOCUS_ENUN_RE" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.PICTURE_RE">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.codex_items.</span></span><span class="sig-name descname"><span class="pre">PICTURE_RE</span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.PICTURE_RE" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.GEOM_GID_RE">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.codex_items.</span></span><span class="sig-name descname"><span class="pre">GEOM_GID_RE</span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.GEOM_GID_RE" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.ENUM_ITEM_RE">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.codex_items.</span></span><span class="sig-name descname"><span class="pre">ENUM_ITEM_RE</span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.ENUM_ITEM_RE" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.FolioBlock">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.codex_items.</span></span><span class="sig-name descname"><span class="pre">FolioBlock</span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.FolioBlock" title="Link to this definition">¶</a></dt>
+        <dd><p>A single top-level RST block carrying its source folio provenance.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.FolioBlock.text">
+        <span class="sig-name descname"><span class="pre">text</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.FolioBlock.text" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.FolioBlock.folios">
+        <span class="sig-name descname"><span class="pre">folios</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.FolioBlock.folios" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py property">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.FolioBlock.primary_folio">
+        <span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">primary_folio</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.FolioBlock.primary_folio" title="Link to this definition">¶</a></dt>
+        <dd><p>Return <code class="docutils literal notranslate"><span class="pre">(folio_id,</span> <span class="pre">page_str)</span></code> where this block begins.</p>
+        </dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CodexItem">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.codex_items.</span></span><span class="sig-name descname"><span class="pre">CodexItem</span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CodexItem" title="Link to this definition">¶</a></dt>
+        <dd><p>A single compiled leaf page (or <code class="docutils literal notranslate"><span class="pre">§</span> <span class="pre">11</span></code> locus sub-collection) with commentary.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CodexItem.slug">
+        <span class="sig-name descname"><span class="pre">slug</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CodexItem.slug" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CodexItem.title">
+        <span class="sig-name descname"><span class="pre">title</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CodexItem.title" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CodexItem.anchor">
+        <span class="sig-name descname"><span class="pre">anchor</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CodexItem.anchor" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CodexItem.item_type">
+        <span class="sig-name descname"><span class="pre">item_type</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CodexItem.item_type" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CodexItem.order">
+        <span class="sig-name descname"><span class="pre">order</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CodexItem.order" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CodexItem.canonical_id">
+        <span class="sig-name descname"><span class="pre">canonical_id</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CodexItem.canonical_id" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CodexItem.blocks">
+        <span class="sig-name descname"><span class="pre">blocks</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.altshiller_court.codex_items.FolioBlock" title="geometor.altshiller_court.codex_items.FolioBlock"><span class="pre">FolioBlock</span></a><span class="p"><span class="pre">]</span></span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CodexItem.blocks" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CodexItem.children">
+        <span class="sig-name descname"><span class="pre">children</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.altshiller_court.codex_items.CodexItem" title="geometor.altshiller_court.codex_items.CodexItem"><span class="pre">CodexItem</span></a><span class="p"><span class="pre">]</span></span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CodexItem.children" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CodexItem.child_collection_type">
+        <span class="sig-name descname"><span class="pre">child_collection_type</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CodexItem.child_collection_type" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CodexItem.excerpt">
+        <span class="sig-name descname"><span class="pre">excerpt</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CodexItem.excerpt" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CodexItem.all_folios">
+        <span class="sig-name descname"><span class="pre">all_folios</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CodexItem.all_folios" title="Link to this definition">¶</a></dt>
+        <dd><p>Ordered unique <code class="docutils literal notranslate"><span class="pre">(folio_id,</span> <span class="pre">page_str)</span></code> pairs spanned by this item and its children.</p>
+        </dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CodexSection">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.codex_items.</span></span><span class="sig-name descname"><span class="pre">CodexSection</span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CodexSection" title="Link to this definition">¶</a></dt>
+        <dd><p>A chapter section container holding intro blocks and ordered <code class="docutils literal notranslate"><span class="pre">CodexItem</span></code> children.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CodexSection.slug">
+        <span class="sig-name descname"><span class="pre">slug</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CodexSection.slug" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CodexSection.code">
+        <span class="sig-name descname"><span class="pre">code</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CodexSection.code" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CodexSection.title">
+        <span class="sig-name descname"><span class="pre">title</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CodexSection.title" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CodexSection.anchor">
+        <span class="sig-name descname"><span class="pre">anchor</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CodexSection.anchor" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CodexSection.canonical_id">
+        <span class="sig-name descname"><span class="pre">canonical_id</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CodexSection.canonical_id" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CodexSection.order">
+        <span class="sig-name descname"><span class="pre">order</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CodexSection.order" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CodexSection.overview">
+        <span class="sig-name descname"><span class="pre">overview</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CodexSection.overview" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CodexSection.intro_blocks">
+        <span class="sig-name descname"><span class="pre">intro_blocks</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.altshiller_court.codex_items.FolioBlock" title="geometor.altshiller_court.codex_items.FolioBlock"><span class="pre">FolioBlock</span></a><span class="p"><span class="pre">]</span></span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CodexSection.intro_blocks" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CodexSection.items">
+        <span class="sig-name descname"><span class="pre">items</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.altshiller_court.codex_items.CodexItem" title="geometor.altshiller_court.codex_items.CodexItem"><span class="pre">CodexItem</span></a><span class="p"><span class="pre">]</span></span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CodexSection.items" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.parse_folio_rst">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.codex_items.</span></span><span class="sig-name descname"><span class="pre">parse_folio_rst</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rst_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.parse_folio_rst" title="Link to this definition">¶</a></dt>
+        <dd><p>Parse <code class="docutils literal notranslate"><span class="pre">:key:</span> <span class="pre">value</span></code> metadata header and RST body from a <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.rst</span></code> file.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.demote_headings">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.codex_items.</span></span><span class="sig-name descname"><span class="pre">demote_headings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">map_chars</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.demote_headings" title="Link to this definition">¶</a></dt>
+        <dd><p>Rewrite RST underline characters according to <code class="docutils literal notranslate"><span class="pre">map_chars</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.strip_top_heading">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.codex_items.</span></span><span class="sig-name descname"><span class="pre">strip_top_heading</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">underline_char</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'='</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.strip_top_heading" title="Link to this definition">¶</a></dt>
+        <dd><p>Remove top RST heading underlined with <code class="docutils literal notranslate"><span class="pre">underline_char</span></code> if present.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.heading_info">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.codex_items.</span></span><span class="sig-name descname"><span class="pre">heading_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">block_text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.heading_info" title="Link to this definition">¶</a></dt>
+        <dd><p>If <code class="docutils literal notranslate"><span class="pre">block_text</span></code> is a 2-line RST heading, return <code class="docutils literal notranslate"><span class="pre">(title,</span> <span class="pre">underline_char)</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.extract_depaginated_blocks">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.codex_items.</span></span><span class="sig-name descname"><span class="pre">extract_depaginated_blocks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folio_entries</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip_chapter_heading</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">demote_frontmatter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.altshiller_court.codex_items.FolioBlock" title="geometor.altshiller_court.codex_items.FolioBlock"><span class="pre">FolioBlock</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.extract_depaginated_blocks" title="Link to this definition">¶</a></dt>
+        <dd><p>Convert consecutive folios into <code class="docutils literal notranslate"><span class="pre">FolioBlock</span></code> items, reflowing mid-sentence splits.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.render_blocks_with_folios">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.codex_items.</span></span><span class="sig-name descname"><span class="pre">render_blocks_with_folios</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">blocks</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.altshiller_court.codex_items.FolioBlock" title="geometor.altshiller_court.codex_items.FolioBlock"><span class="pre">FolioBlock</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.render_blocks_with_folios" title="Link to this definition">¶</a></dt>
+        <dd><p>Render <code class="docutils literal notranslate"><span class="pre">FolioBlock</span></code> list to RST, emitting <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">folio::</span></code> milestones at folio transitions.</p>
+        </dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.CH01_SECTION_META">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.codex_items.</span></span><span class="sig-name descname"><span class="pre">CH01_SECTION_META</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.CH01_SECTION_META" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.decompose_chapter_one">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.codex_items.</span></span><span class="sig-name descname"><span class="pre">decompose_chapter_one</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folio_entries</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.altshiller_court.codex_items.CodexSection" title="geometor.altshiller_court.codex_items.CodexSection"><span class="pre">CodexSection</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.decompose_chapter_one" title="Link to this definition">¶</a></dt>
+        <dd><p>Decompose Chapter I (<code class="docutils literal notranslate"><span class="pre">0020</span></code>–<code class="docutils literal notranslate"><span class="pre">0052</span></code>) into 5 <code class="docutils literal notranslate"><span class="pre">CodexSection</span></code> containers and leaf items.</p>
+        </dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.FRONTMATTER_UNITS">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.codex_items.</span></span><span class="sig-name descname"><span class="pre">FRONTMATTER_UNITS</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('01-cover',</span> <span class="pre">'Dover</span> <span class="pre">Front</span> <span class="pre">Cover',</span> <span class="pre">'0001',</span> <span class="pre">'0001',</span> <span class="pre">'Frontmatter.Cover',</span> <span class="pre">&quot;Unabridged</span> <span class="pre">2007</span> <span class="pre">Dover...</span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.FRONTMATTER_UNITS" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.decompose_frontmatter">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.codex_items.</span></span><span class="sig-name descname"><span class="pre">decompose_frontmatter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folio_entries</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.altshiller_court.codex_items.CodexItem" title="geometor.altshiller_court.codex_items.CodexItem"><span class="pre">CodexItem</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.decompose_frontmatter" title="Link to this definition">¶</a></dt>
+        <dd><p>Decompose Frontmatter (<code class="docutils literal notranslate"><span class="pre">0001</span></code>–<code class="docutils literal notranslate"><span class="pre">0019</span></code>) into 6 leaf <code class="docutils literal notranslate"><span class="pre">CodexItem</span></code> units.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.codex_items.copy_referenced_graphics">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.codex_items.</span></span><span class="sig-name descname"><span class="pre">copy_referenced_graphics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">blocks</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.altshiller_court.codex_items.FolioBlock" title="geometor.altshiller_court.codex_items.FolioBlock"><span class="pre">FolioBlock</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source_chap_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">dest_item_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.altshiller_court.codex_items.copy_referenced_graphics" title="Link to this definition">¶</a></dt>
+        <dd><p>Copy ONLY the <code class="docutils literal notranslate"><span class="pre">.g*.svg</span></code> and <code class="docutils literal notranslate"><span class="pre">.g*.png</span></code> files referenced by <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">picture::</span></code> in <code class="docutils literal notranslate"><span class="pre">blocks</span></code>.</p>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../__main__/index.html" title="geometor.altshiller_court.__main__">&larr; <span class="nav-label">geometor.altshiller_court.__main__</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../index.html">GEOMETOR • altshiller-court</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../compile_edition/index.html" title="geometor.altshiller_court.compile_edition"><span class="nav-label">geometor.altshiller_court.compile_edition</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../types/chapter.html">chapter</a></li>
+        <li><a href="../../../../../types/commentary.html">commentary</a></li>
+        <li><a href="../../../../../types/item.html">item</a></li>
+        <li><a href="../../../../../types/locus.html">locus</a></li>
+        <li><a href="../../../../../types/section.html">section</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 1952 Nathan Altshiller-Court; 2007 Dover Publications • Digital Apparatus GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=938c9ccc"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

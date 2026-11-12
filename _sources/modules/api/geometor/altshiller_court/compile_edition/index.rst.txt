@@ -5,12 +5,15 @@ geometor.altshiller_court.compile_edition
 
 .. autoapi-nested-parse::
 
-   Book Codex compiler and scholarly apparatus builder for College Geometry (1952).
+   Book Codex compiler and scholarly apparatus builder for *College Geometry* (1952).
 
    Compiles verified diplomatic folio transcriptions (``resources/college_geometry/<dir>/<NNNN>.rst``
-   and ``<NNNN>.notes.rst``), diagram crops (``<NNNN>.g<k>.png``), ``structure_map.json``, and
-   apparatus registries (``persons.json``, ``citations.json``, ``glossary.json``, ``folio_reviews.json``)
-   into a synchronized 2-Track Book Codex (``English`` | ``Commentary``) under ``docsrc/college_geometry/``.
+   and ``<NNNN>.notes.rst``), diagram crops (``<NNNN>.g<k>.png``), interactive SVGs
+   (``<NNNN>.g<k>.svg``), ``structure_map.json``, and apparatus registries
+   (``persons.json``, ``citations.json``, ``glossary.json``, ``folio_reviews.json``)
+   into a multi-level Euclid-style Book Codex (``Book -> Chapters -> Sections -> Items``)
+   with ``.. collection::`` navigation and ``Commentary`` companion tracks under
+   ``docsrc/college_geometry/``.
 
 
 
@@ -19,6 +22,7 @@ Attributes
 
 .. autoapisummary::
 
+   geometor.altshiller_court.compile_edition.CHAPTER_OVERVIEWS
    geometor.altshiller_court.compile_edition.CHAPTER_COMMENTARY
 
 
@@ -28,11 +32,6 @@ Functions
 .. autoapisummary::
 
    geometor.altshiller_court.compile_edition.apparatus_slug
-   geometor.altshiller_court.compile_edition.parse_folio_rst
-   geometor.altshiller_court.compile_edition.demote_headings_for_frontmatter
-   geometor.altshiller_court.compile_edition.strip_top_chapter_heading
-   geometor.altshiller_court.compile_edition.depaginate_folios
-   geometor.altshiller_court.compile_edition.build_section_table_rst
    geometor.altshiller_court.compile_edition.build_chapter_unit
    geometor.altshiller_court.compile_edition.build_apparatus_pages
    geometor.altshiller_court.compile_edition.build_book_index
@@ -48,45 +47,23 @@ Module Contents
    Deterministic anchor slug matching ``photon_platform.publish.roles.geometry._apparatus_slug``.
 
 
+.. py:data:: CHAPTER_OVERVIEWS
+   :type:  dict[str, str]
+
 .. py:data:: CHAPTER_COMMENTARY
    :type:  dict[str, str]
 
-.. py:function:: parse_folio_rst(rst_path: pathlib.Path) -> tuple[dict[str, str], str]
+.. py:function:: build_chapter_unit(chapter: dict[str, Any], chapter_folios: list[dict[str, Any]], volume_dir: pathlib.Path, book_doc_dir: pathlib.Path, folio_to_anchor: dict[str, str]) -> dict[str, Any]
 
-   Parse ``:key: value`` metadata header and RST body from a ``<NNNN>.rst`` file.
-
-
-.. py:function:: demote_headings_for_frontmatter(body: str) -> str
-
-   Demote ``===`` headings in individual frontmatter folios to ``---`` (and ``---`` to ``~~~``).
+   Build ``<slug>/index.rst``, ``<slug>/commentary.rst``, and nested section/item collections.
 
 
-.. py:function:: strip_top_chapter_heading(body: str) -> str
-
-   Remove top ``===`` chapter heading on the first folio of a chapter when chapter wrapper already emits it.
-
-
-.. py:function:: depaginate_folios(folio_entries: list[tuple[str, str, dict[str, str], str]], is_frontmatter: bool = False) -> str
-
-   Assemble consecutive transcribed folios into continuous Book Codex RST with ``.. folio::`` milestones.
-
-
-.. py:function:: build_section_table_rst(chapter: dict[str, Any]) -> str
-
-   Render a clean RST table of chapter sections, folio spans, printed pages, and articles.
-
-
-.. py:function:: build_chapter_unit(chapter: dict[str, Any], chapter_folios: list[dict[str, Any]], volume_dir: pathlib.Path, book_doc_dir: pathlib.Path) -> dict[str, Any]
-
-   Build ``<slug>/<slug>-en.rst`` and ``<slug>/<slug>-commentary.rst`` for a single chapter unit.
-
-
-.. py:function:: build_apparatus_pages(volume_dir: pathlib.Path, book_doc_dir: pathlib.Path, structure: dict[str, Any]) -> dict[str, int]
+.. py:function:: build_apparatus_pages(volume_dir: pathlib.Path, book_doc_dir: pathlib.Path, structure: dict[str, Any], folio_to_anchor: dict[str, str]) -> dict[str, int]
 
    Generate ``bibliography.rst``, ``persons.rst``, ``glossary.rst``, and ``scan-inventory.rst``.
 
 
-.. py:function:: build_book_index(structure: dict[str, Any], unit_summaries: list[dict[str, Any]], apparatus_counts: dict[str, int], book_doc_dir: pathlib.Path) -> None
+.. py:function:: build_book_index(structure: dict[str, Any], apparatus_counts: dict[str, int], book_doc_dir: pathlib.Path) -> None
 
    Write ``docsrc/college_geometry/index.rst`` Book Codex master landing page.
 

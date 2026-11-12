@@ -117,18 +117,18 @@
         <li><p><strong>Crop Extraction</strong>: <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.json</span></code> records tight 300-DPI <code class="docutils literal notranslate"><span class="pre">[x,</span> <span class="pre">y,</span> <span class="pre">w,</span> <span class="pre">h]</span></code> bounding boxes; <code class="docutils literal notranslate"><span class="pre">graphics.py</span></code> normalizes paper tone to pure white <code class="docutils literal notranslate"><span class="pre">#ffffff</span></code> and outputs <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.&lt;gid&gt;.png</span></code> and <code class="docutils literal notranslate"><span class="pre">.inverted.png</span></code>.</p></li>
         <li><p><strong>Declarative Euclidean Model (No Embedded Python Scripts)</strong>: Inside <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.json</span></code>, each graphic entry stores a declarative <code class="docutils literal notranslate"><span class="pre">&quot;geometry&quot;</span></code> dictionary (<code class="docutils literal notranslate"><span class="pre">svg_scale:</span> <span class="pre">0.5</span></code>, exact point coordinates, letterpress glyph centroids <code class="docutils literal notranslate"><span class="pre">label_x</span></code>/<code class="docutils literal notranslate"><span class="pre">label_y</span></code>, and typed <code class="docutils literal notranslate"><span class="pre">segment</span></code>, <code class="docutils literal notranslate"><span class="pre">circle</span></code>, <code class="docutils literal notranslate"><span class="pre">arc</span></code>, <code class="docutils literal notranslate"><span class="pre">polygon</span></code>, and <code class="docutils literal notranslate"><span class="pre">angle</span></code> elements) plus <code class="docutils literal notranslate"><span class="pre">&quot;svg_file&quot;:</span> <span class="pre">&quot;&lt;NNNN&gt;.&lt;gid&gt;.svg&quot;</span></code>. No <code class="docutils literal notranslate"><span class="pre">py_file</span></code> scripts are embedded in the treatise workspace.</p></li>
         <li><p><strong>Interactive SVG Compilation</strong>: <code class="docutils literal notranslate"><span class="pre">svg_compiler.py</span></code> compiles each <code class="docutils literal notranslate"><span class="pre">&quot;geometry&quot;</span></code> model into an interactive <code class="docutils literal notranslate"><span class="pre">&lt;svg</span> <span class="pre">class=&quot;euclid-graphic&quot;</span> <span class="pre">data-graphic-id=&quot;&lt;NNNN&gt;.&lt;gid&gt;&quot;&gt;</span></code> diagram compatible with <code class="docutils literal notranslate"><span class="pre">photon-platform/publish</span></code> and <code class="docutils literal notranslate"><span class="pre">geometor_interactive.js</span></code>.</p></li>
-        <li><p><strong>Quantitative &amp; Visual Verification</strong>: <code class="docutils literal notranslate"><span class="pre">verify_svg_against_scan</span></code> rasterizes visible vector strokes back onto the 300-DPI crop grid, requiring <strong>at least 95% pixel ink overlap</strong> (Chapter I achieves <code class="docutils literal notranslate"><span class="pre">99.97%</span></code>–<code class="docutils literal notranslate"><span class="pre">100.00%</span></code> across all 17 figures), followed by direct visual inspection of RGB overlays and standalone Inkscape renders.</p></li>
+        <li><p><strong>Quantitative &amp; Visual Verification</strong>: <code class="docutils literal notranslate"><span class="pre">verify_svg_against_scan</span></code> rasterizes visible vector strokes back onto the 300-DPI crop grid, requiring <strong>at least 95% pixel ink overlap</strong> (Chapter I achieves <code class="docutils literal notranslate"><span class="pre">99.97%</span></code>–<code class="docutils literal notranslate"><span class="pre">100.00%</span></code> across all 22 figures), followed by direct visual inspection of RGB overlays and standalone renders.</p></li>
         </ol>
         </section>
         <section class="level-3" id="interactive-text-to-diagram-wiring-book-codex-compilation-compile-edition-py">
         <h3>4. Interactive Text-to-Diagram Wiring &amp; Book Codex Compilation (<code class="docutils literal notranslate"><span class="pre">compile_edition.py</span></code>)<a class="headerlink" href="#interactive-text-to-diagram-wiring-book-codex-compilation-compile-edition-py" title="Link to this heading">¶</a></h3>
         <p>Folio transcriptions switch <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">picture::</span> <span class="pre">&lt;NNNN&gt;.&lt;gid&gt;.svg</span></code> and wire:</p>
         <ul class="simple">
-        <li><p><code class="docutils literal notranslate"><span class="pre">:g:</span></code> scoped geometric references (e.g., <code class="docutils literal notranslate"><span class="pre">:g:`(O,</span> <span class="pre">OE)</span> <span class="pre">&lt;0038.g1:(</span> <span class="pre">O</span> <span class="pre">E</span> <span class="pre">)&gt;`</span></code>) highlighting points, lines, circles, arcs, polygons, and angle wedges on hover or click—including cross-folio references across page turns.</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">:g:</span></code> scoped geometric references (e.g., <code class="docutils literal notranslate"><span class="pre">:g:`(O,</span> <span class="pre">OE)</span> <span class="pre">&lt;0038.g1:(</span> <span class="pre">O</span> <span class="pre">E</span> <span class="pre">)&gt;`</span></code>) highlighting points, lines, circles, arcs, polygons, and angle wedges on hover or click—self-contained on each item’s dedicated page.</p></li>
         <li><p><code class="docutils literal notranslate"><span class="pre">:eq:</span></code> equality assertions (e.g., <code class="docutils literal notranslate"><span class="pre">:eq:`BE</span> <span class="pre">=</span> <span class="pre">BA</span> <span class="pre">&lt;0040.g1:/</span> <span class="pre">B</span> <span class="pre">E</span> <span class="pre">/</span> <span class="pre">=</span> <span class="pre">0040.g1:/</span> <span class="pre">B</span> <span class="pre">A</span> <span class="pre">/&gt;`</span></code>) activating dynamic green tick marks and angle arcs.</p></li>
         <li><p><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">enunciation::</span></code> and <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">assertion::</span></code> blocks structuring problem statements, geometric loci, and deductive conclusions.</p></li>
         </ul>
-        <p>Finally, <code class="docutils literal notranslate"><span class="pre">compile_edition.py</span></code> de-paginates consecutive folios (reflowing mid-sentence page breaks and side-by-side figure splits) and copies all <code class="docutils literal notranslate"><span class="pre">.svg</span></code> assets into <code class="docutils literal notranslate"><span class="pre">docsrc/college_geometry/</span></code> so <code class="docutils literal notranslate"><span class="pre">publish</span> <span class="pre">build</span></code> inlines crisp, theme-adaptive interactive SVGs into the published HTML codex.</p>
+        <p>Finally, <code class="docutils literal notranslate"><span class="pre">compile_edition.py</span></code> and <code class="docutils literal notranslate"><span class="pre">codex_items.py</span></code> de-paginate consecutive folios (reflowing mid-sentence page breaks and floated figures), decompose each chapter into <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">collection::</span></code> sections, leaf items, and loci, and co-locate only each item’s referenced <code class="docutils literal notranslate"><span class="pre">.svg</span></code> assets inside <code class="docutils literal notranslate"><span class="pre">&lt;item-slug&gt;/</span></code> so <code class="docutils literal notranslate"><span class="pre">publish</span> <span class="pre">build</span></code> renders inline interactive SVG thumbnails on collection cards and full interactive diagrams on item pages.</p>
         </section>
         </section>
         </section>
@@ -169,6 +169,16 @@
         </form>
       </div>
     </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../types/chapter.html">chapter</a></li>
+        <li><a href="../types/commentary.html">commentary</a></li>
+        <li><a href="../types/item.html">item</a></li>
+        <li><a href="../types/locus.html">locus</a></li>
+        <li><a href="../types/section.html">section</a></li>
+      </ul>
+    </aside>
   </div>
   <footer>
     <hr />
@@ -181,7 +191,7 @@
 
   <script src="../_static/jquery.js?v=5d32c60e"></script>
   <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../_static/documentation_options.js?v=938c9ccc"></script>
   <script src="../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>

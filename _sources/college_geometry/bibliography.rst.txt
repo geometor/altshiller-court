@@ -17,7 +17,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Brocard, Henri (1845–1922) <brocard>`
 * **Locus / Key**: AFAS Alger (1881)
-* **Referenced At**: :ref:`f. 0298 (p. 279) <ch10-recent-geometry-of-the-triangle-en>`
+* **Referenced At**: :ref:`f. 0298 (p. 279) <ch10-recent-geometry-of-the-triangle-e-a-brocard-geometry-a-brocard-points>`
 
 .. _cite-casey-sequel-1892:
 
@@ -26,7 +26,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Casey, John (1820–1891) <casey>`
 * **Locus / Key**: 6th ed. (1892)
-* **Referenced At**: :ref:`f. 0230 (p. 211) <ch08-circles-en>`
+* **Referenced At**: :ref:`f. 0230 (p. 211) <ch08-circles-g-coaxal-circles>`
 
 .. _cite-ceva-1678:
 
@@ -35,7 +35,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Ceva, Giovanni (1647–1734) <ceva>`
 * **Locus / Key**: Milan (1678)
-* **Referenced At**: :ref:`f. 0178 (p. 159) <ch06-transversals-en>`
+* **Referenced At**: :ref:`f. 0178 (p. 159) <ch06-transversals-d-ceva-s-theorem>`
 
 .. _cite-chl:
 
@@ -44,7 +44,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Chasles, Michel (1793–1880) <chasles>`
 * **Locus / Key**: p. 295 (A. Books: Chl.)
-* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-en>`
+* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-bibkey-abbreviations-a-books-b-periodicals>`
 
 .. _cite-cn:
 
@@ -53,7 +53,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Catalan, Eugène Charles (1814–1894) <catalan>`
 * **Locus / Key**: p. 295 (A. Books: Cn.)
-* **Referenced At**: :ref:`f. 0027 (p. 8) <ch01-geometric-constructions-en>` · :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-en>`
+* **Referenced At**: :ref:`f. 0027 (p. 8) <ch01-art-009>` · :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-bibkey-abbreviations-a-books-b-periodicals>`
 
 .. _cite-court-1925:
 
@@ -62,7 +62,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Altshiller-Court, Nathan (1881–1968) <altshiller-court>`
 * **Locus / Key**: 1st ed. (1925)
-* **Referenced At**: :ref:`f. 0002 (p. [iii]) <frontmatter-en>` · :ref:`f. 0006 (p. vii) <frontmatter-en>`
+* **Referenced At**: :ref:`f. 0002 (p. [iii]) <frontmatter-02-title-and-dedication>` · :ref:`f. 0006 (p. vii) <frontmatter-03-preface>`
 
 .. _cite-court-1952:
 
@@ -71,7 +71,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Altshiller-Court, Nathan (1881–1968) <altshiller-court>`
 * **Locus / Key**: 2nd ed. (1952 / Dover 2007)
-* **Referenced At**: :ref:`f. 0001 (p. [cover]) <frontmatter-en>` · :ref:`f. 0002 (p. [iii]) <frontmatter-en>` · :ref:`f. 0003 (p. [iv]) <frontmatter-en>` · :ref:`f. 0006 (p. vii) <frontmatter-en>`
+* **Referenced At**: :ref:`f. 0001 (p. [cover]) <frontmatter-01-cover>` · :ref:`f. 0002 (p. [iii]) <frontmatter-02-title-and-dedication>` · :ref:`f. 0003 (p. [iv]) <frontmatter-02-title-and-dedication>` · :ref:`f. 0006 (p. vii) <frontmatter-03-preface>`
 
 .. _cite-crt:
 
@@ -80,7 +80,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Altshiller-Court, Nathan (1881–1968) <altshiller-court>`
 * **Locus / Key**: p. 295 (A. Books: Crt.)
-* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-en>`
+* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-bibkey-abbreviations-a-books-b-periodicals>`
 
 .. _cite-ech:
 
@@ -89,7 +89,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Echols, William Holding (1859–1934) <altshiller-court>`
 * **Locus / Key**: p. 295 (A. Books: Ech.)
-* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-en>`
+* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-bibkey-abbreviations-a-books-b-periodicals>`
 
 .. _cite-euclid-elements:
 
@@ -98,7 +98,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Euclid of Alexandria (trans. Sir Thomas L. Heath) <euclid>`
 * **Locus / Key**: Books I–VI
-* **Referenced At**: :ref:`f. 0016 (p. xvii) <frontmatter-en>` · :ref:`f. 0020 (p. 1) <ch01-geometric-constructions-en>` · :ref:`f. 0021 (p. 2) <ch01-geometric-constructions-en>` · :ref:`f. 0022 (p. 3) <ch01-geometric-constructions-en>` · :ref:`f. 0032 (p. 13) <ch01-geometric-constructions-en>`
+* **Referenced At**: :ref:`f. 0016 (p. xvii) <frontmatter-06-to-the-student>` · :ref:`f. 0020 (p. 1) <ch01-art-001>` · :ref:`f. 0021 (p. 2) <ch01-art-002>` · :ref:`f. 0022 (p. 3) <ch01-art-004>` · :ref:`f. 0032 (p. 13) <ch01-locus-08>`
 
 .. _cite-euler-1765:
 
@@ -107,7 +107,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Euler, Leonhard (1707–1783) <euler>`
 * **Locus / Key**: Novi Comm. Petrop. XI (1765)
-* **Referenced At**: :ref:`f. 0120 (p. 101) <ch03-properties-of-the-triangle-en>`
+* **Referenced At**: :ref:`f. 0120 (p. 101) <ch03-properties-of-the-triangle-e-c-altitudes-c-the-euler-line>`
 
 .. _cite-feuerbach-1822:
 
@@ -116,7 +116,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Feuerbach, Karl Wilhelm (1800–1834) <feuerbach>`
 * **Locus / Key**: Nuremberg (1822)
-* **Referenced At**: :ref:`f. 0124 (p. 105) <ch03-properties-of-the-triangle-en>`
+* **Referenced At**: :ref:`f. 0124 (p. 105) <ch03-properties-of-the-triangle-f-the-nine-point-circle>`
 
 .. _cite-gy:
 
@@ -125,7 +125,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Gallatly, William (c. 1850 – c. 1928) <gallatly>`
 * **Locus / Key**: p. 295 (A. Books: Gy.)
-* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-en>`
+* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-bibkey-abbreviations-a-books-b-periodicals>`
 
 .. _cite-kimberling-etc:
 
@@ -134,7 +134,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Kimberling, Clark (b. 1942) <kimberling>`
 * **Locus / Key**: X(1)–X(n)
-* **Referenced At**: :ref:`f. 0072 (p. 53) <ch03-properties-of-the-triangle-en>`
+* **Referenced At**: :ref:`f. 0072 (p. 53) <ch03-properties-of-the-triangle-a-preliminaries>`
 
 .. _cite-lemoine-1873:
 
@@ -143,7 +143,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Lemoine, Émile (1840–1912) <lemoine>`
 * **Locus / Key**: AFAS Lyon (1873)
-* **Referenced At**: :ref:`f. 0271 (p. 252) <ch10-recent-geometry-of-the-triangle-en>`
+* **Referenced At**: :ref:`f. 0271 (p. 252) <ch10-recent-geometry-of-the-triangle-b-a-lemoine-geometry-a-symmedians>`
 
 .. _cite-lhr:
 
@@ -152,7 +152,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`L'Huilier, Simon Antoine Jean (1750–1840) <lhuilier>`
 * **Locus / Key**: p. 295 (A. Books: LHr.)
-* **Referenced At**: :ref:`f. 0030 (p. 11) <ch01-geometric-constructions-en>` · :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-en>`
+* **Referenced At**: :ref:`f. 0030 (p. 11) <ch01-art-010-exercises>` · :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-bibkey-abbreviations-a-books-b-periodicals>`
 
 .. _cite-pappus-collection-vii:
 
@@ -161,7 +161,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Pappus of Alexandria (c. 290 – c. 350 AD) <pappus>`
 * **Locus / Key**: Book VII (Treasury of Analysis)
-* **Referenced At**: :ref:`f. 0022 (p. 3) <ch01-geometric-constructions-en>`
+* **Referenced At**: :ref:`f. 0022 (p. 3) <ch01-art-004>`
 
 .. _cite-per-bull:
 
@@ -170,7 +170,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Société Mathématique de France / American Mathematical Society <altshiller-court>`
 * **Locus / Key**: p. 295 (B. Periodicals: Bull.)
-* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-en>`
+* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-bibkey-abbreviations-a-books-b-periodicals>`
 
 .. _cite-per-edinb:
 
@@ -179,7 +179,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Edinburgh Mathematical Society <altshiller-court>`
 * **Locus / Key**: p. 295 (B. Periodicals: Edinb.)
-* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-en>`
+* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-bibkey-abbreviations-a-books-b-periodicals>`
 
 .. _cite-per-et:
 
@@ -188,7 +188,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Educational Times (W. J. C. Miller, ed.) <altshiller-court>`
 * **Locus / Key**: p. 295 (B. Periodicals: ET.)
-* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-en>`
+* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-bibkey-abbreviations-a-books-b-periodicals>`
 
 .. _cite-per-gam:
 
@@ -197,7 +197,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Gergonne, Joseph Diaz (ed.) <gergonne>`
 * **Locus / Key**: p. 295 (B. Periodicals: GAM.)
-* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-en>`
+* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-bibkey-abbreviations-a-books-b-periodicals>`
 
 .. _cite-per-jme:
 
@@ -206,7 +206,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Bourget, J. & Koehler / de Longchamps, G. (eds.) <altshiller-court>`
 * **Locus / Key**: p. 295 (B. Periodicals: JME.)
-* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-en>`
+* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-bibkey-abbreviations-a-books-b-periodicals>`
 
 .. _cite-per-jms:
 
@@ -215,7 +215,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Bourget, J. & de Longchamps, G. (eds.) <altshiller-court>`
 * **Locus / Key**: p. 295 (B. Periodicals: JMS.)
-* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-en>`
+* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-bibkey-abbreviations-a-books-b-periodicals>`
 
 .. _cite-per-mathesis:
 
@@ -224,7 +224,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Mansion, Paul & Neuberg, Joseph (eds.) <neuberg>`
 * **Locus / Key**: p. 295 (B. Periodicals: Mathesis.)
-* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-en>`
+* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-bibkey-abbreviations-a-books-b-periodicals>`
 
 .. _cite-per-monthly:
 
@@ -233,7 +233,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Mathematical Association of America <altshiller-court>`
 * **Locus / Key**: p. 296 (B. Periodicals: Monthly.)
-* **Referenced At**: :ref:`f. 0315 (p. 296) <historical-and-bibliographical-notes-en>`
+* **Referenced At**: :ref:`f. 0315 (p. 296) <historical-and-bibliographical-notes-bibkey-abbreviations-a-books-b-periodicals>`
 
 .. _cite-per-na:
 
@@ -242,7 +242,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Terquem, Olry & Gerono, Camille-Christophe (eds.) <altshiller-court>`
 * **Locus / Key**: p. 296 (B. Periodicals: NA.)
-* **Referenced At**: :ref:`f. 0315 (p. 296) <historical-and-bibliographical-notes-en>`
+* **Referenced At**: :ref:`f. 0315 (p. 296) <historical-and-bibliographical-notes-bibkey-abbreviations-a-books-b-periodicals>`
 
 .. _cite-per-nc:
 
@@ -251,7 +251,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Catalan, Eugène & Mansion, Paul (eds.) <catalan>`
 * **Locus / Key**: p. 296 (B. Periodicals: NC.)
-* **Referenced At**: :ref:`f. 0315 (p. 296) <historical-and-bibliographical-notes-en>`
+* **Referenced At**: :ref:`f. 0315 (p. 296) <historical-and-bibliographical-notes-bibkey-abbreviations-a-books-b-periodicals>`
 
 .. _cite-pt:
 
@@ -260,7 +260,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Petersen, Julius (1839–1910) <petersen>`
 * **Locus / Key**: p. 295 (A. Books: Pt.)
-* **Referenced At**: :ref:`f. 0026 (p. 7) <ch01-geometric-constructions-en>` · :ref:`f. 0030 (p. 11) <ch01-geometric-constructions-en>` · :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-en>`
+* **Referenced At**: :ref:`f. 0026 (p. 7) <ch01-art-008>` · :ref:`f. 0030 (p. 11) <ch01-art-010-exercises>` · :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-bibkey-abbreviations-a-books-b-periodicals>`
 
 .. _cite-rouche:
 
@@ -269,7 +269,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Rouché, Eugène & Comberousse, Charles de (with J. Neuberg) <rouche>`
 * **Locus / Key**: p. 295 (A. Books: Rouché.)
-* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-en>`
+* **Referenced At**: :ref:`f. 0314 (p. 295) <historical-and-bibliographical-notes-bibkey-abbreviations-a-books-b-periodicals>`
 
 .. _cite-simson-loci-plani-1749:
 
@@ -278,7 +278,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Simson, Robert (1687–1768) <simson>`
 * **Locus / Key**: Book II (1749)
-* **Referenced At**: :ref:`f. 0034 (p. 15) <ch01-geometric-constructions-en>`
+* **Referenced At**: :ref:`f. 0034 (p. 15) <ch01-locus-11>`
 
 .. _cite-stewart-1746:
 
@@ -287,4 +287,4 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Stewart, Matthew (1717–1785) <stewart>`
 * **Locus / Key**: Prop. 2 (1746)
-* **Referenced At**: :ref:`f. 0171 (p. 152) <ch06-transversals-en>`
+* **Referenced At**: :ref:`f. 0171 (p. 152) <ch06-transversals-a-introductory>`
