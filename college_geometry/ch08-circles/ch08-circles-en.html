@@ -1,0 +1,594 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter VIII: Circles &mdash; College Geometry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <h1>GEOMETOR • altshiller-court</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">altshiller-court</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../index.html" class="is-active" aria-selected="true" >COLLEGE GEOMETRY</a>
+        </li>
+        <li>
+          <a href="../../about/index.html"  >Nathan Altshiller-Court & the Digital Scriptorium</a>
+        </li>
+        <li>
+          <a href="../../modules/index.html"  >modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; altshiller-court</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">College Geometry</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../ch07-harmonic-division/ch07-harmonic-division-en.html" title="Chapter VII: Harmonic Division">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <strong class="book-track-item is-active" aria-current="page">English</strong>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="ch08-circles-commentary.html">Commentary</a>
+            </nav>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../ch09-inversion/ch09-inversion-en.html" title="Chapter IX: Inversion"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="chapter-viii-circles">
+        <span id="ch08-circles-en"></span><h1>Chapter VIII: Circles<a class="headerlink" href="#chapter-viii-circles" title="Link to this heading">¶</a></h1>
+        <p class="rubric">Inverse Points, Orthogonal Circles, Poles and Polars, Centers of Similitude, Power of a Point, Radical Axis, Coaxal Circles, Casey’s Theorem, Problem of Apollonius</p>
+        <div class="admonition-digital-scriptorium-architectural-blueprint admonition">
+        <p class="admonition-title">Digital Scriptorium Architectural Blueprint</p>
+        <ul class="simple">
+        <li><p><strong>Archival Span</strong>: Folios <code class="docutils literal notranslate"><span class="pre">0191–0248</span></code> · Printed Pages <code class="docutils literal notranslate"><span class="pre">172–229</span></code> · Articles <strong>§§ 358–517</strong></p></li>
+        <li><p><strong>300 DPI Raster Scans</strong>: <code class="docutils literal notranslate"><span class="pre">58</span></code> standardized folios ready in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/08_circles/</span></code></p></li>
+        <li><p><strong>Companion Track</strong>: Switch to the <strong>Commentary</strong> tab above for mathematical synthesis, triangle-center mappings, and GEOMETOR connections.</p></li>
+        </ul>
+        </div>
+        <section class="level-2" id="section-article-conspectus">
+        <h2>Section &amp; Article Conspectus<a class="headerlink" href="#section-article-conspectus" title="Link to this heading">¶</a></h2>
+        <table class="docutils align-default">
+        <colgroup>
+        <col style="width: 12.0%" />
+        <col style="width: 48.0%" />
+        <col style="width: 16.0%" />
+        <col style="width: 12.0%" />
+        <col style="width: 12.0%" />
+        </colgroup>
+        <thead>
+        <tr class="row-odd"><th class="head"><p>Section</p></th>
+        <th class="head"><p>Title</p></th>
+        <th class="head"><p>Folios</p></th>
+        <th class="head"><p>Pages</p></th>
+        <th class="head"><p>Articles</p></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">A</span></code></p></td>
+        <td><p>Inverse Points</p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">0191</span></code>–<code class="docutils literal notranslate"><span class="pre">0193</span></code></p></td>
+        <td><p>172–174</p></td>
+        <td><p>§§ 358–362</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">B</span></code></p></td>
+        <td><p>Orthogonal Circles</p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">0193</span></code>–<code class="docutils literal notranslate"><span class="pre">0196</span></code></p></td>
+        <td><p>174–177</p></td>
+        <td><p>§§ 363–372</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">C</span></code></p></td>
+        <td><p>Poles and Polars</p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">0196</span></code>–<code class="docutils literal notranslate"><span class="pre">0203</span></code></p></td>
+        <td><p>177–184</p></td>
+        <td><p>§§ 373–393</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">D</span></code></p></td>
+        <td><p>Centers of Similitude (incl. Monge’s Circle Theorem § 405)</p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">0203</span></code>–<code class="docutils literal notranslate"><span class="pre">0209</span></code></p></td>
+        <td><p>184–190</p></td>
+        <td><p>§§ 394–409</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">E</span></code></p></td>
+        <td><p>Power of a Point with Respect to a Circle</p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">0209</span></code>–<code class="docutils literal notranslate"><span class="pre">0213</span></code></p></td>
+        <td><p>190–194</p></td>
+        <td><p>§§ 410–420</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">F</span></code></p></td>
+        <td><p>Radical Axis of Two Circles</p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">0213</span></code>–<code class="docutils literal notranslate"><span class="pre">0220</span></code></p></td>
+        <td><p>194–201</p></td>
+        <td><p>§§ 421–439</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">G</span></code></p></td>
+        <td><p>Coaxal Circles (incl. Poncelet’s Theorems &amp; Casey’s Theorem § 471)</p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">0220</span></code>–<code class="docutils literal notranslate"><span class="pre">0236</span></code></p></td>
+        <td><p>201–217</p></td>
+        <td><p>§§ 440–490</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">H</span></code></p></td>
+        <td><p>Three Circles (Radical Center &amp; Circles of Antisimilitude)</p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">0236</span></code>–<code class="docutils literal notranslate"><span class="pre">0241</span></code></p></td>
+        <td><p>217–222</p></td>
+        <td><p>§§ 491–505</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">I</span></code></p></td>
+        <td><p>The Problem of Apollonius (Ten Problems I–X &amp; Gergonne’s Solution)</p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">0241</span></code>–<code class="docutils literal notranslate"><span class="pre">0248</span></code></p></td>
+        <td><p>222–229</p></td>
+        <td><p>§§ 506–517</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="folio-scan-allocation">
+        <h2>Folio Scan Allocation<a class="headerlink" href="#folio-scan-allocation" title="Link to this heading">¶</a></h2>
+        <table class="docutils align-default">
+        <colgroup>
+        <col style="width: 14.0%" />
+        <col style="width: 14.0%" />
+        <col style="width: 24.0%" />
+        <col style="width: 28.0%" />
+        <col style="width: 20.0%" />
+        </colgroup>
+        <thead>
+        <tr class="row-odd"><th class="head"><p>Folio</p></th>
+        <th class="head"><p>Page</p></th>
+        <th class="head"><p>Section</p></th>
+        <th class="head"><p>Articles</p></th>
+        <th class="head"><p>Scan Status</p></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0191</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">172</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 358–359</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0192</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">173</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 360–362</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0193</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">174</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 363–364</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0194</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">175</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 365–369</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0195</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">176</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 370–372</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0196</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">177</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§ 373</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0197</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">178</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 374–378</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0198</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">179</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 379–381</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0199</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">180</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 382–386</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0200</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">181</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 387–389</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0201</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">182</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 390–392</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0202</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">183</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>—</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0203</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">184</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§ 393</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0204</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">185</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 394–397</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0205</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">186</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§ 398</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0206</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">187</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 399–402</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0207</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">188</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 403–407</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0208</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">189</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 408–409</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0209</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">190</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 410–411</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0210</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">191</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 412–415</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0211</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">192</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 416–419</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0212</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">193</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§ 420</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0213</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">194</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 421–423</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0214</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">195</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 424–428</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0215</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">196</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 429–430</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0216</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">197</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 431–432</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0217</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">198</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 433–435</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0218</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">199</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 436–438</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0219</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">200</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§ 439</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0220</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">201</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 440–441</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0221</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">202</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 442–446</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0222</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">203</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 447–448</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0223</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">204</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 449–451</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0224</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">205</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 452–453</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0225</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">206</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 454–456</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0226</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">207</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 457–462</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0227</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">208</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 463–464</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0228</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">209</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 465–466</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0229</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">210</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 467–469</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0230</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">211</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 470–471</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0231</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">212</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 472–475</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0232</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">213</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 476–480</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0233</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">214</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 481–483</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0234</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">215</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 484–488</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0235</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">216</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 489–490</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0236</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">217</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 491–494</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0237</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">218</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 495–499</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0238</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">219</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 500–502</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0239</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">220</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 503–505</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0240</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">221</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>—</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0241</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">222</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 506–508</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0242</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">223</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 509–512</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0243</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">224</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§ 513</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0244</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">225</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 514–515</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0245</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">226</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>§§ 516–517</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0246</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">227</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>—</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0247</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">228</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>—</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0248</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">229</span></code></p></td>
+        <td><p>—</p></td>
+        <td><p>—</p></td>
+        <td><p>300 DPI gray</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../ch07-harmonic-division/ch07-harmonic-division-en.html" title="Chapter VII: Harmonic Division">&larr; <span class="nav-label">Chapter VII: Harmonic Division</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">College Geometry</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../ch09-inversion/ch09-inversion-en.html" title="Chapter IX: Inversion"><span class="nav-label">Chapter IX: Inversion</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+  </div>
+  <footer>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 1952 Nathan Altshiller-Court; 2007 Dover Publications • Digital Apparatus GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

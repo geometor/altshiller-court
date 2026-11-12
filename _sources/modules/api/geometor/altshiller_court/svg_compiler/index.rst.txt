@@ -1,0 +1,397 @@
+geometor.altshiller_court.svg_compiler
+======================================
+
+.. py:module:: geometor.altshiller_court.svg_compiler
+
+.. autoapi-nested-parse::
+
+   Semantic Ink-to-Vector SVG compiler and overlap verifier for Altshiller-Court's College Geometry.
+
+   Compiles formal ``"geometry"`` models stored in ``<folio>.json`` into interactive
+   ``euclid-graphic`` SVGs compatible with ``photon_platform.publish`` (``geometor_interactive.js``),
+   and quantitatively verifies sub-pixel alignment against the 300-DPI ``<folio>.<gid>.png`` crops.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.altshiller_court.svg_compiler.STANDALONE_STYLE
+   geometor.altshiller_court.svg_compiler.DEFS_BLOCK
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.altshiller_court.svg_compiler.fmt_num
+   geometor.altshiller_court.svg_compiler.esc_attr
+   geometor.altshiller_court.svg_compiler.safe_dom_id
+   geometor.altshiller_court.svg_compiler.canonical_point_ref
+   geometor.altshiller_court.svg_compiler.format_label_svg_inner
+   geometor.altshiller_court.svg_compiler.midpoint_line_d
+   geometor.altshiller_court.svg_compiler.arc_svg_d
+   geometor.altshiller_court.svg_compiler.wedge_and_mid_arc_d
+   geometor.altshiller_court.svg_compiler.expand_prime_aliases
+   geometor.altshiller_court.svg_compiler.tick_paths_for_segment
+   geometor.altshiller_court.svg_compiler.compile_graphic_svg
+   geometor.altshiller_court.svg_compiler.compile_all_svgs
+   geometor.altshiller_court.svg_compiler.verify_svg_against_scan
+   geometor.altshiller_court.svg_compiler.verify_all_svgs
+   geometor.altshiller_court.svg_compiler.parse_geometor_ref_keys
+   geometor.altshiller_court.svg_compiler.build_svg_ref_keyset
+   geometor.altshiller_court.svg_compiler.parse_geom_role_text
+   geometor.altshiller_court.svg_compiler.parse_eq_role_text
+
+
+Module Contents
+---------------
+
+.. py:data:: STANDALONE_STYLE
+   :value: Multiline-String
+
+   .. raw:: html
+
+      <details><summary>Show Value</summary>
+
+   .. code-block:: python
+
+      """    .euclid-graphic {
+            font-family: 'Fira Sans Condensed', 'Fira Sans', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            background-color: #ffffff;
+          }
+          .geom-line {
+            stroke: #18181b;
+            stroke-width: 1.8;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+            transition: stroke 0.15s, stroke-width 0.15s;
+          }
+          .geom-bold {
+            stroke: #18181b;
+            stroke-width: 2.3;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+            transition: stroke 0.15s, stroke-width 0.15s;
+          }
+          .geom-circle, .geom-curve, .geom-ellipse {
+            stroke: #18181b;
+            stroke-width: 1.8;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+            transition: stroke 0.15s, stroke-width 0.15s;
+          }
+          .geom-arc {
+            stroke: #18181b;
+            stroke-width: 1.6;
+            stroke-linecap: round;
+            fill: none;
+            transition: stroke 0.15s, stroke-width 0.15s;
+          }
+          .geom-dashed, .geom-line-dashed, .geom-arc-dashed, .geom-aux, .geom-Auxiliary, .geom-construction {
+            stroke: #18181b;
+            stroke-width: 1.5;
+            stroke-dasharray: 4, 3;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+            transition: stroke 0.15s, stroke-width 0.15s;
+          }
+          .geom-arc-dotted {
+            stroke: #18181b;
+            stroke-width: 1.5;
+            stroke-dasharray: 2.5, 2.5;
+            stroke-linecap: round;
+            fill: none;
+            transition: stroke 0.15s, stroke-width 0.15s;
+          }
+          .geom-ray {
+            stroke: #18181b;
+            stroke-width: 1.25;
+            stroke-linecap: round;
+            fill: none;
+            opacity: 0.85;
+            transition: stroke 0.15s, stroke-width 0.15s;
+          }
+          .geom-tick {
+            stroke: #18181b;
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            fill: none;
+          }
+          .geom-tick-mark {
+            stroke: #16a34a;
+            stroke-width: 2;
+            stroke-linecap: round;
+            fill: none;
+          }
+          .geom-ang-arc {
+            fill: none;
+            stroke: #16a34a;
+            stroke-width: 2.2;
+            stroke-linecap: round;
+          }
+          .geom-polygon {
+            fill: #000000;
+            fill-opacity: 0.04;
+            stroke: none;
+            transition: fill-opacity 0.15s, stroke 0.15s;
+          }
+          .geom-polygon-bordered, .geom-polygon-stroked, .geom-space {
+            fill: #000000;
+            fill-opacity: 0.04;
+            stroke: #18181b;
+            stroke-width: 1.8;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            transition: fill-opacity 0.15s, stroke 0.15s, stroke-width 0.15s;
+          }
+          .wedge, .angle {
+            fill: #c88a1e;
+            fill-opacity: 0.24;
+            stroke: #c88a1e;
+            stroke-width: 2;
+            stroke-linejoin: round;
+            transition: opacity 0.12s ease, fill-opacity 0.12s ease;
+          }
+          .geom-point {
+            fill: #18181b;
+            stroke: #ffffff;
+            stroke-width: 1;
+            transition: fill 0.15s, r 0.15s;
+          }
+          .geom-dot {
+            fill: #18181b;
+            stroke: none;
+            transition: fill 0.15s, r 0.15s;
+          }
+          .geom-label {
+            font-family: 'Fira Sans Condensed', 'Fira Sans', sans-serif;
+            font-size: 14.5px;
+            font-weight: 700;
+            font-style: normal;
+            fill: #18181b;
+            user-select: none;
+          }
+          .geom-label-sm {
+            font-family: 'Fira Sans Condensed', 'Fira Sans', sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            font-style: normal;
+            fill: #18181b;
+            user-select: none;
+          }
+          .geom-label-sub {
+            font-family: 'Fira Sans Condensed', 'Fira Sans', sans-serif;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 700;
+            fill: #18181b;
+          }
+          .geom-overlay {
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.12s ease;
+          }
+          [data-ref]:hover, .highlight, .geom-highlight-active {
+            opacity: 1 !important;
+            stroke: #c88a1e !important;
+            cursor: pointer;
+          }
+          text[data-ref]:hover, text.highlight, text.geom-highlight-active, text.geom-highlight-secondary, text.geom-highlight-active *, text.geom-highlight-secondary * {
+            opacity: 1 !important;
+            fill: #c88a1e !important;
+            stroke: none !important;
+          }
+          .geom-polygon:hover, .geom-polygon.highlight, .geom-polygon-bordered:hover, .geom-polygon-bordered.highlight, polygon.geom-highlight-active, path.geom-polygon.geom-highlight-active, .wedge:hover, .wedge.highlight, .wedge.angle:hover, .wedge.angle.highlight, .wedge.angle.geom-highlight-active, path.wedge.geom-highlight-active, path.angle.geom-highlight-active {
+            opacity: 1 !important;
+            fill-opacity: 0.24 !important;
+            fill: #c88a1e !important;
+            stroke: #c88a1e !important;
+          }
+          .geom-point:hover, .geom-point.highlight, circle.geom-point.geom-highlight-active, .geom-dot:hover, .geom-dot.highlight, circle.geom-highlight-active {
+            opacity: 1 !important;
+            fill: #c88a1e !important;
+            stroke: none !important;
+          }
+          .geom-assert-active {
+            opacity: 1 !important;
+            stroke: #16a34a !important;
+          }
+          text.geom-assert-active, text.geom-assert-secondary, text.geom-assert-active *, text.geom-assert-secondary * {
+            opacity: 1 !important;
+            fill: #16a34a !important;
+            stroke: none !important;
+          }
+          polygon.geom-assert-active, path.geom-polygon.geom-assert-active, .wedge.angle.geom-assert-active, path.wedge.geom-assert-active, path.angle.geom-assert-active {
+            opacity: 1 !important;
+            fill-opacity: 0.22 !important;
+            fill: #16a34a !important;
+            stroke: #16a34a !important;
+          }
+          path.geom-ang-arc.geom-assert-active {
+            opacity: 1 !important;
+            fill: none !important;
+            stroke: #16a34a !important;
+          }
+          circle.geom-point.geom-assert-active, circle.geom-assert-active {
+            opacity: 1 !important;
+            fill: #16a34a !important;
+            stroke: none !important;
+          }
+          path.geom-assert-active.geom-tick-1 {
+            marker-mid: url(#geom-tick-1);
+          }
+          path.geom-assert-active.geom-tick-2 {
+            marker-mid: url(#geom-tick-2);
+          }
+          path.geom-assert-active.geom-tick-3 {
+            marker-mid: url(#geom-tick-3);
+          }"""
+
+   .. raw:: html
+
+      </details>
+
+
+
+.. py:data:: DEFS_BLOCK
+   :value: Multiline-String
+
+   .. raw:: html
+
+      <details><summary>Show Value</summary>
+
+   .. code-block:: python
+
+      """  <defs>
+          <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+            <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+          </marker>
+          <marker id="geom-tick-2" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+            <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+            <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+          </marker>
+          <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+            <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+            <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+          </marker>
+        </defs>"""
+
+   .. raw:: html
+
+      </details>
+
+
+
+.. py:function:: fmt_num(val: float) -> str
+
+   Format floating-point SVG coordinates cleanly.
+
+
+.. py:function:: esc_attr(val: str) -> str
+
+   Escape XML attribute value including ``<`` and ``>``.
+
+
+.. py:function:: safe_dom_id(raw: str) -> str
+
+   Convert a point or element key like ``P_1'`` into a clean DOM id token ``P1prime``.
+
+
+.. py:function:: canonical_point_ref(pt_key: str) -> str
+
+   Return collision-safe point ``data-ref`` compatible with ``geometor_interactive.js``.
+
+   In ``geometor_interactive.js``, bare point references strip non-alphanumeric characters
+   (``str.replace(/[^A-Za-z0-9]/g, '')``). Mapping primed points ``A'`` -> ``Aprime`` and
+   ``P_1'`` -> ``P1prime`` prevents ``A'`` from colliding with unprimed ``A``, while ``P_1``
+   naturally normalizes to ``P1``.
+
+
+.. py:function:: format_label_svg_inner(label_text: str) -> str
+
+   Render primed and subscripted mathematical labels with SVG ``<tspan>`` children.
+
+
+.. py:function:: midpoint_line_d(x1: float, y1: float, x2: float, y2: float) -> str
+
+   Build a 3-vertex SVG straight path so ``marker-mid`` renders equality ticks at midpoint.
+
+
+.. py:function:: arc_svg_d(cx: float, cy: float, r: float, start_deg: float, end_deg: float, ccw: bool = False) -> str
+
+   Build an SVG circular arc path from ``start_deg`` to ``end_deg`` (standard screen degrees: 0=right, 90=down).
+
+
+.. py:function:: wedge_and_mid_arc_d(vx: float, vy: float, p1x: float, p1y: float, p2x: float, p2y: float, radius: float) -> tuple[str, str]
+
+   Compute minor interior angle wedge path and 3-vertex ``.geom-ang-arc`` path.
+
+
+.. py:function:: expand_prime_aliases(ref: str, extra_aliases: list[str] | None = None) -> tuple[str, str]
+
+   Normalize ``data-ref`` and expand prime/subscript aliases automatically.
+
+
+.. py:function:: tick_paths_for_segment(x1: float, y1: float, x2: float, y2: float, count: int, half_len: float = 4.5, tick_pos: float = 0.5) -> list[str]
+
+   Generate perpendicular static tick mark SVG paths along a segment.
+
+
+.. py:function:: compile_graphic_svg(folio: str, graphic: dict[str, Any], out_svg_path: pathlib.Path, png_size: tuple[int, int] | None = None) -> dict[str, Any]
+
+   Compile a single graphic's ``geometry`` schema into ``<folio>.<gid>.svg``.
+
+
+.. py:function:: compile_all_svgs(volume_dir: pathlib.Path) -> dict[str, Any]
+
+   Compile SVGs for all ``<NNNN>.json`` graphics with ``geometry`` schemas.
+
+
+.. py:function:: verify_svg_against_scan(svg_path: pathlib.Path, png_path: pathlib.Path, graphic: dict[str, Any], tolerance_px: int = 4, overlay_out_path: pathlib.Path | None = None) -> dict[str, Any]
+
+   Rasterize visible geometric primitives and measure pixel overlap against ``<folio>.<gid>.png``.
+
+   Computes:
+
+   - ``overlap_score``: percentage of rasterized SVG stroke pixels falling within
+     ``tolerance_px`` of actual scan ink pixels (target >= 95.0%).
+   - ``scan_recall``: percentage of non-label scan ink pixels covered within ``tolerance_px``
+     by the rasterized SVG strokes.
+
+
+.. py:function:: verify_all_svgs(volume_dir: pathlib.Path, overlay_dir: pathlib.Path | None = None) -> dict[str, Any]
+
+   Run quantitative ink-overlap verification across all vectorized SVGs.
+
+
+.. py:function:: parse_geometor_ref_keys(raw_str: str, default_graphic_id: str) -> list[str]
+
+   Python mirror of ``EuclidInteractive.parseGeometorRef`` in ``geometor_interactive.js``.
+
+
+.. py:function:: build_svg_ref_keyset(svg_path: pathlib.Path) -> set[str]
+
+   Parse an SVG file and build the exact set of scoped Geometor keys indexed by ``geometor_interactive.js``.
+
+
+.. py:function:: parse_geom_role_text(raw_content: str) -> tuple[str, str]
+
+   Parse ``:g:`` role content ``display <target>`` or bare ``target`` into ``(display, target)``.
+
+
+.. py:function:: parse_eq_role_text(raw_content: str) -> tuple[str, str]
+
+   Parse ``:eq:`` role content ``display <spec>`` into ``(display, spec)``.
+
+

@@ -1,0 +1,60 @@
+geometor.altshiller_court.graphics
+==================================
+
+.. py:module:: geometor.altshiller_court.graphics
+
+.. autoapi-nested-parse::
+
+   Bounding-box figure cropper and dark-mode inverter for College Geometry folios.
+
+   Compatible natively with ``publish folio`` (``photon_platform.publish.folio_review``),
+   reading ``<NNNN>.json`` definitions of the form::
+
+       {
+         "folio": "0023",
+         "page": "4",
+         "graphics": [
+           {
+             "id": "g1",
+             "type": "diagram",
+             "file": "0023.g1.png",
+             "bbox": [x, y, w, h],
+             "caption": "Fig. 1 — Construction of a circle touching a line at a given point and passing through an external point.",
+             "white_point": 238
+           }
+         ]
+       }
+
+   Generates both ``<NNNN>.<gid>.png`` (clean white-point normalized light-mode diagram)
+   and ``<NNNN>.<gid>.inverted.png`` (crisp dark-mode diagram).
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.altshiller_court.graphics.normalize_diagram_crop
+   geometor.altshiller_court.graphics.extract_graphics_for_json
+   geometor.altshiller_court.graphics.extract_all_graphics
+
+
+Module Contents
+---------------
+
+.. py:function:: normalize_diagram_crop(crop: PIL.Image.Image, white_point: int = 238) -> PIL.Image.Image
+
+   Normalize paper background >= ``white_point`` to pure white while preserving ink.
+
+
+.. py:function:: extract_graphics_for_json(json_path: pathlib.Path) -> list[pathlib.Path]
+
+   Extract all calibrated graphics defined in ``json_path`` from ``<folio>.png``.
+
+
+.. py:function:: extract_all_graphics(volume_dir: pathlib.Path) -> dict[str, Any]
+
+   Extract graphics across all ``<NNNN>.json`` files in ``resources/college_geometry/``.
+
+

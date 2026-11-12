@@ -1,0 +1,562 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.altshiller_court.svg_compiler &mdash; GEOMETOR • altshiller-court</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <h1>GEOMETOR • altshiller-court</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">altshiller-court</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../college_geometry/index.html"  >COLLEGE GEOMETRY</a>
+        </li>
+        <li>
+          <a href="../../../../../about/index.html"  >Nathan Altshiller-Court & the Digital Scriptorium</a>
+        </li>
+        <li>
+          <a href="../../../../index.html" class="is-active" aria-selected="true" >modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; altshiller-court</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../index.html">GEOMETOR • altshiller-court</a>
+          </div>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
+            <a class="book-crumb-link" href="../../../../index.html">modules</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../ingest/index.html" title="geometor.altshiller_court.ingest">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../../../index.html" title="API Reference"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="module-geometor.altshiller_court.svg_compiler">
+        <span id="geometor-altshiller-court-svg-compiler"></span><h1>geometor.altshiller_court.svg_compiler<a class="headerlink" href="#module-geometor.altshiller_court.svg_compiler" title="Link to this heading">¶</a></h1>
+        <p>Semantic Ink-to-Vector SVG compiler and overlap verifier for Altshiller-Court’s College Geometry.</p>
+        <p>Compiles formal <code class="docutils literal notranslate"><span class="pre">&quot;geometry&quot;</span></code> models stored in <code class="docutils literal notranslate"><span class="pre">&lt;folio&gt;.json</span></code> into interactive
+        <code class="docutils literal notranslate"><span class="pre">euclid-graphic</span></code> SVGs compatible with <code class="docutils literal notranslate"><span class="pre">photon_platform.publish</span></code> (<code class="docutils literal notranslate"><span class="pre">geometor_interactive.js</span></code>),
+        and quantitatively verifies sub-pixel alignment against the 300-DPI <code class="docutils literal notranslate"><span class="pre">&lt;folio&gt;.&lt;gid&gt;.png</span></code> crops.</p>
+        <section class="level-2" id="attributes">
+        <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.altshiller_court.svg_compiler.STANDALONE_STYLE" title="geometor.altshiller_court.svg_compiler.STANDALONE_STYLE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">STANDALONE_STYLE</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.altshiller_court.svg_compiler.DEFS_BLOCK" title="geometor.altshiller_court.svg_compiler.DEFS_BLOCK"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DEFS_BLOCK</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.altshiller_court.svg_compiler.fmt_num" title="geometor.altshiller_court.svg_compiler.fmt_num"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fmt_num</span></code></a>(val) → str</p></td>
+        <td><p>Format floating-point SVG coordinates cleanly.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.altshiller_court.svg_compiler.esc_attr" title="geometor.altshiller_court.svg_compiler.esc_attr"><code class="xref py py-obj docutils literal notranslate"><span class="pre">esc_attr</span></code></a>(val) → str</p></td>
+        <td><p>Escape XML attribute value including <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.altshiller_court.svg_compiler.safe_dom_id" title="geometor.altshiller_court.svg_compiler.safe_dom_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">safe_dom_id</span></code></a>(raw) → str</p></td>
+        <td><p>Convert a point or element key like <code class="docutils literal notranslate"><span class="pre">P_1'</span></code> into a clean DOM id token <code class="docutils literal notranslate"><span class="pre">P1prime</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.altshiller_court.svg_compiler.canonical_point_ref" title="geometor.altshiller_court.svg_compiler.canonical_point_ref"><code class="xref py py-obj docutils literal notranslate"><span class="pre">canonical_point_ref</span></code></a>(pt_key) → str</p></td>
+        <td><p>Return collision-safe point <code class="docutils literal notranslate"><span class="pre">data-ref</span></code> compatible with <code class="docutils literal notranslate"><span class="pre">geometor_interactive.js</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.altshiller_court.svg_compiler.format_label_svg_inner" title="geometor.altshiller_court.svg_compiler.format_label_svg_inner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">format_label_svg_inner</span></code></a>(label_text) → str</p></td>
+        <td><p>Render primed and subscripted mathematical labels with SVG <code class="docutils literal notranslate"><span class="pre">&lt;tspan&gt;</span></code> children.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.altshiller_court.svg_compiler.midpoint_line_d" title="geometor.altshiller_court.svg_compiler.midpoint_line_d"><code class="xref py py-obj docutils literal notranslate"><span class="pre">midpoint_line_d</span></code></a>(x1, y1, x2, y2) → str</p></td>
+        <td><p>Build a 3-vertex SVG straight path so <code class="docutils literal notranslate"><span class="pre">marker-mid</span></code> renders equality ticks at midpoint.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.altshiller_court.svg_compiler.arc_svg_d" title="geometor.altshiller_court.svg_compiler.arc_svg_d"><code class="xref py py-obj docutils literal notranslate"><span class="pre">arc_svg_d</span></code></a>(cx, cy, r, start_deg, end_deg[, ccw]) → str</p></td>
+        <td><p>Build an SVG circular arc path from <code class="docutils literal notranslate"><span class="pre">start_deg</span></code> to <code class="docutils literal notranslate"><span class="pre">end_deg</span></code> (standard screen degrees: 0=right, 90=down).</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.altshiller_court.svg_compiler.wedge_and_mid_arc_d" title="geometor.altshiller_court.svg_compiler.wedge_and_mid_arc_d"><code class="xref py py-obj docutils literal notranslate"><span class="pre">wedge_and_mid_arc_d</span></code></a>(vx, vy, p1x, p1y, p2x, p2y, radius) → tuple[str, str]</p></td>
+        <td><p>Compute minor interior angle wedge path and 3-vertex <code class="docutils literal notranslate"><span class="pre">.geom-ang-arc</span></code> path.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.altshiller_court.svg_compiler.expand_prime_aliases" title="geometor.altshiller_court.svg_compiler.expand_prime_aliases"><code class="xref py py-obj docutils literal notranslate"><span class="pre">expand_prime_aliases</span></code></a>(ref[, extra_aliases]) → tuple[str, str]</p></td>
+        <td><p>Normalize <code class="docutils literal notranslate"><span class="pre">data-ref</span></code> and expand prime/subscript aliases automatically.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.altshiller_court.svg_compiler.tick_paths_for_segment" title="geometor.altshiller_court.svg_compiler.tick_paths_for_segment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tick_paths_for_segment</span></code></a>(x1, y1, x2, y2, count[, ...]) → list[str]</p></td>
+        <td><p>Generate perpendicular static tick mark SVG paths along a segment.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.altshiller_court.svg_compiler.compile_graphic_svg" title="geometor.altshiller_court.svg_compiler.compile_graphic_svg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compile_graphic_svg</span></code></a>(folio, graphic, out_svg_path[, ...]) → dict[str, Any]</p></td>
+        <td><p>Compile a single graphic's <code class="docutils literal notranslate"><span class="pre">geometry</span></code> schema into <code class="docutils literal notranslate"><span class="pre">&lt;folio&gt;.&lt;gid&gt;.svg</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.altshiller_court.svg_compiler.compile_all_svgs" title="geometor.altshiller_court.svg_compiler.compile_all_svgs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compile_all_svgs</span></code></a>(volume_dir) → dict[str, Any]</p></td>
+        <td><p>Compile SVGs for all <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.json</span></code> graphics with <code class="docutils literal notranslate"><span class="pre">geometry</span></code> schemas.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.altshiller_court.svg_compiler.verify_svg_against_scan" title="geometor.altshiller_court.svg_compiler.verify_svg_against_scan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_svg_against_scan</span></code></a>(svg_path, png_path, graphic[, ...]) → dict[str, Any]</p></td>
+        <td><p>Rasterize visible geometric primitives and measure pixel overlap against <code class="docutils literal notranslate"><span class="pre">&lt;folio&gt;.&lt;gid&gt;.png</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.altshiller_court.svg_compiler.verify_all_svgs" title="geometor.altshiller_court.svg_compiler.verify_all_svgs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_all_svgs</span></code></a>(volume_dir[, overlay_dir]) → dict[str, Any]</p></td>
+        <td><p>Run quantitative ink-overlap verification across all vectorized SVGs.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.altshiller_court.svg_compiler.parse_geometor_ref_keys" title="geometor.altshiller_court.svg_compiler.parse_geometor_ref_keys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_geometor_ref_keys</span></code></a>(raw_str, default_graphic_id) → list[str]</p></td>
+        <td><p>Python mirror of <code class="docutils literal notranslate"><span class="pre">EuclidInteractive.parseGeometorRef</span></code> in <code class="docutils literal notranslate"><span class="pre">geometor_interactive.js</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.altshiller_court.svg_compiler.build_svg_ref_keyset" title="geometor.altshiller_court.svg_compiler.build_svg_ref_keyset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">build_svg_ref_keyset</span></code></a>(svg_path) → set[str]</p></td>
+        <td><p>Parse an SVG file and build the exact set of scoped Geometor keys indexed by <code class="docutils literal notranslate"><span class="pre">geometor_interactive.js</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.altshiller_court.svg_compiler.parse_geom_role_text" title="geometor.altshiller_court.svg_compiler.parse_geom_role_text"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_geom_role_text</span></code></a>(raw_content) → tuple[str, str]</p></td>
+        <td><p>Parse <code class="docutils literal notranslate"><span class="pre">:g:</span></code> role content <code class="docutils literal notranslate"><span class="pre">display</span> <span class="pre">&lt;target&gt;</span></code> or bare <code class="docutils literal notranslate"><span class="pre">target</span></code> into <code class="docutils literal notranslate"><span class="pre">(display,</span> <span class="pre">target)</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.altshiller_court.svg_compiler.parse_eq_role_text" title="geometor.altshiller_court.svg_compiler.parse_eq_role_text"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_eq_role_text</span></code></a>(raw_content) → tuple[str, str]</p></td>
+        <td><p>Parse <code class="docutils literal notranslate"><span class="pre">:eq:</span></code> role content <code class="docutils literal notranslate"><span class="pre">display</span> <span class="pre">&lt;spec&gt;</span></code> into <code class="docutils literal notranslate"><span class="pre">(display,</span> <span class="pre">spec)</span></code>.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.svg_compiler.STANDALONE_STYLE">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.svg_compiler.</span></span><span class="sig-name descname"><span class="pre">STANDALONE_STYLE</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Multiline-String</span></span><a class="headerlink" href="#geometor.altshiller_court.svg_compiler.STANDALONE_STYLE" title="Link to this definition">¶</a></dt>
+        <dd><details><summary>Show Value</summary><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">"""    .euclid-graphic {</span>
+        <span class="sd">      font-family: 'Fira Sans Condensed', 'Fira Sans', sans-serif;</span>
+        <span class="sd">      font-style: normal;</span>
+        <span class="sd">      font-weight: 700;</span>
+        <span class="sd">      background-color: #ffffff;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    .geom-line {</span>
+        <span class="sd">      stroke: #18181b;</span>
+        <span class="sd">      stroke-width: 1.8;</span>
+        <span class="sd">      stroke-linecap: round;</span>
+        <span class="sd">      stroke-linejoin: round;</span>
+        <span class="sd">      fill: none;</span>
+        <span class="sd">      transition: stroke 0.15s, stroke-width 0.15s;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    .geom-bold {</span>
+        <span class="sd">      stroke: #18181b;</span>
+        <span class="sd">      stroke-width: 2.3;</span>
+        <span class="sd">      stroke-linecap: round;</span>
+        <span class="sd">      stroke-linejoin: round;</span>
+        <span class="sd">      fill: none;</span>
+        <span class="sd">      transition: stroke 0.15s, stroke-width 0.15s;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    .geom-circle, .geom-curve, .geom-ellipse {</span>
+        <span class="sd">      stroke: #18181b;</span>
+        <span class="sd">      stroke-width: 1.8;</span>
+        <span class="sd">      stroke-linecap: round;</span>
+        <span class="sd">      stroke-linejoin: round;</span>
+        <span class="sd">      fill: none;</span>
+        <span class="sd">      transition: stroke 0.15s, stroke-width 0.15s;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    .geom-arc {</span>
+        <span class="sd">      stroke: #18181b;</span>
+        <span class="sd">      stroke-width: 1.6;</span>
+        <span class="sd">      stroke-linecap: round;</span>
+        <span class="sd">      fill: none;</span>
+        <span class="sd">      transition: stroke 0.15s, stroke-width 0.15s;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    .geom-dashed, .geom-line-dashed, .geom-arc-dashed, .geom-aux, .geom-Auxiliary, .geom-construction {</span>
+        <span class="sd">      stroke: #18181b;</span>
+        <span class="sd">      stroke-width: 1.5;</span>
+        <span class="sd">      stroke-dasharray: 4, 3;</span>
+        <span class="sd">      stroke-linecap: round;</span>
+        <span class="sd">      stroke-linejoin: round;</span>
+        <span class="sd">      fill: none;</span>
+        <span class="sd">      transition: stroke 0.15s, stroke-width 0.15s;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    .geom-arc-dotted {</span>
+        <span class="sd">      stroke: #18181b;</span>
+        <span class="sd">      stroke-width: 1.5;</span>
+        <span class="sd">      stroke-dasharray: 2.5, 2.5;</span>
+        <span class="sd">      stroke-linecap: round;</span>
+        <span class="sd">      fill: none;</span>
+        <span class="sd">      transition: stroke 0.15s, stroke-width 0.15s;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    .geom-ray {</span>
+        <span class="sd">      stroke: #18181b;</span>
+        <span class="sd">      stroke-width: 1.25;</span>
+        <span class="sd">      stroke-linecap: round;</span>
+        <span class="sd">      fill: none;</span>
+        <span class="sd">      opacity: 0.85;</span>
+        <span class="sd">      transition: stroke 0.15s, stroke-width 0.15s;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    .geom-tick {</span>
+        <span class="sd">      stroke: #18181b;</span>
+        <span class="sd">      stroke-width: 1.5;</span>
+        <span class="sd">      stroke-linecap: round;</span>
+        <span class="sd">      fill: none;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    .geom-tick-mark {</span>
+        <span class="sd">      stroke: #16a34a;</span>
+        <span class="sd">      stroke-width: 2;</span>
+        <span class="sd">      stroke-linecap: round;</span>
+        <span class="sd">      fill: none;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    .geom-ang-arc {</span>
+        <span class="sd">      fill: none;</span>
+        <span class="sd">      stroke: #16a34a;</span>
+        <span class="sd">      stroke-width: 2.2;</span>
+        <span class="sd">      stroke-linecap: round;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    .geom-polygon {</span>
+        <span class="sd">      fill: #000000;</span>
+        <span class="sd">      fill-opacity: 0.04;</span>
+        <span class="sd">      stroke: none;</span>
+        <span class="sd">      transition: fill-opacity 0.15s, stroke 0.15s;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    .geom-polygon-bordered, .geom-polygon-stroked, .geom-space {</span>
+        <span class="sd">      fill: #000000;</span>
+        <span class="sd">      fill-opacity: 0.04;</span>
+        <span class="sd">      stroke: #18181b;</span>
+        <span class="sd">      stroke-width: 1.8;</span>
+        <span class="sd">      stroke-linecap: round;</span>
+        <span class="sd">      stroke-linejoin: round;</span>
+        <span class="sd">      transition: fill-opacity 0.15s, stroke 0.15s, stroke-width 0.15s;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    .wedge, .angle {</span>
+        <span class="sd">      fill: #c88a1e;</span>
+        <span class="sd">      fill-opacity: 0.24;</span>
+        <span class="sd">      stroke: #c88a1e;</span>
+        <span class="sd">      stroke-width: 2;</span>
+        <span class="sd">      stroke-linejoin: round;</span>
+        <span class="sd">      transition: opacity 0.12s ease, fill-opacity 0.12s ease;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    .geom-point {</span>
+        <span class="sd">      fill: #18181b;</span>
+        <span class="sd">      stroke: #ffffff;</span>
+        <span class="sd">      stroke-width: 1;</span>
+        <span class="sd">      transition: fill 0.15s, r 0.15s;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    .geom-dot {</span>
+        <span class="sd">      fill: #18181b;</span>
+        <span class="sd">      stroke: none;</span>
+        <span class="sd">      transition: fill 0.15s, r 0.15s;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    .geom-label {</span>
+        <span class="sd">      font-family: 'Fira Sans Condensed', 'Fira Sans', sans-serif;</span>
+        <span class="sd">      font-size: 14.5px;</span>
+        <span class="sd">      font-weight: 700;</span>
+        <span class="sd">      font-style: normal;</span>
+        <span class="sd">      fill: #18181b;</span>
+        <span class="sd">      user-select: none;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    .geom-label-sm {</span>
+        <span class="sd">      font-family: 'Fira Sans Condensed', 'Fira Sans', sans-serif;</span>
+        <span class="sd">      font-size: 11px;</span>
+        <span class="sd">      font-weight: 700;</span>
+        <span class="sd">      font-style: normal;</span>
+        <span class="sd">      fill: #18181b;</span>
+        <span class="sd">      user-select: none;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    .geom-label-sub {</span>
+        <span class="sd">      font-family: 'Fira Sans Condensed', 'Fira Sans', sans-serif;</span>
+        <span class="sd">      font-size: 11px;</span>
+        <span class="sd">      font-style: normal;</span>
+        <span class="sd">      font-weight: 700;</span>
+        <span class="sd">      fill: #18181b;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    .geom-overlay {</span>
+        <span class="sd">      opacity: 0;</span>
+        <span class="sd">      pointer-events: none;</span>
+        <span class="sd">      transition: opacity 0.12s ease;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    [data-ref]:hover, .highlight, .geom-highlight-active {</span>
+        <span class="sd">      opacity: 1 !important;</span>
+        <span class="sd">      stroke: #c88a1e !important;</span>
+        <span class="sd">      cursor: pointer;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    text[data-ref]:hover, text.highlight, text.geom-highlight-active, text.geom-highlight-secondary, text.geom-highlight-active *, text.geom-highlight-secondary * {</span>
+        <span class="sd">      opacity: 1 !important;</span>
+        <span class="sd">      fill: #c88a1e !important;</span>
+        <span class="sd">      stroke: none !important;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    .geom-polygon:hover, .geom-polygon.highlight, .geom-polygon-bordered:hover, .geom-polygon-bordered.highlight, polygon.geom-highlight-active, path.geom-polygon.geom-highlight-active, .wedge:hover, .wedge.highlight, .wedge.angle:hover, .wedge.angle.highlight, .wedge.angle.geom-highlight-active, path.wedge.geom-highlight-active, path.angle.geom-highlight-active {</span>
+        <span class="sd">      opacity: 1 !important;</span>
+        <span class="sd">      fill-opacity: 0.24 !important;</span>
+        <span class="sd">      fill: #c88a1e !important;</span>
+        <span class="sd">      stroke: #c88a1e !important;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    .geom-point:hover, .geom-point.highlight, circle.geom-point.geom-highlight-active, .geom-dot:hover, .geom-dot.highlight, circle.geom-highlight-active {</span>
+        <span class="sd">      opacity: 1 !important;</span>
+        <span class="sd">      fill: #c88a1e !important;</span>
+        <span class="sd">      stroke: none !important;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    .geom-assert-active {</span>
+        <span class="sd">      opacity: 1 !important;</span>
+        <span class="sd">      stroke: #16a34a !important;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    text.geom-assert-active, text.geom-assert-secondary, text.geom-assert-active *, text.geom-assert-secondary * {</span>
+        <span class="sd">      opacity: 1 !important;</span>
+        <span class="sd">      fill: #16a34a !important;</span>
+        <span class="sd">      stroke: none !important;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    polygon.geom-assert-active, path.geom-polygon.geom-assert-active, .wedge.angle.geom-assert-active, path.wedge.geom-assert-active, path.angle.geom-assert-active {</span>
+        <span class="sd">      opacity: 1 !important;</span>
+        <span class="sd">      fill-opacity: 0.22 !important;</span>
+        <span class="sd">      fill: #16a34a !important;</span>
+        <span class="sd">      stroke: #16a34a !important;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    path.geom-ang-arc.geom-assert-active {</span>
+        <span class="sd">      opacity: 1 !important;</span>
+        <span class="sd">      fill: none !important;</span>
+        <span class="sd">      stroke: #16a34a !important;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    circle.geom-point.geom-assert-active, circle.geom-assert-active {</span>
+        <span class="sd">      opacity: 1 !important;</span>
+        <span class="sd">      fill: #16a34a !important;</span>
+        <span class="sd">      stroke: none !important;</span>
+        <span class="sd">    }</span>
+        <span class="sd">    path.geom-assert-active.geom-tick-1 {</span>
+        <span class="sd">      marker-mid: url(#geom-tick-1);</span>
+        <span class="sd">    }</span>
+        <span class="sd">    path.geom-assert-active.geom-tick-2 {</span>
+        <span class="sd">      marker-mid: url(#geom-tick-2);</span>
+        <span class="sd">    }</span>
+        <span class="sd">    path.geom-assert-active.geom-tick-3 {</span>
+        <span class="sd">      marker-mid: url(#geom-tick-3);</span>
+        <span class="sd">    }"""</span>
+        </pre></div>
+        </div>
+        </details></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.svg_compiler.DEFS_BLOCK">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.svg_compiler.</span></span><span class="sig-name descname"><span class="pre">DEFS_BLOCK</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Multiline-String</span></span><a class="headerlink" href="#geometor.altshiller_court.svg_compiler.DEFS_BLOCK" title="Link to this definition">¶</a></dt>
+        <dd><details><summary>Show Value</summary><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">"""  &lt;defs&gt;</span>
+        <span class="sd">    &lt;marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"&gt;</span>
+        <span class="sd">      &lt;line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" /&gt;</span>
+        <span class="sd">    &lt;/marker&gt;</span>
+        <span class="sd">    &lt;marker id="geom-tick-2" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"&gt;</span>
+        <span class="sd">      &lt;line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" /&gt;</span>
+        <span class="sd">      &lt;line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" /&gt;</span>
+        <span class="sd">    &lt;/marker&gt;</span>
+        <span class="sd">    &lt;marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"&gt;</span>
+        <span class="sd">      &lt;line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" /&gt;</span>
+        <span class="sd">      &lt;line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" /&gt;</span>
+        <span class="sd">      &lt;line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" /&gt;</span>
+        <span class="sd">    &lt;/marker&gt;</span>
+        <span class="sd">  &lt;/defs&gt;"""</span>
+        </pre></div>
+        </div>
+        </details></dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.svg_compiler.fmt_num">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.svg_compiler.</span></span><span class="sig-name descname"><span class="pre">fmt_num</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.altshiller_court.svg_compiler.fmt_num" title="Link to this definition">¶</a></dt>
+        <dd><p>Format floating-point SVG coordinates cleanly.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.svg_compiler.esc_attr">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.svg_compiler.</span></span><span class="sig-name descname"><span class="pre">esc_attr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.altshiller_court.svg_compiler.esc_attr" title="Link to this definition">¶</a></dt>
+        <dd><p>Escape XML attribute value including <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.svg_compiler.safe_dom_id">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.svg_compiler.</span></span><span class="sig-name descname"><span class="pre">safe_dom_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">raw</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.altshiller_court.svg_compiler.safe_dom_id" title="Link to this definition">¶</a></dt>
+        <dd><p>Convert a point or element key like <code class="docutils literal notranslate"><span class="pre">P_1'</span></code> into a clean DOM id token <code class="docutils literal notranslate"><span class="pre">P1prime</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.svg_compiler.canonical_point_ref">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.svg_compiler.</span></span><span class="sig-name descname"><span class="pre">canonical_point_ref</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pt_key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.altshiller_court.svg_compiler.canonical_point_ref" title="Link to this definition">¶</a></dt>
+        <dd><p>Return collision-safe point <code class="docutils literal notranslate"><span class="pre">data-ref</span></code> compatible with <code class="docutils literal notranslate"><span class="pre">geometor_interactive.js</span></code>.</p>
+        <p>In <code class="docutils literal notranslate"><span class="pre">geometor_interactive.js</span></code>, bare point references strip non-alphanumeric characters
+        (<code class="docutils literal notranslate"><span class="pre">str.replace(/[^A-Za-z0-9]/g,</span> <span class="pre">'')</span></code>). Mapping primed points <code class="docutils literal notranslate"><span class="pre">A'</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Aprime</span></code> and
+        <code class="docutils literal notranslate"><span class="pre">P_1'</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">P1prime</span></code> prevents <code class="docutils literal notranslate"><span class="pre">A'</span></code> from colliding with unprimed <code class="docutils literal notranslate"><span class="pre">A</span></code>, while <code class="docutils literal notranslate"><span class="pre">P_1</span></code>
+        naturally normalizes to <code class="docutils literal notranslate"><span class="pre">P1</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.svg_compiler.format_label_svg_inner">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.svg_compiler.</span></span><span class="sig-name descname"><span class="pre">format_label_svg_inner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label_text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.altshiller_court.svg_compiler.format_label_svg_inner" title="Link to this definition">¶</a></dt>
+        <dd><p>Render primed and subscripted mathematical labels with SVG <code class="docutils literal notranslate"><span class="pre">&lt;tspan&gt;</span></code> children.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.svg_compiler.midpoint_line_d">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.svg_compiler.</span></span><span class="sig-name descname"><span class="pre">midpoint_line_d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">y1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">x2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">y2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.altshiller_court.svg_compiler.midpoint_line_d" title="Link to this definition">¶</a></dt>
+        <dd><p>Build a 3-vertex SVG straight path so <code class="docutils literal notranslate"><span class="pre">marker-mid</span></code> renders equality ticks at midpoint.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.svg_compiler.arc_svg_d">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.svg_compiler.</span></span><span class="sig-name descname"><span class="pre">arc_svg_d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">cy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_deg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_deg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">ccw</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.altshiller_court.svg_compiler.arc_svg_d" title="Link to this definition">¶</a></dt>
+        <dd><p>Build an SVG circular arc path from <code class="docutils literal notranslate"><span class="pre">start_deg</span></code> to <code class="docutils literal notranslate"><span class="pre">end_deg</span></code> (standard screen degrees: 0=right, 90=down).</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.svg_compiler.wedge_and_mid_arc_d">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.svg_compiler.</span></span><span class="sig-name descname"><span class="pre">wedge_and_mid_arc_d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">vy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">p1x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">p1y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">p2x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">p2y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.altshiller_court.svg_compiler.wedge_and_mid_arc_d" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute minor interior angle wedge path and 3-vertex <code class="docutils literal notranslate"><span class="pre">.geom-ang-arc</span></code> path.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.svg_compiler.expand_prime_aliases">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.svg_compiler.</span></span><span class="sig-name descname"><span class="pre">expand_prime_aliases</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ref</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_aliases</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.altshiller_court.svg_compiler.expand_prime_aliases" title="Link to this definition">¶</a></dt>
+        <dd><p>Normalize <code class="docutils literal notranslate"><span class="pre">data-ref</span></code> and expand prime/subscript aliases automatically.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.svg_compiler.tick_paths_for_segment">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.svg_compiler.</span></span><span class="sig-name descname"><span class="pre">tick_paths_for_segment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">y1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">x2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">y2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">count</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">half_len</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">4.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tick_pos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.altshiller_court.svg_compiler.tick_paths_for_segment" title="Link to this definition">¶</a></dt>
+        <dd><p>Generate perpendicular static tick mark SVG paths along a segment.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.svg_compiler.compile_graphic_svg">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.svg_compiler.</span></span><span class="sig-name descname"><span class="pre">compile_graphic_svg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folio</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">graphic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_svg_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">png_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.altshiller_court.svg_compiler.compile_graphic_svg" title="Link to this definition">¶</a></dt>
+        <dd><p>Compile a single graphic’s <code class="docutils literal notranslate"><span class="pre">geometry</span></code> schema into <code class="docutils literal notranslate"><span class="pre">&lt;folio&gt;.&lt;gid&gt;.svg</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.svg_compiler.compile_all_svgs">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.svg_compiler.</span></span><span class="sig-name descname"><span class="pre">compile_all_svgs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">volume_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.altshiller_court.svg_compiler.compile_all_svgs" title="Link to this definition">¶</a></dt>
+        <dd><p>Compile SVGs for all <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.json</span></code> graphics with <code class="docutils literal notranslate"><span class="pre">geometry</span></code> schemas.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.svg_compiler.verify_svg_against_scan">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.svg_compiler.</span></span><span class="sig-name descname"><span class="pre">verify_svg_against_scan</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">svg_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">png_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">graphic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_px</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overlay_out_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.altshiller_court.svg_compiler.verify_svg_against_scan" title="Link to this definition">¶</a></dt>
+        <dd><p>Rasterize visible geometric primitives and measure pixel overlap against <code class="docutils literal notranslate"><span class="pre">&lt;folio&gt;.&lt;gid&gt;.png</span></code>.</p>
+        <p>Computes:</p>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">overlap_score</span></code>: percentage of rasterized SVG stroke pixels falling within
+        <code class="docutils literal notranslate"><span class="pre">tolerance_px</span></code> of actual scan ink pixels (target &gt;= 95.0%).</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">scan_recall</span></code>: percentage of non-label scan ink pixels covered within <code class="docutils literal notranslate"><span class="pre">tolerance_px</span></code>
+        by the rasterized SVG strokes.</p></li>
+        </ul>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.svg_compiler.verify_all_svgs">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.svg_compiler.</span></span><span class="sig-name descname"><span class="pre">verify_all_svgs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">volume_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">overlay_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.altshiller_court.svg_compiler.verify_all_svgs" title="Link to this definition">¶</a></dt>
+        <dd><p>Run quantitative ink-overlap verification across all vectorized SVGs.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.svg_compiler.parse_geometor_ref_keys">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.svg_compiler.</span></span><span class="sig-name descname"><span class="pre">parse_geometor_ref_keys</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">raw_str</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_graphic_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.altshiller_court.svg_compiler.parse_geometor_ref_keys" title="Link to this definition">¶</a></dt>
+        <dd><p>Python mirror of <code class="docutils literal notranslate"><span class="pre">EuclidInteractive.parseGeometorRef</span></code> in <code class="docutils literal notranslate"><span class="pre">geometor_interactive.js</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.svg_compiler.build_svg_ref_keyset">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.svg_compiler.</span></span><span class="sig-name descname"><span class="pre">build_svg_ref_keyset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">svg_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#set" title="(in Python v3.13)"><span class="pre">set</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.altshiller_court.svg_compiler.build_svg_ref_keyset" title="Link to this definition">¶</a></dt>
+        <dd><p>Parse an SVG file and build the exact set of scoped Geometor keys indexed by <code class="docutils literal notranslate"><span class="pre">geometor_interactive.js</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.svg_compiler.parse_geom_role_text">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.svg_compiler.</span></span><span class="sig-name descname"><span class="pre">parse_geom_role_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">raw_content</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.altshiller_court.svg_compiler.parse_geom_role_text" title="Link to this definition">¶</a></dt>
+        <dd><p>Parse <code class="docutils literal notranslate"><span class="pre">:g:</span></code> role content <code class="docutils literal notranslate"><span class="pre">display</span> <span class="pre">&lt;target&gt;</span></code> or bare <code class="docutils literal notranslate"><span class="pre">target</span></code> into <code class="docutils literal notranslate"><span class="pre">(display,</span> <span class="pre">target)</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.altshiller_court.svg_compiler.parse_eq_role_text">
+        <span class="sig-prename descclassname"><span class="pre">geometor.altshiller_court.svg_compiler.</span></span><span class="sig-name descname"><span class="pre">parse_eq_role_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">raw_content</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.altshiller_court.svg_compiler.parse_eq_role_text" title="Link to this definition">¶</a></dt>
+        <dd><p>Parse <code class="docutils literal notranslate"><span class="pre">:eq:</span></code> role content <code class="docutils literal notranslate"><span class="pre">display</span> <span class="pre">&lt;spec&gt;</span></code> into <code class="docutils literal notranslate"><span class="pre">(display,</span> <span class="pre">spec)</span></code>.</p>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../ingest/index.html" title="geometor.altshiller_court.ingest">&larr; <span class="nav-label">geometor.altshiller_court.ingest</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../index.html">GEOMETOR • altshiller-court</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../../../index.html" title="API Reference"><span class="nav-label">API Reference</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+  </div>
+  <footer>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 1952 Nathan Altshiller-Court; 2007 Dover Publications • Digital Apparatus GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

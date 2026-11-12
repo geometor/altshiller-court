@@ -1,0 +1,58 @@
+geometor.altshiller_court.ingest
+================================
+
+.. py:module:: geometor.altshiller_court.ingest
+
+.. autoapi-nested-parse::
+
+   Standardized 300 DPI folio ingestion for Altshiller-Court's College Geometry.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.altshiller_court.ingest.DEFAULT_ROOT_PDF_NAME
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.altshiller_court.ingest.ensure_source_pdf
+   geometor.altshiller_court.ingest.load_structure_map
+   geometor.altshiller_court.ingest.ingest_folios
+
+
+Module Contents
+---------------
+
+.. py:data:: DEFAULT_ROOT_PDF_NAME
+   :value: 'College Geometry_ An Introduction to the M - Nathan Altshiller-Court.pdf'
+
+
+.. py:function:: ensure_source_pdf(repo_root: pathlib.Path) -> pathlib.Path
+
+   Ensure ``resources/college_geometry/pdfs/college_geometry.pdf`` exists.
+
+   Copies from the root Dover PDF if not yet present in ``pdfs/``, leaving the
+   root file intact.
+
+
+.. py:function:: load_structure_map(volume_dir: pathlib.Path) -> dict[str, Any]
+
+   Load ``structure_map.json`` from ``resources/college_geometry/``.
+
+
+.. py:function:: ingest_folios(repo_root: pathlib.Path, dpi: int = 300, force: bool = False) -> dict[str, Any]
+
+   Render all 334 PDF pages at ``dpi`` and route into chapter directories.
+
+   Cover folios (``0001`` and ``0334``) preserve full RGB color; interior text
+   and diagram folios (``0002``–``0333``) are saved as crisp 8-bit grayscale PNGs
+   with zero loss of line stroke or anti-aliasing fidelity.
+
+

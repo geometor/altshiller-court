@@ -1,0 +1,33 @@
+geometor.altshiller_court.__main__
+==================================
+
+.. py:module:: geometor.altshiller_court.__main__
+
+.. autoapi-nested-parse::
+
+   Command-line interface for the Altshiller-Court Digital Scriptorium pipeline.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.altshiller_court.__main__.build_parser
+   geometor.altshiller_court.__main__.main
+
+
+Module Contents
+---------------
+
+.. py:function:: build_parser() -> argparse.ArgumentParser
+
+   Construct the CLI argument parser.
+
+
+.. py:function:: main(argv: collections.abc.Sequence[str] | None = None) -> int
+
+   Entry point for ``altshiller-court`` CLI.
+
+

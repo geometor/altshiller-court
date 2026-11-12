@@ -1,0 +1,193 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scanned PDF Optical Ingestion &amp; Interactive SVG Vectorization &mdash; GEOMETOR • altshiller-court</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../index.html">
+        <h1>GEOMETOR • altshiller-court</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">altshiller-court</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../college_geometry/index.html"  >COLLEGE GEOMETRY</a>
+        </li>
+        <li>
+          <a href="index.html" class="is-active" aria-selected="true" >Nathan Altshiller-Court & the Digital Scriptorium</a>
+        </li>
+        <li>
+          <a href="../modules/index.html"  >modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../index.html" title="Return to Project Portal">&larr; altshiller-court</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">GEOMETOR • altshiller-court</a>
+          </div>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
+            <a class="book-crumb-link" href="index.html">Nathan Altshiller-Court &amp; the Digital Scriptorium</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="index.html" title="Nathan Altshiller-Court &amp; the Digital Scriptorium">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../modules/index.html" title="modules"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="scanned-pdf-optical-ingestion-interactive-svg-vectorization">
+        <span id="pdf-parsing-guide"></span><h1>Scanned PDF Optical Ingestion &amp; Interactive SVG Vectorization<a class="headerlink" href="#scanned-pdf-optical-ingestion-interactive-svg-vectorization" title="Link to this heading">¶</a></h1>
+        <p class="rubric">Multimodal Vision Transcription, Semantic Structure Recovery, and Exact Vector Reconstruction</p>
+        <p>Historical mathematical treatises such as Nathan Altshiller-Court’s <em>College Geometry</em> (1925 / 1952) combine dense synthetic reasoning, displayed algebraic proportions, italic and primed geometric notation, and compass-and-straightedge plates. This guide documents the canonical <strong>GEOMETOR Digital Scriptorium</strong> methodology for transforming archival PDF scans into an interactive, verifiable <strong>2-Track Book Codex</strong>.</p>
+        <div class="admonition important">
+        <p class="admonition-title">Important</p>
+        <p><strong>Mandatory Rule — Multimodal Vision Over OCR</strong></p>
+        <p>For PDFs with scanned pages—even when an embedded OCR text stream exists inside the PDF—agents <strong>must read the 300-DPI scan images directly</strong> (<cite>&lt;NNNN&gt;.png</cite> and <cite>&lt;NNNN&gt;.&lt;gid&gt;.png</cite>) using multimodal vision to ascertain semantic structure, prose, mathematical formulas, and diagram geometry. <strong>Never rely on embedded PDF OCR (`pdftotext`) for transcription or structural parsing.</strong></p>
+        </div>
+        <section class="level-2" id="why-multimodal-vision-supersedes-ocr-on-mathematical-scans">
+        <h2>Why Multimodal Vision Supersedes OCR on Mathematical Scans<a class="headerlink" href="#why-multimodal-vision-supersedes-ocr-on-mathematical-scans" title="Link to this heading">¶</a></h2>
+        <p>Embedded OCR layers in scanned 19th- and 20th-century geometry books fail systematically on the exact constructs that carry mathematical meaning:</p>
+        <ol class="arabic simple">
+        <li><p><strong>Formulas, Ratios, and Fractions</strong>: Displayed proportions such as <code class="docutils literal notranslate"><span class="pre">FL</span> <span class="pre">:</span> <span class="pre">FA</span> <span class="pre">=</span> <span class="pre">FQ</span> <span class="pre">:</span> <span class="pre">FP</span></code>, stacked fractions like <span class="math notranslate nohighlight">\(\tfrac{1}{2}\,\angle ABC\)</span>, radicals, and difference-of-squares identities (<span class="math notranslate nohighlight">\(AM^2 - BM^2 = d^2\)</span>) are routinely flattened, dropped, or misread by character-level OCR.</p></li>
+        <li><p><strong>Primes, Subscripts, and Compound Labels</strong>: Constructive geometry relies heavily on homologous point families—such as <code class="docutils literal notranslate"><span class="pre">A,</span> <span class="pre">A'</span></code>, <code class="docutils literal notranslate"><span class="pre">T,</span> <span class="pre">T'</span></code>, <code class="docutils literal notranslate"><span class="pre">P_1,</span> <span class="pre">P_2</span></code>, and compound subscript-prime labels <code class="docutils literal notranslate"><span class="pre">P_1',</span> <span class="pre">P_2'</span></code> (e.g., Figure 5 on folio <code class="docutils literal notranslate"><span class="pre">0026</span></code>)—as well as distinguishing circle center <code class="docutils literal notranslate"><span class="pre">O</span></code> from <code class="docutils literal notranslate"><span class="pre">0</span></code> and angle <code class="docutils literal notranslate"><span class="pre">\angle</span> <span class="pre">E</span></code> from <code class="docutils literal notranslate"><span class="pre">L</span> <span class="pre">E</span></code>.</p></li>
+        <li><p><strong>Typographic Semantic Hierarchy</strong>: Altshiller-Court encodes logical structure through typography: bold article headers (<code class="docutils literal notranslate"><span class="pre">13.</span> <span class="pre">Problem.</span></code>), italicized enunciations, small-caps dialectical stages (<code class="docutils literal notranslate"><span class="pre">ANALYSIS.</span></code>, <code class="docutils literal notranslate"><span class="pre">CONSTRUCTION.</span></code>, <code class="docutils literal notranslate"><span class="pre">PROOF.</span></code>, <code class="docutils literal notranslate"><span class="pre">DISCUSSION.</span></code>, <code class="docutils literal notranslate"><span class="pre">CONVERSELY.</span></code>), multi-column exercise blocks (folio <code class="docutils literal notranslate"><span class="pre">0039</span></code>), and sentences flowing across side-by-side figures (folio <code class="docutils literal notranslate"><span class="pre">0038</span></code>, Figures 14 and 15). Reading the scan image directly preserves every structural boundary and mid-sentence page/figure continuation.</p></li>
+        <li><p><strong>Diagram Callouts &amp; Visual Invariants</strong>: Optical inspection of <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.png</span></code> reveals dashed auxiliary lines, tick marks on equal segments (Figure 17 on folio <code class="docutils literal notranslate"><span class="pre">0040</span></code>), center dots, and tangency contacts that cannot be inferred from text alone.</p></li>
+        </ol>
+        </section>
+        <section class="level-2" id="end-to-end-pipeline">
+        <h2>End-to-End Pipeline<a class="headerlink" href="#end-to-end-pipeline" title="Link to this heading">¶</a></h2>
+        <section class="level-3" id="standardized-300-dpi-rasterization-ingest-py">
+        <h3>1. Standardized 300-DPI Rasterization (<code class="docutils literal notranslate"><span class="pre">ingest.py</span></code>)<a class="headerlink" href="#standardized-300-dpi-rasterization-ingest-py" title="Link to this heading">¶</a></h3>
+        <p><code class="docutils literal notranslate"><span class="pre">geometor.altshiller_court.ingest</span></code> rasterizes all 334 PDF pages at 300 DPI via <code class="docutils literal notranslate"><span class="pre">pdftoppm</span> <span class="pre">-png</span> <span class="pre">-r</span> <span class="pre">300</span></code> and routes each <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.png</span></code> scan into its structural chapter directory (<code class="docutils literal notranslate"><span class="pre">00_frontmatter</span></code> through <code class="docutils literal notranslate"><span class="pre">12_index</span></code>) governed by <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/structure_map.json</span></code>. Body and backmatter folios obey the unbroken pagination invariant:</p>
+        <div class="math notranslate nohighlight">
+        \[\text{PDF Folio} = \text{Printed Page} + 19 \qquad (\text{folios } 0020\text{–}0332 \leftrightarrow \text{pp. } 1\text{–}313).\]</div>
+        </section>
+        <section class="level-3" id="optical-transcription-diplomatic-verification-nnnn-rst">
+        <h3>2. Optical Transcription &amp; Diplomatic Verification (<code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.rst</span></code>)<a class="headerlink" href="#optical-transcription-diplomatic-verification-nnnn-rst" title="Link to this heading">¶</a></h3>
+        <p>Each folio scan <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.png</span></code> is inspected directly via multimodal vision and transcribed verbatim into <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.rst</span></code> with:</p>
+        <ul class="simple">
+        <li><p>YAML/field-list provenance metadata (<code class="docutils literal notranslate"><span class="pre">:folio:</span></code>, <code class="docutils literal notranslate"><span class="pre">:page:</span></code>, <code class="docutils literal notranslate"><span class="pre">:book:</span></code>, <code class="docutils literal notranslate"><span class="pre">:section:</span></code>, <code class="docutils literal notranslate"><span class="pre">:title:</span></code>, <code class="docutils literal notranslate"><span class="pre">:status:</span></code>).</p></li>
+        <li><p>Exact LaTeX math (<code class="docutils literal notranslate"><span class="pre">:math:</span></code> and <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">math::</span></code>) verified glyph-by-glyph against the scan.</p></li>
+        <li><p>Scholarly apparatus links (<code class="docutils literal notranslate"><span class="pre">:person:</span></code>, <code class="docutils literal notranslate"><span class="pre">:cite:</span></code>, <code class="docutils literal notranslate"><span class="pre">:term:</span></code>) and companion constructive commentary in <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.notes.rst</span></code>.</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="calibrated-figure-cropping-semantic-svg-compilation-graphics-py-svg-compiler-py">
+        <h3>3. Calibrated Figure Cropping &amp; Semantic SVG Compilation (<code class="docutils literal notranslate"><span class="pre">graphics.py</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">svg_compiler.py</span></code>)<a class="headerlink" href="#calibrated-figure-cropping-semantic-svg-compilation-graphics-py-svg-compiler-py" title="Link to this heading">¶</a></h3>
+        <p>For every folio containing geometric plates:</p>
+        <ol class="arabic simple">
+        <li><p><strong>Crop Extraction</strong>: <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.json</span></code> records tight 300-DPI <code class="docutils literal notranslate"><span class="pre">[x,</span> <span class="pre">y,</span> <span class="pre">w,</span> <span class="pre">h]</span></code> bounding boxes; <code class="docutils literal notranslate"><span class="pre">graphics.py</span></code> normalizes paper tone to pure white <code class="docutils literal notranslate"><span class="pre">#ffffff</span></code> and outputs <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.&lt;gid&gt;.png</span></code> and <code class="docutils literal notranslate"><span class="pre">.inverted.png</span></code>.</p></li>
+        <li><p><strong>Declarative Euclidean Model (No Embedded Python Scripts)</strong>: Inside <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.json</span></code>, each graphic entry stores a declarative <code class="docutils literal notranslate"><span class="pre">&quot;geometry&quot;</span></code> dictionary (<code class="docutils literal notranslate"><span class="pre">svg_scale:</span> <span class="pre">0.5</span></code>, exact point coordinates, letterpress glyph centroids <code class="docutils literal notranslate"><span class="pre">label_x</span></code>/<code class="docutils literal notranslate"><span class="pre">label_y</span></code>, and typed <code class="docutils literal notranslate"><span class="pre">segment</span></code>, <code class="docutils literal notranslate"><span class="pre">circle</span></code>, <code class="docutils literal notranslate"><span class="pre">arc</span></code>, <code class="docutils literal notranslate"><span class="pre">polygon</span></code>, and <code class="docutils literal notranslate"><span class="pre">angle</span></code> elements) plus <code class="docutils literal notranslate"><span class="pre">&quot;svg_file&quot;:</span> <span class="pre">&quot;&lt;NNNN&gt;.&lt;gid&gt;.svg&quot;</span></code>. No <code class="docutils literal notranslate"><span class="pre">py_file</span></code> scripts are embedded in the treatise workspace.</p></li>
+        <li><p><strong>Interactive SVG Compilation</strong>: <code class="docutils literal notranslate"><span class="pre">svg_compiler.py</span></code> compiles each <code class="docutils literal notranslate"><span class="pre">&quot;geometry&quot;</span></code> model into an interactive <code class="docutils literal notranslate"><span class="pre">&lt;svg</span> <span class="pre">class=&quot;euclid-graphic&quot;</span> <span class="pre">data-graphic-id=&quot;&lt;NNNN&gt;.&lt;gid&gt;&quot;&gt;</span></code> diagram compatible with <code class="docutils literal notranslate"><span class="pre">photon-platform/publish</span></code> and <code class="docutils literal notranslate"><span class="pre">geometor_interactive.js</span></code>.</p></li>
+        <li><p><strong>Quantitative &amp; Visual Verification</strong>: <code class="docutils literal notranslate"><span class="pre">verify_svg_against_scan</span></code> rasterizes visible vector strokes back onto the 300-DPI crop grid, requiring <strong>at least 95% pixel ink overlap</strong> (Chapter I achieves <code class="docutils literal notranslate"><span class="pre">99.97%</span></code>–<code class="docutils literal notranslate"><span class="pre">100.00%</span></code> across all 17 figures), followed by direct visual inspection of RGB overlays and standalone Inkscape renders.</p></li>
+        </ol>
+        </section>
+        <section class="level-3" id="interactive-text-to-diagram-wiring-book-codex-compilation-compile-edition-py">
+        <h3>4. Interactive Text-to-Diagram Wiring &amp; Book Codex Compilation (<code class="docutils literal notranslate"><span class="pre">compile_edition.py</span></code>)<a class="headerlink" href="#interactive-text-to-diagram-wiring-book-codex-compilation-compile-edition-py" title="Link to this heading">¶</a></h3>
+        <p>Folio transcriptions switch <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">picture::</span> <span class="pre">&lt;NNNN&gt;.&lt;gid&gt;.svg</span></code> and wire:</p>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">:g:</span></code> scoped geometric references (e.g., <code class="docutils literal notranslate"><span class="pre">:g:`(O,</span> <span class="pre">OE)</span> <span class="pre">&lt;0038.g1:(</span> <span class="pre">O</span> <span class="pre">E</span> <span class="pre">)&gt;`</span></code>) highlighting points, lines, circles, arcs, polygons, and angle wedges on hover or click—including cross-folio references across page turns.</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">:eq:</span></code> equality assertions (e.g., <code class="docutils literal notranslate"><span class="pre">:eq:`BE</span> <span class="pre">=</span> <span class="pre">BA</span> <span class="pre">&lt;0040.g1:/</span> <span class="pre">B</span> <span class="pre">E</span> <span class="pre">/</span> <span class="pre">=</span> <span class="pre">0040.g1:/</span> <span class="pre">B</span> <span class="pre">A</span> <span class="pre">/&gt;`</span></code>) activating dynamic green tick marks and angle arcs.</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">enunciation::</span></code> and <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">assertion::</span></code> blocks structuring problem statements, geometric loci, and deductive conclusions.</p></li>
+        </ul>
+        <p>Finally, <code class="docutils literal notranslate"><span class="pre">compile_edition.py</span></code> de-paginates consecutive folios (reflowing mid-sentence page breaks and side-by-side figure splits) and copies all <code class="docutils literal notranslate"><span class="pre">.svg</span></code> assets into <code class="docutils literal notranslate"><span class="pre">docsrc/college_geometry/</span></code> so <code class="docutils literal notranslate"><span class="pre">publish</span> <span class="pre">build</span></code> inlines crisp, theme-adaptive interactive SVGs into the published HTML codex.</p>
+        </section>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="index.html" title="Nathan Altshiller-Court &amp; the Digital Scriptorium">&larr; <span class="nav-label">Nathan Altshiller-Court & the Digital Scriptorium</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">GEOMETOR • altshiller-court</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../modules/index.html" title="modules"><span class="nav-label">modules</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+  </div>
+  <footer>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 1952 Nathan Altshiller-Court; 2007 Dover Publications • Digital Apparatus GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

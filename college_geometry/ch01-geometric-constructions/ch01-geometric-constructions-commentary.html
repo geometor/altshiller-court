@@ -1,0 +1,894 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter I: Geometric Constructions — Commentary &mdash; College Geometry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <h1>GEOMETOR • altshiller-court</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">altshiller-court</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../index.html" class="is-active" aria-selected="true" >COLLEGE GEOMETRY</a>
+        </li>
+        <li>
+          <a href="../../about/index.html"  >Nathan Altshiller-Court & the Digital Scriptorium</a>
+        </li>
+        <li>
+          <a href="../../modules/index.html"  >modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; altshiller-court</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">College Geometry</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../frontmatter/frontmatter-commentary.html" title="Frontmatter">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <a class="book-track-item" href="ch01-geometric-constructions-en.html">English</a>
+              <span class="book-track-sep">&middot;</span>
+              <strong class="book-track-item is-active" aria-current="page">Commentary</strong>
+            </nav>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../ch02-similitude-and-homothecy/ch02-similitude-and-homothecy-commentary.html" title="Chapter II: Similitude and Homothecy"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="chapter-i-geometric-constructions-commentary">
+        <span id="ch01-geometric-constructions-commentary"></span><h1>Chapter I: Geometric Constructions — Commentary<a class="headerlink" href="#chapter-i-geometric-constructions-commentary" title="Link to this heading">¶</a></h1>
+        <p class="rubric">Constructive Analysis, Historical Provenance &amp; GEOMETOR Notes (0020–0052, pp. 1–33)</p>
+        <section class="level-2" id="constructive-architecture-symbolic-modeling-122">
+        <h2>Constructive Architecture &amp; Symbolic Modeling (<cite>§§ 1–22</cite>)<a class="headerlink" href="#constructive-architecture-symbolic-modeling-122" title="Link to this heading">¶</a></h2>
+        <p>Chapter I lays down the operational grammar of the entire book. Every ruler-and-compass construction is governed by <a class="person-ref" id="occ-person-pappus-1" href="../persons.html#person-pappus" data-person="pappus" title="Pappus of Alexandria (c. 290 – c. 350 AD) — Hellenistic Geometer">Pappus'</a> four-stage <a class="term-ref glossary-term" id="occ-term-analytic-method-1" href="../glossary.html#term-analytic-method" data-term="analytic-method" title="analytic method (geometric analysis) (Method of Resolution (ἀνάλυσις)): Regressive method of solving a construction problem or discovering a proof by assuming the required figure already constructed, studying the geometric relations among its given and sought elements, and reducing the problem step-by-step to previously known elementary constructions.">analytic method</a> (<a class="citation-ref" id="occ-cite-pappus-collection-vii-1" href="../bibliography.html#cite-pappus-collection-vii" data-cite="pappus:collection:VII" title="Pappus of Alexandria (c. 290 – c. 350 AD) — Mathematical Collection (Συναγωγή), Book VII: On the Domain of Analysis (GEOMETOR Project: geometor/pappus) (Book VII (Treasury of Analysis))">Collection, Book VII</a>):</p>
+        <ol class="arabic simple">
+        <li><p><a class="term-ref glossary-term" id="occ-term-analysis-step-1" href="../glossary.html#term-analysis-step" data-term="analysis-step" title="Analysis (Step I of Construction) (Step 1 of 4-Part Pattern): First stage of Altshiller-Court&#x27;s canonical four-part solution of a construction problem: assume the problem solved, draw a tentative sketch containing both given and required elements, and deduce auxiliary relations that uniquely locate the unknown elements.">Analysis</a> — Assume the required configuration already exists and trace algebraic/synthetic incidences back to known data.</p></li>
+        <li><p><a class="term-ref glossary-term" id="occ-term-construction-step-1" href="../glossary.html#term-construction-step" data-term="construction-step" title="Construction (Step II of Construction) (Step 2 of 4-Part Pattern): Second stage of the four-part constructive pattern: state the explicit ruler-and-compass steps derived from the Analysis that actually produce the required geometric figure from the given data.">Construction</a> — Execute elementary straightedge (<cite>line(P, Q)</cite>) and compass (<cite>circle(A, r)</cite>) steps in forward topological order.</p></li>
+        <li><p><a class="term-ref glossary-term" id="occ-term-proof-step-1" href="../glossary.html#term-proof-step" data-term="proof-step" title="Proof (Step III of Construction) (Step 3 of 4-Part Pattern): Third stage of the four-part constructive pattern: demonstrate deductively that the figure produced by the Construction steps genuinely satisfies every condition demanded in the problem statement.">Proof</a> — Verify deductively that the constructed object satisfies every hypothesis.</p></li>
+        <li><p><a class="term-ref glossary-term" id="occ-term-discussion-step-1" href="../glossary.html#term-discussion-step" data-term="discussion-step" title="Discussion (Step IV of Construction) (Step 4 of 4-Part Pattern (διορισμός)): Fourth stage of the four-part constructive pattern (Greek diorismos): determine the exact conditions on the given data for a solution to exist, count the number of distinct solutions, and examine limiting or degenerate configurations.">Discussion</a> (<em>Diorismos</em>) — Determine exact existence inequalities (<cite>s &lt; 2 OE</cite>, <cite>s^2 &gt; 2a^2</cite>), count multiplicity of solutions (<cite>0, 1, 2, 3, 4, 6</cite>, or <span class="math notranslate nohighlight">\(\infty\)</span>), and identify poristic degeneracies (as in § 9 when <span class="math notranslate nohighlight">\(AC \perp BD\)</span> and <span class="math notranslate nohighlight">\(AC = BD\)</span>).</p></li>
+        </ol>
+        </section>
+        <section class="level-2" id="mapping-chapter-i-to-geometor-model-geometor-elements">
+        <h2>Mapping Chapter I to <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">geometor.elements</span></code><a class="headerlink" href="#mapping-chapter-i-to-geometor-model-geometor-elements" title="Link to this heading">¶</a></h2>
+        <ul class="simple">
+        <li><p><strong>Symbolic DAG Representation</strong>: Altshiller-Court’s § 1 notation—circles <span class="math notranslate nohighlight">\((A, r)\)</span> and line intersections <span class="math notranslate nohighlight">\(M = (PQ, RS)\)</span>—maps one-to-one onto <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> primitives, where every constructed point retains its exact SymPy algebraic coordinates in a quadratic extension tower of <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span>.</p></li>
+        <li><p><strong>The Twelve Fundamental Loci (§ 11, Folios `0030`–`0036`)</strong>:
+        - <em>Linear Loci</em>: Parallel pair (Locus 3), <a class="term-ref glossary-term" id="occ-term-mediator-1" href="../glossary.html#term-mediator" data-term="mediator" title="mediator (perpendicular bisector) (Perpendicular bisector of a segment): The line perpendicular to a given segment AB at its midpoint—the locus of all points equidistant from A and B (§ 11, Locus 3; Euclid I.10, I.11). The three mediators of a triangle concur at the circumcenter O = X(3).">mediator</a> (Locus 4, <a class="citation-ref" id="occ-cite-euclid-elements-1" href="../bibliography.html#cite-euclid-elements" data-cite="euclid:elements" title="Euclid of Alexandria (trans. Sir Thomas L. Heath) — The Thirteen Books of Euclid&#x27;s Elements (2nd ed., Cambridge University Press, 1926; GEOMETOR Digital Edition: geometor/euclid &amp; geometor/elements) (Books I–VI)">Euclid I.10–11</a>), angle bisectors (Locus 5), and constant difference of squares <span class="math notranslate nohighlight">\(AM^2 - BM^2 = d^2\)</span> (Locus 12 — the point-circle precursor of the <a class="term-ref glossary-term" id="occ-term-radical-axis-1" href="../glossary.html#term-radical-axis" data-term="radical-axis" title="radical axis and radical center (Locus of equal powers): The radical axis of two non-concentric circles is the straight line of points having equal power with respect to both circles; the three radical axes of three circles taken in pairs concur at their radical center (§ 492).">radical axis</a> in Chapter VIII, § 422).
+        - <em>Circular Loci</em>: Circle <span class="math notranslate nohighlight">\((A, r)\)</span> (Locus 1), concentric tangent-length &amp; subtended-angle circles (Loci 2, 6, 9), <a class="term-ref glossary-term" id="occ-term-subtended-angle-locus-1" href="../glossary.html#term-subtended-angle-locus" data-term="subtended-angle-locus" title="capable arc (locus of constant subtended angle) (Arc AMB subtending given ∠α on chord AB): Set of points on a given side of segment AB at which AB subtends a given angle α (Euclid III.21, III.33); when α = 90°, the two symmetric arcs unite into the circle on diameter AB (Thales&#x27; locus, Euclid III.31).">capable arc</a> &amp; Thales’ circle (Locus 7, <a class="citation-ref" id="occ-cite-euclid-elements-2" href="../bibliography.html#cite-euclid-elements" data-cite="euclid:elements" title="Euclid of Alexandria (trans. Sir Thomas L. Heath) — The Thirteen Books of Euclid&#x27;s Elements (2nd ed., Cambridge University Press, 1926; GEOMETOR Digital Edition: geometor/euclid &amp; geometor/elements) (Books I–VI)">Euclid III.21, III.31</a>), chord-midpoint circle on <span class="math notranslate nohighlight">\(OP\)</span> (Locus 8), Apollonius’ median circle <span class="math notranslate nohighlight">\(OM^2 = \tfrac{1}{2}s^2 - a^2\)</span> (Locus 10), and the <a class="term-ref glossary-term" id="occ-term-apollonian-circle-1" href="../glossary.html#term-apollonian-circle" data-term="apollonian-circle" title="Apollonian circle (Circle of Apollonius): The locus of a point whose distances from two fixed points A, B have a constant ratio m : n (m ≠ n); its diameter joins the two points C, D that divide AB internally and externally in the ratio m : n (§ 11, Locus 11; § 61). For a triangle ABC, the three Apollonian circles pass through each vertex and the feet of the internal and external angle bisectors on the opposite side (§ 597), intersecting in the two isodynamic points X(15), X(16).">Apollonian circle</a> <span class="math notranslate nohighlight">\(AM : MB = p : q\)</span> (Locus 11, <a class="person-ref" id="occ-person-apollonius-1" href="../persons.html#person-apollonius" data-person="apollonius" title="Apollonius of Perga (c. 262 – c. 190 BC) — Hellenistic Geometer (&#x27;The Great Geometer&#x27;)">Apollonius</a>).</p></li>
+        <li><p><strong>Transformational &amp; Unfolding Previews</strong>: § 8 previews parallel translation (<a class="citation-ref" id="occ-cite-pt-1" href="../bibliography.html#cite-pt" data-cite="pt" title="Petersen, Julius (1839–1910) — Methods and Theories for the Solution of Problems of Geometrical Constructions (Copenhagen, 1866; London: Sampson Low, 1879) (p. 295 (A. Books: Pt.))">Petersen</a>), § 9 previews <span class="math notranslate nohighlight">\(90^\circ\)</span> rotational congruence (<a class="person-ref" id="occ-person-castillon-1" href="../persons.html#person-castillon" data-person="castillon" title="Castillon, Johann (Salvemini, Giovanni Francesco) (1709–1791) — Italian-Swiss Geometer, Berlin Academy">Castillon</a>), and § 15 introduces <a class="term-ref glossary-term" id="occ-term-indirect-elements-1" href="../glossary.html#term-indirect-elements" data-term="indirect-elements" title="indirect elements (Sums, differences, and auxiliary elements): Composite or derived data given in place of primary triangle elements—such as the perimeter 2s, sum or difference of two sides (b + c, b - c), sum or difference of angles, medians, altitudes, or radii—translated into constructible auxiliary triangles.">indirect elements</a> by unfolding perimeter <span class="math notranslate nohighlight">\(2p\)</span> into auxiliary triangle <span class="math notranslate nohighlight">\(AEF\)</span> with vertex angle <span class="math notranslate nohighlight">\(90^\circ + \tfrac{1}{2}A\)</span>.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="cross-repository-geometor-links">
+        <h2>Cross-Repository GEOMETOR Links<a class="headerlink" href="#cross-repository-geometor-links" title="Link to this heading">¶</a></h2>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">geometor/elements</span> <span class="pre">(I.1–I.47,</span> <span class="pre">III.20–III.36,</span> <span class="pre">IV.2–IV.5,</span> <span class="pre">VI.9–VI.13)</span></code></p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">geometor/fundamentals</span></code></p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">geometor/pappus</span> <span class="pre">(Book</span> <span class="pre">VII</span> <span class="pre">Analysis/Synthesis)</span></code></p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="folio-by-folio-diplomatic-constructive-notes">
+        <h2>Folio-by-Folio Diplomatic &amp; Constructive Notes<a class="headerlink" href="#folio-by-folio-diplomatic-constructive-notes" title="Link to this heading">¶</a></h2>
+        <section class="level-3" id="folio-0020-page-1-diplomatic-mathematical-notes">
+        <h3>Folio 0020 (Page 1) — Diplomatic &amp; Mathematical Notes<a class="headerlink" href="#folio-0020-page-1-diplomatic-mathematical-notes" title="Link to this heading">¶</a></h3>
+        <section class="level-4" id="summary-folio-continuity">
+        <h4>Summary &amp; Folio Continuity<a class="headerlink" href="#summary-folio-continuity" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Preceding Folio</strong>: Folio 0019 (Page [xx], Blank Verso)</p></li>
+        <li><p><strong>Current Folio</strong> (<code class="docutils literal notranslate"><span class="pre">0020.rst</span></code>): Page <code class="docutils literal notranslate"><span class="pre">1</span></code>, Chapter I [<code class="docutils literal notranslate"><span class="pre">01_geometric_constructions</span></code>] — Status: <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
+        <li><p><strong>Following Folio</strong>: Folio 0021 (Page 2, § 2 concluded, Exercises 1–24, and § 3)</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="structural-diplomatic-observations">
+        <h4>Structural &amp; Diplomatic Observations<a class="headerlink" href="#structural-diplomatic-observations" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Overview</strong>: Opening recto of Chapter 1 (printed page <code class="docutils literal notranslate"><span class="pre">1</span></code>; tall chapter numeral <code class="docutils literal notranslate"><span class="pre">1</span></code> above <code class="docutils literal notranslate"><span class="pre">GEOMETRIC</span> <span class="pre">CONSTRUCTIONS</span></code>, section <code class="docutils literal notranslate"><span class="pre">A.</span> <span class="pre">PRELIMINARIES</span></code>), defining Altshiller-Court’s global symbolic conventions (§ 1) and beginning the catalog of Euclidean elementary constructions (§ 2).</p></li>
+        <li><p><strong>Document Headings on Folio</strong>: <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">GEOMETRIC</span> <span class="pre">CONSTRUCTIONS</span></code>, <code class="docutils literal notranslate"><span class="pre">A.</span> <span class="pre">PRELIMINARIES</span></code>, <code class="docutils literal notranslate"><span class="pre">1.</span> <span class="pre">Notation.</span></code>, <code class="docutils literal notranslate"><span class="pre">2.</span> <span class="pre">Basic</span> <span class="pre">Constructions.</span></code></p></li>
+        <li><p><strong>Line-Break Hyphenations Resolved</strong>: <code class="docutils literal notranslate"><span class="pre">circum-center</span></code>, <code class="docutils literal notranslate"><span class="pre">ex-ternally</span></code></p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="mathematical-constructive-commentary">
+        <h4>Mathematical &amp; Constructive Commentary<a class="headerlink" href="#mathematical-constructive-commentary" title="Link to this heading">¶</a></h4>
+        <p>Note two signature conventions of Altshiller-Court (§ 1): (1) <span class="math notranslate nohighlight">\(2p\)</span> denotes the perimeter so that <span class="math notranslate nohighlight">\(p\)</span> is the semiperimeter (where many British texts write <span class="math notranslate nohighlight">\(2s\)</span> and <span class="math notranslate nohighlight">\(s\)</span>); (2) <span class="math notranslate nohighlight">\((A, r)\)</span> and <span class="math notranslate nohighlight">\(M = (PQ, RS)\)</span> correspond directly to <code class="docutils literal notranslate"><span class="pre">model.construct_circle_by_center_and_point</span></code> and line-line intersection nodes in <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code>. The three § 2 items on this page invoke <a class="citation-ref" id="occ-cite-euclid-elements-3" href="../bibliography.html#cite-euclid-elements" data-cite="euclid:elements" title="Euclid of Alexandria (trans. Sir Thomas L. Heath) — The Thirteen Books of Euclid&#x27;s Elements (2nd ed., Cambridge University Press, 1926; GEOMETOR Digital Edition: geometor/euclid &amp; geometor/elements) (Books I–VI)">Euclid VI.9, VI.10, and VI.12</a>.</p>
+        </section>
+        <section class="level-4" id="scan-quality-verification">
+        <h4>Scan Quality &amp; Verification<a class="headerlink" href="#scan-quality-verification" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Archival Scan</strong>: <code class="docutils literal notranslate"><span class="pre">01_geometric_constructions/0020.png</span></code> (300 DPI, <code class="docutils literal notranslate"><span class="pre">1421</span> <span class="pre">×</span> <span class="pre">2225</span></code> px)</p></li>
+        <li><p><strong>Verification Status</strong>: <code class="docutils literal notranslate"><span class="pre">ok</span></code> (visually verified against raster scan)</p></li>
+        </ul>
+        </section>
+        </section>
+        <section class="level-3" id="folio-0021-page-2-diplomatic-mathematical-notes">
+        <h3>Folio 0021 (Page 2) — Diplomatic &amp; Mathematical Notes<a class="headerlink" href="#folio-0021-page-2-diplomatic-mathematical-notes" title="Link to this heading">¶</a></h3>
+        <section class="level-4" id="id1">
+        <h4>Summary &amp; Folio Continuity<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Preceding Folio</strong>: Folio 0020 (Page 1, §§ 1–2)</p></li>
+        <li><p><strong>Current Folio</strong> (<code class="docutils literal notranslate"><span class="pre">0021.rst</span></code>): Page <code class="docutils literal notranslate"><span class="pre">2</span></code>, Chapter I [<code class="docutils literal notranslate"><span class="pre">01_geometric_constructions</span></code>] — Status: <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
+        <li><p><strong>Following Folio</strong>: Folio 0022 (Page 3, Section B, §§ 4–5)</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id2">
+        <h4>Structural &amp; Diplomatic Observations<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Overview</strong>: Page <code class="docutils literal notranslate"><span class="pre">2</span></code> (running header <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">/</span> <span class="pre">GEOMETRIC</span> <span class="pre">CONSTRUCTIONS</span> <span class="pre">/</span> <span class="pre">[Ch.</span> <span class="pre">I,</span> <span class="pre">§§</span> <span class="pre">2,</span> <span class="pre">3</span></code>), completing § 2 (<em>Basic Constructions</em>), presenting the 24 Preliminary <code class="docutils literal notranslate"><span class="pre">EXERCISES</span></code>, and adding § 3 (<em>Suggestion</em>).</p></li>
+        <li><p><strong>Document Headings on Folio</strong>: <code class="docutils literal notranslate"><span class="pre">EXERCISES</span></code>, <code class="docutils literal notranslate"><span class="pre">3.</span> <span class="pre">Suggestion.</span></code></p></li>
+        <li><p><strong>Line-Break Hyphenations Resolved</strong>: <code class="docutils literal notranslate"><span class="pre">tri-angle</span></code>, <code class="docutils literal notranslate"><span class="pre">hypote-nuse</span></code>, <code class="docutils literal notranslate"><span class="pre">con-ventional</span></code></p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id3">
+        <h4>Mathematical &amp; Constructive Commentary<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h4>
+        <p>Raw OCR omitted Exercise 7 (<span class="math notranslate nohighlight">\(A, h_a, t_a\)</span>) and garbled Exercise 5 (<span class="math notranslate nohighlight">\(m_a\)</span>), Exercise 14 (<span class="math notranslate nohighlight">\(\angle ABD\)</span>), Exercise 21 (<span class="math notranslate nohighlight">\(AB^2 : AC^2 = BD : DC\)</span>), and Exercise 23 (<span class="math notranslate nohighlight">\(x^2 : a^2 = p : q\)</span>); all verified against <code class="docutils literal notranslate"><span class="pre">0021.png</span></code>. The § 2 constructions correspond to <a class="citation-ref" id="occ-cite-euclid-elements-4" href="../bibliography.html#cite-euclid-elements" data-cite="euclid:elements" title="Euclid of Alexandria (trans. Sir Thomas L. Heath) — The Thirteen Books of Euclid&#x27;s Elements (2nd ed., Cambridge University Press, 1926; GEOMETOR Digital Edition: geometor/euclid &amp; geometor/elements) (Books I–VI)">Euclid VI.13, II.14, I.47, and III.17</a>.</p>
+        </section>
+        <section class="level-4" id="id4">
+        <h4>Scan Quality &amp; Verification<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Archival Scan</strong>: <code class="docutils literal notranslate"><span class="pre">01_geometric_constructions/0021.png</span></code> (300 DPI, <code class="docutils literal notranslate"><span class="pre">1421</span> <span class="pre">×</span> <span class="pre">2225</span></code> px)</p></li>
+        <li><p><strong>Verification Status</strong>: <code class="docutils literal notranslate"><span class="pre">ok</span></code> (visually verified against raster scan)</p></li>
+        </ul>
+        </section>
+        </section>
+        <section class="level-3" id="folio-0022-page-3-diplomatic-mathematical-notes">
+        <h3>Folio 0022 (Page 3) — Diplomatic &amp; Mathematical Notes<a class="headerlink" href="#folio-0022-page-3-diplomatic-mathematical-notes" title="Link to this heading">¶</a></h3>
+        <section class="level-4" id="id5">
+        <h4>Summary &amp; Folio Continuity<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Preceding Folio</strong>: Folio 0021 (Page 2, §§ 2–3)</p></li>
+        <li><p><strong>Current Folio</strong> (<code class="docutils literal notranslate"><span class="pre">0022.rst</span></code>): Page <code class="docutils literal notranslate"><span class="pre">3</span></code>, Chapter I [<code class="docutils literal notranslate"><span class="pre">01_geometric_constructions</span></code>] — Status: <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
+        <li><p><strong>Following Folio</strong>: Folio 0023 (Page 4, Fig. 1, solution of § 5, and statement of § 6)</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id6">
+        <h4>Structural &amp; Diplomatic Observations<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Overview</strong>: Page <code class="docutils literal notranslate"><span class="pre">3</span></code> (running header <code class="docutils literal notranslate"><span class="pre">Ch.</span> <span class="pre">I,</span> <span class="pre">§§</span> <span class="pre">4,</span> <span class="pre">5]</span> <span class="pre">/</span> <span class="pre">GENERAL</span> <span class="pre">METHOD</span> <span class="pre">OF</span> <span class="pre">SOLUTION</span> <span class="pre">/</span> <span class="pre">3</span></code>), opening Section B with § 4 (<em>Analytic Method</em> — defining Analysis, Construction, Proof, Discussion) and stating § 5 (<em>Problem</em>).</p></li>
+        <li><p><strong>Document Headings on Folio</strong>: <code class="docutils literal notranslate"><span class="pre">B.</span> <span class="pre">GENERAL</span> <span class="pre">METHOD</span> <span class="pre">OF</span> <span class="pre">SOLUTION</span> <span class="pre">OF</span> <span class="pre">CONSTRUCTION</span> <span class="pre">PROBLEMS</span></code>, <code class="docutils literal notranslate"><span class="pre">4.</span> <span class="pre">Analytic</span> <span class="pre">Method.</span></code>, <code class="docutils literal notranslate"><span class="pre">5.</span> <span class="pre">Problem.</span></code></p></li>
+        <li><p><strong>Line-Break Hyphenations Resolved</strong>: <code class="docutils literal notranslate"><span class="pre">applica-tions</span></code>, <code class="docutils literal notranslate"><span class="pre">follow-ing</span></code>, <code class="docutils literal notranslate"><span class="pre">approxi-mately</span></code>, <code class="docutils literal notranslate"><span class="pre">con-struction</span></code>, <code class="docutils literal notranslate"><span class="pre">re-quirements</span></code>, <code class="docutils literal notranslate"><span class="pre">possi-bility</span></code></p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id7">
+        <h4>Mathematical &amp; Constructive Commentary<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h4>
+        <p>Altshiller-Court’s four-part schema in § 4 restates for modern collegiate instruction the classical Greek method of <em>analysis</em> and <em>synthesis</em> preserved by <a class="person-ref" id="occ-person-pappus-2" href="../persons.html#person-pappus" data-person="pappus" title="Pappus of Alexandria (c. 290 – c. 350 AD) — Hellenistic Geometer">Pappus of Alexandria</a> in <a class="citation-ref" id="occ-cite-pappus-collection-vii-2" href="../bibliography.html#cite-pappus-collection-vii" data-cite="pappus:collection:VII" title="Pappus of Alexandria (c. 290 – c. 350 AD) — Mathematical Collection (Συναγωγή), Book VII: On the Domain of Analysis (GEOMETOR Project: geometor/pappus) (Book VII (Treasury of Analysis))">Collection, Book VII</a> (with <em>Discussion</em> corresponding to Greek <em>diorismos</em>, and the opening example invoking <a class="citation-ref" id="occ-cite-euclid-elements-5" href="../bibliography.html#cite-euclid-elements" data-cite="euclid:elements" title="Euclid of Alexandria (trans. Sir Thomas L. Heath) — The Thirteen Books of Euclid&#x27;s Elements (2nd ed., Cambridge University Press, 1926; GEOMETOR Digital Edition: geometor/euclid &amp; geometor/elements) (Books I–VI)">Euclid I.1</a>).</p>
+        </section>
+        <section class="level-4" id="id8">
+        <h4>Scan Quality &amp; Verification<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Archival Scan</strong>: <code class="docutils literal notranslate"><span class="pre">01_geometric_constructions/0022.png</span></code> (300 DPI, <code class="docutils literal notranslate"><span class="pre">1421</span> <span class="pre">×</span> <span class="pre">2225</span></code> px)</p></li>
+        <li><p><strong>Verification Status</strong>: <code class="docutils literal notranslate"><span class="pre">ok</span></code> (visually verified against raster scan)</p></li>
+        </ul>
+        </section>
+        </section>
+        <section class="level-3" id="folio-0023-page-4-diplomatic-mathematical-notes">
+        <h3>Folio 0023 (Page 4) — Diplomatic &amp; Mathematical Notes<a class="headerlink" href="#folio-0023-page-4-diplomatic-mathematical-notes" title="Link to this heading">¶</a></h3>
+        <section class="level-4" id="id9">
+        <h4>Summary &amp; Folio Continuity<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Preceding Folio</strong>: Folio 0022 (Page 3, §§ 4–5)</p></li>
+        <li><p><strong>Current Folio</strong> (<code class="docutils literal notranslate"><span class="pre">0023.rst</span></code>): Page <code class="docutils literal notranslate"><span class="pre">4</span></code>, Chapter I [<code class="docutils literal notranslate"><span class="pre">01_geometric_constructions</span></code>] — Status: <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
+        <li><p><strong>Following Folio</strong>: Folio 0024 (Page 5, Fig. 2 and solution of § 6)</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id10">
+        <h4>Structural &amp; Diplomatic Observations<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Overview</strong>: Page <code class="docutils literal notranslate"><span class="pre">4</span></code> (running header <code class="docutils literal notranslate"><span class="pre">4</span> <span class="pre">/</span> <span class="pre">GEOMETRIC</span> <span class="pre">CONSTRUCTIONS</span> <span class="pre">/</span> <span class="pre">[Ch.</span> <span class="pre">I,</span> <span class="pre">§§</span> <span class="pre">5,</span> <span class="pre">6</span></code>), presenting <code class="docutils literal notranslate"><span class="pre">FIG.</span> <span class="pre">1</span></code> (<code class="docutils literal notranslate"><span class="pre">0023.g1.png</span></code>), the four-part solution of § 5, and the italicized enunciation of § 6 (<em>Problem</em>).</p></li>
+        <li><p><strong>Document Headings on Folio</strong>: <code class="docutils literal notranslate"><span class="pre">6.</span> <span class="pre">Problem.</span></code></p></li>
+        <li><p><strong>Line-Break Hyphenations Resolved</strong>: None</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="calibrated-diagrams-on-folio">
+        <h4>Calibrated Diagrams on Folio<a class="headerlink" href="#calibrated-diagrams-on-folio" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">0023.g1.png</span></code> (bbox <code class="docutils literal notranslate"><span class="pre">[383,</span> <span class="pre">162,</span> <span class="pre">664,</span> <span class="pre">611]</span></code>, white-point <code class="docutils literal notranslate"><span class="pre">238</span></code>): Fig. 1. Secant CA’B’ through C meeting parallel lines x, y so that AA’ : BB’ = p : q (§ 5).</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id11">
+        <h4>Mathematical &amp; Constructive Commentary<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h4>
+        <p>In § 5, <span class="math notranslate nohighlight">\(O\)</span> and <span class="math notranslate nohighlight">\(O'\)</span> are harmonic conjugates with respect to <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> (anticipating Chapter II, § 59). When <span class="math notranslate nohighlight">\(p = q\)</span>, the internal division point <span class="math notranslate nohighlight">\(O'\)</span> is the midpoint of <span class="math notranslate nohighlight">\(AB\)</span>, while the external division point <span class="math notranslate nohighlight">\(O\)</span> recedes to infinity along <span class="math notranslate nohighlight">\(AB\)</span>, so the second solution becomes the line through <span class="math notranslate nohighlight">\(C\)</span> parallel to <span class="math notranslate nohighlight">\(AB\)</span>!</p>
+        </section>
+        <section class="level-4" id="id12">
+        <h4>Scan Quality &amp; Verification<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Archival Scan</strong>: <code class="docutils literal notranslate"><span class="pre">01_geometric_constructions/0023.png</span></code> (300 DPI, <code class="docutils literal notranslate"><span class="pre">1421</span> <span class="pre">×</span> <span class="pre">2225</span></code> px)</p></li>
+        <li><p><strong>Verification Status</strong>: <code class="docutils literal notranslate"><span class="pre">ok</span></code> (visually verified against raster scan)</p></li>
+        </ul>
+        </section>
+        </section>
+        <section class="level-3" id="folio-0024-page-5-diplomatic-mathematical-notes">
+        <h3>Folio 0024 (Page 5) — Diplomatic &amp; Mathematical Notes<a class="headerlink" href="#folio-0024-page-5-diplomatic-mathematical-notes" title="Link to this heading">¶</a></h3>
+        <section class="level-4" id="id13">
+        <h4>Summary &amp; Folio Continuity<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Preceding Folio</strong>: Folio 0023 (Page 4, §§ 5–6)</p></li>
+        <li><p><strong>Current Folio</strong> (<code class="docutils literal notranslate"><span class="pre">0024.rst</span></code>): Page <code class="docutils literal notranslate"><span class="pre">5</span></code>, Chapter I [<code class="docutils literal notranslate"><span class="pre">01_geometric_constructions</span></code>] — Status: <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
+        <li><p><strong>Following Folio</strong>: Folio 0025 (Page 6, conclusion of § 6 Discussion, Fig. 3, and § 7)</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id14">
+        <h4>Structural &amp; Diplomatic Observations<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Overview</strong>: Page <code class="docutils literal notranslate"><span class="pre">5</span></code> (running header <code class="docutils literal notranslate"><span class="pre">Ch.</span> <span class="pre">I,</span> <span class="pre">§</span> <span class="pre">6]</span> <span class="pre">/</span> <span class="pre">GENERAL</span> <span class="pre">METHOD</span> <span class="pre">OF</span> <span class="pre">SOLUTION</span> <span class="pre">/</span> <span class="pre">5</span></code>), presenting the Analysis, Construction, Proof, <code class="docutils literal notranslate"><span class="pre">FIG.</span> <span class="pre">2</span></code> (<code class="docutils literal notranslate"><span class="pre">0024.g1.png</span></code>), and Discussion of § 6.</p></li>
+        <li><p><strong>Document Headings on Folio</strong>: None</p></li>
+        <li><p><strong>Line-Break Hyphenations Resolved</strong>: None</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id15">
+        <h4>Calibrated Diagrams on Folio<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">0024.g1.png</span></code> (bbox <code class="docutils literal notranslate"><span class="pre">[407,</span> <span class="pre">1018,</span> <span class="pre">608,</span> <span class="pre">488]</span></code>, white-point <code class="docutils literal notranslate"><span class="pre">238</span></code>): Fig. 2. Secant MBA from external point M cutting circle (O) so that central angle AOB equals angle M (§ 6).</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id16">
+        <h4>Mathematical &amp; Constructive Commentary<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h4>
+        <p>Remarkable economy of construction in <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code>: given circle <span class="math notranslate nohighlight">\((O, R)\)</span> and exterior point <span class="math notranslate nohighlight">\(M\)</span>, a single compass operation <code class="docutils literal notranslate"><span class="pre">circle(M,</span> <span class="pre">O)</span></code> immediately constructs both solution secants <span class="math notranslate nohighlight">\(MA\)</span> and <span class="math notranslate nohighlight">\(MA'\)</span> in two steps!</p>
+        </section>
+        <section class="level-4" id="id17">
+        <h4>Scan Quality &amp; Verification<a class="headerlink" href="#id17" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Archival Scan</strong>: <code class="docutils literal notranslate"><span class="pre">01_geometric_constructions/0024.png</span></code> (300 DPI, <code class="docutils literal notranslate"><span class="pre">1421</span> <span class="pre">×</span> <span class="pre">2225</span></code> px)</p></li>
+        <li><p><strong>Verification Status</strong>: <code class="docutils literal notranslate"><span class="pre">ok</span></code> (visually verified against raster scan)</p></li>
+        </ul>
+        </section>
+        </section>
+        <section class="level-3" id="folio-0025-page-6-diplomatic-mathematical-notes">
+        <h3>Folio 0025 (Page 6) — Diplomatic &amp; Mathematical Notes<a class="headerlink" href="#folio-0025-page-6-diplomatic-mathematical-notes" title="Link to this heading">¶</a></h3>
+        <section class="level-4" id="id18">
+        <h4>Summary &amp; Folio Continuity<a class="headerlink" href="#id18" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Preceding Folio</strong>: Folio 0024 (Page 5, § 6)</p></li>
+        <li><p><strong>Current Folio</strong> (<code class="docutils literal notranslate"><span class="pre">0025.rst</span></code>): Page <code class="docutils literal notranslate"><span class="pre">6</span></code>, Chapter I [<code class="docutils literal notranslate"><span class="pre">01_geometric_constructions</span></code>] — Status: <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
+        <li><p><strong>Following Folio</strong>: Folio 0026 (Page 7, § 8, Figs. 4–5)</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id19">
+        <h4>Structural &amp; Diplomatic Observations<a class="headerlink" href="#id19" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Overview</strong>: Page <code class="docutils literal notranslate"><span class="pre">6</span></code> (running header <code class="docutils literal notranslate"><span class="pre">6</span> <span class="pre">/</span> <span class="pre">GEOMETRIC</span> <span class="pre">CONSTRUCTIONS</span> <span class="pre">/</span> <span class="pre">[Ch.</span> <span class="pre">I,</span> <span class="pre">§§</span> <span class="pre">6,</span> <span class="pre">7</span></code>), concluding the Discussion of § 6 and presenting <code class="docutils literal notranslate"><span class="pre">FIG.</span> <span class="pre">3</span></code> (<code class="docutils literal notranslate"><span class="pre">0025.g1.png</span></code>) and the complete four-part solution of § 7.</p></li>
+        <li><p><strong>Document Headings on Folio</strong>: <code class="docutils literal notranslate"><span class="pre">7.</span> <span class="pre">Problem.</span></code></p></li>
+        <li><p><strong>Line-Break Hyphenations Resolved</strong>: <code class="docutils literal notranslate"><span class="pre">tri-angle</span></code></p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id20">
+        <h4>Calibrated Diagrams on Folio<a class="headerlink" href="#id20" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">0025.g1.png</span></code> (bbox <code class="docutils literal notranslate"><span class="pre">[380,</span> <span class="pre">530,</span> <span class="pre">663,</span> <span class="pre">513]</span></code>, white-point <code class="docutils literal notranslate"><span class="pre">238</span></code>): Fig. 3. Points D, E on sides AB, AC of triangle ABC such that AD = DE = EC (§ 7).</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id21">
+        <h4>Mathematical &amp; Constructive Commentary<a class="headerlink" href="#id21" title="Link to this heading">¶</a></h4>
+        <p>Problem 7 is a classic gem of synthetic analysis (also solvable by homothecy in Chapter II): by projecting the unknown broken equal chain <span class="math notranslate nohighlight">\(AD = DE = EC\)</span> from <span class="math notranslate nohighlight">\(A\)</span> onto <span class="math notranslate nohighlight">\(B\)</span>, the scale ambiguity vanishes and <span class="math notranslate nohighlight">\(K, L\)</span> are constructed by two compass transfers of <span class="math notranslate nohighlight">\(BA\)</span>. When <span class="math notranslate nohighlight">\(\angle A = 90^\circ\)</span>, <span class="math notranslate nohighlight">\(K\)</span> coincides with <span class="math notranslate nohighlight">\(A\)</span>.</p>
+        </section>
+        <section class="level-4" id="id22">
+        <h4>Scan Quality &amp; Verification<a class="headerlink" href="#id22" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Archival Scan</strong>: <code class="docutils literal notranslate"><span class="pre">01_geometric_constructions/0025.png</span></code> (300 DPI, <code class="docutils literal notranslate"><span class="pre">1421</span> <span class="pre">×</span> <span class="pre">2225</span></code> px)</p></li>
+        <li><p><strong>Verification Status</strong>: <code class="docutils literal notranslate"><span class="pre">ok</span></code> (visually verified against raster scan)</p></li>
+        </ul>
+        </section>
+        </section>
+        <section class="level-3" id="folio-0026-page-7-diplomatic-mathematical-notes">
+        <h3>Folio 0026 (Page 7) — Diplomatic &amp; Mathematical Notes<a class="headerlink" href="#folio-0026-page-7-diplomatic-mathematical-notes" title="Link to this heading">¶</a></h3>
+        <section class="level-4" id="id23">
+        <h4>Summary &amp; Folio Continuity<a class="headerlink" href="#id23" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Preceding Folio</strong>: Folio 0025 (Page 6, §§ 6–7)</p></li>
+        <li><p><strong>Current Folio</strong> (<code class="docutils literal notranslate"><span class="pre">0026.rst</span></code>): Page <code class="docutils literal notranslate"><span class="pre">7</span></code>, Chapter I [<code class="docutils literal notranslate"><span class="pre">01_geometric_constructions</span></code>] — Status: <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
+        <li><p><strong>Following Folio</strong>: Folio 0027 (Page 8, § 9, Fig. 6)</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id24">
+        <h4>Structural &amp; Diplomatic Observations<a class="headerlink" href="#id24" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Overview</strong>: Page <code class="docutils literal notranslate"><span class="pre">7</span></code> (running header <code class="docutils literal notranslate"><span class="pre">Ch.</span> <span class="pre">I,</span> <span class="pre">§</span> <span class="pre">8]</span> <span class="pre">/</span> <span class="pre">GENERAL</span> <span class="pre">METHOD</span> <span class="pre">OF</span> <span class="pre">SOLUTION</span> <span class="pre">/</span> <span class="pre">7</span></code>), presenting the complete solution of § 8 together with side-by-side diagrams <code class="docutils literal notranslate"><span class="pre">FIG.</span> <span class="pre">4</span></code> (<code class="docutils literal notranslate"><span class="pre">0026.g1.png</span></code>) and <code class="docutils literal notranslate"><span class="pre">FIG.</span> <span class="pre">5</span></code> (<code class="docutils literal notranslate"><span class="pre">0026.g2.png</span></code>).</p></li>
+        <li><p><strong>Document Headings on Folio</strong>: <code class="docutils literal notranslate"><span class="pre">8.</span> <span class="pre">Problem.</span></code></p></li>
+        <li><p><strong>Line-Break Hyphenations Resolved</strong>: <code class="docutils literal notranslate"><span class="pre">direc-tion</span></code>, <code class="docutils literal notranslate"><span class="pre">con-structed</span></code></p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id25">
+        <h4>Calibrated Diagrams on Folio<a class="headerlink" href="#id25" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">0026.g1.png</span></code> (bbox <code class="docutils literal notranslate"><span class="pre">[95,</span> <span class="pre">1248,</span> <span class="pre">585,</span> <span class="pre">424]</span></code>, white-point <code class="docutils literal notranslate"><span class="pre">238</span></code>): Fig. 4. Points P, Q on circles (A), (B) at given distance m and given direction — Analysis (§ 8).</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">0026.g2.png</span></code> (bbox <code class="docutils literal notranslate"><span class="pre">[720,</span> <span class="pre">1225,</span> <span class="pre">606,</span> <span class="pre">439]</span></code>, white-point <code class="docutils literal notranslate"><span class="pre">238</span></code>): Fig. 5. Four solutions for points on circles (A), (B) at given distance and direction (§ 8).</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id26">
+        <h4>Mathematical &amp; Constructive Commentary<a class="headerlink" href="#id26" title="Link to this heading">¶</a></h4>
+        <p>Problem 8 exemplifies Julius <a class="person-ref" id="occ-person-petersen-1" href="../persons.html#person-petersen" data-person="petersen" title="Petersen, Julius Peter Christian (1839–1910) — Danish Mathematician">Petersen's</a> <em>Method of Parallel Translation</em> (<a class="citation-ref" id="occ-cite-pt-2" href="../bibliography.html#cite-pt" data-cite="pt" title="Petersen, Julius (1839–1910) — Methods and Theories for the Solution of Problems of Geometrical Constructions (Copenhagen, 1866; London: Sampson Low, 1879) (p. 295 (A. Books: Pt.))">Methods and Theories</a>): translating circle <span class="math notranslate nohighlight">\((A)\)</span> by <span class="math notranslate nohighlight">\(\pm\vec{m}\)</span> yields two circles centered at <span class="math notranslate nohighlight">\(R, R'\)</span> whose intersections with <span class="math notranslate nohighlight">\((B)\)</span> give up to four solutions <span class="math notranslate nohighlight">\(P_1Q_1, P_2Q_2, P_1'Q_1', P_2'Q_2'\)</span> (Fig. 5).</p>
+        </section>
+        <section class="level-4" id="id27">
+        <h4>Scan Quality &amp; Verification<a class="headerlink" href="#id27" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Archival Scan</strong>: <code class="docutils literal notranslate"><span class="pre">01_geometric_constructions/0026.png</span></code> (300 DPI, <code class="docutils literal notranslate"><span class="pre">1421</span> <span class="pre">×</span> <span class="pre">2225</span></code> px)</p></li>
+        <li><p><strong>Verification Status</strong>: <code class="docutils literal notranslate"><span class="pre">ok</span></code> (visually verified against raster scan)</p></li>
+        </ul>
+        </section>
+        </section>
+        <section class="level-3" id="folio-0027-page-8-diplomatic-mathematical-notes">
+        <h3>Folio 0027 (Page 8) — Diplomatic &amp; Mathematical Notes<a class="headerlink" href="#folio-0027-page-8-diplomatic-mathematical-notes" title="Link to this heading">¶</a></h3>
+        <section class="level-4" id="id28">
+        <h4>Summary &amp; Folio Continuity<a class="headerlink" href="#id28" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Preceding Folio</strong>: Folio 0026 (Page 7, § 8)</p></li>
+        <li><p><strong>Current Folio</strong> (<code class="docutils literal notranslate"><span class="pre">0027.rst</span></code>): Page <code class="docutils literal notranslate"><span class="pre">8</span></code>, Chapter I [<code class="docutils literal notranslate"><span class="pre">01_geometric_constructions</span></code>] — Status: <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
+        <li><p><strong>Following Folio</strong>: Folio 0028 (Page 9, Fig. 7, Proof &amp; Discussion of § 9, and § 10)</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id29">
+        <h4>Structural &amp; Diplomatic Observations<a class="headerlink" href="#id29" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Overview</strong>: Page <code class="docutils literal notranslate"><span class="pre">8</span></code> (running header <code class="docutils literal notranslate"><span class="pre">8</span> <span class="pre">/</span> <span class="pre">GEOMETRIC</span> <span class="pre">CONSTRUCTIONS</span> <span class="pre">/</span> <span class="pre">[Ch.</span> <span class="pre">I,</span> <span class="pre">§</span> <span class="pre">9</span></code>), stating § 9 (circumscribing a square through four given points), giving two distinct proofs in the Analysis (one by <span class="math notranslate nohighlight">\(90^\circ\)</span> rotation, one by congruent right triangles), <code class="docutils literal notranslate"><span class="pre">FIG.</span> <span class="pre">6</span></code> (<code class="docutils literal notranslate"><span class="pre">0027.g1.png</span></code>), and the Construction.</p></li>
+        <li><p><strong>Document Headings on Folio</strong>: <code class="docutils literal notranslate"><span class="pre">9.</span> <span class="pre">Problem.</span></code></p></li>
+        <li><p><strong>Line-Break Hyphenations Resolved</strong>: <code class="docutils literal notranslate"><span class="pre">as-sumption</span></code>, <code class="docutils literal notranslate"><span class="pre">paral-lel</span></code></p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id30">
+        <h4>Calibrated Diagrams on Folio<a class="headerlink" href="#id30" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">0027.g1.png</span></code> (bbox <code class="docutils literal notranslate"><span class="pre">[313,</span> <span class="pre">668,</span> <span class="pre">801,</span> <span class="pre">722]</span></code>, white-point <code class="docutils literal notranslate"><span class="pre">238</span></code>): Fig. 6. Construction of a square PQRS whose sides pass through four given points A, B, C, D (§ 9).</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id31">
+        <h4>Mathematical &amp; Constructive Commentary<a class="headerlink" href="#id31" title="Link to this heading">¶</a></h4>
+        <p>Notice how Altshiller-Court pairs a transformational argument (<span class="math notranslate nohighlight">\(90^\circ\)</span> rotation around the center of the square) with a pure Euclidean congruence argument (<span class="math notranslate nohighlight">\(\triangle PQL \cong \triangle QRK\)</span>). Compare <a class="person-ref" id="occ-person-castillon-2" href="../persons.html#person-castillon" data-person="castillon" title="Castillon, Johann (Salvemini, Giovanni Francesco) (1709–1791) — Italian-Swiss Geometer, Berlin Academy">Castillon's</a> and <a class="citation-ref" id="occ-cite-cn-1" href="../bibliography.html#cite-cn" data-cite="cn" title="Catalan, Eugène Charles (1814–1894) — Théorèmes et problèmes de géométrie élémentaire (6th ed., Paris: Dunod, 1879) (p. 295 (A. Books: Cn.))">Catalan's</a> classical incidence problems.</p>
+        </section>
+        <section class="level-4" id="id32">
+        <h4>Scan Quality &amp; Verification<a class="headerlink" href="#id32" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Archival Scan</strong>: <code class="docutils literal notranslate"><span class="pre">01_geometric_constructions/0027.png</span></code> (300 DPI, <code class="docutils literal notranslate"><span class="pre">1421</span> <span class="pre">×</span> <span class="pre">2225</span></code> px)</p></li>
+        <li><p><strong>Verification Status</strong>: <code class="docutils literal notranslate"><span class="pre">ok</span></code> (visually verified against raster scan)</p></li>
+        </ul>
+        </section>
+        </section>
+        <section class="level-3" id="folio-0028-page-9-diplomatic-mathematical-notes">
+        <h3>Folio 0028 (Page 9) — Diplomatic &amp; Mathematical Notes<a class="headerlink" href="#folio-0028-page-9-diplomatic-mathematical-notes" title="Link to this heading">¶</a></h3>
+        <section class="level-4" id="id33">
+        <h4>Summary &amp; Folio Continuity<a class="headerlink" href="#id33" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Preceding Folio</strong>: Folio 0027 (Page 8, § 9)</p></li>
+        <li><p><strong>Current Folio</strong> (<code class="docutils literal notranslate"><span class="pre">0028.rst</span></code>): Page <code class="docutils literal notranslate"><span class="pre">9</span></code>, Chapter I [<code class="docutils literal notranslate"><span class="pre">01_geometric_constructions</span></code>] — Status: <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
+        <li><p><strong>Following Folio</strong>: Folio 0029 (Page 10, conclusion of § 10 and Exercises 1–13)</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id34">
+        <h4>Structural &amp; Diplomatic Observations<a class="headerlink" href="#id34" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Overview</strong>: Page <code class="docutils literal notranslate"><span class="pre">9</span></code> (running header <code class="docutils literal notranslate"><span class="pre">Ch.</span> <span class="pre">I,</span> <span class="pre">§§</span> <span class="pre">9,</span> <span class="pre">10]</span> <span class="pre">/</span> <span class="pre">GENERAL</span> <span class="pre">METHOD</span> <span class="pre">OF</span> <span class="pre">SOLUTION</span> <span class="pre">/</span> <span class="pre">9</span></code>), displaying <code class="docutils literal notranslate"><span class="pre">FIG.</span> <span class="pre">7</span></code> (<code class="docutils literal notranslate"><span class="pre">0028.g1.png</span></code>), the Proof and full combinatoric/poristic Discussion of § 9, and the opening paragraph of § 10 (<em>Suggestions</em>).</p></li>
+        <li><p><strong>Document Headings on Folio</strong>: <code class="docutils literal notranslate"><span class="pre">10.</span> <span class="pre">Suggestions.</span></code></p></li>
+        <li><p><strong>Line-Break Hyphenations Resolved</strong>: <code class="docutils literal notranslate"><span class="pre">tri-angles</span></code>, <code class="docutils literal notranslate"><span class="pre">equi-angular</span></code>, <code class="docutils literal notranslate"><span class="pre">sym-metric</span></code>, <code class="docutils literal notranslate"><span class="pre">ac-cordingly</span></code></p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id35">
+        <h4>Calibrated Diagrams on Folio<a class="headerlink" href="#id35" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">0028.g1.png</span></code> (bbox <code class="docutils literal notranslate"><span class="pre">[327,</span> <span class="pre">160,</span> <span class="pre">774,</span> <span class="pre">596]</span></code>, white-point <code class="docutils literal notranslate"><span class="pre">238</span></code>): Fig. 7. General configuration of six squares whose sides pass through four given points A, B, C, D (§ 9).</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id36">
+        <h4>Mathematical &amp; Constructive Commentary<a class="headerlink" href="#id36" title="Link to this heading">¶</a></h4>
+        <p>The poristic case in the Discussion (<span class="math notranslate nohighlight">\(F = B\)</span>, when <span class="math notranslate nohighlight">\(AC \perp BD\)</span> and <span class="math notranslate nohighlight">\(AC = BD\)</span>, an <em>orthodiagonal equidiagonal</em> quadruple) yields a 1-parameter infinity of circumscribed squares—a striking preview of Chapter IV (<em>Other Quadrilaterals</em>, §§ 271–282).</p>
+        </section>
+        <section class="level-4" id="id37">
+        <h4>Scan Quality &amp; Verification<a class="headerlink" href="#id37" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Archival Scan</strong>: <code class="docutils literal notranslate"><span class="pre">01_geometric_constructions/0028.png</span></code> (300 DPI, <code class="docutils literal notranslate"><span class="pre">1421</span> <span class="pre">×</span> <span class="pre">2225</span></code> px)</p></li>
+        <li><p><strong>Verification Status</strong>: <code class="docutils literal notranslate"><span class="pre">ok</span></code> (visually verified against raster scan)</p></li>
+        </ul>
+        </section>
+        </section>
+        <section class="level-3" id="folio-0029-page-10-diplomatic-mathematical-notes">
+        <h3>Folio 0029 (Page 10) — Diplomatic &amp; Mathematical Notes<a class="headerlink" href="#folio-0029-page-10-diplomatic-mathematical-notes" title="Link to this heading">¶</a></h3>
+        <section class="level-4" id="id38">
+        <h4>Summary &amp; Folio Continuity<a class="headerlink" href="#id38" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Preceding Folio</strong>: Folio 0028 (Page 9, §§ 9–10)</p></li>
+        <li><p><strong>Current Folio</strong> (<code class="docutils literal notranslate"><span class="pre">0029.rst</span></code>): Page <code class="docutils literal notranslate"><span class="pre">10</span></code>, Chapter I [<code class="docutils literal notranslate"><span class="pre">01_geometric_constructions</span></code>] — Status: <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
+        <li><p><strong>Following Folio</strong>: Folio 0030 (Page 11, Exercise 14 and Section C: Geometric Loci, § 11)</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id39">
+        <h4>Structural &amp; Diplomatic Observations<a class="headerlink" href="#id39" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Overview</strong>: Page <code class="docutils literal notranslate"><span class="pre">10</span></code> (running header <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">/</span> <span class="pre">GEOMETRIC</span> <span class="pre">CONSTRUCTIONS</span> <span class="pre">/</span> <span class="pre">[Ch.</span> <span class="pre">I,</span> <span class="pre">§</span> <span class="pre">10</span></code>), completing § 10 (<em>Suggestions</em> on exact ruler-and-compass execution and exhaustive <em>Discussion</em> branching) and listing Exercises 1–13.</p></li>
+        <li><p><strong>Document Headings on Folio</strong>: <code class="docutils literal notranslate"><span class="pre">EXERCISES</span></code></p></li>
+        <li><p><strong>Line-Break Hyphenations Resolved</strong>: <code class="docutils literal notranslate"><span class="pre">construc-tion</span></code>, <code class="docutils literal notranslate"><span class="pre">opera-tions</span></code>, <code class="docutils literal notranslate"><span class="pre">inter-cept</span></code>, <code class="docutils literal notranslate"><span class="pre">com-mon</span></code></p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id40">
+        <h4>Mathematical &amp; Constructive Commentary<a class="headerlink" href="#id40" title="Link to this heading">¶</a></h4>
+        <p>Notice how Exercises 6 and 7 quietly anticipate Chapter VIII (<em>Circles</em>): Exercise 6 constructs a circle bisecting a given circle (<span class="math notranslate nohighlight">\(R_1^2 = d^2 + R^2\)</span>), while Exercise 7 constructs a circle whose <a class="term-ref glossary-term" id="occ-term-radical-axis-2" href="../glossary.html#term-radical-axis" data-term="radical-axis" title="radical axis and radical center (Locus of equal powers): The radical axis of two non-concentric circles is the straight line of points having equal power with respect to both circles; the three radical axes of three circles taken in pairs concur at their radical center (§ 492).">radical axis</a> with a given circle has a prescribed direction.</p>
+        </section>
+        <section class="level-4" id="id41">
+        <h4>Scan Quality &amp; Verification<a class="headerlink" href="#id41" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Archival Scan</strong>: <code class="docutils literal notranslate"><span class="pre">01_geometric_constructions/0029.png</span></code> (300 DPI, <code class="docutils literal notranslate"><span class="pre">1421</span> <span class="pre">×</span> <span class="pre">2225</span></code> px)</p></li>
+        <li><p><strong>Verification Status</strong>: <code class="docutils literal notranslate"><span class="pre">ok</span></code> (visually verified against raster scan)</p></li>
+        </ul>
+        </section>
+        </section>
+        <section class="level-3" id="folio-0030-page-11-diplomatic-mathematical-notes">
+        <h3>Folio 0030 (Page 11) — Diplomatic &amp; Mathematical Notes<a class="headerlink" href="#folio-0030-page-11-diplomatic-mathematical-notes" title="Link to this heading">¶</a></h3>
+        <section class="level-4" id="id42">
+        <h4>Summary &amp; Folio Continuity<a class="headerlink" href="#id42" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Preceding Folio</strong>: Folio 0029 (Page 10, § 10, Exercises 1–13)</p></li>
+        <li><p><strong>Current Folio</strong> (<code class="docutils literal notranslate"><span class="pre">0030.rst</span></code>): Page <code class="docutils literal notranslate"><span class="pre">11</span></code>, Chapter I [<code class="docutils literal notranslate"><span class="pre">01_geometric_constructions</span></code>] — Status: <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
+        <li><p><strong>Following Folio</strong>: Folio 0031 (Page 12, Fig. 8 and Loci 1–7)</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id43">
+        <h4>Structural &amp; Diplomatic Observations<a class="headerlink" href="#id43" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Overview</strong>: Page <code class="docutils literal notranslate"><span class="pre">11</span></code> (running header <code class="docutils literal notranslate"><span class="pre">Ch.</span> <span class="pre">I,</span> <span class="pre">§§</span> <span class="pre">10,</span> <span class="pre">11]</span> <span class="pre">/</span> <span class="pre">GEOMETRIC</span> <span class="pre">LOCI</span> <span class="pre">/</span> <span class="pre">11</span></code>), concluding Section B with Exercise 14 and opening Section C (<em>Geometric Loci</em>) with the theoretical introduction to § 11 (<em>Important Loci</em>).</p></li>
+        <li><p><strong>Document Headings on Folio</strong>: <code class="docutils literal notranslate"><span class="pre">C.</span> <span class="pre">GEOMETRIC</span> <span class="pre">LOCI</span></code>, <code class="docutils literal notranslate"><span class="pre">11.</span> <span class="pre">Important</span> <span class="pre">Loci.</span></code></p></li>
+        <li><p><strong>Line-Break Hyphenations Resolved</strong>: <code class="docutils literal notranslate"><span class="pre">geo-metric</span></code>, <code class="docutils literal notranslate"><span class="pre">dis-carded</span></code>, <code class="docutils literal notranslate"><span class="pre">equidis-tant</span></code>, <code class="docutils literal notranslate"><span class="pre">bi-sectors</span></code></p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id44">
+        <h4>Mathematical &amp; Constructive Commentary<a class="headerlink" href="#id44" title="Link to this heading">¶</a></h4>
+        <p>Altshiller-Court’s exposition of the <em>Method of Loci</em> (relaxing one constraint at a time to intersect two 1-dimensional straightedge-and-compass loci) directly follows <a class="person-ref" id="occ-person-pappus-3" href="../persons.html#person-pappus" data-person="pappus" title="Pappus of Alexandria (c. 290 – c. 350 AD) — Hellenistic Geometer">Plato's</a> school, <a class="citation-ref" id="occ-cite-lhr-1" href="../bibliography.html#cite-lhr" data-cite="lhr" title="L&#x27;Huilier, Simon Antoine Jean (1750–1840) — Éléments d&#x27;analyse géométrique et d&#x27;analyse algébrique appliquées à la recherche des lieux géométriques (Paris &amp; Geneva, 1809) (p. 295 (A. Books: LHr.))">Simon L'Huilier (1809)</a>, and <a class="citation-ref" id="occ-cite-pt-3" href="../bibliography.html#cite-pt" data-cite="pt" title="Petersen, Julius (1839–1910) — Methods and Theories for the Solution of Problems of Geometrical Constructions (Copenhagen, 1866; London: Sampson Low, 1879) (p. 295 (A. Books: Pt.))">Julius Petersen (1866/1879)</a>. In Exercise 14, the hypotenuse of each right subtriangle is a side (<span class="math notranslate nohighlight">\(b = 2R_1, c = 2R_2\)</span>)!</p>
+        </section>
+        <section class="level-4" id="id45">
+        <h4>Scan Quality &amp; Verification<a class="headerlink" href="#id45" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Archival Scan</strong>: <code class="docutils literal notranslate"><span class="pre">01_geometric_constructions/0030.png</span></code> (300 DPI, <code class="docutils literal notranslate"><span class="pre">1421</span> <span class="pre">×</span> <span class="pre">2225</span></code> px)</p></li>
+        <li><p><strong>Verification Status</strong>: <code class="docutils literal notranslate"><span class="pre">ok</span></code> (visually verified against raster scan)</p></li>
+        </ul>
+        </section>
+        </section>
+        <section class="level-3" id="folio-0031-page-12-diplomatic-mathematical-notes">
+        <h3>Folio 0031 (Page 12) — Diplomatic &amp; Mathematical Notes<a class="headerlink" href="#folio-0031-page-12-diplomatic-mathematical-notes" title="Link to this heading">¶</a></h3>
+        <section class="level-4" id="id46">
+        <h4>Summary &amp; Folio Continuity<a class="headerlink" href="#id46" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Preceding Folio</strong>: Folio 0030 (Page 11, § 11 introduction)</p></li>
+        <li><p><strong>Current Folio</strong> (<code class="docutils literal notranslate"><span class="pre">0031.rst</span></code>): Page <code class="docutils literal notranslate"><span class="pre">12</span></code>, Chapter I [<code class="docutils literal notranslate"><span class="pre">01_geometric_constructions</span></code>] — Status: <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
+        <li><p><strong>Following Folio</strong>: Folio 0032 (Page 13, proof of Locus 7, Fig. 9, and Locus 8)</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id47">
+        <h4>Structural &amp; Diplomatic Observations<a class="headerlink" href="#id47" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Overview</strong>: Page <code class="docutils literal notranslate"><span class="pre">12</span></code> (running header <code class="docutils literal notranslate"><span class="pre">12</span> <span class="pre">/</span> <span class="pre">GEOMETRIC</span> <span class="pre">CONSTRUCTIONS</span> <span class="pre">/</span> <span class="pre">[Ch.</span> <span class="pre">I,</span> <span class="pre">§</span> <span class="pre">11</span></code>), displaying <code class="docutils literal notranslate"><span class="pre">FIG.</span> <span class="pre">8</span></code> (<code class="docutils literal notranslate"><span class="pre">0031.g1.png</span></code>) at top and enunciating <code class="docutils literal notranslate"><span class="pre">LOCUS</span> <span class="pre">1</span></code> through <code class="docutils literal notranslate"><span class="pre">LOCUS</span> <span class="pre">7</span></code> (introducing the term <em>mediator</em> in <code class="docutils literal notranslate"><span class="pre">LOCUS</span> <span class="pre">4</span></code>). Ends mid-sentence across the page turn.</p></li>
+        <li><p><strong>Document Headings on Folio</strong>: None</p></li>
+        <li><p><strong>Line-Break Hyphenations Resolved</strong>: <code class="docutils literal notranslate"><span class="pre">dis-tance</span></code></p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id48">
+        <h4>Calibrated Diagrams on Folio<a class="headerlink" href="#id48" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">0031.g1.png</span></code> (bbox <code class="docutils literal notranslate"><span class="pre">[433,</span> <span class="pre">162,</span> <span class="pre">553,</span> <span class="pre">673]</span></code>, white-point <code class="docutils literal notranslate"><span class="pre">238</span></code>): Fig. 8. Arc of circle AMB as the locus of points on one side of AB subtending a given angle, with tangent AT (§ 11, Locus 7).</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id49">
+        <h4>Mathematical &amp; Constructive Commentary<a class="headerlink" href="#id49" title="Link to this heading">¶</a></h4>
+        <p>The term <em>mediator</em> (French <em>médiatrice</em>, coined by Joseph <a class="person-ref" id="occ-person-neuberg-1" href="../persons.html#person-neuberg" data-person="neuberg" title="Neuberg, Joseph Jean Baptiste (1840–1926) — Luxembourgish-Belgian Geometer, University of Liège">Neuberg</a>) introduced here in Locus 4 is used systematically throughout <em>College Geometry</em> (e.g., § 15, § 68).</p>
+        </section>
+        <section class="level-4" id="id50">
+        <h4>Scan Quality &amp; Verification<a class="headerlink" href="#id50" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Archival Scan</strong>: <code class="docutils literal notranslate"><span class="pre">01_geometric_constructions/0031.png</span></code> (300 DPI, <code class="docutils literal notranslate"><span class="pre">1421</span> <span class="pre">×</span> <span class="pre">2225</span></code> px)</p></li>
+        <li><p><strong>Verification Status</strong>: <code class="docutils literal notranslate"><span class="pre">ok</span></code> (visually verified against raster scan)</p></li>
+        </ul>
+        </section>
+        </section>
+        <section class="level-3" id="folio-0032-page-13-diplomatic-mathematical-notes">
+        <h3>Folio 0032 (Page 13) — Diplomatic &amp; Mathematical Notes<a class="headerlink" href="#folio-0032-page-13-diplomatic-mathematical-notes" title="Link to this heading">¶</a></h3>
+        <section class="level-4" id="id51">
+        <h4>Summary &amp; Folio Continuity<a class="headerlink" href="#id51" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Preceding Folio</strong>: Folio 0031 (Page 12, Loci 1–7: ‘…Pass a circle through the three points’)</p></li>
+        <li><p><strong>Current Folio</strong> (<code class="docutils literal notranslate"><span class="pre">0032.rst</span></code>): Page <code class="docutils literal notranslate"><span class="pre">13</span></code>, Chapter I [<code class="docutils literal notranslate"><span class="pre">01_geometric_constructions</span></code>] — Status: <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
+        <li><p><strong>Following Folio</strong>: Folio 0033 (Page 14, exterior case of Locus 8, Locus 9, Fig. 10, and Locus 10)</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id52">
+        <h4>Structural &amp; Diplomatic Observations<a class="headerlink" href="#id52" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Overview</strong>: Page <code class="docutils literal notranslate"><span class="pre">13</span></code> (running header <code class="docutils literal notranslate"><span class="pre">Ch.</span> <span class="pre">I,</span> <span class="pre">§</span> <span class="pre">11]</span> <span class="pre">/</span> <span class="pre">GEOMETRIC</span> <span class="pre">LOCI</span> <span class="pre">/</span> <span class="pre">13</span></code>), completing the double-inclusion proof and tangent construction of <code class="docutils literal notranslate"><span class="pre">LOCUS</span> <span class="pre">7</span></code> (including Thales’ right-angle corollary), and presenting <code class="docutils literal notranslate"><span class="pre">LOCUS</span> <span class="pre">8</span></code> with <code class="docutils literal notranslate"><span class="pre">FIG.</span> <span class="pre">9</span></code> (<code class="docutils literal notranslate"><span class="pre">0032.g1.png</span></code>).</p></li>
+        <li><p><strong>Document Headings on Folio</strong>: None</p></li>
+        <li><p><strong>Line-Break Hyphenations Resolved</strong>: <code class="docutils literal notranslate"><span class="pre">semi-circles</span></code></p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id53">
+        <h4>Calibrated Diagrams on Folio<a class="headerlink" href="#id53" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">0032.g1.png</span></code> (bbox <code class="docutils literal notranslate"><span class="pre">[451,</span> <span class="pre">1291,</span> <span class="pre">518,</span> <span class="pre">514]</span></code>, white-point <code class="docutils literal notranslate"><span class="pre">238</span></code>): Fig. 9. Circular locus of the midpoints M of chords AB of circle (O) passing through a fixed point P (§ 11, Locus 8).</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id54">
+        <h4>Mathematical &amp; Constructive Commentary<a class="headerlink" href="#id54" title="Link to this heading">¶</a></h4>
+        <p>Notice Altshiller-Court’s rigor on every locus proof: he establishes both <em>inclusiveness</em> (every point on the path satisfies the condition) and <em>exclusiveness</em> (no point off the path satisfies it, or conversely every point on the path belongs to the locus). Locus 7 rests on <a class="citation-ref" id="occ-cite-euclid-elements-6" href="../bibliography.html#cite-euclid-elements" data-cite="euclid:elements" title="Euclid of Alexandria (trans. Sir Thomas L. Heath) — The Thirteen Books of Euclid&#x27;s Elements (2nd ed., Cambridge University Press, 1926; GEOMETOR Digital Edition: geometor/euclid &amp; geometor/elements) (Books I–VI)">Euclid III.21, III.31, III.32, and III.33</a>.</p>
+        </section>
+        <section class="level-4" id="id55">
+        <h4>Scan Quality &amp; Verification<a class="headerlink" href="#id55" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Archival Scan</strong>: <code class="docutils literal notranslate"><span class="pre">01_geometric_constructions/0032.png</span></code> (300 DPI, <code class="docutils literal notranslate"><span class="pre">1421</span> <span class="pre">×</span> <span class="pre">2225</span></code> px)</p></li>
+        <li><p><strong>Verification Status</strong>: <code class="docutils literal notranslate"><span class="pre">ok</span></code> (visually verified against raster scan)</p></li>
+        </ul>
+        </section>
+        </section>
+        <section class="level-3" id="folio-0033-page-14-diplomatic-mathematical-notes">
+        <h3>Folio 0033 (Page 14) — Diplomatic &amp; Mathematical Notes<a class="headerlink" href="#folio-0033-page-14-diplomatic-mathematical-notes" title="Link to this heading">¶</a></h3>
+        <section class="level-4" id="id56">
+        <h4>Summary &amp; Folio Continuity<a class="headerlink" href="#id56" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Preceding Folio</strong>: Folio 0032 (Page 13, Loci 7–8)</p></li>
+        <li><p><strong>Current Folio</strong> (<code class="docutils literal notranslate"><span class="pre">0033.rst</span></code>): Page <code class="docutils literal notranslate"><span class="pre">14</span></code>, Chapter I [<code class="docutils literal notranslate"><span class="pre">01_geometric_constructions</span></code>] — Status: <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
+        <li><p><strong>Following Folio</strong>: Folio 0034 (Page 15, conclusion of Locus 10, Fig. 11, and Locus 11: Apollonian circle)</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id57">
+        <h4>Structural &amp; Diplomatic Observations<a class="headerlink" href="#id57" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Overview</strong>: Page <code class="docutils literal notranslate"><span class="pre">14</span></code> (running header <code class="docutils literal notranslate"><span class="pre">14</span> <span class="pre">/</span> <span class="pre">GEOMETRIC</span> <span class="pre">CONSTRUCTIONS</span> <span class="pre">/</span> <span class="pre">[Ch.</span> <span class="pre">I,</span> <span class="pre">§</span> <span class="pre">11</span></code>), treating the exterior-point restriction of <code class="docutils literal notranslate"><span class="pre">LOCUS</span> <span class="pre">8</span></code>, stating <code class="docutils literal notranslate"><span class="pre">LOCUS</span> <span class="pre">9</span></code>, displaying <code class="docutils literal notranslate"><span class="pre">FIG.</span> <span class="pre">10</span></code> (<code class="docutils literal notranslate"><span class="pre">0033.g1.png</span></code>), and deriving <code class="docutils literal notranslate"><span class="pre">LOCUS</span> <span class="pre">10</span></code> via Apollonius’ median theorem. Ends mid-sentence.</p></li>
+        <li><p><strong>Document Headings on Folio</strong>: None</p></li>
+        <li><p><strong>Line-Break Hyphenations Resolved</strong>: <code class="docutils literal notranslate"><span class="pre">dis-tances</span></code></p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id58">
+        <h4>Calibrated Diagrams on Folio<a class="headerlink" href="#id58" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">0033.g1.png</span></code> (bbox <code class="docutils literal notranslate"><span class="pre">[406,</span> <span class="pre">488,</span> <span class="pre">612,</span> <span class="pre">386]</span></code>, white-point <code class="docutils literal notranslate"><span class="pre">238</span></code>): Fig. 10. Locus of a point M the sum of the squares of whose distances from A and B is constant (§ 11, Locus 10).</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id59">
+        <h4>Mathematical &amp; Constructive Commentary<a class="headerlink" href="#id59" title="Link to this heading">¶</a></h4>
+        <p>Raw OCR dropped both <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span> fractions in <span class="math notranslate nohighlight">\(OA = OB = \frac{1}{2} AB\)</span> and <span class="math notranslate nohighlight">\(OM^2 = \frac{1}{2} s^2 - a^2\)</span>; restored from <code class="docutils literal notranslate"><span class="pre">0033.png</span></code>. Note the implicit <em>diorismos</em> of equation (1): the locus is a real circle iff <span class="math notranslate nohighlight">\(s^2 &gt; 2a^2 = \frac{1}{2} AB^2\)</span>, degenerates to the midpoint <span class="math notranslate nohighlight">\(O\)</span> when <span class="math notranslate nohighlight">\(s^2 = 2a^2\)</span>, and is empty when <span class="math notranslate nohighlight">\(s^2 &lt; 2a^2\)</span>.</p>
+        </section>
+        <section class="level-4" id="id60">
+        <h4>Scan Quality &amp; Verification<a class="headerlink" href="#id60" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Archival Scan</strong>: <code class="docutils literal notranslate"><span class="pre">01_geometric_constructions/0033.png</span></code> (300 DPI, <code class="docutils literal notranslate"><span class="pre">1421</span> <span class="pre">×</span> <span class="pre">2225</span></code> px)</p></li>
+        <li><p><strong>Verification Status</strong>: <code class="docutils literal notranslate"><span class="pre">ok</span></code> (visually verified against raster scan)</p></li>
+        </ul>
+        </section>
+        </section>
+        <section class="level-3" id="folio-0034-page-15-diplomatic-mathematical-notes">
+        <h3>Folio 0034 (Page 15) — Diplomatic &amp; Mathematical Notes<a class="headerlink" href="#folio-0034-page-15-diplomatic-mathematical-notes" title="Link to this heading">¶</a></h3>
+        <section class="level-4" id="id61">
+        <h4>Summary &amp; Folio Continuity<a class="headerlink" href="#id61" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Preceding Folio</strong>: Folio 0033 (Page 14, Loci 8–10: ‘…for its other leg half the’)</p></li>
+        <li><p><strong>Current Folio</strong> (<code class="docutils literal notranslate"><span class="pre">0034.rst</span></code>): Page <code class="docutils literal notranslate"><span class="pre">15</span></code>, Chapter I [<code class="docutils literal notranslate"><span class="pre">01_geometric_constructions</span></code>] — Status: <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
+        <li><p><strong>Following Folio</strong>: Folio 0035 (Page 16, conclusion of Locus 11, Note, Fig. 12, and Locus 12)</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id62">
+        <h4>Structural &amp; Diplomatic Observations<a class="headerlink" href="#id62" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Overview</strong>: Page <code class="docutils literal notranslate"><span class="pre">15</span></code> (running header <code class="docutils literal notranslate"><span class="pre">Ch.</span> <span class="pre">I,</span> <span class="pre">§</span> <span class="pre">11]</span> <span class="pre">/</span> <span class="pre">GEOMETRIC</span> <span class="pre">LOCI</span> <span class="pre">/</span> <span class="pre">15</span></code>), finishing the compass-and-straightedge radius construction of <code class="docutils literal notranslate"><span class="pre">LOCUS</span> <span class="pre">10</span></code> and introducing <code class="docutils literal notranslate"><span class="pre">LOCUS</span> <span class="pre">11</span></code> (<em>circle of Apollonius</em> / <em>Apollonian circle</em>) with <code class="docutils literal notranslate"><span class="pre">FIG.</span> <span class="pre">11</span></code> (<code class="docutils literal notranslate"><span class="pre">0034.g1.png</span></code>) and the first half of its <code class="docutils literal notranslate"><span class="pre">CONVERSELY</span></code> proof.</p></li>
+        <li><p><strong>Document Headings on Folio</strong>: None</p></li>
+        <li><p><strong>Line-Break Hyphenations Resolved</strong>: <code class="docutils literal notranslate"><span class="pre">there-fore</span></code>, <code class="docutils literal notranslate"><span class="pre">re-quired</span></code></p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id63">
+        <h4>Calibrated Diagrams on Folio<a class="headerlink" href="#id63" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">0034.g1.png</span></code> (bbox <code class="docutils literal notranslate"><span class="pre">[318,</span> <span class="pre">1005,</span> <span class="pre">790,</span> <span class="pre">485]</span></code>, white-point <code class="docutils literal notranslate"><span class="pre">238</span></code>): Fig. 11. Circle of Apollonius: locus of a point M whose distances from fixed points A, B have a constant ratio p : q (§ 11, Locus 11).</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id64">
+        <h4>Mathematical &amp; Constructive Commentary<a class="headerlink" href="#id64" title="Link to this heading">¶</a></h4>
+        <p>Locus 11 (<a class="person-ref" id="occ-person-apollonius-2" href="../persons.html#person-apollonius" data-person="apollonius" title="Apollonius of Perga (c. 262 – c. 190 BC) — Hellenistic Geometer (&#x27;The Great Geometer&#x27;)">Apollonius of Perga</a>, <em>Plane Loci</em> II) is one of the pillars of <em>College Geometry</em>: <span class="math notranslate nohighlight">\((A, B; C, D) = -1\)</span> is a <a class="term-ref glossary-term" id="occ-term-harmonic-division-1" href="../glossary.html#term-harmonic-division" data-term="harmonic-division" title="harmonic division and harmonic conjugates ((ABCD) = -1): Four collinear points A, B, C, D form a harmonic range when C and D divide AB internally and externally in the same numerical ratio, so (AC/CB) : (AD/DB) = -1.">harmonic range</a>, reappearing in Chapter II (§ 61), Chapter VIII (coaxal limiting points, § 448), and Chapter X (the three Apollonian circles of a triangle meeting in the <a class="term-ref glossary-term" id="occ-term-isodynamic-points-1" href="../glossary.html#term-isodynamic-points" data-term="isodynamic-points" title="isodynamic points (W, W&#x27; = X(15), X(16)): The two common intersections of the three Apollonian circles of a triangle (Kimberling centers X(15) and X(16)); inverse to one another in the circumcircle, collinear with O and K on the Brocard axis, and having equilateral pedal triangles.">isodynamic points</a> <span class="math notranslate nohighlight">\(X(15), X(16)\)</span>, §§ 597–606).</p>
+        </section>
+        <section class="level-4" id="id65">
+        <h4>Scan Quality &amp; Verification<a class="headerlink" href="#id65" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Archival Scan</strong>: <code class="docutils literal notranslate"><span class="pre">01_geometric_constructions/0034.png</span></code> (300 DPI, <code class="docutils literal notranslate"><span class="pre">1421</span> <span class="pre">×</span> <span class="pre">2225</span></code> px)</p></li>
+        <li><p><strong>Verification Status</strong>: <code class="docutils literal notranslate"><span class="pre">ok</span></code> (visually verified against raster scan)</p></li>
+        </ul>
+        </section>
+        </section>
+        <section class="level-3" id="folio-0035-page-16-diplomatic-mathematical-notes">
+        <h3>Folio 0035 (Page 16) — Diplomatic &amp; Mathematical Notes<a class="headerlink" href="#folio-0035-page-16-diplomatic-mathematical-notes" title="Link to this heading">¶</a></h3>
+        <section class="level-4" id="id66">
+        <h4>Summary &amp; Folio Continuity<a class="headerlink" href="#id66" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Preceding Folio</strong>: Folio 0034 (Page 15, Locus 11: ‘therefore: ME = MF.’)</p></li>
+        <li><p><strong>Current Folio</strong> (<code class="docutils literal notranslate"><span class="pre">0035.rst</span></code>): Page <code class="docutils literal notranslate"><span class="pre">16</span></code>, Chapter I [<code class="docutils literal notranslate"><span class="pre">01_geometric_constructions</span></code>] — Status: <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
+        <li><p><strong>Following Folio</strong>: Folio 0036 (Page 17, conclusion of Locus 12, Exercises 1–4, and § 12)</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id67">
+        <h4>Structural &amp; Diplomatic Observations<a class="headerlink" href="#id67" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Overview</strong>: Page <code class="docutils literal notranslate"><span class="pre">16</span></code> (running header <code class="docutils literal notranslate"><span class="pre">16</span> <span class="pre">/</span> <span class="pre">GEOMETRIC</span> <span class="pre">CONSTRUCTIONS</span> <span class="pre">/</span> <span class="pre">[Ch.</span> <span class="pre">I,</span> <span class="pre">§</span> <span class="pre">11</span></code>), completing the converse proof and Socratic query of <code class="docutils literal notranslate"><span class="pre">LOCUS</span> <span class="pre">11</span></code> (plus <code class="docutils literal notranslate"><span class="pre">Note</span></code> on the twin Apollonian circles), displaying <code class="docutils literal notranslate"><span class="pre">FIG.</span> <span class="pre">12</span></code> (<code class="docutils literal notranslate"><span class="pre">0035.g1.png</span></code>), and beginning <code class="docutils literal notranslate"><span class="pre">LOCUS</span> <span class="pre">12</span></code>.</p></li>
+        <li><p><strong>Document Headings on Folio</strong>: None</p></li>
+        <li><p><strong>Line-Break Hyphenations Resolved</strong>: <code class="docutils literal notranslate"><span class="pre">seg-ment</span></code>, <code class="docutils literal notranslate"><span class="pre">state-ment</span></code>, <code class="docutils literal notranslate"><span class="pre">tri-angles</span></code></p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id68">
+        <h4>Calibrated Diagrams on Folio<a class="headerlink" href="#id68" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">0035.g1.png</span></code> (bbox <code class="docutils literal notranslate"><span class="pre">[419,</span> <span class="pre">1020,</span> <span class="pre">585,</span> <span class="pre">368]</span></code>, white-point <code class="docutils literal notranslate"><span class="pre">238</span></code>): Fig. 12. Perpendicular line locus of a point M where AM² - BM² = d² is constant (§ 11, Locus 12).</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id69">
+        <h4>Mathematical &amp; Constructive Commentary<a class="headerlink" href="#id69" title="Link to this heading">¶</a></h4>
+        <p>Answer to Altshiller-Court’s Socratic question on <code class="docutils literal notranslate"><span class="pre">LOCUS</span> <span class="pre">11</span></code>: the hypothesis that <span class="math notranslate nohighlight">\(M\)</span> lies on the circle with diameter <span class="math notranslate nohighlight">\(CD\)</span> is used strictly in asserting that <span class="math notranslate nohighlight">\(\angle CMD\)</span> is a right angle (by Thales’ locus, Locus 7)! And <code class="docutils literal notranslate"><span class="pre">LOCUS</span> <span class="pre">12</span></code> (<span class="math notranslate nohighlight">\(AM^2 - BM^2 = d^2\)</span>) is precisely the point-circle case of the <a class="term-ref glossary-term" id="occ-term-radical-axis-3" href="../glossary.html#term-radical-axis" data-term="radical-axis" title="radical axis and radical center (Locus of equal powers): The radical axis of two non-concentric circles is the straight line of points having equal power with respect to both circles; the three radical axes of three circles taken in pairs concur at their radical center (§ 492).">radical axis</a> of two circles (Chapter VIII, § 422).</p>
+        </section>
+        <section class="level-4" id="id70">
+        <h4>Scan Quality &amp; Verification<a class="headerlink" href="#id70" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Archival Scan</strong>: <code class="docutils literal notranslate"><span class="pre">01_geometric_constructions/0035.png</span></code> (300 DPI, <code class="docutils literal notranslate"><span class="pre">1421</span> <span class="pre">×</span> <span class="pre">2225</span></code> px)</p></li>
+        <li><p><strong>Verification Status</strong>: <code class="docutils literal notranslate"><span class="pre">ok</span></code> (visually verified against raster scan)</p></li>
+        </ul>
+        </section>
+        </section>
+        <section class="level-3" id="folio-0036-page-17-diplomatic-mathematical-notes">
+        <h3>Folio 0036 (Page 17) — Diplomatic &amp; Mathematical Notes<a class="headerlink" href="#folio-0036-page-17-diplomatic-mathematical-notes" title="Link to this heading">¶</a></h3>
+        <section class="level-4" id="id71">
+        <h4>Summary &amp; Folio Continuity<a class="headerlink" href="#id71" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Preceding Folio</strong>: Folio 0035 (Page 16, Locus 12: ‘(AC - BC)(AC + BC) = d^2,’)</p></li>
+        <li><p><strong>Current Folio</strong> (<code class="docutils literal notranslate"><span class="pre">0036.rst</span></code>): Page <code class="docutils literal notranslate"><span class="pre">17</span></code>, Chapter I [<code class="docutils literal notranslate"><span class="pre">01_geometric_constructions</span></code>] — Status: <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
+        <li><p><strong>Following Folio</strong>: Folio 0037 (Page 18, Fig. 13, Construction of § 12, and § 13)</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id72">
+        <h4>Structural &amp; Diplomatic Observations<a class="headerlink" href="#id72" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Overview</strong>: Page <code class="docutils literal notranslate"><span class="pre">17</span></code> (running header <code class="docutils literal notranslate"><span class="pre">Ch.</span> <span class="pre">I,</span> <span class="pre">§§</span> <span class="pre">11,</span> <span class="pre">12]</span> <span class="pre">/</span> <span class="pre">GEOMETRIC</span> <span class="pre">LOCI</span> <span class="pre">/</span> <span class="pre">17</span></code>), concluding <code class="docutils literal notranslate"><span class="pre">LOCUS</span> <span class="pre">12</span></code> (constructing <span class="math notranslate nohighlight">\(AC - BC = d^2 \div a\)</span> via fourth proportional and sum-and-difference of segments, § 2), listing Locus Exercises 1–4, and presenting the enunciation and Analysis of § 12 (<em>Problem</em>).</p></li>
+        <li><p><strong>Document Headings on Folio</strong>: <code class="docutils literal notranslate"><span class="pre">EXERCISES</span></code>, <code class="docutils literal notranslate"><span class="pre">12.</span> <span class="pre">Problem.</span></code></p></li>
+        <li><p><strong>Line-Break Hyphenations Resolved</strong>: <code class="docutils literal notranslate"><span class="pre">con-sider</span></code>, <code class="docutils literal notranslate"><span class="pre">con-stant</span></code></p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id73">
+        <h4>Mathematical &amp; Constructive Commentary<a class="headerlink" href="#id73" title="Link to this heading">¶</a></h4>
+        <p>Raw OCR corrupted <span class="math notranslate nohighlight">\(AC - BC = d^2 \div a\)</span> to <code class="docutils literal notranslate"><span class="pre">dl-,</span> <span class="pre">a</span></code>; verified against <code class="docutils literal notranslate"><span class="pre">0036.png</span></code>. Note Exercise 1 (the median through <span class="math notranslate nohighlight">\(A\)</span> is the locus of <span class="math notranslate nohighlight">\(M = (BE, CD)\)</span> by harmonic properties of trapezoids, Ch. VII) and Exercise 3 (an Apollonian circle on <span class="math notranslate nohighlight">\(AC\)</span> passing through <span class="math notranslate nohighlight">\(B\)</span>, since <span class="math notranslate nohighlight">\(MB\)</span> bisects <span class="math notranslate nohighlight">\(\angle AMC\)</span> iff <span class="math notranslate nohighlight">\(MA : MC = AB : BC\)</span>!).</p>
+        </section>
+        <section class="level-4" id="id74">
+        <h4>Scan Quality &amp; Verification<a class="headerlink" href="#id74" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Archival Scan</strong>: <code class="docutils literal notranslate"><span class="pre">01_geometric_constructions/0036.png</span></code> (300 DPI, <code class="docutils literal notranslate"><span class="pre">1421</span> <span class="pre">×</span> <span class="pre">2225</span></code> px)</p></li>
+        <li><p><strong>Verification Status</strong>: <code class="docutils literal notranslate"><span class="pre">ok</span></code> (visually verified against raster scan)</p></li>
+        </ul>
+        </section>
+        </section>
+        <section class="level-3" id="folio-0037-page-18-diplomatic-mathematical-notes">
+        <h3>Folio 0037 (Page 18) — Diplomatic &amp; Mathematical Notes<a class="headerlink" href="#folio-0037-page-18-diplomatic-mathematical-notes" title="Link to this heading">¶</a></h3>
+        <section class="level-4" id="id75">
+        <h4>Summary &amp; Folio Continuity<a class="headerlink" href="#id75" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Preceding Folio</strong>: Folio 0036 (Page 17, §§ 11–12)</p></li>
+        <li><p><strong>Current Folio</strong> (<code class="docutils literal notranslate"><span class="pre">0037.rst</span></code>): Page <code class="docutils literal notranslate"><span class="pre">18</span></code>, Chapter I [<code class="docutils literal notranslate"><span class="pre">01_geometric_constructions</span></code>] — Status: <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
+        <li><p><strong>Following Folio</strong>: Folio 0038 (Page 19, Figs. 14–15, Discussion of § 13, and § 14)</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id76">
+        <h4>Structural &amp; Diplomatic Observations<a class="headerlink" href="#id76" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Overview</strong>: Page <code class="docutils literal notranslate"><span class="pre">18</span></code> (running header <code class="docutils literal notranslate"><span class="pre">18</span> <span class="pre">/</span> <span class="pre">GEOMETRIC</span> <span class="pre">CONSTRUCTIONS</span> <span class="pre">/</span> <span class="pre">[Ch.</span> <span class="pre">I,</span> <span class="pre">§§</span> <span class="pre">12,</span> <span class="pre">13</span></code>), displaying <code class="docutils literal notranslate"><span class="pre">FIG.</span> <span class="pre">13</span></code> (<code class="docutils literal notranslate"><span class="pre">0037.g1.png</span></code>), the Construction of § 12, and the Analysis, Construction, and Proof of § 13 (<em>Problem</em>).</p></li>
+        <li><p><strong>Document Headings on Folio</strong>: <code class="docutils literal notranslate"><span class="pre">13.</span> <span class="pre">Problem.</span></code></p></li>
+        <li><p><strong>Line-Break Hyphenations Resolved</strong>: <code class="docutils literal notranslate"><span class="pre">re-spectively</span></code>, <code class="docutils literal notranslate"><span class="pre">trape-zoid</span></code></p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id77">
+        <h4>Calibrated Diagrams on Folio<a class="headerlink" href="#id77" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">0037.g1.png</span></code> (bbox <code class="docutils literal notranslate"><span class="pre">[403,</span> <span class="pre">162,</span> <span class="pre">618,</span> <span class="pre">466]</span></code>, white-point <code class="docutils literal notranslate"><span class="pre">238</span></code>): Fig. 13. Circle (O) passing through A and B and subtending a given angle at external point C (§ 12).</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id78">
+        <h4>Mathematical &amp; Constructive Commentary<a class="headerlink" href="#id78" title="Link to this heading">¶</a></h4>
+        <p>In § 12, notice that <span class="math notranslate nohighlight">\(O\)</span> also lies on the <a class="term-ref glossary-term" id="occ-term-mediator-2" href="../glossary.html#term-mediator" data-term="mediator" title="mediator (perpendicular bisector) (Perpendicular bisector of a segment): The line perpendicular to a given segment AB at its midpoint—the locus of all points equidistant from A and B (§ 11, Locus 3; Euclid I.10, I.11). The three mediators of a triangle concur at the circumcenter O = X(3).">mediator</a> of <span class="math notranslate nohighlight">\(AB\)</span>, which is simultaneously the radical axis of the two Apollonian circles <span class="math notranslate nohighlight">\((EF)\)</span> and <span class="math notranslate nohighlight">\((GH)\)</span>—giving at most two centers <span class="math notranslate nohighlight">\(O, O'\)</span>! In § 13, Locus 9 and Locus 1 intersect cleanly at <span class="math notranslate nohighlight">\(F\)</span>.</p>
+        </section>
+        <section class="level-4" id="id79">
+        <h4>Scan Quality &amp; Verification<a class="headerlink" href="#id79" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Archival Scan</strong>: <code class="docutils literal notranslate"><span class="pre">01_geometric_constructions/0037.png</span></code> (300 DPI, <code class="docutils literal notranslate"><span class="pre">1421</span> <span class="pre">×</span> <span class="pre">2225</span></code> px)</p></li>
+        <li><p><strong>Verification Status</strong>: <code class="docutils literal notranslate"><span class="pre">ok</span></code> (visually verified against raster scan)</p></li>
+        </ul>
+        </section>
+        </section>
+        <section class="level-3" id="folio-0038-page-19-diplomatic-mathematical-notes">
+        <h3>Folio 0038 (Page 19) — Diplomatic &amp; Mathematical Notes<a class="headerlink" href="#folio-0038-page-19-diplomatic-mathematical-notes" title="Link to this heading">¶</a></h3>
+        <section class="level-4" id="id80">
+        <h4>Summary &amp; Folio Continuity<a class="headerlink" href="#id80" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Preceding Folio</strong>: Folio 0037 (Page 18, §§ 12–13)</p></li>
+        <li><p><strong>Current Folio</strong> (<code class="docutils literal notranslate"><span class="pre">0038.rst</span></code>): Page <code class="docutils literal notranslate"><span class="pre">19</span></code>, Chapter I [<code class="docutils literal notranslate"><span class="pre">01_geometric_constructions</span></code>] — Status: <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
+        <li><p><strong>Following Folio</strong>: Folio 0039 (Page 20, Fig. 16, conclusion of § 14, and Exercises 1–16)</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id81">
+        <h4>Structural &amp; Diplomatic Observations<a class="headerlink" href="#id81" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Overview</strong>: Page <code class="docutils literal notranslate"><span class="pre">19</span></code> (running header <code class="docutils literal notranslate"><span class="pre">Ch.</span> <span class="pre">I,</span> <span class="pre">§§</span> <span class="pre">13,</span> <span class="pre">14]</span> <span class="pre">/</span> <span class="pre">GEOMETRIC</span> <span class="pre">LOCI</span> <span class="pre">/</span> <span class="pre">19</span></code>), presenting the Discussion of § 13 with side-by-side <code class="docutils literal notranslate"><span class="pre">FIG.</span> <span class="pre">14</span></code> (<code class="docutils literal notranslate"><span class="pre">0038.g1.png</span></code>) and <code class="docutils literal notranslate"><span class="pre">FIG.</span> <span class="pre">15</span></code> (<code class="docutils literal notranslate"><span class="pre">0038.g2.png</span></code>), and starting § 14 (<em>Problem</em>).</p></li>
+        <li><p><strong>Document Headings on Folio</strong>: <code class="docutils literal notranslate"><span class="pre">14.</span> <span class="pre">Problem.</span></code></p></li>
+        <li><p><strong>Line-Break Hyphenations Resolved</strong>: <code class="docutils literal notranslate"><span class="pre">intersec-tion</span></code></p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id82">
+        <h4>Calibrated Diagrams on Folio<a class="headerlink" href="#id82" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">0038.g1.png</span></code> (bbox <code class="docutils literal notranslate"><span class="pre">[107,</span> <span class="pre">458,</span> <span class="pre">607,</span> <span class="pre">619]</span></code>, white-point <code class="docutils literal notranslate"><span class="pre">238</span></code>): Fig. 14. Parallel chords AC, BD through A, B in circle (O) having a given sum 2s (§ 13).</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">0038.g2.png</span></code> (bbox <code class="docutils literal notranslate"><span class="pre">[732,</span> <span class="pre">543,</span> <span class="pre">593,</span> <span class="pre">530]</span></code>, white-point <code class="docutils literal notranslate"><span class="pre">238</span></code>): Fig. 15. Case where tangent crosses chord AB, yielding difference of bases 2EF (§ 13).</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id83">
+        <h4>Mathematical &amp; Constructive Commentary<a class="headerlink" href="#id83" title="Link to this heading">¶</a></h4>
+        <p>Raw OCR misread <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">OE</span></code> as <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">OR</span></code> and <code class="docutils literal notranslate"><span class="pre">FIG.</span> <span class="pre">15</span></code> as <code class="docutils literal notranslate"><span class="pre">FIG.</span> <span class="pre">16</span></code>; verified against <code class="docutils literal notranslate"><span class="pre">0038.png</span></code>. Note the topological transition at <span class="math notranslate nohighlight">\(s = EG\)</span> in § 13: when <span class="math notranslate nohighlight">\(s &lt; EG\)</span>, the parallel chords cross inside the circle so that <span class="math notranslate nohighlight">\(2\,EF = |AC - BD|\)</span> instead of <span class="math notranslate nohighlight">\(AC + BD\)</span>, immediately solving the companion difference problem!</p>
+        </section>
+        <section class="level-4" id="id84">
+        <h4>Scan Quality &amp; Verification<a class="headerlink" href="#id84" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Archival Scan</strong>: <code class="docutils literal notranslate"><span class="pre">01_geometric_constructions/0038.png</span></code> (300 DPI, <code class="docutils literal notranslate"><span class="pre">1421</span> <span class="pre">×</span> <span class="pre">2225</span></code> px)</p></li>
+        <li><p><strong>Verification Status</strong>: <code class="docutils literal notranslate"><span class="pre">ok</span></code> (visually verified against raster scan)</p></li>
+        </ul>
+        </section>
+        </section>
+        <section class="level-3" id="folio-0039-page-20-diplomatic-mathematical-notes">
+        <h3>Folio 0039 (Page 20) — Diplomatic &amp; Mathematical Notes<a class="headerlink" href="#folio-0039-page-20-diplomatic-mathematical-notes" title="Link to this heading">¶</a></h3>
+        <section class="level-4" id="id85">
+        <h4>Summary &amp; Folio Continuity<a class="headerlink" href="#id85" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Preceding Folio</strong>: Folio 0038 (Page 19, §§ 13–14)</p></li>
+        <li><p><strong>Current Folio</strong> (<code class="docutils literal notranslate"><span class="pre">0039.rst</span></code>): Page <code class="docutils literal notranslate"><span class="pre">20</span></code>, Chapter I [<code class="docutils literal notranslate"><span class="pre">01_geometric_constructions</span></code>] — Status: <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
+        <li><p><strong>Following Folio</strong>: Folio 0040 (Page 21, Exercises 17–23 and Section D: Indirect Elements, § 15, Fig. 17)</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id86">
+        <h4>Structural &amp; Diplomatic Observations<a class="headerlink" href="#id86" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Overview</strong>: Page <code class="docutils literal notranslate"><span class="pre">20</span></code> (running header <code class="docutils literal notranslate"><span class="pre">20</span> <span class="pre">/</span> <span class="pre">GEOMETRIC</span> <span class="pre">CONSTRUCTIONS</span> <span class="pre">/</span> <span class="pre">[Ch.</span> <span class="pre">I,</span> <span class="pre">§</span> <span class="pre">14</span></code>), displaying <code class="docutils literal notranslate"><span class="pre">FIG.</span> <span class="pre">16</span></code> (<code class="docutils literal notranslate"><span class="pre">0039.g1.png</span></code>), completing § 14 via Locus 7, and listing Locus Exercises 1–16.</p></li>
+        <li><p><strong>Document Headings on Folio</strong>: <code class="docutils literal notranslate"><span class="pre">EXERCISES</span></code></p></li>
+        <li><p><strong>Line-Break Hyphenations Resolved</strong>: <code class="docutils literal notranslate"><span class="pre">dis-tances</span></code></p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id87">
+        <h4>Calibrated Diagrams on Folio<a class="headerlink" href="#id87" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">0039.g1.png</span></code> (bbox <code class="docutils literal notranslate"><span class="pre">[409,</span> <span class="pre">162,</span> <span class="pre">608,</span> <span class="pre">553]</span></code>, white-point <code class="docutils literal notranslate"><span class="pre">238</span></code>): Fig. 16. Point M on circle (A, B) whose joins AM, BM cut line FPQ in given ratio FP : FQ from F (§ 14).</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id88">
+        <h4>Mathematical &amp; Constructive Commentary<a class="headerlink" href="#id88" title="Link to this heading">¶</a></h4>
+        <p>Look at Exercises 4–6 (<span class="math notranslate nohighlight">\(a, h_a, b:c\)</span>; <span class="math notranslate nohighlight">\(a, m_a, b:c\)</span>; <span class="math notranslate nohighlight">\(a, t_a, b:c\)</span>): each intersects the <a class="term-ref glossary-term" id="occ-term-apollonian-circle-2" href="../glossary.html#term-apollonian-circle" data-term="apollonian-circle" title="Apollonian circle (Circle of Apollonius): The locus of a point whose distances from two fixed points A, B have a constant ratio m : n (m ≠ n); its diameter joins the two points C, D that divide AB internally and externally in the ratio m : n (§ 11, Locus 11; § 61). For a triangle ABC, the three Apollonian circles pass through each vertex and the feet of the internal and external angle bisectors on the opposite side (§ 597), intersecting in the two isodynamic points X(15), X(16).">Apollonian circle</a> for <span class="math notranslate nohighlight">\(b:c\)</span> on base <span class="math notranslate nohighlight">\(BC\)</span> with a second locus (parallel line at height <span class="math notranslate nohighlight">\(h_a\)</span> in Ex. 4, circle <span class="math notranslate nohighlight">\((M_a, m_a)\)</span> in Ex. 5, and a neat circle locus in Ex. 6). Exercise 16 intersects two Apollonian circles—foreshadowing the <a class="term-ref glossary-term" id="occ-term-isodynamic-points-2" href="../glossary.html#term-isodynamic-points" data-term="isodynamic-points" title="isodynamic points (W, W&#x27; = X(15), X(16)): The two common intersections of the three Apollonian circles of a triangle (Kimberling centers X(15) and X(16)); inverse to one another in the circumcircle, collinear with O and K on the Brocard axis, and having equilateral pedal triangles.">isodynamic points</a> <span class="math notranslate nohighlight">\(X(15), X(16)\)</span> in Chapter X (§ 606)!</p>
+        </section>
+        <section class="level-4" id="id89">
+        <h4>Scan Quality &amp; Verification<a class="headerlink" href="#id89" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Archival Scan</strong>: <code class="docutils literal notranslate"><span class="pre">01_geometric_constructions/0039.png</span></code> (300 DPI, <code class="docutils literal notranslate"><span class="pre">1421</span> <span class="pre">×</span> <span class="pre">2225</span></code> px)</p></li>
+        <li><p><strong>Verification Status</strong>: <code class="docutils literal notranslate"><span class="pre">ok</span></code> (visually verified against raster scan)</p></li>
+        </ul>
+        </section>
+        </section>
+        <section class="level-3" id="folio-0040-page-21-diplomatic-mathematical-notes">
+        <h3>Folio 0040 (Page 21) — Diplomatic &amp; Mathematical Notes<a class="headerlink" href="#folio-0040-page-21-diplomatic-mathematical-notes" title="Link to this heading">¶</a></h3>
+        <section class="level-4" id="id90">
+        <h4>Summary &amp; Folio Continuity<a class="headerlink" href="#id90" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Preceding Folio</strong>: Folio 0039 (Page 20, § 14, Exercises 1–16)</p></li>
+        <li><p><strong>Current Folio</strong> (<code class="docutils literal notranslate"><span class="pre">0040.rst</span></code>): Page <code class="docutils literal notranslate"><span class="pre">21</span></code>, Chapter I [<code class="docutils literal notranslate"><span class="pre">01_geometric_constructions</span></code>] — Status: <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
+        <li><p><strong>Following Folio</strong>: Folio 0041 (Page 22, conclusion of § 15: ‘and therefore the angle EAF is known. The altitude AD of the triangle ABC is also the altitude of AEF…’)</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id91">
+        <h4>Structural &amp; Diplomatic Observations<a class="headerlink" href="#id91" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Overview</strong>: Page <code class="docutils literal notranslate"><span class="pre">21</span></code> (running header <code class="docutils literal notranslate"><span class="pre">Ch.</span> <span class="pre">I,</span> <span class="pre">§§</span> <span class="pre">14,</span> <span class="pre">15]</span> <span class="pre">/</span> <span class="pre">INDIRECT</span> <span class="pre">ELEMENTS</span> <span class="pre">/</span> <span class="pre">21</span></code>), completing Locus Exercises 17–23, introducing Section D (<em>Indirect Elements</em>), and presenting § 15 (<em>Problem</em>: constructing <span class="math notranslate nohighlight">\(\triangle ABC\)</span> from <span class="math notranslate nohighlight">\((2p, A, h_a)\)</span>) with <code class="docutils literal notranslate"><span class="pre">FIG.</span> <span class="pre">17</span></code> (<code class="docutils literal notranslate"><span class="pre">0040.g1.png</span></code>). Ends with a comma at the bottom of page <code class="docutils literal notranslate"><span class="pre">21</span></code>, continuing onto folio <code class="docutils literal notranslate"><span class="pre">0041</span></code> (page <code class="docutils literal notranslate"><span class="pre">22</span></code>).</p></li>
+        <li><p><strong>Document Headings on Folio</strong>: <code class="docutils literal notranslate"><span class="pre">D.</span> <span class="pre">INDIRECT</span> <span class="pre">ELEMENTS</span></code>, <code class="docutils literal notranslate"><span class="pre">15.</span> <span class="pre">Problem.</span></code></p></li>
+        <li><p><strong>Line-Break Hyphenations Resolved</strong>: <code class="docutils literal notranslate"><span class="pre">adja-cent</span></code>, <code class="docutils literal notranslate"><span class="pre">dif-ference</span></code>, <code class="docutils literal notranslate"><span class="pre">neces-sary</span></code>, <code class="docutils literal notranslate"><span class="pre">op-posite</span></code></p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id92">
+        <h4>Calibrated Diagrams on Folio<a class="headerlink" href="#id92" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">0040.g1.png</span></code> (bbox <code class="docutils literal notranslate"><span class="pre">[247,</span> <span class="pre">1400,</span> <span class="pre">923,</span> <span class="pre">330]</span></code>, white-point <code class="docutils literal notranslate"><span class="pre">238</span></code>): Fig. 17. Construction of triangle ABC given perimeter 2p, vertical angle A, and altitude h_a via indirect triangle AEF (§ 15).</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="id93">
+        <h4>Mathematical &amp; Constructive Commentary<a class="headerlink" href="#id93" title="Link to this heading">¶</a></h4>
+        <p>In § 15, unfolding <span class="math notranslate nohighlight">\(BA\)</span> and <span class="math notranslate nohighlight">\(CA\)</span> onto line <span class="math notranslate nohighlight">\(BC\)</span> turns the indirect perimeter <span class="math notranslate nohighlight">\(2p\)</span> into the single segment <span class="math notranslate nohighlight">\(EF = 2p\)</span> of auxiliary triangle <span class="math notranslate nohighlight">\(AEF\)</span>, which is constructed from base <span class="math notranslate nohighlight">\(EF = 2p\)</span>, capable arc for <span class="math notranslate nohighlight">\(\angle EAF = 90^\circ + \frac{1}{2}A\)</span> (Locus 7), and parallel line at height <span class="math notranslate nohighlight">\(h_a\)</span> (Locus 3); on folio <code class="docutils literal notranslate"><span class="pre">0041</span></code> (p. 22), vertices <span class="math notranslate nohighlight">\(B, C\)</span> are recovered as the traces on <span class="math notranslate nohighlight">\(EF\)</span> of the <a class="term-ref glossary-term" id="occ-term-mediator-3" href="../glossary.html#term-mediator" data-term="mediator" title="mediator (perpendicular bisector) (Perpendicular bisector of a segment): The line perpendicular to a given segment AB at its midpoint—the locus of all points equidistant from A and B (§ 11, Locus 3; Euclid I.10, I.11). The three mediators of a triangle concur at the circumcenter O = X(3).">mediators</a> of <span class="math notranslate nohighlight">\(AE\)</span> and <span class="math notranslate nohighlight">\(AF\)</span>!</p>
+        </section>
+        <section class="level-4" id="id94">
+        <h4>Scan Quality &amp; Verification<a class="headerlink" href="#id94" title="Link to this heading">¶</a></h4>
+        <ul class="simple">
+        <li><p><strong>Archival Scan</strong>: <code class="docutils literal notranslate"><span class="pre">01_geometric_constructions/0040.png</span></code> (300 DPI, <code class="docutils literal notranslate"><span class="pre">1421</span> <span class="pre">×</span> <span class="pre">2225</span></code> px)</p></li>
+        <li><p><strong>Verification Status</strong>: <code class="docutils literal notranslate"><span class="pre">ok</span></code> (visually verified against raster scan)</p></li>
+        </ul>
+        </section>
+        </section>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../frontmatter/frontmatter-commentary.html" title="Frontmatter">&larr; <span class="nav-label">Frontmatter</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">College Geometry</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../ch02-similitude-and-homothecy/ch02-similitude-and-homothecy-commentary.html" title="Chapter II: Similitude and Homothecy"><span class="nav-label">Chapter II: Similitude and Homothecy</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+  </div>
+  <footer>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 1952 Nathan Altshiller-Court; 2007 Dover Publications • Digital Apparatus GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>
