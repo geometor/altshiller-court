@@ -1,65 +1,37 @@
 :layout: book
 :type: section
 :order: 9
-:title: I. The Problem of Apollonius (Ten Problems I–X & Gergonne's Solution)
+:title: Section I — The Problem of Apollonius (Ten Problems I–X & Gergonne's Solution)
 :folio: 0241
 :page: 222
+:folios: 0241–0248
+:pages: 222–229
+:excerpt: Crowns Chapter VIII with the Problem of Apollonius  (§§ 506–517): to construct a circle tangent to three given circles (or any combination of points P, lines L, and circles C).
 
 .. _ch08-circles-i-the-problem-of-apollonius:
 
-I. The Problem of Apollonius (Ten Problems I–X & Gergonne's Solution)
-=====================================================================
+Section I — The Problem of Apollonius (Ten Problems I–X & Gergonne's Solution)
+==============================================================================
 
-I. The Problem of Apollonius (Ten Problems I–X & Gergonne's Solution) in Chapter VIII covers Articles **§§ 506–517** across archival folios ``0241``–``0248`` (printed pages ``222``–``229``), standardized at 300 DPI in ``resources/college_geometry/08_circles/``.
+.. rubric:: Chapter VIII: Circles • Articles §§ 506–517 (Folios 0241–0248, pp. 222–229)
 
-.. collection::
-   :type: item
-   :sort: order
+.. picture:: hero.svg
+   :alt: Reference circle O and orthogonal circle P intersecting perpendicularly at T1, T2 with polar chord T1 T2 through inverse point P'
+   :caption: Inverse Points P, P', Polar Line T₁T₂, and Orthogonal Circle (P, PT₁)
 
-Folio Scan Allocation
----------------------
+Crowns Chapter VIII with the :term:`Problem of Apollonius <problem-of-apollonius>` (**§§ 506–517**): to construct a circle tangent to three given circles (or any combination of points ``P``, lines ``L``, and circles ``C``).
 
-.. list-table::
-   :header-rows: 1
-   :widths: 16 16 38 30
+Principal Theorems, Constructions & Identities
+----------------------------------------------
 
-   * - Folio
-     - Page
-     - Articles
-     - Scan Status
-   * - ``0241``
-     - ``222``
-     - §§ 506–508
-     - 300 DPI gray
-   * - ``0242``
-     - ``223``
-     - §§ 509–512
-     - 300 DPI gray
-   * - ``0243``
-     - ``224``
-     - § 513
-     - 300 DPI gray
-   * - ``0244``
-     - ``225``
-     - §§ 514–515
-     - 300 DPI gray
-   * - ``0245``
-     - ``226``
-     - §§ 516–517
-     - 300 DPI gray
-   * - ``0246``
-     - ``227``
-     - —
-     - 300 DPI gray
-   * - ``0247``
-     - ``228``
-     - —
-     - 300 DPI gray
-   * - ``0248``
-     - ``229``
-     - —
-     - 300 DPI gray
+* **§§ 506–515 — Viète's Systematic Reduction of the Ten Cases**: Resolves ``PPP``, ``PPL``, ``PLL``, ``LLL``, ``PPC``, ``PLC``, ``LLC``, ``PCC``, and ``LCC`` step-by-step via radical-axis intersections and radius-contraction to earlier cases (:person:`Viète <viete>`, *Apollonius Gallus* 1600).
+* **§§ 516–517 — Gergonne's Master Solution to CCC (§ 517)**: Without shrinking radii, constructs all four pairs of complementary Apollonius circles directly using the radical center of the three circles, the four :person:`Monge <monge>` axes of similitude (§ 405), and their poles with respect to the three given circles (:person:`Gergonne <gergonne>` 1816)!
+
+Constructive & Symbolic Connections
+-----------------------------------
+
+One of the supreme constructive milestones linking ``geometor/pappus`` (Apollonius *Tangencies* reported in Pappus Book VII) and ``geometor/model``.
 
 ----
 
-See :ref:`Commentary on Chapter VIII <ch08-circles-commentary>`.
+See :ref:`Commentary on Chapter VIII: Circles <ch08-circles-commentary>` and :ref:`334-Folio Archival Scan Inventory <scan-inventory>`.

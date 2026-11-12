@@ -41,8 +41,8 @@ Scholarly Apparatus & Concordances
 
 * :ref:`Systematic Bibliography & Periodical Key (31 Entries) <bibliography>`
 * :ref:`Biographical Register of Geometers & Scholars (67 Persons) <persons>`
-* :ref:`Technical Glossary of Synthetic Geometry (56 Terms) <glossary>`
-* :ref:`334-Folio Archival Scan & Transcription Inventory (52 Verified) <scan-inventory>`
+* :ref:`Technical Glossary of Synthetic Geometry (58 Terms) <glossary>`
+* :ref:`334-Folio Archival Scan & Transcription Inventory (65 Verified) <scan-inventory>`
 
 .. toctree::
    :maxdepth: 1

@@ -1,65 +1,37 @@
 :layout: book
 :type: section
 :order: 5
-:title: C. The Apollonian Circles (incl. Isodynamic Points & Lemoine Axis)
+:title: Section C — The Apollonian Circles (incl. Isodynamic Points & Lemoine Axis)
 :folio: 0279
 :page: 260
+:folios: 0279–0286
+:pages: 260–267
+:excerpt: Studies the coaxal triad of Apollonian circles  of a triangle (§§ 597–624), their two common isodynamic points  W, W' = X(15), X(16), and their orthogonality to the circumcircle.
 
 .. _ch10-recent-geometry-of-the-triangle-c-the-apollonian-circles:
 
-C. The Apollonian Circles (incl. Isodynamic Points & Lemoine Axis)
-==================================================================
+Section C — The Apollonian Circles (incl. Isodynamic Points & Lemoine Axis)
+===========================================================================
 
-C. The Apollonian Circles (incl. Isodynamic Points & Lemoine Axis) in Chapter X covers Articles **§§ 597–624** across archival folios ``0279``–``0286`` (printed pages ``260``–``267``), standardized at 300 DPI in ``resources/college_geometry/10_recent_geometry_of_the_triangle/``.
+.. rubric:: Chapter X: Recent Geometry of the Triangle • Articles §§ 597–624 (Folios 0279–0286, pp. 260–267)
 
-.. collection::
-   :type: item
-   :sort: order
+.. picture:: hero.svg
+   :alt: Exact symbolic diagram of segment AB divided harmonically by C and D with Apollonian circle on diameter CD and orthogonal bisectors MC, MD
+   :caption: Harmonic Division (A, B; C, D) = −1 and Apollonian Circle Locus MA : MB = 2 : 1
 
-Folio Scan Allocation
----------------------
+Studies the coaxal triad of :term:`Apollonian circles <apollonian-circle>` of a triangle (**§§ 597–624**), their two common :term:`isodynamic points <isodynamic-points>` :math:`W, W' = X(15), X(16)`, and their orthogonality to the circumcircle.
 
-.. list-table::
-   :header-rows: 1
-   :widths: 16 16 38 30
+Principal Theorems, Constructions & Identities
+----------------------------------------------
 
-   * - Folio
-     - Page
-     - Articles
-     - Scan Status
-   * - ``0279``
-     - ``260``
-     - §§ 597–598
-     - 300 DPI gray
-   * - ``0280``
-     - ``261``
-     - §§ 599–600
-     - 300 DPI gray
-   * - ``0281``
-     - ``262``
-     - §§ 601–606
-     - 300 DPI gray
-   * - ``0282``
-     - ``263``
-     - §§ 607–613
-     - 300 DPI gray
-   * - ``0283``
-     - ``264``
-     - §§ 614–616
-     - 300 DPI gray
-   * - ``0284``
-     - ``265``
-     - §§ 617–621
-     - 300 DPI gray
-   * - ``0285``
-     - ``266``
-     - §§ 622–624
-     - 300 DPI gray
-   * - ``0286``
-     - ``267``
-     - §§ 625–628
-     - 300 DPI gray
+* **§§ 597–605 — Coaxal Triad Orthogonal to Circumcircle**: Each circle of locus :math:`MB : MC = c : b` passes through a vertex and cuts :math:`(O)` orthogonally; all three belong to a single coaxal pencil whose common radical axis is the Brocard axis :math:`OK` and whose conjugate line of centers is the Lemoine axis!
+* **§§ 606–624 — The Isodynamic Points W, W' (§ 606)**: The three Apollonian circles intersect in two real points :math:`W, W'` inverse with respect to :math:`(O)`, whose pedal triangles are **equilateral** (:person:`Neuberg <neuberg>`), and which invert :math:`\triangle ABC` into an equilateral triangle!
+
+Constructive & Symbolic Connections
+-----------------------------------
+
+Links ``geometor/etc`` (:math:`X(15), X(16)`, isogonal conjugates of the Fermat points :math:`X(13), X(14)`) with conformal inversion symmetry.
 
 ----
 
-See :ref:`Commentary on Chapter X <ch10-recent-geometry-of-the-triangle-commentary>`.
+See :ref:`Commentary on Chapter X: Recent Geometry of the Triangle <ch10-recent-geometry-of-the-triangle-commentary>` and :ref:`334-Folio Archival Scan Inventory <scan-inventory>`.

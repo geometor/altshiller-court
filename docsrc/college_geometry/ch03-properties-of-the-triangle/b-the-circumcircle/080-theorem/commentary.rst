@@ -1,0 +1,48 @@
+:layout: book
+:type: commentary
+:canonical_id: Ch.III.80.commentary
+:title: Commentary on § 80. Theorem
+:folio: 0081
+:page: 62
+:folios: 0081
+:pages: 62
+
+.. _ch03-art-080-commentary:
+
+Commentary on § 80. Theorem
+===========================
+
+Back to :ref:`§ 80. Theorem <ch03-art-080>`.
+
+Folio 0081 (Page 62) — Diplomatic & Mathematical Notes
+=====================================================
+
+Summary & Folio Continuity
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **Preceding Folio**: Folio 0080 (Page 61, §§ 76–78, Exercises 1–6)
+- **Current Folio** (``0081.rst``): Page ``62``, Chapter III [``03_properties_of_the_triangle``] — Status: ``ok``
+- **Following Folio**: Folio 0082 (Page 63, §§ 82–84, Fig. 46)
+
+Structural & Diplomatic Observations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **Overview**: Page ``62`` (running header ``62 / PROPERTIES OF THE TRIANGLE / [Ch. III, §§ 79, 80, 81``), presenting Theorems §§ 79–80, ``FIG. 45`` (``0081.g1.png``), and Corollary I (§ 81).
+- **Document Headings on Folio**: ``79. Theorem.``, ``80. Theorem.``, ``81. COROLLARY I.`` (note verbatim missing terminal period after ``TU'`` in printed enunciation of § 81, supplied cleanly in punctuation).
+- **Line-Break Hyphenations Resolved**: ``perpendic-ular`` -> ``perpendicular`` (§ 79).
+
+Calibrated Diagrams on Folio
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- ``0081.g1.png`` (bbox ``[314, 952, 798, 540]``, white-point ``238``): Fig. 45. Internal and external angle bisectors AU, AU', circumdiameter LL', and circumcircle tangent AT (§§ 79–82).
+
+Mathematical & Constructive Commentary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Corollary I (§ 81) reveals why the circle on diameter :math:`UU'`—namely, the *A*-:term:`Apollonian circle <apollonian-circle>` of :math:`\triangle ABC` (§ 597), since :math:`U` and :math:`U'` divide :math:`BC` harmonically in the ratio :math:`c : b`—has its center at the intersection :math:`T` of the circumcircle tangent at :math:`A` with sideline :math:`BC`! Moreover, since :math:`TA` is tangent to the circumcircle at :math:`A` and is a radius of the Apollonian circle :math:`(T, TA)`, the Apollonian circle cuts the circumcircle :term:`orthogonally <orthogonal-circles>` (§ 601)!
+
+Scan Quality & Verification
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **Archival Scan**: ``03_properties_of_the_triangle/0081.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan; SVG overlap ``100.0%``)

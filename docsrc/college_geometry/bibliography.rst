@@ -134,7 +134,7 @@ Every ``:cite:`` reference in the Book Codex resolves to its canonical bibliogra
 
 * **Author / Editor**: :person:`Kimberling, Clark (b. 1942) <kimberling>`
 * **Locus / Key**: X(1)–X(n)
-* **Referenced At**: :ref:`f. 0072 (p. 53) <ch03-properties-of-the-triangle-a-preliminaries>`
+* **Referenced At**: :ref:`f. 0072 (p. 53) <ch03-art-054>`
 
 .. _cite-lemoine-1873:
 

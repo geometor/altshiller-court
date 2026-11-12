@@ -15,6 +15,10 @@ Chapter V: The Simson Line
 
 .. rubric:: Wallace-Simson Collinearity, Angle Properties, Orthocenter Bisection on the Nine-Point Circle
 
+.. picture:: hero.svg
+   :alt: Triangle ABC with circumcircle point P, orthogonal projections X, Y, Z collinear on the Wallace-Simson line, and midpoint M of PH
+   :caption: Wallace–Simson Line X–Y–Z of Circumcircle Point P Bisecting PH at M
+
 Pedal projections from the circumcircle onto the sidelines of a triangle (**§§ 282–305**, Folios ``0159``–``0169``, pp. ``140``–``150``): the Wallace–Simson collinearity criterion, bisection of the orthocenter segment on the nine-point circle, and angular intersection laws.
 
 .. collection::

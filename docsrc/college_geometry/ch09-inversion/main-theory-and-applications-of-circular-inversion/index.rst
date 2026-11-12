@@ -1,89 +1,38 @@
 :layout: book
 :type: section
 :order: 1
-:title: Main. Theory and Applications of Circular Inversion
+:title: Theory and Applications of Circular Inversion
 :folio: 0249
 :page: 230
+:folios: 0249–0262
+:pages: 230–243
+:excerpt: Develops conformal transformation by reciprocal radii—circular inversion  mathcal{I}(O, k) (§§ 518–546, Folios 0249–0262, pp. 230–243)—converting intractable circle-tangency configurations into elementary rectilinear geometry.
 
 .. _ch09-inversion-main-theory-and-applications-of-circular-inversion:
 
-Main. Theory and Applications of Circular Inversion
-===================================================
+Theory and Applications of Circular Inversion
+=============================================
 
-Main. Theory and Applications of Circular Inversion in Chapter IX covers Articles **§§ 518–546** across archival folios ``0249``–``0262`` (printed pages ``230``–``243``), standardized at 300 DPI in ``resources/college_geometry/09_inversion/``.
+.. rubric:: Chapter IX: Inversion • Articles §§ 518–546 (Folios 0249–0262, pp. 230–243)
 
-.. collection::
-   :type: item
-   :sort: order
+.. picture:: hero.svg
+   :alt: Circle of inversion centered at O mapping inner circle AB onto outer circle BA' with collinear inverse pair P, P'
+   :caption: Circular Inversion (O, k): Inverse Circles C₁ ↔ C₂ with Homologous Ray O–P–P'
 
-Folio Scan Allocation
----------------------
+Develops conformal transformation by reciprocal radii—:term:`circular inversion <inversion>` :math:`\mathcal{I}(O, k)` (**§§ 518–546**, Folios ``0249``–``0262``, pp. ``230``–``243``)—converting intractable circle-tangency configurations into elementary rectilinear geometry.
 
-.. list-table::
-   :header-rows: 1
-   :widths: 16 16 38 30
+Principal Theorems, Constructions & Identities
+----------------------------------------------
 
-   * - Folio
-     - Page
-     - Articles
-     - Scan Status
-   * - ``0249``
-     - ``230``
-     - §§ 518–519
-     - 300 DPI gray
-   * - ``0250``
-     - ``231``
-     - §§ 520–521
-     - 300 DPI gray
-   * - ``0251``
-     - ``232``
-     - §§ 522–523
-     - 300 DPI gray
-   * - ``0252``
-     - ``233``
-     - §§ 524–526
-     - 300 DPI gray
-   * - ``0253``
-     - ``234``
-     - §§ 527–528
-     - 300 DPI gray
-   * - ``0254``
-     - ``235``
-     - §§ 529–530
-     - 300 DPI gray
-   * - ``0255``
-     - ``236``
-     - §§ 531–533
-     - 300 DPI gray
-   * - ``0256``
-     - ``237``
-     - §§ 534–535
-     - 300 DPI gray
-   * - ``0257``
-     - ``238``
-     - § 536
-     - 300 DPI gray
-   * - ``0258``
-     - ``239``
-     - § 537
-     - 300 DPI gray
-   * - ``0259``
-     - ``240``
-     - §§ 538–541
-     - 300 DPI gray
-   * - ``0260``
-     - ``241``
-     - §§ 542–545
-     - 300 DPI gray
-   * - ``0261``
-     - ``242``
-     - § 546
-     - 300 DPI gray
-   * - ``0262``
-     - ``243``
-     - —
-     - 300 DPI gray
+* **§§ 518–531 — Images of Lines, Circles & Conformal Angle Preservation**: Lines and circles through :math:`O` invert into lines; lines and circles not through :math:`O` invert into circles; angles between intersecting curves are preserved in magnitude; metric law :math:`A'B' = |k| \cdot AB / (OA \cdot OB)`.
+* **§§ 532–534 — Peaucellier's Inversor Linkage (§ 533)**: Proves that :person:`Peaucellier's <peaucellier>` 1864 seven-bar rhombic cell realizes exact mathematical inversion and converts circular arc motion into a rigorous straight line without any reference straightedge!
+* **§§ 535–546 — Ptolemy, Steiner Porism & Feuerbach by Inversion (§ 540)**: Proves Ptolemy's theorem and inequality by inverting from a vertex, resolves Steiner's porismatic ring of tangent circles via concentric inversion, and proves :term:`Feuerbach's theorem <feuerbach-theorem>` in a single paragraph by inverting from the midpoint of the interior common tangent to :math:`(I)` and :math:`(I_a)`!
+
+Constructive & Symbolic Connections
+-----------------------------------
+
+Modeled symbolically in the ``circular_inversion`` hero diagram (:math:`OP \cdot OP' = 36` over :math:`\mathbb{Q}`) and reproducible algebraically in ``geometor/model``.
 
 ----
 
-See :ref:`Commentary on Chapter IX <ch09-inversion-commentary>`.
+See :ref:`Commentary on Chapter IX: Inversion <ch09-inversion-commentary>` and :ref:`334-Folio Archival Scan Inventory <scan-inventory>`.

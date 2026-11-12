@@ -1,0 +1,50 @@
+:folio: 0084
+:page: 65
+:book: Chapter III
+:section: 03_properties_of_the_triangle
+:title: Chapter III: Medians — p. 65 (§§ 86–88, Fig. 47)
+:language: en
+:status: ok
+
+Indeed, multiplying both sides of the above equality (§ 85) by :math:`a` and observing that :math:`ah_a = 2S`, where :math:`S` is the area of the triangle, we have:
+
+.. math::
+
+   abc = 4RS.
+
+EXERCISES
+~~~~~~~~~
+
+Construct a triangle, given:
+
+1. :math:`a, A, bc`.
+2. :math:`h_a, t_a, bc`.
+3. Through a fixed point :math:`A` of a given circle two variable chords :math:`AB, AC` are drawn so that their product is constant. Show that the chord :math:`BC` is tangent to a fixed circle.
+4. Show that the product of the distances of a point of the :term:`circumcircle <circumcircle>` of a triangle from the sides of the triangle is equal to the product of the distances of the same point from the sides of the tangential triangle (i.e., the triangle formed by the tangents to the circumcircle at the vertices) of the given triangle.
+
+C. MEDIANS
+----------
+
+.. enunciation::
+
+   **87. Theorem.** *\(a) The line joining the midpoints of two sides of a triangle is parallel to the third side and is equal to one-half its length.*
+
+   *\(b) The line drawn parallel to a side of a triangle through the midpoint of another side passes through the midpoint of the third side.*
+
+.. enunciation::
+
+   **88. Theorem.** *The three medians of a* :g:`*triangle* <0084.g1:< A B C >>` *meet in a* :g:`*point* <0084.g1:G>`\ *, and each median is trisected by this point.*
+
+.. picture:: 0084.g1.svg
+   :alt: Fig. 47 — Triangle ABC with medians AA', BB', CC' concurring at centroid G in ratio 2 : 1, midline C'B', and auxiliary points M, N, K
+   :caption: FIG. 47
+
+Let :g:`G <0084.g1:G>` be the point of intersection of the two medians :g:`BB' <0084.g1:/ B B' />`, :g:`CC' <0084.g1:/ C C' />` (Fig. 47).
+
+From the two similar triangles :g:`GBC <0084.g1:< G B C >>`, :g:`GB'C' <0084.g1:< G B' C' >>` we have:
+
+.. math::
+
+   BG : B'G = CG : C'G = BC : B'C' = 2 : 1.
+
+Thus any two medians trisect each other, which proves the proposition.

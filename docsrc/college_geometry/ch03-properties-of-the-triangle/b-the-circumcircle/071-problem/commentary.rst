@@ -1,0 +1,49 @@
+:layout: book
+:type: commentary
+:canonical_id: Ch.III.71.commentary
+:title: Commentary on § 71. Problem
+:folio: 0077
+:page: 58
+:folios: 0077
+:pages: 58
+
+.. _ch03-art-071-commentary:
+
+Commentary on § 71. Problem
+===========================
+
+Back to :ref:`§ 71. Problem <ch03-art-071>`.
+
+Folio 0077 (Page 58) — Diplomatic & Mathematical Notes
+=====================================================
+
+Summary & Folio Continuity
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **Preceding Folio**: Folio 0076 (Page 57, §§ 68–70, Fig. 41)
+- **Current Folio** (``0077.rst``): Page ``58``, Chapter III [``03_properties_of_the_triangle``] — Status: ``ok``
+- **Following Folio**: Folio 0078 (Page 59, Fig. 43, Exercises 1–15, and § 73)
+
+Structural & Diplomatic Observations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **Overview**: Page ``58`` (running header ``58 / PROPERTIES OF THE TRIANGLE / [Ch. III, §§ 70, 71, 72``), completing Problem § 70, presenting Problem § 71 with ``FIG. 42`` (``0077.g1.png``), and opening Problem § 72.
+- **Document Headings on Folio**: ``71. Problem.``, ``72. Problem.``
+- **Line-Break Hyphenations Resolved**: ``trape-zoid`` -> ``trapezoid`` (§ 71).
+- **Page-Turn Continuation**: Ends mid-sentence (``"...determined by R"``), continuing onto Folio 0078 (``"and a (§ 69)."``).
+
+Calibrated Diagrams on Folio
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- ``0077.g1.png`` (bbox ``[458, 644, 506, 454]``, white-point ``238``): Fig. 42. Construction of triangle ABC given R, b + c, and B − C via isosceles trapezoid ABCK (§ 71).
+
+Mathematical & Constructive Commentary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Problem § 71 illustrates the power of inscribing an auxiliary isosceles trapezoid :math:`ABCK` (:math:`AK \parallel BC`) inside the circumcircle: reflecting :math:`A` across the perpendicular bisector of :math:`BC` to :math:`K` converts the :term:`indirect elements <indirect-elements>` :math:`b + c` and :math:`B - C` directly into :math:`AB + BK` and :math:`\angle ABK` in :math:`\triangle ABK`, reducing the problem immediately to Chapter I, § 17!
+
+Scan Quality & Verification
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **Archival Scan**: ``03_properties_of_the_triangle/0077.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan; SVG overlap ``100.0%``)

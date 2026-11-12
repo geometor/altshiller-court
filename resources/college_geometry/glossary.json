@@ -108,6 +108,23 @@
       }
     ]
   },
+  "circumcenter": {
+    "slug": "circumcenter",
+    "headword": "Circumcenter",
+    "language": "Triangle Geometry (§§ 68–86, § 202)",
+    "translation": "O = X(3) — Center of the circumscribed circle",
+    "definition": "The unique point O = X(3) equidistant from the three vertices of a triangle ABC, constructed as the concurrency point of the three perpendicular bisectors (mediators) of sides BC, CA, AB (Euclid IV.5; §§ 68–73). Lies on the Euler line O–G–N–H with HG = 2 GO (§ 202) and is the isogonal conjugate of the orthocenter H = X(4).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0076",
+        "page": "57",
+        "book": "Chapter III",
+        "section": "03_properties_of_the_triangle",
+        "display": "circumcenter"
+      }
+    ]
+  },
   "brocard-circle": {
     "slug": "brocard-circle",
     "headword": "Brocard circle",
@@ -841,6 +858,31 @@
         "book": "Chapter VIII",
         "section": "resources",
         "display": "Problem of Apollonius"
+      }
+    ]
+  },
+  "problem-of-pappus": {
+    "slug": "problem-of-pappus",
+    "headword": "Problem of Pappus",
+    "language": "Triangle & Circle Constructions (§ 84)",
+    "translation": "Secant through a bisector point intercepting a given length",
+    "definition": "Symmetric neusis (insertion) problem reduced to straightedge and compass (§ 84): through a given point U on the bisector of a given angle ∠BAC, to draw a secant BC on which the sides of the angle intercept a segment of given length a, solved via the capable arc (§ 11, Locus 7) and secant insertion from the arc midpoint (§ 83).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0082",
+        "page": "63",
+        "book": "Chapter III",
+        "section": "03_properties_of_the_triangle",
+        "display": "The Problem of Pappus"
+      },
+      {
+        "volume": "college_geometry",
+        "folio": "0083",
+        "page": "64",
+        "book": "Chapter III",
+        "section": "03_properties_of_the_triangle",
+        "display": "Problem of Pappus construction"
       }
     ]
   },

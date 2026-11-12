@@ -1,65 +1,37 @@
 :layout: book
 :type: section
 :order: 6
-:title: F. Radical Axis of Two Circles
+:title: Section F — Radical Axis of Two Circles
 :folio: 0213
 :page: 194
+:folios: 0213–0220
+:pages: 194–201
+:excerpt: Constructs and characterizes the radical axis  of two non-concentric circles (§§ 421–439, Gaultier 1813, Steiner ): the straight-line locus of points having equal powers  with respect to both circles.
 
 .. _ch08-circles-f-radical-axis-of-two-circles:
 
-F. Radical Axis of Two Circles
-==============================
+Section F — Radical Axis of Two Circles
+=======================================
 
-F. Radical Axis of Two Circles in Chapter VIII covers Articles **§§ 421–439** across archival folios ``0213``–``0220`` (printed pages ``194``–``201``), standardized at 300 DPI in ``resources/college_geometry/08_circles/``.
+.. rubric:: Chapter VIII: Circles • Articles §§ 421–439 (Folios 0213–0220, pp. 194–201)
 
-.. collection::
-   :type: item
-   :sort: order
+.. picture:: hero.svg
+   :alt: Reference circle O and orthogonal circle P intersecting perpendicularly at T1, T2 with polar chord T1 T2 through inverse point P'
+   :caption: Inverse Points P, P', Polar Line T₁T₂, and Orthogonal Circle (P, PT₁)
 
-Folio Scan Allocation
----------------------
+Constructs and characterizes the :term:`radical axis <radical-axis>` of two non-concentric circles (**§§ 421–439**, Gaultier 1813, :person:`Steiner <steiner>`): the straight-line locus of points having equal :term:`powers <power-of-a-point>` with respect to both circles.
 
-.. list-table::
-   :header-rows: 1
-   :widths: 16 16 38 30
+Principal Theorems, Constructions & Identities
+----------------------------------------------
 
-   * - Folio
-     - Page
-     - Articles
-     - Scan Status
-   * - ``0213``
-     - ``194``
-     - §§ 421–423
-     - 300 DPI gray
-   * - ``0214``
-     - ``195``
-     - §§ 424–428
-     - 300 DPI gray
-   * - ``0215``
-     - ``196``
-     - §§ 429–430
-     - 300 DPI gray
-   * - ``0216``
-     - ``197``
-     - §§ 431–432
-     - 300 DPI gray
-   * - ``0217``
-     - ``198``
-     - §§ 433–435
-     - 300 DPI gray
-   * - ``0218``
-     - ``199``
-     - §§ 436–438
-     - 300 DPI gray
-   * - ``0219``
-     - ``200``
-     - § 439
-     - 300 DPI gray
-   * - ``0220``
-     - ``201``
-     - §§ 440–441
-     - 300 DPI gray
+* **§§ 421–428 — Linear Locus & Common Secant/Tangent**: Generalizes Chapter I :ref:`Locus 12 <ch01-locus-12>` (:math:`PO^2 - PO'^2 = R^2 - R'^2`): perpendicular to the line of centers :math:`OO'`, coinciding with the common chord when circles intersect, common internal tangent when tangent, and bisecting all four common tangents.
+* **§§ 429–439 — Construction for Non-Intersecting Circles**: Introduces an auxiliary circle cutting both given circles, intersecting their two common chords at a point on the required radical axis, and proves that orthogonal circles have centers on the radical axis.
+
+Constructive & Symbolic Connections
+-----------------------------------
+
+Subtracting two circle equations :math:`(x - x_i)^2 + (y - y_i)^2 - R_i^2 = 0` in ``geometor/model`` cancels :math:`x^2 + y^2`, producing the exact linear radical axis over :math:`\mathbb{Q}`.
 
 ----
 
-See :ref:`Commentary on Chapter VIII <ch08-circles-commentary>`.
+See :ref:`Commentary on Chapter VIII: Circles <ch08-circles-commentary>` and :ref:`334-Folio Archival Scan Inventory <scan-inventory>`.

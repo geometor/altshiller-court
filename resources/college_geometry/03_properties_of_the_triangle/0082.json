@@ -1,0 +1,205 @@
+{
+  "folio": "0082",
+  "page": "63",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0082.g1.png",
+      "bbox": [
+        448,
+        646,
+        526,
+        546
+      ],
+      "caption": "Fig. 46. Secant EUA through arc midpoint E with intercepted segment AU = t, and the Problem of Pappus (§§ 83–84).",
+      "white_point": 238,
+      "svg_file": "0082.g1.svg",
+      "article": "83",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "F": {
+            "x": 263.83,
+            "y": 54.55,
+            "label": "F",
+            "label_x": 257,
+            "label_y": 24
+          },
+          "A": {
+            "x": 79.79,
+            "y": 148.69,
+            "label": "A",
+            "label_x": 58,
+            "label_y": 135
+          },
+          "B": {
+            "x": 49.4,
+            "y": 343.87,
+            "label": "B",
+            "label_x": 31,
+            "label_y": 355
+          },
+          "U": {
+            "x": 178.85,
+            "y": 344.32,
+            "label": "U",
+            "label_x": 163,
+            "label_y": 368
+          },
+          "M": {
+            "x": 261.78,
+            "y": 344.62,
+            "label": "M",
+            "label_x": 287,
+            "label_y": 368
+          },
+          "C": {
+            "x": 473.08,
+            "y": 345.36,
+            "label": "C",
+            "label_x": 496,
+            "label_y": 355
+          },
+          "E": {
+            "x": 260.69,
+            "y": 499.32,
+            "label": "E",
+            "label_x": 256,
+            "label_y": 524
+          }
+        },
+        "elements": [
+          {
+            "id": "circ_BEC",
+            "type": "circle",
+            "cx": 261.48,
+            "cy": 276.93,
+            "r": 222.39,
+            "ref": "( A B C )",
+            "aliases": [
+              "( B E C )"
+            ]
+          },
+          {
+            "id": "seg_BC",
+            "type": "segment",
+            "p1": "B",
+            "p2": "C",
+            "ref": "/ B C /",
+            "aliases": [
+              "[ B C ]"
+            ]
+          },
+          {
+            "id": "seg_EF",
+            "type": "segment",
+            "p1": "E",
+            "p2": "F",
+            "ref": "/ E F /",
+            "aliases": [
+              "[ E M F ]"
+            ]
+          },
+          {
+            "id": "seg_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "ref": "/ A B /"
+          },
+          {
+            "id": "seg_AC",
+            "type": "segment",
+            "p1": "A",
+            "p2": "C",
+            "ref": "/ A C /"
+          },
+          {
+            "id": "seg_AF",
+            "type": "segment",
+            "p1": "A",
+            "p2": "F",
+            "ref": "/ A F /"
+          },
+          {
+            "id": "seg_EA",
+            "type": "segment",
+            "p1": "E",
+            "p2": "A",
+            "ref": "/ E A /",
+            "aliases": [
+              "[ E U A ]"
+            ]
+          },
+          {
+            "id": "ov_AU",
+            "type": "segment",
+            "p1": "A",
+            "p2": "U",
+            "style": "overlay",
+            "ref": "/ A U /"
+          },
+          {
+            "id": "ov_EU",
+            "type": "segment",
+            "p1": "E",
+            "p2": "U",
+            "style": "overlay",
+            "ref": "/ E U /"
+          },
+          {
+            "id": "ov_EM",
+            "type": "segment",
+            "p1": "E",
+            "p2": "M",
+            "style": "overlay",
+            "ref": "/ E M /"
+          },
+          {
+            "id": "tri_ABC",
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ],
+            "style": "overlay",
+            "ref": "< A B C >"
+          },
+          {
+            "id": "tri_EUM",
+            "type": "polygon",
+            "points": [
+              "E",
+              "U",
+              "M"
+            ],
+            "style": "overlay",
+            "ref": "< E U M >"
+          },
+          {
+            "id": "tri_EFA",
+            "type": "polygon",
+            "points": [
+              "E",
+              "F",
+              "A"
+            ],
+            "style": "overlay",
+            "ref": "< E F A >"
+          },
+          {
+            "id": "ang_BAC",
+            "type": "angle",
+            "vertex": "A",
+            "p1": "B",
+            "p2": "C",
+            "radius": 36,
+            "ref": "< B A C )"
+          }
+        ]
+      }
+    }
+  ]
+}

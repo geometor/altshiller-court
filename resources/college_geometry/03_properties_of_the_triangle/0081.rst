@@ -1,0 +1,37 @@
+:folio: 0081
+:page: 62
+:book: Chapter III
+:section: 03_properties_of_the_triangle
+:title: Chapter III: The Circumcircle — p. 62 (§§ 79–81, Fig. 45)
+:language: en
+:status: ok
+
+.. enunciation::
+
+   **79. Theorem.** *The* :g:`*internal* <0081.g1:[ A U ]>` *and* :g:`*external* <0081.g1:[ A U' ]>` *bisectors of an angle of a* :g:`*triangle* <0081.g1:< A B C >>` *pass through the ends of the* :g:`*circumdiameter* <0081.g1:/ L L' />` *which is perpendicular to the* :g:`*side* <0081.g1:/ B C />` *opposite the* :g:`*vertex* <0081.g1:A>` *considered.*
+
+The internal bisector :g:`AU <0081.g1:[ A U ]>` of the angle :g:`A <0081.g1:A>` (Fig. 45) passes through the midpoint :g:`L <0081.g1:L>` of the arc :math:`BLC` of the :term:`circumcircle <circumcircle>` which does not contain the point :g:`A <0081.g1:A>`. The circumdiameter :g:`LL' <0081.g1:/ L L' />` passing through :g:`L <0081.g1:L>` is perpendicular to :g:`BC <0081.g1:[ B C ]>`, and the line :g:`AL' <0081.g1:[ A L' ]>` joining :g:`A <0081.g1:A>` to the other end :g:`L' <0081.g1:Lprime>` of this diameter is perpendicular to :g:`AL <0081.g1:[ A L ]>`, for :g:`L'AL <0081.g1:< L' A L )>` is a right angle; hence :g:`AL' <0081.g1:[ A L' ]>` is the external bisector of the angle :g:`A <0081.g1:A>`, which proves the proposition.
+
+.. enunciation::
+
+   **80. Theorem.** *The angle which the* :g:`*external bisector* <0081.g1:[ A U' ]>` *makes with the* :g:`*opposite side* <0081.g1:[ B C ]>` *is equal to half the difference of the two angles adjacent to this side.*
+
+The angle which the external bisector :g:`AU' <0081.g1:[ A U' ]>` (Fig. 45) makes with the base :g:`BC <0081.g1:[ B C ]>` has its sides respectively perpendicular to the internal bisector :g:`AU <0081.g1:/ A U />` and the altitude :g:`AD <0081.g1:/ A D />`; hence the proposition (§ 73).
+
+.. picture:: 0081.g1.svg
+   :alt: Fig. 45 — Internal and external bisectors AU, AU', circumdiameter LL' perpendicular to BC, and tangent AT
+   :caption: FIG. 45
+
+.. enunciation::
+
+   **81. Corollary I.** *If the* :g:`*tangent* <0081.g1:/ T A />` *at* :g:`A <0081.g1:A>` *to the* :g:`*circumcircle* <0081.g1:( A B C )>` *meets* :g:`BC <0081.g1:[ B C ]>` *in* :g:`T <0081.g1:T>`\ *, we have* :eq:`TA = TU <0081.g1:/ T A / = 0081.g1:/ T U />` :math:`=` :g:`TU' <0081.g1:/ T U' />`\ *.*
+
+Indeed, we have (Fig. 45):
+
+.. math::
+
+   \angle TAU = TAB + BAU, \quad \angle TUA = UCA + UAC.
+
+Now angle :math:`TAB = UCA`, and angle :math:`BAU = UAC`; hence the triangle :g:`TAU <0081.g1:< T A U >>` is isosceles, and :eq:`TA = TU <0081.g1:/ T A / = 0081.g1:/ T U />`.
+
+The circle :math:`(T, TA)` will pass through :g:`U <0081.g1:U>`, for :eq:`TA = TU <0081.g1:/ T A / = 0081.g1:/ T U />`, and since :g:`UAU' <0081.g1:< U A U' )>` is a right angle, the circle will also pass through :g:`U' <0081.g1:Uprime>`; hence :eq:`TA = TU' <0081.g1:/ T A / = 0081.g1:/ T U' />`.

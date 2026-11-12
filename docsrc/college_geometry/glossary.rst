@@ -6,7 +6,7 @@
 Technical Glossary of Modern Synthetic Geometry
 ===============================================
 
-.. rubric:: 56 Constructive Methods, Loci, Data, Triangle Centers, Circles, and Projective/Conformal Transformations
+.. rubric:: 58 Constructive Methods, Loci, Data, Triangle Centers, Circles, and Projective/Conformal Transformations
 
 .. _term-analysis-step:
 
@@ -48,7 +48,7 @@ anticomplementary triangle
 
 * **Domain & Locus**: Triangle Geometry (§ 99)
 * **Symbolic / Center Identity**: ``Triangle through A, B, C parallel to opposite sides``
-* **Edition Loci**: :ref:`f. 0087 (p. 68) <ch03-properties-of-the-triangle-c-medians>`
+* **Edition Loci**: :ref:`f. 0087 (p. 68) <ch03-properties-of-the-triangle>`
 
 Triangle formed by the lines through vertices A, B, C parallel to BC, CA, AB respectively; homothetic to ABC from the centroid G = X(2) with ratio -2.
 
@@ -114,7 +114,7 @@ centroid (center of gravity)
 
 * **Domain & Locus**: Triangle Geometry (§ 1, § 89)
 * **Symbolic / Center Identity**: ``G = X(2)``
-* **Edition Loci**: :ref:`f. 0085 (p. 66) <ch03-properties-of-the-triangle-c-medians>`
+* **Edition Loci**: :ref:`f. 0085 (p. 66) <ch03-properties-of-the-triangle>`
 
 Point of concurrency of the three medians AA', BB', CC' of a triangle, trisecting each median in the ratio AG : GA' = 2 : 1 (Kimberling center X(2)).
 
@@ -139,6 +139,17 @@ circular inversion
 * **Edition Loci**: :ref:`f. 0249 (p. 230) <ch09-inversion-main-theory-and-applications-of-circular-inversion>`
 
 Involutory conformal point transformation mapping P ≠ O to P' on ray OP (or opposite ray when k < 0) with OP · OP' = k; maps lines and circles not through O to circles, and circles through O to straight lines.
+
+.. _term-circumcenter:
+
+Circumcenter
+------------
+
+* **Domain & Locus**: Triangle Geometry (§§ 68–86, § 202)
+* **Symbolic / Center Identity**: ``O = X(3) — Center of the circumscribed circle``
+* **Edition Loci**: :ref:`f. 0076 (p. 57) <ch03-art-067-exercises>`
+
+The unique point O = X(3) equidistant from the three vertices of a triangle ABC, constructed as the concurrency point of the three perpendicular bisectors (mediators) of sides BC, CA, AB (Euclid IV.5; §§ 68–73). Lies on the Euler line O–G–N–H with HG = 2 GO (§ 202) and is the isogonal conjugate of the orthocenter H = X(4).
 
 .. _term-circumcircle:
 
@@ -169,7 +180,7 @@ complementary (medial) triangle
 
 * **Domain & Locus**: Triangle Geometry (§ 96)
 * **Symbolic / Center Identity**: ``Medial triangle A'B'C'``
-* **Edition Loci**: :ref:`f. 0087 (p. 68) <ch03-properties-of-the-triangle-c-medians>`
+* **Edition Loci**: :ref:`f. 0087 (p. 68) <ch03-properties-of-the-triangle>`
 
 Triangle formed by the midpoints A', B', C' of the sides BC, CA, AB of reference triangle ABC; homothetic to ABC from the centroid G = X(2) with ratio -1/2.
 
@@ -524,6 +535,17 @@ Problem of Apollonius
 * **Edition Loci**: :ref:`f. 0241 (p. 222) <ch08-circles-h-three-circles>`
 
 Celebrated problem of constructing a circle tangent to three given elements (points, lines, or circles—ten cases I–X), culminating in Gergonne's simultaneous construction of complementary pairs of up to eight tangent circles (§ 517).
+
+.. _term-problem-of-pappus:
+
+Problem of Pappus
+-----------------
+
+* **Domain & Locus**: Triangle & Circle Constructions (§ 84)
+* **Symbolic / Center Identity**: ``Secant through a bisector point intercepting a given length``
+* **Edition Loci**: :ref:`f. 0082 (p. 63) <ch03-art-082>` · :ref:`f. 0083 (p. 64) <ch03-art-084>`
+
+Symmetric neusis (insertion) problem reduced to straightedge and compass (§ 84): through a given point U on the bisector of a given angle ∠BAC, to draw a secant BC on which the sides of the angle intercept a segment of given length a, solved via the capable arc (§ 11, Locus 7) and secant insertion from the arc midpoint (§ 83).
 
 .. _term-proof-step:
 

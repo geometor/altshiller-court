@@ -1,0 +1,312 @@
+{
+  "folio": "0081",
+  "page": "62",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0081.g1.png",
+      "bbox": [
+        314,
+        952,
+        798,
+        540
+      ],
+      "caption": "Fig. 45. Internal and external angle bisectors AU, AU', circumdiameter LL', and circumcircle tangent AT (§§ 79–82).",
+      "white_point": 238,
+      "svg_file": "0081.g1.svg",
+      "article": "79",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "U'": {
+            "x": 44.33,
+            "y": 329.21,
+            "label": "U'",
+            "label_x": 31,
+            "label_y": 353
+          },
+          "T": {
+            "x": 236.64,
+            "y": 327.69,
+            "label": "T",
+            "label_x": 231,
+            "label_y": 349
+          },
+          "B": {
+            "x": 315.08,
+            "y": 327.06,
+            "label": "B",
+            "label_x": 298,
+            "label_y": 351
+          },
+          "D": {
+            "x": 344.26,
+            "y": 326.83,
+            "label": "D",
+            "label_x": 347,
+            "label_y": 350
+          },
+          "U": {
+            "x": 435.71,
+            "y": 326.11,
+            "label": "U",
+            "label_x": 453,
+            "label_y": 302
+          },
+          "A'": {
+            "x": 532.24,
+            "y": 325.34,
+            "label": "A'",
+            "label_x": 558,
+            "label_y": 305
+          },
+          "C": {
+            "x": 747.59,
+            "y": 323.63,
+            "label": "C",
+            "label_x": 769,
+            "label_y": 330
+          },
+          "A": {
+            "x": 342.05,
+            "y": 158.76,
+            "label": "A",
+            "label_x": 325,
+            "label_y": 140
+          },
+          "L'": {
+            "x": 526.03,
+            "y": 53.41,
+            "label": "L'",
+            "label_x": 520,
+            "label_y": 30
+          },
+          "L": {
+            "x": 533.47,
+            "y": 497.29,
+            "label": "L",
+            "label_x": 532,
+            "label_y": 525
+          },
+          "E": {
+            "x": 406.35,
+            "y": 273.94,
+            "label": "E",
+            "label_x": 427,
+            "label_y": 259
+          },
+          "F": {
+            "x": 511.34,
+            "y": 460.5,
+            "label": "F",
+            "label_x": 486,
+            "label_y": 467
+          }
+        },
+        "elements": [
+          {
+            "id": "circ_ABC",
+            "type": "circle",
+            "cx": 530.94,
+            "cy": 275.33,
+            "r": 221.97,
+            "ref": "( A B C )"
+          },
+          {
+            "id": "line_BC",
+            "type": "line",
+            "p1": "U'",
+            "p2": "C",
+            "ref": "[ B C ]",
+            "aliases": [
+              "/ U' C /"
+            ]
+          },
+          {
+            "id": "line_UprimeLprime",
+            "type": "line",
+            "p1": "U'",
+            "p2": "L'",
+            "ref": "[ A U' ]",
+            "aliases": [
+              "[ A L' ]",
+              "/ A U' /",
+              "/ A L' /"
+            ]
+          },
+          {
+            "id": "seg_AT",
+            "type": "segment",
+            "p1": "A",
+            "p2": "T",
+            "ref": "/ T A /",
+            "aliases": [
+              "[ A T ]"
+            ]
+          },
+          {
+            "id": "seg_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "ref": "/ A B /"
+          },
+          {
+            "id": "seg_AD",
+            "type": "segment",
+            "p1": "A",
+            "p2": "D",
+            "ref": "/ A D /"
+          },
+          {
+            "id": "seg_AL",
+            "type": "segment",
+            "p1": "A",
+            "p2": "L",
+            "ref": "[ A U ]",
+            "aliases": [
+              "[ A L ]",
+              "/ A L /"
+            ]
+          },
+          {
+            "id": "seg_AC",
+            "type": "segment",
+            "p1": "A",
+            "p2": "C",
+            "ref": "/ A C /"
+          },
+          {
+            "id": "seg_LLprime",
+            "type": "segment",
+            "p1": "L'",
+            "p2": "L",
+            "style": "dashed",
+            "ref": "/ L L' /",
+            "aliases": [
+              "[ L L' ]"
+            ]
+          },
+          {
+            "id": "seg_BE",
+            "type": "segment",
+            "p1": "B",
+            "p2": "E",
+            "style": "dashed",
+            "ref": "/ B E /"
+          },
+          {
+            "id": "seg_CF",
+            "type": "segment",
+            "p1": "C",
+            "p2": "F",
+            "style": "dashed",
+            "ref": "/ C F /"
+          },
+          {
+            "id": "ov_AU",
+            "type": "segment",
+            "p1": "A",
+            "p2": "U",
+            "style": "overlay",
+            "ref": "/ A U /"
+          },
+          {
+            "id": "ov_BC",
+            "type": "segment",
+            "p1": "B",
+            "p2": "C",
+            "style": "overlay",
+            "ref": "/ B C /"
+          },
+          {
+            "id": "ov_TU",
+            "type": "segment",
+            "p1": "T",
+            "p2": "U",
+            "style": "overlay",
+            "ref": "/ T U /"
+          },
+          {
+            "id": "ov_TUp",
+            "type": "segment",
+            "p1": "T",
+            "p2": "U'",
+            "style": "overlay",
+            "ref": "/ T U' /"
+          },
+          {
+            "id": "tri_ABC",
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ],
+            "style": "overlay",
+            "ref": "< A B C >"
+          },
+          {
+            "id": "tri_TAU",
+            "type": "polygon",
+            "points": [
+              "T",
+              "A",
+              "U"
+            ],
+            "style": "overlay",
+            "ref": "< T A U >"
+          },
+          {
+            "id": "tri_UAUp",
+            "type": "polygon",
+            "points": [
+              "U",
+              "A",
+              "U'"
+            ],
+            "style": "overlay",
+            "ref": "< U A U' >"
+          },
+          {
+            "id": "ang_LprimeAL",
+            "type": "angle",
+            "vertex": "A",
+            "p1": "L'",
+            "p2": "L",
+            "radius": 34,
+            "ref": "< L' A L )"
+          },
+          {
+            "id": "ang_TAU",
+            "type": "angle",
+            "vertex": "A",
+            "p1": "T",
+            "p2": "U",
+            "radius": 38,
+            "ref": "< T A U )"
+          },
+          {
+            "id": "ang_TUA",
+            "type": "angle",
+            "vertex": "U",
+            "p1": "T",
+            "p2": "A",
+            "radius": 32,
+            "ref": "< T U A )"
+          },
+          {
+            "id": "ang_UAUp",
+            "type": "angle",
+            "vertex": "A",
+            "p1": "U",
+            "p2": "U'",
+            "radius": 34,
+            "ref": "< U A U' )"
+          }
+        ]
+      }
+    }
+  ]
+}

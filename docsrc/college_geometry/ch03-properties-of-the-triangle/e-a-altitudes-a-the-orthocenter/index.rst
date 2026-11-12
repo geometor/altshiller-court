@@ -1,49 +1,38 @@
 :layout: book
 :type: section
 :order: 8
-:title: E.a. Altitudes — a. The Orthocenter
+:title: Section E.a — Altitudes: The Orthocenter
 :folio: 0113
 :page: 94
+:folios: 0113–0116
+:pages: 94–97
+:excerpt: Proves the concurrency of the three altitudes of triangle ABC at the orthocenter  H = X(4) (§§ 175–182) by embedding triangle ABC as the complementary triangle of its anticomplementary triangle .
 
 .. _ch03-properties-of-the-triangle-e-a-altitudes-a-the-orthocenter:
 
-E.a. Altitudes — a. The Orthocenter
-===================================
+Section E.a — Altitudes: The Orthocenter
+========================================
 
-E.a. Altitudes — a. The Orthocenter in Chapter III covers Articles **§§ 175–182** across archival folios ``0113``–``0116`` (printed pages ``94``–``97``), standardized at 300 DPI in ``resources/college_geometry/03_properties_of_the_triangle/``.
+.. rubric:: Chapter III: Properties of the Triangle • Articles §§ 175–182 (Folios 0113–0116, pp. 94–97)
 
-.. collection::
-   :type: item
-   :sort: order
+.. picture:: hero.svg
+   :alt: Triangle ABC with altitudes AD, BE, CF meeting at orthocenter H, reflection H' on circumcircle, and Euler line OGH
+   :caption: Altitudes, Orthocenter H = X(4), Circumcircle Reflection H', and Euler Line O–G–H
 
-Folio Scan Allocation
----------------------
+Proves the concurrency of the three altitudes of :math:`\triangle ABC` at the :term:`orthocenter <orthocenter>` :math:`H = X(4)` (**§§ 175–182**) by embedding :math:`\triangle ABC` as the complementary triangle of its :term:`anticomplementary triangle <anticomplementary-triangle>`.
 
-.. list-table::
-   :header-rows: 1
-   :widths: 16 16 38 30
+Principal Theorems, Constructions & Identities
+----------------------------------------------
 
-   * - Folio
-     - Page
-     - Articles
-     - Scan Status
-   * - ``0113``
-     - ``94``
-     - §§ 175–177
-     - 300 DPI gray
-   * - ``0114``
-     - ``95``
-     - §§ 178–181
-     - 300 DPI gray
-   * - ``0115``
-     - ``96``
-     - § 182
-     - 300 DPI gray
-   * - ``0116``
-     - ``97``
-     - §§ 183–186
-     - 300 DPI gray
+* **§ 175 — Concurrency via Anticomplementary Mediators**: Parallels through :math:`A, B, C` to the opposite sides form a triangle whose perpendicular bisectors (:term:`mediators <mediator>`) are precisely the altitudes of :math:`\triangle ABC`, proving concurrency in one synthetic step.
+* **§§ 176–179 — Circumcircle Reflections of the Orthocenter**: The reflection of :math:`H` across any side :math:`BC`—and across the midpoint :math:`A'` of :math:`BC`—lies directly on the :term:`circumcircle <circumcircle>` :math:`(O)`!
+* **§§ 180–182 — Equal-Chord & Power Identities**: Establishes :math:`HA \cdot HD = HB \cdot HE = HC \cdot HF` and shows that the circumcircles of :math:`\triangle HBC, \triangle HCA, \triangle HAB` all have radius :math:`R` equal to that of :math:`(ABC)`.
+
+Constructive & Symbolic Connections
+-----------------------------------
+
+In ``geometor/model``, :math:`H = X(4)` is constructed over :math:`\mathbb{Q}(A, B, C)` by pure linear intersection of two perpendiculars without any square-root extension.
 
 ----
 
-See :ref:`Commentary on Chapter III <ch03-properties-of-the-triangle-commentary>`.
+See :ref:`Commentary on Chapter III: Properties of the Triangle <ch03-properties-of-the-triangle-commentary>` and :ref:`334-Folio Archival Scan Inventory <scan-inventory>`.

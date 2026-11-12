@@ -778,5 +778,200 @@
       "graphics_verified": true,
       "formatting": true
     }
+  },
+  "college_geometry:0072": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-12T12:30:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, Fig. 39 SVG (100.0% overlap), LaTeX math, and notes visually verified against 0072.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0073": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-12T12:30:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0073.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0074": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-12T12:30:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0074.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0075": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-12T12:30:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, Figs. 40a–40b SVGs (100.0% overlap), LaTeX math, and notes visually verified against 0075.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0076": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-12T12:30:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, Fig. 41 SVG (100.0% overlap), LaTeX math, and notes visually verified against 0076.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0077": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-12T12:30:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, Fig. 42 SVG (100.0% overlap), LaTeX math, and notes visually verified against 0077.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0078": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-12T12:30:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, Fig. 43 SVG (100.0% overlap), LaTeX math, and notes visually verified against 0078.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0079": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-12T12:30:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, Fig. 44 SVG (100.0% overlap), LaTeX math, and notes visually verified against 0079.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0080": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-12T12:30:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0080.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0081": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-12T12:30:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, Fig. 45 SVG (100.0% overlap), LaTeX math, and notes visually verified against 0081.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0082": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-12T12:30:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, Fig. 46 SVG (100.0% overlap), LaTeX math, and notes visually verified against 0082.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0083": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-12T12:30:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0083.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0084": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-12T12:30:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, Fig. 47 SVG (100.0% overlap), LaTeX math, and notes visually verified against 0084.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
   }
 }

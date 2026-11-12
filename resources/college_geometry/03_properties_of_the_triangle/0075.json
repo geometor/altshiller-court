@@ -1,0 +1,378 @@
+{
+  "folio": "0075",
+  "page": "56",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0075.g1.png",
+      "bbox": [
+        190,
+        402,
+        460,
+        468
+      ],
+      "caption": "Fig. 40a. Construction of two segments given their product t² and their sum a (§ 67).",
+      "white_point": 238,
+      "svg_file": "0075.g1.svg",
+      "article": "67",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "O": {
+            "x": 231.5,
+            "y": 232.3,
+            "label": "O",
+            "label_x": 209,
+            "label_y": 230
+          },
+          "A": {
+            "x": 47.0,
+            "y": 409.78,
+            "label": "A",
+            "label_x": 62,
+            "label_y": 438
+          },
+          "M": {
+            "x": 109.85,
+            "y": 409.22,
+            "label": "M",
+            "label_x": 122,
+            "label_y": 383
+          },
+          "M_AB": {
+            "x": 232.8,
+            "y": 408.0,
+            "hidden": true
+          },
+          "M'": {
+            "x": 350.49,
+            "y": 406.76,
+            "label": "M'",
+            "label_x": 340,
+            "label_y": 380
+          },
+          "B": {
+            "x": 411.57,
+            "y": 406.14,
+            "label": "B",
+            "label_x": 410,
+            "label_y": 432
+          },
+          "C": {
+            "x": 410.61,
+            "y": 342.45,
+            "label": "C",
+            "label_x": 430,
+            "label_y": 340
+          },
+          "M_CD": {
+            "x": 408.9,
+            "y": 232.3,
+            "hidden": true
+          },
+          "D": {
+            "x": 407.19,
+            "y": 116.81,
+            "label": "D",
+            "label_x": 428,
+            "label_y": 112
+          }
+        },
+        "elements": [
+          {
+            "id": "circ_O",
+            "type": "circle",
+            "cx": 228.38,
+            "cy": 232.36,
+            "r": 212.9,
+            "ref": "( O C )",
+            "aliases": [
+              "( O D )",
+              "( O )"
+            ]
+          },
+          {
+            "id": "seg_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "ref": "/ A B /",
+            "aliases": [
+              "[ A B ]"
+            ]
+          },
+          {
+            "id": "seg_BD",
+            "type": "segment",
+            "p1": "B",
+            "p2": "D",
+            "ref": "/ B D /",
+            "aliases": [
+              "[ B D ]"
+            ]
+          },
+          {
+            "id": "med_AB",
+            "type": "segment",
+            "p1": "O",
+            "p2": "M_AB",
+            "style": "dashed"
+          },
+          {
+            "id": "med_CD",
+            "type": "segment",
+            "p1": "O",
+            "p2": "M_CD",
+            "style": "dashed"
+          },
+          {
+            "id": "ov_BC",
+            "type": "segment",
+            "p1": "B",
+            "p2": "C",
+            "style": "overlay",
+            "ref": "/ B C /"
+          },
+          {
+            "id": "ov_CD",
+            "type": "segment",
+            "p1": "C",
+            "p2": "D",
+            "style": "overlay",
+            "ref": "/ C D /"
+          },
+          {
+            "id": "ov_MA",
+            "type": "segment",
+            "p1": "M",
+            "p2": "A",
+            "style": "overlay",
+            "ref": "/ M A /"
+          },
+          {
+            "id": "ov_MB",
+            "type": "segment",
+            "p1": "M",
+            "p2": "B",
+            "style": "overlay",
+            "ref": "/ M B /"
+          },
+          {
+            "id": "ov_BMp",
+            "type": "segment",
+            "p1": "B",
+            "p2": "M'",
+            "style": "overlay",
+            "ref": "/ B M' /"
+          },
+          {
+            "id": "ov_OC",
+            "type": "segment",
+            "p1": "O",
+            "p2": "C",
+            "style": "overlay",
+            "ref": "/ O C /"
+          },
+          {
+            "id": "ov_OD",
+            "type": "segment",
+            "p1": "O",
+            "p2": "D",
+            "style": "overlay",
+            "ref": "/ O D /"
+          }
+        ]
+      }
+    },
+    {
+      "id": "g2",
+      "type": "diagram",
+      "file": "0075.g2.png",
+      "bbox": [
+        726,
+        410,
+        504,
+        468
+      ],
+      "caption": "Fig. 40b. Construction of two segments given their product t² and their difference a (§ 67).",
+      "white_point": 238,
+      "svg_file": "0075.g2.svg",
+      "article": "67",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "O": {
+            "x": 254.5,
+            "y": 231.3,
+            "label": "O",
+            "label_x": 236,
+            "label_y": 232
+          },
+          "M'": {
+            "x": 68.48,
+            "y": 330.56,
+            "label": "M'",
+            "label_x": 35,
+            "label_y": 342
+          },
+          "M'_ext": {
+            "x": 55.0,
+            "y": 330.7,
+            "hidden": true
+          },
+          "A": {
+            "x": 151.45,
+            "y": 329.74,
+            "dot": true,
+            "label": "A",
+            "label_x": 151,
+            "label_y": 304
+          },
+          "M_AB": {
+            "x": 255.0,
+            "y": 328.7,
+            "hidden": true
+          },
+          "B": {
+            "x": 386.87,
+            "y": 327.41,
+            "label": "B",
+            "label_x": 409,
+            "label_y": 307
+          },
+          "M": {
+            "x": 444.49,
+            "y": 326.84,
+            "label": "M",
+            "label_x": 469,
+            "label_y": 338
+          },
+          "D": {
+            "x": 383.96,
+            "y": 62.74,
+            "label": "D",
+            "label_x": 399,
+            "label_y": 42
+          },
+          "M_CD": {
+            "x": 385.8,
+            "y": 231.3,
+            "hidden": true
+          },
+          "C": {
+            "x": 387.63,
+            "y": 396.72,
+            "label": "C",
+            "label_x": 399,
+            "label_y": 415
+          }
+        },
+        "elements": [
+          {
+            "id": "circ_O",
+            "type": "circle",
+            "cx": 255.52,
+            "cy": 231.16,
+            "r": 211.81,
+            "ref": "( O C )",
+            "aliases": [
+              "( O D )",
+              "( O )"
+            ]
+          },
+          {
+            "id": "line_MM",
+            "type": "line",
+            "p1": "M'_ext",
+            "p2": "M",
+            "ref": "[ A B ]",
+            "aliases": [
+              "/ M M' /"
+            ]
+          },
+          {
+            "id": "seg_DC",
+            "type": "segment",
+            "p1": "D",
+            "p2": "C",
+            "ref": "/ C D /",
+            "aliases": [
+              "[ C D ]"
+            ]
+          },
+          {
+            "id": "med_AB",
+            "type": "segment",
+            "p1": "O",
+            "p2": "M_AB",
+            "style": "dashed"
+          },
+          {
+            "id": "med_CD",
+            "type": "segment",
+            "p1": "O",
+            "p2": "M_CD",
+            "style": "dashed"
+          },
+          {
+            "id": "ov_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "style": "overlay",
+            "ref": "/ A B /"
+          },
+          {
+            "id": "ov_BC",
+            "type": "segment",
+            "p1": "B",
+            "p2": "C",
+            "style": "overlay",
+            "ref": "/ B C /"
+          },
+          {
+            "id": "ov_BD",
+            "type": "segment",
+            "p1": "B",
+            "p2": "D",
+            "style": "overlay",
+            "ref": "/ B D /"
+          },
+          {
+            "id": "ov_MA",
+            "type": "segment",
+            "p1": "M",
+            "p2": "A",
+            "style": "overlay",
+            "ref": "/ M A /"
+          },
+          {
+            "id": "ov_MB",
+            "type": "segment",
+            "p1": "M",
+            "p2": "B",
+            "style": "overlay",
+            "ref": "/ M B /"
+          },
+          {
+            "id": "ov_MpA",
+            "type": "segment",
+            "p1": "M'",
+            "p2": "A",
+            "style": "overlay",
+            "ref": "/ M' A /"
+          },
+          {
+            "id": "ov_MpB",
+            "type": "segment",
+            "p1": "M'",
+            "p2": "B",
+            "style": "overlay",
+            "ref": "/ M' B /"
+          }
+        ]
+      }
+    }
+  ]
+}

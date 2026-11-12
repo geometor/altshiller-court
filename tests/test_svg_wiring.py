@@ -57,10 +57,10 @@ EQ_ROLE_RE = re.compile(r":eq:`([^`]+)`")
 
 
 def test_svg_xml_schema_co_location_and_overlap_verification() -> None:
-    """Verify all 22 Chapter I SVGs have no py_file keys, co-locate with their owning item, and hit >= 95% overlap."""
+    """Verify all 32 Ch. I + Ch. III SVGs have no py_file keys, co-locate with their owning item, and hit >= 95% overlap."""
     compile_edition(REPO_ROOT)
 
-    for json_path in sorted(CH01_RES_DIR.glob("*.json")):
+    for json_path in sorted(RESOURCES_DIR.glob("*/*.json")):
         data = json.loads(json_path.read_text(encoding="utf-8"))
         for g in data.get("graphics", []):
             assert "py_file" not in g, f"Forbidden py_file key in {json_path.name}"
@@ -68,7 +68,7 @@ def test_svg_xml_schema_co_location_and_overlap_verification() -> None:
             assert g.get("svg_file", "").endswith(".svg"), f"Missing svg_file in {json_path.name}"
 
     docsrc_svgs = sorted(DOCSRC_CG_DIR.rglob("*.svg"))
-    assert len(docsrc_svgs) == 22
+    assert len(docsrc_svgs) >= 100
 
     for svg_name, rel_item_dir in EXPECTED_SVG_LOCATIONS.items():
         res_svg = CH01_RES_DIR / svg_name
@@ -81,7 +81,7 @@ def test_svg_xml_schema_co_location_and_overlap_verification() -> None:
         assert root.attrib.get("data-graphic-id") == res_svg.stem
 
     report = verify_all_svgs(RESOURCES_DIR)
-    assert report["verified_count"] == 22
+    assert report["verified_count"] == 32
     assert report["min_overlap_score"] >= 95.0, f"Overlap below 95%: {report}"
     for item in report["results"]:
         assert item["overlap_score"] >= 95.0, f"Low overlap on {item['svg_file']}: {item}"
@@ -92,9 +92,9 @@ def test_self_contained_g_and_eq_role_resolution() -> None:
     compile_edition(REPO_ROOT)
 
     all_keys: set[str] = set()
-    for svg_path in sorted(CH01_RES_DIR.glob("*.svg")):
+    for svg_path in sorted(RESOURCES_DIR.glob("*/*.svg")):
         all_keys.update(build_svg_ref_keyset(svg_path))
-    assert len(all_keys) >= 260
+    assert len(all_keys) >= 350
 
     g_count = 0
     eq_count = 0
@@ -123,7 +123,7 @@ def test_self_contained_g_and_eq_role_resolution() -> None:
     # 2. Check every compiled docsrc page strictly against SVGs co-located in its OWN directory
     for rst_path in sorted(DOCSRC_CG_DIR.rglob("*.rst")):
         text = rst_path.read_text(encoding="utf-8")
-        local_svgs = sorted(rst_path.parent.glob("*.svg"))
+        local_svgs = [p for p in sorted(rst_path.parent.glob("*.svg")) if p.name != "hero.svg"]
         local_keys: set[str] = set()
         for lsvg in local_svgs:
             local_keys.update(build_svg_ref_keyset(lsvg))
@@ -149,12 +149,12 @@ def test_self_contained_g_and_eq_role_resolution() -> None:
                     f"Cross-item or broken :eq: `{side}` on {rst_path} (local SVGs={[s.name for s in local_svgs]})"
                 )
 
-    assert g_count >= 350
-    assert eq_count >= 25
+    assert g_count >= 500
+    assert eq_count >= 35
 
 
 def test_folio_scanner_svg_detection_and_clean_rst_rendering() -> None:
-    """Verify FolioScanner detects all 22 SVGs in folios 0020-0052 and produces zero Docutils System Messages."""
+    """Verify FolioScanner detects all 32 SVGs in Ch. I + Ch. III and produces zero Docutils System Messages."""
     publish_src = REPO_ROOT.parents[1] / "photon-platform" / "publish" / "src"
     if publish_src.is_dir() and str(publish_src) not in sys.path:
         sys.path.insert(0, str(publish_src))
@@ -162,10 +162,10 @@ def test_folio_scanner_svg_detection_and_clean_rst_rendering() -> None:
     scanner = scanner_mod.FolioScanner(REPO_ROOT)
     stats = scanner.get_summary_stats()
     assert stats["total_folios"] == 334
-    assert stats["total_graphics"] == 22
-    assert stats["total_svgs"] == 22
+    assert stats["total_graphics"] == 32
+    assert stats["total_svgs"] == 32
 
-    ch01_svg_graphics = 0
+    svg_graphics = 0
     for item in scanner.scan(force=True):
         if not item["has_md"] and not item["has_notes"]:
             continue
@@ -177,16 +177,16 @@ def test_folio_scanner_svg_detection_and_clean_rst_rendering() -> None:
         assert "System Message:" not in detail["notes_html"], (
             f"Docutils System Message in {item['folio']}.notes.rst:\n{detail['notes_html']}"
         )
-        if 20 <= item["folio_int"] <= 52:
+        if (20 <= item["folio_int"] <= 52) or (72 <= item["folio_int"] <= 84):
             for g in detail["graphics"]:
                 assert g["svg_exists"] is True, f"Missing SVG for {item['folio']}.{g['id']}"
                 assert g["py_exists"] is False, f"Unexpected .py for {item['folio']}.{g['id']}"
                 assert g["in_md_format"] == "svg", (
                     f"Expected .. picture:: *.svg in {item['folio']}.rst, got {g['in_md_format']}"
                 )
-                ch01_svg_graphics += 1
+                svg_graphics += 1
 
-    assert ch01_svg_graphics == 22
+    assert svg_graphics == 32
 
 
 def test_published_html_collections_and_inline_svgs() -> None:

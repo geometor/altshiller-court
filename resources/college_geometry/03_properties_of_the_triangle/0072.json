@@ -1,0 +1,300 @@
+{
+  "folio": "0072",
+  "page": "53",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0072.g1.png",
+      "bbox": [
+        370,
+        948,
+        676,
+        460
+      ],
+      "caption": "Fig. 39. Internal and external harmonic division of segment AB in ratio p : q (§§ 54, 57, 60).",
+      "white_point": 238,
+      "svg_file": "0072.g1.svg",
+      "article": "54",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "A": {
+            "x": 51.43,
+            "y": 318.46,
+            "label": "A",
+            "label_x": 31,
+            "label_y": 322
+          },
+          "M": {
+            "x": 244.58,
+            "y": 317.52,
+            "label": "M",
+            "label_x": 246,
+            "label_y": 293
+          },
+          "M_t1": {
+            "x": 244.58,
+            "y": 309.5,
+            "hidden": true
+          },
+          "M_t2": {
+            "x": 244.58,
+            "y": 328.5,
+            "hidden": true
+          },
+          "C": {
+            "x": 352.28,
+            "y": 317.0,
+            "label": "C",
+            "label_x": 337,
+            "label_y": 337
+          },
+          "B": {
+            "x": 464.81,
+            "y": 316.45,
+            "label": "B",
+            "label_x": 450,
+            "label_y": 293
+          },
+          "O": {
+            "x": 491.8,
+            "y": 316.31,
+            "dot": true,
+            "label": "O",
+            "label_x": 516,
+            "label_y": 289
+          },
+          "D": {
+            "x": 626.62,
+            "y": 315.65,
+            "label": "D",
+            "label_x": 647,
+            "label_y": 318
+          },
+          "F": {
+            "x": 216.33,
+            "y": 47.25,
+            "label": "F",
+            "label_x": 214,
+            "label_y": 26
+          },
+          "G": {
+            "x": 402.18,
+            "y": 414.82,
+            "label": "G",
+            "label_x": 398,
+            "label_y": 438
+          },
+          "H": {
+            "x": 512.75,
+            "y": 241.16,
+            "label": "H",
+            "label_x": 522,
+            "label_y": 218
+          }
+        },
+        "elements": [
+          {
+            "id": "line_AD",
+            "type": "line",
+            "p1": "A",
+            "p2": "D",
+            "ref": "[ A B ]",
+            "aliases": [
+              "[ A D ]",
+              "[ C D ]",
+              "/ A D /"
+            ]
+          },
+          {
+            "id": "seg_AF",
+            "type": "segment",
+            "p1": "A",
+            "p2": "F",
+            "ref": "/ A F /",
+            "aliases": [
+              "[ A F ]"
+            ]
+          },
+          {
+            "id": "seg_FD",
+            "type": "line",
+            "p1": "F",
+            "p2": "D",
+            "ref": "[ F H ]",
+            "aliases": [
+              "[ F D ]",
+              "/ F D /",
+              "/ F H /"
+            ]
+          },
+          {
+            "id": "seg_FG",
+            "type": "line",
+            "p1": "F",
+            "p2": "G",
+            "ref": "[ F G ]",
+            "aliases": [
+              "/ F G /",
+              "[ F C ]",
+              "/ F C /"
+            ]
+          },
+          {
+            "id": "seg_GH",
+            "type": "line",
+            "p1": "G",
+            "p2": "H",
+            "ref": "[ G H ]",
+            "aliases": [
+              "[ G B H ]",
+              "[ B G ]",
+              "[ G B ]",
+              "/ G H /"
+            ]
+          },
+          {
+            "id": "tick_M",
+            "type": "segment",
+            "p1": "M_t1",
+            "p2": "M_t2",
+            "style": "tick"
+          },
+          {
+            "id": "ov_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "style": "overlay",
+            "ref": "/ A B /"
+          },
+          {
+            "id": "ov_AC",
+            "type": "segment",
+            "p1": "A",
+            "p2": "C",
+            "style": "overlay",
+            "ref": "/ A C /"
+          },
+          {
+            "id": "ov_CB",
+            "type": "segment",
+            "p1": "C",
+            "p2": "B",
+            "style": "overlay",
+            "ref": "/ C B /"
+          },
+          {
+            "id": "ov_DB",
+            "type": "segment",
+            "p1": "D",
+            "p2": "B",
+            "style": "overlay",
+            "ref": "/ D B /"
+          },
+          {
+            "id": "ov_CD",
+            "type": "segment",
+            "p1": "C",
+            "p2": "D",
+            "style": "overlay",
+            "ref": "/ C D /"
+          },
+          {
+            "id": "ov_AO",
+            "type": "segment",
+            "p1": "A",
+            "p2": "O",
+            "style": "overlay",
+            "ref": "/ A O /"
+          },
+          {
+            "id": "ov_BO",
+            "type": "segment",
+            "p1": "B",
+            "p2": "O",
+            "style": "overlay",
+            "ref": "/ B O /"
+          },
+          {
+            "id": "ov_OC",
+            "type": "segment",
+            "p1": "O",
+            "p2": "C",
+            "style": "overlay",
+            "ref": "/ O C /"
+          },
+          {
+            "id": "ov_MO",
+            "type": "segment",
+            "p1": "M",
+            "p2": "O",
+            "style": "overlay",
+            "ref": "/ M O /"
+          },
+          {
+            "id": "ov_BG",
+            "type": "segment",
+            "p1": "B",
+            "p2": "G",
+            "style": "overlay",
+            "ref": "/ B G /"
+          },
+          {
+            "id": "ov_BH",
+            "type": "segment",
+            "p1": "B",
+            "p2": "H",
+            "style": "overlay",
+            "ref": "/ B H /"
+          },
+          {
+            "id": "tri_CAF",
+            "type": "polygon",
+            "points": [
+              "C",
+              "A",
+              "F"
+            ],
+            "style": "overlay",
+            "ref": "< C A F >"
+          },
+          {
+            "id": "tri_CBG",
+            "type": "polygon",
+            "points": [
+              "C",
+              "B",
+              "G"
+            ],
+            "style": "overlay",
+            "ref": "< C B G >"
+          },
+          {
+            "id": "tri_DAF",
+            "type": "polygon",
+            "points": [
+              "D",
+              "A",
+              "F"
+            ],
+            "style": "overlay",
+            "ref": "< D A F >"
+          },
+          {
+            "id": "tri_DBH",
+            "type": "polygon",
+            "points": [
+              "D",
+              "B",
+              "H"
+            ],
+            "style": "overlay",
+            "ref": "< D B H >"
+          }
+        ]
+      }
+    }
+  ]
+}

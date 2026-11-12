@@ -37,12 +37,12 @@ Mapping Chapter I to ``geometor.model`` & ``geometor.elements``
 Section & Item Commentary Index
 -------------------------------
 
-* :ref:`A. Preliminaries <ch01-a-preliminaries>`
+* :ref:`Section A — Preliminaries <ch01-a-preliminaries>`
   - :ref:`Commentary on § 1. Notation <ch01-art-001-commentary>`
   - :ref:`Commentary on § 2. Basic Constructions <ch01-art-002-commentary>`
   - :ref:`Commentary on § 2. Exercises (1–24) <ch01-art-002-exercises-commentary>`
   - :ref:`Commentary on § 3. Suggestion <ch01-art-003-commentary>`
-* :ref:`B. General Method of Solution of Construction Problems <ch01-b-general-method>`
+* :ref:`Section B — General Method of Solution of Construction Problems <ch01-b-general-method>`
   - :ref:`Commentary on § 4. Analytic Method <ch01-art-004-commentary>`
   - :ref:`Commentary on § 5. Problem <ch01-art-005-commentary>`
   - :ref:`Commentary on § 6. Problem <ch01-art-006-commentary>`
@@ -51,14 +51,14 @@ Section & Item Commentary Index
   - :ref:`Commentary on § 9. Problem <ch01-art-009-commentary>`
   - :ref:`Commentary on § 10. Suggestions <ch01-art-010-commentary>`
   - :ref:`Commentary on § 10. Exercises (1–14) <ch01-art-010-exercises-commentary>`
-* :ref:`C. Geometric Loci <ch01-c-geometric-loci>`
+* :ref:`Section C — Geometric Loci <ch01-c-geometric-loci>`
   - :ref:`Commentary on § 11. Important Loci <ch01-art-011-commentary>`
   - :ref:`Commentary on § 11. Exercises (1–4) <ch01-art-011-exercises-commentary>`
   - :ref:`Commentary on § 12. Problem <ch01-art-012-commentary>`
   - :ref:`Commentary on § 13. Problem <ch01-art-013-commentary>`
   - :ref:`Commentary on § 14. Problem <ch01-art-014-commentary>`
   - :ref:`Commentary on § 14. Exercises (1–23) <ch01-art-014-exercises-commentary>`
-* :ref:`D. Indirect Elements <ch01-d-indirect-elements>`
+* :ref:`Section D — Indirect Elements <ch01-d-indirect-elements>`
   - :ref:`Commentary on § 15. Problem <ch01-art-015-commentary>`
   - :ref:`Commentary on § 16. Remark <ch01-art-016-commentary>`
   - :ref:`Commentary on § 16. Exercises (1–2) <ch01-art-016-exercises-commentary>`

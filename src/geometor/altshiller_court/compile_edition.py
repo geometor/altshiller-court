@@ -18,15 +18,22 @@ from pathlib import Path
 from typing import Any
 
 from .codex_items import (
+    CHAPTER_SECTION_META_BY_INDEX,
     CodexItem,
     CodexSection,
     FolioBlock,
     copy_referenced_graphics,
-    decompose_chapter_one,
+    decompose_chapter_folios,
     decompose_frontmatter,
     demote_headings,
     parse_folio_rst,
     render_blocks_with_folios,
+)
+from .hero_figures import CHAPTER_HERO_KEYS, HeroFigureRegistry
+from .section_synopses import (
+    CH03_MEDIANS_CONTINUATION,
+    SECTION_SYNOPSES,
+    SectionSynopsis,
 )
 from .svg_compiler import compile_all_svgs
 
@@ -56,8 +63,9 @@ CHAPTER_OVERVIEWS: dict[str, str] = {
     ),
     "ch03-properties-of-the-triangle": (
         "Classical synthetic geometry of the triangle (**§§ 54–239**, Folios ``0072``–``0142``, pp. ``53``–``123``): "
-        "harmonic preliminaries, circumcircle and medians, incircle and excircles, orthocenter and orthic "
-        "triangle, the Euler line, the nine-point circle, Feuerbach's theorem, and the orthocentric group."
+        "harmonic preliminaries, circumcircle and the Problem of Pappus (**§§ 54–86**), medians and centroid "
+        "(**§§ 87–110**), tritangent circles, orthocenter and orthic triangle, Euler line, nine-point circle, "
+        "Feuerbach's theorem, and the orthocentric group."
     ),
     "ch04-the-quadrilateral": (
         "Synthetic theory of four-sided figures newly added in the 1952 Second Edition (**§§ 240–281**, "
@@ -395,14 +403,63 @@ def _write_codex_item(
     }
 
 
-def _write_ch01_sections(
+NON_LETTERED_SECTION_CODES = {
+    "",
+    "Main",
+    "Review",
+    "Supplementary",
+    "BibKey",
+    "Notes",
+    "Names",
+    "Index",
+    "Endmatter",
+    "Cover",
+    "Title",
+    "Preface",
+    "Contents",
+    "Instructor",
+    "Student",
+}
+
+
+def _format_section_title(sec: dict[str, Any]) -> str:
+    """Format section titles without bare ``[A-Z]. `` prefixes that trigger Docutils enumerated lists."""
+    code = str(sec.get("code", "")).strip()
+    raw_title = str(sec.get("title", "")).strip()
+    cleaned_title = re.sub(r"\s+—\s+[a-z]\.\s+", ": ", raw_title)
+    if code in NON_LETTERED_SECTION_CODES:
+        return cleaned_title
+    return f"Section {code} — {cleaned_title}"
+
+
+def _sanitize_section_label(label: str) -> str:
+    """Convert leading ``B. Foo`` or ``D.a. Foo`` labels into ``Section B — Foo`` for RST table cells."""
+    s = (label or "").strip()
+    s = re.sub(r"\s+—\s+[a-z]\.\s+", ": ", s)
+    return re.sub(r"^([A-Z](?:\.[a-z])?)\.\s+", r"Section \1 — ", s)
+
+
+def _picture_block_lines(filename: str, alt: str, caption: str) -> list[str]:
+    """Return a formatted ``.. picture::`` RST directive block."""
+    return [
+        f".. picture:: {filename}",
+        f"   :alt: {alt}",
+        f"   :caption: {caption}",
+        "",
+    ]
+
+
+def _write_transcribed_sections(
+    chapter_slug: str,
     sections: list[CodexSection],
     unit_dir: Path,
     chap_res_dir: Path,
     notes_by_folio: dict[str, str],
     folio_to_anchor: dict[str, str],
+    hero_registry: HeroFigureRegistry,
+    continuation_synopses: dict[str, SectionSynopsis] | None = None,
 ) -> dict[str, int]:
-    """Write Chapter I's 5 section ``index.rst`` pages and all nested leaf/locus items."""
+    """Write transcribed section ``index.rst`` pages (with hero SVGs) and nested leaf/locus items."""
     total_items = 0
     total_svgs = 0
     total_pngs = 0
@@ -410,6 +467,10 @@ def _write_ch01_sections(
     for sec in sections:
         sec_dir = unit_dir / sec.slug
         sec_dir.mkdir(parents=True, exist_ok=True)
+
+        hero_file, hero_caption, hero_alt = hero_registry.write_section_hero(
+            chapter_slug, sec.slug, sec.code, sec_dir
+        )
 
         sec_folios: list[tuple[str, str]] = []
         seen_f: set[str] = set()
@@ -439,12 +500,14 @@ def _write_ch01_sections(
             f":page: {first_page}",
             f":folios: {folios_csv}",
             f":pages: {pages_csv}",
+            f":excerpt: {sec.overview}",
             "",
             f".. _{sec.anchor}:",
             "",
             sec.title,
             "=" * len(sec.title),
             "",
+            *_picture_block_lines(hero_file, hero_alt, hero_caption),
         ]
         if sec.intro_blocks:
             sec_lines.append(render_blocks_with_folios(sec.intro_blocks))
@@ -459,6 +522,26 @@ def _write_ch01_sections(
             "   :sort: order",
             "",
         ])
+
+        cont = (continuation_synopses or {}).get(sec.slug)
+        if cont is not None:
+            sec_lines.extend([
+                "----",
+                "",
+                "Subsequent Articles Roadmap (§§ 89–110)",
+                "---------------------------------------",
+                "",
+                cont.summary,
+                "",
+            ])
+            for hl in cont.highlights:
+                sec_lines.append(f"* {hl}")
+            sec_lines.extend([
+                "",
+                cont.geometor_note,
+                "",
+            ])
+
         (sec_dir / "index.rst").write_text("\n".join(sec_lines), encoding="utf-8")
 
         for item in sec.items:
@@ -475,104 +558,85 @@ def _write_ch01_sections(
     }
 
 
-def _write_untranscribed_sections(
+def _write_synopsis_section(
+    sec: dict[str, Any],
+    order: int,
     chapter: dict[str, Any],
-    chapter_folios: list[dict[str, Any]],
+    folios_by_id: dict[str, dict[str, Any]],
     unit_dir: Path,
     folio_to_anchor: dict[str, str],
-) -> int:
-    """Write ``<section-slug>/index.rst`` blueprint containers for Chapters II–X, Notes, and Index."""
+    hero_registry: HeroFigureRegistry,
+) -> None:
+    """Write a rich scholarly synopsis, hero ``.euclid-graphic`` SVG, and theorem roadmap for a section."""
     slug = chapter["slug"]
     num = chapter.get("number")
-    chap_label = f"Chapter {num}" if num else chapter["title"]
-    folios_by_id = {f["folio"]: f for f in chapter_folios}
-    sections = chapter.get("sections") or []
+    chap_label = f"Chapter {num}: {chapter['title']}" if num else chapter["title"]
+    sec_slug = _section_slug(sec)
+    sec_dir = unit_dir / sec_slug
+    sec_dir.mkdir(parents=True, exist_ok=True)
+    sec_anchor = f"{slug}-{sec_slug}"
 
-    for order, sec in enumerate(sections, start=1):
-        sec_slug = _section_slug(sec)
-        sec_dir = unit_dir / sec_slug
-        sec_dir.mkdir(parents=True, exist_ok=True)
-        sec_anchor = f"{slug}-{sec_slug}"
+    code = str(sec.get("code", "")).strip()
+    sec_title = _format_section_title(sec)
+    hero_file, hero_caption, hero_alt = hero_registry.write_section_hero(slug, sec_slug, code, sec_dir)
 
-        code = sec.get("code", "")
-        raw_title = sec.get("title", "")
-        sec_title = (
-            f"{code}. {raw_title}"
-            if code and code not in {"Review", "Supplementary", "BibKey", "Notes", "Names", "Index", "Endmatter"}
-            else raw_title
-        )
-        art = sec.get("articles")
-        art_phrase = f"Articles **§§ {art[0]}–{art[1]}**" if isinstance(art, list) and len(art) == 2 else "Archival Matter"
-        f_start, f_end = sec["folio_start"], sec["folio_end"]
-        p_start, p_end = sec["page_start"], sec["page_end"]
-        f_span = f"``{f_start}``" if f_start == f_end else f"``{f_start}``–``{f_end}``"
-        p_span = f"``{p_start}``" if p_start == p_end else f"``{p_start}``–``{p_end}``"
+    art = sec.get("articles")
+    art_rubric = f"Articles §§ {art[0]}–{art[1]}" if isinstance(art, list) and len(art) == 2 else "Archival Apparatus"
+    f_start, f_end = sec["folio_start"], sec["folio_end"]
+    p_start, p_end = sec["page_start"], sec["page_end"]
+    f_span_raw = f_start if f_start == f_end else f"{f_start}–{f_end}"
+    p_span_raw = p_start if p_start == p_end else f"{p_start}–{p_end}"
 
-        sec_folio_entries = [
-            folios_by_id[f"{n:04d}"]
-            for n in range(int(f_start), int(f_end) + 1)
-            if f"{n:04d}" in folios_by_id
-        ]
-        for fe in sec_folio_entries:
-            folio_to_anchor.setdefault(fe["folio"], sec_anchor)
+    for n in range(int(f_start), int(f_end) + 1):
+        fid = f"{n:04d}"
+        if fid in folios_by_id:
+            folio_to_anchor.setdefault(fid, sec_anchor)
 
-        overview = (
-            f"{sec_title} in {chap_label} covers {art_phrase} across archival folios "
-            f"{f_span} (printed pages {p_span}), standardized at 300 DPI in "
-            f"``resources/college_geometry/{chapter['dir']}/``."
-        )
+    syn = SECTION_SYNOPSES[(slug, code)]
+    plain_excerpt = re.sub(r":[a-z]+:`([^`<]+)(?:\s*<[^>]+>)?`", r"\1", syn.summary)
+    plain_excerpt = re.sub(r"[*`\\]", "", plain_excerpt).strip()
 
-        sec_lines = [
-            ":layout: book",
-            ":type: section",
-            f":order: {order}",
-            f":title: {sec_title}",
-            f":folio: {f_start}",
-            f":page: {p_start}",
-            "",
-            f".. _{sec_anchor}:",
-            "",
-            sec_title,
-            "=" * len(sec_title),
-            "",
-            overview,
-            "",
-            ".. collection::",
-            "   :type: item",
-            "   :sort: order",
-            "",
-            "Folio Scan Allocation",
-            "---------------------",
-            "",
-            ".. list-table::",
-            "   :header-rows: 1",
-            "   :widths: 16 16 38 30",
-            "",
-            "   * - Folio",
-            "     - Page",
-            "     - Articles",
-            "     - Scan Status",
-        ]
-        for fe in sec_folio_entries:
-            arts = fe.get("articles") or []
-            arts_disp = f"§§ {arts[0]}–{arts[-1]}" if len(arts) > 1 else (f"§ {arts[0]}" if len(arts) == 1 else "—")
-            st = "blank verso" if fe.get("is_blank") else ("cover (RGB)" if fe.get("is_cover") else "300 DPI gray")
-            sec_lines.extend([
-                f"   * - ``{fe['folio']}``",
-                f"     - ``{fe['printed_page']}``",
-                f"     - {arts_disp}",
-                f"     - {st}",
-            ])
-        sec_lines.extend([
-            "",
-            "----",
-            "",
-            f"See :ref:`Commentary on {chap_label} <{slug}-commentary>`.",
-            "",
-        ])
-        (sec_dir / "index.rst").write_text("\n".join(sec_lines), encoding="utf-8")
+    sec_lines = [
+        ":layout: book",
+        ":type: section",
+        f":order: {order}",
+        f":title: {sec_title}",
+        f":folio: {f_start}",
+        f":page: {p_start}",
+        f":folios: {f_span_raw}",
+        f":pages: {p_span_raw}",
+        f":excerpt: {plain_excerpt}",
+        "",
+        f".. _{sec_anchor}:",
+        "",
+        sec_title,
+        "=" * len(sec_title),
+        "",
+        f".. rubric:: {chap_label} • {art_rubric} (Folios {f_span_raw}, pp. {p_span_raw})",
+        "",
+        *_picture_block_lines(hero_file, hero_alt, hero_caption),
+        syn.summary,
+        "",
+        "Principal Theorems, Constructions & Identities",
+        "----------------------------------------------",
+        "",
+    ]
+    for hl in syn.highlights:
+        sec_lines.append(f"* {hl}")
 
-    return len(sections)
+    sec_lines.extend([
+        "",
+        "Constructive & Symbolic Connections",
+        "-----------------------------------",
+        "",
+        syn.geometor_note,
+        "",
+        "----",
+        "",
+        f"See :ref:`Commentary on {chap_label} <{slug}-commentary>` and :ref:`334-Folio Archival Scan Inventory <scan-inventory>`.",
+        "",
+    ])
+    (sec_dir / "index.rst").write_text("\n".join(sec_lines), encoding="utf-8")
 
 
 def build_chapter_unit(
@@ -581,6 +645,7 @@ def build_chapter_unit(
     volume_dir: Path,
     book_doc_dir: Path,
     folio_to_anchor: dict[str, str],
+    hero_registry: HeroFigureRegistry,
 ) -> dict[str, Any]:
     """Build ``<slug>/index.rst``, ``<slug>/commentary.rst``, and nested section/item collections."""
     slug = chapter["slug"]
@@ -593,6 +658,9 @@ def build_chapter_unit(
     subtitle = chapter.get("subtitle", "")
     folio_span = f"{chapter['folio_start']}–{chapter['folio_end']}"
     page_span = f"{chapter['page_start']}–{chapter['page_end']}"
+
+    hero_key = CHAPTER_HERO_KEYS.get(slug, "euler_feuerbach")
+    chap_hero_file, chap_hero_caption, chap_hero_alt = hero_registry.write_symbolic_hero(hero_key, unit_dir)
 
     transcribed_entries: list[tuple[str, str, dict[str, str], str]] = []
     notes_by_folio: dict[str, str] = {}
@@ -631,6 +699,7 @@ def build_chapter_unit(
         idx_lines.extend([f".. rubric:: {subtitle}", ""])
 
     idx_lines.extend([
+        *_picture_block_lines(chap_hero_file, chap_hero_alt, chap_hero_caption),
         overview_para,
         "",
         ".. collection::",
@@ -654,7 +723,8 @@ def build_chapter_unit(
     copied_svgs = 0
     copied_graphics = 0
     frontmatter_items: list[CodexItem] = []
-    ch01_sections: list[CodexSection] = []
+    decomposed_sections: list[CodexSection] = []
+    folios_by_id = {f["folio"]: f for f in chapter_folios}
 
     if chapter["index"] == 0:
         frontmatter_items = decompose_frontmatter(transcribed_entries)
@@ -663,17 +733,40 @@ def build_chapter_unit(
             items_compiled += st["items"]
             copied_svgs += st["svgs"]
             copied_graphics += st["pngs"]
-    elif chapter["index"] == 1:
-        ch01_sections = decompose_chapter_one(transcribed_entries)
-        st = _write_ch01_sections(ch01_sections, unit_dir, chap_dir, notes_by_folio, folio_to_anchor)
-        sections_compiled = st["sections"]
-        items_compiled = st["items"]
-        copied_svgs = st["svgs"]
-        copied_graphics = st["pngs"]
-    else:
-        sections_compiled = _write_untranscribed_sections(
-            chapter, chapter_folios, unit_dir, folio_to_anchor
+    elif chapter["index"] in CHAPTER_SECTION_META_BY_INDEX and transcribed_entries:
+        chap_prefix, chap_roman, sec_meta_map = CHAPTER_SECTION_META_BY_INDEX[chapter["index"]]
+        decomposed_sections = decompose_chapter_folios(
+            transcribed_entries, chap_prefix, chap_roman, sec_meta_map
         )
+        cont_map = {"c-medians": CH03_MEDIANS_CONTINUATION} if chapter["index"] == 3 else None
+        st = _write_transcribed_sections(
+            slug,
+            decomposed_sections,
+            unit_dir,
+            chap_dir,
+            notes_by_folio,
+            folio_to_anchor,
+            hero_registry,
+            continuation_synopses=cont_map,
+        )
+        sections_compiled += st["sections"]
+        items_compiled += st["items"]
+        copied_svgs += st["svgs"]
+        copied_graphics += st["pngs"]
+
+        compiled_codes = {s.code for s in decomposed_sections}
+        for order, sec in enumerate(chapter.get("sections") or [], start=1):
+            if str(sec.get("code", "")).strip() not in compiled_codes:
+                _write_synopsis_section(
+                    sec, order, chapter, folios_by_id, unit_dir, folio_to_anchor, hero_registry
+                )
+                sections_compiled += 1
+    else:
+        for order, sec in enumerate(chapter.get("sections") or [], start=1):
+            _write_synopsis_section(
+                sec, order, chapter, folios_by_id, unit_dir, folio_to_anchor, hero_registry
+            )
+            sections_compiled += 1
 
     for f_entry in chapter_folios:
         folio_to_anchor.setdefault(f_entry["folio"], slug)
@@ -743,7 +836,7 @@ def build_chapter_unit(
             "-------------------------------",
             "",
         ])
-        for sec in ch01_sections:
+        for sec in decomposed_sections:
             comm_lines.append(f"* :ref:`{sec.title} <{sec.anchor}>`")
             for item in sec.items:
                 comm_lines.append(f"  - :ref:`Commentary on {item.title} <{item.anchor}-commentary>`")
@@ -751,6 +844,17 @@ def build_chapter_unit(
     else:
         comm_lines.append(CHAPTER_COMMENTARY.get(slug, ""))
         comm_lines.append("")
+        if decomposed_sections:
+            comm_lines.extend([
+                "Transcribed Section & Item Commentary Index",
+                "-------------------------------------------",
+                "",
+            ])
+            for sec in decomposed_sections:
+                comm_lines.append(f"* :ref:`{sec.title} <{sec.anchor}>`")
+                for item in sec.items:
+                    comm_lines.append(f"  - :ref:`Commentary on {item.title} <{item.anchor}-commentary>`")
+            comm_lines.append("")
 
     geometor_links = chapter.get("geometor_links") or []
     if geometor_links:
@@ -1124,11 +1228,14 @@ def compile_edition(repo_root: Path) -> dict[str, Any]:
     for f_entry in structure["folios"]:
         folios_by_dir.setdefault(f_entry["chapter_dir"], []).append(f_entry)
 
+    hero_registry = HeroFigureRegistry(volume_dir)
     folio_to_anchor: dict[str, str] = {}
     unit_summaries: list[dict[str, Any]] = []
     for ch in structure["chapters"]:
         c_folios = folios_by_dir.get(ch["dir"], [])
-        summary = build_chapter_unit(ch, c_folios, volume_dir, book_doc_dir, folio_to_anchor)
+        summary = build_chapter_unit(
+            ch, c_folios, volume_dir, book_doc_dir, folio_to_anchor, hero_registry
+        )
         unit_summaries.append(summary)
 
     apparatus_counts = build_apparatus_pages(volume_dir, book_doc_dir, structure, folio_to_anchor)

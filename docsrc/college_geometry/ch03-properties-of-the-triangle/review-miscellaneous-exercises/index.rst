@@ -4,66 +4,35 @@
 :title: Review & Miscellaneous Exercises
 :folio: 0134
 :page: 115
+:folios: 0134–0142
+:pages: 115–123
+:excerpt: Concludes Chapter III across Folios 0134–0142 (pp. 115–123) with a comprehensive corpus of synthesis constructions, deductive propositions, and locus problems uniting circumcircle, centroid, tritangent, orthocentric, Euler-line, and nine-point geometry.
 
 .. _ch03-properties-of-the-triangle-review-miscellaneous-exercises:
 
 Review & Miscellaneous Exercises
 ================================
 
-Review & Miscellaneous Exercises in Chapter III covers Archival Matter across archival folios ``0134``–``0142`` (printed pages ``115``–``123``), standardized at 300 DPI in ``resources/college_geometry/03_properties_of_the_triangle/``.
+.. rubric:: Chapter III: Properties of the Triangle • Archival Apparatus (Folios 0134–0142, pp. 115–123)
 
-.. collection::
-   :type: item
-   :sort: order
+.. picture:: hero.svg
+   :alt: Triangle ABC with circumcircle, angle bisectors concurring at incenter I, incircle, and contact radii IX, IY, IZ
+   :caption: Incircle (I, r), Angle Bisectors, Contact Points X, Y, Z, and Chapple–Euler Relation
 
-Folio Scan Allocation
----------------------
+Concludes Chapter III across Folios ``0134``–``0142`` (pp. ``115``–``123``) with a comprehensive corpus of synthesis constructions, deductive propositions, and locus problems uniting circumcircle, centroid, tritangent, orthocentric, Euler-line, and nine-point geometry.
 
-.. list-table::
-   :header-rows: 1
-   :widths: 16 16 38 30
+Principal Theorems, Constructions & Identities
+----------------------------------------------
 
-   * - Folio
-     - Page
-     - Articles
-     - Scan Status
-   * - ``0134``
-     - ``115``
-     - —
-     - 300 DPI gray
-   * - ``0135``
-     - ``116``
-     - —
-     - 300 DPI gray
-   * - ``0136``
-     - ``117``
-     - —
-     - 300 DPI gray
-   * - ``0137``
-     - ``118``
-     - —
-     - 300 DPI gray
-   * - ``0138``
-     - ``119``
-     - —
-     - 300 DPI gray
-   * - ``0139``
-     - ``120``
-     - —
-     - 300 DPI gray
-   * - ``0140``
-     - ``121``
-     - —
-     - 300 DPI gray
-   * - ``0141``
-     - ``122``
-     - —
-     - 300 DPI gray
-   * - ``0142``
-     - ``123``
-     - —
-     - 300 DPI gray
+* **Triangle Reconstruction Challenges**: Multi-constraint problems reconstructing :math:`\triangle ABC` from combinations of :math:`(O, G, H, N, I, I_a)` and pedal/midpoint traces.
+* **Metric & Area Inequalities**: Deductive exercises linking :math:`R, r, r_a, r_b, r_c, s, h_a, m_a, t_a` and orthogonal projections of vertices onto bisectors and altitudes.
+* **Locus Synthesis**: Variable-vertex loci on a fixed circumcircle or fixed base where centers :math:`H, G, I, N` trace circles and straight lines.
+
+Constructive & Symbolic Connections
+-----------------------------------
+
+Serves as an ideal benchmark suite for automated geometric theorem proving and locus discovery in ``geometor/model`` and ``geometor/divine``.
 
 ----
 
-See :ref:`Commentary on Chapter III <ch03-properties-of-the-triangle-commentary>`.
+See :ref:`Commentary on Chapter III: Properties of the Triangle <ch03-properties-of-the-triangle-commentary>` and :ref:`334-Folio Archival Scan Inventory <scan-inventory>`.

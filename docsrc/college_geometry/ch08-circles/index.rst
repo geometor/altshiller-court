@@ -15,6 +15,10 @@ Chapter VIII: Circles
 
 .. rubric:: Inverse Points, Orthogonal Circles, Poles and Polars, Centers of Similitude, Power of a Point, Radical Axis, Coaxal Circles, Casey's Theorem, Problem of Apollonius
 
+.. picture:: hero.svg
+   :alt: Reference circle O and orthogonal circle P intersecting perpendicularly at T1, T2 with polar chord T1 T2 through inverse point P'
+   :caption: Inverse Points P, P', Polar Line T₁T₂, and Orthogonal Circle (P, PT₁)
+
 Comprehensive geometry of one, two, and three circles (**§§ 358–517**, Folios ``0191``–``0248``, pp. ``172``–``229``): inverse points, orthogonal circles, poles and polars, Monge's similitude axes, power and radical axis, coaxal pencils, Casey's theorem, and Gergonne's solution to the Problem of Apollonius.
 
 .. collection::
