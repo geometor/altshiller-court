@@ -74,7 +74,7 @@
             </nav>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="a-similitude/index.html" title="A. Similitude"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="a-similitude/index.html" title="Section A — Similitude"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </header>
@@ -82,23 +82,183 @@
         <section class="level-1" id="chapter-ii-similitude-and-homothecy">
         <span id="ch02-similitude-and-homothecy-en"></span><span id="ch02-similitude-and-homothecy"></span><h1>Chapter II: Similitude and Homothecy<a class="headerlink" href="#chapter-ii-similitude-and-homothecy" title="Link to this heading">¶</a></h1>
         <p class="rubric">Method of Similitude, Homothetic Figures, Direct and Inverse Centers of Similitude, Circle of Similitude, Pantograph</p>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic" data-graphic-id="hero-homothecy_circles.homothecy_circles" data-folio="hero-homothecy_circles" data-graphic="homothecy_circles">
+          <defs>
+            <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-2" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g id="elements">
+            <path id="el-line-axis" data-ref="[ O S ]" data-type="line" class="geom-line" d="M 80 140 L 242 140 L 404 140" />
+            <circle id="el-circle-c1" data-ref="( O P )" data-type="circle" cx="98" cy="140" r="64" class="geom-bold" />
+            <circle id="el-circle-c2" data-ref="( O' P' )" data-aliases="( Oprime Pprime )" data-type="circle" cx="242" cy="140" r="32" class="geom-bold" />
+            <circle id="el-circle-csim" data-ref="( S S' )" data-aliases="( S Sprime )" data-type="circle" cx="290" cy="140" r="96" class="geom-arc-dashed" />
+          </g>
+          <g id="graphics">
+            <path id="el-seg-r1" data-ref="/ O P /" data-type="segment" class="geom-line" d="M 98 140 L 117.2 114.4 L 136.4 88.8" />
+            <path id="el-seg-r2" data-ref="/ O' P' /" data-aliases="/ Oprime Pprime /" data-type="segment" class="geom-line" d="M 242 140 L 251.6 127.2 L 261.2 114.4" />
+            <path id="el-seg-r2i" data-ref="/ O' Q' /" data-aliases="/ Oprime Qprime /" data-type="segment" class="geom-dashed" d="M 242 140 L 232.4 152.8 L 222.8 165.6" />
+            <path id="el-seg-rayext" data-ref="/ P S /" data-type="segment" class="geom-line" d="M 136.4 88.8 L 261.2 114.4 L 386 140" />
+            <path id="el-seg-rayint" data-ref="/ P Q' /" data-aliases="/ P Qprime /" data-type="segment" class="geom-dashed" d="M 136.4 88.8 L 179.6 127.2 L 222.8 165.6" />
+          </g>
+          <g id="highlights" style="pointer-events: none;">
+            <path id="hl-line-axis" data-ref="[ O S ]" class="geom-line geom-overlay" d="M 80 140 L 242 140 L 404 140" />
+            <circle id="hl-circle-c1" data-ref="( O P )" cx="98" cy="140" r="64" class="geom-circle geom-overlay" />
+            <circle id="hl-circle-c2" data-ref="( O' P' )" data-aliases="( Oprime Pprime )" cx="242" cy="140" r="32" class="geom-circle geom-overlay" />
+            <circle id="hl-circle-csim" data-ref="( S S' )" data-aliases="( S Sprime )" cx="290" cy="140" r="96" class="geom-circle geom-overlay" />
+            <path id="hl-seg-r1" data-ref="/ O P /" class="geom-line geom-overlay" d="M 98 140 L 117.2 114.4 L 136.4 88.8" />
+            <path id="hl-seg-r2" data-ref="/ O' P' /" data-aliases="/ Oprime Pprime /" class="geom-line geom-overlay" d="M 242 140 L 251.6 127.2 L 261.2 114.4" />
+            <path id="hl-seg-r2i" data-ref="/ O' Q' /" data-aliases="/ Oprime Qprime /" class="geom-line geom-overlay" d="M 242 140 L 232.4 152.8 L 222.8 165.6" />
+            <path id="hl-seg-rayext" data-ref="/ P S /" class="geom-line geom-overlay" d="M 136.4 88.8 L 261.2 114.4 L 386 140" />
+            <path id="hl-seg-rayint" data-ref="/ P Q' /" data-aliases="/ P Qprime /" class="geom-line geom-overlay" d="M 136.4 88.8 L 179.6 127.2 L 222.8 165.6" />
+          </g>
+          <g id="points">
+            <circle id="el-pt-O1" data-ref="O1" data-type="point" cx="98" cy="140" r="2.6" class="geom-point" />
+            <circle id="el-pt-O2" data-ref="O2" data-type="point" cx="242" cy="140" r="2.6" class="geom-point" />
+            <circle id="el-pt-P" data-ref="P" data-type="point" cx="136.4" cy="88.8" r="2.6" class="geom-point" />
+            <circle id="el-pt-Pprime" data-ref="Pprime" data-type="point" cx="261.2" cy="114.4" r="2.6" class="geom-point" />
+            <circle id="el-pt-Qprime" data-ref="Qprime" data-type="point" cx="222.8" cy="165.6" r="2.6" class="geom-point" />
+            <circle id="el-pt-Sprime" data-ref="Sprime" data-type="point" cx="194" cy="140" r="2.6" class="geom-point" />
+            <circle id="el-pt-S" data-ref="S" data-type="point" cx="386" cy="140" r="2.6" class="geom-point" />
+          </g>
+          <g id="labels">
+            <text id="lbl-O1" data-ref="O1" x="92" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text id="lbl-O2" data-ref="O2" x="246" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">O&#x27;</text>
+            <text id="lbl-P" data-ref="P" x="130.4" y="78.8" text-anchor="middle" dominant-baseline="central" class="geom-label">P</text>
+            <text id="lbl-Pprime" data-ref="Pprime" x="265.2" y="104.4" text-anchor="middle" dominant-baseline="central" class="geom-label">P&#x27;</text>
+            <text id="lbl-Qprime" data-ref="Qprime" x="226.8" y="180.6" text-anchor="middle" dominant-baseline="central" class="geom-label">Q&#x27;</text>
+            <text id="lbl-Sprime" data-ref="Sprime" x="188" y="128" text-anchor="middle" dominant-baseline="central" class="geom-label">S&#x27;</text>
+            <text id="lbl-S" data-ref="S" x="394" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">S</text>
+          </g>
+        </svg>
+        <figcaption>Direct and Inverse Centers of Similitude S, S' and Circle of Similitude</figcaption>
+        </figure>
         <p>Transformational construction and proof via similitude and homothecy (<strong>§§ 23–53</strong>, Folios <code class="docutils literal notranslate"><span class="pre">0053</span></code>–<code class="docutils literal notranslate"><span class="pre">0071</span></code>, pp. <code class="docutils literal notranslate"><span class="pre">34</span></code>–<code class="docutils literal notranslate"><span class="pre">52</span></code>): homothetic figures, direct and inverse centers of similitude of two circles, the circle of similitude, and the pantograph.</p>
             <section class="collection ">
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="a-similitude/index.html" aria-label="Triangle ABC with prototype dashed square P0 Q0 R0 S0 scaled by ray BQ0 into inscribed square PQRS">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-similitude_inscribed.similitude_inscribed" data-folio="hero-similitude_inscribed" data-graphic="similitude_inscribed">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+          </g>
+          <g>
+            <polygon points="174.67,34 86.33,246 333.67,246" class="geom-polygon" />
+            <polygon points="139.33,118.8 266.53,118.8 266.53,246 139.33,246" class="geom-polygon" />
+            <polygon points="133.9,131.85 248.05,131.85 248.05,246 133.9,246" class="geom-polygon" />
+            <path class="geom-dashed" d="M 86.33 246 L 167.19 188.93 L 248.05 131.85" />
+          </g>
+          <g>
+            <circle cx="174.67" cy="34" r="2.6" class="geom-point" />
+            <circle cx="86.33" cy="246" r="2.6" class="geom-point" />
+            <circle cx="333.67" cy="246" r="2.6" class="geom-point" />
+            <circle cx="139.33" cy="118.8" r="2.6" class="geom-point" />
+            <circle cx="266.53" cy="118.8" r="2.6" class="geom-point" />
+            <circle cx="133.9" cy="131.85" r="2.6" class="geom-point" />
+            <circle cx="248.05" cy="131.85" r="2.6" class="geom-point" />
+            <circle cx="248.05" cy="246" r="2.6" class="geom-point" />
+            <circle cx="133.9" cy="246" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="166.2" y="25.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="71.7" y="260.1" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="340.3" y="260.1" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="125.3" y="114.8" text-anchor="middle" dominant-baseline="central" class="geom-label">P&#x27;</text>
+            <text x="272.5" y="110.8" text-anchor="middle" dominant-baseline="central" class="geom-label">Q&#x27;</text>
+            <text x="119.9" y="127.8" text-anchor="middle" dominant-baseline="central" class="geom-label">P</text>
+            <text x="258.1" y="127.8" text-anchor="middle" dominant-baseline="central" class="geom-label">Q</text>
+            <text x="252.1" y="261" text-anchor="middle" dominant-baseline="central" class="geom-label">R</text>
+            <text x="129.9" y="261" text-anchor="middle" dominant-baseline="central" class="geom-label">S</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="a-similitude/index.html">Similitude</a></h2>
-                      <p>Similitude in Chapter II covers Articles <strong>§§ 23–30</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0053</span></code>–<code class="docutils literal notranslate"><span class="pre">0057</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">34</span></code>–<code class="docutils literal notranslate"><span class="pre">38</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/02_similitude_and_homothecy/</span></code>.</p>
+                    <h2><a href="a-similitude/index.html">Section A — Similitude</a></h2>
+                      <p>Introduces the constructive <span class="term-ref glossary-term">method of similitude</span> (<strong>§§ 23–30</strong>): when all conditions save one linear dimension determine the shape (<em>species</em>) of a figure, a convenient similar prototype is constructed first and then scaled to satisfy the remaining boundary or metric condition (<span class="citation-ref">Euclid VI</span>).</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="b-homothecy/index.html" aria-label="Two unequal circles O, O' with parallel radii, external center of similitude S, internal center S', and dashed circle of similitude">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-homothecy_circles.homothecy_circles" data-folio="hero-homothecy_circles" data-graphic="homothecy_circles">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <path class="geom-line" d="M 80 140 L 242 140 L 404 140" />
+            <circle cx="98" cy="140" r="64" class="geom-bold" />
+            <circle cx="242" cy="140" r="32" class="geom-bold" />
+            <circle cx="290" cy="140" r="96" class="geom-arc-dashed" />
+          </g>
+          <g>
+            <path class="geom-line" d="M 98 140 L 117.2 114.4 L 136.4 88.8" />
+            <path class="geom-line" d="M 242 140 L 251.6 127.2 L 261.2 114.4" />
+            <path class="geom-dashed" d="M 242 140 L 232.4 152.8 L 222.8 165.6" />
+            <path class="geom-line" d="M 136.4 88.8 L 261.2 114.4 L 386 140" />
+            <path class="geom-dashed" d="M 136.4 88.8 L 179.6 127.2 L 222.8 165.6" />
+          </g>
+          <g>
+            <circle cx="98" cy="140" r="2.6" class="geom-point" />
+            <circle cx="242" cy="140" r="2.6" class="geom-point" />
+            <circle cx="136.4" cy="88.8" r="2.6" class="geom-point" />
+            <circle cx="261.2" cy="114.4" r="2.6" class="geom-point" />
+            <circle cx="222.8" cy="165.6" r="2.6" class="geom-point" />
+            <circle cx="194" cy="140" r="2.6" class="geom-point" />
+            <circle cx="386" cy="140" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="92" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="246" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">O&#x27;</text>
+            <text x="130.4" y="78.8" text-anchor="middle" dominant-baseline="central" class="geom-label">P</text>
+            <text x="265.2" y="104.4" text-anchor="middle" dominant-baseline="central" class="geom-label">P&#x27;</text>
+            <text x="226.8" y="180.6" text-anchor="middle" dominant-baseline="central" class="geom-label">Q&#x27;</text>
+            <text x="188" y="128" text-anchor="middle" dominant-baseline="central" class="geom-label">S&#x27;</text>
+            <text x="394" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">S</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="b-homothecy/index.html">Homothecy
-
-        /home/runner/work/altshiller-court/altshiller-court/docsrc/college_geometry/ch02-similitude-and-homothecy/b-homothecy/index.rst:4: (INFO/1) Enumerated list start value not ordinal-1: “B” (ordinal 2)</a></h2>
-                      <p>Homothecy in Chapter II covers Articles <strong>§§ 31–53</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0057</span></code>–<code class="docutils literal notranslate"><span class="pre">0071</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">38</span></code>–<code class="docutils literal notranslate"><span class="pre">52</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/02_similitude_and_homothecy/</span></code>.</p>
+                    <h2><a href="b-homothecy/index.html">Section B — Homothecy</a></h2>
+                      <p>Develops central dilation or <span class="term-ref glossary-term">homothecy</span> <span class="math notranslate nohighlight">\(\mathcal{H}(S, k)\)</span> (<strong>§§ 31–53</strong>) as a point-to-point geometric transformation preserving parallelism, angles, and ratio of lengths, culminating in the <span class="term-ref glossary-term">centers of similitude</span> and circle of similitude of two circles.</p>
                   </section>
                 </div>
               </article>
@@ -119,7 +279,7 @@
             <a class="book-toc-link" href="../index.html">College Geometry</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="a-similitude/index.html" title="A. Similitude"><span class="nav-label">A. Similitude</span> &rarr;</a>
+            <a class="book-nav-btn" href="a-similitude/index.html" title="Section A — Similitude"><span class="nav-label">Section A — Similitude</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -166,11 +326,12 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=938c9ccc"></script>
+  <script src="../../_static/documentation_options.js?v=e259d695"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

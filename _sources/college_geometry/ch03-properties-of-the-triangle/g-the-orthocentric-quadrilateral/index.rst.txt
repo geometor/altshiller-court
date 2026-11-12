@@ -1,61 +1,38 @@
 :layout: book
 :type: section
 :order: 12
-:title: G. The Orthocentric Quadrilateral
+:title: Section G — The Orthocentric Quadrilateral
 :folio: 0128
 :page: 109
+:folios: 0128–0134
+:pages: 109–115
+:excerpt: Reveals the symmetric structure of the orthocentric quadrilateral  (or orthocentric group) {A, B, C, H} (§§ 220–239), in which each point is the orthocenter of the triangle formed by the other three.
 
 .. _ch03-properties-of-the-triangle-g-the-orthocentric-quadrilateral:
 
-G. The Orthocentric Quadrilateral
-=================================
+Section G — The Orthocentric Quadrilateral
+==========================================
 
-G. The Orthocentric Quadrilateral in Chapter III covers Articles **§§ 220–239** across archival folios ``0128``–``0134`` (printed pages ``109``–``115``), standardized at 300 DPI in ``resources/college_geometry/03_properties_of_the_triangle/``.
+.. rubric:: Chapter III: Properties of the Triangle • Articles §§ 220–239 (Folios 0128–0134, pp. 109–115)
 
-.. collection::
-   :type: item
-   :sort: order
+.. picture:: hero.svg
+   :alt: Triangle ABC with altitudes AD, BE, CF meeting at orthocenter H, reflection H' on circumcircle, and Euler line OGH
+   :caption: Altitudes, Orthocenter H = X(4), Circumcircle Reflection H', and Euler Line O–G–H
 
-Folio Scan Allocation
----------------------
+Reveals the symmetric structure of the :term:`orthocentric quadrilateral <orthocentric-quadrilateral>` (or *orthocentric group*) :math:`\{A, B, C, H\}` (**§§ 220–239**), in which each point is the orthocenter of the triangle formed by the other three.
 
-.. list-table::
-   :header-rows: 1
-   :widths: 16 16 38 30
+Principal Theorems, Constructions & Identities
+----------------------------------------------
 
-   * - Folio
-     - Page
-     - Articles
-     - Scan Status
-   * - ``0128``
-     - ``109``
-     - §§ 220–226
-     - 300 DPI gray
-   * - ``0129``
-     - ``110``
-     - §§ 227–228
-     - 300 DPI gray
-   * - ``0130``
-     - ``111``
-     - § 229
-     - 300 DPI gray
-   * - ``0131``
-     - ``112``
-     - §§ 230–232
-     - 300 DPI gray
-   * - ``0132``
-     - ``113``
-     - §§ 233–234
-     - 300 DPI gray
-   * - ``0133``
-     - ``114``
-     - §§ 236–239
-     - 300 DPI gray
-   * - ``0134``
-     - ``115``
-     - —
-     - 300 DPI gray
+* **§§ 220–226 — Symmetric Four-Point Role**: The four triangles :math:`ABC, HBC, HCA, HAB` share the *same* orthic triangle :math:`\triangle DEF` and the *same* :term:`nine-point circle <nine-point-circle>`!
+* **§§ 227–233 — Equal Circumradii & Circumcenter Group**: Their four circumcircles all have equal radius :math:`R`, and their four circumcenters form a second orthocentric group congruent and centrally symmetric to :math:`\{A, B, C, H\}` across :math:`N`.
+* **§§ 234–239 — Centroids & Four Euler Lines**: Their four centroids also form an orthocentric quadruple homothetic to :math:`\{A, B, C, H\}`, while their four Euler lines concur at :math:`N`.
+
+Constructive & Symbolic Connections
+-----------------------------------
+
+Provides a finite :math:`S_4` symmetry action on triangle configurations in ``geometor/model`` and connects directly to :person:`Johnson's <johnson>` three-equal-circles theorem.
 
 ----
 
-See :ref:`Commentary on Chapter III <ch03-properties-of-the-triangle-commentary>`.
+See :ref:`Commentary on Chapter III: Properties of the Triangle <ch03-properties-of-the-triangle-commentary>` and :ref:`334-Folio Archival Scan Inventory <scan-inventory>`.

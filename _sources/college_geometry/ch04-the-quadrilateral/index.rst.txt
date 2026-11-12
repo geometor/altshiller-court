@@ -15,6 +15,10 @@ Chapter IV: The Quadrilateral
 
 .. rubric:: Varignon Parallelogram, Bimedians, Ptolemy's Theorem, Anticenter, Brahmagupta, Circumscriptible & Bicentric Quadrilaterals
 
+.. picture:: hero.svg
+   :alt: Cyclic quadrilateral ABCD inscribed in circle O with diagonals AC, BD and Varignon midpoint parallelogram EFGH
+   :caption: Cyclic Quadrilateral ABCD, Ptolemy Diagonals AC, BD, and Varignon Parallelogram EFGH
+
 Synthetic theory of four-sided figures newly added in the 1952 Second Edition (**§§ 240–281**, Folios ``0143``–``0158``, pp. ``124``–``139``): Varignon's parallelogram, Euler's diagonal-midpoint identity, cyclic quadrilaterals, Ptolemy's and Brahmagupta's theorems, the anticenter, and circumscriptible and bicentric quadrilaterals.
 
 .. collection::

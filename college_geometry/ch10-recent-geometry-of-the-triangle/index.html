@@ -64,7 +64,7 @@
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../ch09-inversion/main-theory-and-applications-of-circular-inversion/index.html" title="Main. Theory and Applications of Circular Inversion">&larr; <span class="nav-label">Prev</span></a>
+            <a class="book-nav-btn" href="../ch09-inversion/main-theory-and-applications-of-circular-inversion/index.html" title="Theory and Applications of Circular Inversion">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
             <nav class="book-tracks-nav" aria-label="Document Tracks">
@@ -74,7 +74,7 @@
             </nav>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="a-poles-and-polars-with-respect-to-a-triangle/index.html" title="A. Poles and Polars with Respect to a Triangle (Trilinear Polar)"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="a-poles-and-polars-with-respect-to-a-triangle/index.html" title="Section A — Poles and Polars with Respect to a Triangle (Trilinear Polar)"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </header>
@@ -82,101 +82,748 @@
         <section class="level-1" id="chapter-x-recent-geometry-of-the-triangle">
         <span id="ch10-recent-geometry-of-the-triangle-en"></span><span id="ch10-recent-geometry-of-the-triangle"></span><h1>Chapter X: Recent Geometry of the Triangle<a class="headerlink" href="#chapter-x-recent-geometry-of-the-triangle" title="Link to this heading">¶</a></h1>
         <p class="rubric">Trilinear Polars, Symmedians &amp; Lemoine Geometry, Apollonian Circles &amp; Isodynamic Points, Isogonal Conjugates, Brocard Geometry, Tucker &amp; Taylor Circles, Orthopole</p>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic" data-graphic-id="hero-lemoine_symmedian.lemoine_symmedian" data-folio="hero-lemoine_symmedian" data-graphic="lemoine_symmedian">
+          <defs>
+            <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-2" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g id="elements">
+            <circle id="el-circle-lem1" data-ref="( P_1 P_2 Q_1 )" data-type="circle" cx="198.84" cy="167.46" r="78.54" class="geom-bold" />
+            <circle id="el-circle-broc" data-ref="( O K )" data-type="circle" cx="198.84" cy="167.46" r="11.22" class="geom-arc-dashed" />
+          </g>
+          <g id="graphics">
+            <polygon id="el-poly-tri" data-ref="&lt; A B C &gt;" data-type="polygon" points="176.4,34 92.4,235.59 327.6,235.59" class="geom-polygon" />
+            <path id="el-seg-symA" data-ref="/ A K /" data-type="segment" class="geom-dashed" d="M 176.4 34 L 182.04 101.31 L 187.68 168.62" />
+            <path id="el-seg-symB" data-ref="/ B K /" data-type="segment" class="geom-dashed" d="M 92.4 235.59 L 140.04 202.11 L 187.68 168.62" />
+            <path id="el-seg-symC" data-ref="/ C K /" data-type="segment" class="geom-dashed" d="M 327.6 235.59 L 257.64 202.11 L 187.68 168.62" />
+            <path id="el-seg-pBC" data-ref="/ P_1 P_2 /" data-type="segment" class="geom-line" d="M 120.31 168.62 L 198.84 168.62 L 277.37 168.62" />
+            <path id="el-seg-pCA" data-ref="/ Q_1 Q_2 /" data-type="segment" class="geom-line" d="M 237.9 235.59 L 191.13 173.24 L 144.37 110.88" />
+            <path id="el-seg-pAB" data-ref="/ R_1 R_2 /" data-type="segment" class="geom-line" d="M 219.71 91.74 L 189.74 163.66 L 159.77 235.59" />
+          </g>
+          <g id="highlights" style="pointer-events: none;">
+            <polygon id="hl-poly-tri" data-ref="&lt; A B C &gt;" points="176.4,34 92.4,235.59 327.6,235.59" class="geom-polygon geom-overlay" />
+            <circle id="hl-circle-lem1" data-ref="( P_1 P_2 Q_1 )" cx="198.84" cy="167.46" r="78.54" class="geom-circle geom-overlay" />
+            <circle id="hl-circle-broc" data-ref="( O K )" cx="198.84" cy="167.46" r="11.22" class="geom-circle geom-overlay" />
+            <path id="hl-seg-symA" data-ref="/ A K /" class="geom-line geom-overlay" d="M 176.4 34 L 182.04 101.31 L 187.68 168.62" />
+            <path id="hl-seg-symB" data-ref="/ B K /" class="geom-line geom-overlay" d="M 92.4 235.59 L 140.04 202.11 L 187.68 168.62" />
+            <path id="hl-seg-symC" data-ref="/ C K /" class="geom-line geom-overlay" d="M 327.6 235.59 L 257.64 202.11 L 187.68 168.62" />
+            <path id="hl-seg-pBC" data-ref="/ P_1 P_2 /" class="geom-line geom-overlay" d="M 120.31 168.62 L 198.84 168.62 L 277.37 168.62" />
+            <path id="hl-seg-pCA" data-ref="/ Q_1 Q_2 /" class="geom-line geom-overlay" d="M 237.9 235.59 L 191.13 173.24 L 144.37 110.88" />
+            <path id="hl-seg-pAB" data-ref="/ R_1 R_2 /" class="geom-line geom-overlay" d="M 219.71 91.74 L 189.74 163.66 L 159.77 235.59" />
+          </g>
+          <g id="points">
+            <circle id="el-pt-A" data-ref="A" data-type="point" cx="176.4" cy="34" r="2.6" class="geom-point" />
+            <circle id="el-pt-B" data-ref="B" data-type="point" cx="92.4" cy="235.59" r="2.6" class="geom-point" />
+            <circle id="el-pt-C" data-ref="C" data-type="point" cx="327.6" cy="235.59" r="2.6" class="geom-point" />
+            <circle id="el-pt-K" data-ref="K" data-type="point" cx="187.68" cy="168.62" r="2.6" class="geom-point" />
+            <circle id="el-pt-O" data-ref="O" data-type="point" cx="210" cy="166.3" r="2.6" class="geom-point" />
+            <circle id="el-pt-P1" data-ref="P1" data-type="point" cx="120.31" cy="168.62" r="2.6" class="geom-point" />
+            <circle id="el-pt-P2" data-ref="P2" data-type="point" cx="277.37" cy="168.62" r="2.6" class="geom-point" />
+            <circle id="el-pt-Q1" data-ref="Q1" data-type="point" cx="237.9" cy="235.59" r="2.6" class="geom-point" />
+            <circle id="el-pt-R2" data-ref="R2" data-type="point" cx="159.77" cy="235.59" r="2.6" class="geom-point" />
+          </g>
+          <g id="labels">
+            <text id="lbl-A" data-ref="A" x="168.2" y="25.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text id="lbl-B" data-ref="B" x="77.5" y="249.4" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text id="lbl-C" data-ref="C" x="334.5" y="249.4" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text id="lbl-K" data-ref="K" x="173.7" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">K</text>
+            <text id="lbl-O" data-ref="O" x="220" y="160.3" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text id="lbl-P1" data-ref="P1" x="104.3" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">P<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text id="lbl-P2" data-ref="P2" x="285.4" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">P<tspan dy="3" class="geom-label-sub">2</tspan></text>
+            <text id="lbl-Q1" data-ref="Q1" x="231.9" y="250.6" text-anchor="middle" dominant-baseline="central" class="geom-label">Q<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text id="lbl-R2" data-ref="R2" x="165.8" y="250.6" text-anchor="middle" dominant-baseline="central" class="geom-label">R<tspan dy="3" class="geom-label-sub">2</tspan></text>
+          </g>
+        </svg>
+        <figcaption>Symmedians, Lemoine Point K = X(6), First Lemoine Six-Point Circle, and Brocard Circle</figcaption>
+        </figure>
         <p>Late-nineteenth-century triangle geometry (<strong>§§ 547–699</strong>, Folios <code class="docutils literal notranslate"><span class="pre">0263</span></code>–<code class="docutils literal notranslate"><span class="pre">0313</span></code>, pp. <code class="docutils literal notranslate"><span class="pre">244</span></code>–<code class="docutils literal notranslate"><span class="pre">294</span></code>): trilinear poles and polars, symmedians and the Lemoine point, Lemoine circles, Apollonian circles and isodynamic points, isogonal conjugates, Brocard points and circle, Tucker circles, and Neuberg’s orthopole.</p>
             <section class="collection ">
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="a-poles-and-polars-with-respect-to-a-triangle/index.html" aria-label="Triangle ABC with symmedians meeting at Lemoine point K, parallels through K cutting the sides in six concyclic points on the First Lemoine Circle, and Brocard circle on diameter OK">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-lemoine_symmedian.lemoine_symmedian" data-folio="hero-lemoine_symmedian" data-graphic="lemoine_symmedian">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="198.84" cy="167.46" r="78.54" class="geom-bold" />
+            <circle cx="198.84" cy="167.46" r="11.22" class="geom-arc-dashed" />
+          </g>
+          <g>
+            <polygon points="176.4,34 92.4,235.59 327.6,235.59" class="geom-polygon" />
+            <path class="geom-dashed" d="M 176.4 34 L 182.04 101.31 L 187.68 168.62" />
+            <path class="geom-dashed" d="M 92.4 235.59 L 140.04 202.11 L 187.68 168.62" />
+            <path class="geom-dashed" d="M 327.6 235.59 L 257.64 202.11 L 187.68 168.62" />
+            <path class="geom-line" d="M 120.31 168.62 L 198.84 168.62 L 277.37 168.62" />
+            <path class="geom-line" d="M 237.9 235.59 L 191.13 173.24 L 144.37 110.88" />
+            <path class="geom-line" d="M 219.71 91.74 L 189.74 163.66 L 159.77 235.59" />
+          </g>
+          <g>
+            <circle cx="176.4" cy="34" r="2.6" class="geom-point" />
+            <circle cx="92.4" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="327.6" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="187.68" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="210" cy="166.3" r="2.6" class="geom-point" />
+            <circle cx="120.31" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="277.37" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="237.9" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="159.77" cy="235.59" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="168.2" y="25.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="77.5" y="249.4" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="334.5" y="249.4" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="173.7" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">K</text>
+            <text x="220" y="160.3" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="104.3" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">P<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="285.4" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">P<tspan dy="3" class="geom-label-sub">2</tspan></text>
+            <text x="231.9" y="250.6" text-anchor="middle" dominant-baseline="central" class="geom-label">Q<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="165.8" y="250.6" text-anchor="middle" dominant-baseline="central" class="geom-label">R<tspan dy="3" class="geom-label-sub">2</tspan></text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="a-poles-and-polars-with-respect-to-a-triangle/index.html">Poles and Polars with Respect to a Triangle (Trilinear Polar)</a></h2>
-                      <p>Poles and Polars with Respect to a Triangle (Trilinear Polar) in Chapter X covers Articles <strong>§§ 547–557</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0263</span></code>–<code class="docutils literal notranslate"><span class="pre">0266</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">244</span></code>–<code class="docutils literal notranslate"><span class="pre">247</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/10_recent_geometry_of_the_triangle/</span></code>.</p>
+                    <h2><a href="a-poles-and-polars-with-respect-to-a-triangle/index.html">Section A — Poles and Polars with Respect to a Triangle (Trilinear Polar)</a></h2>
+                      <p>Introduces projective duality relative to a reference triangle (<strong>§§ 547–557</strong>): the <span class="term-ref glossary-term">trilinear polar</span> of a point and the <em>trilinear pole</em> of a transversal line.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="b-a-lemoine-geometry-a-symmedians/index.html" aria-label="Triangle ABC with symmedians meeting at Lemoine point K, parallels through K cutting the sides in six concyclic points on the First Lemoine Circle, and Brocard circle on diameter OK">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-lemoine_symmedian.lemoine_symmedian" data-folio="hero-lemoine_symmedian" data-graphic="lemoine_symmedian">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="198.84" cy="167.46" r="78.54" class="geom-bold" />
+            <circle cx="198.84" cy="167.46" r="11.22" class="geom-arc-dashed" />
+          </g>
+          <g>
+            <polygon points="176.4,34 92.4,235.59 327.6,235.59" class="geom-polygon" />
+            <path class="geom-dashed" d="M 176.4 34 L 182.04 101.31 L 187.68 168.62" />
+            <path class="geom-dashed" d="M 92.4 235.59 L 140.04 202.11 L 187.68 168.62" />
+            <path class="geom-dashed" d="M 327.6 235.59 L 257.64 202.11 L 187.68 168.62" />
+            <path class="geom-line" d="M 120.31 168.62 L 198.84 168.62 L 277.37 168.62" />
+            <path class="geom-line" d="M 237.9 235.59 L 191.13 173.24 L 144.37 110.88" />
+            <path class="geom-line" d="M 219.71 91.74 L 189.74 163.66 L 159.77 235.59" />
+          </g>
+          <g>
+            <circle cx="176.4" cy="34" r="2.6" class="geom-point" />
+            <circle cx="92.4" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="327.6" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="187.68" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="210" cy="166.3" r="2.6" class="geom-point" />
+            <circle cx="120.31" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="277.37" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="237.9" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="159.77" cy="235.59" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="168.2" y="25.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="77.5" y="249.4" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="334.5" y="249.4" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="173.7" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">K</text>
+            <text x="220" y="160.3" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="104.3" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">P<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="285.4" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">P<tspan dy="3" class="geom-label-sub">2</tspan></text>
+            <text x="231.9" y="250.6" text-anchor="middle" dominant-baseline="central" class="geom-label">Q<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="165.8" y="250.6" text-anchor="middle" dominant-baseline="central" class="geom-label">R<tspan dy="3" class="geom-label-sub">2</tspan></text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="b-a-lemoine-geometry-a-symmedians/index.html">B.a. Lemoine Geometry — a. Symmedians</a></h2>
-                      <p>B.a. Lemoine Geometry — a. Symmedians in Chapter X covers Articles <strong>§§ 558–571</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0266</span></code>–<code class="docutils literal notranslate"><span class="pre">0271</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">247</span></code>–<code class="docutils literal notranslate"><span class="pre">252</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/10_recent_geometry_of_the_triangle/</span></code>.</p>
+                    <h2><a href="b-a-lemoine-geometry-a-symmedians/index.html">Section B.a — Lemoine Geometry: Symmedians</a></h2>
+                      <p>Develops the theory of <span class="term-ref glossary-term">symmedians</span> (<strong>§§ 558–571</strong>, <span class="person-ref">Maurice d'Ocagne</span>, <span class="person-ref">Émile Lemoine</span>): the reflections of the medians of a triangle across the corresponding internal angle bisectors.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="b-b-lemoine-geometry-b-the-lemoine-point/index.html" aria-label="Triangle ABC with symmedians meeting at Lemoine point K, parallels through K cutting the sides in six concyclic points on the First Lemoine Circle, and Brocard circle on diameter OK">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-lemoine_symmedian.lemoine_symmedian" data-folio="hero-lemoine_symmedian" data-graphic="lemoine_symmedian">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="198.84" cy="167.46" r="78.54" class="geom-bold" />
+            <circle cx="198.84" cy="167.46" r="11.22" class="geom-arc-dashed" />
+          </g>
+          <g>
+            <polygon points="176.4,34 92.4,235.59 327.6,235.59" class="geom-polygon" />
+            <path class="geom-dashed" d="M 176.4 34 L 182.04 101.31 L 187.68 168.62" />
+            <path class="geom-dashed" d="M 92.4 235.59 L 140.04 202.11 L 187.68 168.62" />
+            <path class="geom-dashed" d="M 327.6 235.59 L 257.64 202.11 L 187.68 168.62" />
+            <path class="geom-line" d="M 120.31 168.62 L 198.84 168.62 L 277.37 168.62" />
+            <path class="geom-line" d="M 237.9 235.59 L 191.13 173.24 L 144.37 110.88" />
+            <path class="geom-line" d="M 219.71 91.74 L 189.74 163.66 L 159.77 235.59" />
+          </g>
+          <g>
+            <circle cx="176.4" cy="34" r="2.6" class="geom-point" />
+            <circle cx="92.4" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="327.6" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="187.68" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="210" cy="166.3" r="2.6" class="geom-point" />
+            <circle cx="120.31" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="277.37" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="237.9" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="159.77" cy="235.59" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="168.2" y="25.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="77.5" y="249.4" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="334.5" y="249.4" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="173.7" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">K</text>
+            <text x="220" y="160.3" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="104.3" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">P<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="285.4" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">P<tspan dy="3" class="geom-label-sub">2</tspan></text>
+            <text x="231.9" y="250.6" text-anchor="middle" dominant-baseline="central" class="geom-label">Q<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="165.8" y="250.6" text-anchor="middle" dominant-baseline="central" class="geom-label">R<tspan dy="3" class="geom-label-sub">2</tspan></text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="b-b-lemoine-geometry-b-the-lemoine-point/index.html">B.b. Lemoine Geometry — b. The Lemoine Point</a></h2>
-                      <p>B.b. Lemoine Geometry — b. The Lemoine Point in Chapter X covers Articles <strong>§§ 572–587</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0271</span></code>–<code class="docutils literal notranslate"><span class="pre">0276</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">252</span></code>–<code class="docutils literal notranslate"><span class="pre">257</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/10_recent_geometry_of_the_triangle/</span></code>.</p>
+                    <h2><a href="b-b-lemoine-geometry-b-the-lemoine-point/index.html">Section B.b — Lemoine Geometry: The Lemoine Point</a></h2>
+                      <p>Establishes the concurrency of the three symmedians at the <span class="term-ref glossary-term">Lemoine (symmedian) point</span> <span class="math notranslate nohighlight">\(K = X(6)\)</span> (<strong>§§ 572–587</strong>, <span class="person-ref">Grebe</span> 1847; <span class="citation-ref">Lemoine 1873</span>), the crown jewel of late-nineteenth-century triangle geometry.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="b-c-lemoine-geometry-c-the-lemoine-circles/index.html" aria-label="Triangle ABC with symmedians meeting at Lemoine point K, parallels through K cutting the sides in six concyclic points on the First Lemoine Circle, and Brocard circle on diameter OK">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-lemoine_symmedian.lemoine_symmedian" data-folio="hero-lemoine_symmedian" data-graphic="lemoine_symmedian">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="198.84" cy="167.46" r="78.54" class="geom-bold" />
+            <circle cx="198.84" cy="167.46" r="11.22" class="geom-arc-dashed" />
+          </g>
+          <g>
+            <polygon points="176.4,34 92.4,235.59 327.6,235.59" class="geom-polygon" />
+            <path class="geom-dashed" d="M 176.4 34 L 182.04 101.31 L 187.68 168.62" />
+            <path class="geom-dashed" d="M 92.4 235.59 L 140.04 202.11 L 187.68 168.62" />
+            <path class="geom-dashed" d="M 327.6 235.59 L 257.64 202.11 L 187.68 168.62" />
+            <path class="geom-line" d="M 120.31 168.62 L 198.84 168.62 L 277.37 168.62" />
+            <path class="geom-line" d="M 237.9 235.59 L 191.13 173.24 L 144.37 110.88" />
+            <path class="geom-line" d="M 219.71 91.74 L 189.74 163.66 L 159.77 235.59" />
+          </g>
+          <g>
+            <circle cx="176.4" cy="34" r="2.6" class="geom-point" />
+            <circle cx="92.4" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="327.6" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="187.68" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="210" cy="166.3" r="2.6" class="geom-point" />
+            <circle cx="120.31" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="277.37" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="237.9" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="159.77" cy="235.59" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="168.2" y="25.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="77.5" y="249.4" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="334.5" y="249.4" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="173.7" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">K</text>
+            <text x="220" y="160.3" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="104.3" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">P<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="285.4" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">P<tspan dy="3" class="geom-label-sub">2</tspan></text>
+            <text x="231.9" y="250.6" text-anchor="middle" dominant-baseline="central" class="geom-label">Q<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="165.8" y="250.6" text-anchor="middle" dominant-baseline="central" class="geom-label">R<tspan dy="3" class="geom-label-sub">2</tspan></text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="b-c-lemoine-geometry-c-the-lemoine-circles/index.html">B.c. Lemoine Geometry — c. The Lemoine Circles</a></h2>
-                      <p>B.c. Lemoine Geometry — c. The Lemoine Circles in Chapter X covers Articles <strong>§§ 588–596</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0276</span></code>–<code class="docutils literal notranslate"><span class="pre">0279</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">257</span></code>–<code class="docutils literal notranslate"><span class="pre">260</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/10_recent_geometry_of_the_triangle/</span></code>.</p>
+                    <h2><a href="b-c-lemoine-geometry-c-the-lemoine-circles/index.html">Section B.c — Lemoine Geometry: The Lemoine Circles</a></h2>
+                      <p>Constructs the two remarkable six-point circles discovered by <span class="person-ref">Émile Lemoine</span> in 1873 (<strong>§§ 588–596</strong>, <span class="citation-ref">Lemoine 1873</span>): the first and second (cosine) <span class="term-ref glossary-term">Lemoine circles</span>.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="c-the-apollonian-circles/index.html" aria-label="Exact symbolic diagram of segment AB divided harmonically by C and D with Apollonian circle on diameter CD and orthogonal bisectors MC, MD">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-apollonian_locus.apollonian_locus" data-folio="hero-apollonian_locus" data-graphic="apollonian_locus">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <path class="geom-line" d="M 33 140 L 210 140 L 387 140" />
+            <circle cx="263" cy="140" r="106" class="geom-bold" />
+          </g>
+          <g>
+            <path class="geom-line" d="M 199.4 55.2 L 125.2 97.6 L 51 140" />
+            <path class="geom-line" d="M 199.4 55.2 L 204.7 97.6 L 210 140" />
+            <path class="geom-dashed" d="M 199.4 55.2 L 178.2 97.6 L 157 140" />
+            <path class="geom-dashed" d="M 199.4 55.2 L 284.2 97.6 L 369 140" />
+            <path d="M 199.4 55.2 L 191.35 71.3 A 18 18 0 0 0 215.5 63.25 Z" class="wedge angle geom-overlay" />
+          </g>
+          <g>
+            <circle cx="51" cy="140" r="2.6" class="geom-point" />
+            <circle cx="210" cy="140" r="2.6" class="geom-point" />
+            <circle cx="157" cy="140" r="2.6" class="geom-point" />
+            <circle cx="263" cy="140" r="2.6" class="geom-point" />
+            <circle cx="369" cy="140" r="2.6" class="geom-point" />
+            <circle cx="199.4" cy="55.2" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="45" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="210" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="151" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="263" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="377" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">D</text>
+            <text x="195.4" y="43.2" text-anchor="middle" dominant-baseline="central" class="geom-label">M</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="c-the-apollonian-circles/index.html">The Apollonian Circles (incl. Isodynamic Points & Lemoine Axis)
-
-        /home/runner/work/altshiller-court/altshiller-court/docsrc/college_geometry/ch10-recent-geometry-of-the-triangle/c-the-apollonian-circles/index.rst:4: (INFO/1) Enumerated list start value not ordinal-1: “C” (ordinal 3)</a></h2>
-                      <p>The Apollonian Circles (incl. Isodynamic Points &amp; Lemoine Axis) in Chapter X covers Articles <strong>§§ 597–624</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0279</span></code>–<code class="docutils literal notranslate"><span class="pre">0286</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">260</span></code>–<code class="docutils literal notranslate"><span class="pre">267</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/10_recent_geometry_of_the_triangle/</span></code>.</p>
+                    <h2><a href="c-the-apollonian-circles/index.html">Section C — The Apollonian Circles (incl. Isodynamic Points & Lemoine Axis)</a></h2>
+                      <p>Studies the coaxal triad of <span class="term-ref glossary-term">Apollonian circles</span> of a triangle (<strong>§§ 597–624</strong>), their two common <span class="term-ref glossary-term">isodynamic points</span> <span class="math notranslate nohighlight">\(W, W' = X(15), X(16)\)</span>, and their orthogonality to the circumcircle.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="d-isogonal-lines/index.html" aria-label="Acute triangle ABC with altitudes AD, BE, CF meeting at H, highlighted orthic triangle DEF, and circumscribed nine-point circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-orthic_fagnano.orthic_fagnano" data-folio="hero-orthic_fagnano" data-graphic="orthic_fagnano">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="192.52" cy="174.97" r="71.03" class="geom-arc-dashed" />
+          </g>
+          <g>
+            <polygon points="175.03,34 87.61,243.81 332.39,243.81" class="geom-polygon" />
+            <polygon points="175.03,243.81 244.27,126.32 123.82,156.91" class="geom-polygon" />
+            <path class="geom-dashed" d="M 175.03 34 L 175.03 138.91 L 175.03 243.81" />
+            <path class="geom-dashed" d="M 87.61 243.81 L 165.94 185.06 L 244.27 126.32" />
+            <path class="geom-dashed" d="M 332.39 243.81 L 228.1 200.36 L 123.82 156.91" />
+          </g>
+          <g>
+            <circle cx="175.03" cy="34" r="2.6" class="geom-point" />
+            <circle cx="87.61" cy="243.81" r="2.6" class="geom-point" />
+            <circle cx="332.39" cy="243.81" r="2.6" class="geom-point" />
+            <circle cx="175.03" cy="243.81" r="2.6" class="geom-point" />
+            <circle cx="244.27" cy="126.32" r="2.6" class="geom-point" />
+            <circle cx="123.82" cy="156.91" r="2.6" class="geom-point" />
+            <circle cx="175.03" cy="178.25" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="166.6" y="25.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="72.9" y="257.9" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="339.1" y="257.9" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="175" y="258.8" text-anchor="middle" dominant-baseline="central" class="geom-label">D</text>
+            <text x="254.3" y="122.3" text-anchor="middle" dominant-baseline="central" class="geom-label">E</text>
+            <text x="109.8" y="152.9" text-anchor="middle" dominant-baseline="central" class="geom-label">F</text>
+            <text x="183" y="172.2" text-anchor="middle" dominant-baseline="central" class="geom-label">H</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="d-isogonal-lines/index.html">Isogonal Lines (Isogonal Conjugates & Pedal Triangles)
-
-        /home/runner/work/altshiller-court/altshiller-court/docsrc/college_geometry/ch10-recent-geometry-of-the-triangle/d-isogonal-lines/index.rst:4: (INFO/1) Enumerated list start value not ordinal-1: “D” (ordinal 4)</a></h2>
-                      <p>Isogonal Lines (Isogonal Conjugates &amp; Pedal Triangles) in Chapter X covers Articles <strong>§§ 625–648</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0286</span></code>–<code class="docutils literal notranslate"><span class="pre">0293</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">267</span></code>–<code class="docutils literal notranslate"><span class="pre">274</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/10_recent_geometry_of_the_triangle/</span></code>.</p>
+                    <h2><a href="d-isogonal-lines/index.html">Section D — Isogonal Lines (Isogonal Conjugates & Pedal Triangles)</a></h2>
+                      <p>Develops the quadratic Cremona transformation of <span class="term-ref glossary-term">isogonal conjugation</span> with respect to <span class="math notranslate nohighlight">\(\triangle ABC\)</span> (<strong>§§ 625–648</strong>), pairing every interior/exterior point <span class="math notranslate nohighlight">\(P\)</span> with its reflection-in-bisectors conjugate <span class="math notranslate nohighlight">\(P'\)</span>.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="e-a-brocard-geometry-a-brocard-points/index.html" aria-label="Triangle ABC with symmedians meeting at Lemoine point K, parallels through K cutting the sides in six concyclic points on the First Lemoine Circle, and Brocard circle on diameter OK">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-lemoine_symmedian.lemoine_symmedian" data-folio="hero-lemoine_symmedian" data-graphic="lemoine_symmedian">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="198.84" cy="167.46" r="78.54" class="geom-bold" />
+            <circle cx="198.84" cy="167.46" r="11.22" class="geom-arc-dashed" />
+          </g>
+          <g>
+            <polygon points="176.4,34 92.4,235.59 327.6,235.59" class="geom-polygon" />
+            <path class="geom-dashed" d="M 176.4 34 L 182.04 101.31 L 187.68 168.62" />
+            <path class="geom-dashed" d="M 92.4 235.59 L 140.04 202.11 L 187.68 168.62" />
+            <path class="geom-dashed" d="M 327.6 235.59 L 257.64 202.11 L 187.68 168.62" />
+            <path class="geom-line" d="M 120.31 168.62 L 198.84 168.62 L 277.37 168.62" />
+            <path class="geom-line" d="M 237.9 235.59 L 191.13 173.24 L 144.37 110.88" />
+            <path class="geom-line" d="M 219.71 91.74 L 189.74 163.66 L 159.77 235.59" />
+          </g>
+          <g>
+            <circle cx="176.4" cy="34" r="2.6" class="geom-point" />
+            <circle cx="92.4" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="327.6" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="187.68" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="210" cy="166.3" r="2.6" class="geom-point" />
+            <circle cx="120.31" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="277.37" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="237.9" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="159.77" cy="235.59" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="168.2" y="25.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="77.5" y="249.4" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="334.5" y="249.4" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="173.7" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">K</text>
+            <text x="220" y="160.3" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="104.3" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">P<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="285.4" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">P<tspan dy="3" class="geom-label-sub">2</tspan></text>
+            <text x="231.9" y="250.6" text-anchor="middle" dominant-baseline="central" class="geom-label">Q<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="165.8" y="250.6" text-anchor="middle" dominant-baseline="central" class="geom-label">R<tspan dy="3" class="geom-label-sub">2</tspan></text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="e-a-brocard-geometry-a-brocard-points/index.html">E.a. Brocard Geometry — a. Brocard Points</a></h2>
-                      <p>E.a. Brocard Geometry — a. Brocard Points in Chapter X covers Articles <strong>§§ 649–665</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0293</span></code>–<code class="docutils literal notranslate"><span class="pre">0298</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">274</span></code>–<code class="docutils literal notranslate"><span class="pre">279</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/10_recent_geometry_of_the_triangle/</span></code>.</p>
+                    <h2><a href="e-a-brocard-geometry-a-brocard-points/index.html">Section E.a — Brocard Geometry: Brocard Points</a></h2>
+                      <p>Introduces the asymmetric rotational jewel of triangle geometry (<strong>§§ 649–665</strong>): the direct and retrograde <span class="term-ref glossary-term">Brocard points</span> <span class="math notranslate nohighlight">\(\Omega, \Omega'\)</span> and the Brocard angle <span class="math notranslate nohighlight">\(\omega\)</span> (<span class="person-ref">Crelle</span> 1816, <span class="person-ref">Jacobi</span> 1828, <span class="citation-ref">Brocard 1881</span>).</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="e-b-brocard-geometry-b-brocard-circle/index.html" aria-label="Triangle ABC with symmedians meeting at Lemoine point K, parallels through K cutting the sides in six concyclic points on the First Lemoine Circle, and Brocard circle on diameter OK">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-lemoine_symmedian.lemoine_symmedian" data-folio="hero-lemoine_symmedian" data-graphic="lemoine_symmedian">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="198.84" cy="167.46" r="78.54" class="geom-bold" />
+            <circle cx="198.84" cy="167.46" r="11.22" class="geom-arc-dashed" />
+          </g>
+          <g>
+            <polygon points="176.4,34 92.4,235.59 327.6,235.59" class="geom-polygon" />
+            <path class="geom-dashed" d="M 176.4 34 L 182.04 101.31 L 187.68 168.62" />
+            <path class="geom-dashed" d="M 92.4 235.59 L 140.04 202.11 L 187.68 168.62" />
+            <path class="geom-dashed" d="M 327.6 235.59 L 257.64 202.11 L 187.68 168.62" />
+            <path class="geom-line" d="M 120.31 168.62 L 198.84 168.62 L 277.37 168.62" />
+            <path class="geom-line" d="M 237.9 235.59 L 191.13 173.24 L 144.37 110.88" />
+            <path class="geom-line" d="M 219.71 91.74 L 189.74 163.66 L 159.77 235.59" />
+          </g>
+          <g>
+            <circle cx="176.4" cy="34" r="2.6" class="geom-point" />
+            <circle cx="92.4" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="327.6" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="187.68" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="210" cy="166.3" r="2.6" class="geom-point" />
+            <circle cx="120.31" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="277.37" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="237.9" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="159.77" cy="235.59" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="168.2" y="25.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="77.5" y="249.4" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="334.5" y="249.4" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="173.7" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">K</text>
+            <text x="220" y="160.3" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="104.3" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">P<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="285.4" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">P<tspan dy="3" class="geom-label-sub">2</tspan></text>
+            <text x="231.9" y="250.6" text-anchor="middle" dominant-baseline="central" class="geom-label">Q<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="165.8" y="250.6" text-anchor="middle" dominant-baseline="central" class="geom-label">R<tspan dy="3" class="geom-label-sub">2</tspan></text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="e-b-brocard-geometry-b-brocard-circle/index.html">E.b. Brocard Geometry — b. Brocard Circle (Brocard Triangles, Steiner & Tarry Points)</a></h2>
-                      <p>E.b. Brocard Geometry — b. Brocard Circle (Brocard Triangles, Steiner &amp; Tarry Points) in Chapter X covers Articles <strong>§§ 666–683</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0298</span></code>–<code class="docutils literal notranslate"><span class="pre">0303</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">279</span></code>–<code class="docutils literal notranslate"><span class="pre">284</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/10_recent_geometry_of_the_triangle/</span></code>.</p>
+                    <h2><a href="e-b-brocard-geometry-b-brocard-circle/index.html">Section E.b — Brocard Geometry: Brocard Circle (Brocard Triangles, Steiner & Tarry Points)</a></h2>
+                      <p>Unites <span class="math notranslate nohighlight">\(O, K, \Omega, \Omega'\)</span> on the seven-point <span class="term-ref glossary-term">Brocard circle</span> (<strong>§§ 666–683</strong>), introducing Brocard’s first and second triangles and the <span class="term-ref glossary-term">Steiner and Tarry points</span>.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="f-tucker-circles/index.html" aria-label="Triangle ABC with symmedians meeting at Lemoine point K, parallels through K cutting the sides in six concyclic points on the First Lemoine Circle, and Brocard circle on diameter OK">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-lemoine_symmedian.lemoine_symmedian" data-folio="hero-lemoine_symmedian" data-graphic="lemoine_symmedian">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="198.84" cy="167.46" r="78.54" class="geom-bold" />
+            <circle cx="198.84" cy="167.46" r="11.22" class="geom-arc-dashed" />
+          </g>
+          <g>
+            <polygon points="176.4,34 92.4,235.59 327.6,235.59" class="geom-polygon" />
+            <path class="geom-dashed" d="M 176.4 34 L 182.04 101.31 L 187.68 168.62" />
+            <path class="geom-dashed" d="M 92.4 235.59 L 140.04 202.11 L 187.68 168.62" />
+            <path class="geom-dashed" d="M 327.6 235.59 L 257.64 202.11 L 187.68 168.62" />
+            <path class="geom-line" d="M 120.31 168.62 L 198.84 168.62 L 277.37 168.62" />
+            <path class="geom-line" d="M 237.9 235.59 L 191.13 173.24 L 144.37 110.88" />
+            <path class="geom-line" d="M 219.71 91.74 L 189.74 163.66 L 159.77 235.59" />
+          </g>
+          <g>
+            <circle cx="176.4" cy="34" r="2.6" class="geom-point" />
+            <circle cx="92.4" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="327.6" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="187.68" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="210" cy="166.3" r="2.6" class="geom-point" />
+            <circle cx="120.31" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="277.37" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="237.9" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="159.77" cy="235.59" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="168.2" y="25.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="77.5" y="249.4" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="334.5" y="249.4" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="173.7" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">K</text>
+            <text x="220" y="160.3" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="104.3" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">P<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="285.4" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">P<tspan dy="3" class="geom-label-sub">2</tspan></text>
+            <text x="231.9" y="250.6" text-anchor="middle" dominant-baseline="central" class="geom-label">Q<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="165.8" y="250.6" text-anchor="middle" dominant-baseline="central" class="geom-label">R<tspan dy="3" class="geom-label-sub">2</tspan></text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="f-tucker-circles/index.html">Tucker Circles (incl. Taylor Circle § 689)
-
-        /home/runner/work/altshiller-court/altshiller-court/docsrc/college_geometry/ch10-recent-geometry-of-the-triangle/f-tucker-circles/index.rst:4: (INFO/1) Enumerated list start value not ordinal-1: “F” (ordinal 6)</a></h2>
-                      <p>Tucker Circles (incl. Taylor Circle § 689) in Chapter X covers Articles <strong>§§ 684–689</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0303</span></code>–<code class="docutils literal notranslate"><span class="pre">0306</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">284</span></code>–<code class="docutils literal notranslate"><span class="pre">287</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/10_recent_geometry_of_the_triangle/</span></code>.</p>
+                    <h2><a href="f-tucker-circles/index.html">Section F — Tucker Circles (incl. Taylor Circle § 689)</a></h2>
+                      <p>Generalizes the circumcircle, first and second Lemoine circles, and three-point pedal circles into the one-parameter family of <span class="term-ref glossary-term">Tucker circles</span> (<strong>§§ 684–689</strong>, <span class="person-ref">Robert Tucker</span> 1883), highlighted by the <span class="person-ref">Taylor</span> circle (<strong>§ 689</strong>).</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="g-the-orthopole/index.html" aria-label="Triangle ABC with symmedians meeting at Lemoine point K, parallels through K cutting the sides in six concyclic points on the First Lemoine Circle, and Brocard circle on diameter OK">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-lemoine_symmedian.lemoine_symmedian" data-folio="hero-lemoine_symmedian" data-graphic="lemoine_symmedian">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="198.84" cy="167.46" r="78.54" class="geom-bold" />
+            <circle cx="198.84" cy="167.46" r="11.22" class="geom-arc-dashed" />
+          </g>
+          <g>
+            <polygon points="176.4,34 92.4,235.59 327.6,235.59" class="geom-polygon" />
+            <path class="geom-dashed" d="M 176.4 34 L 182.04 101.31 L 187.68 168.62" />
+            <path class="geom-dashed" d="M 92.4 235.59 L 140.04 202.11 L 187.68 168.62" />
+            <path class="geom-dashed" d="M 327.6 235.59 L 257.64 202.11 L 187.68 168.62" />
+            <path class="geom-line" d="M 120.31 168.62 L 198.84 168.62 L 277.37 168.62" />
+            <path class="geom-line" d="M 237.9 235.59 L 191.13 173.24 L 144.37 110.88" />
+            <path class="geom-line" d="M 219.71 91.74 L 189.74 163.66 L 159.77 235.59" />
+          </g>
+          <g>
+            <circle cx="176.4" cy="34" r="2.6" class="geom-point" />
+            <circle cx="92.4" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="327.6" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="187.68" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="210" cy="166.3" r="2.6" class="geom-point" />
+            <circle cx="120.31" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="277.37" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="237.9" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="159.77" cy="235.59" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="168.2" y="25.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="77.5" y="249.4" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="334.5" y="249.4" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="173.7" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">K</text>
+            <text x="220" y="160.3" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="104.3" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">P<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="285.4" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">P<tspan dy="3" class="geom-label-sub">2</tspan></text>
+            <text x="231.9" y="250.6" text-anchor="middle" dominant-baseline="central" class="geom-label">Q<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="165.8" y="250.6" text-anchor="middle" dominant-baseline="central" class="geom-label">R<tspan dy="3" class="geom-label-sub">2</tspan></text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="g-the-orthopole/index.html">The Orthopole
-
-        /home/runner/work/altshiller-court/altshiller-court/docsrc/college_geometry/ch10-recent-geometry-of-the-triangle/g-the-orthopole/index.rst:4: (INFO/1) Enumerated list start value not ordinal-1: “G” (ordinal 7)</a></h2>
-                      <p>The Orthopole in Chapter X covers Articles <strong>§§ 690–699</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0306</span></code>–<code class="docutils literal notranslate"><span class="pre">0310</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">287</span></code>–<code class="docutils literal notranslate"><span class="pre">291</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/10_recent_geometry_of_the_triangle/</span></code>.</p>
+                    <h2><a href="g-the-orthopole/index.html">Section G — The Orthopole</a></h2>
+                      <p>Culminates the entire 699-article treatise with <span class="person-ref">Joseph Neuberg's</span> theory of the <span class="term-ref glossary-term">orthopole</span> <span class="math notranslate nohighlight">\(M\)</span> of a line <span class="math notranslate nohighlight">\(m\)</span> with respect to <span class="math notranslate nohighlight">\(\triangle ABC\)</span> (<strong>§§ 690–699</strong>, <span class="citation-ref">Gallatly 1913</span>).</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="supplementary-exercises-blank-verso/index.html" aria-label="Triangle ABC with symmedians meeting at Lemoine point K, parallels through K cutting the sides in six concyclic points on the First Lemoine Circle, and Brocard circle on diameter OK">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-lemoine_symmedian.lemoine_symmedian" data-folio="hero-lemoine_symmedian" data-graphic="lemoine_symmedian">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="198.84" cy="167.46" r="78.54" class="geom-bold" />
+            <circle cx="198.84" cy="167.46" r="11.22" class="geom-arc-dashed" />
+          </g>
+          <g>
+            <polygon points="176.4,34 92.4,235.59 327.6,235.59" class="geom-polygon" />
+            <path class="geom-dashed" d="M 176.4 34 L 182.04 101.31 L 187.68 168.62" />
+            <path class="geom-dashed" d="M 92.4 235.59 L 140.04 202.11 L 187.68 168.62" />
+            <path class="geom-dashed" d="M 327.6 235.59 L 257.64 202.11 L 187.68 168.62" />
+            <path class="geom-line" d="M 120.31 168.62 L 198.84 168.62 L 277.37 168.62" />
+            <path class="geom-line" d="M 237.9 235.59 L 191.13 173.24 L 144.37 110.88" />
+            <path class="geom-line" d="M 219.71 91.74 L 189.74 163.66 L 159.77 235.59" />
+          </g>
+          <g>
+            <circle cx="176.4" cy="34" r="2.6" class="geom-point" />
+            <circle cx="92.4" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="327.6" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="187.68" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="210" cy="166.3" r="2.6" class="geom-point" />
+            <circle cx="120.31" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="277.37" cy="168.62" r="2.6" class="geom-point" />
+            <circle cx="237.9" cy="235.59" r="2.6" class="geom-point" />
+            <circle cx="159.77" cy="235.59" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="168.2" y="25.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="77.5" y="249.4" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="334.5" y="249.4" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="173.7" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">K</text>
+            <text x="220" y="160.3" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="104.3" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">P<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="285.4" y="164.6" text-anchor="middle" dominant-baseline="central" class="geom-label">P<tspan dy="3" class="geom-label-sub">2</tspan></text>
+            <text x="231.9" y="250.6" text-anchor="middle" dominant-baseline="central" class="geom-label">Q<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="165.8" y="250.6" text-anchor="middle" dominant-baseline="central" class="geom-label">R<tspan dy="3" class="geom-label-sub">2</tspan></text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
                     <h2><a href="supplementary-exercises-blank-verso/index.html">Supplementary Exercises & Blank Verso</a></h2>
-                      <p>Supplementary Exercises &amp; Blank Verso in Chapter X covers Archival Matter across archival folios <code class="docutils literal notranslate"><span class="pre">0310</span></code>–<code class="docutils literal notranslate"><span class="pre">0313</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">291</span></code>–<code class="docutils literal notranslate"><span class="pre">[294]</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/10_recent_geometry_of_the_triangle/</span></code>.</p>
+                      <p>Concludes Chapter X across Folios <code class="docutils literal notranslate"><span class="pre">0310</span></code>–<code class="docutils literal notranslate"><span class="pre">0313</span></code> (pp. <code class="docutils literal notranslate"><span class="pre">291</span></code>–<code class="docutils literal notranslate"><span class="pre">[294]</span></code>) with advanced supplementary problems spanning trilinear polarity, Lemoine–Brocard geometry, Tucker circles, and orthopoles, followed by the blank verso leaf <code class="docutils literal notranslate"><span class="pre">[294]</span></code>.</p>
                   </section>
                 </div>
               </article>
@@ -191,13 +838,13 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../ch09-inversion/main-theory-and-applications-of-circular-inversion/index.html" title="Main. Theory and Applications of Circular Inversion">&larr; <span class="nav-label">Main. Theory and Applications of Circular Inversion</span></a>
+            <a class="book-nav-btn" href="../ch09-inversion/main-theory-and-applications-of-circular-inversion/index.html" title="Theory and Applications of Circular Inversion">&larr; <span class="nav-label">Theory and Applications of Circular Inversion</span></a>
           </div>
           <div class="book-nav-center">
             <a class="book-toc-link" href="../index.html">College Geometry</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="a-poles-and-polars-with-respect-to-a-triangle/index.html" title="A. Poles and Polars with Respect to a Triangle (Trilinear Polar)"><span class="nav-label">A. Poles and Polars with Respect to a Triangle (Trilinear Polar)</span> &rarr;</a>
+            <a class="book-nav-btn" href="a-poles-and-polars-with-respect-to-a-triangle/index.html" title="Section A — Poles and Polars with Respect to a Triangle (Trilinear Polar)"><span class="nav-label">Section A — Poles and Polars with Respect to a Triangle (Trilinear Polar)</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -244,11 +891,12 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=938c9ccc"></script>
+  <script src="../../_static/documentation_options.js?v=e259d695"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

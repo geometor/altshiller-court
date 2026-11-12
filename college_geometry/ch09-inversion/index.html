@@ -64,7 +64,7 @@
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../ch08-circles/i-the-problem-of-apollonius/index.html" title="I. The Problem of Apollonius (Ten Problems I–X &amp; Gergonne’s Solution)">&larr; <span class="nav-label">Prev</span></a>
+            <a class="book-nav-btn" href="../ch08-circles/i-the-problem-of-apollonius/index.html" title="Section I — The Problem of Apollonius (Ten Problems I–X &amp; Gergonne’s Solution)">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
             <nav class="book-tracks-nav" aria-label="Document Tracks">
@@ -74,7 +74,7 @@
             </nav>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="main-theory-and-applications-of-circular-inversion/index.html" title="Main. Theory and Applications of Circular Inversion"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="main-theory-and-applications-of-circular-inversion/index.html" title="Theory and Applications of Circular Inversion"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </header>
@@ -82,13 +82,109 @@
         <section class="level-1" id="chapter-ix-inversion">
         <span id="ch09-inversion-en"></span><span id="ch09-inversion"></span><h1>Chapter IX: Inversion<a class="headerlink" href="#chapter-ix-inversion" title="Link to this heading">¶</a></h1>
         <p class="rubric">Circular Inversion, Conformal Angle Preservation, Peaucellier’s Cell, Ptolemy’s Extension, Feuerbach’s Theorem by Inversion</p>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic" data-graphic-id="hero-circular_inversion.circular_inversion" data-folio="hero-circular_inversion" data-graphic="circular_inversion">
+          <defs>
+            <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-2" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g id="elements">
+            <path id="el-line-axis" data-ref="[ O A' ]" data-aliases="[ O Aprime ]" data-type="line" class="geom-line" d="M 139 140 L 263 140 L 387 140" />
+            <circle id="el-circle-cinv" data-ref="( O B )" data-type="circle" cx="157" cy="140" r="106" class="geom-arc-dashed" />
+            <circle id="el-circle-c1" data-ref="( A B )" data-type="circle" cx="236.5" cy="140" r="26.5" class="geom-bold" />
+            <circle id="el-circle-c2" data-ref="( B A' )" data-aliases="( B Aprime )" data-type="circle" cx="316" cy="140" r="53" class="geom-bold" />
+          </g>
+          <g id="graphics">
+            <path id="el-seg-rayP" data-ref="/ O P' /" data-aliases="/ O Pprime /" data-type="segment" class="geom-dashed" d="M 157 140 L 236.5 113.5 L 316 87" />
+          </g>
+          <g id="highlights" style="pointer-events: none;">
+            <path id="hl-line-axis" data-ref="[ O A' ]" data-aliases="[ O Aprime ]" class="geom-line geom-overlay" d="M 139 140 L 263 140 L 387 140" />
+            <circle id="hl-circle-cinv" data-ref="( O B )" cx="157" cy="140" r="106" class="geom-circle geom-overlay" />
+            <circle id="hl-circle-c1" data-ref="( A B )" cx="236.5" cy="140" r="26.5" class="geom-circle geom-overlay" />
+            <circle id="hl-circle-c2" data-ref="( B A' )" data-aliases="( B Aprime )" cx="316" cy="140" r="53" class="geom-circle geom-overlay" />
+            <path id="hl-seg-rayP" data-ref="/ O P' /" data-aliases="/ O Pprime /" class="geom-line geom-overlay" d="M 157 140 L 236.5 113.5 L 316 87" />
+          </g>
+          <g id="points">
+            <circle id="el-pt-O" data-ref="O" data-type="point" cx="157" cy="140" r="2.6" class="geom-point" />
+            <circle id="el-pt-A" data-ref="A" data-type="point" cx="210" cy="140" r="2.6" class="geom-point" />
+            <circle id="el-pt-B" data-ref="B" data-type="point" cx="263" cy="140" r="2.6" class="geom-point" />
+            <circle id="el-pt-Aprime" data-ref="Aprime" data-type="point" cx="369" cy="140" r="2.6" class="geom-point" />
+            <circle id="el-pt-P" data-ref="P" data-type="point" cx="220.6" cy="118.8" r="2.6" class="geom-point" />
+            <circle id="el-pt-Pprime" data-ref="Pprime" data-type="point" cx="316" cy="87" r="2.6" class="geom-point" />
+          </g>
+          <g id="labels">
+            <text id="lbl-O" data-ref="O" x="145" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text id="lbl-A" data-ref="A" x="204" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text id="lbl-B" data-ref="B" x="267" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text id="lbl-Aprime" data-ref="Aprime" x="377" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">A&#x27;</text>
+            <text id="lbl-P" data-ref="P" x="216.6" y="108.8" text-anchor="middle" dominant-baseline="central" class="geom-label">P</text>
+            <text id="lbl-Pprime" data-ref="Pprime" x="320" y="77" text-anchor="middle" dominant-baseline="central" class="geom-label">P&#x27;</text>
+          </g>
+        </svg>
+        <figcaption>Circular Inversion (O, k): Inverse Circles C₁ ↔ C₂ with Homologous Ray O–P–P'</figcaption>
+        </figure>
         <p>Conformal transformation by reciprocal radii (<strong>§§ 518–546</strong>, Folios <code class="docutils literal notranslate"><span class="pre">0249</span></code>–<code class="docutils literal notranslate"><span class="pre">0262</span></code>, pp. <code class="docutils literal notranslate"><span class="pre">230</span></code>–<code class="docutils literal notranslate"><span class="pre">243</span></code>): images of lines and circles, Peaucellier’s straight-line linkage, and inversion proofs of Ptolemy’s theorem, Steiner’s porism, and Feuerbach’s theorem.</p>
             <section class="collection ">
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="main-theory-and-applications-of-circular-inversion/index.html" aria-label="Circle of inversion centered at O mapping inner circle AB onto outer circle BA' with collinear inverse pair P, P'">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-circular_inversion.circular_inversion" data-folio="hero-circular_inversion" data-graphic="circular_inversion">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <path class="geom-line" d="M 139 140 L 263 140 L 387 140" />
+            <circle cx="157" cy="140" r="106" class="geom-arc-dashed" />
+            <circle cx="236.5" cy="140" r="26.5" class="geom-bold" />
+            <circle cx="316" cy="140" r="53" class="geom-bold" />
+          </g>
+          <g>
+            <path class="geom-dashed" d="M 157 140 L 236.5 113.5 L 316 87" />
+          </g>
+          <g>
+            <circle cx="157" cy="140" r="2.6" class="geom-point" />
+            <circle cx="210" cy="140" r="2.6" class="geom-point" />
+            <circle cx="263" cy="140" r="2.6" class="geom-point" />
+            <circle cx="369" cy="140" r="2.6" class="geom-point" />
+            <circle cx="220.6" cy="118.8" r="2.6" class="geom-point" />
+            <circle cx="316" cy="87" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="145" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="204" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="267" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="377" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">A&#x27;</text>
+            <text x="216.6" y="108.8" text-anchor="middle" dominant-baseline="central" class="geom-label">P</text>
+            <text x="320" y="77" text-anchor="middle" dominant-baseline="central" class="geom-label">P&#x27;</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="main-theory-and-applications-of-circular-inversion/index.html">Main. Theory and Applications of Circular Inversion</a></h2>
-                      <p>Main. Theory and Applications of Circular Inversion in Chapter IX covers Articles <strong>§§ 518–546</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0249</span></code>–<code class="docutils literal notranslate"><span class="pre">0262</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">230</span></code>–<code class="docutils literal notranslate"><span class="pre">243</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/09_inversion/</span></code>.</p>
+                    <h2><a href="main-theory-and-applications-of-circular-inversion/index.html">Theory and Applications of Circular Inversion</a></h2>
+                      <p>Develops conformal transformation by reciprocal radii—<span class="term-ref glossary-term">circular inversion</span> <span class="math notranslate nohighlight">\(\mathcal{I}(O, k)\)</span> (<strong>§§ 518–546</strong>, Folios <code class="docutils literal notranslate"><span class="pre">0249</span></code>–<code class="docutils literal notranslate"><span class="pre">0262</span></code>, pp. <code class="docutils literal notranslate"><span class="pre">230</span></code>–<code class="docutils literal notranslate"><span class="pre">243</span></code>)—converting intractable circle-tangency configurations into elementary rectilinear geometry.</p>
                   </section>
                 </div>
               </article>
@@ -103,13 +199,13 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../ch08-circles/i-the-problem-of-apollonius/index.html" title="I. The Problem of Apollonius (Ten Problems I–X &amp; Gergonne’s Solution)">&larr; <span class="nav-label">I. The Problem of Apollonius (Ten Problems I–X & Gergonne’s Solution)</span></a>
+            <a class="book-nav-btn" href="../ch08-circles/i-the-problem-of-apollonius/index.html" title="Section I — The Problem of Apollonius (Ten Problems I–X &amp; Gergonne’s Solution)">&larr; <span class="nav-label">Section I — The Problem of Apollonius (Ten Problems I–X & Gergonne’s Solution)</span></a>
           </div>
           <div class="book-nav-center">
             <a class="book-toc-link" href="../index.html">College Geometry</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="main-theory-and-applications-of-circular-inversion/index.html" title="Main. Theory and Applications of Circular Inversion"><span class="nav-label">Main. Theory and Applications of Circular Inversion</span> &rarr;</a>
+            <a class="book-nav-btn" href="main-theory-and-applications-of-circular-inversion/index.html" title="Theory and Applications of Circular Inversion"><span class="nav-label">Theory and Applications of Circular Inversion</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -156,11 +252,12 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=938c9ccc"></script>
+  <script src="../../_static/documentation_options.js?v=e259d695"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

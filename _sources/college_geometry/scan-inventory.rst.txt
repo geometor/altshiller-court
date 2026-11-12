@@ -6,7 +6,7 @@
 334-Folio Archival Scan & Transcription Inventory
 =================================================
 
-.. rubric:: Complete Concordance of PDF Pages, 300 DPI Scans (``1421 × 2225`` px), Articles §§ 1–699, Diagrams, and Review Status (52 Verified Folios)
+.. rubric:: Complete Concordance of PDF Pages, 300 DPI Scans (``1421 × 2225`` px), Articles §§ 1–699, Diagrams, and Review Status (65 Verified Folios)
 
 .. list-table::
    :header-rows: 1
@@ -444,115 +444,115 @@
      - B. Homothecy
      - —
      - 300 DPI scan ready
-   * - :ref:`0072 <ch03-properties-of-the-triangle-a-preliminaries>`
+   * - :ref:`0072 <ch03-art-054>`
      - ``53``
      - ``03_properties_of_the_triangle``
      - A. Preliminaries (Harmonic Division of a Segment & Apollonian Circle) (§§ 54–55)
-     - —
-     - 300 DPI scan ready
-   * - :ref:`0073 <ch03-properties-of-the-triangle-a-preliminaries>`
+     - 1 SVG + crop(s)
+     - verified (RST + Notes)
+   * - :ref:`0073 <ch03-art-055>`
      - ``54``
      - ``03_properties_of_the_triangle``
      - A. Preliminaries (Harmonic Division of a Segment & Apollonian Circle) (§§ 56–59)
      - —
-     - 300 DPI scan ready
-   * - :ref:`0074 <ch03-properties-of-the-triangle-a-preliminaries>`
+     - verified (RST + Notes)
+   * - :ref:`0074 <ch03-art-060>`
      - ``55``
      - ``03_properties_of_the_triangle``
      - A. Preliminaries (Harmonic Division of a Segment & Apollonian Circle) (§§ 60–66)
      - —
-     - 300 DPI scan ready
-   * - :ref:`0075 <ch03-properties-of-the-triangle-a-preliminaries>`
+     - verified (RST + Notes)
+   * - :ref:`0075 <ch03-art-067>`
      - ``56``
      - ``03_properties_of_the_triangle``
      - A. Preliminaries (Harmonic Division of a Segment & Apollonian Circle) (§ 67)
-     - —
-     - 300 DPI scan ready
-   * - :ref:`0076 <ch03-properties-of-the-triangle-b-the-circumcircle>`
+     - 2 SVG + crop(s)
+     - verified (RST + Notes)
+   * - :ref:`0076 <ch03-art-067-exercises>`
      - ``57``
      - ``03_properties_of_the_triangle``
      - B. The Circumcircle (incl. Problem of Pappus § 84) (§§ 68–70)
-     - —
-     - 300 DPI scan ready
-   * - :ref:`0077 <ch03-properties-of-the-triangle-b-the-circumcircle>`
+     - 1 SVG + crop(s)
+     - verified (RST + Notes)
+   * - :ref:`0077 <ch03-art-070>`
      - ``58``
      - ``03_properties_of_the_triangle``
      - B. The Circumcircle (incl. Problem of Pappus § 84) (§§ 71–72)
-     - —
-     - 300 DPI scan ready
-   * - :ref:`0078 <ch03-properties-of-the-triangle-b-the-circumcircle>`
+     - 1 SVG + crop(s)
+     - verified (RST + Notes)
+   * - :ref:`0078 <ch03-art-072>`
      - ``59``
      - ``03_properties_of_the_triangle``
      - B. The Circumcircle (incl. Problem of Pappus § 84) (§ 73)
-     - —
-     - 300 DPI scan ready
-   * - :ref:`0079 <ch03-properties-of-the-triangle-b-the-circumcircle>`
+     - 1 SVG + crop(s)
+     - verified (RST + Notes)
+   * - :ref:`0079 <ch03-art-073>`
      - ``60``
      - ``03_properties_of_the_triangle``
      - B. The Circumcircle (incl. Problem of Pappus § 84) (§§ 74–76)
-     - —
-     - 300 DPI scan ready
-   * - :ref:`0080 <ch03-properties-of-the-triangle-b-the-circumcircle>`
+     - 1 SVG + crop(s)
+     - verified (RST + Notes)
+   * - :ref:`0080 <ch03-art-076>`
      - ``61``
      - ``03_properties_of_the_triangle``
      - B. The Circumcircle (incl. Problem of Pappus § 84) (§§ 77–78)
      - —
-     - 300 DPI scan ready
-   * - :ref:`0081 <ch03-properties-of-the-triangle-b-the-circumcircle>`
+     - verified (RST + Notes)
+   * - :ref:`0081 <ch03-art-079>`
      - ``62``
      - ``03_properties_of_the_triangle``
      - B. The Circumcircle (incl. Problem of Pappus § 84) (§§ 79–81)
-     - —
-     - 300 DPI scan ready
-   * - :ref:`0082 <ch03-properties-of-the-triangle-b-the-circumcircle>`
+     - 1 SVG + crop(s)
+     - verified (RST + Notes)
+   * - :ref:`0082 <ch03-art-082>`
      - ``63``
      - ``03_properties_of_the_triangle``
      - B. The Circumcircle (incl. Problem of Pappus § 84) (§§ 82–84)
-     - —
-     - 300 DPI scan ready
-   * - :ref:`0083 <ch03-properties-of-the-triangle-b-the-circumcircle>`
+     - 1 SVG + crop(s)
+     - verified (RST + Notes)
+   * - :ref:`0083 <ch03-art-084>`
      - ``64``
      - ``03_properties_of_the_triangle``
      - B. The Circumcircle (incl. Problem of Pappus § 84) (§§ 85–86)
      - —
-     - 300 DPI scan ready
-   * - :ref:`0084 <ch03-properties-of-the-triangle-c-medians>`
+     - verified (RST + Notes)
+   * - :ref:`0084 <ch03-art-086>`
      - ``65``
      - ``03_properties_of_the_triangle``
      - C. Medians (Centroid, Complementary & Anticomplementary Triangles) (§§ 87–88)
-     - —
-     - 300 DPI scan ready
-   * - :ref:`0085 <ch03-properties-of-the-triangle-c-medians>`
+     - 1 SVG + crop(s)
+     - verified (RST + Notes)
+   * - :ref:`0085 <ch03-properties-of-the-triangle>`
      - ``66``
      - ``03_properties_of_the_triangle``
      - C. Medians (Centroid, Complementary & Anticomplementary Triangles) (§§ 89–92)
      - —
      - 300 DPI scan ready
-   * - :ref:`0086 <ch03-properties-of-the-triangle-c-medians>`
+   * - :ref:`0086 <ch03-properties-of-the-triangle>`
      - ``67``
      - ``03_properties_of_the_triangle``
      - C. Medians (Centroid, Complementary & Anticomplementary Triangles) (§§ 93–95)
      - —
      - 300 DPI scan ready
-   * - :ref:`0087 <ch03-properties-of-the-triangle-c-medians>`
+   * - :ref:`0087 <ch03-properties-of-the-triangle>`
      - ``68``
      - ``03_properties_of_the_triangle``
      - C. Medians (Centroid, Complementary & Anticomplementary Triangles) (§§ 96–101)
      - —
      - 300 DPI scan ready
-   * - :ref:`0088 <ch03-properties-of-the-triangle-c-medians>`
+   * - :ref:`0088 <ch03-properties-of-the-triangle>`
      - ``69``
      - ``03_properties_of_the_triangle``
      - C. Medians (Centroid, Complementary & Anticomplementary Triangles) (§§ 102–105)
      - —
      - 300 DPI scan ready
-   * - :ref:`0089 <ch03-properties-of-the-triangle-c-medians>`
+   * - :ref:`0089 <ch03-properties-of-the-triangle>`
      - ``70``
      - ``03_properties_of_the_triangle``
      - C. Medians (Centroid, Complementary & Anticomplementary Triangles) (§§ 106–109)
      - —
      - 300 DPI scan ready
-   * - :ref:`0090 <ch03-properties-of-the-triangle-c-medians>`
+   * - :ref:`0090 <ch03-properties-of-the-triangle>`
      - ``71``
      - ``03_properties_of_the_triangle``
      - C. Medians (Centroid, Complementary & Anticomplementary Triangles) (§ 110)

@@ -64,7 +64,7 @@
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../ch07-harmonic-division/main-harmonic-ranges-pencils-and-complete-quadrangles/index.html" title="Main. Harmonic Ranges, Pencils, and Complete Quadrangles">&larr; <span class="nav-label">Prev</span></a>
+            <a class="book-nav-btn" href="../ch07-harmonic-division/main-harmonic-ranges-pencils-and-complete-quadrangles/index.html" title="Harmonic Ranges, Pencils, and Complete Quadrangles">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
             <nav class="book-tracks-nav" aria-label="Document Tracks">
@@ -74,7 +74,7 @@
             </nav>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="a-inverse-points/index.html" title="A. Inverse Points"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="a-inverse-points/index.html" title="Section A — Inverse Points"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </header>
@@ -82,91 +82,542 @@
         <section class="level-1" id="chapter-viii-circles">
         <span id="ch08-circles-en"></span><span id="ch08-circles"></span><h1>Chapter VIII: Circles<a class="headerlink" href="#chapter-viii-circles" title="Link to this heading">¶</a></h1>
         <p class="rubric">Inverse Points, Orthogonal Circles, Poles and Polars, Centers of Similitude, Power of a Point, Radical Axis, Coaxal Circles, Casey’s Theorem, Problem of Apollonius</p>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic" data-graphic-id="hero-pole_polar_coaxal.pole_polar_coaxal" data-folio="hero-pole_polar_coaxal" data-graphic="pole_polar_coaxal">
+          <defs>
+            <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-2" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g id="elements">
+            <path id="el-line-axis" data-ref="[ O P ]" data-type="line" class="geom-line" d="M 112.5 140 L 196.75 140 L 281 140" />
+            <circle id="el-circle-cref" data-ref="( O T_1 )" data-type="circle" cx="130.5" cy="140" r="79.5" class="geom-bold" />
+            <circle id="el-circle-corth" data-ref="( P T_1 )" data-type="circle" cx="263" cy="140" r="106" class="geom-circle" />
+            <path id="el-line-polar" data-ref="[ T_1 T_2 ]" data-type="line" class="geom-dashed" d="M 178.2 58.4 L 178.2 140 L 178.2 221.6" />
+          </g>
+          <g id="graphics">
+            <path id="el-seg-rO" data-ref="/ O T_1 /" data-type="segment" class="geom-line" d="M 130.5 140 L 154.35 108.2 L 178.2 76.4" />
+            <path id="el-seg-rP" data-ref="/ P T_1 /" data-type="segment" class="geom-line" d="M 263 140 L 220.6 108.2 L 178.2 76.4" />
+            <path id="el-ang-angorth" data-ref="&lt; O T_1 P )" data-aliases="&lt; P T1 O )" data-type="wedge" d="M 178.2 76.4 L 168.6 89.2 A 16 16 0 0 0 191 86 Z" class="wedge angle geom-overlay" />
+          </g>
+          <g id="highlights" style="pointer-events: none;">
+            <path id="hl-line-axis" data-ref="[ O P ]" class="geom-line geom-overlay" d="M 112.5 140 L 196.75 140 L 281 140" />
+            <circle id="hl-circle-cref" data-ref="( O T_1 )" cx="130.5" cy="140" r="79.5" class="geom-circle geom-overlay" />
+            <circle id="hl-circle-corth" data-ref="( P T_1 )" cx="263" cy="140" r="106" class="geom-circle geom-overlay" />
+            <path id="hl-line-polar" data-ref="[ T_1 T_2 ]" class="geom-line geom-overlay" d="M 178.2 58.4 L 178.2 140 L 178.2 221.6" />
+            <path id="hl-seg-rO" data-ref="/ O T_1 /" class="geom-line geom-overlay" d="M 130.5 140 L 154.35 108.2 L 178.2 76.4" />
+            <path id="hl-seg-rP" data-ref="/ P T_1 /" class="geom-line geom-overlay" d="M 263 140 L 220.6 108.2 L 178.2 76.4" />
+            <path id="hl-ang-angorth" data-ref="&lt; O T_1 P )" data-aliases="&lt; P T1 O )" d="M 178.2 76.4 L 168.6 89.2 A 16 16 0 0 0 191 86 Z" class="wedge angle geom-overlay" />
+            <path id="hl-arc-angorth" data-ref="&lt; O T_1 P )" data-aliases="&lt; P T1 O )" d="M 168.6 89.2 A 16 16 0 0 0 180.46 92.24 A 16 16 0 0 0 191 86" class="geom-ang-arc geom-overlay" />
+          </g>
+          <g id="points">
+            <circle id="el-pt-O" data-ref="O" data-type="point" cx="130.5" cy="140" r="2.6" class="geom-point" />
+            <circle id="el-pt-Pprime" data-ref="Pprime" data-type="point" cx="178.2" cy="140" r="2.6" class="geom-point" />
+            <circle id="el-pt-P" data-ref="P" data-type="point" cx="263" cy="140" r="2.6" class="geom-point" />
+            <circle id="el-pt-T1" data-ref="T1" data-type="point" cx="178.2" cy="76.4" r="2.6" class="geom-point" />
+            <circle id="el-pt-T2" data-ref="T2" data-type="point" cx="178.2" cy="203.6" r="2.6" class="geom-point" />
+          </g>
+          <g id="labels">
+            <text id="lbl-O" data-ref="O" x="118.5" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text id="lbl-Pprime" data-ref="Pprime" x="164.2" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">P&#x27;</text>
+            <text id="lbl-P" data-ref="P" x="271" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">P</text>
+            <text id="lbl-T1" data-ref="T1" x="162.2" y="68.4" text-anchor="middle" dominant-baseline="central" class="geom-label">T<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text id="lbl-T2" data-ref="T2" x="162.2" y="217.6" text-anchor="middle" dominant-baseline="central" class="geom-label">T<tspan dy="3" class="geom-label-sub">2</tspan></text>
+          </g>
+        </svg>
+        <figcaption>Inverse Points P, P', Polar Line T₁T₂, and Orthogonal Circle (P, PT₁)</figcaption>
+        </figure>
         <p>Comprehensive geometry of one, two, and three circles (<strong>§§ 358–517</strong>, Folios <code class="docutils literal notranslate"><span class="pre">0191</span></code>–<code class="docutils literal notranslate"><span class="pre">0248</span></code>, pp. <code class="docutils literal notranslate"><span class="pre">172</span></code>–<code class="docutils literal notranslate"><span class="pre">229</span></code>): inverse points, orthogonal circles, poles and polars, Monge’s similitude axes, power and radical axis, coaxal pencils, Casey’s theorem, and Gergonne’s solution to the Problem of Apollonius.</p>
             <section class="collection ">
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="a-inverse-points/index.html" aria-label="Reference circle O and orthogonal circle P intersecting perpendicularly at T1, T2 with polar chord T1 T2 through inverse point P'">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-pole_polar_coaxal.pole_polar_coaxal" data-folio="hero-pole_polar_coaxal" data-graphic="pole_polar_coaxal">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <path class="geom-line" d="M 112.5 140 L 196.75 140 L 281 140" />
+            <circle cx="130.5" cy="140" r="79.5" class="geom-bold" />
+            <circle cx="263" cy="140" r="106" class="geom-circle" />
+            <path class="geom-dashed" d="M 178.2 58.4 L 178.2 140 L 178.2 221.6" />
+          </g>
+          <g>
+            <path class="geom-line" d="M 130.5 140 L 154.35 108.2 L 178.2 76.4" />
+            <path class="geom-line" d="M 263 140 L 220.6 108.2 L 178.2 76.4" />
+            <path d="M 178.2 76.4 L 168.6 89.2 A 16 16 0 0 0 191 86 Z" class="wedge angle geom-overlay" />
+          </g>
+          <g>
+            <circle cx="130.5" cy="140" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="140" r="2.6" class="geom-point" />
+            <circle cx="263" cy="140" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="76.4" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="203.6" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="118.5" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="164.2" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">P&#x27;</text>
+            <text x="271" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">P</text>
+            <text x="162.2" y="68.4" text-anchor="middle" dominant-baseline="central" class="geom-label">T<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="162.2" y="217.6" text-anchor="middle" dominant-baseline="central" class="geom-label">T<tspan dy="3" class="geom-label-sub">2</tspan></text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="a-inverse-points/index.html">Inverse Points</a></h2>
-                      <p>Inverse Points in Chapter VIII covers Articles <strong>§§ 358–362</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0191</span></code>–<code class="docutils literal notranslate"><span class="pre">0193</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">172</span></code>–<code class="docutils literal notranslate"><span class="pre">174</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/08_circles/</span></code>.</p>
+                    <h2><a href="a-inverse-points/index.html">Section A — Inverse Points</a></h2>
+                      <p>Defines <span class="term-ref glossary-term">inverse points</span> <span class="math notranslate nohighlight">\(P, P'\)</span> with respect to a reference circle <span class="math notranslate nohighlight">\((O, R)\)</span> (<strong>§§ 358–362</strong>) via collinearity on a ray from <span class="math notranslate nohighlight">\(O\)</span> and <span class="math notranslate nohighlight">\(OP \cdot OP' = R^2\)</span>.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="b-orthogonal-circles/index.html" aria-label="Reference circle O and orthogonal circle P intersecting perpendicularly at T1, T2 with polar chord T1 T2 through inverse point P'">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-pole_polar_coaxal.pole_polar_coaxal" data-folio="hero-pole_polar_coaxal" data-graphic="pole_polar_coaxal">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <path class="geom-line" d="M 112.5 140 L 196.75 140 L 281 140" />
+            <circle cx="130.5" cy="140" r="79.5" class="geom-bold" />
+            <circle cx="263" cy="140" r="106" class="geom-circle" />
+            <path class="geom-dashed" d="M 178.2 58.4 L 178.2 140 L 178.2 221.6" />
+          </g>
+          <g>
+            <path class="geom-line" d="M 130.5 140 L 154.35 108.2 L 178.2 76.4" />
+            <path class="geom-line" d="M 263 140 L 220.6 108.2 L 178.2 76.4" />
+            <path d="M 178.2 76.4 L 168.6 89.2 A 16 16 0 0 0 191 86 Z" class="wedge angle geom-overlay" />
+          </g>
+          <g>
+            <circle cx="130.5" cy="140" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="140" r="2.6" class="geom-point" />
+            <circle cx="263" cy="140" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="76.4" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="203.6" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="118.5" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="164.2" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">P&#x27;</text>
+            <text x="271" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">P</text>
+            <text x="162.2" y="68.4" text-anchor="middle" dominant-baseline="central" class="geom-label">T<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="162.2" y="217.6" text-anchor="middle" dominant-baseline="central" class="geom-label">T<tspan dy="3" class="geom-label-sub">2</tspan></text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="b-orthogonal-circles/index.html">Orthogonal Circles
-
-        /home/runner/work/altshiller-court/altshiller-court/docsrc/college_geometry/ch08-circles/b-orthogonal-circles/index.rst:4: (INFO/1) Enumerated list start value not ordinal-1: “B” (ordinal 2)</a></h2>
-                      <p>Orthogonal Circles in Chapter VIII covers Articles <strong>§§ 363–372</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0193</span></code>–<code class="docutils literal notranslate"><span class="pre">0196</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">174</span></code>–<code class="docutils literal notranslate"><span class="pre">177</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/08_circles/</span></code>.</p>
+                    <h2><a href="b-orthogonal-circles/index.html">Section B — Orthogonal Circles</a></h2>
+                      <p>Develops the geometry of <span class="term-ref glossary-term">orthogonal circles</span> (<strong>§§ 363–372</strong>)—pairs of circles whose tangents (and radii) at their points of intersection meet at right angles.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="c-poles-and-polars/index.html" aria-label="Reference circle O and orthogonal circle P intersecting perpendicularly at T1, T2 with polar chord T1 T2 through inverse point P'">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-pole_polar_coaxal.pole_polar_coaxal" data-folio="hero-pole_polar_coaxal" data-graphic="pole_polar_coaxal">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <path class="geom-line" d="M 112.5 140 L 196.75 140 L 281 140" />
+            <circle cx="130.5" cy="140" r="79.5" class="geom-bold" />
+            <circle cx="263" cy="140" r="106" class="geom-circle" />
+            <path class="geom-dashed" d="M 178.2 58.4 L 178.2 140 L 178.2 221.6" />
+          </g>
+          <g>
+            <path class="geom-line" d="M 130.5 140 L 154.35 108.2 L 178.2 76.4" />
+            <path class="geom-line" d="M 263 140 L 220.6 108.2 L 178.2 76.4" />
+            <path d="M 178.2 76.4 L 168.6 89.2 A 16 16 0 0 0 191 86 Z" class="wedge angle geom-overlay" />
+          </g>
+          <g>
+            <circle cx="130.5" cy="140" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="140" r="2.6" class="geom-point" />
+            <circle cx="263" cy="140" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="76.4" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="203.6" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="118.5" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="164.2" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">P&#x27;</text>
+            <text x="271" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">P</text>
+            <text x="162.2" y="68.4" text-anchor="middle" dominant-baseline="central" class="geom-label">T<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="162.2" y="217.6" text-anchor="middle" dominant-baseline="central" class="geom-label">T<tspan dy="3" class="geom-label-sub">2</tspan></text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="c-poles-and-polars/index.html">Poles and Polars
-
-        /home/runner/work/altshiller-court/altshiller-court/docsrc/college_geometry/ch08-circles/c-poles-and-polars/index.rst:4: (INFO/1) Enumerated list start value not ordinal-1: “C” (ordinal 3)</a></h2>
-                      <p>Poles and Polars in Chapter VIII covers Articles <strong>§§ 373–393</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0196</span></code>–<code class="docutils literal notranslate"><span class="pre">0203</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">177</span></code>–<code class="docutils literal notranslate"><span class="pre">184</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/08_circles/</span></code>.</p>
+                    <h2><a href="c-poles-and-polars/index.html">Section C — Poles and Polars</a></h2>
+                      <p>Presents the projective-metric duality of <span class="term-ref glossary-term">poles and polars</span> with respect to a circle <span class="math notranslate nohighlight">\((O, R)\)</span> (<strong>§§ 373–393</strong>, <span class="person-ref">Apollonius</span>, <span class="person-ref">Desargues</span>, <span class="person-ref">La Hire</span>, <span class="person-ref">Poncelet</span>).</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="d-centers-of-similitude/index.html" aria-label="Two unequal circles O, O' with parallel radii, external center of similitude S, internal center S', and dashed circle of similitude">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-homothecy_circles.homothecy_circles" data-folio="hero-homothecy_circles" data-graphic="homothecy_circles">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <path class="geom-line" d="M 80 140 L 242 140 L 404 140" />
+            <circle cx="98" cy="140" r="64" class="geom-bold" />
+            <circle cx="242" cy="140" r="32" class="geom-bold" />
+            <circle cx="290" cy="140" r="96" class="geom-arc-dashed" />
+          </g>
+          <g>
+            <path class="geom-line" d="M 98 140 L 117.2 114.4 L 136.4 88.8" />
+            <path class="geom-line" d="M 242 140 L 251.6 127.2 L 261.2 114.4" />
+            <path class="geom-dashed" d="M 242 140 L 232.4 152.8 L 222.8 165.6" />
+            <path class="geom-line" d="M 136.4 88.8 L 261.2 114.4 L 386 140" />
+            <path class="geom-dashed" d="M 136.4 88.8 L 179.6 127.2 L 222.8 165.6" />
+          </g>
+          <g>
+            <circle cx="98" cy="140" r="2.6" class="geom-point" />
+            <circle cx="242" cy="140" r="2.6" class="geom-point" />
+            <circle cx="136.4" cy="88.8" r="2.6" class="geom-point" />
+            <circle cx="261.2" cy="114.4" r="2.6" class="geom-point" />
+            <circle cx="222.8" cy="165.6" r="2.6" class="geom-point" />
+            <circle cx="194" cy="140" r="2.6" class="geom-point" />
+            <circle cx="386" cy="140" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="92" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="246" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">O&#x27;</text>
+            <text x="130.4" y="78.8" text-anchor="middle" dominant-baseline="central" class="geom-label">P</text>
+            <text x="265.2" y="104.4" text-anchor="middle" dominant-baseline="central" class="geom-label">P&#x27;</text>
+            <text x="226.8" y="180.6" text-anchor="middle" dominant-baseline="central" class="geom-label">Q&#x27;</text>
+            <text x="188" y="128" text-anchor="middle" dominant-baseline="central" class="geom-label">S&#x27;</text>
+            <text x="394" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">S</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="d-centers-of-similitude/index.html">Centers of Similitude (incl. Monge’s Circle Theorem § 405)
-
-        /home/runner/work/altshiller-court/altshiller-court/docsrc/college_geometry/ch08-circles/d-centers-of-similitude/index.rst:4: (INFO/1) Enumerated list start value not ordinal-1: “D” (ordinal 4)</a></h2>
-                      <p>Centers of Similitude (incl. Monge’s Circle Theorem § 405) in Chapter VIII covers Articles <strong>§§ 394–409</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0203</span></code>–<code class="docutils literal notranslate"><span class="pre">0209</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">184</span></code>–<code class="docutils literal notranslate"><span class="pre">190</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/08_circles/</span></code>.</p>
+                    <h2><a href="d-centers-of-similitude/index.html">Section D — Centers of Similitude (incl. Monge’s Circle Theorem § 405)</a></h2>
+                      <p>Extends Chapter II’s <span class="term-ref glossary-term">centers of similitude</span> to systems of two and three circles (<strong>§§ 394–409</strong>), culminating in <span class="person-ref">Gaspard Monge's</span> theorem on axes of similitude.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="e-power-of-a-point-with-respect-to-a-circle/index.html" aria-label="Reference circle O and orthogonal circle P intersecting perpendicularly at T1, T2 with polar chord T1 T2 through inverse point P'">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-pole_polar_coaxal.pole_polar_coaxal" data-folio="hero-pole_polar_coaxal" data-graphic="pole_polar_coaxal">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <path class="geom-line" d="M 112.5 140 L 196.75 140 L 281 140" />
+            <circle cx="130.5" cy="140" r="79.5" class="geom-bold" />
+            <circle cx="263" cy="140" r="106" class="geom-circle" />
+            <path class="geom-dashed" d="M 178.2 58.4 L 178.2 140 L 178.2 221.6" />
+          </g>
+          <g>
+            <path class="geom-line" d="M 130.5 140 L 154.35 108.2 L 178.2 76.4" />
+            <path class="geom-line" d="M 263 140 L 220.6 108.2 L 178.2 76.4" />
+            <path d="M 178.2 76.4 L 168.6 89.2 A 16 16 0 0 0 191 86 Z" class="wedge angle geom-overlay" />
+          </g>
+          <g>
+            <circle cx="130.5" cy="140" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="140" r="2.6" class="geom-point" />
+            <circle cx="263" cy="140" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="76.4" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="203.6" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="118.5" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="164.2" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">P&#x27;</text>
+            <text x="271" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">P</text>
+            <text x="162.2" y="68.4" text-anchor="middle" dominant-baseline="central" class="geom-label">T<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="162.2" y="217.6" text-anchor="middle" dominant-baseline="central" class="geom-label">T<tspan dy="3" class="geom-label-sub">2</tspan></text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="e-power-of-a-point-with-respect-to-a-circle/index.html">Power of a Point with Respect to a Circle
-
-        /home/runner/work/altshiller-court/altshiller-court/docsrc/college_geometry/ch08-circles/e-power-of-a-point-with-respect-to-a-circle/index.rst:4: (INFO/1) Enumerated list start value not ordinal-1: “E” (ordinal 5)</a></h2>
-                      <p>Power of a Point with Respect to a Circle in Chapter VIII covers Articles <strong>§§ 410–420</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0209</span></code>–<code class="docutils literal notranslate"><span class="pre">0213</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">190</span></code>–<code class="docutils literal notranslate"><span class="pre">194</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/08_circles/</span></code>.</p>
+                    <h2><a href="e-power-of-a-point-with-respect-to-a-circle/index.html">Section E — Power of a Point with Respect to a Circle</a></h2>
+                      <p>Formalizes <span class="person-ref">Jakob Steiner's</span> algebraic-geometric invariant (<strong>§§ 410–420</strong>): the <span class="term-ref glossary-term">power of a point</span> <span class="math notranslate nohighlight">\(P\)</span> with respect to circle <span class="math notranslate nohighlight">\((O, R)\)</span>.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="f-radical-axis-of-two-circles/index.html" aria-label="Reference circle O and orthogonal circle P intersecting perpendicularly at T1, T2 with polar chord T1 T2 through inverse point P'">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-pole_polar_coaxal.pole_polar_coaxal" data-folio="hero-pole_polar_coaxal" data-graphic="pole_polar_coaxal">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <path class="geom-line" d="M 112.5 140 L 196.75 140 L 281 140" />
+            <circle cx="130.5" cy="140" r="79.5" class="geom-bold" />
+            <circle cx="263" cy="140" r="106" class="geom-circle" />
+            <path class="geom-dashed" d="M 178.2 58.4 L 178.2 140 L 178.2 221.6" />
+          </g>
+          <g>
+            <path class="geom-line" d="M 130.5 140 L 154.35 108.2 L 178.2 76.4" />
+            <path class="geom-line" d="M 263 140 L 220.6 108.2 L 178.2 76.4" />
+            <path d="M 178.2 76.4 L 168.6 89.2 A 16 16 0 0 0 191 86 Z" class="wedge angle geom-overlay" />
+          </g>
+          <g>
+            <circle cx="130.5" cy="140" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="140" r="2.6" class="geom-point" />
+            <circle cx="263" cy="140" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="76.4" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="203.6" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="118.5" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="164.2" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">P&#x27;</text>
+            <text x="271" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">P</text>
+            <text x="162.2" y="68.4" text-anchor="middle" dominant-baseline="central" class="geom-label">T<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="162.2" y="217.6" text-anchor="middle" dominant-baseline="central" class="geom-label">T<tspan dy="3" class="geom-label-sub">2</tspan></text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="f-radical-axis-of-two-circles/index.html">Radical Axis of Two Circles
-
-        /home/runner/work/altshiller-court/altshiller-court/docsrc/college_geometry/ch08-circles/f-radical-axis-of-two-circles/index.rst:4: (INFO/1) Enumerated list start value not ordinal-1: “F” (ordinal 6)</a></h2>
-                      <p>Radical Axis of Two Circles in Chapter VIII covers Articles <strong>§§ 421–439</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0213</span></code>–<code class="docutils literal notranslate"><span class="pre">0220</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">194</span></code>–<code class="docutils literal notranslate"><span class="pre">201</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/08_circles/</span></code>.</p>
+                    <h2><a href="f-radical-axis-of-two-circles/index.html">Section F — Radical Axis of Two Circles</a></h2>
+                      <p>Constructs and characterizes the <span class="term-ref glossary-term">radical axis</span> of two non-concentric circles (<strong>§§ 421–439</strong>, Gaultier 1813, <span class="person-ref">Steiner</span>): the straight-line locus of points having equal <span class="term-ref glossary-term">powers</span> with respect to both circles.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="g-coaxal-circles/index.html" aria-label="Reference circle O and orthogonal circle P intersecting perpendicularly at T1, T2 with polar chord T1 T2 through inverse point P'">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-pole_polar_coaxal.pole_polar_coaxal" data-folio="hero-pole_polar_coaxal" data-graphic="pole_polar_coaxal">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <path class="geom-line" d="M 112.5 140 L 196.75 140 L 281 140" />
+            <circle cx="130.5" cy="140" r="79.5" class="geom-bold" />
+            <circle cx="263" cy="140" r="106" class="geom-circle" />
+            <path class="geom-dashed" d="M 178.2 58.4 L 178.2 140 L 178.2 221.6" />
+          </g>
+          <g>
+            <path class="geom-line" d="M 130.5 140 L 154.35 108.2 L 178.2 76.4" />
+            <path class="geom-line" d="M 263 140 L 220.6 108.2 L 178.2 76.4" />
+            <path d="M 178.2 76.4 L 168.6 89.2 A 16 16 0 0 0 191 86 Z" class="wedge angle geom-overlay" />
+          </g>
+          <g>
+            <circle cx="130.5" cy="140" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="140" r="2.6" class="geom-point" />
+            <circle cx="263" cy="140" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="76.4" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="203.6" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="118.5" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="164.2" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">P&#x27;</text>
+            <text x="271" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">P</text>
+            <text x="162.2" y="68.4" text-anchor="middle" dominant-baseline="central" class="geom-label">T<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="162.2" y="217.6" text-anchor="middle" dominant-baseline="central" class="geom-label">T<tspan dy="3" class="geom-label-sub">2</tspan></text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="g-coaxal-circles/index.html">Coaxal Circles (incl. Poncelet’s Theorems & Casey’s Theorem § 471)
-
-        /home/runner/work/altshiller-court/altshiller-court/docsrc/college_geometry/ch08-circles/g-coaxal-circles/index.rst:4: (INFO/1) Enumerated list start value not ordinal-1: “G” (ordinal 7)</a></h2>
-                      <p>Coaxal Circles (incl. Poncelet’s Theorems &amp; Casey’s Theorem § 471) in Chapter VIII covers Articles <strong>§§ 440–490</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0220</span></code>–<code class="docutils literal notranslate"><span class="pre">0236</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">201</span></code>–<code class="docutils literal notranslate"><span class="pre">217</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/08_circles/</span></code>.</p>
+                    <h2><a href="g-coaxal-circles/index.html">Section G — Coaxal Circles (incl. Poncelet’s Theorems & Casey’s Theorem § 471)</a></h2>
+                      <p>Develops the theory of <span class="term-ref glossary-term">coaxal pencils of circles</span> (<strong>§§ 440–490</strong>), <span class="person-ref">Poncelet's</span> limiting points, conjugate orthogonal pencils, and <span class="person-ref">John Casey's</span> generalized Ptolemy theorem (<strong>§ 471</strong>).</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="h-three-circles/index.html" aria-label="Reference circle O and orthogonal circle P intersecting perpendicularly at T1, T2 with polar chord T1 T2 through inverse point P'">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-pole_polar_coaxal.pole_polar_coaxal" data-folio="hero-pole_polar_coaxal" data-graphic="pole_polar_coaxal">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <path class="geom-line" d="M 112.5 140 L 196.75 140 L 281 140" />
+            <circle cx="130.5" cy="140" r="79.5" class="geom-bold" />
+            <circle cx="263" cy="140" r="106" class="geom-circle" />
+            <path class="geom-dashed" d="M 178.2 58.4 L 178.2 140 L 178.2 221.6" />
+          </g>
+          <g>
+            <path class="geom-line" d="M 130.5 140 L 154.35 108.2 L 178.2 76.4" />
+            <path class="geom-line" d="M 263 140 L 220.6 108.2 L 178.2 76.4" />
+            <path d="M 178.2 76.4 L 168.6 89.2 A 16 16 0 0 0 191 86 Z" class="wedge angle geom-overlay" />
+          </g>
+          <g>
+            <circle cx="130.5" cy="140" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="140" r="2.6" class="geom-point" />
+            <circle cx="263" cy="140" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="76.4" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="203.6" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="118.5" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="164.2" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">P&#x27;</text>
+            <text x="271" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">P</text>
+            <text x="162.2" y="68.4" text-anchor="middle" dominant-baseline="central" class="geom-label">T<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="162.2" y="217.6" text-anchor="middle" dominant-baseline="central" class="geom-label">T<tspan dy="3" class="geom-label-sub">2</tspan></text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="h-three-circles/index.html">Three Circles (Radical Center & Circles of Antisimilitude)
-
-        /home/runner/work/altshiller-court/altshiller-court/docsrc/college_geometry/ch08-circles/h-three-circles/index.rst:4: (INFO/1) Enumerated list start value not ordinal-1: “H” (ordinal 8)</a></h2>
-                      <p>Three Circles (Radical Center &amp; Circles of Antisimilitude) in Chapter VIII covers Articles <strong>§§ 491–505</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0236</span></code>–<code class="docutils literal notranslate"><span class="pre">0241</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">217</span></code>–<code class="docutils literal notranslate"><span class="pre">222</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/08_circles/</span></code>.</p>
+                    <h2><a href="h-three-circles/index.html">Section H — Three Circles (Radical Center & Circles of Antisimilitude)</a></h2>
+                      <p>Analyzes systems of three circles (<strong>§§ 491–505</strong>): the concurrency of their three pairwise <span class="term-ref glossary-term">radical axes</span> at the <em>radical center</em> and their orthogonal circle.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="i-the-problem-of-apollonius/index.html" aria-label="Reference circle O and orthogonal circle P intersecting perpendicularly at T1, T2 with polar chord T1 T2 through inverse point P'">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-pole_polar_coaxal.pole_polar_coaxal" data-folio="hero-pole_polar_coaxal" data-graphic="pole_polar_coaxal">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <path class="geom-line" d="M 112.5 140 L 196.75 140 L 281 140" />
+            <circle cx="130.5" cy="140" r="79.5" class="geom-bold" />
+            <circle cx="263" cy="140" r="106" class="geom-circle" />
+            <path class="geom-dashed" d="M 178.2 58.4 L 178.2 140 L 178.2 221.6" />
+          </g>
+          <g>
+            <path class="geom-line" d="M 130.5 140 L 154.35 108.2 L 178.2 76.4" />
+            <path class="geom-line" d="M 263 140 L 220.6 108.2 L 178.2 76.4" />
+            <path d="M 178.2 76.4 L 168.6 89.2 A 16 16 0 0 0 191 86 Z" class="wedge angle geom-overlay" />
+          </g>
+          <g>
+            <circle cx="130.5" cy="140" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="140" r="2.6" class="geom-point" />
+            <circle cx="263" cy="140" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="76.4" r="2.6" class="geom-point" />
+            <circle cx="178.2" cy="203.6" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="118.5" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="164.2" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">P&#x27;</text>
+            <text x="271" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">P</text>
+            <text x="162.2" y="68.4" text-anchor="middle" dominant-baseline="central" class="geom-label">T<tspan dy="3" class="geom-label-sub">1</tspan></text>
+            <text x="162.2" y="217.6" text-anchor="middle" dominant-baseline="central" class="geom-label">T<tspan dy="3" class="geom-label-sub">2</tspan></text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="i-the-problem-of-apollonius/index.html">The Problem of Apollonius (Ten Problems I–X & Gergonne’s Solution)</a></h2>
-                      <p>The Problem of Apollonius (Ten Problems I–X &amp; Gergonne’s Solution) in Chapter VIII covers Articles <strong>§§ 506–517</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0241</span></code>–<code class="docutils literal notranslate"><span class="pre">0248</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">222</span></code>–<code class="docutils literal notranslate"><span class="pre">229</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/08_circles/</span></code>.</p>
+                    <h2><a href="i-the-problem-of-apollonius/index.html">Section I — The Problem of Apollonius (Ten Problems I–X & Gergonne’s Solution)</a></h2>
+                      <p>Crowns Chapter VIII with the <span class="term-ref glossary-term">Problem of Apollonius</span> (<strong>§§ 506–517</strong>): to construct a circle tangent to three given circles (or any combination of points <code class="docutils literal notranslate"><span class="pre">P</span></code>, lines <code class="docutils literal notranslate"><span class="pre">L</span></code>, and circles <code class="docutils literal notranslate"><span class="pre">C</span></code>).</p>
                   </section>
                 </div>
               </article>
@@ -181,13 +632,13 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../ch07-harmonic-division/main-harmonic-ranges-pencils-and-complete-quadrangles/index.html" title="Main. Harmonic Ranges, Pencils, and Complete Quadrangles">&larr; <span class="nav-label">Main. Harmonic Ranges, Pencils, and Complete Quadrangles</span></a>
+            <a class="book-nav-btn" href="../ch07-harmonic-division/main-harmonic-ranges-pencils-and-complete-quadrangles/index.html" title="Harmonic Ranges, Pencils, and Complete Quadrangles">&larr; <span class="nav-label">Harmonic Ranges, Pencils, and Complete Quadrangles</span></a>
           </div>
           <div class="book-nav-center">
             <a class="book-toc-link" href="../index.html">College Geometry</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="a-inverse-points/index.html" title="A. Inverse Points"><span class="nav-label">A. Inverse Points</span> &rarr;</a>
+            <a class="book-nav-btn" href="a-inverse-points/index.html" title="Section A — Inverse Points"><span class="nav-label">Section A — Inverse Points</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -234,11 +685,12 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=938c9ccc"></script>
+  <script src="../../_static/documentation_options.js?v=e259d695"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

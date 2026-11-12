@@ -64,7 +64,7 @@
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../ch06-transversals/d-ceva-s-theorem/index.html" title="D. Ceva’s Theorem (incl. Gergonne § 331, Nagel § 333, Desargues § 343)">&larr; <span class="nav-label">Prev</span></a>
+            <a class="book-nav-btn" href="../ch06-transversals/d-ceva-s-theorem/index.html" title="Section D — Ceva’s Theorem (incl. Gergonne § 331, Nagel § 333, Desargues § 343)">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
             <nav class="book-tracks-nav" aria-label="Document Tracks">
@@ -74,7 +74,7 @@
             </nav>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="main-harmonic-ranges-pencils-and-complete-quadrangles/index.html" title="Main. Harmonic Ranges, Pencils, and Complete Quadrangles"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="main-harmonic-ranges-pencils-and-complete-quadrangles/index.html" title="Harmonic Ranges, Pencils, and Complete Quadrangles"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </header>
@@ -82,13 +82,123 @@
         <section class="level-1" id="chapter-vii-harmonic-division">
         <span id="ch07-harmonic-division-en"></span><span id="ch07-harmonic-division"></span><h1>Chapter VII: Harmonic Division<a class="headerlink" href="#chapter-vii-harmonic-division" title="Link to this heading">¶</a></h1>
         <p class="rubric">Harmonic Conjugates, Metric Relations, Harmonic Pencils, Complete Quadrangle and Complete Quadrilateral</p>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic" data-graphic-id="hero-harmonic_quadrangle.harmonic_quadrangle" data-folio="hero-harmonic_quadrangle" data-graphic="harmonic_quadrangle">
+          <defs>
+            <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-2" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g id="elements">
+            <path id="el-line-base" data-ref="[ D B ]" data-type="line" class="geom-bold" d="M 50.67 246 L 210 246 L 369.33 246" />
+          </g>
+          <g id="graphics">
+            <path id="el-seg-sAK" data-ref="/ A K /" data-type="segment" class="geom-line" d="M 162.89 246 L 221.78 140 L 280.67 34" />
+            <path id="el-seg-sBK" data-ref="/ B K /" data-type="segment" class="geom-line" d="M 351.33 246 L 316 140 L 280.67 34" />
+            <path id="el-seg-sAM" data-ref="/ A M /" data-type="segment" class="geom-line" d="M 162.89 246 L 233.56 175.34 L 304.22 104.67" />
+            <path id="el-seg-sBL" data-ref="/ B L /" data-type="segment" class="geom-line" d="M 351.33 246 L 280.66 203.6 L 210 161.2" />
+            <path id="el-seg-sKC" data-ref="/ K C /" data-type="segment" class="geom-dashed" d="M 280.67 34 L 245.34 140 L 210 246" />
+            <path id="el-seg-sLD" data-ref="/ L D /" data-type="segment" class="geom-dashed" d="M 210 161.2 L 139.34 203.6 L 68.67 246" />
+          </g>
+          <g id="highlights" style="pointer-events: none;">
+            <path id="hl-line-base" data-ref="[ D B ]" class="geom-line geom-overlay" d="M 50.67 246 L 210 246 L 369.33 246" />
+            <path id="hl-seg-sAK" data-ref="/ A K /" class="geom-line geom-overlay" d="M 162.89 246 L 221.78 140 L 280.67 34" />
+            <path id="hl-seg-sBK" data-ref="/ B K /" class="geom-line geom-overlay" d="M 351.33 246 L 316 140 L 280.67 34" />
+            <path id="hl-seg-sAM" data-ref="/ A M /" class="geom-line geom-overlay" d="M 162.89 246 L 233.56 175.34 L 304.22 104.67" />
+            <path id="hl-seg-sBL" data-ref="/ B L /" class="geom-line geom-overlay" d="M 351.33 246 L 280.66 203.6 L 210 161.2" />
+            <path id="hl-seg-sKC" data-ref="/ K C /" class="geom-line geom-overlay" d="M 280.67 34 L 245.34 140 L 210 246" />
+            <path id="hl-seg-sLD" data-ref="/ L D /" class="geom-line geom-overlay" d="M 210 161.2 L 139.34 203.6 L 68.67 246" />
+          </g>
+          <g id="points">
+            <circle id="el-pt-A" data-ref="A" data-type="point" cx="162.89" cy="246" r="2.6" class="geom-point" />
+            <circle id="el-pt-C" data-ref="C" data-type="point" cx="210" cy="246" r="2.6" class="geom-point" />
+            <circle id="el-pt-B" data-ref="B" data-type="point" cx="351.33" cy="246" r="2.6" class="geom-point" />
+            <circle id="el-pt-D" data-ref="D" data-type="point" cx="68.67" cy="246" r="2.6" class="geom-point" />
+            <circle id="el-pt-K" data-ref="K" data-type="point" cx="280.67" cy="34" r="2.6" class="geom-point" />
+            <circle id="el-pt-L" data-ref="L" data-type="point" cx="210" cy="161.2" r="2.6" class="geom-point" />
+            <circle id="el-pt-M" data-ref="M" data-type="point" cx="304.22" cy="104.67" r="2.6" class="geom-point" />
+            <circle id="el-pt-N" data-ref="N" data-type="point" cx="233.56" cy="175.33" r="2.6" class="geom-point" />
+          </g>
+          <g id="labels">
+            <text id="lbl-A" data-ref="A" x="158.9" y="261" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text id="lbl-C" data-ref="C" x="206" y="261" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text id="lbl-B" data-ref="B" x="355.3" y="261" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text id="lbl-D" data-ref="D" x="64.7" y="261" text-anchor="middle" dominant-baseline="central" class="geom-label">D</text>
+            <text id="lbl-K" data-ref="K" x="280.7" y="24" text-anchor="middle" dominant-baseline="central" class="geom-label">K</text>
+            <text id="lbl-L" data-ref="L" x="196" y="157.2" text-anchor="middle" dominant-baseline="central" class="geom-label">L</text>
+            <text id="lbl-M" data-ref="M" x="314.2" y="100.7" text-anchor="middle" dominant-baseline="central" class="geom-label">M</text>
+            <text id="lbl-N" data-ref="N" x="245.6" y="187.3" text-anchor="middle" dominant-baseline="central" class="geom-label">N</text>
+          </g>
+        </svg>
+        <figcaption>Complete Quadrangle KLMN Generating Harmonic Range (A, B; C, D) = −1 by Straightedge Alone</figcaption>
+        </figure>
         <p>Projective and metric theory of harmonic ranges and pencils (<strong>§§ 345–357</strong>, Folios <code class="docutils literal notranslate"><span class="pre">0185</span></code>–<code class="docutils literal notranslate"><span class="pre">0190</span></code>, pp. <code class="docutils literal notranslate"><span class="pre">166</span></code>–<code class="docutils literal notranslate"><span class="pre">171</span></code>): harmonic conjugates, perspectivity invariance of harmonic pencils, complete quadrangles and quadrilaterals, and the Gauss–Newton midpoint line.</p>
             <section class="collection ">
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="main-harmonic-ranges-pencils-and-complete-quadrangles/index.html" aria-label="Complete quadrangle KLMN whose sides meet line AB in harmonic conjugates A, C, B, D">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-harmonic_quadrangle.harmonic_quadrangle" data-folio="hero-harmonic_quadrangle" data-graphic="harmonic_quadrangle">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <path class="geom-bold" d="M 50.67 246 L 210 246 L 369.33 246" />
+          </g>
+          <g>
+            <path class="geom-line" d="M 162.89 246 L 221.78 140 L 280.67 34" />
+            <path class="geom-line" d="M 351.33 246 L 316 140 L 280.67 34" />
+            <path class="geom-line" d="M 162.89 246 L 233.56 175.34 L 304.22 104.67" />
+            <path class="geom-line" d="M 351.33 246 L 280.66 203.6 L 210 161.2" />
+            <path class="geom-dashed" d="M 280.67 34 L 245.34 140 L 210 246" />
+            <path class="geom-dashed" d="M 210 161.2 L 139.34 203.6 L 68.67 246" />
+          </g>
+          <g>
+            <circle cx="162.89" cy="246" r="2.6" class="geom-point" />
+            <circle cx="210" cy="246" r="2.6" class="geom-point" />
+            <circle cx="351.33" cy="246" r="2.6" class="geom-point" />
+            <circle cx="68.67" cy="246" r="2.6" class="geom-point" />
+            <circle cx="280.67" cy="34" r="2.6" class="geom-point" />
+            <circle cx="210" cy="161.2" r="2.6" class="geom-point" />
+            <circle cx="304.22" cy="104.67" r="2.6" class="geom-point" />
+            <circle cx="233.56" cy="175.33" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="158.9" y="261" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="206" y="261" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="355.3" y="261" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="64.7" y="261" text-anchor="middle" dominant-baseline="central" class="geom-label">D</text>
+            <text x="280.7" y="24" text-anchor="middle" dominant-baseline="central" class="geom-label">K</text>
+            <text x="196" y="157.2" text-anchor="middle" dominant-baseline="central" class="geom-label">L</text>
+            <text x="314.2" y="100.7" text-anchor="middle" dominant-baseline="central" class="geom-label">M</text>
+            <text x="245.6" y="187.3" text-anchor="middle" dominant-baseline="central" class="geom-label">N</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="main-harmonic-ranges-pencils-and-complete-quadrangles/index.html">Main. Harmonic Ranges, Pencils, and Complete Quadrangles</a></h2>
-                      <p>Main. Harmonic Ranges, Pencils, and Complete Quadrangles in Chapter VII covers Articles <strong>§§ 345–357</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0185</span></code>–<code class="docutils literal notranslate"><span class="pre">0190</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">166</span></code>–<code class="docutils literal notranslate"><span class="pre">171</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/07_harmonic_division/</span></code>.</p>
+                    <h2><a href="main-harmonic-ranges-pencils-and-complete-quadrangles/index.html">Harmonic Ranges, Pencils, and Complete Quadrangles</a></h2>
+                      <p>Elevates <span class="term-ref glossary-term">harmonic division</span> (<strong>§§ 345–357</strong>, Folios <code class="docutils literal notranslate"><span class="pre">0185</span></code>–<code class="docutils literal notranslate"><span class="pre">0190</span></code>, pp. <code class="docutils literal notranslate"><span class="pre">166</span></code>–<code class="docutils literal notranslate"><span class="pre">171</span></code>) from a metric segment ratio to the fundamental projective invariant of harmonic pencils, complete quadrangles, and complete quadrilaterals (<span class="citation-ref">Pappus VII</span>, <span class="citation-ref">Chasles</span>).</p>
                   </section>
                 </div>
               </article>
@@ -103,13 +213,13 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../ch06-transversals/d-ceva-s-theorem/index.html" title="D. Ceva’s Theorem (incl. Gergonne § 331, Nagel § 333, Desargues § 343)">&larr; <span class="nav-label">D. Ceva’s Theorem (incl. Gergonne § 331, Nagel § 333, Desargues § 343)</span></a>
+            <a class="book-nav-btn" href="../ch06-transversals/d-ceva-s-theorem/index.html" title="Section D — Ceva’s Theorem (incl. Gergonne § 331, Nagel § 333, Desargues § 343)">&larr; <span class="nav-label">Section D — Ceva’s Theorem (incl. Gergonne § 331, Nagel § 333, Desargues § 343)</span></a>
           </div>
           <div class="book-nav-center">
             <a class="book-toc-link" href="../index.html">College Geometry</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="main-harmonic-ranges-pencils-and-complete-quadrangles/index.html" title="Main. Harmonic Ranges, Pencils, and Complete Quadrangles"><span class="nav-label">Main. Harmonic Ranges, Pencils, and Complete Quadrangles</span> &rarr;</a>
+            <a class="book-nav-btn" href="main-harmonic-ranges-pencils-and-complete-quadrangles/index.html" title="Harmonic Ranges, Pencils, and Complete Quadrangles"><span class="nav-label">Harmonic Ranges, Pencils, and Complete Quadrangles</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -156,7 +266,7 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=938c9ccc"></script>
+  <script src="../../_static/documentation_options.js?v=e259d695"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>

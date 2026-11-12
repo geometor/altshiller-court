@@ -64,7 +64,7 @@
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../ch02-similitude-and-homothecy/b-homothecy/index.html" title="B. Homothecy">&larr; <span class="nav-label">Prev</span></a>
+            <a class="book-nav-btn" href="../ch02-similitude-and-homothecy/b-homothecy/index.html" title="Section B — Homothecy">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
             <nav class="book-tracks-nav" aria-label="Document Tracks">
@@ -74,7 +74,7 @@
             </nav>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="a-preliminaries/index.html" title="A. Preliminaries (Harmonic Division of a Segment &amp; Apollonian Circle)"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="a-preliminaries/index.html" title="Section A — Preliminaries (Harmonic Division of a Segment &amp; Apollonian Circle)"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </header>
@@ -82,117 +82,919 @@
         <section class="level-1" id="chapter-iii-properties-of-the-triangle">
         <span id="ch03-properties-of-the-triangle-en"></span><span id="ch03-properties-of-the-triangle"></span><h1>Chapter III: Properties of the Triangle<a class="headerlink" href="#chapter-iii-properties-of-the-triangle" title="Link to this heading">¶</a></h1>
         <p class="rubric">Circumcircle, Medians, Tritangent Circles, Altitudes, Euler Line, Nine-Point Circle, Feuerbach’s Theorem, Orthocentric Quadrilateral</p>
-        <p>Classical synthetic geometry of the triangle (<strong>§§ 54–239</strong>, Folios <code class="docutils literal notranslate"><span class="pre">0072</span></code>–<code class="docutils literal notranslate"><span class="pre">0142</span></code>, pp. <code class="docutils literal notranslate"><span class="pre">53</span></code>–<code class="docutils literal notranslate"><span class="pre">123</span></code>): harmonic preliminaries, circumcircle and medians, incircle and excircles, orthocenter and orthic triangle, the Euler line, the nine-point circle, Feuerbach’s theorem, and the orthocentric group.</p>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic" data-graphic-id="hero-euler_feuerbach.euler_feuerbach" data-folio="hero-euler_feuerbach" data-graphic="euler_feuerbach">
+          <defs>
+            <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-2" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g id="elements">
+            <circle id="el-circle-circum" data-ref="( O A )" data-type="circle" cx="210" cy="140" r="106" class="geom-arc-dashed" />
+            <circle id="el-circle-nine" data-ref="( N D )" data-type="circle" cx="196.95" cy="142.45" r="53" class="geom-bold" />
+            <circle id="el-circle-incirc" data-ref="( I Fe )" data-type="circle" cx="196.95" cy="141.63" r="52.19" class="geom-circle" />
+            <path id="el-line-euler" data-ref="[ O H ]" data-type="line" class="geom-line" d="M 227.69 136.68 L 196.95 142.44 L 166.22 148.21" />
+          </g>
+          <g id="graphics">
+            <polygon id="el-poly-tri" data-ref="&lt; A B C &gt;" data-type="polygon" points="183.91,37.26 118.68,193.82 301.32,193.82" class="geom-polygon" />
+            <path id="el-seg-altA" data-ref="/ A D /" data-type="segment" class="geom-dashed" d="M 183.91 37.26 L 183.91 115.54 L 183.91 193.82" />
+          </g>
+          <g id="highlights" style="pointer-events: none;">
+            <circle id="hl-circle-circum" data-ref="( O A )" cx="210" cy="140" r="106" class="geom-circle geom-overlay" />
+            <polygon id="hl-poly-tri" data-ref="&lt; A B C &gt;" points="183.91,37.26 118.68,193.82 301.32,193.82" class="geom-polygon geom-overlay" />
+            <circle id="hl-circle-nine" data-ref="( N D )" cx="196.95" cy="142.45" r="53" class="geom-circle geom-overlay" />
+            <circle id="hl-circle-incirc" data-ref="( I Fe )" cx="196.95" cy="141.63" r="52.19" class="geom-circle geom-overlay" />
+            <path id="hl-seg-altA" data-ref="/ A D /" class="geom-line geom-overlay" d="M 183.91 37.26 L 183.91 115.54 L 183.91 193.82" />
+            <path id="hl-line-euler" data-ref="[ O H ]" class="geom-line geom-overlay" d="M 227.69 136.68 L 196.95 142.44 L 166.22 148.21" />
+          </g>
+          <g id="points">
+            <circle id="el-pt-A" data-ref="A" data-type="point" cx="183.91" cy="37.26" r="2.6" class="geom-point" />
+            <circle id="el-pt-B" data-ref="B" data-type="point" cx="118.68" cy="193.82" r="2.6" class="geom-point" />
+            <circle id="el-pt-C" data-ref="C" data-type="point" cx="301.32" cy="193.82" r="2.6" class="geom-point" />
+            <circle id="el-pt-O" data-ref="O" data-type="point" cx="210" cy="140" r="2.6" class="geom-point" />
+            <circle id="el-pt-G" data-ref="G" data-type="point" cx="201.3" cy="141.63" r="2.6" class="geom-point" />
+            <circle id="el-pt-N" data-ref="N" data-type="point" cx="196.95" cy="142.45" r="2.6" class="geom-point" />
+            <circle id="el-pt-H" data-ref="H" data-type="point" cx="183.91" cy="144.89" r="2.6" class="geom-point" />
+            <circle id="el-pt-I" data-ref="I" data-type="point" cx="196.95" cy="141.63" r="2.6" class="geom-point" />
+            <circle id="el-pt-D" data-ref="D" data-type="point" cx="183.91" cy="193.82" r="2.6" class="geom-point" />
+            <circle id="el-pt-Aprime" data-ref="Aprime" data-type="point" cx="210" cy="193.82" r="2.6" class="geom-point" />
+            <circle id="el-pt-Fe" data-ref="Fe" data-type="point" cx="196.95" cy="89.45" r="2.6" class="geom-point" />
+          </g>
+          <g id="labels">
+            <text id="lbl-A" data-ref="A" x="176.5" y="28.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text id="lbl-B" data-ref="B" x="102.6" y="205.9" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text id="lbl-C" data-ref="C" x="309.4" y="205.9" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text id="lbl-O" data-ref="O" x="223" y="133" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text id="lbl-G" data-ref="G" x="210.3" y="155.6" text-anchor="middle" dominant-baseline="central" class="geom-label">G</text>
+            <text id="lbl-N" data-ref="N" x="191.9" y="156.4" text-anchor="middle" dominant-baseline="central" class="geom-label">N</text>
+            <text id="lbl-H" data-ref="H" x="169.9" y="150.9" text-anchor="middle" dominant-baseline="central" class="geom-label">H</text>
+            <text id="lbl-I" data-ref="I" x="184.9" y="133.6" text-anchor="middle" dominant-baseline="central" class="geom-label">I</text>
+            <text id="lbl-D" data-ref="D" x="177.9" y="208.8" text-anchor="middle" dominant-baseline="central" class="geom-label">D</text>
+            <text id="lbl-Aprime" data-ref="Aprime" x="216" y="208.8" text-anchor="middle" dominant-baseline="central" class="geom-label">A&#x27;</text>
+            <text id="lbl-Fe" data-ref="Fe" x="209.9" y="81.5" text-anchor="middle" dominant-baseline="central" class="geom-label">Fe</text>
+          </g>
+        </svg>
+        <figcaption>Euler Line O–G–N–H, Nine-Point Circle (N), Incircle (I), and Feuerbach Point X(11)</figcaption>
+        </figure>
+        <p>Classical synthetic geometry of the triangle (<strong>§§ 54–239</strong>, Folios <code class="docutils literal notranslate"><span class="pre">0072</span></code>–<code class="docutils literal notranslate"><span class="pre">0142</span></code>, pp. <code class="docutils literal notranslate"><span class="pre">53</span></code>–<code class="docutils literal notranslate"><span class="pre">123</span></code>): harmonic preliminaries, circumcircle and the Problem of Pappus (<strong>§§ 54–86</strong>), medians and centroid (<strong>§§ 87–110</strong>), tritangent circles, orthocenter and orthic triangle, Euler line, nine-point circle, Feuerbach’s theorem, and the orthocentric group.</p>
             <section class="collection ">
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="a-preliminaries/index.html" aria-label="Calibrated Fig. 39 diagram of harmonic division of segment AB via parallel lines">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 338 230" width="338" height="230" class="euclid-graphic euclid-thumbnail" data-graphic-id="0072.g1" data-folio="0072" data-graphic="g1" data-article="54">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <path class="geom-line" d="M 25.71 159.23 L 169.51 158.53 L 313.31 157.82" />
+            <path class="geom-line" d="M 108.17 23.62 L 210.74 90.72 L 313.31 157.82" />
+            <path class="geom-line" d="M 108.17 23.62 L 154.63 115.52 L 201.09 207.41" />
+            <path class="geom-line" d="M 201.09 207.41 L 228.73 164 L 256.38 120.58" />
+          </g>
+          <g>
+            <path class="geom-line" d="M 25.71 159.23 L 66.94 91.43 L 108.17 23.62" />
+            <path class="geom-tick" d="M 122.29 154.75 L 122.29 159.5 L 122.29 164.25" />
+            <path class="geom-line geom-overlay" d="M 25.71 159.23 L 129.06 158.73 L 232.41 158.22" />
+            <path class="geom-line geom-overlay" d="M 25.71 159.23 L 100.93 158.87 L 176.14 158.5" />
+            <path class="geom-line geom-overlay" d="M 176.14 158.5 L 204.27 158.36 L 232.41 158.22" />
+            <path class="geom-line geom-overlay" d="M 313.31 157.82 L 272.86 158.02 L 232.41 158.22" />
+            <path class="geom-line geom-overlay" d="M 176.14 158.5 L 244.72 158.16 L 313.31 157.82" />
+            <path class="geom-line geom-overlay" d="M 25.71 159.23 L 135.81 158.69 L 245.9 158.16" />
+            <path class="geom-line geom-overlay" d="M 232.41 158.22 L 239.15 158.19 L 245.9 158.16" />
+            <path class="geom-line geom-overlay" d="M 245.9 158.16 L 211.02 158.33 L 176.14 158.5" />
+            <path class="geom-line geom-overlay" d="M 122.29 158.76 L 184.09 158.46 L 245.9 158.16" />
+            <path class="geom-line geom-overlay" d="M 232.41 158.22 L 216.75 182.82 L 201.09 207.41" />
+            <path class="geom-line geom-overlay" d="M 232.41 158.22 L 244.39 139.4 L 256.38 120.58" />
+            <polygon points="176.14,158.5 25.71,159.23 108.17,23.62" class="geom-polygon geom-overlay" />
+            <polygon points="176.14,158.5 232.41,158.22 201.09,207.41" class="geom-polygon geom-overlay" />
+            <polygon points="313.31,157.82 25.71,159.23 108.17,23.62" class="geom-polygon geom-overlay" />
+            <polygon points="313.31,157.82 232.41,158.22 256.38,120.58" class="geom-polygon geom-overlay" />
+          </g>
+          <g>
+            <circle cx="25.71" cy="159.23" r="2.6" class="geom-point" />
+            <circle cx="122.29" cy="158.76" r="2.6" class="geom-point" />
+            <circle cx="176.14" cy="158.5" r="2.6" class="geom-point" />
+            <circle cx="232.41" cy="158.22" r="2.6" class="geom-point" />
+            <circle cx="245.9" cy="158.16" r="3.1" class="geom-point" />
+            <circle cx="313.31" cy="157.82" r="2.6" class="geom-point" />
+            <circle cx="108.17" cy="23.62" r="2.6" class="geom-point" />
+            <circle cx="201.09" cy="207.41" r="2.6" class="geom-point" />
+            <circle cx="256.38" cy="120.58" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="15.5" y="161" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="123" y="146.5" text-anchor="middle" dominant-baseline="central" class="geom-label">M</text>
+            <text x="168.5" y="168.5" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="225" y="146.5" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="258" y="144.5" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="323.5" y="159" text-anchor="middle" dominant-baseline="central" class="geom-label">D</text>
+            <text x="107" y="13" text-anchor="middle" dominant-baseline="central" class="geom-label">F</text>
+            <text x="199" y="219" text-anchor="middle" dominant-baseline="central" class="geom-label">G</text>
+            <text x="261" y="109" text-anchor="middle" dominant-baseline="central" class="geom-label">H</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="a-preliminaries/index.html">Preliminaries (Harmonic Division of a Segment & Apollonian Circle)</a></h2>
-                      <p>Preliminaries (Harmonic Division of a Segment &amp; Apollonian Circle) in Chapter III covers Articles <strong>§§ 54–67</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0072</span></code>–<code class="docutils literal notranslate"><span class="pre">0075</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">53</span></code>–<code class="docutils literal notranslate"><span class="pre">56</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/03_properties_of_the_triangle/</span></code>.</p>
+                    <h2><a href="a-preliminaries/index.html">Section A — Preliminaries (Harmonic Division of a Segment & Apollonian Circle)</a></h2>
+                      <p>Internal and external division of a segment in a given ratio (§§ 54–56, Fig. 39), mutual symmetry and metric identities of harmonic conjugates (§§ 57–66), graphical quadratic segment construction (§ 67, Figs. 40a–40b), and 3 harmonic exercises.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="b-the-circumcircle/index.html" aria-label="Calibrated Fig. 44 diagram of triangle ABC in its circumcircle with altitude, bisector, median, and circumdiameter">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255 254" width="255" height="254" class="euclid-graphic euclid-thumbnail" data-graphic-id="0079.g1" data-folio="0079" data-graphic="g1" data-article="73">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="128.36" cy="120.56" r="111.13" class="geom-circle" />
+          </g>
+          <g>
+            <path class="geom-line" d="M 63.63 30.23 L 44.67 96.69 L 25.71 163.15" />
+            <path class="geom-line" d="M 25.71 163.15 L 128.74 162.2 L 231.76 161.26" />
+            <path class="geom-line" d="M 63.63 30.23 L 147.7 95.74 L 231.76 161.26" />
+            <path class="geom-line" d="M 63.63 30.23 L 129.31 119.86 L 194.99 209.5" />
+            <path class="geom-line" d="M 194.99 209.5 L 213.38 185.38 L 231.76 161.26" />
+            <path class="geom-line" d="M 63.63 30.23 L 64.22 96.51 L 64.8 162.79" />
+            <path class="geom-dashed" d="M 64.8 162.79 L 64.99 187.38 L 65.19 211.98" />
+            <path class="geom-line" d="M 63.63 30.23 L 85.39 96.31 L 107.16 162.4" />
+            <path class="geom-dashed" d="M 107.16 162.4 L 118.56 197.04 L 129.96 231.68" />
+            <path class="geom-dashed" d="M 63.63 30.23 L 113.77 128.03 L 163.91 225.84" />
+            <path class="geom-dashed" d="M 129.89 120.66 L 129.92 176.17 L 129.96 231.68" />
+            <path class="geom-line geom-overlay" d="M 63.63 30.23 L 97.07 96.21 L 130.51 162.19" />
+            <path class="geom-line geom-overlay" d="M 130.51 162.19 L 147.21 194.02 L 163.91 225.84" />
+            <path class="geom-line geom-overlay" d="M 130.51 162.19 L 78.11 162.67 L 25.71 163.15" />
+            <path class="geom-line geom-overlay" d="M 130.51 162.19 L 181.14 161.72 L 231.76 161.26" />
+            <path class="geom-line geom-overlay" d="M 129.89 120.66 L 96.76 75.44 L 63.63 30.23" />
+            <path class="geom-line geom-overlay" d="M 129.89 120.66 L 130.2 141.42 L 130.51 162.19" />
+            <polygon points="63.63,30.23 25.71,163.15 231.76,161.26" class="geom-polygon geom-overlay" />
+            <polygon points="63.63,30.23 25.71,163.15 64.8,162.79" class="geom-polygon geom-overlay" />
+            <polygon points="63.63,30.23 231.76,161.26 194.99,209.5" class="geom-polygon geom-overlay" />
+            <polygon points="63.63,30.23 64.8,162.79 107.16,162.4" class="geom-polygon geom-overlay" />
+            <polygon points="63.63,30.23 107.16,162.4 25.71,163.15" class="geom-polygon geom-overlay" />
+            <polygon points="63.63,30.23 107.16,162.4 231.76,161.26" class="geom-polygon geom-overlay" />
+            <path d="M 63.63 30.23 L 58.42 48.5 A 19 19 0 0 0 63.8 49.22 Z" class="wedge angle geom-overlay" />
+            <path d="M 63.63 30.23 L 74.86 45.55 A 19 19 0 0 0 78.62 41.9 Z" class="wedge angle geom-overlay" />
+            <path d="M 63.63 30.23 L 63.82 52.22 A 22 22 0 0 0 76.63 47.97 Z" class="wedge angle geom-overlay" />
+            <path d="M 63.63 30.23 L 63.84 54.22 A 24 24 0 0 0 71.14 53.02 Z" class="wedge angle geom-overlay" />
+            <path d="M 63.63 30.23 L 77.82 49.58 A 24 24 0 0 1 71.14 53.02 Z" class="wedge angle geom-overlay" />
+            <path d="M 107.16 162.4 L 102.78 149.1 A 14 14 0 0 1 121.15 162.27 Z" class="wedge angle geom-overlay" />
+            <path d="M 107.16 162.4 L 102.78 149.1 A 14 14 0 0 0 93.16 162.53 Z" class="wedge angle geom-overlay" />
+            <path d="M 25.71 163.15 L 30.1 147.76 A 16 16 0 0 1 41.71 163 Z" class="wedge angle geom-overlay" />
+            <path d="M 194.99 209.5 L 185.53 196.59 A 16 16 0 0 1 204.69 196.78 Z" class="wedge angle geom-overlay" />
+          </g>
+          <g>
+            <circle cx="63.63" cy="30.23" r="2.6" class="geom-point" />
+            <circle cx="25.71" cy="163.15" r="2.6" class="geom-point" />
+            <circle cx="64.8" cy="162.79" r="2.6" class="geom-point" />
+            <circle cx="65.19" cy="211.98" r="2.6" class="geom-point" />
+            <circle cx="107.16" cy="162.4" r="2.6" class="geom-point" />
+            <circle cx="129.96" cy="231.68" r="2.6" class="geom-point" />
+            <circle cx="130.51" cy="162.19" r="2.6" class="geom-point" />
+            <circle cx="129.89" cy="120.66" r="2.6" class="geom-point" />
+            <circle cx="163.91" cy="225.84" r="2.6" class="geom-point" />
+            <circle cx="194.99" cy="209.5" r="2.6" class="geom-point" />
+            <circle cx="231.76" cy="161.26" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="54.5" y="20" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="15.5" y="168.5" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="51.5" y="151" text-anchor="middle" dominant-baseline="central" class="geom-label">D</text>
+            <text x="62.5" y="225.5" text-anchor="middle" dominant-baseline="central" class="geom-label">I</text>
+            <text x="96" y="174.5" text-anchor="middle" dominant-baseline="central" class="geom-label">U</text>
+            <text x="130" y="246" text-anchor="middle" dominant-baseline="central" class="geom-label">L</text>
+            <text x="146" y="175" text-anchor="middle" dominant-baseline="central" class="geom-label">A&#x27;</text>
+            <text x="136.5" y="109" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="166" y="237.5" text-anchor="middle" dominant-baseline="central" class="geom-label">J</text>
+            <text x="200" y="219" text-anchor="middle" dominant-baseline="central" class="geom-label">K</text>
+            <text x="240.5" y="164.5" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="b-the-circumcircle/index.html">The Circumcircle (incl. Problem of Pappus § 84)
-
-        /home/runner/work/altshiller-court/altshiller-court/docsrc/college_geometry/ch03-properties-of-the-triangle/b-the-circumcircle/index.rst:4: (INFO/1) Enumerated list start value not ordinal-1: “B” (ordinal 2)</a></h2>
-                      <p>The Circumcircle (incl. Problem of Pappus § 84) in Chapter III covers Articles <strong>§§ 68–86</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0076</span></code>–<code class="docutils literal notranslate"><span class="pre">0083</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">57</span></code>–<code class="docutils literal notranslate"><span class="pre">64</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/03_properties_of_the_triangle/</span></code>.</p>
+                    <h2><a href="b-the-circumcircle/index.html">Section B — The Circumcircle (incl. Problem of Pappus § 84)</a></h2>
+                      <p>Circumcircle envelope and datum (a, A, R) (§§ 68–72, Figs. 41–43), circumdiameter–altitude–bisector–median relations (§§ 73–78, Fig. 44), antipodal chord and pedal symmetry theorems (§§ 79–82, Fig. 45), the classical Problem of Pappus (§§ 83–84, Fig. 46), product of sides bc = 2Rh_a and abc = 4RS (§§ 85–86), and 35 circumcircle construction exercises.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="c-medians/index.html" aria-label="Calibrated Fig. 47 diagram of triangle ABC with medians meeting at centroid G">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 220" width="285" height="220" class="euclid-graphic euclid-thumbnail" data-graphic-id="0084.g1" data-folio="0084" data-graphic="g1" data-article="88">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+          </g>
+          <g>
+            <path class="geom-line" d="M 87.82 27.41 L 56.85 91.33 L 25.89 155.25" />
+            <path class="geom-line" d="M 25.89 155.25 L 144.15 155.67 L 262.4 156.09" />
+            <path class="geom-line" d="M 87.82 27.41 L 175.11 91.75 L 262.4 156.09" />
+            <path class="geom-line" d="M 56.38 92.32 L 116.55 92.63 L 176.73 92.94" />
+            <path class="geom-line" d="M 25.89 155.25 L 101.31 124.1 L 176.73 92.94" />
+            <path class="geom-line" d="M 262.4 156.09 L 159.39 124.2 L 56.38 92.32" />
+            <path class="geom-line" d="M 87.82 27.41 L 124.85 111.89 L 161.88 196.38" />
+            <path class="geom-line" d="M 80.01 132.54 L 134.65 133.31 L 189.28 134.09" />
+            <path class="geom-line" d="M 25.89 155.25 L 93.88 175.81 L 161.88 196.38" />
+            <path class="geom-line" d="M 161.88 196.38 L 212.14 176.23 L 262.4 156.09" />
+            <path class="geom-line geom-overlay" d="M 87.82 27.41 L 115.52 91.54 L 143.22 155.66" />
+            <path class="geom-line geom-overlay" d="M 25.89 155.25 L 75.34 134.67 L 124.78 114.08" />
+            <path class="geom-line geom-overlay" d="M 176.73 92.94 L 150.75 103.51 L 124.78 114.08" />
+            <path class="geom-line geom-overlay" d="M 262.4 156.09 L 193.59 135.08 L 124.78 114.08" />
+            <path class="geom-line geom-overlay" d="M 56.38 92.32 L 90.58 103.2 L 124.78 114.08" />
+            <polygon points="87.82,27.41 25.89,155.25 262.4,156.09" class="geom-polygon geom-overlay" />
+            <polygon points="124.78,114.08 25.89,155.25 262.4,156.09" class="geom-polygon geom-overlay" />
+            <polygon points="124.78,114.08 176.73,92.94 56.38,92.32" class="geom-polygon geom-overlay" />
+          </g>
+          <g>
+            <circle cx="87.82" cy="27.41" r="2.6" class="geom-point" />
+            <circle cx="25.89" cy="155.25" r="2.6" class="geom-point" />
+            <circle cx="262.4" cy="156.09" r="2.6" class="geom-point" />
+            <circle cx="143.22" cy="155.66" r="2.6" class="geom-point" />
+            <circle cx="176.73" cy="92.94" r="2.6" class="geom-point" />
+            <circle cx="56.38" cy="92.32" r="2.6" class="geom-point" />
+            <circle cx="124.78" cy="114.08" r="2.6" class="geom-point" />
+            <circle cx="80.01" cy="132.54" r="2.6" class="geom-point" />
+            <circle cx="189.28" cy="134.09" r="2.6" class="geom-point" />
+            <circle cx="161.88" cy="196.38" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="87.5" y="15.5" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="14" y="159.5" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="271.5" y="159" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="162" y="165" text-anchor="middle" dominant-baseline="central" class="geom-label">A&#x27;</text>
+            <text x="184" y="82" text-anchor="middle" dominant-baseline="central" class="geom-label">B&#x27;</text>
+            <text x="43" y="87.5" text-anchor="middle" dominant-baseline="central" class="geom-label">C&#x27;</text>
+            <text x="133" y="101.5" text-anchor="middle" dominant-baseline="central" class="geom-label">G</text>
+            <text x="72.5" y="122" text-anchor="middle" dominant-baseline="central" class="geom-label">M</text>
+            <text x="191.5" y="122.5" text-anchor="middle" dominant-baseline="central" class="geom-label">N</text>
+            <text x="162.5" y="208.5" text-anchor="middle" dominant-baseline="central" class="geom-label">K</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="c-medians/index.html">Medians (Centroid, Complementary & Anticomplementary Triangles)
-
-        /home/runner/work/altshiller-court/altshiller-court/docsrc/college_geometry/ch03-properties-of-the-triangle/c-medians/index.rst:4: (INFO/1) Enumerated list start value not ordinal-1: “C” (ordinal 3)</a></h2>
-                      <p>Medians (Centroid, Complementary &amp; Anticomplementary Triangles) in Chapter III covers Articles <strong>§§ 87–110</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0084</span></code>–<code class="docutils literal notranslate"><span class="pre">0090</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">65</span></code>–<code class="docutils literal notranslate"><span class="pre">71</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/03_properties_of_the_triangle/</span></code>.</p>
+                    <h2><a href="c-medians/index.html">Section C — Medians (Centroid, Complementary & Anticomplementary Triangles)</a></h2>
+                      <p>Midline theorem (§ 87) and concurrency and 2 : 1 trisection of the three medians at the centroid G = X(2) (§ 88, Fig. 47), inaugurating the synthetic theory of the complementary (medial) and anticomplementary triangles (§§ 87–110).</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="d-a-tritangent-circles-a-bisectors/index.html" aria-label="Triangle ABC with circumcircle, angle bisectors concurring at incenter I, incircle, and contact radii IX, IY, IZ">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-tritangent_incircle.tritangent_incircle" data-folio="hero-tritangent_incircle" data-graphic="tritangent_incircle">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="210" cy="140" r="106" class="geom-arc-dashed" />
+            <circle cx="196.95" cy="141.63" r="52.19" class="geom-bold" />
+          </g>
+          <g>
+            <polygon points="183.91,37.26 118.68,193.82 301.32,193.82" class="geom-polygon" />
+            <path class="geom-dashed" d="M 183.91 37.26 L 190.43 89.44 L 196.95 141.63" />
+            <path class="geom-dashed" d="M 118.68 193.82 L 157.81 167.72 L 196.95 141.63" />
+            <path class="geom-dashed" d="M 301.32 193.82 L 249.13 167.72 L 196.95 141.63" />
+            <path class="geom-line" d="M 196.95 141.63 L 196.95 167.72 L 196.95 193.82" />
+            <path class="geom-line" d="M 196.95 141.63 L 217.82 125.97 L 238.7 110.32" />
+            <path class="geom-line" d="M 196.95 141.63 L 172.87 131.59 L 148.78 121.56" />
+          </g>
+          <g>
+            <circle cx="183.91" cy="37.26" r="2.6" class="geom-point" />
+            <circle cx="118.68" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="301.32" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="196.95" cy="141.63" r="2.6" class="geom-point" />
+            <circle cx="210" cy="140" r="2.6" class="geom-point" />
+            <circle cx="196.95" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="238.7" cy="110.32" r="2.6" class="geom-point" />
+            <circle cx="148.78" cy="121.56" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="176.5" y="28.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="102.6" y="205.9" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="309.4" y="205.9" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="184.9" y="135.6" text-anchor="middle" dominant-baseline="central" class="geom-label">I</text>
+            <text x="220" y="134" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="196.9" y="208.8" text-anchor="middle" dominant-baseline="central" class="geom-label">X</text>
+            <text x="248.7" y="106.3" text-anchor="middle" dominant-baseline="central" class="geom-label">Y</text>
+            <text x="134.8" y="117.6" text-anchor="middle" dominant-baseline="central" class="geom-label">Z</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="d-a-tritangent-circles-a-bisectors/index.html">D.a. Tritangent Circles — a. Bisectors</a></h2>
-                      <p>D.a. Tritangent Circles — a. Bisectors in Chapter III covers Articles <strong>§§ 111–116</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0091</span></code>–<code class="docutils literal notranslate"><span class="pre">0092</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">72</span></code>–<code class="docutils literal notranslate"><span class="pre">73</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/03_properties_of_the_triangle/</span></code>.</p>
+                    <h2><a href="d-a-tritangent-circles-a-bisectors/index.html">Section D.a — Tritangent Circles: Bisectors</a></h2>
+                      <p>Opens the theory of the four <span class="term-ref glossary-term">tritangent circles</span> (<strong>§§ 111–116</strong>) by establishing the harmonic, metric, and circumcircle-midpoint properties of the internal and external angle bisectors of <span class="math notranslate nohighlight">\(\triangle ABC\)</span>.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="d-b-tritangent-circles-b-tritangent-centers/index.html" aria-label="Triangle ABC with circumcircle, angle bisectors concurring at incenter I, incircle, and contact radii IX, IY, IZ">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-tritangent_incircle.tritangent_incircle" data-folio="hero-tritangent_incircle" data-graphic="tritangent_incircle">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="210" cy="140" r="106" class="geom-arc-dashed" />
+            <circle cx="196.95" cy="141.63" r="52.19" class="geom-bold" />
+          </g>
+          <g>
+            <polygon points="183.91,37.26 118.68,193.82 301.32,193.82" class="geom-polygon" />
+            <path class="geom-dashed" d="M 183.91 37.26 L 190.43 89.44 L 196.95 141.63" />
+            <path class="geom-dashed" d="M 118.68 193.82 L 157.81 167.72 L 196.95 141.63" />
+            <path class="geom-dashed" d="M 301.32 193.82 L 249.13 167.72 L 196.95 141.63" />
+            <path class="geom-line" d="M 196.95 141.63 L 196.95 167.72 L 196.95 193.82" />
+            <path class="geom-line" d="M 196.95 141.63 L 217.82 125.97 L 238.7 110.32" />
+            <path class="geom-line" d="M 196.95 141.63 L 172.87 131.59 L 148.78 121.56" />
+          </g>
+          <g>
+            <circle cx="183.91" cy="37.26" r="2.6" class="geom-point" />
+            <circle cx="118.68" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="301.32" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="196.95" cy="141.63" r="2.6" class="geom-point" />
+            <circle cx="210" cy="140" r="2.6" class="geom-point" />
+            <circle cx="196.95" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="238.7" cy="110.32" r="2.6" class="geom-point" />
+            <circle cx="148.78" cy="121.56" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="176.5" y="28.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="102.6" y="205.9" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="309.4" y="205.9" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="184.9" y="135.6" text-anchor="middle" dominant-baseline="central" class="geom-label">I</text>
+            <text x="220" y="134" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="196.9" y="208.8" text-anchor="middle" dominant-baseline="central" class="geom-label">X</text>
+            <text x="248.7" y="106.3" text-anchor="middle" dominant-baseline="central" class="geom-label">Y</text>
+            <text x="134.8" y="117.6" text-anchor="middle" dominant-baseline="central" class="geom-label">Z</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="d-b-tritangent-circles-b-tritangent-centers/index.html">D.b. Tritangent Circles — b. Tritangent Centers</a></h2>
-                      <p>D.b. Tritangent Circles — b. Tritangent Centers in Chapter III covers Articles <strong>§§ 117–130</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0092</span></code>–<code class="docutils literal notranslate"><span class="pre">0097</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">73</span></code>–<code class="docutils literal notranslate"><span class="pre">78</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/03_properties_of_the_triangle/</span></code>.</p>
+                    <h2><a href="d-b-tritangent-circles-b-tritangent-centers/index.html">Section D.b — Tritangent Circles: Tritangent Centers</a></h2>
+                      <p>Establishes the concurrency of the internal and external angle bisectors at the <span class="term-ref glossary-term">incenter</span> <span class="math notranslate nohighlight">\(I = X(1)\)</span> and the three excenters <span class="math notranslate nohighlight">\(I_a, I_b, I_c\)</span> (<strong>§§ 117–130</strong>), revealing their orthocentric duality with <span class="math notranslate nohighlight">\(\triangle ABC\)</span>.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="d-c-tritangent-circles-c-tritangent-radii/index.html" aria-label="Triangle ABC with circumcircle, angle bisectors concurring at incenter I, incircle, and contact radii IX, IY, IZ">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-tritangent_incircle.tritangent_incircle" data-folio="hero-tritangent_incircle" data-graphic="tritangent_incircle">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="210" cy="140" r="106" class="geom-arc-dashed" />
+            <circle cx="196.95" cy="141.63" r="52.19" class="geom-bold" />
+          </g>
+          <g>
+            <polygon points="183.91,37.26 118.68,193.82 301.32,193.82" class="geom-polygon" />
+            <path class="geom-dashed" d="M 183.91 37.26 L 190.43 89.44 L 196.95 141.63" />
+            <path class="geom-dashed" d="M 118.68 193.82 L 157.81 167.72 L 196.95 141.63" />
+            <path class="geom-dashed" d="M 301.32 193.82 L 249.13 167.72 L 196.95 141.63" />
+            <path class="geom-line" d="M 196.95 141.63 L 196.95 167.72 L 196.95 193.82" />
+            <path class="geom-line" d="M 196.95 141.63 L 217.82 125.97 L 238.7 110.32" />
+            <path class="geom-line" d="M 196.95 141.63 L 172.87 131.59 L 148.78 121.56" />
+          </g>
+          <g>
+            <circle cx="183.91" cy="37.26" r="2.6" class="geom-point" />
+            <circle cx="118.68" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="301.32" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="196.95" cy="141.63" r="2.6" class="geom-point" />
+            <circle cx="210" cy="140" r="2.6" class="geom-point" />
+            <circle cx="196.95" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="238.7" cy="110.32" r="2.6" class="geom-point" />
+            <circle cx="148.78" cy="121.56" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="176.5" y="28.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="102.6" y="205.9" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="309.4" y="205.9" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="184.9" y="135.6" text-anchor="middle" dominant-baseline="central" class="geom-label">I</text>
+            <text x="220" y="134" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="196.9" y="208.8" text-anchor="middle" dominant-baseline="central" class="geom-label">X</text>
+            <text x="248.7" y="106.3" text-anchor="middle" dominant-baseline="central" class="geom-label">Y</text>
+            <text x="134.8" y="117.6" text-anchor="middle" dominant-baseline="central" class="geom-label">Z</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="d-c-tritangent-circles-c-tritangent-radii/index.html">D.c. Tritangent Circles — c. Tritangent Radii (Carnot’s & Euler’s Theorems)</a></h2>
-                      <p>D.c. Tritangent Circles — c. Tritangent Radii (Carnot’s &amp; Euler’s Theorems) in Chapter III covers Articles <strong>§§ 131–155</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0097</span></code>–<code class="docutils literal notranslate"><span class="pre">0106</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">78</span></code>–<code class="docutils literal notranslate"><span class="pre">87</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/03_properties_of_the_triangle/</span></code>.</p>
+                    <h2><a href="d-c-tritangent-circles-c-tritangent-radii/index.html">Section D.c — Tritangent Circles: Tritangent Radii (Carnot’s & Euler’s Theorems)</a></h2>
+                      <p>Derives the classic metric relations linking the inradius <span class="math notranslate nohighlight">\(r\)</span>, exradii <span class="math notranslate nohighlight">\(r_a, r_b, r_c\)</span>, circumradius <span class="math notranslate nohighlight">\(R\)</span>, semiperimeter <span class="math notranslate nohighlight">\(s\)</span>, and area <span class="math notranslate nohighlight">\(S\)</span> (<strong>§§ 131–155</strong>), highlighted by <span class="person-ref">Carnot's</span> and <span class="person-ref">Euler's</span> theorems.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="d-d-tritangent-circles-d-points-of-contact/index.html" aria-label="Triangle ABC with circumcircle, angle bisectors concurring at incenter I, incircle, and contact radii IX, IY, IZ">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-tritangent_incircle.tritangent_incircle" data-folio="hero-tritangent_incircle" data-graphic="tritangent_incircle">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="210" cy="140" r="106" class="geom-arc-dashed" />
+            <circle cx="196.95" cy="141.63" r="52.19" class="geom-bold" />
+          </g>
+          <g>
+            <polygon points="183.91,37.26 118.68,193.82 301.32,193.82" class="geom-polygon" />
+            <path class="geom-dashed" d="M 183.91 37.26 L 190.43 89.44 L 196.95 141.63" />
+            <path class="geom-dashed" d="M 118.68 193.82 L 157.81 167.72 L 196.95 141.63" />
+            <path class="geom-dashed" d="M 301.32 193.82 L 249.13 167.72 L 196.95 141.63" />
+            <path class="geom-line" d="M 196.95 141.63 L 196.95 167.72 L 196.95 193.82" />
+            <path class="geom-line" d="M 196.95 141.63 L 217.82 125.97 L 238.7 110.32" />
+            <path class="geom-line" d="M 196.95 141.63 L 172.87 131.59 L 148.78 121.56" />
+          </g>
+          <g>
+            <circle cx="183.91" cy="37.26" r="2.6" class="geom-point" />
+            <circle cx="118.68" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="301.32" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="196.95" cy="141.63" r="2.6" class="geom-point" />
+            <circle cx="210" cy="140" r="2.6" class="geom-point" />
+            <circle cx="196.95" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="238.7" cy="110.32" r="2.6" class="geom-point" />
+            <circle cx="148.78" cy="121.56" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="176.5" y="28.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="102.6" y="205.9" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="309.4" y="205.9" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="184.9" y="135.6" text-anchor="middle" dominant-baseline="central" class="geom-label">I</text>
+            <text x="220" y="134" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="196.9" y="208.8" text-anchor="middle" dominant-baseline="central" class="geom-label">X</text>
+            <text x="248.7" y="106.3" text-anchor="middle" dominant-baseline="central" class="geom-label">Y</text>
+            <text x="134.8" y="117.6" text-anchor="middle" dominant-baseline="central" class="geom-label">Z</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="d-d-tritangent-circles-d-points-of-contact/index.html">D.d. Tritangent Circles — d. Points of Contact</a></h2>
-                      <p>D.d. Tritangent Circles — d. Points of Contact in Chapter III covers Articles <strong>§§ 156–174</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0106</span></code>–<code class="docutils literal notranslate"><span class="pre">0113</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">87</span></code>–<code class="docutils literal notranslate"><span class="pre">94</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/03_properties_of_the_triangle/</span></code>.</p>
+                    <h2><a href="d-d-tritangent-circles-d-points-of-contact/index.html">Section D.d — Tritangent Circles: Points of Contact</a></h2>
+                      <p>Analyzes the twelve contact points where the <span class="term-ref glossary-term">incircle</span> and three excircles touch the sidelines <span class="math notranslate nohighlight">\(BC, CA, AB\)</span> (<strong>§§ 156–174</strong>), expressing every tangent segment cleanly in terms of <span class="math notranslate nohighlight">\(s, s - a, s - b, s - c\)</span>.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="e-a-altitudes-a-the-orthocenter/index.html" aria-label="Triangle ABC with altitudes AD, BE, CF meeting at orthocenter H, reflection H' on circumcircle, and Euler line OGH">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-orthocenter_euler.orthocenter_euler" data-folio="hero-orthocenter_euler" data-graphic="orthocenter_euler">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="210" cy="140" r="106" class="geom-circle" />
+            <path class="geom-line" d="M 227.69 136.68 L 196.95 142.44 L 166.22 148.21" />
+          </g>
+          <g>
+            <polygon points="183.91,37.26 118.68,193.82 301.32,193.82" class="geom-polygon" />
+            <path class="geom-dashed" d="M 183.91 37.26 L 183.91 140 L 183.91 242.74" />
+            <path class="geom-dashed" d="M 118.68 193.82 L 177.12 149.99 L 235.57 106.15" />
+            <path class="geom-dashed" d="M 301.32 193.82 L 223.51 161.39 L 145.7 128.97" />
+          </g>
+          <g>
+            <circle cx="183.91" cy="37.26" r="2.6" class="geom-point" />
+            <circle cx="118.68" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="301.32" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="183.91" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="235.57" cy="106.15" r="2.6" class="geom-point" />
+            <circle cx="145.7" cy="128.97" r="2.6" class="geom-point" />
+            <circle cx="183.91" cy="144.89" r="2.6" class="geom-point" />
+            <circle cx="201.3" cy="141.63" r="2.6" class="geom-point" />
+            <circle cx="210" cy="140" r="2.6" class="geom-point" />
+            <circle cx="183.91" cy="242.74" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="176.5" y="28.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="102.6" y="205.9" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="309.4" y="205.9" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="173.9" y="207.8" text-anchor="middle" dominant-baseline="central" class="geom-label">D</text>
+            <text x="245.6" y="102.2" text-anchor="middle" dominant-baseline="central" class="geom-label">E</text>
+            <text x="131.7" y="125" text-anchor="middle" dominant-baseline="central" class="geom-label">F</text>
+            <text x="169.9" y="138.9" text-anchor="middle" dominant-baseline="central" class="geom-label">H</text>
+            <text x="207.3" y="155.6" text-anchor="middle" dominant-baseline="central" class="geom-label">G</text>
+            <text x="220" y="132" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="189.9" y="257.7" text-anchor="middle" dominant-baseline="central" class="geom-label">H&#x27;</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="e-a-altitudes-a-the-orthocenter/index.html">E.a. Altitudes — a. The Orthocenter</a></h2>
-                      <p>E.a. Altitudes — a. The Orthocenter in Chapter III covers Articles <strong>§§ 175–182</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0113</span></code>–<code class="docutils literal notranslate"><span class="pre">0116</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">94</span></code>–<code class="docutils literal notranslate"><span class="pre">97</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/03_properties_of_the_triangle/</span></code>.</p>
+                    <h2><a href="e-a-altitudes-a-the-orthocenter/index.html">Section E.a — Altitudes: The Orthocenter</a></h2>
+                      <p>Proves the concurrency of the three altitudes of <span class="math notranslate nohighlight">\(\triangle ABC\)</span> at the <span class="term-ref glossary-term">orthocenter</span> <span class="math notranslate nohighlight">\(H = X(4)\)</span> (<strong>§§ 175–182</strong>) by embedding <span class="math notranslate nohighlight">\(\triangle ABC\)</span> as the complementary triangle of its <span class="term-ref glossary-term">anticomplementary triangle</span>.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="e-b-altitudes-b-the-orthic-triangle/index.html" aria-label="Acute triangle ABC with altitudes AD, BE, CF meeting at H, highlighted orthic triangle DEF, and circumscribed nine-point circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-orthic_fagnano.orthic_fagnano" data-folio="hero-orthic_fagnano" data-graphic="orthic_fagnano">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="192.52" cy="174.97" r="71.03" class="geom-arc-dashed" />
+          </g>
+          <g>
+            <polygon points="175.03,34 87.61,243.81 332.39,243.81" class="geom-polygon" />
+            <polygon points="175.03,243.81 244.27,126.32 123.82,156.91" class="geom-polygon" />
+            <path class="geom-dashed" d="M 175.03 34 L 175.03 138.91 L 175.03 243.81" />
+            <path class="geom-dashed" d="M 87.61 243.81 L 165.94 185.06 L 244.27 126.32" />
+            <path class="geom-dashed" d="M 332.39 243.81 L 228.1 200.36 L 123.82 156.91" />
+          </g>
+          <g>
+            <circle cx="175.03" cy="34" r="2.6" class="geom-point" />
+            <circle cx="87.61" cy="243.81" r="2.6" class="geom-point" />
+            <circle cx="332.39" cy="243.81" r="2.6" class="geom-point" />
+            <circle cx="175.03" cy="243.81" r="2.6" class="geom-point" />
+            <circle cx="244.27" cy="126.32" r="2.6" class="geom-point" />
+            <circle cx="123.82" cy="156.91" r="2.6" class="geom-point" />
+            <circle cx="175.03" cy="178.25" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="166.6" y="25.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="72.9" y="257.9" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="339.1" y="257.9" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="175" y="258.8" text-anchor="middle" dominant-baseline="central" class="geom-label">D</text>
+            <text x="254.3" y="122.3" text-anchor="middle" dominant-baseline="central" class="geom-label">E</text>
+            <text x="109.8" y="152.9" text-anchor="middle" dominant-baseline="central" class="geom-label">F</text>
+            <text x="183" y="172.2" text-anchor="middle" dominant-baseline="central" class="geom-label">H</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="e-b-altitudes-b-the-orthic-triangle/index.html">E.b. Altitudes — b. The Orthic Triangle</a></h2>
-                      <p>E.b. Altitudes — b. The Orthic Triangle in Chapter III covers Articles <strong>§§ 183–200</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0116</span></code>–<code class="docutils literal notranslate"><span class="pre">0119</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">97</span></code>–<code class="docutils literal notranslate"><span class="pre">100</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/03_properties_of_the_triangle/</span></code>.</p>
+                    <h2><a href="e-b-altitudes-b-the-orthic-triangle/index.html">Section E.b — Altitudes: The Orthic Triangle</a></h2>
+                      <p>Investigates the <span class="term-ref glossary-term">orthic (pedal) triangle</span> <span class="math notranslate nohighlight">\(\triangle DEF\)</span> formed by the feet of the three altitudes (<strong>§§ 183–200</strong>), uncovering its antiparallel sides, optical reflection law, and <span class="person-ref">Fagnano's</span> minimum-perimeter theorem.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="e-c-altitudes-c-the-euler-line/index.html" aria-label="Triangle ABC with altitudes AD, BE, CF meeting at orthocenter H, reflection H' on circumcircle, and Euler line OGH">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-orthocenter_euler.orthocenter_euler" data-folio="hero-orthocenter_euler" data-graphic="orthocenter_euler">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="210" cy="140" r="106" class="geom-circle" />
+            <path class="geom-line" d="M 227.69 136.68 L 196.95 142.44 L 166.22 148.21" />
+          </g>
+          <g>
+            <polygon points="183.91,37.26 118.68,193.82 301.32,193.82" class="geom-polygon" />
+            <path class="geom-dashed" d="M 183.91 37.26 L 183.91 140 L 183.91 242.74" />
+            <path class="geom-dashed" d="M 118.68 193.82 L 177.12 149.99 L 235.57 106.15" />
+            <path class="geom-dashed" d="M 301.32 193.82 L 223.51 161.39 L 145.7 128.97" />
+          </g>
+          <g>
+            <circle cx="183.91" cy="37.26" r="2.6" class="geom-point" />
+            <circle cx="118.68" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="301.32" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="183.91" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="235.57" cy="106.15" r="2.6" class="geom-point" />
+            <circle cx="145.7" cy="128.97" r="2.6" class="geom-point" />
+            <circle cx="183.91" cy="144.89" r="2.6" class="geom-point" />
+            <circle cx="201.3" cy="141.63" r="2.6" class="geom-point" />
+            <circle cx="210" cy="140" r="2.6" class="geom-point" />
+            <circle cx="183.91" cy="242.74" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="176.5" y="28.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="102.6" y="205.9" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="309.4" y="205.9" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="173.9" y="207.8" text-anchor="middle" dominant-baseline="central" class="geom-label">D</text>
+            <text x="245.6" y="102.2" text-anchor="middle" dominant-baseline="central" class="geom-label">E</text>
+            <text x="131.7" y="125" text-anchor="middle" dominant-baseline="central" class="geom-label">F</text>
+            <text x="169.9" y="138.9" text-anchor="middle" dominant-baseline="central" class="geom-label">H</text>
+            <text x="207.3" y="155.6" text-anchor="middle" dominant-baseline="central" class="geom-label">G</text>
+            <text x="220" y="132" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="189.9" y="257.7" text-anchor="middle" dominant-baseline="central" class="geom-label">H&#x27;</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="e-c-altitudes-c-the-euler-line/index.html">E.c. Altitudes — c. The Euler Line</a></h2>
-                      <p>E.c. Altitudes — c. The Euler Line in Chapter III covers Articles <strong>§§ 201–205</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0120</span></code>–<code class="docutils literal notranslate"><span class="pre">0121</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">101</span></code>–<code class="docutils literal notranslate"><span class="pre">102</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/03_properties_of_the_triangle/</span></code>.</p>
+                    <h2><a href="e-c-altitudes-c-the-euler-line/index.html">Section E.c — Altitudes: The Euler Line</a></h2>
+                      <p>Establishes <span class="person-ref">Leonhard Euler's</span> 1765 discovery (<strong>§§ 201–205</strong>, <span class="citation-ref">Euler 1765</span>) that the <span class="term-ref glossary-term">circumcenter</span> <span class="math notranslate nohighlight">\(O\)</span>, <span class="term-ref glossary-term">centroid</span> <span class="math notranslate nohighlight">\(G\)</span>, and <span class="term-ref glossary-term">orthocenter</span> <span class="math notranslate nohighlight">\(H\)</span> of any non-equilateral triangle are collinear on the <span class="term-ref glossary-term">Euler line</span>.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="f-the-nine-point-circle/index.html" aria-label="Exact symbolic diagram of triangle ABC with circumcircle, Euler line OGNH, nine-point circle, incircle, and Feuerbach tangency point Fe">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-euler_feuerbach.euler_feuerbach" data-folio="hero-euler_feuerbach" data-graphic="euler_feuerbach">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="210" cy="140" r="106" class="geom-arc-dashed" />
+            <circle cx="196.95" cy="142.45" r="53" class="geom-bold" />
+            <circle cx="196.95" cy="141.63" r="52.19" class="geom-circle" />
+            <path class="geom-line" d="M 227.69 136.68 L 196.95 142.44 L 166.22 148.21" />
+          </g>
+          <g>
+            <polygon points="183.91,37.26 118.68,193.82 301.32,193.82" class="geom-polygon" />
+            <path class="geom-dashed" d="M 183.91 37.26 L 183.91 115.54 L 183.91 193.82" />
+          </g>
+          <g>
+            <circle cx="183.91" cy="37.26" r="2.6" class="geom-point" />
+            <circle cx="118.68" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="301.32" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="210" cy="140" r="2.6" class="geom-point" />
+            <circle cx="201.3" cy="141.63" r="2.6" class="geom-point" />
+            <circle cx="196.95" cy="142.45" r="2.6" class="geom-point" />
+            <circle cx="183.91" cy="144.89" r="2.6" class="geom-point" />
+            <circle cx="196.95" cy="141.63" r="2.6" class="geom-point" />
+            <circle cx="183.91" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="210" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="196.95" cy="89.45" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="176.5" y="28.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="102.6" y="205.9" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="309.4" y="205.9" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="223" y="133" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="210.3" y="155.6" text-anchor="middle" dominant-baseline="central" class="geom-label">G</text>
+            <text x="191.9" y="156.4" text-anchor="middle" dominant-baseline="central" class="geom-label">N</text>
+            <text x="169.9" y="150.9" text-anchor="middle" dominant-baseline="central" class="geom-label">H</text>
+            <text x="184.9" y="133.6" text-anchor="middle" dominant-baseline="central" class="geom-label">I</text>
+            <text x="177.9" y="208.8" text-anchor="middle" dominant-baseline="central" class="geom-label">D</text>
+            <text x="216" y="208.8" text-anchor="middle" dominant-baseline="central" class="geom-label">A&#x27;</text>
+            <text x="209.9" y="81.5" text-anchor="middle" dominant-baseline="central" class="geom-label">Fe</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="f-the-nine-point-circle/index.html">The Nine-Point Circle (incl. Feuerbach’s Theorem § 215)
-
-        /home/runner/work/altshiller-court/altshiller-court/docsrc/college_geometry/ch03-properties-of-the-triangle/f-the-nine-point-circle/index.rst:4: (INFO/1) Enumerated list start value not ordinal-1: “F” (ordinal 6)</a></h2>
-                      <p>The Nine-Point Circle (incl. Feuerbach’s Theorem § 215) in Chapter III covers Articles <strong>§§ 206–219</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0122</span></code>–<code class="docutils literal notranslate"><span class="pre">0127</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">103</span></code>–<code class="docutils literal notranslate"><span class="pre">108</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/03_properties_of_the_triangle/</span></code>.</p>
+                    <h2><a href="f-the-nine-point-circle/index.html">Section F — The Nine-Point Circle (incl. Feuerbach’s Theorem § 215)</a></h2>
+                      <p>Presents two jewels of nineteenth-century synthetic geometry (<strong>§§ 206–219</strong>): the <span class="term-ref glossary-term">nine-point circle</span> (<span class="person-ref">Euler</span>, <span class="person-ref">Brianchon</span>, <span class="person-ref">Poncelet</span>) and <span class="term-ref glossary-term">Feuerbach's theorem</span> (<strong>§ 215</strong>, <span class="citation-ref">Feuerbach 1822</span>).</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="g-the-orthocentric-quadrilateral/index.html" aria-label="Triangle ABC with altitudes AD, BE, CF meeting at orthocenter H, reflection H' on circumcircle, and Euler line OGH">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-orthocenter_euler.orthocenter_euler" data-folio="hero-orthocenter_euler" data-graphic="orthocenter_euler">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="210" cy="140" r="106" class="geom-circle" />
+            <path class="geom-line" d="M 227.69 136.68 L 196.95 142.44 L 166.22 148.21" />
+          </g>
+          <g>
+            <polygon points="183.91,37.26 118.68,193.82 301.32,193.82" class="geom-polygon" />
+            <path class="geom-dashed" d="M 183.91 37.26 L 183.91 140 L 183.91 242.74" />
+            <path class="geom-dashed" d="M 118.68 193.82 L 177.12 149.99 L 235.57 106.15" />
+            <path class="geom-dashed" d="M 301.32 193.82 L 223.51 161.39 L 145.7 128.97" />
+          </g>
+          <g>
+            <circle cx="183.91" cy="37.26" r="2.6" class="geom-point" />
+            <circle cx="118.68" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="301.32" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="183.91" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="235.57" cy="106.15" r="2.6" class="geom-point" />
+            <circle cx="145.7" cy="128.97" r="2.6" class="geom-point" />
+            <circle cx="183.91" cy="144.89" r="2.6" class="geom-point" />
+            <circle cx="201.3" cy="141.63" r="2.6" class="geom-point" />
+            <circle cx="210" cy="140" r="2.6" class="geom-point" />
+            <circle cx="183.91" cy="242.74" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="176.5" y="28.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="102.6" y="205.9" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="309.4" y="205.9" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="173.9" y="207.8" text-anchor="middle" dominant-baseline="central" class="geom-label">D</text>
+            <text x="245.6" y="102.2" text-anchor="middle" dominant-baseline="central" class="geom-label">E</text>
+            <text x="131.7" y="125" text-anchor="middle" dominant-baseline="central" class="geom-label">F</text>
+            <text x="169.9" y="138.9" text-anchor="middle" dominant-baseline="central" class="geom-label">H</text>
+            <text x="207.3" y="155.6" text-anchor="middle" dominant-baseline="central" class="geom-label">G</text>
+            <text x="220" y="132" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="189.9" y="257.7" text-anchor="middle" dominant-baseline="central" class="geom-label">H&#x27;</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="g-the-orthocentric-quadrilateral/index.html">The Orthocentric Quadrilateral
-
-        /home/runner/work/altshiller-court/altshiller-court/docsrc/college_geometry/ch03-properties-of-the-triangle/g-the-orthocentric-quadrilateral/index.rst:4: (INFO/1) Enumerated list start value not ordinal-1: “G” (ordinal 7)</a></h2>
-                      <p>The Orthocentric Quadrilateral in Chapter III covers Articles <strong>§§ 220–239</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0128</span></code>–<code class="docutils literal notranslate"><span class="pre">0134</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">109</span></code>–<code class="docutils literal notranslate"><span class="pre">115</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/03_properties_of_the_triangle/</span></code>.</p>
+                    <h2><a href="g-the-orthocentric-quadrilateral/index.html">Section G — The Orthocentric Quadrilateral</a></h2>
+                      <p>Reveals the symmetric structure of the <span class="term-ref glossary-term">orthocentric quadrilateral</span> (or <em>orthocentric group</em>) <span class="math notranslate nohighlight">\(\{A, B, C, H\}\)</span> (<strong>§§ 220–239</strong>), in which each point is the orthocenter of the triangle formed by the other three.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="review-miscellaneous-exercises/index.html" aria-label="Triangle ABC with circumcircle, angle bisectors concurring at incenter I, incircle, and contact radii IX, IY, IZ">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-tritangent_incircle.tritangent_incircle" data-folio="hero-tritangent_incircle" data-graphic="tritangent_incircle">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="210" cy="140" r="106" class="geom-arc-dashed" />
+            <circle cx="196.95" cy="141.63" r="52.19" class="geom-bold" />
+          </g>
+          <g>
+            <polygon points="183.91,37.26 118.68,193.82 301.32,193.82" class="geom-polygon" />
+            <path class="geom-dashed" d="M 183.91 37.26 L 190.43 89.44 L 196.95 141.63" />
+            <path class="geom-dashed" d="M 118.68 193.82 L 157.81 167.72 L 196.95 141.63" />
+            <path class="geom-dashed" d="M 301.32 193.82 L 249.13 167.72 L 196.95 141.63" />
+            <path class="geom-line" d="M 196.95 141.63 L 196.95 167.72 L 196.95 193.82" />
+            <path class="geom-line" d="M 196.95 141.63 L 217.82 125.97 L 238.7 110.32" />
+            <path class="geom-line" d="M 196.95 141.63 L 172.87 131.59 L 148.78 121.56" />
+          </g>
+          <g>
+            <circle cx="183.91" cy="37.26" r="2.6" class="geom-point" />
+            <circle cx="118.68" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="301.32" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="196.95" cy="141.63" r="2.6" class="geom-point" />
+            <circle cx="210" cy="140" r="2.6" class="geom-point" />
+            <circle cx="196.95" cy="193.82" r="2.6" class="geom-point" />
+            <circle cx="238.7" cy="110.32" r="2.6" class="geom-point" />
+            <circle cx="148.78" cy="121.56" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="176.5" y="28.7" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="102.6" y="205.9" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="309.4" y="205.9" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="184.9" y="135.6" text-anchor="middle" dominant-baseline="central" class="geom-label">I</text>
+            <text x="220" y="134" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="196.9" y="208.8" text-anchor="middle" dominant-baseline="central" class="geom-label">X</text>
+            <text x="248.7" y="106.3" text-anchor="middle" dominant-baseline="central" class="geom-label">Y</text>
+            <text x="134.8" y="117.6" text-anchor="middle" dominant-baseline="central" class="geom-label">Z</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
                     <h2><a href="review-miscellaneous-exercises/index.html">Review & Miscellaneous Exercises</a></h2>
-                      <p>Review &amp; Miscellaneous Exercises in Chapter III covers Archival Matter across archival folios <code class="docutils literal notranslate"><span class="pre">0134</span></code>–<code class="docutils literal notranslate"><span class="pre">0142</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">115</span></code>–<code class="docutils literal notranslate"><span class="pre">123</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/03_properties_of_the_triangle/</span></code>.</p>
+                      <p>Concludes Chapter III across Folios <code class="docutils literal notranslate"><span class="pre">0134</span></code>–<code class="docutils literal notranslate"><span class="pre">0142</span></code> (pp. <code class="docutils literal notranslate"><span class="pre">115</span></code>–<code class="docutils literal notranslate"><span class="pre">123</span></code>) with a comprehensive corpus of synthesis constructions, deductive propositions, and locus problems uniting circumcircle, centroid, tritangent, orthocentric, Euler-line, and nine-point geometry.</p>
                   </section>
                 </div>
               </article>
@@ -207,13 +1009,13 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../ch02-similitude-and-homothecy/b-homothecy/index.html" title="B. Homothecy">&larr; <span class="nav-label">B. Homothecy</span></a>
+            <a class="book-nav-btn" href="../ch02-similitude-and-homothecy/b-homothecy/index.html" title="Section B — Homothecy">&larr; <span class="nav-label">Section B — Homothecy</span></a>
           </div>
           <div class="book-nav-center">
             <a class="book-toc-link" href="../index.html">College Geometry</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="a-preliminaries/index.html" title="A. Preliminaries (Harmonic Division of a Segment &amp; Apollonian Circle)"><span class="nav-label">A. Preliminaries (Harmonic Division of a Segment & Apollonian Circle)</span> &rarr;</a>
+            <a class="book-nav-btn" href="a-preliminaries/index.html" title="Section A — Preliminaries (Harmonic Division of a Segment &amp; Apollonian Circle)"><span class="nav-label">Section A — Preliminaries (Harmonic Division of a Segment & Apollonian Circle)</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -260,11 +1062,12 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=938c9ccc"></script>
+  <script src="../../_static/documentation_options.js?v=e259d695"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

@@ -24,6 +24,7 @@ Attributes
 
    geometor.altshiller_court.compile_edition.CHAPTER_OVERVIEWS
    geometor.altshiller_court.compile_edition.CHAPTER_COMMENTARY
+   geometor.altshiller_court.compile_edition.NON_LETTERED_SECTION_CODES
 
 
 Functions
@@ -53,7 +54,9 @@ Module Contents
 .. py:data:: CHAPTER_COMMENTARY
    :type:  dict[str, str]
 
-.. py:function:: build_chapter_unit(chapter: dict[str, Any], chapter_folios: list[dict[str, Any]], volume_dir: pathlib.Path, book_doc_dir: pathlib.Path, folio_to_anchor: dict[str, str]) -> dict[str, Any]
+.. py:data:: NON_LETTERED_SECTION_CODES
+
+.. py:function:: build_chapter_unit(chapter: dict[str, Any], chapter_folios: list[dict[str, Any]], volume_dir: pathlib.Path, book_doc_dir: pathlib.Path, folio_to_anchor: dict[str, str], hero_registry: geometor.altshiller_court.hero_figures.HeroFigureRegistry) -> dict[str, Any]
 
    Build ``<slug>/index.rst``, ``<slug>/commentary.rst``, and nested section/item collections.
 

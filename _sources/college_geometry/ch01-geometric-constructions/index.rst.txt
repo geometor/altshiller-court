@@ -15,6 +15,10 @@ Chapter I: Geometric Constructions
 
 .. rubric:: Preliminaries, Analytic Method (Analysis, Construction, Proof, Discussion), Geometric Loci, and Indirect Elements
 
+.. picture:: hero.svg
+   :alt: Exact symbolic diagram of segment AB divided harmonically by C and D with Apollonian circle on diameter CD and orthogonal bisectors MC, MD
+   :caption: Harmonic Division (A, B; C, D) = −1 and Apollonian Circle Locus MA : MB = 2 : 1
+
 Foundational treatise on synthetic ruler-and-compass problem solving (**§§ 1–22**, Folios ``0020``–``0052``, pp. ``1``–``33``): notation and basic constructions, Pappus's four-part analytic method, twelve fundamental geometric loci, auxiliary-triangle indirect elements, 22 interactive ``.euclid-graphic`` figures, and 167 graded and review exercises.
 
 .. collection::

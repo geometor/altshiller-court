@@ -1,65 +1,38 @@
 :layout: book
 :type: section
 :order: 7
-:title: D.d. Tritangent Circles — d. Points of Contact
+:title: Section D.d — Tritangent Circles: Points of Contact
 :folio: 0106
 :page: 87
+:folios: 0106–0113
+:pages: 87–94
+:excerpt: Analyzes the twelve contact points where the incircle  and three excircles touch the sidelines BC, CA, AB (§§ 156–174), expressing every tangent segment cleanly in terms of s, s - a, s - b, s - c.
 
 .. _ch03-properties-of-the-triangle-d-d-tritangent-circles-d-points-of-contact:
 
-D.d. Tritangent Circles — d. Points of Contact
-==============================================
+Section D.d — Tritangent Circles: Points of Contact
+===================================================
 
-D.d. Tritangent Circles — d. Points of Contact in Chapter III covers Articles **§§ 156–174** across archival folios ``0106``–``0113`` (printed pages ``87``–``94``), standardized at 300 DPI in ``resources/college_geometry/03_properties_of_the_triangle/``.
+.. rubric:: Chapter III: Properties of the Triangle • Articles §§ 156–174 (Folios 0106–0113, pp. 87–94)
 
-.. collection::
-   :type: item
-   :sort: order
+.. picture:: hero.svg
+   :alt: Triangle ABC with circumcircle, angle bisectors concurring at incenter I, incircle, and contact radii IX, IY, IZ
+   :caption: Incircle (I, r), Angle Bisectors, Contact Points X, Y, Z, and Chapple–Euler Relation
 
-Folio Scan Allocation
----------------------
+Analyzes the twelve contact points where the :term:`incircle <incircle>` and three excircles touch the sidelines :math:`BC, CA, AB` (**§§ 156–174**), expressing every tangent segment cleanly in terms of :math:`s, s - a, s - b, s - c`.
 
-.. list-table::
-   :header-rows: 1
-   :widths: 16 16 38 30
+Principal Theorems, Constructions & Identities
+----------------------------------------------
 
-   * - Folio
-     - Page
-     - Articles
-     - Scan Status
-   * - ``0106``
-     - ``87``
-     - §§ 156–158
-     - 300 DPI gray
-   * - ``0107``
-     - ``88``
-     - §§ 159–160
-     - 300 DPI gray
-   * - ``0108``
-     - ``89``
-     - §§ 161–163
-     - 300 DPI gray
-   * - ``0109``
-     - ``90``
-     - §§ 164–168
-     - 300 DPI gray
-   * - ``0110``
-     - ``91``
-     - §§ 169–172
-     - 300 DPI gray
-   * - ``0111``
-     - ``92``
-     - §§ 173–174
-     - 300 DPI gray
-   * - ``0112``
-     - ``93``
-     - —
-     - 300 DPI gray
-   * - ``0113``
-     - ``94``
-     - §§ 175–177
-     - 300 DPI gray
+* **§§ 156–163 — Semiperimeter Tangent Segments**: Incircle contacts cut off segments :math:`s - a, s - b, s - c` from vertices :math:`A, B, C`, whereas the :math:`A`-excircle touches :math:`AB, AC` produced at distance :math:`s` from :math:`A` and touches :math:`BC` at the :term:`isotomic <isotomic-conjugates>` reflection of the incircle contact!
+* **§§ 164–170 — Antipodal Incircle–Excircle Property**: If :math:`X` is the contact of :math:`(I)` with :math:`BC` and :math:`X'` its diametrically opposite point on :math:`(I)`, then :math:`A, X', X_a` are collinear—anticipating the :term:`Nagel point <nagel-point>` :math:`X(8)`.
+* **§§ 171–174 — Contact Constructions & Heron's Formula**: Applies tangent-segment differences :math:`b - c` and semiperimeter :math:`s` to auxiliary-triangle constructions and :person:`Heron's <heron>` area formula :math:`S = \sqrt{s(s-a)(s-b)(s-c)}`.
+
+Constructive & Symbolic Connections
+-----------------------------------
+
+Contact Ceva configurations directly generate Kimberling's :term:`Gergonne point <gergonne-point>` :math:`X(7)` and :term:`Nagel point <nagel-point>` :math:`X(8)` in ``geometor/etc``.
 
 ----
 
-See :ref:`Commentary on Chapter III <ch03-properties-of-the-triangle-commentary>`.
+See :ref:`Commentary on Chapter III: Properties of the Triangle <ch03-properties-of-the-triangle-commentary>` and :ref:`334-Folio Archival Scan Inventory <scan-inventory>`.

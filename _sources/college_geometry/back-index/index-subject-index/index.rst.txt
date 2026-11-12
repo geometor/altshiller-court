@@ -4,46 +4,33 @@
 :title: Subject Index
 :folio: 0329
 :page: 310
+:folios: 0329–0332
+:pages: 310–313
+:excerpt: Altshiller-Court's four-page analytical Subject Index across Folios 0329–0332 (pp. 310–313), indexing definitions, loci, triangle centers, notable circles, named theorems, and transformations by article number (§§ 1–699).
 
 .. _back-index-index-subject-index:
 
 Subject Index
 =============
 
-Subject Index in Index covers Archival Matter across archival folios ``0329``–``0332`` (printed pages ``310``–``313``), standardized at 300 DPI in ``resources/college_geometry/12_index/``.
+.. rubric:: Index • Archival Apparatus (Folios 0329–0332, pp. 310–313)
 
-.. collection::
-   :type: item
-   :sort: order
+.. picture:: hero.svg
+   :alt: Triangle ABC with circumcircle, angle bisectors concurring at incenter I, incircle, and contact radii IX, IY, IZ
+   :caption: Incircle (I, r), Angle Bisectors, Contact Points X, Y, Z, and Chapple–Euler Relation
 
-Folio Scan Allocation
----------------------
+Altshiller-Court's four-page analytical *Subject Index* across Folios ``0329``–``0332`` (pp. ``310``–``313``), indexing definitions, loci, triangle centers, notable circles, named theorems, and transformations by article number (**§§ 1–699**).
 
-.. list-table::
-   :header-rows: 1
-   :widths: 16 16 38 30
+Principal Theorems, Constructions & Identities
+----------------------------------------------
 
-   * - Folio
-     - Page
-     - Articles
-     - Scan Status
-   * - ``0329``
-     - ``310``
-     - —
-     - 300 DPI gray
-   * - ``0330``
-     - ``311``
-     - —
-     - 300 DPI gray
-   * - ``0331``
-     - ``312``
-     - —
-     - 300 DPI gray
-   * - ``0332``
-     - ``313``
-     - —
-     - 300 DPI gray
+* **Digital Apparatus Concordance**: Paired interactively with the :ref:`Technical Glossary <glossary>` (``:term:``), :ref:`Index of Persons <persons>` (``:person:``), :ref:`Systematic Bibliography <bibliography>` (``:cite:``), and :ref:`334-Folio Archival Scan Inventory <scan-inventory>`.
+
+Constructive & Symbolic Connections
+-----------------------------------
+
+Every core headword is mapped to its Kimberling ``X(n)`` center identifier and symbolic locus definition in :ref:`Technical Glossary <glossary>`.
 
 ----
 
-See :ref:`Commentary on Index <back-index-commentary>`.
+See :ref:`Commentary on Index <back-index-commentary>` and :ref:`334-Folio Archival Scan Inventory <scan-inventory>`.

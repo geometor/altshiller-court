@@ -1,0 +1,128 @@
+geometor.altshiller_court.hero_figures
+======================================
+
+.. py:module:: geometor.altshiller_court.hero_figures
+
+.. autoapi-nested-parse::
+
+   Exact symbolic ``.euclid-graphic`` hero diagram generator for *College Geometry*.
+
+   Constructs canonical synthetic configurations for Chapters I–X, Frontmatter,
+   Historical Notes, and Section containers using **100% exact SymPy symbolic algebra**
+   via :class:`geometor.model.Model` (``auto_intersect=False``, zero ``sp.Float``
+   coordinates), verifies their defining theorems deductively (``assert_collinear``,
+   ``assert_perpendicular``, ``assert_parallel``, ``assert_concyclic``, ``assert_equal``,
+   and ``cross_ratio``), and projects them onto theme-adaptive ``.euclid-graphic`` SVGs.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.altshiller_court.hero_figures.SYMBOLIC_HERO_BUILDERS
+   geometor.altshiller_court.hero_figures.CHAPTER_HERO_KEYS
+   geometor.altshiller_court.hero_figures.CALIBRATED_SECTION_HEROES
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.altshiller_court.hero_figures.SymbolicHeroSpec
+   geometor.altshiller_court.hero_figures.HeroFigureRegistry
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.altshiller_court.hero_figures.render_symbolic_hero_svg
+   geometor.altshiller_court.hero_figures.resolve_section_hero_key
+
+
+Module Contents
+---------------
+
+.. py:class:: SymbolicHeroSpec
+
+   Declarative visual specification backed by an exact :class:`geometor.model.Model`.
+
+
+   .. py:attribute:: key
+      :type:  str
+
+
+   .. py:attribute:: caption
+      :type:  str
+
+
+   .. py:attribute:: alt
+      :type:  str
+
+
+   .. py:attribute:: model
+      :type:  geometor.model.Model
+
+
+   .. py:attribute:: points
+      :type:  list[tuple[str, sympy.geometry.Point, str]]
+      :value: []
+
+
+
+   .. py:attribute:: elements
+      :type:  list[dict[str, Any]]
+      :value: []
+
+
+
+   .. py:attribute:: label_nudges
+      :type:  dict[str, tuple[float, float]]
+
+
+.. py:data:: SYMBOLIC_HERO_BUILDERS
+   :type:  dict[str, collections.abc.Callable[[], SymbolicHeroSpec]]
+
+.. py:function:: render_symbolic_hero_svg(spec: SymbolicHeroSpec, out_svg_path: pathlib.Path, folio_id: str = 'hero', vw: float = 420.0, vh: float = 280.0, pad: float = 34.0) -> dict[str, Any]
+
+   Project an exact :class:`SymbolicHeroSpec` onto an SVG viewport via ``compile_graphic_svg``.
+
+
+.. py:data:: CHAPTER_HERO_KEYS
+   :type:  dict[str, str]
+
+.. py:data:: CALIBRATED_SECTION_HEROES
+   :type:  dict[tuple[str, str], tuple[str, str, str, str]]
+
+.. py:function:: resolve_section_hero_key(chapter_slug: str, sec_code: str) -> str
+
+   Select the exact symbolic hero key matching ``(chapter_slug, sec_code)``.
+
+
+.. py:class:: HeroFigureRegistry(volume_dir: pathlib.Path)
+
+   Lazy-cached builder and emitter of symbolic and calibrated hero ``.euclid-graphic`` SVGs.
+
+
+   .. py:attribute:: volume_dir
+
+
+   .. py:method:: get_spec(key: str) -> SymbolicHeroSpec
+
+
+   .. py:method:: write_symbolic_hero(key: str, dest_dir: pathlib.Path, filename: str = 'hero.svg') -> tuple[str, str, str]
+
+      Write ``<dest_dir>/<filename>`` and return ``(filename, caption, alt)``.
+
+
+
+   .. py:method:: write_section_hero(chapter_slug: str, sec_slug: str, sec_code: str, dest_dir: pathlib.Path, filename: str = 'hero.svg') -> tuple[str, str, str]
+
+      Emit calibrated folio SVG if configured for ``(chapter_slug, sec_slug)``, else exact symbolic hero.
+
+
+

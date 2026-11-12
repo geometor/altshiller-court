@@ -1,41 +1,38 @@
 :layout: book
 :type: section
 :order: 4
-:title: D.a. Tritangent Circles — a. Bisectors
+:title: Section D.a — Tritangent Circles: Bisectors
 :folio: 0091
 :page: 72
+:folios: 0091–0092
+:pages: 72–73
+:excerpt: Opens the theory of the four tritangent circles  (§§ 111–116) by establishing the harmonic, metric, and circumcircle-midpoint properties of the internal and external angle bisectors of triangle ABC.
 
 .. _ch03-properties-of-the-triangle-d-a-tritangent-circles-a-bisectors:
 
-D.a. Tritangent Circles — a. Bisectors
-======================================
+Section D.a — Tritangent Circles: Bisectors
+===========================================
 
-D.a. Tritangent Circles — a. Bisectors in Chapter III covers Articles **§§ 111–116** across archival folios ``0091``–``0092`` (printed pages ``72``–``73``), standardized at 300 DPI in ``resources/college_geometry/03_properties_of_the_triangle/``.
+.. rubric:: Chapter III: Properties of the Triangle • Articles §§ 111–116 (Folios 0091–0092, pp. 72–73)
 
-.. collection::
-   :type: item
-   :sort: order
+.. picture:: hero.svg
+   :alt: Triangle ABC with circumcircle, angle bisectors concurring at incenter I, incircle, and contact radii IX, IY, IZ
+   :caption: Incircle (I, r), Angle Bisectors, Contact Points X, Y, Z, and Chapple–Euler Relation
 
-Folio Scan Allocation
----------------------
+Opens the theory of the four :term:`tritangent circles <tritangent-circles>` (**§§ 111–116**) by establishing the harmonic, metric, and circumcircle-midpoint properties of the internal and external angle bisectors of :math:`\triangle ABC`.
 
-.. list-table::
-   :header-rows: 1
-   :widths: 16 16 38 30
+Principal Theorems, Constructions & Identities
+----------------------------------------------
 
-   * - Folio
-     - Page
-     - Articles
-     - Scan Status
-   * - ``0091``
-     - ``72``
-     - §§ 111–114
-     - 300 DPI gray
-   * - ``0092``
-     - ``73``
-     - §§ 115–118
-     - 300 DPI gray
+* **§§ 111–113 — Harmonic Bisector Traces**: The internal and external bisectors of :math:`\angle A` are perpendicular and divide the opposite side :math:`BC` :term:`harmonically <harmonic-division>` in the ratio :math:`c : b` (:cite:`Euclid VI.3 <euclid:elements>`).
+* **§§ 114–115 — Circumcircle Arc Midpoints**: The internal and external bisectors of :math:`\angle A` pass through the diametrically opposite midpoints of the arcs :math:`BC` on the :term:`circumcircle <circumcircle>`.
+* **§ 116 — Bisector Length Formula**: Expresses the internal bisector length via :math:`t_a^2 = bc - DB \cdot DC = bc\bigl(1 - \frac{a^2}{(b+c)^2}\bigr)`.
+
+Constructive & Symbolic Connections
+-----------------------------------
+
+Connects angle-bisector harmonic ranges directly to the :term:`Apollonian circles <apollonian-circle>` of the triangle studied in Chapter X (§§ 597–624).
 
 ----
 
-See :ref:`Commentary on Chapter III <ch03-properties-of-the-triangle-commentary>`.
+See :ref:`Commentary on Chapter III: Properties of the Triangle <ch03-properties-of-the-triangle-commentary>` and :ref:`334-Folio Archival Scan Inventory <scan-inventory>`.

@@ -1,0 +1,62 @@
+:layout: book
+:type: item
+:order: 14
+:canonical_id: Ch.III.67
+:title: § 67. Problem
+:folio: 0075
+:page: 56
+:folios: 0075
+:pages: 56
+
+.. _ch03-art-067:
+
+§ 67. Problem
+=============
+
+.. folio:: 0075
+   :page: 56
+
+.. enunciation::
+
+   *Construct two segments given their product,* :math:`t^2`\ *, and their sum, or their difference,* :math:`a`\ *.*
+
+SOLUTION. Construct two segments :math:`u, v` having the segment :math:`t` for :term:`mean proportional <fourth-proportional>`. On the perpendicular erected at one end, say :g:`B <0075.g1:B>`, of the segment :math:`AB = a` lay off the segment :math:`BC = u`, :math:`BD = v`, on the same side of :g:`AB <0075.g1:/ A B />` (Fig. 40*a*), or on opposite sides of :g:`AB <0075.g2:/ A B />` (Fig. 40*b*), depending on whether :math:`a` is the sum or the difference of the required segments. With the point of intersection :g:`O <0075.g1:O>` of the :term:`mediators <mediator>` of the segments :g:`AB <0075.g1:/ A B />`, :g:`CD <0075.g1:/ C D />`, as center and radius :eq:`OC = OD <0075.g1:/ O C / = 0075.g1:/ O D />` draw a :g:`circle <0075.g1:( O C )>` meeting :g:`AB <0075.g1:[ A B ]>` in the points :g:`M <0075.g1:M>`, :g:`M' <0075.g1:Mprime>`; then :g:`MA <0075.g1:/ M A />`, :g:`MB <0075.g1:/ M B />` (or :g:`M'A <0075.g2:/ M' A />`, :g:`M'B <0075.g2:/ M' B />`) are the required segments.
+
+.. picture:: 0075.g1.svg
+   :alt: Fig. 40a — Construction of two segments MA, MB given their product t² and their sum AB = a
+   :caption: FIG. 40a
+
+.. picture:: 0075.g2.svg
+   :alt: Fig. 40b — Construction of two segments M'A, M'B given their product t² and their difference AB = a
+   :caption: FIG. 40b
+
+.. assertion::
+
+   Indeed, we have:
+
+   .. math::
+
+      MA \cdot MB = BM' \cdot BM = BC \cdot BD = uv = t^2.
+
+The construction above is a graphical solution of the quadratic equations:
+
+.. math::
+
+   x^2 - ax + t^2 = 0, \quad x^2 - ax - t^2 = 0.
+
+The roots of the quadratic equations
+
+.. math::
+
+   x^2 + ax + t^2 = 0, \quad x^2 + ax - t^2 = 0
+
+differ from the roots of the first equations in their signs only; hence these roots may be found by this construction. Thus the construction gives a graphical solution of any quadratic equation whose first coefficient is unity.
+
+----
+
+See :ref:`Commentary on § 67. Problem <ch03-art-067-commentary>`.
+
+.. toctree::
+   :hidden:
+
+   commentary

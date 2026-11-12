@@ -74,7 +74,7 @@
             </nav>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="a-the-general-quadrilateral/index.html" title="A. The General Quadrilateral"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="a-the-general-quadrilateral/index.html" title="Section A — The General Quadrilateral"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </header>
@@ -82,33 +82,239 @@
         <section class="level-1" id="chapter-iv-the-quadrilateral">
         <span id="ch04-the-quadrilateral-en"></span><span id="ch04-the-quadrilateral"></span><h1>Chapter IV: The Quadrilateral<a class="headerlink" href="#chapter-iv-the-quadrilateral" title="Link to this heading">¶</a></h1>
         <p class="rubric">Varignon Parallelogram, Bimedians, Ptolemy’s Theorem, Anticenter, Brahmagupta, Circumscriptible &amp; Bicentric Quadrilaterals</p>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic" data-graphic-id="hero-cyclic_quadrilateral.cyclic_quadrilateral" data-folio="hero-cyclic_quadrilateral" data-graphic="cyclic_quadrilateral">
+          <defs>
+            <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-2" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g id="elements">
+            <circle id="el-circle-circ" data-ref="( O A )" data-type="circle" cx="210" cy="140" r="106" class="geom-circle" />
+          </g>
+          <g id="graphics">
+            <polygon id="el-poly-quad" data-ref="&lt; A B C D &gt;" data-type="polygon" points="146.4,55.2 104,140 273.6,224.8 294.8,76.4" class="geom-polygon" />
+            <polygon id="el-poly-varignon" data-ref="&lt; E F G H &gt;" data-type="polygon" points="125.2,97.6 188.8,182.4 284.2,150.6 220.6,65.8" class="geom-polygon" />
+            <path id="el-seg-d1" data-ref="/ A C /" data-type="segment" class="geom-line" d="M 146.4 55.2 L 210 140 L 273.6 224.8" />
+            <path id="el-seg-d2" data-ref="/ B D /" data-type="segment" class="geom-line" d="M 104 140 L 199.4 108.2 L 294.8 76.4" />
+          </g>
+          <g id="highlights" style="pointer-events: none;">
+            <circle id="hl-circle-circ" data-ref="( O A )" cx="210" cy="140" r="106" class="geom-circle geom-overlay" />
+            <polygon id="hl-poly-quad" data-ref="&lt; A B C D &gt;" points="146.4,55.2 104,140 273.6,224.8 294.8,76.4" class="geom-polygon geom-overlay" />
+            <polygon id="hl-poly-varignon" data-ref="&lt; E F G H &gt;" points="125.2,97.6 188.8,182.4 284.2,150.6 220.6,65.8" class="geom-polygon geom-overlay" />
+            <path id="hl-seg-d1" data-ref="/ A C /" class="geom-line geom-overlay" d="M 146.4 55.2 L 210 140 L 273.6 224.8" />
+            <path id="hl-seg-d2" data-ref="/ B D /" class="geom-line geom-overlay" d="M 104 140 L 199.4 108.2 L 294.8 76.4" />
+          </g>
+          <g id="points">
+            <circle id="el-pt-A" data-ref="A" data-type="point" cx="146.4" cy="55.2" r="2.6" class="geom-point" />
+            <circle id="el-pt-B" data-ref="B" data-type="point" cx="104" cy="140" r="2.6" class="geom-point" />
+            <circle id="el-pt-C" data-ref="C" data-type="point" cx="273.6" cy="224.8" r="2.6" class="geom-point" />
+            <circle id="el-pt-D" data-ref="D" data-type="point" cx="294.8" cy="76.4" r="2.6" class="geom-point" />
+            <circle id="el-pt-E" data-ref="E" data-type="point" cx="125.2" cy="97.6" r="2.6" class="geom-point" />
+            <circle id="el-pt-F" data-ref="F" data-type="point" cx="188.8" cy="182.4" r="2.6" class="geom-point" />
+            <circle id="el-pt-G" data-ref="G" data-type="point" cx="284.2" cy="150.6" r="2.6" class="geom-point" />
+            <circle id="el-pt-H" data-ref="H" data-type="point" cx="220.6" cy="65.8" r="2.6" class="geom-point" />
+            <circle id="el-pt-O" data-ref="O" data-type="point" cx="210" cy="140" r="2.6" class="geom-point" />
+          </g>
+          <g id="labels">
+            <text id="lbl-A" data-ref="A" x="134" y="49" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text id="lbl-B" data-ref="B" x="86" y="145" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text id="lbl-C" data-ref="C" x="278" y="241" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text id="lbl-D" data-ref="D" x="302" y="73" text-anchor="middle" dominant-baseline="central" class="geom-label">D</text>
+            <text id="lbl-E" data-ref="E" x="111.2" y="93.6" text-anchor="middle" dominant-baseline="central" class="geom-label">E</text>
+            <text id="lbl-F" data-ref="F" x="178.8" y="196.4" text-anchor="middle" dominant-baseline="central" class="geom-label">F</text>
+            <text id="lbl-G" data-ref="G" x="294.2" y="158.6" text-anchor="middle" dominant-baseline="central" class="geom-label">G</text>
+            <text id="lbl-H" data-ref="H" x="224.6" y="55.8" text-anchor="middle" dominant-baseline="central" class="geom-label">H</text>
+            <text id="lbl-O" data-ref="O" x="218" y="134" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+          </g>
+        </svg>
+        <figcaption>Cyclic Quadrilateral ABCD, Ptolemy Diagonals AC, BD, and Varignon Parallelogram EFGH</figcaption>
+        </figure>
         <p>Synthetic theory of four-sided figures newly added in the 1952 Second Edition (<strong>§§ 240–281</strong>, Folios <code class="docutils literal notranslate"><span class="pre">0143</span></code>–<code class="docutils literal notranslate"><span class="pre">0158</span></code>, pp. <code class="docutils literal notranslate"><span class="pre">124</span></code>–<code class="docutils literal notranslate"><span class="pre">139</span></code>): Varignon’s parallelogram, Euler’s diagonal-midpoint identity, cyclic quadrilaterals, Ptolemy’s and Brahmagupta’s theorems, the anticenter, and circumscriptible and bicentric quadrilaterals.</p>
             <section class="collection ">
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="a-the-general-quadrilateral/index.html" aria-label="Cyclic quadrilateral ABCD inscribed in circle O with diagonals AC, BD and Varignon midpoint parallelogram EFGH">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-cyclic_quadrilateral.cyclic_quadrilateral" data-folio="hero-cyclic_quadrilateral" data-graphic="cyclic_quadrilateral">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="210" cy="140" r="106" class="geom-circle" />
+          </g>
+          <g>
+            <polygon points="146.4,55.2 104,140 273.6,224.8 294.8,76.4" class="geom-polygon" />
+            <polygon points="125.2,97.6 188.8,182.4 284.2,150.6 220.6,65.8" class="geom-polygon" />
+            <path class="geom-line" d="M 146.4 55.2 L 210 140 L 273.6 224.8" />
+            <path class="geom-line" d="M 104 140 L 199.4 108.2 L 294.8 76.4" />
+          </g>
+          <g>
+            <circle cx="146.4" cy="55.2" r="2.6" class="geom-point" />
+            <circle cx="104" cy="140" r="2.6" class="geom-point" />
+            <circle cx="273.6" cy="224.8" r="2.6" class="geom-point" />
+            <circle cx="294.8" cy="76.4" r="2.6" class="geom-point" />
+            <circle cx="125.2" cy="97.6" r="2.6" class="geom-point" />
+            <circle cx="188.8" cy="182.4" r="2.6" class="geom-point" />
+            <circle cx="284.2" cy="150.6" r="2.6" class="geom-point" />
+            <circle cx="220.6" cy="65.8" r="2.6" class="geom-point" />
+            <circle cx="210" cy="140" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="134" y="49" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="86" y="145" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="278" y="241" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="302" y="73" text-anchor="middle" dominant-baseline="central" class="geom-label">D</text>
+            <text x="111.2" y="93.6" text-anchor="middle" dominant-baseline="central" class="geom-label">E</text>
+            <text x="178.8" y="196.4" text-anchor="middle" dominant-baseline="central" class="geom-label">F</text>
+            <text x="294.2" y="158.6" text-anchor="middle" dominant-baseline="central" class="geom-label">G</text>
+            <text x="224.6" y="55.8" text-anchor="middle" dominant-baseline="central" class="geom-label">H</text>
+            <text x="218" y="134" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="a-the-general-quadrilateral/index.html">The General Quadrilateral</a></h2>
-                      <p>The General Quadrilateral in Chapter IV covers Articles <strong>§§ 240–250</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0143</span></code>–<code class="docutils literal notranslate"><span class="pre">0146</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">124</span></code>–<code class="docutils literal notranslate"><span class="pre">127</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/04_the_quadrilateral/</span></code>.</p>
+                    <h2><a href="a-the-general-quadrilateral/index.html">Section A — The General Quadrilateral</a></h2>
+                      <p>Opens the 1952 Second Edition’s new Chapter IV (<strong>§§ 240–250</strong>) by developing affine and metric properties valid for <em>any</em> planar quadrilateral <span class="math notranslate nohighlight">\(ABCD\)</span>—convex, re-entrant, or crossed.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="b-the-cyclic-quadrilateral/index.html" aria-label="Cyclic quadrilateral ABCD inscribed in circle O with diagonals AC, BD and Varignon midpoint parallelogram EFGH">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-cyclic_quadrilateral.cyclic_quadrilateral" data-folio="hero-cyclic_quadrilateral" data-graphic="cyclic_quadrilateral">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="210" cy="140" r="106" class="geom-circle" />
+          </g>
+          <g>
+            <polygon points="146.4,55.2 104,140 273.6,224.8 294.8,76.4" class="geom-polygon" />
+            <polygon points="125.2,97.6 188.8,182.4 284.2,150.6 220.6,65.8" class="geom-polygon" />
+            <path class="geom-line" d="M 146.4 55.2 L 210 140 L 273.6 224.8" />
+            <path class="geom-line" d="M 104 140 L 199.4 108.2 L 294.8 76.4" />
+          </g>
+          <g>
+            <circle cx="146.4" cy="55.2" r="2.6" class="geom-point" />
+            <circle cx="104" cy="140" r="2.6" class="geom-point" />
+            <circle cx="273.6" cy="224.8" r="2.6" class="geom-point" />
+            <circle cx="294.8" cy="76.4" r="2.6" class="geom-point" />
+            <circle cx="125.2" cy="97.6" r="2.6" class="geom-point" />
+            <circle cx="188.8" cy="182.4" r="2.6" class="geom-point" />
+            <circle cx="284.2" cy="150.6" r="2.6" class="geom-point" />
+            <circle cx="220.6" cy="65.8" r="2.6" class="geom-point" />
+            <circle cx="210" cy="140" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="134" y="49" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="86" y="145" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="278" y="241" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="302" y="73" text-anchor="middle" dominant-baseline="central" class="geom-label">D</text>
+            <text x="111.2" y="93.6" text-anchor="middle" dominant-baseline="central" class="geom-label">E</text>
+            <text x="178.8" y="196.4" text-anchor="middle" dominant-baseline="central" class="geom-label">F</text>
+            <text x="294.2" y="158.6" text-anchor="middle" dominant-baseline="central" class="geom-label">G</text>
+            <text x="224.6" y="55.8" text-anchor="middle" dominant-baseline="central" class="geom-label">H</text>
+            <text x="218" y="134" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="b-the-cyclic-quadrilateral/index.html">The Cyclic Quadrilateral (incl. Ptolemy’s Theorem § 255 & Anticenter)
-
-        /home/runner/work/altshiller-court/altshiller-court/docsrc/college_geometry/ch04-the-quadrilateral/b-the-cyclic-quadrilateral/index.rst:4: (INFO/1) Enumerated list start value not ordinal-1: “B” (ordinal 2)</a></h2>
-                      <p>The Cyclic Quadrilateral (incl. Ptolemy’s Theorem § 255 &amp; Anticenter) in Chapter IV covers Articles <strong>§§ 251–267</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0146</span></code>–<code class="docutils literal notranslate"><span class="pre">0154</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">127</span></code>–<code class="docutils literal notranslate"><span class="pre">135</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/04_the_quadrilateral/</span></code>.</p>
+                    <h2><a href="b-the-cyclic-quadrilateral/index.html">Section B — The Cyclic Quadrilateral (incl. Ptolemy’s Theorem § 255 & Anticenter)</a></h2>
+                      <p>Studies quadrilaterals inscribed in a circle (<strong>§§ 251–267</strong>), uniting <span class="person-ref">Ptolemy's</span> diagonal theorems, <span class="person-ref">Brahmagupta's</span> area and orthodiagonal theorems, and Mathot’s <span class="term-ref glossary-term">anticenter</span>.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="c-other-quadrilaterals/index.html" aria-label="Cyclic quadrilateral ABCD inscribed in circle O with diagonals AC, BD and Varignon midpoint parallelogram EFGH">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-cyclic_quadrilateral.cyclic_quadrilateral" data-folio="hero-cyclic_quadrilateral" data-graphic="cyclic_quadrilateral">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="210" cy="140" r="106" class="geom-circle" />
+          </g>
+          <g>
+            <polygon points="146.4,55.2 104,140 273.6,224.8 294.8,76.4" class="geom-polygon" />
+            <polygon points="125.2,97.6 188.8,182.4 284.2,150.6 220.6,65.8" class="geom-polygon" />
+            <path class="geom-line" d="M 146.4 55.2 L 210 140 L 273.6 224.8" />
+            <path class="geom-line" d="M 104 140 L 199.4 108.2 L 294.8 76.4" />
+          </g>
+          <g>
+            <circle cx="146.4" cy="55.2" r="2.6" class="geom-point" />
+            <circle cx="104" cy="140" r="2.6" class="geom-point" />
+            <circle cx="273.6" cy="224.8" r="2.6" class="geom-point" />
+            <circle cx="294.8" cy="76.4" r="2.6" class="geom-point" />
+            <circle cx="125.2" cy="97.6" r="2.6" class="geom-point" />
+            <circle cx="188.8" cy="182.4" r="2.6" class="geom-point" />
+            <circle cx="284.2" cy="150.6" r="2.6" class="geom-point" />
+            <circle cx="220.6" cy="65.8" r="2.6" class="geom-point" />
+            <circle cx="210" cy="140" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="134" y="49" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="86" y="145" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="278" y="241" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="302" y="73" text-anchor="middle" dominant-baseline="central" class="geom-label">D</text>
+            <text x="111.2" y="93.6" text-anchor="middle" dominant-baseline="central" class="geom-label">E</text>
+            <text x="178.8" y="196.4" text-anchor="middle" dominant-baseline="central" class="geom-label">F</text>
+            <text x="294.2" y="158.6" text-anchor="middle" dominant-baseline="central" class="geom-label">G</text>
+            <text x="224.6" y="55.8" text-anchor="middle" dominant-baseline="central" class="geom-label">H</text>
+            <text x="218" y="134" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="c-other-quadrilaterals/index.html">Other Quadrilaterals (Circumscriptible & Bicentric)
-
-        /home/runner/work/altshiller-court/altshiller-court/docsrc/college_geometry/ch04-the-quadrilateral/c-other-quadrilaterals/index.rst:4: (INFO/1) Enumerated list start value not ordinal-1: “C” (ordinal 3)</a></h2>
-                      <p>Other Quadrilaterals (Circumscriptible &amp; Bicentric) in Chapter IV covers Articles <strong>§§ 268–281</strong> across archival folios <code class="docutils literal notranslate"><span class="pre">0154</span></code>–<code class="docutils literal notranslate"><span class="pre">0158</span></code> (printed pages <code class="docutils literal notranslate"><span class="pre">135</span></code>–<code class="docutils literal notranslate"><span class="pre">139</span></code>), standardized at 300 DPI in <code class="docutils literal notranslate"><span class="pre">resources/college_geometry/04_the_quadrilateral/</span></code>.</p>
+                    <h2><a href="c-other-quadrilaterals/index.html">Section C — Other Quadrilaterals (Circumscriptible & Bicentric)</a></h2>
+                      <p>Examines quadrilaterals circumscribed about an incircle (<em>circumscriptible</em>) and quadrilaterals simultaneously inscribed and circumscribed (<em>bicentric</em>, <strong>§§ 268–281</strong>).</p>
                   </section>
                 </div>
               </article>
@@ -129,7 +335,7 @@
             <a class="book-toc-link" href="../index.html">College Geometry</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="a-the-general-quadrilateral/index.html" title="A. The General Quadrilateral"><span class="nav-label">A. The General Quadrilateral</span> &rarr;</a>
+            <a class="book-nav-btn" href="a-the-general-quadrilateral/index.html" title="Section A — The General Quadrilateral"><span class="nav-label">Section A — The General Quadrilateral</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -176,11 +382,12 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=938c9ccc"></script>
+  <script src="../../_static/documentation_options.js?v=e259d695"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

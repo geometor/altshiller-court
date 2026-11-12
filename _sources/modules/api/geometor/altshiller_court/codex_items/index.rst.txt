@@ -21,12 +21,15 @@ Attributes
 
    geometor.altshiller_court.codex_items.HEADING_CHARS
    geometor.altshiller_court.codex_items.ARTICLE_INLINE_RE
+   geometor.altshiller_court.codex_items.ENUN_ARTICLE_RE
    geometor.altshiller_court.codex_items.PROBLEM_ENUN_RE
    geometor.altshiller_court.codex_items.LOCUS_ENUN_RE
    geometor.altshiller_court.codex_items.PICTURE_RE
    geometor.altshiller_court.codex_items.GEOM_GID_RE
    geometor.altshiller_court.codex_items.ENUM_ITEM_RE
    geometor.altshiller_court.codex_items.CH01_SECTION_META
+   geometor.altshiller_court.codex_items.CH03_SECTION_META
+   geometor.altshiller_court.codex_items.CHAPTER_SECTION_META_BY_INDEX
    geometor.altshiller_court.codex_items.FRONTMATTER_UNITS
 
 
@@ -51,6 +54,7 @@ Functions
    geometor.altshiller_court.codex_items.heading_info
    geometor.altshiller_court.codex_items.extract_depaginated_blocks
    geometor.altshiller_court.codex_items.render_blocks_with_folios
+   geometor.altshiller_court.codex_items.decompose_chapter_folios
    geometor.altshiller_court.codex_items.decompose_chapter_one
    geometor.altshiller_court.codex_items.decompose_frontmatter
    geometor.altshiller_court.codex_items.copy_referenced_graphics
@@ -62,6 +66,8 @@ Module Contents
 .. py:data:: HEADING_CHARS
 
 .. py:data:: ARTICLE_INLINE_RE
+
+.. py:data:: ENUN_ARTICLE_RE
 
 .. py:data:: PROBLEM_ENUN_RE
 
@@ -231,6 +237,17 @@ Module Contents
 
 .. py:data:: CH01_SECTION_META
    :type:  dict[str, tuple[str, str, str, str]]
+
+.. py:data:: CH03_SECTION_META
+   :type:  dict[str, tuple[str, str, str, str]]
+
+.. py:data:: CHAPTER_SECTION_META_BY_INDEX
+   :type:  dict[int, tuple[str, str, dict[str, tuple[str, str, str, str]]]]
+
+.. py:function:: decompose_chapter_folios(folio_entries: list[tuple[str, str, dict[str, str], str]], chap_prefix: str, chap_roman: str, section_meta_map: dict[str, tuple[str, str, str, str]]) -> list[CodexSection]
+
+   Decompose transcribed chapter folios into ``CodexSection`` containers and leaf ``CodexItem`` units.
+
 
 .. py:function:: decompose_chapter_one(folio_entries: list[tuple[str, str, dict[str, str], str]]) -> list[CodexSection]
 

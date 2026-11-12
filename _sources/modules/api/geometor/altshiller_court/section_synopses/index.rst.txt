@@ -1,0 +1,58 @@
+geometor.altshiller_court.section_synopses
+==========================================
+
+.. py:module:: geometor.altshiller_court.section_synopses
+
+.. autoapi-nested-parse::
+
+   Scholarly section synopses and theorem roadmaps for *College Geometry* (1952).
+
+   Provides mathematically substantive section introductions, article-keyed theorem
+   and construction roadmaps, LaTeX identities, prosopographical/bibliographic links,
+   and GEOMETOR cross-references for sections across Chapters II–X, Historical Notes,
+   and the Subject Index.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.altshiller_court.section_synopses.CH03_MEDIANS_CONTINUATION
+   geometor.altshiller_court.section_synopses.SECTION_SYNOPSES
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.altshiller_court.section_synopses.SectionSynopsis
+
+
+Module Contents
+---------------
+
+.. py:class:: SectionSynopsis
+
+   Structured scholarly synopsis and theorem roadmap for a Book Codex section.
+
+
+   .. py:attribute:: summary
+      :type:  str
+
+
+   .. py:attribute:: highlights
+      :type:  tuple[str, ...]
+
+
+   .. py:attribute:: geometor_note
+      :type:  str
+
+
+.. py:data:: CH03_MEDIANS_CONTINUATION
+
+.. py:data:: SECTION_SYNOPSES
+   :type:  dict[tuple[str, str], SectionSynopsis]
+

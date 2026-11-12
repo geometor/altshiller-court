@@ -74,7 +74,7 @@
             </nav>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="a-preliminaries/index.html" title="A. Preliminaries"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="a-preliminaries/index.html" title="Section A — Preliminaries"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </header>
@@ -82,48 +82,430 @@
         <section class="level-1" id="chapter-i-geometric-constructions">
         <span id="ch01-geometric-constructions-en"></span><span id="ch01-geometric-constructions"></span><h1>Chapter I: Geometric Constructions<a class="headerlink" href="#chapter-i-geometric-constructions" title="Link to this heading">¶</a></h1>
         <p class="rubric">Preliminaries, Analytic Method (Analysis, Construction, Proof, Discussion), Geometric Loci, and Indirect Elements</p>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic" data-graphic-id="hero-apollonian_locus.apollonian_locus" data-folio="hero-apollonian_locus" data-graphic="apollonian_locus">
+          <defs>
+            <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-2" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g id="elements">
+            <path id="el-line-axis" data-ref="[ A D ]" data-type="line" class="geom-line" d="M 33 140 L 210 140 L 387 140" />
+            <circle id="el-circle-apcirc" data-ref="( O C )" data-type="circle" cx="263" cy="140" r="106" class="geom-bold" />
+          </g>
+          <g id="graphics">
+            <path id="el-seg-sMA" data-ref="/ M A /" data-type="segment" class="geom-line" d="M 199.4 55.2 L 125.2 97.6 L 51 140" />
+            <path id="el-seg-sMB" data-ref="/ M B /" data-type="segment" class="geom-line" d="M 199.4 55.2 L 204.7 97.6 L 210 140" />
+            <path id="el-seg-sMC" data-ref="/ M C /" data-type="segment" class="geom-dashed" d="M 199.4 55.2 L 178.2 97.6 L 157 140" />
+            <path id="el-seg-sMD" data-ref="/ M D /" data-type="segment" class="geom-dashed" d="M 199.4 55.2 L 284.2 97.6 L 369 140" />
+            <path id="el-ang-angCMD" data-ref="&lt; C M D )" data-aliases="&lt; D M C )" data-type="wedge" d="M 199.4 55.2 L 191.35 71.3 A 18 18 0 0 0 215.5 63.25 Z" class="wedge angle geom-overlay" />
+          </g>
+          <g id="highlights" style="pointer-events: none;">
+            <path id="hl-line-axis" data-ref="[ A D ]" class="geom-line geom-overlay" d="M 33 140 L 210 140 L 387 140" />
+            <circle id="hl-circle-apcirc" data-ref="( O C )" cx="263" cy="140" r="106" class="geom-circle geom-overlay" />
+            <path id="hl-seg-sMA" data-ref="/ M A /" class="geom-line geom-overlay" d="M 199.4 55.2 L 125.2 97.6 L 51 140" />
+            <path id="hl-seg-sMB" data-ref="/ M B /" class="geom-line geom-overlay" d="M 199.4 55.2 L 204.7 97.6 L 210 140" />
+            <path id="hl-seg-sMC" data-ref="/ M C /" class="geom-line geom-overlay" d="M 199.4 55.2 L 178.2 97.6 L 157 140" />
+            <path id="hl-seg-sMD" data-ref="/ M D /" class="geom-line geom-overlay" d="M 199.4 55.2 L 284.2 97.6 L 369 140" />
+            <path id="hl-ang-angCMD" data-ref="&lt; C M D )" data-aliases="&lt; D M C )" d="M 199.4 55.2 L 191.35 71.3 A 18 18 0 0 0 215.5 63.25 Z" class="wedge angle geom-overlay" />
+            <path id="hl-arc-angCMD" data-ref="&lt; C M D )" data-aliases="&lt; D M C )" d="M 191.35 71.3 A 18 18 0 0 0 205.09 72.28 A 18 18 0 0 0 215.5 63.25" class="geom-ang-arc geom-overlay" />
+          </g>
+          <g id="points">
+            <circle id="el-pt-A" data-ref="A" data-type="point" cx="51" cy="140" r="2.6" class="geom-point" />
+            <circle id="el-pt-B" data-ref="B" data-type="point" cx="210" cy="140" r="2.6" class="geom-point" />
+            <circle id="el-pt-C" data-ref="C" data-type="point" cx="157" cy="140" r="2.6" class="geom-point" />
+            <circle id="el-pt-O" data-ref="O" data-type="point" cx="263" cy="140" r="2.6" class="geom-point" />
+            <circle id="el-pt-D" data-ref="D" data-type="point" cx="369" cy="140" r="2.6" class="geom-point" />
+            <circle id="el-pt-M" data-ref="M" data-type="point" cx="199.4" cy="55.2" r="2.6" class="geom-point" />
+          </g>
+          <g id="labels">
+            <text id="lbl-A" data-ref="A" x="45" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text id="lbl-B" data-ref="B" x="210" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text id="lbl-C" data-ref="C" x="151" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text id="lbl-O" data-ref="O" x="263" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text id="lbl-D" data-ref="D" x="377" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">D</text>
+            <text id="lbl-M" data-ref="M" x="195.4" y="43.2" text-anchor="middle" dominant-baseline="central" class="geom-label">M</text>
+          </g>
+        </svg>
+        <figcaption>Harmonic Division (A, B; C, D) = −1 and Apollonian Circle Locus MA : MB = 2 : 1</figcaption>
+        </figure>
         <p>Foundational treatise on synthetic ruler-and-compass problem solving (<strong>§§ 1–22</strong>, Folios <code class="docutils literal notranslate"><span class="pre">0020</span></code>–<code class="docutils literal notranslate"><span class="pre">0052</span></code>, pp. <code class="docutils literal notranslate"><span class="pre">1</span></code>–<code class="docutils literal notranslate"><span class="pre">33</span></code>): notation and basic constructions, Pappus’s four-part analytic method, twelve fundamental geometric loci, auxiliary-triangle indirect elements, 22 interactive <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> figures, and 167 graded and review exercises.</p>
             <section class="collection ">
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="a-preliminaries/index.html" aria-label="Exact symbolic diagram of segment AB divided harmonically by C and D with Apollonian circle on diameter CD and orthogonal bisectors MC, MD">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-apollonian_locus.apollonian_locus" data-folio="hero-apollonian_locus" data-graphic="apollonian_locus">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <path class="geom-line" d="M 33 140 L 210 140 L 387 140" />
+            <circle cx="263" cy="140" r="106" class="geom-bold" />
+          </g>
+          <g>
+            <path class="geom-line" d="M 199.4 55.2 L 125.2 97.6 L 51 140" />
+            <path class="geom-line" d="M 199.4 55.2 L 204.7 97.6 L 210 140" />
+            <path class="geom-dashed" d="M 199.4 55.2 L 178.2 97.6 L 157 140" />
+            <path class="geom-dashed" d="M 199.4 55.2 L 284.2 97.6 L 369 140" />
+            <path d="M 199.4 55.2 L 191.35 71.3 A 18 18 0 0 0 215.5 63.25 Z" class="wedge angle geom-overlay" />
+          </g>
+          <g>
+            <circle cx="51" cy="140" r="2.6" class="geom-point" />
+            <circle cx="210" cy="140" r="2.6" class="geom-point" />
+            <circle cx="157" cy="140" r="2.6" class="geom-point" />
+            <circle cx="263" cy="140" r="2.6" class="geom-point" />
+            <circle cx="369" cy="140" r="2.6" class="geom-point" />
+            <circle cx="199.4" cy="55.2" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="45" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="210" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="151" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="263" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">O</text>
+            <text x="377" y="155" text-anchor="middle" dominant-baseline="central" class="geom-label">D</text>
+            <text x="195.4" y="43.2" text-anchor="middle" dominant-baseline="central" class="geom-label">M</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="a-preliminaries/index.html">Preliminaries</a></h2>
+                    <h2><a href="a-preliminaries/index.html">Section A — Preliminaries</a></h2>
                       <p>Notation conventions for polygons, circles, triangle cevians, and circum-/inradii (§ 1), ten foundational Euclidean ruler-and-compass constructions (§ 2) with 24 elementary construction exercises, and verbal restatement discipline (§ 3).</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="b-general-method/index.html" aria-label="Calibrated Fig. 6 diagram illustrating Pappus's four-part analytic construction method">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 387 298" width="387" height="298" class="euclid-graphic euclid-thumbnail" data-graphic-id="0028.g1" data-folio="0028" data-graphic="g1" data-article="9">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+          </g>
+          <g>
+            <path class="geom-line" d="M 27.72 66.77 L 109.46 67.73 L 191.2 68.69" />
+            <path class="geom-line" d="M 191.2 68.69 L 190.42 152.38 L 189.65 236.07" />
+            <path class="geom-line" d="M 189.65 236.07 L 108.33 235.44 L 27.02 234.79" />
+            <path class="geom-line" d="M 27.02 234.79 L 27.37 150.78 L 27.72 66.77" />
+            <polygon points="27.72,66.77 27.02,234.79 189.65,236.07 191.2,68.69" class="geom-polygon geom-overlay" />
+            <path class="geom-line" d="M 137.74 61.8 L 203.02 35.22 L 268.31 8.64" />
+            <path class="geom-line" d="M 268.31 8.64 L 294.96 75.25 L 321.61 141.85" />
+            <path class="geom-line" d="M 321.61 141.85 L 256.05 168.42 L 190.49 194.99" />
+            <path class="geom-line" d="M 190.49 194.99 L 164.11 128.4 L 137.74 61.8" />
+            <polygon points="137.74,61.8 268.31,8.64 321.61,141.85 190.49,194.99" class="geom-polygon geom-overlay" />
+            <path class="geom-line" d="M 164.97 60.33 L 243.23 45.75 L 321.49 31.18" />
+            <path class="geom-line" d="M 321.49 31.18 L 337.17 115.84 L 352.86 200.5" />
+            <path class="geom-line" d="M 352.86 200.5 L 274.83 215.44 L 196.79 230.37" />
+            <path class="geom-line" d="M 196.79 230.37 L 180.88 145.35 L 164.97 60.33" />
+            <polygon points="164.97,60.33 321.49,31.18 352.86,200.5 196.79,230.37" class="geom-polygon geom-overlay" />
+            <path class="geom-line" d="M 173.83 125.14 L 196.68 103.95 L 219.53 82.77" />
+            <path class="geom-line" d="M 219.53 82.77 L 240.21 105.77 L 260.9 128.77" />
+            <path class="geom-line" d="M 260.9 128.77 L 238.32 150.3 L 215.74 171.82" />
+            <path class="geom-line" d="M 215.74 171.82 L 194.78 148.48 L 173.83 125.14" />
+            <polygon points="173.83,125.14 219.53,82.77 260.9,128.77 215.74,171.82" class="geom-polygon geom-overlay" />
+            <path class="geom-line" d="M 99.9 188.15 L 143.95 196.55 L 188 204.96" />
+            <path class="geom-line" d="M 188 204.96 L 179.64 247.91 L 171.28 290.86" />
+            <path class="geom-line" d="M 171.28 290.86 L 127.57 282.25 L 83.86 273.63" />
+            <path class="geom-line" d="M 83.86 273.63 L 91.88 230.89 L 99.9 188.15" />
+            <polygon points="99.9,188.15 188,204.96 171.28,290.86 83.86,273.63" class="geom-polygon geom-overlay" />
+            <path class="geom-line" d="M 76.48 127.88 L 86.7 131.84 L 96.92 135.79" />
+            <path class="geom-line" d="M 96.92 135.79 L 93.01 145.77 L 89.1 155.75" />
+            <path class="geom-line" d="M 89.1 155.75 L 79.01 152.01 L 68.92 148.27" />
+            <path class="geom-line" d="M 68.92 148.27 L 72.7 138.07 L 76.48 127.88" />
+            <polygon points="76.48,127.88 96.92,135.79 89.1,155.75 68.92,148.27" class="geom-polygon geom-overlay" />
+            <path class="geom-dashed" d="M 27.02 234.79 L 26.96 248.84 L 26.9 262.89" />
+            <path class="geom-dashed" d="M 189.65 236.07 L 274.75 236.75 L 359.85 237.42" />
+            <path class="geom-dashed" d="M 137.74 61.8 L 130.37 64.85 L 123 67.89" />
+            <path class="geom-dashed" d="M 321.61 141.85 L 340.73 189.63 L 359.85 237.42" />
+            <path class="geom-dashed" d="M 190.49 194.99 L 108.69 228.94 L 26.9 262.89" />
+            <path class="geom-dashed" d="M 164.97 60.33 L 143.98 64.11 L 123 67.89" />
+            <path class="geom-dashed" d="M 352.86 200.5 L 356.35 218.96 L 359.85 237.42" />
+            <path class="geom-dashed" d="M 196.79 230.37 L 111.85 246.63 L 26.9 262.89" />
+            <path class="geom-dashed" d="M 173.83 125.14 L 100.37 194.01 L 26.9 262.89" />
+            <path class="geom-dashed" d="M 173.83 125.14 L 148.42 96.51 L 123 67.89" />
+            <path class="geom-dashed" d="M 260.9 128.77 L 310.38 183.09 L 359.85 237.42" />
+            <path class="geom-dashed" d="M 215.74 171.82 L 203.11 183.41 L 190.49 194.99" />
+            <path class="geom-dashed" d="M 99.9 188.15 L 111.45 128.02 L 123 67.89" />
+            <path class="geom-dashed" d="M 188 204.96 L 273.93 221.19 L 359.85 237.42" />
+            <path class="geom-dashed" d="M 188 204.96 L 189.25 199.97 L 190.49 194.99" />
+            <path class="geom-dashed" d="M 83.86 273.63 L 55.38 268.26 L 26.9 262.89" />
+            <path class="geom-dashed" d="M 68.92 148.27 L 47.91 205.58 L 26.9 262.89" />
+            <path class="geom-dashed" d="M 96.92 135.79 L 228.39 186.61 L 359.85 237.42" />
+            <path class="geom-dashed" d="M 89.1 155.75 L 139.79 175.37 L 190.49 194.99" />
+            <path class="geom-dashed" d="M 96.92 135.79 L 109.96 101.84 L 123 67.89" />
+            <path class="geom-line geom-overlay" d="M 26.9 262.89 L 193.37 250.15 L 359.85 237.42" />
+            <path class="geom-line geom-overlay" d="M 359.85 237.42 L 275.17 216.2 L 190.49 194.99" />
+            <path class="geom-line geom-overlay" d="M 26.9 262.89 L 108.69 228.94 L 190.49 194.99" />
+            <polygon points="26.9,262.89 359.85,237.42 190.49,194.99" class="geom-polygon geom-overlay" />
+          </g>
+          <g>
+            <circle cx="27.72" cy="66.77" r="2.6" class="geom-point" />
+            <circle cx="191.2" cy="68.69" r="2.6" class="geom-point" />
+            <circle cx="189.65" cy="236.07" r="2.6" class="geom-point" />
+            <circle cx="27.02" cy="234.79" r="2.6" class="geom-point" />
+            <circle cx="26.9" cy="262.89" r="2.6" class="geom-point" />
+            <circle cx="359.85" cy="237.42" r="2.6" class="geom-point" />
+            <circle cx="190.49" cy="194.99" r="2.6" class="geom-point" />
+            <circle cx="123" cy="67.89" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="18.5" y="67.5" text-anchor="middle" dominant-baseline="central" class="geom-label">P</text>
+            <text x="201.5" y="70.5" text-anchor="middle" dominant-baseline="central" class="geom-label">S</text>
+            <text x="190.5" y="248" text-anchor="middle" dominant-baseline="central" class="geom-label">R</text>
+            <text x="16.5" y="237" text-anchor="middle" dominant-baseline="central" class="geom-label">Q</text>
+            <text x="17" y="266.5" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="370.5" y="239.5" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="204" y="199" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="122.5" y="57" text-anchor="middle" dominant-baseline="central" class="geom-label">D</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="b-general-method/index.html">General Method of Solution of Construction Problems
-
-        /home/runner/work/altshiller-court/altshiller-court/docsrc/college_geometry/ch01-geometric-constructions/b-general-method/index.rst:5: (INFO/1) Enumerated list start value not ordinal-1: “B” (ordinal 2)</a></h2>
+                    <h2><a href="b-general-method/index.html">Section B — General Method of Solution of Construction Problems</a></h2>
                       <p>Pappus’s four-stage analytic method—Analysis, Construction, Proof, and Discussion (§ 4)—illustrated through five worked construction problems (§§ 5–9, Figs. 1–7), practical drafting and discussion guidelines (§ 10), and 14 exercises.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="c-geometric-loci/index.html" aria-label="Calibrated Fig. 11 diagram of the Apollonian circle on harmonic diameter CD">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 395 242.5" width="395" height="242.5" class="euclid-graphic euclid-thumbnail" data-graphic-id="0034.g1" data-folio="0034" data-graphic="g1" data-article="11.11">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="256.21" cy="122.75" r="112.7" class="geom-circle" />
+          </g>
+          <g>
+            <path class="geom-line" d="M 21.76 124.26 L 195.34 122.9 L 368.91 121.55" />
+            <path class="geom-line" d="M 21.76 124.26 L 122.91 77.48 L 224.07 30.7" />
+            <path class="geom-line" d="M 163.34 58.78 L 178.33 90.85 L 193.32 122.92" />
+            <path class="geom-line" d="M 163.34 58.78 L 266.13 90.16 L 368.91 121.55" />
+            <path class="geom-dashed" d="M 193.32 122.92 L 144.08 106.69 L 94.84 90.47" />
+            <path class="geom-dashed" d="M 193.32 122.92 L 208.7 76.81 L 224.07 30.7" />
+            <path class="geom-line geom-overlay" d="M 163.34 58.78 L 153.43 91.05 L 143.5 123.31" />
+            <path class="geom-line geom-overlay" d="M 21.76 124.26 L 107.54 123.59 L 193.32 122.92" />
+            <path class="geom-line geom-overlay" d="M 21.76 124.26 L 82.63 123.78 L 143.5 123.31" />
+            <path class="geom-line geom-overlay" d="M 143.5 123.31 L 168.41 123.11 L 193.32 122.92" />
+            <path class="geom-line geom-overlay" d="M 368.91 121.55 L 281.12 122.23 L 193.32 122.92" />
+            <path class="geom-line geom-overlay" d="M 143.5 123.31 L 256.21 122.43 L 368.91 121.55" />
+            <path class="geom-line geom-overlay" d="M 21.76 124.26 L 92.55 91.52 L 163.34 58.78" />
+            <path class="geom-line geom-overlay" d="M 163.34 58.78 L 193.71 44.74 L 224.07 30.7" />
+            <path class="geom-line geom-overlay" d="M 163.34 58.78 L 129.09 74.62 L 94.84 90.47" />
+            <path class="geom-line geom-overlay" d="M 224.07 30.7 L 159.45 60.58 L 94.84 90.47" />
+            <polygon points="21.76,124.26 193.32,122.92 163.34,58.78" class="geom-polygon geom-overlay" />
+            <polygon points="224.07,30.7 193.32,122.92 94.84,90.47" class="geom-polygon geom-overlay" />
+            <path d="M 163.34 58.78 L 146.1 66.76 A 19 19 0 0 0 171.39 76 Z" class="wedge angle geom-overlay" />
+            <path d="M 163.34 58.78 L 158.35 75.03 A 17 17 0 0 0 179.6 63.75 Z" class="wedge angle geom-overlay" />
+            <path d="M 193.32 122.92 L 199.97 102.99 A 21 21 0 0 0 173.38 116.34 Z" class="wedge angle geom-overlay" />
+          </g>
+          <g>
+            <circle cx="21.76" cy="124.26" r="2.6" class="geom-point" />
+            <circle cx="143.5" cy="123.31" r="2.6" class="geom-point" />
+            <circle cx="193.32" cy="122.92" r="2.6" class="geom-point" />
+            <circle cx="368.91" cy="121.55" r="2.6" class="geom-point" />
+            <circle cx="163.34" cy="58.78" r="2.6" class="geom-point" />
+            <circle cx="94.84" cy="90.47" r="2.6" class="geom-point" />
+            <circle cx="224.07" cy="30.7" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="16" y="137" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="134" y="136.5" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+            <text x="193" y="136.5" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="379.5" y="123.5" text-anchor="middle" dominant-baseline="central" class="geom-label">D</text>
+            <text x="154.5" y="48" text-anchor="middle" dominant-baseline="central" class="geom-label">M</text>
+            <text x="91.5" y="77.5" text-anchor="middle" dominant-baseline="central" class="geom-label">F</text>
+            <text x="235.5" y="31.5" text-anchor="middle" dominant-baseline="central" class="geom-label">E</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="c-geometric-loci/index.html">Geometric Loci
-
-        /home/runner/work/altshiller-court/altshiller-court/docsrc/college_geometry/ch01-geometric-constructions/c-geometric-loci/index.rst:5: (INFO/1) Enumerated list start value not ordinal-1: “C” (ordinal 3)</a></h2>
+                    <h2><a href="c-geometric-loci/index.html">Section C — Geometric Loci</a></h2>
                       <p>The method of intersecting geometric loci (§ 11), twelve fundamental linear and circular loci including the capable arc and Apollonian circle (Loci 1–12, Figs. 8–12), worked locus constructions (§§ 12–14, Figs. 13–16), and 27 locus and construction exercises.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="d-indirect-elements/index.html" aria-label="Calibrated Fig. 21 diagram of auxiliary right triangle BGH for indirect elements">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 214 260" width="214" height="260" class="euclid-graphic euclid-thumbnail" data-graphic-id="0045.g1" data-folio="0045" data-graphic="g1" data-article="20">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <path class="geom-line" d="M 144.59 25.34 L 171.3 52.09 L 198 78.83" />
+          </g>
+          <g>
+            <path class="geom-line" d="M 21.32 239.29 L 82.95 132.32 L 144.59 25.34" />
+            <path class="geom-line" d="M 21.32 239.29 L 107.77 239.26 L 194.23 239.22" />
+            <path class="geom-line" d="M 144.59 25.34 L 169.41 132.28 L 194.23 239.22" />
+            <path class="geom-line" d="M 21.32 239.29 L 105.5 154.84 L 189.68 70.39" />
+            <path class="geom-line" d="M 76.5 143.51 L 122.81 96.5 L 169.12 49.48" />
+            <path class="geom-line" d="M 76.5 143.51 L 135.37 191.37 L 194.23 239.22" />
+            <path class="geom-line" d="M 194.23 239.22 L 126.2 207.28 L 58.17 175.33" />
+            <path class="geom-line geom-overlay" d="M 21.32 239.29 L 59.96 200.52 L 98.61 161.75" />
+            <path class="geom-line geom-overlay" d="M 98.61 161.75 L 144.14 116.06 L 189.68 70.39" />
+            <path class="geom-line geom-overlay" d="M 21.32 239.29 L 48.91 191.4 L 76.5 143.51" />
+            <path class="geom-line geom-overlay" d="M 76.5 143.51 L 110.55 84.43 L 144.59 25.34" />
+            <polygon points="76.5,143.51 21.32,239.29 194.23,239.22" class="geom-polygon geom-overlay" />
+            <polygon points="21.32,239.29 189.68,70.39 144.59,25.34" class="geom-polygon geom-overlay" />
+            <polygon points="76.5,143.51 194.23,239.22 58.17,175.33" class="geom-polygon geom-overlay" />
+            <polygon points="76.5,143.51 144.59,25.34 169.12,49.48" class="geom-polygon geom-overlay" />
+            <polygon points="76.5,143.51 144.59,25.34 194.23,239.22" class="geom-polygon geom-overlay" />
+            <polygon points="76.5,143.51 169.12,49.48 189.68,70.39 98.61,161.75" class="geom-polygon geom-overlay" />
+            <path d="M 144.59 25.34 L 133.61 44.41 A 22 22 0 0 0 160.15 40.89 Z" class="wedge angle geom-overlay" />
+            <path d="M 76.5 143.51 L 66.52 160.84 A 20 20 0 0 0 92.02 156.13 Z" class="wedge angle geom-overlay" />
+            <path d="M 189.68 70.39 L 178.38 81.72 A 16 16 0 0 1 178.36 59.08 Z" class="wedge angle geom-overlay" />
+            <path d="M 98.61 161.75 L 88.72 171.66 A 14 14 0 0 1 87.81 152.84 Z" class="wedge angle geom-overlay" />
+            <path d="M 144.59 25.34 L 130.11 50.47 A 29 29 0 0 0 151.15 53.59 Z" class="wedge angle geom-overlay" />
+            <path d="M 194.23 239.22 L 171.73 220.93 A 29 29 0 0 1 187.67 210.98 Z" class="wedge angle geom-overlay" />
+          </g>
+          <g>
+            <circle cx="144.59" cy="25.34" r="2.6" class="geom-point" />
+            <circle cx="169.12" cy="49.48" r="2.6" class="geom-point" />
+            <circle cx="189.68" cy="70.39" r="2.6" class="geom-point" />
+            <circle cx="76.5" cy="143.51" r="2.6" class="geom-point" />
+            <circle cx="98.61" cy="161.75" r="2.6" class="geom-point" />
+            <circle cx="58.17" cy="175.33" r="2.6" class="geom-point" />
+            <circle cx="21.32" cy="239.29" r="2.6" class="geom-point" />
+            <circle cx="194.23" cy="239.22" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="143" y="12.5" text-anchor="middle" dominant-baseline="central" class="geom-label">H</text>
+            <text x="174" y="35" text-anchor="middle" dominant-baseline="central" class="geom-label">I</text>
+            <text x="199" y="61.5" text-anchor="middle" dominant-baseline="central" class="geom-label">G</text>
+            <text x="66" y="140" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="116.5" y="161" text-anchor="middle" dominant-baseline="central" class="geom-label">E</text>
+            <text x="46" y="170.5" text-anchor="middle" dominant-baseline="central" class="geom-label">F</text>
+            <text x="15.5" y="250" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="199" y="250.5" text-anchor="middle" dominant-baseline="central" class="geom-label">C</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
-                    <h2><a href="d-indirect-elements/index.html">Indirect Elements
-
-        /home/runner/work/altshiller-court/altshiller-court/docsrc/college_geometry/ch01-geometric-constructions/d-indirect-elements/index.rst:5: (INFO/1) Enumerated list start value not ordinal-1: “D” (ordinal 4)</a></h2>
+                    <h2><a href="d-indirect-elements/index.html">Section D — Indirect Elements</a></h2>
                       <p>Among the conditions which a figure to be constructed may be required to satisfy, elements may be given which do not occur directly in the figure in question. For instance, it may be required that the sum of two sides of a triangle shall have a given length, or that the difference of the base angles shall have a given magnitude, etc. In order to arrive at a method of solution of such a problem, it is necessary to introduce this “<span class="term-ref glossary-term">indirect element</span>” in the analysis of the problem.</p>
                   </section>
                 </div>
               </article>
               <article class="excerpt">
                 <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="review-exercises/index.html" aria-label="Calibrated Fig. 16 diagram of secants from a circle intercepting proportional segments">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 276.5" width="304" height="276.5" class="euclid-graphic euclid-thumbnail" data-graphic-id="0039.g1" data-folio="0039" data-graphic="g1" data-article="14">
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g>
+            <circle cx="153.72" cy="131.78" r="122.19" class="geom-circle" />
+            <path class="geom-line" d="M 10.01 165.37 L 151.75 166.74 L 293.5 168.11" />
+          </g>
+          <g>
+            <path class="geom-line" d="M 90.5 27.2 L 173.55 46.52 L 256.6 65.84" />
+            <path class="geom-line" d="M 90.5 27.2 L 104.34 137.94 L 118.17 248.69" />
+            <path class="geom-line" d="M 256.6 65.84 L 187.39 157.26 L 118.17 248.69" />
+            <path class="geom-line" d="M 90.5 27.2 L 167.96 97.43 L 245.42 167.65" />
+            <path class="geom-dashed" d="M 173.88 103 L 215.24 84.42 L 256.6 65.84" />
+            <path class="geom-dashed" d="M 173.88 103 L 177.24 135.01 L 180.6 167.01" />
+            <path class="geom-line geom-overlay" d="M 245.42 167.65 L 209.65 135.32 L 173.88 103" />
+            <path class="geom-line geom-overlay" d="M 245.42 167.65 L 213.01 167.33 L 180.6 167.01" />
+            <path class="geom-line geom-overlay" d="M 245.42 167.65 L 176.65 166.98 L 107.89 166.31" />
+            <path d="M 180.6 167.01 L 178.41 146.13 A 21 21 0 0 1 193.21 150.22 Z" class="wedge angle geom-overlay" />
+            <path d="M 118.17 248.69 L 115.2 224.87 A 24 24 0 0 1 132.66 229.55 Z" class="wedge angle geom-overlay" />
+          </g>
+          <g>
+            <circle cx="90.5" cy="27.2" r="2.6" class="geom-point" />
+            <circle cx="256.6" cy="65.84" r="2.6" class="geom-point" />
+            <circle cx="118.17" cy="248.69" r="2.6" class="geom-point" />
+            <circle cx="107.89" cy="166.31" r="2.6" class="geom-point" />
+            <circle cx="180.6" cy="167.01" r="2.6" class="geom-point" />
+            <circle cx="245.42" cy="167.65" r="2.6" class="geom-point" />
+            <circle cx="173.88" cy="103" r="2.6" class="geom-point" />
+          </g>
+          <g>
+            <text x="84" y="15.5" text-anchor="middle" dominant-baseline="central" class="geom-label">A</text>
+            <text x="265.5" y="59" text-anchor="middle" dominant-baseline="central" class="geom-label">B</text>
+            <text x="117" y="263" text-anchor="middle" dominant-baseline="central" class="geom-label">M</text>
+            <text x="98" y="180" text-anchor="middle" dominant-baseline="central" class="geom-label">P</text>
+            <text x="188.5" y="181" text-anchor="middle" dominant-baseline="central" class="geom-label">Q</text>
+            <text x="241" y="182" text-anchor="middle" dominant-baseline="central" class="geom-label">F</text>
+            <text x="175" y="88.5" text-anchor="middle" dominant-baseline="central" class="geom-label">L</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
                   <section>
                     <h2><a href="review-exercises/index.html">Review Exercises</a></h2>
                       <p>Sixty-seven synthesis problems spanning Chapter I: Constructions (1–27), deductive Propositions (28–58), and Geometric Loci (59–67) across Folios 0048–0052 (pp. 29–33).</p>
@@ -147,7 +529,7 @@
             <a class="book-toc-link" href="../index.html">College Geometry</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="a-preliminaries/index.html" title="A. Preliminaries"><span class="nav-label">A. Preliminaries</span> &rarr;</a>
+            <a class="book-nav-btn" href="a-preliminaries/index.html" title="Section A — Preliminaries"><span class="nav-label">Section A — Preliminaries</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -194,7 +576,7 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=938c9ccc"></script>
+  <script src="../../_static/documentation_options.js?v=e259d695"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
