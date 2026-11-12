@@ -1,0 +1,51 @@
+:folio: 0039
+:page: 20
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Geometric Loci — p. 20 (§ 14, Fig. 16, Exercises 1–16)
+:language: en
+:status: ok
+
+.. picture:: 0039.g1.svg
+   :alt: Fig. 16 — Point M on circle projecting A, B onto line FPQ with given ratio FQ : FP via capable arc on LB
+   :caption: FIG. 16
+
+On the other hand we have:
+
+.. math::
+
+   FL : FA = FQ : FP,
+
+.. assertion:: [§ 11, Locus 7]
+
+   and the second ratio is given; hence the point :g:`L <0039.g1:L>` is known. Thus the known segment :g:`LB <0039.g1:/ L B />` subtends a :g:`given angle <0039.g1:< L Q B )>` at the point :g:`Q <0039.g1:Q>`, which gives a locus for this point (§ 11, locus 7). The point :g:`Q <0039.g1:Q>` lies at the intersection of this locus with the given line :g:`FPQ <0039.g1:[ F P Q ]>`. The line :g:`BQ <0039.g1:[ B Q ]>` meets the :g:`circle <0039.g1:( A B M )>` in the required point :g:`M <0039.g1:M>`.
+
+The proof and discussion are left to the reader.
+
+EXERCISES
+~~~~~~~~~
+
+Construct a triangle, given:
+
+1. :math:`a, b, A`.
+2. :math:`a, c, h_b`.
+3. :math:`a, h_a, m_a`.
+4. :math:`a, h_a, b : c`.
+5. :math:`a, m_a, b : c`.
+6. :math:`a, t_a, b : c`.
+
+Construct a parallelogram, given:
+
+7. An altitude and the two diagonals.
+8. The two altitudes and an angle.
+9. The two altitudes and a diagonal.
+10. A side, an angle, and a diagonal.
+11. A side, the corresponding altitude, and the angle between the diagonals.
+
+Construct a quadrilateral :math:`ABCD`, given:
+
+12. The diagonal :math:`AC` and the angles :math:`ABC, ADC, BAC, DAC`.
+13. The sides :math:`AB, BC`, the diagonal :math:`CA`, and the angles :math:`ADB, BDC`.
+14. The sides :math:`AB, AD`, the angle :math:`DAB`, and the radius of the inscribed circle.
+15. Construct a quadrilateral given three sides and the radius of the circumscribed circle. Give a discussion.
+16. Given three points, to find a fourth point, in the same plane, such that its distances to the given points may have given ratios.

@@ -1,0 +1,88 @@
+:folio: 0012
+:page: xiii
+:book: Frontmatter
+:section: 00_frontmatter
+:title: Contents (continued) — p. xiii
+:language: en
+:status: ok
+
+.. list-table::
+   :widths: 82 18
+   :header-rows: 0
+
+   * - **6  TRANSVERSALS**
+     - 151
+   * -  A. Introductory
+     - 151
+   * -   Exercises
+     - 152
+   * -  B. Stewart's Theorem
+     - 152
+   * -   Exercises
+     - 153
+   * -  C. Menelaus' Theorem
+     - 153
+   * -   Exercises
+     - 158
+   * -  D. Ceva's Theorem
+     - 158
+   * -   Exercises
+     - 161, 164
+   * -   Supplementary Exercises
+     - 165
+   * - **7  HARMONIC DIVISION**
+     - 166
+   * -  Exercises
+     - 168, 170
+   * -  Supplementary Exercises
+     - 171
+   * - **8  CIRCLES**
+     - 172
+   * -  A. Inverse Points
+     - 172
+   * -   Exercises
+     - 174
+   * -  B. Orthogonal Circles
+     - 174
+   * -   Exercises
+     - 177
+   * -  C. Poles and Polars
+     - 177
+   * -   Exercises
+     - 182
+   * -   Supplementary Exercises
+     - 183
+   * -  D. Centers of Similitude
+     - 184
+   * -   Exercises
+     - 189
+   * -   Supplementary Exercises
+     - 190
+   * -  E. The Power of a Point with Respect to a Circle
+     - 190
+   * -   Exercises
+     - 193
+   * -   Supplementary Exercises
+     - 194
+   * -  F. The Radical Axis of Two Circles
+     - 194
+   * -   Exercises
+     - 196, 200
+   * -   Supplementary Exercises
+     - 201
+   * -  G. Coaxal Circles
+     - 201
+   * -   Exercises
+     - 205, 209, 216
+   * -  H. Three Circles
+     - 217
+   * -   Exercises
+     - 221
+   * -   Supplementary Exercises
+     - 221
+   * -  I. The Problem of Apollonius
+     - 222
+   * -   Exercises
+     - 227
+   * -   Supplementary Exercises
+     - 227

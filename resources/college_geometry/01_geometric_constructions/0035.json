@@ -1,0 +1,131 @@
+{
+  "folio": "0035",
+  "page": "16",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0035.g1.png",
+      "bbox": [
+        419,
+        1020,
+        585,
+        368
+      ],
+      "caption": "Fig. 12. Perpendicular line locus of a point M where AM² - BM² = d² is constant (§ 11, Locus 12).",
+      "white_point": 238,
+      "svg_file": "0035.g1.svg",
+      "article": "11.12",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "A": {
+            "x": 52.13,
+            "y": 318.51,
+            "label": "A",
+            "label_x": 32,
+            "label_y": 326
+          },
+          "C": {
+            "x": 405.18,
+            "y": 317.42,
+            "label": "C",
+            "label_x": 401,
+            "label_y": 344
+          },
+          "B": {
+            "x": 529.97,
+            "y": 317.03,
+            "label": "B",
+            "label_x": 554,
+            "label_y": 322
+          },
+          "M": {
+            "x": 402.64,
+            "y": 54.18,
+            "label": "M",
+            "label_x": 406,
+            "label_y": 29
+          }
+        },
+        "elements": [
+          {
+            "id": "seg_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "ref": "/ A B /",
+            "aliases": [
+              "[ A B ]"
+            ]
+          },
+          {
+            "id": "seg_AM",
+            "type": "segment",
+            "p1": "A",
+            "p2": "M",
+            "ref": "/ A M /"
+          },
+          {
+            "id": "seg_BM",
+            "type": "segment",
+            "p1": "B",
+            "p2": "M",
+            "ref": "/ B M /",
+            "aliases": [
+              "/ M B /"
+            ]
+          },
+          {
+            "id": "seg_MC",
+            "type": "segment",
+            "p1": "M",
+            "p2": "C",
+            "ref": "/ M C /",
+            "aliases": [
+              "[ M C ]"
+            ]
+          },
+          {
+            "id": "seg_AC",
+            "type": "segment",
+            "p1": "A",
+            "p2": "C",
+            "style": "overlay",
+            "ref": "/ A C /"
+          },
+          {
+            "id": "seg_BC",
+            "type": "segment",
+            "p1": "B",
+            "p2": "C",
+            "style": "overlay",
+            "ref": "/ B C /"
+          },
+          {
+            "id": "tri_ACM",
+            "type": "polygon",
+            "points": [
+              "A",
+              "C",
+              "M"
+            ],
+            "style": "overlay",
+            "ref": "< A C M >"
+          },
+          {
+            "id": "tri_BCM",
+            "type": "polygon",
+            "points": [
+              "B",
+              "C",
+              "M"
+            ],
+            "style": "overlay",
+            "ref": "< B C M >"
+          }
+        ]
+      }
+    }
+  ]
+}

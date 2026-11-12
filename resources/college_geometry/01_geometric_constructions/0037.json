@@ -1,0 +1,173 @@
+{
+  "folio": "0037",
+  "page": "18",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0037.g1.png",
+      "bbox": [
+        403,
+        162,
+        618,
+        466
+      ],
+      "caption": "Fig. 13. Circle (O) passing through A and B and subtending a given angle at external point C (§ 12).",
+      "white_point": 238,
+      "svg_file": "0037.g1.svg",
+      "article": "12",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "O": {
+            "x": 225.91,
+            "y": 240.42,
+            "label": "O",
+            "label_x": 209,
+            "label_y": 255
+          },
+          "C": {
+            "x": 561.35,
+            "y": 147.07,
+            "label": "C",
+            "label_x": 586,
+            "label_y": 145
+          },
+          "T": {
+            "x": 294.48,
+            "y": 46.48,
+            "label": "T",
+            "label_x": 297,
+            "label_y": 24
+          },
+          "T'": {
+            "x": 382.69,
+            "y": 368.84,
+            "label": "T'",
+            "label_x": 405,
+            "label_y": 391,
+            "dot": true
+          },
+          "A": {
+            "x": 64.21,
+            "y": 110.26,
+            "label": "A",
+            "label_x": 84,
+            "label_y": 125,
+            "dot": true
+          },
+          "B": {
+            "x": 154.87,
+            "y": 434.87,
+            "label": "B",
+            "label_x": 168,
+            "label_y": 412,
+            "dot": true
+          }
+        },
+        "elements": [
+          {
+            "id": "cir_O",
+            "type": "circle",
+            "cx": 222.68,
+            "cy": 240.97,
+            "r": 205.42,
+            "ref": "( O )",
+            "aliases": [
+              "( O T )"
+            ]
+          },
+          {
+            "id": "seg_OT",
+            "type": "segment",
+            "p1": "O",
+            "p2": "T",
+            "ref": "/ O T /"
+          },
+          {
+            "id": "seg_OC",
+            "type": "segment",
+            "p1": "O",
+            "p2": "C",
+            "ref": "/ O C /"
+          },
+          {
+            "id": "seg_CT",
+            "type": "segment",
+            "p1": "C",
+            "p2": "T",
+            "ref": "/ C T /"
+          },
+          {
+            "id": "seg_CTp",
+            "type": "segment",
+            "p1": "C",
+            "p2": "T'",
+            "ref": "/ C T' /"
+          },
+          {
+            "id": "seg_OA",
+            "type": "segment",
+            "p1": "O",
+            "p2": "A",
+            "style": "overlay",
+            "ref": "/ O A /"
+          },
+          {
+            "id": "seg_OB",
+            "type": "segment",
+            "p1": "O",
+            "p2": "B",
+            "style": "overlay",
+            "ref": "/ O B /"
+          },
+          {
+            "id": "seg_AC",
+            "type": "segment",
+            "p1": "A",
+            "p2": "C",
+            "style": "overlay",
+            "ref": "/ A C /"
+          },
+          {
+            "id": "seg_BC",
+            "type": "segment",
+            "p1": "B",
+            "p2": "C",
+            "style": "overlay",
+            "ref": "/ B C /"
+          },
+          {
+            "id": "tri_OTC",
+            "type": "polygon",
+            "points": [
+              "O",
+              "T",
+              "C"
+            ],
+            "style": "overlay",
+            "ref": "< O T C >"
+          },
+          {
+            "id": "ang_OCT",
+            "type": "angle",
+            "vertex": "C",
+            "p1": "O",
+            "p2": "T",
+            "radius": 52,
+            "ref": "< O C T )"
+          },
+          {
+            "id": "ang_TCTp",
+            "type": "angle",
+            "vertex": "C",
+            "p1": "T",
+            "p2": "T'",
+            "radius": 44,
+            "ref": "< T C T' )"
+          }
+        ]
+      }
+    }
+  ]
+}

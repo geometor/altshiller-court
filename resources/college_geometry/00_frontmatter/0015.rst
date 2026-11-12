@@ -1,0 +1,11 @@
+:folio: 0015
+:page: [xvi]
+:book: Frontmatter
+:section: 00_frontmatter
+:title: Blank Verso — p. [xvi]
+:language: en
+:status: blank
+
+.. note::
+
+   *[Intentionally blank verso — page [xvi], following To the Instructor.]*

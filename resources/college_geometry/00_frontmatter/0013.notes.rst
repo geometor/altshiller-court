@@ -1,0 +1,27 @@
+Folio 0013 (Page xiv) — Diplomatic & Mathematical Notes
+=======================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0012 (Page xiii, Contents)
+- **Current Folio** (``0013.rst``): Page ``xiv``, Frontmatter [``00_frontmatter``] — Status: ``ok``
+- **Following Folio**: Folio 0014 (Page xv, To the Instructor)
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: Concluding page of ``CONTENTS`` (printed page ``xiv``, running header ``CONTENTS``), covering Chapter 9 (*Inversion*), Chapter 10 (*Recent Geometry of the Triangle*), *Historical and Bibliographical Notes*, *List of Names*, and *Index*.
+- **Document Headings on Folio**: None
+- **Line-Break Hyphenations Resolved**: None
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+Completes the four-page synoptic table of contents (pp. ``xi``–``xiv``).
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``00_frontmatter/0013.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan)

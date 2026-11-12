@@ -1,0 +1,32 @@
+Folio 0024 (Page 5) — Diplomatic & Mathematical Notes
+=====================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0023 (Page 4, §§ 5–6)
+- **Current Folio** (``0024.rst``): Page ``5``, Chapter I [``01_geometric_constructions``] — Status: ``ok``
+- **Following Folio**: Folio 0025 (Page 6, conclusion of § 6 Discussion, Fig. 3, and § 7)
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: Page ``5`` (running header ``Ch. I, § 6] / GENERAL METHOD OF SOLUTION / 5``), presenting the Analysis, Construction, Proof, ``FIG. 2`` (``0024.g1.png``), and Discussion of § 6.
+- **Document Headings on Folio**: None
+- **Line-Break Hyphenations Resolved**: None
+
+Calibrated Diagrams on Folio
+----------------------------
+
+- ``0024.g1.png`` (bbox ``[407, 1018, 608, 488]``, white-point ``238``): Fig. 2. Secant MBA from external point M cutting circle (O) so that central angle AOB equals angle M (§ 6).
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+Remarkable economy of construction in ``geometor.model``: given circle :math:`(O, R)` and exterior point :math:`M`, a single compass operation ``circle(M, O)`` immediately constructs both solution secants :math:`MA` and :math:`MA'` in two steps!
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``01_geometric_constructions/0024.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan)

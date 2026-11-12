@@ -1,0 +1,31 @@
+:folio: 0038
+:page: 19
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Geometric Loci — p. 19 (§§ 13–14, Figs. 14–15)
+:language: en
+:status: ok
+
+DISCUSSION. The circle :g:`(E, s) <0038.g1:( E F )>` will not cut the circle :g:`(O, OE) <0038.g1:( O E )>`, if :math:`s` is greater than :math:`2\,OE`. If :math:`s < 2\,OE`, we obtain two points of intersection :g:`F <0038.g1:F>` and :g:`F' <0038.g1:Fprime>`, and therefore :g:`two solutions <0038.g1:< A B D C >; 0038.g1:< A B D' C' >>`.
+
+The :g:`tangent <0038.g1:/ C D />` to the circle :g:`(O, OE) <0038.g1:( O E )>` at :g:`F <0038.g1:F>` determines the two points :g:`C <0038.g1:C>`, :g:`D <0038.g1:D>` on the circle :g:`(O) <0038.g1:( O )>`. These two points and the given points :g:`A <0038.g1:A>`, :g:`B <0038.g1:B>`
+
+.. picture:: 0038.g1.svg
+   :alt: Fig. 14 — Isosceles trapezoid ABDC inscribed in circle (O) with midline EF = s tangent to (O, OE)
+   :caption: FIG. 14
+
+.. picture:: 0038.g2.svg
+   :alt: Fig. 15 — Crossed-trapezoid regime when s < EG so tangent at F crosses chord AB
+   :caption: FIG. 15
+
+determine four lines, namely two sides and the two diagonals of the :g:`isosceles trapezoid <0038.g1:< A B D C >>`. The figure will show which two of these four lines are those required.
+
+Let :g:`G <0038.g2:G>` (Fig. 15) be the point of contact of the :g:`second tangent <0038.g2:/ A G />` issued from :g:`A <0038.g2:A>` to the circle :g:`(O, OE) <0038.g2:( O E )>`. If :math:`s < EG`, the :g:`tangent <0038.g2:/ C D />` to :g:`(O, OE) <0038.g2:( O E )>` at :g:`F <0038.g2:F>` will cross the chord :g:`AB <0038.g2:/ A B />`, and in the :g:`resulting trapezoid <0038.g2:< A C B D >>` the line :g:`AB <0038.g2:/ A B />` will be a diagonal. The line :g:`EF <0038.g2:/ E F />` is equal to one-half the difference of the :g:`two bases <0038.g2:/ A C /; 0038.g2:/ B D />`.
+
+Consider the case when the two chords are required to have a given difference.
+
+.. enunciation::
+
+   **14. Problem.** *On a given* :g:`circle <0039.g1:( A B M )>` *to find a* :g:`point <0039.g1:M>` *such that the* :g:`lines <0039.g1:[ A M ]; 0039.g1:[ B M ]>` *joining it to two given* :g:`points <0039.g1:A; 0039.g1:B>` *on this circle shall meet a given* :g:`line <0039.g1:[ F P Q ]>` *in two* :g:`points <0039.g1:P; 0039.g1:Q>` *the ratio of whose distances from a given* :g:`point <0039.g1:F>` *on this line shall have a given value.*
+
+Let the lines :g:`AM <0039.g1:[ A M ]>`, :g:`BM <0039.g1:[ B M ]>` joining the given points :g:`A <0039.g1:A>`, :g:`B <0039.g1:B>` on the :g:`circle <0039.g1:( A B M )>` to the required point :g:`M <0039.g1:M>` meet the given line :g:`FPQ <0039.g1:[ F P Q ]>` in the points :g:`P <0039.g1:P>`, :g:`Q <0039.g1:Q>` (Fig. 16). If :g:`F <0039.g1:F>` is the given fixed point and the parallel :g:`QL <0039.g1:/ Q L />` to :g:`MA <0039.g1:/ A M />` through :g:`Q <0039.g1:Q>` meets the line :g:`FA <0039.g1:[ F A ]>` in :g:`L <0039.g1:L>`, we have angle :eq:`LQB = AMB <0039.g1:< L Q B ) = 0039.g1:< A M B )>`, and the latter angle is known, for the chord :g:`AB <0039.g1:/ A B />` is given.

@@ -31,3 +31,12 @@ namespaces = true
 
 [tool.setuptools.dynamic]
 version = {attr = "geometor.altshiller_court.__version__"}
+
+[project.urls]
+"Website" = "https://geometor.github.io/altshiller-court"
+"Repository" = "https://github.com/geometor/altshiller-court"
+"Issues" = "https://github.com/geometor/altshiller-court/issues"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

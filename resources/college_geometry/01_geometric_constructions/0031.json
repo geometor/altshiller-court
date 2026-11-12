@@ -1,0 +1,167 @@
+{
+  "folio": "0031",
+  "page": "12",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0031.g1.png",
+      "bbox": [
+        433,
+        162,
+        553,
+        673
+      ],
+      "caption": "Fig. 8. Arc of circle AMB as the locus of points on one side of AB subtending a given angle, with tangent AT (§ 11, Locus 7).",
+      "white_point": 238,
+      "svg_file": "0031.g1.svg",
+      "article": "11.7",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "A": {
+            "x": 76.6,
+            "y": 423.85,
+            "label": "A",
+            "label_x": 64,
+            "label_y": 443
+          },
+          "B": {
+            "x": 447.02,
+            "y": 421.04,
+            "label": "B",
+            "label_x": 459,
+            "label_y": 442
+          },
+          "M": {
+            "x": 489.3,
+            "y": 184.45,
+            "label": "M",
+            "label_x": 514,
+            "label_y": 181
+          },
+          "M'": {
+            "x": 146.69,
+            "y": 51.4,
+            "label": "M'",
+            "label_x": 132,
+            "label_y": 31,
+            "point_overlay": true
+          },
+          "N": {
+            "x": 235.5,
+            "y": 145.0,
+            "label": "N",
+            "label_x": 265,
+            "label_y": 140,
+            "dot": true
+          },
+          "T": {
+            "x": 263.07,
+            "y": 645.1,
+            "label": "T",
+            "label_x": 285,
+            "label_y": 652
+          }
+        },
+        "elements": [
+          {
+            "id": "cir_AMB",
+            "type": "circle",
+            "cx": 260.62,
+            "cy": 265.66,
+            "r": 242.67,
+            "ref": "( A M B )"
+          },
+          {
+            "id": "arc_AMB",
+            "type": "arc",
+            "cx": 260.62,
+            "cy": 265.66,
+            "r": 242.67,
+            "start_deg": 139.32,
+            "end_deg": 39.81,
+            "ccw": false,
+            "style": "overlay",
+            "ref": "( A M' B )"
+          },
+          {
+            "id": "seg_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "ref": "/ A B /",
+            "aliases": [
+              "[ A B ]"
+            ]
+          },
+          {
+            "id": "seg_AM",
+            "type": "segment",
+            "p1": "A",
+            "p2": "M",
+            "ref": "/ A M /"
+          },
+          {
+            "id": "seg_MB",
+            "type": "segment",
+            "p1": "M",
+            "p2": "B",
+            "ref": "/ M B /"
+          },
+          {
+            "id": "seg_AT",
+            "type": "segment",
+            "p1": "A",
+            "p2": "T",
+            "ref": "/ A T /",
+            "aliases": [
+              "[ A T ]"
+            ]
+          },
+          {
+            "id": "tri_AMB",
+            "type": "polygon",
+            "points": [
+              "A",
+              "M",
+              "B"
+            ],
+            "style": "overlay",
+            "ref": "< A M B >"
+          },
+          {
+            "id": "ang_AMB",
+            "type": "angle",
+            "vertex": "M",
+            "p1": "A",
+            "p2": "B",
+            "radius": 44,
+            "ref": "< A M B )"
+          },
+          {
+            "id": "ang_TAB",
+            "type": "angle",
+            "vertex": "A",
+            "p1": "T",
+            "p2": "B",
+            "radius": 44,
+            "ref": "< T A B )",
+            "aliases": [
+              "< B A T )"
+            ]
+          },
+          {
+            "id": "ang_ANB",
+            "type": "angle",
+            "vertex": "N",
+            "p1": "A",
+            "p2": "B",
+            "radius": 38,
+            "ref": "< A N B )"
+          }
+        ]
+      }
+    }
+  ]
+}

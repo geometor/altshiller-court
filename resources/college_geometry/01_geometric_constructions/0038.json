@@ -1,0 +1,423 @@
+{
+  "folio": "0038",
+  "page": "19",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0038.g1.png",
+      "bbox": [
+        107,
+        458,
+        607,
+        619
+      ],
+      "caption": "Fig. 14. Parallel chords AC, BD through A, B in circle (O) having a given sum 2s (§ 13).",
+      "white_point": 238,
+      "svg_file": "0038.g1.svg",
+      "article": "13",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "O": {
+            "x": 286.0,
+            "y": 312.5,
+            "label": "O",
+            "label_x": 312,
+            "label_y": 312,
+            "dot": true
+          },
+          "A": {
+            "x": 196.66,
+            "y": 58.93,
+            "label": "A",
+            "label_x": 198,
+            "label_y": 35
+          },
+          "C": {
+            "x": 369.95,
+            "y": 58.9,
+            "label": "C",
+            "label_x": 378,
+            "label_y": 32
+          },
+          "B": {
+            "x": 70.86,
+            "y": 467.21,
+            "label": "B",
+            "label_x": 53,
+            "label_y": 480
+          },
+          "D": {
+            "x": 501.74,
+            "y": 464.42,
+            "label": "D",
+            "label_x": 521,
+            "label_y": 478
+          },
+          "E": {
+            "x": 132.84,
+            "y": 266.08,
+            "label": "E",
+            "label_x": 108,
+            "label_y": 268
+          },
+          "F": {
+            "x": 436.44,
+            "y": 263.5,
+            "label": "F",
+            "label_x": 460,
+            "label_y": 267
+          },
+          "F'": {
+            "x": 388.78,
+            "y": 436.0,
+            "label": "F'",
+            "label_x": 361,
+            "label_y": 418,
+            "point_overlay": true
+          },
+          "C'": {
+            "x": 549.63,
+            "y": 311.16,
+            "label": "C'",
+            "label_x": 577,
+            "label_y": 312
+          },
+          "D'": {
+            "x": 217.91,
+            "y": 568.61,
+            "label": "D'",
+            "label_x": 208,
+            "label_y": 594
+          }
+        },
+        "elements": [
+          {
+            "id": "cir_O",
+            "type": "circle",
+            "cx": 285.13,
+            "cy": 311.55,
+            "r": 266.53,
+            "ref": "( O )",
+            "aliases": [
+              "( O A )"
+            ]
+          },
+          {
+            "id": "cir_OE",
+            "type": "circle",
+            "cx": 285.74,
+            "cy": 311.56,
+            "r": 159.54,
+            "ref": "( O E )"
+          },
+          {
+            "id": "arc_Es",
+            "type": "arc",
+            "cx": 132.84,
+            "cy": 266.08,
+            "r": 303.61,
+            "start_deg": -16.24,
+            "end_deg": 49.9,
+            "ccw": false,
+            "ref": "( E F )"
+          },
+          {
+            "id": "seg_AC",
+            "type": "segment",
+            "p1": "A",
+            "p2": "C",
+            "ref": "/ A C /",
+            "aliases": [
+              "[ A C ]"
+            ]
+          },
+          {
+            "id": "seg_BD",
+            "type": "segment",
+            "p1": "B",
+            "p2": "D",
+            "ref": "/ B D /",
+            "aliases": [
+              "[ B D ]"
+            ]
+          },
+          {
+            "id": "seg_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "ref": "/ A B /"
+          },
+          {
+            "id": "seg_CD",
+            "type": "segment",
+            "p1": "C",
+            "p2": "D",
+            "ref": "/ C D /"
+          },
+          {
+            "id": "seg_EF",
+            "type": "segment",
+            "p1": "E",
+            "p2": "F",
+            "ref": "/ E F /"
+          },
+          {
+            "id": "seg_ACp",
+            "type": "segment",
+            "p1": "A",
+            "p2": "C'",
+            "style": "dashed",
+            "ref": "/ A C' /"
+          },
+          {
+            "id": "seg_BDp",
+            "type": "segment",
+            "p1": "B",
+            "p2": "D'",
+            "style": "dashed",
+            "ref": "/ B D' /"
+          },
+          {
+            "id": "seg_CpDp",
+            "type": "segment",
+            "p1": "C'",
+            "p2": "D'",
+            "style": "dashed",
+            "ref": "/ C' D' /"
+          },
+          {
+            "id": "seg_OE",
+            "type": "segment",
+            "p1": "O",
+            "p2": "E",
+            "style": "overlay",
+            "ref": "/ O E /"
+          },
+          {
+            "id": "trap_ABDC",
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "D",
+              "C"
+            ],
+            "style": "overlay",
+            "ref": "< A B D C >"
+          },
+          {
+            "id": "trap_ACpDpB",
+            "type": "polygon",
+            "points": [
+              "A",
+              "C'",
+              "D'",
+              "B"
+            ],
+            "style": "overlay",
+            "ref": "< A C' D' B >"
+          }
+        ]
+      }
+    },
+    {
+      "id": "g2",
+      "type": "diagram",
+      "file": "0038.g2.png",
+      "bbox": [
+        732,
+        543,
+        593,
+        530
+      ],
+      "caption": "Fig. 15. Case where tangent crosses chord AB, yielding difference of bases 2EF (§ 13).",
+      "white_point": 238,
+      "svg_file": "0038.g2.svg",
+      "article": "13",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "O": {
+            "x": 299.0,
+            "y": 267.0,
+            "label": "O",
+            "label_x": 297,
+            "label_y": 297,
+            "dot": true
+          },
+          "C": {
+            "x": 169.9,
+            "y": 58.96,
+            "label": "C",
+            "label_x": 160,
+            "label_y": 39
+          },
+          "A": {
+            "x": 421.71,
+            "y": 57.78,
+            "label": "A",
+            "label_x": 435,
+            "label_y": 39
+          },
+          "B": {
+            "x": 56.3,
+            "y": 243.93,
+            "label": "B",
+            "label_x": 32,
+            "label_y": 248
+          },
+          "D": {
+            "x": 537.12,
+            "y": 240.99,
+            "label": "D",
+            "label_x": 559,
+            "label_y": 246
+          },
+          "E": {
+            "x": 239.21,
+            "y": 151.58,
+            "label": "E",
+            "label_x": 242,
+            "label_y": 181
+          },
+          "F": {
+            "x": 354.62,
+            "y": 151.28,
+            "label": "F",
+            "label_x": 347,
+            "label_y": 181
+          },
+          "G": {
+            "x": 424.0,
+            "y": 265.38,
+            "label": "G",
+            "label_x": 450,
+            "label_y": 270,
+            "dot": true
+          },
+          "EF_L": {
+            "x": 82.26,
+            "y": 152.0,
+            "hidden": true
+          },
+          "EF_R": {
+            "x": 510.67,
+            "y": 150.87,
+            "hidden": true
+          },
+          "G_end": {
+            "x": 424.0,
+            "y": 289.38,
+            "hidden": true
+          }
+        },
+        "elements": [
+          {
+            "id": "cir_O",
+            "type": "circle",
+            "cx": 296.77,
+            "cy": 265.64,
+            "r": 242.75,
+            "ref": "( O )"
+          },
+          {
+            "id": "cir_OE",
+            "type": "circle",
+            "cx": 296.73,
+            "cy": 265.38,
+            "r": 127.27,
+            "ref": "( O E )"
+          },
+          {
+            "id": "seg_CA",
+            "type": "segment",
+            "p1": "C",
+            "p2": "A",
+            "ref": "/ A C /"
+          },
+          {
+            "id": "seg_BD",
+            "type": "segment",
+            "p1": "B",
+            "p2": "D",
+            "ref": "/ B D /"
+          },
+          {
+            "id": "seg_CB",
+            "type": "segment",
+            "p1": "C",
+            "p2": "B",
+            "ref": "/ B C /"
+          },
+          {
+            "id": "seg_AD",
+            "type": "segment",
+            "p1": "A",
+            "p2": "D",
+            "ref": "/ A D /"
+          },
+          {
+            "id": "seg_BA",
+            "type": "segment",
+            "p1": "B",
+            "p2": "A",
+            "ref": "/ A B /"
+          },
+          {
+            "id": "seg_CD",
+            "type": "segment",
+            "p1": "C",
+            "p2": "D",
+            "ref": "/ C D /"
+          },
+          {
+            "id": "line_EF",
+            "type": "segment",
+            "p1": "EF_L",
+            "p2": "EF_R",
+            "style": "dashed"
+          },
+          {
+            "id": "seg_EF",
+            "type": "segment",
+            "p1": "E",
+            "p2": "F",
+            "style": "overlay",
+            "ref": "/ E F /"
+          },
+          {
+            "id": "seg_EG",
+            "type": "segment",
+            "p1": "E",
+            "p2": "G",
+            "style": "overlay",
+            "ref": "/ E G /"
+          },
+          {
+            "id": "seg_AG",
+            "type": "segment",
+            "p1": "A",
+            "p2": "G_end",
+            "style": "dashed",
+            "ref": "/ A G /"
+          },
+          {
+            "id": "trap_BCAD",
+            "type": "polygon",
+            "points": [
+              "B",
+              "C",
+              "A",
+              "D"
+            ],
+            "style": "overlay",
+            "ref": "< B C A D >"
+          }
+        ]
+      }
+    }
+  ]
+}

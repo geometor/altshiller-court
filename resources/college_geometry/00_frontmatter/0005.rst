@@ -1,0 +1,11 @@
+:folio: 0005
+:page: [vi]
+:book: Frontmatter
+:section: 00_frontmatter
+:title: Blank Verso — p. [vi]
+:language: en
+:status: blank
+
+.. note::
+
+   *[Intentionally blank verso — page [vi], following Dedication.]*

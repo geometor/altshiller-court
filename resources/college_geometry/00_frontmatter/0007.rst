@@ -1,0 +1,12 @@
+:folio: 0007
+:page: viii
+:book: Frontmatter
+:section: 00_frontmatter
+:title: Preface (concluded) — p. viii
+:language: en
+:status: ok
+
+The book has been enriched by the addition of numerous exercises of varying degrees of difficulty. A goodly portion of them are noteworthy propositions in their own right, which could, and perhaps should, have their place in the text, space permitting. Those who use the book for reference may be able to draw upon these exercises as a convenient source of instructional material.
+
+| :person:`N. A.-C. <altshiller-court>`
+| *Norman, Oklahoma*

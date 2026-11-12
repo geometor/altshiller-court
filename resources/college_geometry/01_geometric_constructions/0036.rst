@@ -1,0 +1,43 @@
+:folio: 0036
+:page: 17
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Geometric Loci — p. 17 (§§ 11–12, Exercises 1–4)
+:language: en
+:status: ok
+
+and therefore, denoting :g:`AC <0035.g1:/ A C />` + :g:`BC <0035.g1:/ B C />` = :g:`AB <0035.g1:/ A B />` by :math:`a`:
+
+.. math::
+
+   AC - BC = d^2 \div a.
+
+.. assertion::
+
+   This equality gives the difference of the segments :g:`AC <0035.g1:/ A C />` and :g:`BC <0035.g1:/ B C />`, while the sum of these segments is equal to :math:`a`. Thus these segments may be constructed, and the point :g:`C <0035.g1:C>` located on the line :g:`AB <0035.g1:[ A B ]>`. Hence the foot :g:`C <0035.g1:C>` of the perpendicular dropped upon :g:`AB <0035.g1:/ A B />` from any point :g:`M <0035.g1:M>` of the locus is a fixed point of :g:`AB <0035.g1:/ A B />`. Consequently the point :g:`M <0035.g1:M>` lies on the :g:`perpendicular <0035.g1:[ M C ]>` to the line :g:`AB <0035.g1:[ A B ]>` at the point :g:`C <0035.g1:C>`. It is readily shown that, conversely, every point of this :g:`perpendicular <0035.g1:[ M C ]>` belongs to the locus.
+
+*Note.* We will obtain a different line for the locus of :g:`M <0035.g1:M>` if we consider that :math:`BM^2 - AM^2 = d^2`. In fact, the locus actually consists of two straight lines, unless the order in which the two given points are to be considered is specified in the statement of the locus.
+
+EXERCISES
+~~~~~~~~~
+
+1. A variable parallel to the base :math:`BC` of a triangle :math:`ABC` meets :math:`AB, AC` in :math:`D, E`. Show that the locus of the point :math:`M = (BE, CD)` is a straight line.
+2. On the sides :math:`AB, AC` of a triangle :math:`ABC` are laid off two equal segments :math:`AB', AC'` of variable length. The perpendiculars to :math:`AB, AC` at :math:`B', C'` meet in :math:`D`. Show that the locus of the point :math:`D` is a straight line. Find the locus of the projection of :math:`D` upon the line :math:`B'C'`.
+3. Find the locus of a point at which two consecutive segments :math:`AB, BC` of the same straight line subtend equal angles.
+4. The base :math:`BC` of a variable triangle :math:`ABC` is fixed, and the sum :math:`AB + AC` is constant. The line :math:`DP` drawn through the midpoint :math:`D` of :math:`BC` parallel to :math:`AB` meets the parallel :math:`CP` through :math:`C` to the internal bisector of the angle :math:`A`, in :math:`P`. Show that the locus of :math:`P` is a circle having :math:`D` for center.
+
+The following are examples of the use of loci in the solution of problems.
+
+.. enunciation::
+
+   **12. Problem.** *Draw a* :g:`circle <0037.g1:( O )>` *passing through two given* :g:`points <0037.g1:A; 0037.g1:B>` *and subtending a given* :g:`angle <0037.g1:< T C T' )>` *at a third given* :g:`point <0037.g1:C>`\ *.*
+
+ANALYSIS. Let :g:`(O) <0037.g1:( O )>` be the required circle passing through the two given points :g:`A <0037.g1:A>`, :g:`B <0037.g1:B>` (Fig. 13). The :g:`angle <0037.g1:< T C T' )>` formed by the tangents :g:`CT <0037.g1:/ C T />`, :g:`CT' <0037.g1:/ C T' />` from the given point :g:`C <0037.g1:C>` to :g:`(O) <0037.g1:( O )>` is given; hence in the right triangle :g:`OTC <0037.g1:< O T C >>` we know the acute angle :g:`OCT <0037.g1:< O C T )>`, i.e., we know the shape of this triangle. Thus the ratio :g:`OT <0037.g1:/ O T />` :math:`:` :g:`OC <0037.g1:/ O C />` is known, therefore also the ratios:
+
+.. math::
+
+   OA : OC = OB : OC.
+
+.. assertion:: [§ 11, Locus 11]
+
+   Consequently we have two loci for the point :g:`O <0037.g1:O>` (two :term:`Apollonian circles <apollonian-circle>`), and the point may be found.

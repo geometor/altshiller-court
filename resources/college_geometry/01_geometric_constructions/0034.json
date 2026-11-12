@@ -1,0 +1,282 @@
+{
+  "folio": "0034",
+  "page": "15",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0034.g1.png",
+      "bbox": [
+        318,
+        1005,
+        790,
+        485
+      ],
+      "caption": "Fig. 11. Circle of Apollonius: locus of a point M whose distances from fixed points A, B have a constant ratio p : q (§ 11, Locus 11).",
+      "white_point": 238,
+      "svg_file": "0034.g1.svg",
+      "article": "11.11",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "A": {
+            "x": 43.52,
+            "y": 248.52,
+            "label": "A",
+            "label_x": 32,
+            "label_y": 274
+          },
+          "C": {
+            "x": 287.01,
+            "y": 246.61,
+            "label": "C",
+            "label_x": 268,
+            "label_y": 273
+          },
+          "B": {
+            "x": 386.65,
+            "y": 245.83,
+            "label": "B",
+            "label_x": 386,
+            "label_y": 273
+          },
+          "D": {
+            "x": 737.82,
+            "y": 243.09,
+            "label": "D",
+            "label_x": 759,
+            "label_y": 247
+          },
+          "M": {
+            "x": 326.69,
+            "y": 117.57,
+            "label": "M",
+            "label_x": 309,
+            "label_y": 96
+          },
+          "F": {
+            "x": 189.68,
+            "y": 180.93,
+            "label": "F",
+            "label_x": 183,
+            "label_y": 155
+          },
+          "E": {
+            "x": 448.14,
+            "y": 61.4,
+            "label": "E",
+            "label_x": 471,
+            "label_y": 63
+          }
+        },
+        "elements": [
+          {
+            "id": "cir_CD",
+            "type": "circle",
+            "cx": 512.42,
+            "cy": 245.51,
+            "r": 225.41,
+            "ref": "( C D )",
+            "aliases": [
+              "( C M D )"
+            ]
+          },
+          {
+            "id": "seg_AD",
+            "type": "segment",
+            "p1": "A",
+            "p2": "D",
+            "ref": "/ A D /",
+            "aliases": [
+              "[ A B ]"
+            ]
+          },
+          {
+            "id": "seg_AE",
+            "type": "segment",
+            "p1": "A",
+            "p2": "E",
+            "ref": "/ A E /",
+            "aliases": [
+              "[ A M ]"
+            ]
+          },
+          {
+            "id": "seg_MB",
+            "type": "segment",
+            "p1": "M",
+            "p2": "B",
+            "ref": "/ M B /"
+          },
+          {
+            "id": "seg_MD",
+            "type": "segment",
+            "p1": "M",
+            "p2": "D",
+            "ref": "/ M D /",
+            "aliases": [
+              "[ M D ]"
+            ]
+          },
+          {
+            "id": "seg_BF",
+            "type": "segment",
+            "p1": "B",
+            "p2": "F",
+            "style": "dashed",
+            "ref": "/ B F /"
+          },
+          {
+            "id": "seg_BE",
+            "type": "segment",
+            "p1": "B",
+            "p2": "E",
+            "style": "dashed",
+            "ref": "/ B E /"
+          },
+          {
+            "id": "seg_MC",
+            "type": "segment",
+            "p1": "M",
+            "p2": "C",
+            "style": "overlay",
+            "ref": "/ M C /",
+            "aliases": [
+              "[ M C ]"
+            ]
+          },
+          {
+            "id": "seg_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "style": "overlay",
+            "ref": "/ A B /"
+          },
+          {
+            "id": "seg_AC",
+            "type": "segment",
+            "p1": "A",
+            "p2": "C",
+            "style": "overlay",
+            "ref": "/ A C /"
+          },
+          {
+            "id": "seg_CB",
+            "type": "segment",
+            "p1": "C",
+            "p2": "B",
+            "style": "overlay",
+            "ref": "/ C B /"
+          },
+          {
+            "id": "seg_DB",
+            "type": "segment",
+            "p1": "D",
+            "p2": "B",
+            "style": "overlay",
+            "ref": "/ D B /",
+            "aliases": [
+              "/ B D /"
+            ]
+          },
+          {
+            "id": "seg_CD",
+            "type": "segment",
+            "p1": "C",
+            "p2": "D",
+            "style": "overlay",
+            "ref": "/ C D /"
+          },
+          {
+            "id": "seg_AM",
+            "type": "segment",
+            "p1": "A",
+            "p2": "M",
+            "style": "overlay",
+            "ref": "/ A M /",
+            "aliases": [
+              "/ M A /"
+            ]
+          },
+          {
+            "id": "seg_ME",
+            "type": "segment",
+            "p1": "M",
+            "p2": "E",
+            "style": "overlay",
+            "ref": "/ M E /"
+          },
+          {
+            "id": "seg_MF",
+            "type": "segment",
+            "p1": "M",
+            "p2": "F",
+            "style": "overlay",
+            "ref": "/ M F /",
+            "aliases": [
+              "/ F M /"
+            ]
+          },
+          {
+            "id": "seg_EF",
+            "type": "segment",
+            "p1": "E",
+            "p2": "F",
+            "style": "overlay",
+            "ref": "/ E F /"
+          },
+          {
+            "id": "tri_ABM",
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "M"
+            ],
+            "style": "overlay",
+            "ref": "< A B M >"
+          },
+          {
+            "id": "tri_EBF",
+            "type": "polygon",
+            "points": [
+              "E",
+              "B",
+              "F"
+            ],
+            "style": "overlay",
+            "ref": "< E B F >"
+          },
+          {
+            "id": "ang_AMB",
+            "type": "angle",
+            "vertex": "M",
+            "p1": "A",
+            "p2": "B",
+            "radius": 38,
+            "ref": "< A M B )"
+          },
+          {
+            "id": "ang_CMD",
+            "type": "angle",
+            "vertex": "M",
+            "p1": "C",
+            "p2": "D",
+            "radius": 34,
+            "ref": "< C M D )"
+          },
+          {
+            "id": "ang_EBF",
+            "type": "angle",
+            "vertex": "B",
+            "p1": "E",
+            "p2": "F",
+            "radius": 42,
+            "ref": "< E B F )"
+          }
+        ]
+      }
+    }
+  ]
+}

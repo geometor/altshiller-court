@@ -1,0 +1,35 @@
+:folio: 0024
+:page: 5
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: General Method of Solution — p. 5 (§ 6, Fig. 2)
+:language: en
+:status: ok
+
+ANALYSIS. Let the required secant :g:`MBA <0024.g1:[ M B A ]>` (Fig. 2) through the given point :g:`M <0024.g1:M>` cut the given circle, center :g:`O <0024.g1:O>`, in :g:`A <0024.g1:A>` and :g:`B <0024.g1:B>`. The two triangles :g:`AOB <0024.g1:< A O B >>`, :g:`AOM <0024.g1:< A O M >>` have the angle :g:`A <0024.g1:< O A B )>` in common and, by assumption, angle :g:`AOB <0024.g1:< A O B )>` :eq:`= <0024.g1:< A O B ) = 0024.g1:< O M A )>` angle :g:`M <0024.g1:< O M A )>`; hence the two triangles are equiangular. But the triangle :g:`AOB <0024.g1:< A O B >>` is :eq:`isosceles <0024.g1:/ O A / = 0024.g1:/ O B />`; hence the triangle :g:`AOM <0024.g1:< A O M >>` is also isosceles, and :eq:`MA = MO <0024.g1:/ M A / = 0024.g1:/ M O />`. Now the length :g:`MO <0024.g1:/ M O />` is known; hence the distance :g:`MA <0024.g1:/ M A />` of the point :g:`A <0024.g1:A>` from :g:`M <0024.g1:M>` is known, so that the point :g:`A <0024.g1:A>` may be constructed, and the secant :g:`MA <0024.g1:[ M A ]>` may be drawn.
+
+CONSTRUCTION. Draw the circle :g:`(M, MO) <0024.g1:( M O )>`. If :g:`A <0024.g1:A>` is a point common to the two circles, the line :g:`MA <0024.g1:[ M A ]>` satisfies the conditions of the problem.
+
+PROOF. Let the line :g:`MA <0024.g1:[ M A ]>` meet the given circle again in :g:`B <0024.g1:B>`. The triangles :g:`AOB <0024.g1:< A O B >>`, :g:`AOM <0024.g1:< A O M >>` are isosceles, for :eq:`OA = OB <0024.g1:/ O A / = 0024.g1:/ O B />`, :eq:`MA = MO <0024.g1:/ M A / = 0024.g1:/ M O />`, as radii of the same circle, and the angle :g:`A <0024.g1:< O A B )>` is a common base angle in the two triangles;
+
+.. assertion::
+
+   hence the angles :g:`AOB <0024.g1:< A O B )>` and :g:`M <0024.g1:< O M A )>` opposite the respective bases :g:`AB <0024.g1:/ A B />` and :g:`AO <0024.g1:/ A O />` in the two triangles are :eq:`equal <0024.g1:< A O B ) = 0024.g1:< O M A )>`. Thus :g:`MA <0024.g1:[ M A ]>` is the required line.
+
+.. picture:: 0024.g1.svg
+   :alt: Fig. 2 — Secant MBA from exterior point M to circle (O) with MA = MO
+   :caption: FIG. 2
+
+DISCUSSION. We can always draw the circle :g:`(M, MO) <0024.g1:( M O )>` which will cut the given circle in two points :g:`A <0024.g1:A>` and :g:`A' <0024.g1:Aprime>`; hence the problem always has two solutions, symmetrical with respect to the line :g:`MO <0024.g1:/ M O />`.
+
+Could the line :g:`MBA <0024.g1:[ M B A ]>` be drawn so that the angle :g:`AOB <0024.g1:< A O B )>` would be equal to the *obtuse* angle between :g:`MBA <0024.g1:[ M B A ]>` and :g:`MO <0024.g1:/ M O />`? If that were possible, we would have:
+
+.. math::
+
+   \angle AOB + \angle OMA = 180^\circ;
+
+hence:
+
+.. math::
+
+   \angle OMA = \angle OAB + \angle OBA.

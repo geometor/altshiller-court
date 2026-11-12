@@ -1,0 +1,27 @@
+Folio 0009 (Page [x]) — Diplomatic & Mathematical Notes
+=======================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0008 (Page ix, Acknowledgments)
+- **Current Folio** (``0009.rst``): Page ``[x]``, Frontmatter [``00_frontmatter``] — Status: ``blank``
+- **Following Folio**: Folio 0010 (Page xi, Contents)
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: Intentionally blank verso (printed page ``[x]``) preceding ``CONTENTS``.
+- **Document Headings on Folio**: None
+- **Line-Break Hyphenations Resolved**: None
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+Ensures ``CONTENTS`` begins on recto page ``xi``.
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``00_frontmatter/0009.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``blank`` (visually verified against raster scan)

@@ -1,0 +1,158 @@
+{
+  "folio": "0033",
+  "page": "14",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0033.g1.png",
+      "bbox": [
+        406,
+        488,
+        612,
+        386
+      ],
+      "caption": "Fig. 10. Locus of a point M the sum of the squares of whose distances from A and B is constant (§ 11, Locus 10).",
+      "white_point": 238,
+      "svg_file": "0033.g1.svg",
+      "article": "11.10",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "A": {
+            "x": 36.32,
+            "y": 340.0,
+            "label": "A",
+            "label_x": 33,
+            "label_y": 368
+          },
+          "D": {
+            "x": 178.31,
+            "y": 340.0,
+            "label": "D",
+            "label_x": 177,
+            "label_y": 368
+          },
+          "O": {
+            "x": 320.68,
+            "y": 340.0,
+            "label": "O",
+            "label_x": 323,
+            "label_y": 368
+          },
+          "B": {
+            "x": 578.04,
+            "y": 340.0,
+            "label": "B",
+            "label_x": 580,
+            "label_y": 368
+          },
+          "M": {
+            "x": 178.09,
+            "y": 53.72,
+            "label": "M",
+            "label_x": 180,
+            "label_y": 29
+          }
+        },
+        "elements": [
+          {
+            "id": "seg_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "ref": "/ A B /"
+          },
+          {
+            "id": "seg_AM",
+            "type": "segment",
+            "p1": "A",
+            "p2": "M",
+            "ref": "/ A M /"
+          },
+          {
+            "id": "seg_BM",
+            "type": "segment",
+            "p1": "B",
+            "p2": "M",
+            "ref": "/ B M /"
+          },
+          {
+            "id": "seg_MD",
+            "type": "segment",
+            "p1": "M",
+            "p2": "D",
+            "ref": "/ M D /"
+          },
+          {
+            "id": "seg_MO",
+            "type": "segment",
+            "p1": "M",
+            "p2": "O",
+            "ref": "/ O M /",
+            "aliases": [
+              "/ M O /"
+            ]
+          },
+          {
+            "id": "seg_OA",
+            "type": "segment",
+            "p1": "O",
+            "p2": "A",
+            "style": "overlay",
+            "ref": "/ O A /"
+          },
+          {
+            "id": "seg_OB",
+            "type": "segment",
+            "p1": "O",
+            "p2": "B",
+            "style": "overlay",
+            "ref": "/ O B /"
+          },
+          {
+            "id": "seg_OD",
+            "type": "segment",
+            "p1": "O",
+            "p2": "D",
+            "style": "overlay",
+            "ref": "/ O D /"
+          },
+          {
+            "id": "tri_AOM",
+            "type": "polygon",
+            "points": [
+              "A",
+              "O",
+              "M"
+            ],
+            "style": "overlay",
+            "ref": "< A O M >"
+          },
+          {
+            "id": "tri_BOM",
+            "type": "polygon",
+            "points": [
+              "B",
+              "O",
+              "M"
+            ],
+            "style": "overlay",
+            "ref": "< B O M >"
+          },
+          {
+            "id": "tri_ABM",
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "M"
+            ],
+            "style": "overlay",
+            "ref": "< A B M >"
+          }
+        ]
+      }
+    }
+  ]
+}

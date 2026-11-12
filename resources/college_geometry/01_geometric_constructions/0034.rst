@@ -1,0 +1,45 @@
+:folio: 0034
+:page: 15
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Geometric Loci — p. 15 (§ 11, Loci 10–11, Fig. 11)
+:language: en
+:status: ok
+
+length of the given segment :g:`AB <0033.g1:/ A B />`, and for hypotenuse the side of a square whose diagonal is equal to :math:`s`.
+
+.. enunciation::
+
+   LOCUS 11. *The locus of a point the ratio of whose distances from two fixed points is constant, is a circle, called the circle of* :person:`Apollonius <apollonius>`, *or the* :term:`Apollonian circle <apollonian-circle>`.
+
+Let :g:`A <0034.g1:A>`, :g:`B <0034.g1:B>` be the two given points (Fig. 11) and :math:`p : q` the given ratio. Let the points :g:`C <0034.g1:C>`, :g:`D <0034.g1:D>` divide the segment :g:`AB <0034.g1:/ A B />` internally and externally in the given ratio, and let :g:`M <0034.g1:M>` be any point of the locus. We have thus:
+
+.. math::
+
+   AC : CB = AD : DB = AM : MB = p : q.
+
+.. assertion:: [§ 11, Locus 7]
+
+   The lines :g:`MC <0034.g1:/ M C />`, :g:`MD <0034.g1:/ M D />` divide the side :g:`AB <0034.g1:/ A B />` of the triangle :g:`ABM <0034.g1:< A B M >>` internally and externally in the ratio of the sides :g:`MA <0034.g1:/ M A />`, :g:`MB <0034.g1:/ M B />`; hence :g:`MC <0034.g1:/ M C />`, :g:`MD <0034.g1:/ M D />` are the internal and external bisectors of the angle :g:`AMB <0034.g1:< A M B )>`, and therefore are perpendicular to each other. Thus at any point :g:`M <0034.g1:M>` of the required locus the known segment :g:`CD <0034.g1:/ C D />` subtends a :g:`right angle <0034.g1:< C M D )>`; hence :g:`M <0034.g1:M>` lies on the :g:`circle <0034.g1:( C D )>` having :g:`CD <0034.g1:/ C D />` for diameter (§ 11, locus 7).
+
+.. picture:: 0034.g1.svg
+   :alt: Fig. 11 — Apollonian circle on diameter CD dividing AB internally and externally in ratio p : q
+   :caption: FIG. 11
+
+CONVERSELY. Let us take any point :g:`M <0034.g1:M>` on this :g:`circle <0034.g1:( C D )>` and show that this point belongs to the required locus. Through the point :g:`B <0034.g1:B>` draw the parallels :g:`BE <0034.g1:/ B E />`, :g:`BF <0034.g1:/ B F />` to the lines :g:`MC <0034.g1:/ M C />`, :g:`MD <0034.g1:/ M D />` meeting :g:`AM <0034.g1:[ A M ]>` in :g:`E <0034.g1:E>`, :g:`F <0034.g1:F>`, respectively. We thus have:
+
+.. math::
+
+   (1) \qquad AM : ME = AC : CB, \qquad AM : FM = AD : BD.
+
+But the second ratios in these proportions are equal, by construction, hence:
+
+.. math::
+
+   AM : ME = AM : FM;
+
+therefore:
+
+.. math::
+
+   ME = MF.

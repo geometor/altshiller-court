@@ -1,0 +1,271 @@
+{
+  "folio": "0040",
+  "page": "21",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0040.g1.png",
+      "bbox": [
+        247,
+        1400,
+        923,
+        330
+      ],
+      "caption": "Fig. 17. Construction of triangle ABC given perimeter 2p, vertical angle A, and altitude h_a via indirect triangle AEF (§ 15).",
+      "white_point": 238,
+      "svg_file": "0040.g1.svg",
+      "article": "15",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "A": {
+            "x": 324.44,
+            "y": 54.05,
+            "label": "A",
+            "label_x": 320,
+            "label_y": 30
+          },
+          "E": {
+            "x": 45.31,
+            "y": 283.33,
+            "label": "E",
+            "label_x": 33,
+            "label_y": 308
+          },
+          "B": {
+            "x": 277.25,
+            "y": 282.65,
+            "label": "B",
+            "label_x": 274,
+            "label_y": 308
+          },
+          "D": {
+            "x": 324.36,
+            "y": 282.51,
+            "label": "D",
+            "label_x": 324,
+            "label_y": 308
+          },
+          "C": {
+            "x": 555.22,
+            "y": 281.83,
+            "label": "C",
+            "label_x": 557,
+            "label_y": 308
+          },
+          "F": {
+            "x": 887.69,
+            "y": 280.84,
+            "label": "F",
+            "label_x": 888,
+            "label_y": 308
+          }
+        },
+        "elements": [
+          {
+            "id": "seg_EB",
+            "type": "segment",
+            "p1": "E",
+            "p2": "B",
+            "ticks": 1,
+            "tick_pos": 0.51,
+            "ref": "/ B E /"
+          },
+          {
+            "id": "seg_BC",
+            "type": "segment",
+            "p1": "B",
+            "p2": "C",
+            "ref": "/ B C /",
+            "aliases": [
+              "[ B C ]"
+            ]
+          },
+          {
+            "id": "seg_CF",
+            "type": "segment",
+            "p1": "C",
+            "p2": "F",
+            "ticks": 2,
+            "tick_pos": 0.37,
+            "ref": "/ C F /"
+          },
+          {
+            "id": "seg_AE",
+            "type": "segment",
+            "p1": "A",
+            "p2": "E",
+            "ref": "/ A E /"
+          },
+          {
+            "id": "seg_AF",
+            "type": "segment",
+            "p1": "A",
+            "p2": "F",
+            "ref": "/ A F /"
+          },
+          {
+            "id": "seg_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "ticks": 1,
+            "tick_pos": 0.58,
+            "ref": "/ B A /"
+          },
+          {
+            "id": "seg_AC",
+            "type": "segment",
+            "p1": "A",
+            "p2": "C",
+            "ticks": 2,
+            "tick_pos": 0.56,
+            "ref": "/ C A /"
+          },
+          {
+            "id": "seg_AD",
+            "type": "segment",
+            "p1": "A",
+            "p2": "D",
+            "style": "thin",
+            "ref": "/ A D /"
+          },
+          {
+            "id": "seg_EF",
+            "type": "segment",
+            "p1": "E",
+            "p2": "F",
+            "style": "overlay",
+            "ref": "/ E F /"
+          },
+          {
+            "id": "tri_ABC",
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ],
+            "style": "overlay",
+            "ref": "< A B C >"
+          },
+          {
+            "id": "tri_AEF",
+            "type": "polygon",
+            "points": [
+              "A",
+              "E",
+              "F"
+            ],
+            "style": "overlay",
+            "ref": "< A E F >"
+          },
+          {
+            "id": "tri_EAB",
+            "type": "polygon",
+            "points": [
+              "E",
+              "A",
+              "B"
+            ],
+            "style": "overlay",
+            "ref": "< E A B >"
+          },
+          {
+            "id": "tri_FCA",
+            "type": "polygon",
+            "points": [
+              "F",
+              "C",
+              "A"
+            ],
+            "style": "overlay",
+            "ref": "< F C A >"
+          },
+          {
+            "id": "ang_E",
+            "type": "angle",
+            "vertex": "E",
+            "p1": "A",
+            "p2": "B",
+            "radius": 52,
+            "ref": "< A E B )",
+            "aliases": [
+              "< E )"
+            ]
+          },
+          {
+            "id": "ang_EAB",
+            "type": "angle",
+            "vertex": "A",
+            "p1": "E",
+            "p2": "B",
+            "radius": 48,
+            "ref": "< E A B )"
+          },
+          {
+            "id": "ang_ABC",
+            "type": "angle",
+            "vertex": "B",
+            "p1": "A",
+            "p2": "C",
+            "radius": 38,
+            "ref": "< A B C )"
+          },
+          {
+            "id": "ang_F",
+            "type": "angle",
+            "vertex": "F",
+            "p1": "A",
+            "p2": "C",
+            "radius": 68,
+            "ref": "< A F C )",
+            "aliases": [
+              "< F )"
+            ]
+          },
+          {
+            "id": "ang_FAC",
+            "type": "angle",
+            "vertex": "A",
+            "p1": "F",
+            "p2": "C",
+            "radius": 56,
+            "ref": "< F A C )"
+          },
+          {
+            "id": "ang_ACB",
+            "type": "angle",
+            "vertex": "C",
+            "p1": "A",
+            "p2": "B",
+            "radius": 40,
+            "ref": "< A C B )"
+          },
+          {
+            "id": "ang_EAF",
+            "type": "angle",
+            "vertex": "A",
+            "p1": "E",
+            "p2": "F",
+            "radius": 38,
+            "ref": "< E A F )"
+          },
+          {
+            "id": "ang_BAC",
+            "type": "angle",
+            "vertex": "A",
+            "p1": "B",
+            "p2": "C",
+            "radius": 44,
+            "ref": "< B A C )",
+            "aliases": [
+              "< A )"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+:folio: 0016
+:page: xvii
+:book: Frontmatter
+:section: 00_frontmatter
+:title: To the Student — p. xvii
+:language: en
+:status: ok
+
+TO THE STUDENT
+==============
+
+*The text.* Novices to the art of mathematical demonstrations may, and sometimes do, form the opinion that memory plays no role in mathematics. They assume that mathematical results are obtained by reasoning, and that they always may be restored by an appropriate argument. Obviously, such an opinion is superficial. A mathematical proof of a proposition is an attempt to show that this new proposition is a consequence of definitions and theorems already accepted as valid. If the reasoner does not have the appropriate propositions available in his mind, the task before him is well-nigh hopeless, if not outright impossible.
+
+The student who embarks upon the study of college geometry should have accessible a book on high-school geometry, preferably his own text of those happy high-school days. Whenever a statement in *College Geometry* refers, explicitly or implicitly, to a proposition in the elementary text, the student will do well to locate that proposition and enter the precise reference in a notebook kept for the purpose, or in the margin of his college book. It would be of value to mark references to *College Geometry* on the margin of the corresponding propositions of the high-school book.
+
+The cross references in this book are to the preceding parts of the text. Thus art. 189 harks back to art. 73. When reading art. 189, it may be worth while to make a record of this fact in connection with art. 73. Such a system of “forward” references may be a valuable help in reviewing the course and may facilitate the assimilation of the contents of the book.
+
+*Figures.* The student will do well to cultivate the habit of drawing his own figures while reading the book, and to draw a separate figure for each proposition. A rough free-hand sketch is sufficient in most cases. Where a more complex figure is required, the corresponding figure in the book may be consulted as a guide to the disposition of the various parts and elements. Such practices help to fix the propositions in the reader's mind.

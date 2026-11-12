@@ -1,0 +1,18 @@
+:folio: 0008
+:page: ix
+:book: Frontmatter
+:section: 00_frontmatter
+:title: Acknowledgments — p. ix
+:language: en
+:status: ok
+
+ACKNOWLEDGMENTS
+===============
+
+It is with distinct pleasure that I acknowledge my indebtedness to my friends :person:`Dr. J. H. Butchart <butchart>`, Professor of Mathematics, Arizona State College, and :person:`Dr. L. Wayne Johnson <johnson-wayne>`, Professor and Head of the Department of Mathematics, Oklahoma A. and M. College. They read the manuscript with great care and contributed many important suggestions and excellent additions. I am deeply grateful for their valuable help.
+
+I wish also to thank :person:`Dr. Butchart <butchart>` and my colleague :person:`Dr. Arthur Bernhart <bernhart>` for their assistance in the taxing work of reading the proofs.
+
+Finally, I wish to express my appreciation to the Editorial Department of Barnes and Noble, Inc., for the manner, both painstaking and generous, in which the manuscript was treated and for the inexhaustible patience exhibited while the book was going through the press.
+
+| :person:`N. A.-C. <altshiller-court>`

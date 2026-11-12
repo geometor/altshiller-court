@@ -1,0 +1,214 @@
+{
+  "folio": "0024",
+  "page": "5",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0024.g1.png",
+      "bbox": [
+        407,
+        1018,
+        608,
+        488
+      ],
+      "caption": "Fig. 2. Secant MBA from external point M cutting circle (O) so that central angle AOB equals angle M (§ 6).",
+      "white_point": 238,
+      "svg_file": "0024.g1.svg",
+      "article": "6",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "O": {
+            "x": 216.94,
+            "y": 249.86,
+            "label": "O",
+            "label_x": 190,
+            "label_y": 252
+          },
+          "M": {
+            "x": 545.28,
+            "y": 249.49,
+            "label": "M",
+            "label_x": 571,
+            "label_y": 250
+          },
+          "A": {
+            "x": 273.81,
+            "y": 60.23,
+            "label": "A",
+            "label_x": 278,
+            "label_y": 32
+          },
+          "B": {
+            "x": 376.19,
+            "y": 131.61,
+            "label": "B",
+            "label_x": 396,
+            "label_y": 110
+          },
+          "A'": {
+            "x": 274.24,
+            "y": 439.36,
+            "label": "A'",
+            "label_x": 276,
+            "label_y": 467
+          }
+        },
+        "elements": [
+          {
+            "id": "cir_O",
+            "type": "circle",
+            "cx": 216.94,
+            "cy": 250.91,
+            "r": 198.98,
+            "ref": "( O A )",
+            "aliases": [
+              "( O B )",
+              "( O )"
+            ]
+          },
+          {
+            "id": "arc_M",
+            "type": "arc",
+            "cx": 545.28,
+            "cy": 249.49,
+            "r": 328.34,
+            "start_deg": -145.12,
+            "end_deg": 144.99,
+            "ccw": true,
+            "style": "dashed",
+            "ref": "( M O )",
+            "aliases": [
+              "( M A )"
+            ]
+          },
+          {
+            "id": "seg_OM",
+            "type": "segment",
+            "p1": "O",
+            "p2": "M",
+            "ref": "/ M O /"
+          },
+          {
+            "id": "seg_MA",
+            "type": "segment",
+            "p1": "M",
+            "p2": "A",
+            "ref": "/ M A /",
+            "aliases": [
+              "[ M B A ]",
+              "[ M A ]"
+            ]
+          },
+          {
+            "id": "seg_OA",
+            "type": "segment",
+            "p1": "O",
+            "p2": "A",
+            "ref": "/ O A /"
+          },
+          {
+            "id": "seg_OB",
+            "type": "segment",
+            "p1": "O",
+            "p2": "B",
+            "ref": "/ O B /"
+          },
+          {
+            "id": "seg_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "style": "overlay",
+            "ref": "/ A B /"
+          },
+          {
+            "id": "seg_MB",
+            "type": "segment",
+            "p1": "M",
+            "p2": "B",
+            "style": "overlay",
+            "ref": "/ M B /"
+          },
+          {
+            "id": "tri_AOB",
+            "type": "polygon",
+            "points": [
+              "A",
+              "O",
+              "B"
+            ],
+            "style": "overlay",
+            "ref": "< A O B >"
+          },
+          {
+            "id": "tri_AOM",
+            "type": "polygon",
+            "points": [
+              "A",
+              "O",
+              "M"
+            ],
+            "style": "overlay",
+            "ref": "< A O M >"
+          },
+          {
+            "id": "tri_OBM",
+            "type": "polygon",
+            "points": [
+              "O",
+              "B",
+              "M"
+            ],
+            "style": "overlay",
+            "ref": "< O B M >"
+          },
+          {
+            "id": "ang_AOB",
+            "type": "angle",
+            "vertex": "O",
+            "p1": "A",
+            "p2": "B",
+            "radius": 38,
+            "ref": "< A O B )"
+          },
+          {
+            "id": "ang_OMA",
+            "type": "angle",
+            "vertex": "M",
+            "p1": "O",
+            "p2": "A",
+            "radius": 48,
+            "ref": "< O M A )",
+            "aliases": [
+              "< B M O )",
+              "< M )"
+            ]
+          },
+          {
+            "id": "ang_OAB",
+            "type": "angle",
+            "vertex": "A",
+            "p1": "O",
+            "p2": "B",
+            "radius": 36,
+            "ref": "< O A B )",
+            "aliases": [
+              "< O A M )"
+            ]
+          },
+          {
+            "id": "ang_OBA",
+            "type": "angle",
+            "vertex": "B",
+            "p1": "O",
+            "p2": "A",
+            "radius": 34,
+            "ref": "< O B A )"
+          }
+        ]
+      }
+    }
+  ]
+}

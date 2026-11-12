@@ -1,0 +1,27 @@
+Folio 0017 (Page xviii) — Diplomatic & Mathematical Notes
+=========================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0016 (Page xvii, To the Student)
+- **Current Folio** (``0017.rst``): Page ``xviii``, Frontmatter [``00_frontmatter``] — Status: ``ok``
+- **Following Folio**: Folio 0018 (Page xix, To the Student concluded: 'it does, as it often may...')
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: Second page of ``TO THE STUDENT`` (printed page ``xviii``, running header ``TO THE STUDENT``), introducing ``The Exercises.`` and counseling verbal/written restatement, inventorying given vs. sought elements, and drawing diagnostic figures. Ends mid-sentence (``If``) across the page turn.
+- **Document Headings on Folio**: None
+- **Line-Break Hyphenations Resolved**: ``mathe-matics``, ``oppor-tunity``, ``experi-ence``, ``prob-lems``, ``surpris-ing``, ``solu-tion``
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+Compare George Pólya's *How to Solve It* (1945): Stage I (*Understanding the Problem*: What is the unknown? What are the data? What is the condition? Draw a figure).
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``00_frontmatter/0017.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan)

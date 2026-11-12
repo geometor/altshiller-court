@@ -1,0 +1,27 @@
+Folio 0019 (Page [xx]) — Diplomatic & Mathematical Notes
+========================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0018 (Page xix, To the Student)
+- **Current Folio** (``0019.rst``): Page ``[xx]``, Frontmatter [``00_frontmatter``] — Status: ``blank``
+- **Following Folio**: Folio 0020 (Page 1, Chapter 1: Geometric Constructions, §§ 1–2)
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: Intentionally blank verso (printed page ``[xx]``) facing Chapter 1 opening recto (page ``1``).
+- **Document Headings on Folio**: None
+- **Line-Break Hyphenations Resolved**: None
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+Marks the boundary between Roman-numeral frontmatter (``0001``–``0019``) and Arabic body pagination (``0020`` = page ``1``).
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``00_frontmatter/0019.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``blank`` (visually verified against raster scan)

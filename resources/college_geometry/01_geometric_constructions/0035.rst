@@ -1,0 +1,53 @@
+:folio: 0035
+:page: 16
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Geometric Loci — p. 16 (§ 11, Loci 11–12, Fig. 12)
+:language: en
+:status: ok
+
+Thus :g:`M <0034.g1:M>` is the :eq:`midpoint <0034.g1:/ M E / = 0034.g1:/ M F />` of the segment :g:`EF <0034.g1:/ E F />`. But :g:`EBF <0034.g1:< E B F )>` is a right angle, for its sides are parallel to the sides of the right angle :g:`CMD <0034.g1:< C M D )>`, and in the right triangle :g:`EBF <0034.g1:< E B F >>` the line :g:`MB <0034.g1:/ M B />` is :eq:`equal <0034.g1:/ M B / = 0034.g1:/ M E / = 0034.g1:/ M F />` to half the hypotenuse :g:`EF <0034.g1:/ E F />`; hence, replacing in the first proportion of (1) the segment :g:`ME <0034.g1:/ M E />` by the :eq:`equal <0034.g1:/ M E / = 0034.g1:/ M B />` segment :g:`MB <0034.g1:/ M B />`, we obtain:
+
+.. math::
+
+   AM : MB = AC : CB = p : q,
+
+which shows that :g:`M <0034.g1:M>` belongs to the locus.
+
+Where, in this converse proof, has the fact been used that :g:`M <0034.g1:M>` is a point of the :g:`circle <0034.g1:( C D )>`?
+
+*Note.* The point :g:`C <0034.g1:C>` divides the segment :g:`AB <0034.g1:/ A B />` internally so that :math:`AC : CB = p : q`. But we may also construct the point :math:`C'` such that :math:`BC' : C'A = p : q`. Similarly for the external point of division. Thus the locus actually consists of two :term:`Apollonian circles <apollonian-circle>`, unless the order in which the two given points are to be taken is specified in the statement of the locus. In actual applications the nature of the problem often indicates the order in which the points are to be considered.
+
+.. picture:: 0035.g1.svg
+   :alt: Fig. 12 — Perpendicular MC to line AB for Locus 12 (constant difference of squares AM^2 - BM^2 = d^2)
+   :caption: FIG. 12
+
+.. enunciation::
+
+   LOCUS 12. *The locus of a point the difference of the squares of whose distances from two given points is constant, is a straight line perpendicular to the line joining the given points.*
+
+Let :g:`A <0035.g1:A>`, :g:`B <0035.g1:B>` (Fig. 12) be the two given points, and let :g:`M <0035.g1:M>` be a point such that:
+
+.. math::
+
+   AM^2 - BM^2 = d^2,
+
+where :math:`d` is given.
+
+If :g:`MC <0035.g1:/ M C />` is the perpendicular from :g:`M <0035.g1:M>` to :g:`AB <0035.g1:/ A B />`, we have from :g:`right triangles <0035.g1:< A C M >; 0035.g1:< B C M >>`:
+
+.. math::
+
+   AM^2 - AC^2 = MC^2 = MB^2 - BC^2;
+
+hence:
+
+.. math::
+
+   AM^2 - MB^2 = AC^2 - BC^2 = d^2,
+
+or:
+
+.. math::
+
+   (AC - BC)(AC + BC) = d^2,

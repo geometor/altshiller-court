@@ -1,0 +1,27 @@
+Folio 0011 (Page xii) — Diplomatic & Mathematical Notes
+=======================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0010 (Page xi, Contents)
+- **Current Folio** (``0011.rst``): Page ``xii``, Frontmatter [``00_frontmatter``] — Status: ``ok``
+- **Following Folio**: Folio 0012 (Page xiii, Contents continued)
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: Second page of ``CONTENTS`` (printed page ``xii``, running header ``CONTENTS``), covering Chapter 3 sections C–G, Chapter 4 (*The Quadrilateral*), and Chapter 5 (*The Simson Line*).
+- **Document Headings on Folio**: None
+- **Line-Break Hyphenations Resolved**: None
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+Chapter 3 (*Properties of the Triangle*, pp. 53–123) is the largest single chapter in the book.
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``00_frontmatter/0011.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan)

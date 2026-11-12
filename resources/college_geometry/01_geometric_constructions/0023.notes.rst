@@ -1,0 +1,32 @@
+Folio 0023 (Page 4) — Diplomatic & Mathematical Notes
+=====================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0022 (Page 3, §§ 4–5)
+- **Current Folio** (``0023.rst``): Page ``4``, Chapter I [``01_geometric_constructions``] — Status: ``ok``
+- **Following Folio**: Folio 0024 (Page 5, Fig. 2 and solution of § 6)
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: Page ``4`` (running header ``4 / GEOMETRIC CONSTRUCTIONS / [Ch. I, §§ 5, 6``), presenting ``FIG. 1`` (``0023.g1.png``), the four-part solution of § 5, and the italicized enunciation of § 6 (*Problem*).
+- **Document Headings on Folio**: ``6. Problem.``
+- **Line-Break Hyphenations Resolved**: None
+
+Calibrated Diagrams on Folio
+----------------------------
+
+- ``0023.g1.png`` (bbox ``[383, 162, 664, 611]``, white-point ``238``): Fig. 1. Secant CA'B' through C meeting parallel lines x, y so that AA' : BB' = p : q (§ 5).
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+In § 5, :math:`O` and :math:`O'` are harmonic conjugates with respect to :math:`A` and :math:`B` (anticipating Chapter II, § 59). When :math:`p = q`, the internal division point :math:`O'` is the midpoint of :math:`AB`, while the external division point :math:`O` recedes to infinity along :math:`AB`, so the second solution becomes the line through :math:`C` parallel to :math:`AB`!
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``01_geometric_constructions/0023.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan)

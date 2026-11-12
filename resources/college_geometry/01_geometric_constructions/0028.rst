@@ -1,0 +1,27 @@
+:folio: 0028
+:page: 9
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: General Method of Solution — p. 9 (§§ 9–10, Fig. 7)
+:language: en
+:status: ok
+
+.. picture:: 0028.g1.svg
+   :alt: Fig. 7 — Six-solution configuration of squares passing through four given points A, B, C, D
+   :caption: FIG. 7
+
+PROOF. From the construction it follows immediately that :g:`PQRS <0027.g1:< P Q R S >>` is a rectangle whose sides pass respectively through the given points :g:`A <0027.g1:A>`, :g:`B <0027.g1:B>`, :g:`C <0027.g1:C>`, :g:`D <0027.g1:D>`.
+
+.. assertion::
+
+   To show that this rectangle is a square we consider again the triangles :g:`PQL <0027.g1:< P Q L >>`, :g:`QRK <0027.g1:< Q R K >>`, and, as in the analysis, we show that they are equiangular. Now :eq:`DF = AC <0027.g1:/ D F / = 0027.g1:/ A C />`, by construction; hence :eq:`QL = QK <0027.g1:/ Q L / = 0027.g1:/ Q K />`; therefore the triangles are :eq:`congruent <0027.g1:< P Q L > = 0027.g1:< Q R K >>`, and :eq:`QP = QR <0027.g1:/ Q P / = 0027.g1:/ Q R />`.
+
+DISCUSSION. We obtain a :g:`second solution <0027.g1:< P2 Q2 R2 S2 >>` if we make the symmetric :g:`F' <0027.g1:Fprime>` of :g:`F <0027.g1:F>` with respect to :g:`D <0027.g1:D>` play the role of the point :g:`F <0027.g1:F>`.
+
+Moreover, the perpendicular from :g:`D <0028.g1:D>` may also be dropped upon either of the other two sides :g:`AB <0028.g1:/ A B />`, :g:`BC <0028.g1:/ B C />` of the triangle :g:`ABC <0028.g1:< A B C >>`, and we will obtain two more pairs of solutions. The problem thus has, in general, six different solutions. It is, of course, immaterial to which of the :g:`four given points <0028.g1:A; 0028.g1:B; 0028.g1:C; 0028.g1:D>` we assign the role of the point :g:`D <0028.g1:D>`.
+
+Should the point :g:`F <0027.g1:F>` happen to coincide with :g:`B <0027.g1:B>`, the direction of the line :g:`BF <0027.g1:/ B F />` becomes indeterminate, that is, any line through :g:`B <0027.g1:B>` may be taken as a side of the required square, and the figure completed accordingly. Thus if the segment joining two of the four given points is equal to and perpendicular to the segment joining the remaining two points, the problem has an infinite number of solutions.
+
+Figure 7 presents the case when the problem has :g:`six solutions <0028.g1:< P Q R S >; 0028.g1:< S2_1 S2_2 S2_3 S2_4 >; 0028.g1:< S3_1 S3_2 S3_3 S3_4 >; 0028.g1:< S4_1 S4_2 S4_3 S4_4 >; 0028.g1:< S5_1 S5_2 S5_3 S5_4 >; 0028.g1:< S6_1 S6_2 S6_3 S6_4 >>`.
+
+**10. Suggestions.** The figure for the analysis may be drawn freehand and the given elements arranged as conveniently as possible to give a correct idea of the problem and to exhibit the existing interrelations between the elements involved.

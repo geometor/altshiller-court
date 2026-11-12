@@ -1,0 +1,602 @@
+{
+  "college_geometry:0001": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0001.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0002": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0002.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0003": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0003.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0004": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0004.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0005": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Blank verso ([vi]) verified against 300 DPI scan.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0006": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0006.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0007": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0007.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0008": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0008.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0009": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Blank verso ([x]) verified against 300 DPI scan.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0010": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0010.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0011": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0011.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0012": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0012.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0013": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0013.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0014": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0014.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0015": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Blank verso ([xvi]) verified against 300 DPI scan.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0016": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0016.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0017": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0017.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0018": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0018.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0019": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Blank verso ([xx]) verified against 300 DPI scan.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0020": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0020.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0021": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0021.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0022": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0022.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0023": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, notes, and 1 diagram crop(s) visually verified against 0023.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0024": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, notes, and 1 diagram crop(s) visually verified against 0024.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0025": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, notes, and 1 diagram crop(s) visually verified against 0025.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0026": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, notes, and 2 diagram crop(s) visually verified against 0026.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0027": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, notes, and 1 diagram crop(s) visually verified against 0027.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0028": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, notes, and 1 diagram crop(s) visually verified against 0028.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0029": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0029.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0030": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0030.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0031": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, notes, and 1 diagram crop(s) visually verified against 0031.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0032": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, notes, and 1 diagram crop(s) visually verified against 0032.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0033": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, notes, and 1 diagram crop(s) visually verified against 0033.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0034": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, notes, and 1 diagram crop(s) visually verified against 0034.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0035": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, notes, and 1 diagram crop(s) visually verified against 0035.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0036": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, and notes visually verified against 0036.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0037": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, notes, and 1 diagram crop(s) visually verified against 0037.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0038": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, notes, and 2 diagram crop(s) visually verified against 0038.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0039": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, notes, and 1 diagram crop(s) visually verified against 0039.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  },
+  "college_geometry:0040": {
+    "status": "verified",
+    "reviewer": "phi",
+    "updated_at": "2026-11-11T12:00:00+00:00",
+    "notes": "Gold-standard diplomatic transcription, LaTeX math, notes, and 1 diagram crop(s) visually verified against 0040.png.",
+    "checklist": {
+      "scan_quality": true,
+      "transcription": true,
+      "transcription_verified": true,
+      "math_verified": true,
+      "notes_verified": true,
+      "graphics_verified": true,
+      "formatting": true
+    }
+  }
+}

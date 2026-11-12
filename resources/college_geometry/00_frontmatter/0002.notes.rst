@@ -1,0 +1,27 @@
+Folio 0002 (Page [iii]) — Diplomatic & Mathematical Notes
+=========================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0001 (Front Cover)
+- **Current Folio** (``0002.rst``): Page ``[iii]``, Frontmatter [``00_frontmatter``] — Status: ``ok``
+- **Following Folio**: Folio 0003 (Page [iv], Copyright & Bibliographical Note)
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: Unnumbered recto title page (printed page ``[iii]``) of the Dover 2007 unabridged republication of the 1952 Second Edition.
+- **Document Headings on Folio**: ``College Geometry``, ``An Introduction to the Modern Geometry of the Triangle and the Circle``
+- **Line-Break Hyphenations Resolved**: None
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+Notice the shift in subtitle from the 1925 first edition (*A Second Course in Plane Geometry for Colleges and Normal Schools*, :cite:`1st ed., 1925 <court:1925>`) to the 1952 second edition (*An Introduction to the Modern Geometry of the Triangle and the Circle*, :cite:`2nd ed., 1952 <court:1952>`).
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``00_frontmatter/0002.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan)

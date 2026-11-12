@@ -1,0 +1,582 @@
+{
+  "folio": "0028",
+  "page": "9",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0028.g1.png",
+      "bbox": [
+        327,
+        160,
+        774,
+        596
+      ],
+      "caption": "Fig. 7. General configuration of six squares whose sides pass through four given points A, B, C, D (§ 9).",
+      "white_point": 238,
+      "svg_file": "0028.g1.svg",
+      "article": "9",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "P": {
+            "x": 55.44,
+            "y": 133.53,
+            "label": "P",
+            "label_x": 37,
+            "label_y": 135
+          },
+          "S": {
+            "x": 382.4,
+            "y": 137.39,
+            "label": "S",
+            "label_x": 403,
+            "label_y": 141
+          },
+          "R": {
+            "x": 379.29,
+            "y": 472.15,
+            "label": "R",
+            "label_x": 381,
+            "label_y": 496
+          },
+          "Q": {
+            "x": 54.04,
+            "y": 469.59,
+            "label": "Q",
+            "label_x": 33,
+            "label_y": 474
+          },
+          "A": {
+            "x": 53.8,
+            "y": 525.78,
+            "label": "A",
+            "label_x": 34,
+            "label_y": 533
+          },
+          "B": {
+            "x": 719.69,
+            "y": 474.84,
+            "label": "B",
+            "label_x": 741,
+            "label_y": 479
+          },
+          "C": {
+            "x": 380.97,
+            "y": 389.98,
+            "label": "C",
+            "label_x": 408,
+            "label_y": 398
+          },
+          "D": {
+            "x": 246.0,
+            "y": 135.78,
+            "label": "D",
+            "label_x": 245,
+            "label_y": 114
+          },
+          "S2_1": {
+            "x": 275.47,
+            "y": 123.61,
+            "hidden": true
+          },
+          "S2_2": {
+            "x": 536.62,
+            "y": 17.28,
+            "hidden": true
+          },
+          "S2_3": {
+            "x": 643.21,
+            "y": 283.7,
+            "hidden": true
+          },
+          "S2_4": {
+            "x": 380.97,
+            "y": 389.98,
+            "hidden": true
+          },
+          "S3_1": {
+            "x": 329.93,
+            "y": 120.66,
+            "hidden": true
+          },
+          "S3_2": {
+            "x": 642.97,
+            "y": 62.36,
+            "hidden": true
+          },
+          "S3_3": {
+            "x": 705.72,
+            "y": 401.0,
+            "hidden": true
+          },
+          "S3_4": {
+            "x": 393.59,
+            "y": 460.74,
+            "hidden": true
+          },
+          "S4_1": {
+            "x": 347.66,
+            "y": 250.27,
+            "hidden": true
+          },
+          "S4_2": {
+            "x": 439.05,
+            "y": 165.54,
+            "hidden": true
+          },
+          "S4_3": {
+            "x": 521.81,
+            "y": 257.54,
+            "hidden": true
+          },
+          "S4_4": {
+            "x": 431.47,
+            "y": 343.64,
+            "hidden": true
+          },
+          "S5_1": {
+            "x": 199.8,
+            "y": 376.29,
+            "hidden": true
+          },
+          "S5_2": {
+            "x": 376.01,
+            "y": 409.91,
+            "hidden": true
+          },
+          "S5_3": {
+            "x": 342.57,
+            "y": 581.72,
+            "hidden": true
+          },
+          "S5_4": {
+            "x": 167.72,
+            "y": 547.27,
+            "hidden": true
+          },
+          "S6_1": {
+            "x": 152.97,
+            "y": 255.76,
+            "hidden": true
+          },
+          "S6_2": {
+            "x": 193.85,
+            "y": 271.59,
+            "hidden": true
+          },
+          "S6_3": {
+            "x": 178.2,
+            "y": 311.5,
+            "hidden": true
+          },
+          "S6_4": {
+            "x": 137.84,
+            "y": 296.54,
+            "hidden": true
+          }
+        },
+        "elements": [
+          {
+            "id": "sq1_PS",
+            "type": "segment",
+            "p1": "P",
+            "p2": "S",
+            "ref": "/ S P /"
+          },
+          {
+            "id": "sq1_SR",
+            "type": "segment",
+            "p1": "S",
+            "p2": "R",
+            "ref": "/ R S /"
+          },
+          {
+            "id": "sq1_RQ",
+            "type": "segment",
+            "p1": "R",
+            "p2": "Q",
+            "ref": "/ Q R /"
+          },
+          {
+            "id": "sq1_QP",
+            "type": "segment",
+            "p1": "Q",
+            "p2": "P",
+            "ref": "/ P Q /",
+            "aliases": [
+              "/ Q P /"
+            ]
+          },
+          {
+            "id": "poly_PQRS",
+            "type": "polygon",
+            "points": [
+              "P",
+              "Q",
+              "R",
+              "S"
+            ],
+            "style": "overlay",
+            "ref": "< P Q R S >"
+          },
+          {
+            "id": "sq2_1",
+            "type": "segment",
+            "p1": "S2_1",
+            "p2": "S2_2"
+          },
+          {
+            "id": "sq2_2",
+            "type": "segment",
+            "p1": "S2_2",
+            "p2": "S2_3"
+          },
+          {
+            "id": "sq2_3",
+            "type": "segment",
+            "p1": "S2_3",
+            "p2": "S2_4"
+          },
+          {
+            "id": "sq2_4",
+            "type": "segment",
+            "p1": "S2_4",
+            "p2": "S2_1"
+          },
+          {
+            "id": "poly_sq2",
+            "type": "polygon",
+            "points": [
+              "S2_1",
+              "S2_2",
+              "S2_3",
+              "S2_4"
+            ],
+            "style": "overlay",
+            "ref": "< S2_1 S2_2 S2_3 S2_4 >"
+          },
+          {
+            "id": "sq3_1",
+            "type": "segment",
+            "p1": "S3_1",
+            "p2": "S3_2"
+          },
+          {
+            "id": "sq3_2",
+            "type": "segment",
+            "p1": "S3_2",
+            "p2": "S3_3"
+          },
+          {
+            "id": "sq3_3",
+            "type": "segment",
+            "p1": "S3_3",
+            "p2": "S3_4"
+          },
+          {
+            "id": "sq3_4",
+            "type": "segment",
+            "p1": "S3_4",
+            "p2": "S3_1"
+          },
+          {
+            "id": "poly_sq3",
+            "type": "polygon",
+            "points": [
+              "S3_1",
+              "S3_2",
+              "S3_3",
+              "S3_4"
+            ],
+            "style": "overlay",
+            "ref": "< S3_1 S3_2 S3_3 S3_4 >"
+          },
+          {
+            "id": "sq4_1",
+            "type": "segment",
+            "p1": "S4_1",
+            "p2": "S4_2"
+          },
+          {
+            "id": "sq4_2",
+            "type": "segment",
+            "p1": "S4_2",
+            "p2": "S4_3"
+          },
+          {
+            "id": "sq4_3",
+            "type": "segment",
+            "p1": "S4_3",
+            "p2": "S4_4"
+          },
+          {
+            "id": "sq4_4",
+            "type": "segment",
+            "p1": "S4_4",
+            "p2": "S4_1"
+          },
+          {
+            "id": "poly_sq4",
+            "type": "polygon",
+            "points": [
+              "S4_1",
+              "S4_2",
+              "S4_3",
+              "S4_4"
+            ],
+            "style": "overlay",
+            "ref": "< S4_1 S4_2 S4_3 S4_4 >"
+          },
+          {
+            "id": "sq5_1",
+            "type": "segment",
+            "p1": "S5_1",
+            "p2": "S5_2"
+          },
+          {
+            "id": "sq5_2",
+            "type": "segment",
+            "p1": "S5_2",
+            "p2": "S5_3"
+          },
+          {
+            "id": "sq5_3",
+            "type": "segment",
+            "p1": "S5_3",
+            "p2": "S5_4"
+          },
+          {
+            "id": "sq5_4",
+            "type": "segment",
+            "p1": "S5_4",
+            "p2": "S5_1"
+          },
+          {
+            "id": "poly_sq5",
+            "type": "polygon",
+            "points": [
+              "S5_1",
+              "S5_2",
+              "S5_3",
+              "S5_4"
+            ],
+            "style": "overlay",
+            "ref": "< S5_1 S5_2 S5_3 S5_4 >"
+          },
+          {
+            "id": "sq6_1",
+            "type": "segment",
+            "p1": "S6_1",
+            "p2": "S6_2"
+          },
+          {
+            "id": "sq6_2",
+            "type": "segment",
+            "p1": "S6_2",
+            "p2": "S6_3"
+          },
+          {
+            "id": "sq6_3",
+            "type": "segment",
+            "p1": "S6_3",
+            "p2": "S6_4"
+          },
+          {
+            "id": "sq6_4",
+            "type": "segment",
+            "p1": "S6_4",
+            "p2": "S6_1"
+          },
+          {
+            "id": "poly_sq6",
+            "type": "polygon",
+            "points": [
+              "S6_1",
+              "S6_2",
+              "S6_3",
+              "S6_4"
+            ],
+            "style": "overlay",
+            "ref": "< S6_1 S6_2 S6_3 S6_4 >"
+          },
+          {
+            "id": "ext_Q_A",
+            "type": "segment",
+            "p1": "Q",
+            "p2": "A",
+            "style": "dashed"
+          },
+          {
+            "id": "ext_R_B",
+            "type": "segment",
+            "p1": "R",
+            "p2": "B",
+            "style": "dashed"
+          },
+          {
+            "id": "ext_s2_D",
+            "type": "segment",
+            "p1": "S2_1",
+            "p2": "D",
+            "style": "dashed"
+          },
+          {
+            "id": "ext_s2_B",
+            "type": "segment",
+            "p1": "S2_3",
+            "p2": "B",
+            "style": "dashed"
+          },
+          {
+            "id": "ext_s2_A",
+            "type": "segment",
+            "p1": "C",
+            "p2": "A",
+            "style": "dashed"
+          },
+          {
+            "id": "ext_s3_D",
+            "type": "segment",
+            "p1": "S3_1",
+            "p2": "D",
+            "style": "dashed"
+          },
+          {
+            "id": "ext_s3_B",
+            "type": "segment",
+            "p1": "S3_3",
+            "p2": "B",
+            "style": "dashed"
+          },
+          {
+            "id": "ext_s3_A",
+            "type": "segment",
+            "p1": "S3_4",
+            "p2": "A",
+            "style": "dashed"
+          },
+          {
+            "id": "ext_s4_A",
+            "type": "segment",
+            "p1": "S4_1",
+            "p2": "A",
+            "style": "dashed"
+          },
+          {
+            "id": "ext_s4_D",
+            "type": "segment",
+            "p1": "S4_1",
+            "p2": "D",
+            "style": "dashed"
+          },
+          {
+            "id": "ext_s4_B",
+            "type": "segment",
+            "p1": "S4_3",
+            "p2": "B",
+            "style": "dashed"
+          },
+          {
+            "id": "ext_s4_C",
+            "type": "segment",
+            "p1": "S4_4",
+            "p2": "C",
+            "style": "dashed"
+          },
+          {
+            "id": "ext_s5_D",
+            "type": "segment",
+            "p1": "S5_1",
+            "p2": "D",
+            "style": "dashed"
+          },
+          {
+            "id": "ext_s5_B",
+            "type": "segment",
+            "p1": "S5_2",
+            "p2": "B",
+            "style": "dashed"
+          },
+          {
+            "id": "ext_s5_C",
+            "type": "segment",
+            "p1": "S5_2",
+            "p2": "C",
+            "style": "dashed"
+          },
+          {
+            "id": "ext_s5_A",
+            "type": "segment",
+            "p1": "S5_4",
+            "p2": "A",
+            "style": "dashed"
+          },
+          {
+            "id": "ext_s6_A",
+            "type": "segment",
+            "p1": "S6_4",
+            "p2": "A",
+            "style": "dashed"
+          },
+          {
+            "id": "ext_s6_B",
+            "type": "segment",
+            "p1": "S6_2",
+            "p2": "B",
+            "style": "dashed"
+          },
+          {
+            "id": "ext_s6_C",
+            "type": "segment",
+            "p1": "S6_3",
+            "p2": "C",
+            "style": "dashed"
+          },
+          {
+            "id": "ext_s6_D",
+            "type": "segment",
+            "p1": "S6_2",
+            "p2": "D",
+            "style": "dashed"
+          },
+          {
+            "id": "seg_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "style": "overlay",
+            "ref": "/ A B /"
+          },
+          {
+            "id": "seg_BC",
+            "type": "segment",
+            "p1": "B",
+            "p2": "C",
+            "style": "overlay",
+            "ref": "/ B C /"
+          },
+          {
+            "id": "seg_AC",
+            "type": "segment",
+            "p1": "A",
+            "p2": "C",
+            "style": "overlay",
+            "ref": "/ A C /"
+          },
+          {
+            "id": "tri_ABC",
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ],
+            "style": "overlay",
+            "ref": "< A B C >"
+          }
+        ]
+      }
+    }
+  ]
+}

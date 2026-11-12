@@ -1,0 +1,27 @@
+Folio 0022 (Page 3) — Diplomatic & Mathematical Notes
+=====================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0021 (Page 2, §§ 2–3)
+- **Current Folio** (``0022.rst``): Page ``3``, Chapter I [``01_geometric_constructions``] — Status: ``ok``
+- **Following Folio**: Folio 0023 (Page 4, Fig. 1, solution of § 5, and statement of § 6)
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: Page ``3`` (running header ``Ch. I, §§ 4, 5] / GENERAL METHOD OF SOLUTION / 3``), opening Section B with § 4 (*Analytic Method* — defining Analysis, Construction, Proof, Discussion) and stating § 5 (*Problem*).
+- **Document Headings on Folio**: ``B. GENERAL METHOD OF SOLUTION OF CONSTRUCTION PROBLEMS``, ``4. Analytic Method.``, ``5. Problem.``
+- **Line-Break Hyphenations Resolved**: ``applica-tions``, ``follow-ing``, ``approxi-mately``, ``con-struction``, ``re-quirements``, ``possi-bility``
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+Altshiller-Court's four-part schema in § 4 restates for modern collegiate instruction the classical Greek method of *analysis* and *synthesis* preserved by :person:`Pappus of Alexandria <pappus>` in :cite:`Collection, Book VII <pappus:collection:VII>` (with *Discussion* corresponding to Greek *diorismos*, and the opening example invoking :cite:`Euclid I.1 <euclid:elements>`).
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``01_geometric_constructions/0022.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan)
