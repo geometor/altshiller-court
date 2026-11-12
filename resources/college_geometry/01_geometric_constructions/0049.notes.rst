@@ -1,0 +1,27 @@
+Folio 0049 (Page 30) — Diplomatic & Mathematical Notes
+======================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0048 (Page 29, Supplementary 12–16, Review Exercises: Constructions 1–13)
+- **Current Folio** (``0049.rst``): Page ``30``, Chapter I [``01_geometric_constructions``] — Status: ``ok``
+- **Following Folio**: Folio 0050 (Page 31, Review Exercises: Propositions 33–47)
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: Page ``30`` (running header ``30 / GEOMETRIC CONSTRUCTIONS / [Ch. I``), completing ``CONSTRUCTIONS`` (items 14–27) and opening ``PROPOSITIONS`` (items 28–32, including the displayed area proportion :math:`\text{area } XYZ : \text{area } ABC = 2 : 1` in item 30).
+- **Document Headings on Folio**: ``PROPOSITIONS``
+- **Line-Break Hyphenations Resolved**: none across line wraps requiring de-hyphenation.
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+Item 17 (:math:`a - b, h_b + h_c, A`) pairs the *datum* :math:`\{b + c, h_b + h_c, A\}` of § 21 (yielding :math:`b + c`) with :math:`a - b` to give :math:`a + c = (a - b) + (b + c)`, reducing the triangle to two linear conditions and an angle. In ``PROPOSITIONS``, item 29 states van Schooten's theorem (Ptolemy's theorem applied to an equilateral triangle inscribed in a circle: :math:`PA + PB = PC` when :math:`P` lies on minor arc :math:`AB`), and item 30 establishes the area doubling of the parallel-cevian reflection/Steiner-type triangle :math:`XYZ`.
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``01_geometric_constructions/0049.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan)

@@ -1,0 +1,319 @@
+{
+  "folio": "0045",
+  "page": "26",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0045.g1.png",
+      "bbox": [
+        490,
+        162,
+        428,
+        520
+      ],
+      "caption": "Fig. 21. Construction of triangle ABC given base a, opposite angle A, and sum of altitudes h_b + h_c via right triangle BGH (§ 20).",
+      "white_point": 238,
+      "svg_file": "0045.g1.svg",
+      "article": "20",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "H": {
+            "x": 289.18,
+            "y": 50.69,
+            "label": "H",
+            "label_x": 286,
+            "label_y": 25
+          },
+          "I": {
+            "x": 338.24,
+            "y": 98.97,
+            "label": "I",
+            "label_x": 348,
+            "label_y": 70
+          },
+          "G": {
+            "x": 379.36,
+            "y": 140.77,
+            "label": "G",
+            "label_x": 398,
+            "label_y": 123
+          },
+          "Gext": {
+            "x": 396.0,
+            "y": 157.65,
+            "hidden": true
+          },
+          "A": {
+            "x": 153.01,
+            "y": 287.03,
+            "label": "A",
+            "label_x": 132,
+            "label_y": 280
+          },
+          "E": {
+            "x": 197.21,
+            "y": 323.49,
+            "label": "E",
+            "label_x": 233,
+            "label_y": 322
+          },
+          "F": {
+            "x": 116.35,
+            "y": 350.66,
+            "label": "F",
+            "label_x": 92,
+            "label_y": 341
+          },
+          "B": {
+            "x": 42.64,
+            "y": 478.59,
+            "label": "B",
+            "label_x": 31,
+            "label_y": 500
+          },
+          "C": {
+            "x": 388.46,
+            "y": 478.45,
+            "label": "C",
+            "label_x": 398,
+            "label_y": 501
+          }
+        },
+        "elements": [
+          {
+            "id": "seg_BH",
+            "type": "segment",
+            "p1": "B",
+            "p2": "H",
+            "ref": "/ B H /",
+            "aliases": [
+              "[ B A ]"
+            ]
+          },
+          {
+            "id": "seg_BC",
+            "type": "segment",
+            "p1": "B",
+            "p2": "C",
+            "ref": "/ B C /"
+          },
+          {
+            "id": "seg_HC",
+            "type": "segment",
+            "p1": "H",
+            "p2": "C",
+            "ref": "/ H C /",
+            "aliases": [
+              "[ H C ]",
+              "/ C H /"
+            ]
+          },
+          {
+            "id": "seg_BG",
+            "type": "segment",
+            "p1": "B",
+            "p2": "G",
+            "ref": "/ B G /"
+          },
+          {
+            "id": "line_HG",
+            "type": "line",
+            "p1": "H",
+            "p2": "Gext",
+            "ref": "[ H G ]",
+            "aliases": [
+              "[ G H ]",
+              "/ H G /",
+              "/ G H /"
+            ]
+          },
+          {
+            "id": "seg_AI",
+            "type": "segment",
+            "p1": "A",
+            "p2": "I",
+            "ref": "/ A I /"
+          },
+          {
+            "id": "seg_AC",
+            "type": "segment",
+            "p1": "A",
+            "p2": "C",
+            "ref": "/ A C /"
+          },
+          {
+            "id": "seg_CF",
+            "type": "segment",
+            "p1": "C",
+            "p2": "F",
+            "ref": "/ C F /"
+          },
+          {
+            "id": "seg_BE",
+            "type": "segment",
+            "p1": "B",
+            "p2": "E",
+            "style": "overlay",
+            "ref": "/ B E /"
+          },
+          {
+            "id": "seg_EG",
+            "type": "segment",
+            "p1": "E",
+            "p2": "G",
+            "style": "overlay",
+            "ref": "/ E G /"
+          },
+          {
+            "id": "seg_BA",
+            "type": "segment",
+            "p1": "B",
+            "p2": "A",
+            "style": "overlay",
+            "ref": "/ B A /"
+          },
+          {
+            "id": "seg_AH",
+            "type": "segment",
+            "p1": "A",
+            "p2": "H",
+            "style": "overlay",
+            "ref": "/ A H /"
+          },
+          {
+            "id": "tri_ABC",
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ],
+            "style": "overlay",
+            "ref": "< A B C >"
+          },
+          {
+            "id": "tri_BGH",
+            "type": "polygon",
+            "points": [
+              "B",
+              "G",
+              "H"
+            ],
+            "style": "overlay",
+            "ref": "< B G H >"
+          },
+          {
+            "id": "tri_ACF",
+            "type": "polygon",
+            "points": [
+              "A",
+              "C",
+              "F"
+            ],
+            "style": "overlay",
+            "ref": "< A C F >"
+          },
+          {
+            "id": "tri_AHI",
+            "type": "polygon",
+            "points": [
+              "A",
+              "H",
+              "I"
+            ],
+            "style": "overlay",
+            "ref": "< A H I >"
+          },
+          {
+            "id": "tri_AHC",
+            "type": "polygon",
+            "points": [
+              "A",
+              "H",
+              "C"
+            ],
+            "style": "overlay",
+            "ref": "< A H C >"
+          },
+          {
+            "id": "quad_AIGE",
+            "type": "polygon",
+            "points": [
+              "A",
+              "I",
+              "G",
+              "E"
+            ],
+            "style": "overlay",
+            "ref": "< A I G E >"
+          },
+          {
+            "id": "ang_BHG",
+            "type": "angle",
+            "vertex": "H",
+            "p1": "B",
+            "p2": "G",
+            "radius": 44,
+            "ref": "< B H G )",
+            "aliases": [
+              "< A H G )",
+              "< A H I )",
+              "< H )"
+            ]
+          },
+          {
+            "id": "ang_BAC",
+            "type": "angle",
+            "vertex": "A",
+            "p1": "B",
+            "p2": "C",
+            "radius": 40,
+            "ref": "< B A C )",
+            "aliases": [
+              "< C A F )",
+              "< A )"
+            ]
+          },
+          {
+            "id": "ang_BGH",
+            "type": "angle",
+            "vertex": "G",
+            "p1": "B",
+            "p2": "H",
+            "radius": 32,
+            "ref": "< B G H )"
+          },
+          {
+            "id": "ang_BEA",
+            "type": "angle",
+            "vertex": "E",
+            "p1": "B",
+            "p2": "A",
+            "radius": 28,
+            "ref": "< B E A )"
+          },
+          {
+            "id": "ang_AHC",
+            "type": "angle",
+            "vertex": "H",
+            "p1": "A",
+            "p2": "C",
+            "radius": 58,
+            "ref": "< A H C )"
+          },
+          {
+            "id": "ang_ACH",
+            "type": "angle",
+            "vertex": "C",
+            "p1": "A",
+            "p2": "H",
+            "radius": 58,
+            "ref": "< A C H )"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+:folio: 0042
+:page: 23
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Indirect Elements — p. 23 (§§ 17–18)
+:language: en
+:status: ok
+
+:eq:`D = ACD <0041.g1:< A D C ) = 0041.g1:< A C D )>` :math:`= \tfrac{1}{2}`\ :g:`BAC <0041.g1:< B A C )>`. Thus in the triangle :g:`BCD <0041.g1:< B C D >>` we know the base :g:`BC <0041.g1:/ B C />` :math:`= a`, the side :g:`BD <0041.g1:/ B D />` :math:`= b + c`, and the angle :g:`D <0041.g1:< A D C )>` :math:`= \tfrac{1}{2}\,A`; hence this triangle may be constructed. The vertices :g:`B <0041.g1:B>`, :g:`C <0041.g1:C>` belong also to the required triangle, and the third vertex :g:`A <0041.g1:A>` is the intersection of :g:`BD <0041.g1:/ B D />` with the :term:`mediator` of the segment :g:`CD <0041.g1:/ C D />`.
+
+.. assertion:: [Discussion]
+
+   :term:`DISCUSSION. <discussion-step>` The problem is not possible, unless :math:`a < (b + c)`. Assuming that this condition is satisfied, we have given in the auxiliary triangle :g:`BCD <0041.g1:< B C D >>` the :g:`angle <0041.g1:< A D C )>` opposite the smaller side; hence we may have two such triangles, one, or none. From each auxiliary triangle we obtain one and only one required :g:`triangle <0041.g1:< A B C >>`; hence the problem may have two, one, or no solutions.
+
+*Note.* In the auxiliary triangle :g:`BCD <0041.g1:< B C D >>` we have:
+
+.. math::
+
+   \angle D = \tfrac{1}{2}\,\angle A, \qquad B = B,
+
+and:
+
+.. math::
+
+   \begin{aligned}
+   \angle BCD &= \angle BCA + \angle ACD = C + \tfrac{1}{2}\,A \\
+              &= \tfrac{1}{2}\,C + \tfrac{1}{2}\,C + \tfrac{1}{2}\,A + \tfrac{1}{2}\,B - \tfrac{1}{2}\,B \\
+              &= \tfrac{1}{2}(A + B + C) - \tfrac{1}{2}(B - C) = 90^\circ - \tfrac{1}{2}(B - C).
+   \end{aligned}
+
+In the triangle :g:`BCD <0041.g1:< B C D >>` the altitude to :g:`BD <0041.g1:/ B D />` is the altitude :math:`h_c` of :g:`ABC <0041.g1:< A B C >>`.
+
+Instead of producing the side :g:`AB <0041.g1:/ B A />`, it is in some cases preferable to produce the side :g:`AC <0041.g1:/ A C />`.
+
+These relations afford a ready solution of the following problems.
+
+Other problems involving the sum of two sides of a triangle will be considered later (§§ 157–173).
+
+EXERCISES
+~~~~~~~~~
+
+Construct a triangle, given:
+
+1. :math:`b + c, a, B` (or :math:`C`).
+2. :math:`b + c, B, h_c`.
+3. :math:`b + c, C, a`.
+4. :math:`b + c, A, B`.
+5. :math:`b + c, a, h_b` (or :math:`h_c`).
+6. :math:`b + c, a, B - C`.
+7. :math:`b + c, h_c, B - C`.
+8. :math:`b + c, h_b, B - C`.
+9. :math:`b, c, B - C`. *Hint.* Construct :math:`b + c`. In the triangle :math:`BCD` we have the vertices :math:`B, D`, and a :term:`locus <geometric-locus>` for :math:`C`. Lay off :math:`BA = c`. The point :math:`C` lies also on the circle :math:`(A, b)`.
+
+.. enunciation::
+
+   **18. Problem.** *Construct a* :g:`triangle <0043.g1:< A B C >>` *given the* :g:`base <0043.g1:/ B C />`\ *, the* :g:`opposite angle <0043.g1:< B A C )>`\ *, and the* :g:`difference of the other two sides <0043.g1:/ D C />` :math:`(a, A, b - c)`.
+
+Let :g:`ABC <0043.g1:< A B C >>` (Fig. 19) be the required triangle. On :g:`AC <0043.g1:/ A C />` lay off :eq:`AD = AB <0043.g1:/ A D / = 0043.g1:/ A B />`, so that :g:`CD <0043.g1:/ C D />` :math:`= b - c`. In the isosceles triangle :g:`ADB <0043.g1:< A B D >>`
+
+.. math::
+
+   \angle ADB = \angle ABD = \tfrac{1}{2}(180^\circ - A) = 90^\circ - \tfrac{1}{2}\,A;

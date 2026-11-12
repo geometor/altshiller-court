@@ -100,42 +100,47 @@ uv run --no-sync python -m geometor.altshiller_court verify-svg --overlays scrat
 
 ---
 
-## 3. Interactive Text Wiring (`0020.rst`–`0040.rst`)
+## 3. Interactive Text Wiring (`0020.rst`–`0052.rst`)
 
-1. **Inlined Vector Diagrams**: Reference `.svg` in `.. picture:: <NNNN>.<gid>.svg` so `publish build` inlines `<svg class="euclid-graphic">` directly into the Book Codex HTML and `publish folio` displays interactive SVG previews.
-2. **Scoped `:g:` Element References**:
-   - Always include the explicit `<folio>.<gid>:` prefix (e.g., ``:g:`AB <0038.g1:/ A B />```, ``:g:`(O, OE) <0038.g1:( O E )>```) so cross-folio references across page turns and multi-figure chapters resolve unambiguously.
+1. **Inlined Vector Diagrams**: Reference `.svg` in `.. picture:: <NNNN>.<gid>.svg` so `publish build` inlines `<svg class="euclid-graphic">` directly into each leaf item's Book Codex HTML page (and renders inline SVG thumbnails on parent `.. collection::` cards) while `publish folio` displays interactive SVG previews.
+2. **Self-Contained Scoped `:g:` Element References**:
+   - Always include the explicit `<folio>.<gid>:` prefix (e.g., ``:g:`AB <0038.g1:/ A B />```, ``:g:`(O, OE) <0038.g1:( O E )>```) targeting ONLY the SVG(s) belonging to that item/locus page so every leaf item page resolves 100% locally.
    - Multi-element collective phrases use `;` separators while keeping 100% diplomatic verbatim prose: ``:g:`two solutions <0038.g1:< A B D C >; 0038.g1:< A B D' C' >>```.
-   - Subscripts in display text (`P_1`, `P_1'`) are rendered to `<sub>1</sub>` automatically by `g_role`. Keep italic asterisks `*...*` outside `:g:` roles inside italicized enunciations.
+   - Subscripts in display text (`P_1`, `P_1'`, `h_b`, `h_c`) are rendered to `<sub>...</sub>` / `<tspan class="geom-label-sub">` automatically. Keep italic asterisks `*...*` outside `:g:` roles inside italicized enunciations.
 3. **Interactive `:eq:` Equality Assertions**:
    - Wrap verbatim equality statements in `:eq:` (avoiding `<` or `>` in the display text):
      - Segment tick marks: ``:eq:`BE = BA <0040.g1:/ B E / = 0040.g1:/ B A />```
      - Equal angles (green arcs): ``:eq:`LQB = AMB <0039.g1:< L Q B ) = 0039.g1:< A M B )>```
 4. **Semantic Structural Blocks**:
-   - Wrap numbered problem statements (`**1. Problem.**`, `**12. Problem.**`, ...) and `LOCUS 1.`–`LOCUS 12.` statements in `.. enunciation::`.
-   - Wrap key deductive conclusions and `PROOF.` steps in `.. assertion::` (with optional bracketed justification header such as `.. assertion:: [§ 11, Locus 7]`).
+   - Wrap numbered problem statements (`**5. Problem.**`–`**22. Problem.**`) and `LOCUS 1.`–`LOCUS 12.` statements in `.. enunciation::`.
+   - Wrap key deductive conclusions and `PROOF.` / `DISCUSSION.` steps in `.. assertion::` (with optional bracketed justification header such as `.. assertion:: [§ 11, Locus 7]`).
 
 ---
 
-## 4. Chapter I Verification Summary (`FIG. 1`–`FIG. 17`)
+## 4. Chapter I Verification Summary (`FIG. 1`–`FIG. 22`)
 
 | Graphic ID | Caption | Article | Overlap Score | Scan Recall |
 | :--- | :--- | :--- | ---: | ---: |
-| `0023.g1.svg` | `FIG. 1` | `§ 1` | `100.00%` | `99.95%` |
-| `0024.g1.svg` | `FIG. 2` | `§ 3` | `100.00%` | `99.95%` |
-| `0025.g1.svg` | `FIG. 3` | `§ 5` | `100.00%` | `99.91%` |
-| `0026.g1.svg` | `FIG. 4` | `§ 6` | `100.00%` | `99.95%` |
-| `0026.g2.svg` | `FIG. 5` | `§ 7` | `99.98%` | `99.45%` |
-| `0027.g1.svg` | `FIG. 6` | `§ 8` | `100.00%` | `99.83%` |
-| `0028.g1.svg` | `FIG. 7` | `§ 8` | `99.99%` | `99.32%` |
-| `0031.g1.svg` | `FIG. 8` | `§ 11.7` | `100.00%` | `99.93%` |
-| `0032.g1.svg` | `FIG. 9` | `§ 11.8` | `100.00%` | `99.86%` |
-| `0033.g1.svg` | `FIG. 10` | `§ 11.10` | `100.00%` | `99.89%` |
-| `0034.g1.svg` | `FIG. 11` | `§ 11.11` | `100.00%` | `99.88%` |
-| `0035.g1.svg` | `FIG. 12` | `§ 11.12` | `100.00%` | `99.92%` |
-| `0037.g1.svg` | `FIG. 13` | `§ 12` | `100.00%` | `99.89%` |
-| `0038.g1.svg` | `FIG. 14` | `§ 13` | `99.97%` | `99.04%` |
-| `0038.g2.svg` | `FIG. 15` | `§ 13` | `100.00%` | `99.13%` |
-| `0039.g1.svg` | `FIG. 16` | `§ 14` | `100.00%` | `99.64%` |
-| `0040.g1.svg` | `FIG. 17` | `§ 15` | `100.00%` | `99.38%` |
-| **Summary (17/17)** | **Ch. I** | **§§ 1–15** | **Min `99.97%` / Mean `100.00%`** | **Mean `99.70%`** |
+| `0023.g1.svg` | `FIG. 1` | `§ 5` | `100.00%` | `99.76%` |
+| `0024.g1.svg` | `FIG. 2` | `§ 6` | `100.00%` | `99.46%` |
+| `0025.g1.svg` | `FIG. 3` | `§ 7` | `100.00%` | `99.97%` |
+| `0026.g1.svg` | `FIG. 4` | `§ 8` | `100.00%` | `100.00%` |
+| `0026.g2.svg` | `FIG. 5` | `§ 8` | `99.98%` | `98.48%` |
+| `0027.g1.svg` | `FIG. 6` | `§ 9` | `100.00%` | `99.82%` |
+| `0028.g1.svg` | `FIG. 7` | `§ 9` | `99.99%` | `100.00%` |
+| `0031.g1.svg` | `FIG. 8` | `§ 11, Locus 7` | `100.00%` | `99.85%` |
+| `0032.g1.svg` | `FIG. 9` | `§ 11, Locus 8` | `100.00%` | `99.75%` |
+| `0033.g1.svg` | `FIG. 10` | `§ 11, Locus 10` | `100.00%` | `99.86%` |
+| `0034.g1.svg` | `FIG. 11` | `§ 11, Locus 11` | `100.00%` | `99.98%` |
+| `0035.g1.svg` | `FIG. 12` | `§ 11, Locus 12` | `100.00%` | `100.00%` |
+| `0037.g1.svg` | `FIG. 13` | `§ 12` | `100.00%` | `99.75%` |
+| `0038.g1.svg` | `FIG. 14` | `§ 13` | `99.97%` | `99.66%` |
+| `0038.g2.svg` | `FIG. 15` | `§ 13` | `100.00%` | `99.76%` |
+| `0039.g1.svg` | `FIG. 16` | `§ 14` | `100.00%` | `99.79%` |
+| `0040.g1.svg` | `FIG. 17` | `§ 15` | `100.00%` | `99.04%` |
+| `0041.g1.svg` | `FIG. 18` | `§ 17` | `100.00%` | `99.87%` |
+| `0043.g1.svg` | `FIG. 19` | `§ 18` | `100.00%` | `99.96%` |
+| `0044.g1.svg` | `FIG. 20` | `§ 19` | `100.00%` | `97.48%` |
+| `0045.g1.svg` | `FIG. 21` | `§ 20` | `100.00%` | `100.00%` |
+| `0046.g1.svg` | `FIG. 22` | `§ 22` | `100.00%` | `99.98%` |
+| **Summary (22/22)** | **Ch. I** | **§§ 1–22** | **Min `99.97%` / Mean `100.00%`** | **Mean `99.65%`** |

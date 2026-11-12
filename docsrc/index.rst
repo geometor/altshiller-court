@@ -19,8 +19,8 @@ Featured Treatise
 
 The definitive English-language treatise bridging classical Euclidean constructions (``geometor/elements``, ``geometor/euclid``) with modern synthetic triangle and circle geometry: similitude and homothecy, the Euler line and nine-point circle, Feuerbach's theorem, the Wallace–Simson line, Menelaus' and Ceva's theorems, harmonic cross-ratios (``geometor/pappus``, ``geometor/divine``), orthogonal and coaxal circles, the Problem of Apollonius, circular inversion, and Lemoine–Brocard–orthopole triangle geometry (``geometor/etc``).
 
-* **2-Track Book Codex**: :ref:`Conspectus of the Digital Edition <college-geometry-index>` · :ref:`Frontmatter (English & Commentary) <frontmatter-en>` · :ref:`Chapter I: Geometric Constructions (English & Commentary) <ch01-geometric-constructions-en>` · :ref:`Chapters II–X Architectural Blueprints & Commentaries <ch02-similitude-and-homothecy-en>`.
-* **Scholarly Apparatus**: :ref:`Systematic Bibliography <bibliography>` · :ref:`Index of Persons <persons>` · :ref:`Technical Glossary <glossary>` · :ref:`334-Folio Archival Scan Inventory <scan-inventory>`.
+* **2-Track Book Codex**: :ref:`Conspectus of the Digital Edition <college-geometry-index>` · :ref:`Frontmatter (6 Units + Commentary) <frontmatter>` · :ref:`Chapter I: Geometric Constructions (5 Sections, §§ 1–22, 12 Loci, 22 SVGs & 167 Exercises) <ch01-geometric-constructions>` · :ref:`Chapters II–X Architectural Blueprints & Commentaries <ch02-similitude-and-homothecy>`.
+* **Scholarly Apparatus**: :ref:`Systematic Bibliography <bibliography>` · :ref:`Index of Persons <persons>` · :ref:`Technical Glossary <glossary>` · :ref:`334-Folio Archival Scan Inventory (52 Verified) <scan-inventory>`.
 
 ----
 

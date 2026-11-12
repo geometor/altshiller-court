@@ -183,7 +183,7 @@
         },
         {
           "code": "Review",
-          "title": "Review Exercises (1–74)",
+          "title": "Review Exercises (1–67)",
           "folio_start": "0048",
           "folio_end": "0052",
           "page_start": "29",
@@ -1245,6 +1245,7 @@
       "is_blank": false,
       "is_cover": false,
       "articles": [
+        2,
         3
       ]
     },
@@ -1272,7 +1273,8 @@
       "is_blank": false,
       "is_cover": false,
       "articles": [
-        5
+        5,
+        6
       ]
     },
     {
@@ -1298,6 +1300,7 @@
       "is_blank": false,
       "is_cover": false,
       "articles": [
+        6,
         7
       ]
     },
@@ -1364,6 +1367,7 @@
       "is_blank": false,
       "is_cover": false,
       "articles": [
+        10,
         11
       ]
     },
@@ -1497,6 +1501,7 @@
       "is_blank": false,
       "is_cover": false,
       "articles": [
+        14,
         15
       ]
     },
@@ -1510,6 +1515,7 @@
       "is_blank": false,
       "is_cover": false,
       "articles": [
+        15,
         16,
         17
       ]
@@ -1524,6 +1530,7 @@
       "is_blank": false,
       "is_cover": false,
       "articles": [
+        17,
         18
       ]
     },
@@ -1537,6 +1544,7 @@
       "is_blank": false,
       "is_cover": false,
       "articles": [
+        18,
         19
       ]
     },
@@ -1550,6 +1558,7 @@
       "is_blank": false,
       "is_cover": false,
       "articles": [
+        19,
         20
       ]
     },
@@ -1563,6 +1572,7 @@
       "is_blank": false,
       "is_cover": false,
       "articles": [
+        20,
         21
       ]
     },
@@ -1576,6 +1586,7 @@
       "is_blank": false,
       "is_cover": false,
       "articles": [
+        21,
         22
       ]
     },
@@ -1588,7 +1599,9 @@
       "section": "D. Indirect Elements",
       "is_blank": false,
       "is_cover": false,
-      "articles": []
+      "articles": [
+        22
+      ]
     },
     {
       "folio": "0048",
@@ -1596,7 +1609,7 @@
       "printed_page": "29",
       "chapter_dir": "01_geometric_constructions",
       "chapter_title": "Geometric Constructions",
-      "section": "D. Indirect Elements / Review Exercises (1–74)",
+      "section": "D. Indirect Elements / Review Exercises (1–67)",
       "is_blank": false,
       "is_cover": false,
       "articles": []
@@ -1607,7 +1620,7 @@
       "printed_page": "30",
       "chapter_dir": "01_geometric_constructions",
       "chapter_title": "Geometric Constructions",
-      "section": "Review Exercises (1–74)",
+      "section": "Review Exercises (1–67)",
       "is_blank": false,
       "is_cover": false,
       "articles": []
@@ -1618,7 +1631,7 @@
       "printed_page": "31",
       "chapter_dir": "01_geometric_constructions",
       "chapter_title": "Geometric Constructions",
-      "section": "Review Exercises (1–74)",
+      "section": "Review Exercises (1–67)",
       "is_blank": false,
       "is_cover": false,
       "articles": []
@@ -1629,7 +1642,7 @@
       "printed_page": "32",
       "chapter_dir": "01_geometric_constructions",
       "chapter_title": "Geometric Constructions",
-      "section": "Review Exercises (1–74)",
+      "section": "Review Exercises (1–67)",
       "is_blank": false,
       "is_cover": false,
       "articles": []
@@ -1640,7 +1653,7 @@
       "printed_page": "33",
       "chapter_dir": "01_geometric_constructions",
       "chapter_title": "Geometric Constructions",
-      "section": "Review Exercises (1–74)",
+      "section": "Review Exercises (1–67)",
       "is_blank": false,
       "is_cover": false,
       "articles": []

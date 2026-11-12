@@ -22,10 +22,11 @@ Digital Scriptorium and 2-Track **Book Codex** edition of **Nathan Altshiller-Co
    of Triangle Centers* (`X(1)`–`X(n)` in `geometor/etc`).
    Do **not** embed `py_file` construction scripts inside the treatise edition; store declarative
    `"geometry"` models directly inside `<NNNN>.json`.
-3. **Native `photon-platform/publish` Integration**: Do not create custom Flask apps. `resources/college_geometry/`
-   plugs directly into `publish folio` (`FolioScanner` + `ReviewManager`), and `docsrc/college_geometry/`
-   uses `:layout: book` with `English` (`<stem>-en.rst`) and `Commentary` (`<stem>-commentary.rst`)
-   companion tracks and inline `euclid-graphic` SVGs powered by `geometor_interactive.js`.
+3. **Native `photon-platform/publish` Integration & Item-Per-Page Codex**: Do not create custom Flask apps.
+   `resources/college_geometry/` plugs directly into `publish folio` (`FolioScanner` + `ReviewManager`),
+   and `docsrc/college_geometry/` uses `:layout: book` modeled on `geometor/euclid` (`Book → Chapters → Sections → Items → Loci`)
+   with `.. collection::` index pages at every heading level, one leaf item per page (`index.rst` + co-located `.g*.svg`),
+   and paired `Commentary` (`commentary.rst`) companion tracks powered by `geometor_interactive.js`.
 
 ## Pagination Formula (334 Folios)
 
@@ -43,7 +44,9 @@ Digital Scriptorium and 2-Track **Book Codex** edition of **Nathan Altshiller-Co
 - `svg_compiler.py`: Compiles declarative `"geometry"` models in `<NNNN>.json` into interactive
   `euclid-graphic` SVGs (`<NNNN>.g<k>.svg`), verifies sub-pixel ink overlap (`>= 95%`) against
   `<NNNN>.g<k>.png`, and indexes Geometor reference keysets (`build_svg_ref_keyset`).
-- `compile_edition.py`: Compiles SVGs, copies `.svg`/`.png` assets, and assembles folio `.rst` and
-  `.notes.rst` files into the de-paginated 2-Track Book Codex (`docsrc/college_geometry/`) plus
-  `bibliography.rst`, `persons.rst`, `glossary.rst`, and `scan-inventory.rst`.
+- `codex_items.py`: De-paginates consecutive folios (reflowing mid-sentence splits across page turns and
+  floated figures), decomposes Frontmatter and Chapter I into sections, leaf items, and `§ 11` loci, and
+  co-locates referenced `.svg`/`.png` diagrams per leaf item.
+- `compile_edition.py`: Compiles SVGs and generates the hierarchical Euclid-style Book Codex (`docsrc/college_geometry/`)
+  plus `bibliography.rst`, `persons.rst`, `glossary.rst`, and `scan-inventory.rst` with leaf-item back-links.
 - `__main__.py`: Unified CLI (`ingest`, `graphics`, `svg`, `verify-svg`, `compile`, `status`).

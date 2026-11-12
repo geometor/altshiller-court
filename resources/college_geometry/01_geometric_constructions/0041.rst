@@ -1,0 +1,35 @@
+:folio: 0041
+:page: 22
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Indirect Elements — p. 22 (§§ 15–17, Fig. 18)
+:language: en
+:status: ok
+
+and therefore the angle :g:`EAF <0040.g1:< E A F )>` is known. The altitude :g:`AD <0040.g1:/ A D />` of the triangle :g:`ABC <0040.g1:< A B C >>` is also the altitude of :g:`AEF <0040.g1:< A E F >>`. Thus in the triangle :g:`AEF <0040.g1:< A E F >>` we know the base :g:`EF <0040.g1:/ E F />` :math:`= 2p`, the opposite angle :g:`EAF <0040.g1:< E A F )>` :math:`= 90^\circ + \tfrac{1}{2}\,A`, and the altitude :g:`AD <0040.g1:/ A D />` :math:`= h_a`; hence this triangle may be constructed. The vertex :g:`A <0040.g1:A>` of this triangle also belongs to the required triangle :g:`ABC <0040.g1:< A B C >>`. Since :eq:`BA = BE <0040.g1:/ B A / = 0040.g1:/ B E />`, :eq:`CA = CF <0040.g1:/ C A / = 0040.g1:/ C F />`, the vertices :g:`B <0040.g1:B>`, :g:`C <0040.g1:C>` are the traces on :g:`EF <0040.g1:/ E F />` of the :term:`mediators <mediator>` of :g:`AE <0040.g1:/ A E />` and :g:`AF <0040.g1:/ A F />`.
+
+The problem may have two solutions symmetrical with respect to the :term:`mediator` of :g:`EF <0040.g1:/ E F />`, or one solution, or none.
+
+*Note.* In order to construct the required triangle :g:`ABC <0040.g1:< A B C >>` we have constructed another triangle :g:`AEF <0040.g1:< A E F >>`, as an intermediate step. Use of an auxiliary triangle is often very helpful.
+
+**16. Remark.** The angles of the triangle :math:`AEF` are simply expressed in terms of the angles of :math:`ABC`, and one of the altitudes of :math:`AEF` belongs to :math:`ABC`. These relations afford a simple way of solving the following problems.
+
+*Note.* Other problems involving the perimeter of a triangle will be discussed later (§§ 157–173).
+
+EXERCISES
+~~~~~~~~~
+
+Construct a triangle, given:
+
+1. :math:`2p, A, B`.
+2. :math:`2p, h_a, B` (or :math:`C`).
+
+.. enunciation::
+
+   **17. Problem.** *Construct a* :g:`triangle <0041.g1:< A B C >>` *given the* :g:`base <0041.g1:/ B C />`\ *, the* :g:`opposite angle <0041.g1:< B A C )>`\ *, and the* :g:`sum of the other two sides <0041.g1:/ B D />` :math:`(a, A, b + c)`.
+
+.. picture:: 0041.g1.svg
+   :alt: Fig. 18 — Auxiliary triangle BCD formed by producing BA beyond A to D so that AD = AC and BD = b + c
+   :caption: FIG. 18
+
+Let :g:`ABC <0041.g1:< A B C >>` (Fig. 18) be the required triangle. Produce :g:`BA <0041.g1:[ B A ]>` and lay off :eq:`AD = AC <0041.g1:/ A D / = 0041.g1:/ A C />`. In the isosceles triangle :g:`ACD <0041.g1:< A C D >>` we have angle

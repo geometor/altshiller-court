@@ -1,0 +1,257 @@
+{
+  "folio": "0044",
+  "page": "25",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0044.g1.png",
+      "bbox": [
+        356,
+        362,
+        730,
+        584
+      ],
+      "caption": "Fig. 20. Auxiliary triangle BCE obtained by producing BA beyond B to E so that AE = b and BE = b - c (§ 19).",
+      "white_point": 238,
+      "svg_file": "0044.g1.svg",
+      "article": "19",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "A": {
+            "x": 269.99,
+            "y": 51.97,
+            "label": "A",
+            "label_x": 271.5,
+            "label_y": 30.5
+          },
+          "B": {
+            "x": 115.44,
+            "y": 384.26,
+            "label": "B",
+            "label_x": 92,
+            "label_y": 380
+          },
+          "C": {
+            "x": 677.68,
+            "y": 397.16,
+            "label": "C",
+            "label_x": 698,
+            "label_y": 396
+          },
+          "E": {
+            "x": 44.07,
+            "y": 537.71,
+            "label": "E",
+            "label_x": 31,
+            "label_y": 557
+          },
+          "K": {
+            "x": 212.13,
+            "y": 176.37,
+            "hidden": true
+          },
+          "lbl_a": {
+            "x": 331.5,
+            "y": 414.5,
+            "label": "a",
+            "label_x": 331.5,
+            "label_y": 414.5,
+            "label_only": true,
+            "label_class": "geom-label-sm"
+          },
+          "lbl_b": {
+            "x": 483.1,
+            "y": 200.5,
+            "label": "b",
+            "label_x": 483.1,
+            "label_y": 200.5,
+            "label_only": true,
+            "label_class": "geom-label-sm"
+          },
+          "lbl_c": {
+            "x": 145.5,
+            "y": 269.4,
+            "label": "c",
+            "label_x": 145.5,
+            "label_y": 269.4,
+            "label_only": true,
+            "label_class": "geom-label-sm"
+          },
+          "lbl_hc": {
+            "x": 431.0,
+            "y": 252.0,
+            "label": "h_c",
+            "label_x": 431,
+            "label_y": 252,
+            "label_only": true,
+            "label_class": "geom-label-sm"
+          },
+          "lbl_bc": {
+            "x": 64.0,
+            "y": 446.0,
+            "label": "b-c",
+            "label_x": 64,
+            "label_y": 446,
+            "label_only": true,
+            "label_class": "geom-label-sm"
+          }
+        },
+        "elements": [
+          {
+            "id": "seg_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "ref": "/ A B /",
+            "aliases": [
+              "[ B A ]"
+            ]
+          },
+          {
+            "id": "seg_BE",
+            "type": "segment",
+            "p1": "B",
+            "p2": "E",
+            "ref": "/ B E /"
+          },
+          {
+            "id": "seg_AC",
+            "type": "segment",
+            "p1": "A",
+            "p2": "C",
+            "ref": "/ A C /"
+          },
+          {
+            "id": "seg_BC",
+            "type": "segment",
+            "p1": "B",
+            "p2": "C",
+            "ref": "/ B C /"
+          },
+          {
+            "id": "seg_EC",
+            "type": "segment",
+            "p1": "E",
+            "p2": "C",
+            "ref": "/ E C /",
+            "aliases": [
+              "/ C E /"
+            ]
+          },
+          {
+            "id": "seg_CK",
+            "type": "segment",
+            "p1": "C",
+            "p2": "K",
+            "style": "thin",
+            "ref": "/ C K /"
+          },
+          {
+            "id": "arc_E",
+            "type": "arc",
+            "center": "E",
+            "r": 60.0,
+            "start_deg": -65.06,
+            "end_deg": -12.51,
+            "ccw": false
+          },
+          {
+            "id": "arc_C",
+            "type": "arc",
+            "center": "C",
+            "r": 60.17,
+            "start_deg": 167.49,
+            "end_deg": 220.25,
+            "ccw": false
+          },
+          {
+            "id": "seg_AE",
+            "type": "segment",
+            "p1": "A",
+            "p2": "E",
+            "style": "overlay",
+            "ref": "/ A E /"
+          },
+          {
+            "id": "tri_ABC",
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ],
+            "style": "overlay",
+            "ref": "< A B C >"
+          },
+          {
+            "id": "tri_ACE",
+            "type": "polygon",
+            "points": [
+              "A",
+              "C",
+              "E"
+            ],
+            "style": "overlay",
+            "ref": "< A C E >"
+          },
+          {
+            "id": "tri_BCE",
+            "type": "polygon",
+            "points": [
+              "B",
+              "C",
+              "E"
+            ],
+            "style": "overlay",
+            "ref": "< B C E >"
+          },
+          {
+            "id": "ang_BAC",
+            "type": "angle",
+            "vertex": "A",
+            "p1": "B",
+            "p2": "C",
+            "radius": 44,
+            "ref": "< B A C )",
+            "aliases": [
+              "< A )"
+            ]
+          },
+          {
+            "id": "ang_AEC",
+            "type": "angle",
+            "vertex": "E",
+            "p1": "A",
+            "p2": "C",
+            "radius": 60.0,
+            "ref": "< A E C )",
+            "aliases": [
+              "< B E C )",
+              "< E )"
+            ]
+          },
+          {
+            "id": "ang_ACE",
+            "type": "angle",
+            "vertex": "C",
+            "p1": "A",
+            "p2": "E",
+            "radius": 60.17,
+            "ref": "< A C E )"
+          },
+          {
+            "id": "ang_BCE",
+            "type": "angle",
+            "vertex": "C",
+            "p1": "B",
+            "p2": "E",
+            "radius": 82,
+            "ref": "< B C E )"
+          }
+        ]
+      }
+    }
+  ]
+}

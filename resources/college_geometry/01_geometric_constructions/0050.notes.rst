@@ -1,0 +1,32 @@
+Folio 0050 (Page 31) — Diplomatic & Mathematical Notes
+======================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0049 (Page 30, Review Exercises: Constructions 14–27, Propositions 28–32)
+- **Current Folio** (``0050.rst``): Page ``31``, Chapter I [``01_geometric_constructions``] — Status: ``ok``
+- **Following Folio**: Folio 0051 (Page 32, Review Exercises: Propositions 48–58, Loci 59–62)
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: Page ``31`` (running header ``Ch. I] / REVIEW EXERCISES / 31``), continuing ``REVIEW EXERCISES — PROPOSITIONS`` across items 33–47. Note faint or omitted terminal periods in the 1952 plate at the end of items 39 and 43 and faint first dot in ``i.e.,`` in item 47, restored to standard punctuation.
+- **Document Headings on Folio**: none (running continuation of ``PROPOSITIONS``)
+- **Line-Break Hyphenations Resolved**: ``per-pendicular``, ``mid-point``
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+Several landmark theorems of modern synthetic geometry appear in embryonic elementary guise on this folio:
+
+- **Item 34**: Routh / equi-ratio cevian-division area ratio :math:`[A'B'C'] / [ABC] = (1 - k + k^2)/(1 + k)^2`.
+- **Item 37**: An elementary semicircle instance of :term:`orthocenter` / Pascal-hexagon perpendicularity (:math:`E = CA \cap PB`, :math:`F = AD \cap PC \implies EF \perp AD`).
+- **Item 39**: The defining metric invariant of a **harmonic quadrilateral** (:math:`AP : AQ = BP : BQ`, i.e., :math:`AP \cdot BQ = AQ \cdot BP`), anticipating Chapter X's symmedian theory!
+- **Item 41**: The tangent-parallel mean-proportional property :math:`BC^2 = BC' \cdot B'C` closely tied to Brocard geometry.
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``01_geometric_constructions/0050.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan)

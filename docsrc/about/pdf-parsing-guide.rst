@@ -55,15 +55,15 @@ For every folio containing geometric plates:
 1. **Crop Extraction**: ``<NNNN>.json`` records tight 300-DPI ``[x, y, w, h]`` bounding boxes; ``graphics.py`` normalizes paper tone to pure white ``#ffffff`` and outputs ``<NNNN>.<gid>.png`` and ``.inverted.png``.
 2. **Declarative Euclidean Model (No Embedded Python Scripts)**: Inside ``<NNNN>.json``, each graphic entry stores a declarative ``"geometry"`` dictionary (``svg_scale: 0.5``, exact point coordinates, letterpress glyph centroids ``label_x``/``label_y``, and typed ``segment``, ``circle``, ``arc``, ``polygon``, and ``angle`` elements) plus ``"svg_file": "<NNNN>.<gid>.svg"``. No ``py_file`` scripts are embedded in the treatise workspace.
 3. **Interactive SVG Compilation**: ``svg_compiler.py`` compiles each ``"geometry"`` model into an interactive ``<svg class="euclid-graphic" data-graphic-id="<NNNN>.<gid>">`` diagram compatible with ``photon-platform/publish`` and ``geometor_interactive.js``.
-4. **Quantitative & Visual Verification**: ``verify_svg_against_scan`` rasterizes visible vector strokes back onto the 300-DPI crop grid, requiring **at least 95% pixel ink overlap** (Chapter I achieves ``99.97%``–``100.00%`` across all 17 figures), followed by direct visual inspection of RGB overlays and standalone Inkscape renders.
+4. **Quantitative & Visual Verification**: ``verify_svg_against_scan`` rasterizes visible vector strokes back onto the 300-DPI crop grid, requiring **at least 95% pixel ink overlap** (Chapter I achieves ``99.97%``–``100.00%`` across all 22 figures), followed by direct visual inspection of RGB overlays and standalone renders.
 
 4. Interactive Text-to-Diagram Wiring & Book Codex Compilation (``compile_edition.py``)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Folio transcriptions switch ``.. picture:: <NNNN>.<gid>.svg`` and wire:
 
-- ``:g:`` scoped geometric references (e.g., ``:g:`(O, OE) <0038.g1:( O E )>```) highlighting points, lines, circles, arcs, polygons, and angle wedges on hover or click—including cross-folio references across page turns.
+- ``:g:`` scoped geometric references (e.g., ``:g:`(O, OE) <0038.g1:( O E )>```) highlighting points, lines, circles, arcs, polygons, and angle wedges on hover or click—self-contained on each item's dedicated page.
 - ``:eq:`` equality assertions (e.g., ``:eq:`BE = BA <0040.g1:/ B E / = 0040.g1:/ B A />```) activating dynamic green tick marks and angle arcs.
 - ``.. enunciation::`` and ``.. assertion::`` blocks structuring problem statements, geometric loci, and deductive conclusions.
 
-Finally, ``compile_edition.py`` de-paginates consecutive folios (reflowing mid-sentence page breaks and side-by-side figure splits) and copies all ``.svg`` assets into ``docsrc/college_geometry/`` so ``publish build`` inlines crisp, theme-adaptive interactive SVGs into the published HTML codex.
+Finally, ``compile_edition.py`` and ``codex_items.py`` de-paginate consecutive folios (reflowing mid-sentence page breaks and floated figures), decompose each chapter into ``.. collection::`` sections, leaf items, and loci, and co-locate only each item's referenced ``.svg`` assets inside ``<item-slug>/`` so ``publish build`` renders inline interactive SVG thumbnails on collection cards and full interactive diagrams on item pages.

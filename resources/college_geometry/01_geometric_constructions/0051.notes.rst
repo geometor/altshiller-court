@@ -1,0 +1,29 @@
+Folio 0051 (Page 32) — Diplomatic & Mathematical Notes
+======================================================
+
+Summary & Folio Continuity
+--------------------------
+
+- **Preceding Folio**: Folio 0050 (Page 31, Review Exercises: Propositions 33–47)
+- **Current Folio** (``0051.rst``): Page ``32``, Chapter I [``01_geometric_constructions``] — Status: ``ok``
+- **Following Folio**: Folio 0052 (Page 33, Review Exercises: Loci 63–67, concluding Chapter I)
+
+Structural & Diplomatic Observations
+------------------------------------
+
+- **Overview**: Page ``32`` (running header ``32 / GEOMETRIC CONSTRUCTIONS / [Ch. I``), completing ``PROPOSITIONS`` (items 48–58) and introducing the final thematic subheading ``LOCI`` (items 59–62).
+- **Document Headings on Folio**: ``LOCI``
+- **Line-Break Hyphenations Resolved**: ``meet-ing``, ``inter-section``, ``vari-able``
+
+Mathematical & Constructive Commentary
+--------------------------------------
+
+- **Item 55**: Classical Euclidean quadratic identity (*Elements* II.9 and II.10), :math:`AD^2 + DB^2 = 2(AC^2 + CD^2)`, the one-dimensional specialization of Apollonius's median theorem (§ 11, Locus 10).
+- **Item 57**: The familiar five-square dissection proving :math:`\text{area}(\text{inner square}) = \frac{1}{5}\,\text{area}(ABCD)`.
+- **Item 58**: Blanchet's theorem—for any :term:`cevian` pair :math:`BM, CN` concurring on altitude :math:`AD`, the altitude :math:`AD` bisects :math:`\angle MDN` (a harmonic-bundle projection property revisited in Chapter VII).
+
+Scan Quality & Verification
+---------------------------
+
+- **Archival Scan**: ``01_geometric_constructions/0051.png`` (300 DPI, ``1421 × 2225`` px)
+- **Verification Status**: ``ok`` (visually verified against raster scan)

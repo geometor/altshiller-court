@@ -278,6 +278,23 @@
       }
     ]
   },
+  "datum": {
+    "slug": "datum",
+    "headword": "datum",
+    "language": "Constructive Method (§ 21)",
+    "translation": "Triad of elements any two of which determine the third",
+    "definition": "A set of elements of a triangle (such as b + c, h_b + h_c, A in right triangle BGH, or b - c, h_c - h_b, A) having the property that given any two of the elements, the third is uniquely determined (§ 21).",
+    "occurrences": [
+      {
+        "volume": "college_geometry",
+        "folio": "0045",
+        "page": "26",
+        "book": "Chapter I",
+        "section": "01_geometric_constructions",
+        "display": "datum"
+      }
+    ]
+  },
   "directed-segments": {
     "slug": "directed-segments",
     "headword": "directed (signed) segments",

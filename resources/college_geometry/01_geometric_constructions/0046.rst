@@ -1,0 +1,43 @@
+:folio: 0046
+:page: 27
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Indirect Elements — p. 27 (§ 22, Fig. 22)
+:language: en
+:status: ok
+
+EXERCISES
+~~~~~~~~~
+
+Construct a triangle, given:
+
+1. :math:`h_b + h_c, B, C`.
+2. :math:`h_b + h_c, b, c`.
+3. :math:`h_b + h_c, b, A`.
+4. :math:`h_b + h_c, b + c, a`.
+5. :math:`h_b + h_c, b + c, B - C`. *Hint.* The triangle :math:`BGH` determines :math:`A`, and :math:`B + C = 180^\circ - A` is thus known, hence the angles :math:`B` and :math:`C` may be constructed.
+6. :math:`h_b + h_c, b - c, A`.
+
+.. enunciation::
+
+   **22. Problem.** *Construct a* :g:`triangle <0046.g1:< A B C >>` *given the* :g:`base <0046.g1:/ B C />`\ *, the* :g:`opposite angle <0046.g1:< B A C )>`\ *, and the* :g:`difference of the altitudes <0046.g1:/ C G />` *to the other two sides* :math:`(a, A, h_c - h_b)`.
+
+Let :g:`ABC <0046.g1:< A B C >>` (Fig. 22) be the required triangle. Draw the altitudes :g:`BE <0046.g1:/ B E />`, :g:`CF <0046.g1:/ C F />`, and lay off :eq:`FG = BE <0046.g1:/ F G / = 0046.g1:/ B E />`, so that :g:`CG <0046.g1:/ C G />` :math:`= h_c - h_b`. Draw :g:`GH <0046.g1:/ G H />` parallel to :g:`AB <0046.g1:/ A B />`. In the right triangle :g:`CGH <0046.g1:< C G H >>` we know the leg :g:`CG <0046.g1:/ C G />` :math:`= h_c - h_b` and the angle :g:`CHG <0046.g1:< C H G )>` :math:`= A`; hence this triangle may be constructed, and the length :g:`CH <0046.g1:/ C H />` is determined.
+
+.. picture:: 0046.g1.svg
+   :alt: Fig. 22 — Right auxiliary triangle CGH with leg CG = h_c - h_b, hypotenuse CH = b - c, and angle bisector BH
+   :caption: FIG. 22
+
+We now show that :g:`CH <0046.g1:/ C H />` :math:`= b - c`. Drop the perpendicular :g:`HI <0046.g1:/ H I />` from :g:`H <0046.g1:H>` upon :g:`AB <0046.g1:/ A B />`. We have :eq:`HI = FG <0046.g1:/ H I / = 0046.g1:/ F G />` :math:`=` :g:`BE <0046.g1:/ B E />`, hence the two right triangles :g:`ABE <0046.g1:< A B E >>`, :g:`AHI <0046.g1:< A H I >>` are congruent, having the angle :g:`A <0046.g1:< B A C )>` in common and :eq:`BE = HI <0046.g1:/ B E / = 0046.g1:/ H I />`; therefore :eq:`AH = AB <0046.g1:/ A H / = 0046.g1:/ A B />`, so that:
+
+.. math::
+
+   CH = CA - AH = CA - AB = b - c.
+
+With :math:`b - c` known, the proposed problem is reduced to a known problem (§ 18).
+
+However, the required :g:`triangle <0046.g1:< A B C >>` may be obtained directly from the triangle :g:`CHG <0046.g1:< C G H >>`. The vertex :g:`C <0046.g1:C>` belongs to the required triangle. From the isosceles triangle :g:`ABH <0046.g1:< A B H >>` we have angle :g:`AHB <0046.g1:< A H B )>` :math:`= \tfrac{1}{2}(180^\circ - A)`; but:
+
+.. math::
+
+   \angle AHG = 180^\circ - \angle GHC = 180^\circ - A;

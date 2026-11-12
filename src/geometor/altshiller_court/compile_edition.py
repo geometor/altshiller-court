@@ -1,9 +1,12 @@
-"""Book Codex compiler and scholarly apparatus builder for College Geometry (1952).
+"""Book Codex compiler and scholarly apparatus builder for *College Geometry* (1952).
 
 Compiles verified diplomatic folio transcriptions (``resources/college_geometry/<dir>/<NNNN>.rst``
-and ``<NNNN>.notes.rst``), diagram crops (``<NNNN>.g<k>.png``), ``structure_map.json``, and
-apparatus registries (``persons.json``, ``citations.json``, ``glossary.json``, ``folio_reviews.json``)
-into a synchronized 2-Track Book Codex (``English`` | ``Commentary``) under ``docsrc/college_geometry/``.
+and ``<NNNN>.notes.rst``), diagram crops (``<NNNN>.g<k>.png``), interactive SVGs
+(``<NNNN>.g<k>.svg``), ``structure_map.json``, and apparatus registries
+(``persons.json``, ``citations.json``, ``glossary.json``, ``folio_reviews.json``)
+into a multi-level Euclid-style Book Codex (``Book -> Chapters -> Sections -> Items``)
+with ``.. collection::`` navigation and ``Commentary`` companion tracks under
+``docsrc/college_geometry/``.
 """
 
 from __future__ import annotations
@@ -14,12 +17,97 @@ import shutil
 from pathlib import Path
 from typing import Any
 
+from .codex_items import (
+    CodexItem,
+    CodexSection,
+    FolioBlock,
+    copy_referenced_graphics,
+    decompose_chapter_one,
+    decompose_frontmatter,
+    demote_headings,
+    parse_folio_rst,
+    render_blocks_with_folios,
+)
 from .svg_compiler import compile_all_svgs
 
 
 def apparatus_slug(key: str) -> str:
     """Deterministic anchor slug matching ``photon_platform.publish.roles.geometry._apparatus_slug``."""
     return re.sub(r"[^a-z0-9]+", "-", (key or "").lower()).strip("-")
+
+
+CHAPTER_OVERVIEWS: dict[str, str] = {
+    "frontmatter": (
+        "Nineteen archival frontmatter folios (``0001``–``0019``, pp. ``[cover]``–``[xx]``) framing "
+        "Nathan Altshiller-Court's 1952 Second Edition: the Dover cover, title and copyright pages, "
+        "dedication, 1952 Preface and Acknowledgments, analytical Table of Contents, *To the Instructor*, "
+        "and *To the Student*."
+    ),
+    "ch01-geometric-constructions": (
+        "Foundational treatise on synthetic ruler-and-compass problem solving (**§§ 1–22**, Folios ``0020``–``0052``, "
+        "pp. ``1``–``33``): notation and basic constructions, Pappus's four-part analytic method, "
+        "twelve fundamental geometric loci, auxiliary-triangle indirect elements, 22 interactive "
+        "``.euclid-graphic`` figures, and 167 graded and review exercises."
+    ),
+    "ch02-similitude-and-homothecy": (
+        "Transformational construction and proof via similitude and homothecy (**§§ 23–53**, Folios ``0053``–``0071``, "
+        "pp. ``34``–``52``): homothetic figures, direct and inverse centers of similitude of two circles, "
+        "the circle of similitude, and the pantograph."
+    ),
+    "ch03-properties-of-the-triangle": (
+        "Classical synthetic geometry of the triangle (**§§ 54–239**, Folios ``0072``–``0142``, pp. ``53``–``123``): "
+        "harmonic preliminaries, circumcircle and medians, incircle and excircles, orthocenter and orthic "
+        "triangle, the Euler line, the nine-point circle, Feuerbach's theorem, and the orthocentric group."
+    ),
+    "ch04-the-quadrilateral": (
+        "Synthetic theory of four-sided figures newly added in the 1952 Second Edition (**§§ 240–281**, "
+        "Folios ``0143``–``0158``, pp. ``124``–``139``): Varignon's parallelogram, Euler's diagonal-midpoint "
+        "identity, cyclic quadrilaterals, Ptolemy's and Brahmagupta's theorems, the anticenter, and "
+        "circumscriptible and bicentric quadrilaterals."
+    ),
+    "ch05-the-simson-line": (
+        "Pedal projections from the circumcircle onto the sidelines of a triangle (**§§ 282–305**, "
+        "Folios ``0159``–``0169``, pp. ``140``–``150``): the Wallace–Simson collinearity criterion, "
+        "bisection of the orthocenter segment on the nine-point circle, and angular intersection laws."
+    ),
+    "ch06-transversals": (
+        "Directed segments and signed ratio criteria for collinearity and concurrency (**§§ 306–344**, "
+        "Folios ``0170``–``0184``, pp. ``151``–``165``): Euler's four-point identity, Stewart's theorem, "
+        "Menelaus's transversal theorem, Ceva's concurrency theorem, Gergonne and Nagel points, and "
+        "Desargues's two-triangle theorem."
+    ),
+    "ch07-harmonic-division": (
+        "Projective and metric theory of harmonic ranges and pencils (**§§ 345–357**, Folios ``0185``–``0190``, "
+        "pp. ``166``–``171``): harmonic conjugates, perspectivity invariance of harmonic pencils, "
+        "complete quadrangles and quadrilaterals, and the Gauss–Newton midpoint line."
+    ),
+    "ch08-circles": (
+        "Comprehensive geometry of one, two, and three circles (**§§ 358–517**, Folios ``0191``–``0248``, "
+        "pp. ``172``–``229``): inverse points, orthogonal circles, poles and polars, Monge's similitude "
+        "axes, power and radical axis, coaxal pencils, Casey's theorem, and Gergonne's solution to the "
+        "Problem of Apollonius."
+    ),
+    "ch09-inversion": (
+        "Conformal transformation by reciprocal radii (**§§ 518–546**, Folios ``0249``–``0262``, "
+        "pp. ``230``–``243``): images of lines and circles, Peaucellier's straight-line linkage, "
+        "and inversion proofs of Ptolemy's theorem, Steiner's porism, and Feuerbach's theorem."
+    ),
+    "ch10-recent-geometry-of-the-triangle": (
+        "Late-nineteenth-century triangle geometry (**§§ 547–699**, Folios ``0263``–``0313``, "
+        "pp. ``244``–``294``): trilinear poles and polars, symmedians and the Lemoine point, Lemoine "
+        "circles, Apollonian circles and isodynamic points, isogonal conjugates, Brocard points and "
+        "circle, Tucker circles, and Neuberg's orthopole."
+    ),
+    "historical-and-bibliographical-notes": (
+        "Altshiller-Court's historiographical apparatus (Folios ``0314``–``0328``, pp. ``295``–``309``): "
+        "abbreviations of foundational treatises and periodicals, article-by-article historical "
+        "attributions spanning §§ 4–697, and the alphabetical List of Names."
+    ),
+    "back-index": (
+        "Alphabetical analytical subject index keyed to §§ 1–699, terminal blank leaf, and the 2007 "
+        "Dover back cover (Folios ``0329``–``0334``, pp. ``310``–``[back cover]``)."
+    ),
+}
 
 
 CHAPTER_COMMENTARY: dict[str, str] = {
@@ -35,7 +123,7 @@ Chapter II introduces the first great transformational pillar of *College Geomet
 GEOMETOR Ecosystem Connections
 ------------------------------
 
-* **Triangle Centers (`geometor/etc`)**: Applied to the :term:`circumcircle <circumcircle>` and :term:`incircle <incircle>` of :math:`\\triangle ABC`, the internal and external centers of similitude are Kimberling centers :math:`X(55)` (*insimilicenter*) and :math:`X(56)` (*exsimilicenter*), studied by :person:`Euler <euler>`, :person:`Monge <monge>`, and :person:`Poncelet <poncelet>`.
+* **Triangle Centers (``geometor/etc``)**: Applied to the :term:`circumcircle <circumcircle>` and :term:`incircle <incircle>` of :math:`\\triangle ABC`, the internal and external centers of similitude are Kimberling centers :math:`X(55)` (*insimilicenter*) and :math:`X(56)` (*exsimilicenter*), studied by :person:`Euler <euler>`, :person:`Monge <monge>`, and :person:`Poncelet <poncelet>`.
 * **Medial & Anticomplementary Homothecy**: At the :term:`centroid <centroid>` :math:`G = X(2)`, the homothecy :math:`\\mathcal{H}(G, -\\tfrac{1}{2})` maps :math:`\\triangle ABC` onto its :term:`complementary (medial) triangle <complementary-triangle>`, driving the synthetic proofs of the :term:`Euler line <euler-line>` and :term:`nine-point circle <nine-point-circle>` in Chapter III.
 """,
     "ch03-properties-of-the-triangle": """\
@@ -44,7 +132,7 @@ Mathematical Architecture & Classical Triangle Canon
 
 Spanning 186 articles (§§ 54–239, pp. 53–123), Chapter III is the monumental heart of the first half of *College Geometry*:
 
-1. **Harmonic Preliminaries (§§ 54–67)**: Early introduction of :term:`harmonic division <harmonic-division>` and the :term:`Apollonian circle <apollonian-circle>`, honoring the pedagogical innovation announced in the 1952 :ref:`Preface <frontmatter-en>`.
+1. **Harmonic Preliminaries (§§ 54–67)**: Early introduction of :term:`harmonic division <harmonic-division>` and the :term:`Apollonian circle <apollonian-circle>`, honoring the pedagogical innovation announced in the 1952 :ref:`Preface <frontmatter-03-preface>`.
 2. **Circumcircle & Medians (§§ 68–110)**: Antipodal chords, Simson/Johnson precursors, the Problem of :person:`Pappus <pappus>` (§ 84), Apollonius' median formula, the :term:`centroid <centroid>` :math:`G = X(2)`, and the :term:`complementary <complementary-triangle>` and :term:`anticomplementary <anticomplementary-triangle>` triangles.
 3. **Tritangent Circles (§§ 111–174)**: The :term:`incircle <incircle>` and three excircles :math:`(I, I_a, I_b, I_c)`, :person:`Carnot's <carnot>` theorem (§ 146), :person:`Chapple <chapple>`–:person:`Euler <euler>` distance formula :math:`OI^2 = R(R - 2r)` (§ 152, :cite:`Euler 1765 <euler:1765>`), and semiperimeter contact identities (:math:`s - a, s - b, s - c`).
 4. **Altitudes, Euler Line & Nine-Point Circle (§§ 175–219)**: Concurrency at the :term:`orthocenter <orthocenter>` :math:`H = X(4)`, minimum-perimeter property of the :term:`orthic triangle <orthic-triangle>` (:person:`Fagnano <fagnano>`, § 194), collinearity of :math:`O, G, N, H` on the :term:`Euler line <euler-line>` (§ 202), the :term:`nine-point circle <nine-point-circle>` (§ 206, :person:`Brianchon <brianchon>` & :person:`Poncelet <poncelet>`), and :term:`Feuerbach's theorem <feuerbach-theorem>` (§ 215, :cite:`Feuerbach 1822 <feuerbach:1822>`).
@@ -53,8 +141,8 @@ Spanning 186 articles (§§ 54–239, pp. 53–123), Chapter III is the monument
 GEOMETOR Ecosystem Connections
 ------------------------------
 
-* **`geometor/etc` & :cite:`Kimberling's ETC <kimberling:etc>`**: Establishes exact synthetic constructions for :math:`X(1)` (*incenter*), :math:`X(2)` (*centroid*), :math:`X(3)` (*circumcenter*), :math:`X(4)` (*orthocenter*), :math:`X(5)` (*nine-point center*), and :math:`X(11)` (*Feuerbach point*).
-* **`geometor/model`**: Every center and circle in §§ 54–239 is quadratic constructible over :math:`\\mathbb{Q}(A, B, C)` and verifiable symbolically in SymPy without floating-point drift.
+* **``geometor/etc`` & :cite:`Kimberling's ETC <kimberling:etc>`**: Establishes exact synthetic constructions for :math:`X(1)` (*incenter*), :math:`X(2)` (*centroid*), :math:`X(3)` (*circumcenter*), :math:`X(4)` (*orthocenter*), :math:`X(5)` (*nine-point center*), and :math:`X(11)` (*Feuerbach point*).
+* **``geometor/model``**: Every center and circle in §§ 54–239 is quadratic constructible over :math:`\\mathbb{Q}(A, B, C)` and verifiable symbolically in SymPy without floating-point drift.
 """,
     "ch04-the-quadrilateral": """\
 Mathematical Architecture (Added in the 1952 Second Edition)
@@ -83,7 +171,7 @@ Mathematical Architecture & Signed Ratios
 Chapter VI (§§ 306–344, pp. 151–165) introduces :term:`directed segments <directed-segments>` (:math:`AB = -BA`, :person:`Chasles <chasles>` / :person:`Möbius <mobius>`) to unify collinearity and concurrency:
 
 * **Introductory & Stewart's Theorem (§§ 306–309)**: :person:`Euler's <euler>` four-point identity :math:`AB \\cdot CD + AC \\cdot DB + AD \\cdot BC = 0` (§ 307) and :person:`Stewart's <stewart>` cevian metric identity (§ 308).
-* **Menelaus' Theorem (§§ 310–325)**: Signed transversal product :math:`(AF/FB)(BD/DC)(CE/EA) = -1` (:person:`Menelaus of Alexandria <menelaus>`), applied immediately to collinearity of external angle-bisector traces, :person:`Pascal's <pascal>` mystic hexagram, and centers of similitude of three circles (:person:`Monge <monge>`).
+* **Menelaus' Theorem (§§ 310–325)**: Signed transversal product :math:`(AF/FB)(BD/DC)(CE/EA) = -1` (:person:`Menelaus of Alexandria <menelaus>`), applied immediately to collinearity of external angle-bisector traces, Pascal's mystic hexagram (inscribed in a circle), and centers of similitude of three circles (:person:`Monge <monge>`).
 * **Ceva's Theorem (§§ 326–344)**: Dual concurrency criterion :math:`(AF/FB)(BD/DC)(CE/EA) = +1` (:cite:`Ceva 1678 <ceva:1678>`), establishing concurrency of medians, altitudes, bisectors, the :term:`Gergonne point <gergonne-point>` :math:`X(7)` (§ 331, :person:`Gergonne <gergonne>`), the :term:`Nagel point <nagel-point>` :math:`X(8)` (§ 333, :person:`Nagel <nagel>`), :term:`isotomic conjugates <isotomic-conjugates>` (§ 334), and :person:`Desargues' <desargues>` Two-Triangle Theorem (§ 343).
 """,
     "ch07-harmonic-division": """\
@@ -109,18 +197,18 @@ Spanning 160 articles (§§ 358–517, pp. 172–229), Chapter VIII builds the c
 
 1. **Inverse Points & Orthogonal Circles (§§ 358–372)**: :term:`Inverse points <inverse-points>` (:math:`OP \\cdot OP' = R^2`) and :term:`orthogonal circles <orthogonal-circles>` (:math:`r_1^2 + r_2^2 = d^2`), proving that circles through a pair of inverse points cut the reference circle orthogonally.
 2. **Poles & Polars (§§ 373–393)**: :person:`La Hire's <hire>` reciprocity theorem (§ 379), self-polar (conjugate) triangles, and harmonic chord division (:term:`pole and polar <pole-and-polar>`).
-3. **Centers of Similitude, Power & Radical Axis (§§ 394–439)**: :person:`Monge's <monge>` theorem on the six centers of similitude of three circles (§ 405), :person:`Steiner's <steiner>` :term:`power of a point <power-of-a-point>` (:math:`d^2 - R^2`), and the :term:`radical axis <radical-axis>` of two circles (generalizing Chapter I, § 11, Locus 12).
+3. **Centers of Similitude, Power & Radical Axis (§§ 394–439)**: :person:`Monge's <monge>` theorem on the six centers of similitude of three circles (§ 405), :person:`Steiner's <steiner>` :term:`power of a point <power-of-a-point>` (:math:`d^2 - R^2`), and the :term:`radical axis <radical-axis>` of two circles (generalizing Chapter I, :ref:`Locus 12 <ch01-locus-12>`).
 4. **Coaxal Pencils & Casey's Theorem (§§ 440–490)**: Intersecting, tangent, and non-intersecting :term:`coaxal circles <coaxal-circles>`, :person:`Poncelet's <poncelet>` limiting points :math:`L, L'`, conjugate orthogonal pencils, and :person:`Casey's <casey>` generalized Ptolemy theorem (§ 471, :cite:`Sequel to Euclid <casey:sequel:1892>`).
-5. **Three Circles & The Problem of Apollonius (§§ 491–517)**: Radical center, circles of antisimilitude, the ten classical cases (`PPP` through `CCC`) of the :term:`Problem of Apollonius <problem-of-apollonius>`, and :person:`Gergonne's <gergonne>` celebrated master solution (§ 517) constructing complementary pairs of up to eight tangent circles via poles of axes of similitude and the radical center!
+5. **Three Circles & The Problem of Apollonius (§§ 491–517)**: Radical center, circles of antisimilitude, the ten classical cases (``PPP`` through ``CCC``) of the :term:`Problem of Apollonius <problem-of-apollonius>`, and :person:`Gergonne's <gergonne>` celebrated master solution (§ 517) constructing complementary pairs of up to eight tangent circles via poles of axes of similitude and the radical center!
 """,
     "ch09-inversion": """\
 Mathematical Architecture & Conformal Transformation
 ----------------------------------------------------
 
-Chapter IX (§§ 518–546, pp. 230–243) develops :term:`circular inversion <inversion>` :math:`(O, k)` (:person:`Steiner <steiner>`, :person:`Kelvin <kelvin>`, :person:`Liouville <mobius>`) as an involutory, angle-preserving transformation of the plane:
+Chapter IX (§§ 518–546, pp. 230–243) develops :term:`circular inversion <inversion>` :math:`(O, k)` (:person:`Steiner <steiner>`, :person:`Plücker <plucker>`, :person:`Möbius <mobius>`, Lord Kelvin, and Liouville) as an involutory, angle-preserving transformation of the plane:
 
 * **Images of Lines & Circles (§§ 518–531)**: Lines/circles through the center of inversion :math:`O` invert into straight lines; lines/circles not through :math:`O` invert into circles; angles of intersection are preserved in magnitude and reversed in orientation.
-* **Peaucellier's Inversor (§ 524)**: Exact mechanical straight-line linkage converting circular motion into rectilinear motion via inversion.
+* **Peaucellier's Inversor (§ 533)**: :person:`Peaucellier's <peaucellier>` exact mechanical straight-line linkage converting circular motion into rectilinear motion via inversion.
 * **Crowning Applications (§§ 532–546)**: Inversion proofs of :person:`Ptolemy's <ptolemy>` theorem and its converse, Steiner's porism on chains of tangent circles, and the breathtakingly short inversion proof of :term:`Feuerbach's theorem <feuerbach-theorem>` (§ 540, :cite:`Feuerbach 1822 <feuerbach:1822>`) by inverting the nine-point circle, incircle, and an excircle from the midpoint of their common tangent segment!
 """,
     "ch10-recent-geometry-of-the-triangle": """\
@@ -141,181 +229,350 @@ Historiographical Value & Scholarly Cross-Referencing
 
 Altshiller-Court's *Historical and Bibliographical Notes* (pp. 295–306) and *List of Names* (pp. 307–309) represent one of the richest compact historiographies of synthetic geometry ever compiled in English:
 
-* **Bibliographic Abbreviations (`pp. 295–296`)**: Keys 8 foundational books (`Chl.`, `Cn.`, `Crt.`, `Ech.`, `Gy.`, `LHr.`, `Pt.`, `Rouché-Comberousse`) and 9 problem-and-research periodicals (`Bull.`, `Edinb.`, `ET.`, `GAM.`, `JME.`, `JMS.`, `Mathesis.`, `Monthly.`, `NA.`, `NC.`)—all encoded as structured entries in :ref:`Bibliography <bibliography>`.
-* **Article-by-Article Provenance (`§§ 4–697`)**: Traces individual theorems and constructions from :person:`Euclid <euclid>`, :person:`Archimedes <archimedes>`, :person:`Apollonius <apollonius>`, :person:`Heron <heron>`, :person:`Menelaus <menelaus>`, :person:`Ptolemy <ptolemy>`, and :person:`Pappus <pappus>` through :person:`Ceva <ceva>`, :person:`Euler <euler>`, :person:`Carnot <carnot>`, :person:`Poncelet <poncelet>`, :person:`Gergonne <gergonne>`, :person:`Feuerbach <feuerbach>`, :person:`Steiner <steiner>`, :person:`Chasles <chasles>`, :person:`Lemoine <lemoine>`, :person:`Brocard <brocard>`, and :person:`Neuberg <neuberg>`—all cross-linked in :ref:`Index of Persons <persons>`.
+* **Bibliographic Abbreviations (pp. 295–296)**: Keys 8 foundational books (``Chl.``, ``Cn.``, ``Crt.``, ``Ech.``, ``Gy.``, ``LHr.``, ``Pt.``, ``Rouché-Comberousse``) and 9 problem-and-research periodicals (``Bull.``, ``Edinb.``, ``ET.``, ``GAM.``, ``JME.``, ``JMS.``, ``Mathesis.``, ``Monthly.``, ``NA.``, ``NC.``)—all encoded as structured entries in :ref:`Bibliography <bibliography>`.
+* **Article-by-Article Provenance (§§ 4–697)**: Traces individual theorems and constructions from :person:`Euclid <euclid>`, :person:`Archimedes <archimedes>`, :person:`Apollonius <apollonius>`, :person:`Heron <heron>`, :person:`Menelaus <menelaus>`, :person:`Ptolemy <ptolemy>`, and :person:`Pappus <pappus>` through :person:`Ceva <ceva>`, :person:`Euler <euler>`, :person:`Carnot <carnot>`, :person:`Poncelet <poncelet>`, :person:`Gergonne <gergonne>`, :person:`Feuerbach <feuerbach>`, :person:`Steiner <steiner>`, :person:`Chasles <chasles>`, :person:`Lemoine <lemoine>`, :person:`Brocard <brocard>`, and :person:`Neuberg <neuberg>`—all cross-linked in :ref:`Index of Persons <persons>`.
 """,
     "back-index": """\
 Analytical Subject Index & Digital Apparatus Integration
 --------------------------------------------------------
 
-Pages 310–313 (folios ``0329``–``0332``) contain Altshiller-Court's alphabetical *Index* keyed to article numbers (`§§ 1–699`), followed by the blank recto leaf ``0333`` (`[314]`) and the 2007 Dover back cover ``0334``.
+Pages 310–313 (folios ``0329``–``0332``) contain Altshiller-Court's alphabetical *Index* keyed to article numbers (§§ 1–699), followed by the blank recto leaf ``0333`` (``[314]``) and the 2007 Dover back cover ``0334``.
 
 In this Digital Scriptorium edition, the printed subject index is complemented by three interactive, machine-linked registries:
 
-* :ref:`Technical Glossary <glossary>` — 55 core definitions, loci, transformations, and Kimberling center mappings (`:term:`).
-* :ref:`Biographical Register of Persons <persons>` — 67 geometers and scholars with lifespan, biography, works, and article attributions (`:person:`).
-* :ref:`Systematic Bibliography <bibliography>` — 31 primary monographs, editions, and 19th/20th-century mathematical journals (`:cite:`).
+* :ref:`Technical Glossary <glossary>` — 56 core definitions, loci, data, transformations, and Kimberling center mappings (``:term:``).
+* :ref:`Biographical Register of Persons <persons>` — 67 geometers and scholars with lifespan, biography, works, and article attributions (``:person:``).
+* :ref:`Systematic Bibliography <bibliography>` — 31 primary monographs, editions, and 19th/20th-century mathematical journals (``:cite:``).
 """,
 }
 
 
-def parse_folio_rst(rst_path: Path) -> tuple[dict[str, str], str]:
-    """Parse ``:key: value`` metadata header and RST body from a ``<NNNN>.rst`` file."""
-    lines = rst_path.read_text(encoding="utf-8").splitlines()
-    meta: dict[str, str] = {}
-    idx = 0
-    while idx < len(lines) and lines[idx].strip():
-        m = re.match(r"^:([^:]+):\s*(.*)$", lines[idx])
-        if m:
-            meta[m.group(1).strip()] = m.group(2).strip()
-        idx += 1
-    while idx < len(lines) and not lines[idx].strip():
-        idx += 1
-    body = "\n".join(lines[idx:]).strip()
-    return meta, body
+def _section_slug(sec: dict[str, Any]) -> str:
+    """Build a deterministic URL slug for a chapter section dictionary."""
+    code = apparatus_slug(str(sec.get("code", "")))
+    title_clean = re.sub(r"\([^)]*\)", "", str(sec.get("title", ""))).strip()
+    title_slug = apparatus_slug(title_clean)
+    if title_slug.startswith(code + "-") or title_slug == code:
+        return title_slug
+    return f"{code}-{title_slug}".strip("-")
 
 
-def demote_headings_for_frontmatter(body: str) -> str:
-    """Demote ``===`` headings in individual frontmatter folios to ``---`` (and ``---`` to ``~~~``)."""
-    out_lines = body.splitlines()
-    for i in range(1, len(out_lines)):
-        prev = out_lines[i - 1]
-        cur = out_lines[i].strip()
-        if prev.strip() and len(cur) >= len(prev.strip()):
-            if set(cur) == {"="}:
-                out_lines[i] = "-" * len(prev.strip())
-            elif set(cur) == {"-"}:
-                out_lines[i] = "~" * len(prev.strip())
-    return "\n".join(out_lines)
+def _write_codex_item(
+    item: CodexItem,
+    parent_dir: Path,
+    chap_res_dir: Path,
+    notes_by_folio: dict[str, str],
+    folio_to_anchor: dict[str, str],
+) -> dict[str, int]:
+    """Write ``<item.slug>/index.rst``, co-located SVGs/crops, ``commentary.rst``, and children."""
+    item_dir = parent_dir / item.slug
+    item_dir.mkdir(parents=True, exist_ok=True)
 
+    folios = item.all_folios()
+    first_fid = folios[0][0] if folios else ""
+    first_page = folios[0][1] if folios else ""
+    folios_csv = ", ".join(f for f, _ in folios)
+    pages_csv = ", ".join(p for _, p in folios)
 
-def strip_top_chapter_heading(body: str) -> str:
-    """Remove top ``===`` chapter heading on the first folio of a chapter when chapter wrapper already emits it."""
-    lines = body.splitlines()
-    if len(lines) >= 2 and lines[0].strip() and set(lines[1].strip()) == {"="} and len(lines[1].strip()) >= 3:
-        rest = lines[2:]
-        while rest and not rest[0].strip():
-            rest.pop(0)
-        return "\n".join(rest)
-    return body
+    # Register folio -> leaf anchor mapping (prefer deeper leaf items for locus folios)
+    for fid, _ in item.blocks[0].folios if item.blocks else folios:
+        folio_to_anchor.setdefault(fid, item.anchor)
+    for fid, _ in folios:
+        if item.item_type == "locus" or fid not in folio_to_anchor:
+            folio_to_anchor[fid] = item.anchor
 
-
-def _ends_mid_sentence(block: str) -> bool:
-    """Return True if a plain paragraph block ends without sentence-closing punctuation."""
-    stripped = block.strip()
-    if not stripped or stripped.startswith(("..", "|")):
-        return False
-    lines = stripped.splitlines()
-    if len(lines) == 2 and re.match(r"^[=\-~^\"+]{3,}$", lines[1].strip()):
-        return False
-    last_char = stripped[-1]
-    return last_char not in {".", ":", ";", "?", "!", "”", '"', ")", "*"}
-
-
-def _is_plain_continuation_paragraph(block: str) -> bool:
-    """Return True if block is an ordinary prose/math paragraph suitable for joining across a page turn."""
-    stripped = block.strip()
-    if not stripped or stripped.startswith(("..", "|")):
-        return False
-    if re.match(r"^(?:\d+\.\s+|\*\*\d+\.|LOCUS\s+\d+|ANALYSIS\.|CONSTRUCTION\.|PROOF\.|DISCUSSION\.|CONVERSELY\.|\*Note\.\*)", stripped):
-        return False
-    lines = stripped.splitlines()
-    return not (len(lines) == 2 and re.match(r"^[=\-~^\"+]{3,}$", lines[1].strip()))
-
-
-def depaginate_folios(
-    folio_entries: list[tuple[str, str, dict[str, str], str]],
-    is_frontmatter: bool = False,
-) -> str:
-    """Assemble consecutive transcribed folios into continuous Book Codex RST with ``.. folio::`` milestones."""
-    assembled_blocks: list[str] = []
-
-    for idx, (folio_id, page_str, meta, raw_body) in enumerate(folio_entries):
-        status = meta.get("status", "ok")
-        if status == "blank":
-            continue
-
-        body = demote_headings_for_frontmatter(raw_body) if is_frontmatter else (
-            strip_top_chapter_heading(raw_body) if idx == 0 else raw_body
-        )
-
-        # Special clean reflow for folio 0038 where side-by-side Figs. 14-15 sit mid-sentence in print
-        raw_split = [b.rstrip() for b in re.split(r"\n\s*\n(?=\S)", body.strip()) if b.strip()]
-        if folio_id == "0038":
-            reordered: list[str] = []
-            i = 0
-            while i < len(raw_split):
-                if (
-                    _ends_mid_sentence(raw_split[i])
-                    and i + 3 < len(raw_split)
-                    and raw_split[i + 1].startswith(".. picture:: 0038.g1.")
-                    and raw_split[i + 2].startswith(".. picture:: 0038.g2.")
-                ):
-                    reordered.append(raw_split[i] + " " + raw_split[i + 3].lstrip())
-                    reordered.append(raw_split[i + 1])
-                    reordered.append(raw_split[i + 2])
-                    i += 4
-                else:
-                    reordered.append(raw_split[i])
-                    i += 1
-            blocks = reordered
-        else:
-            blocks = raw_split
-
-        if not blocks:
-            continue
-
-        milestone = f".. folio:: {folio_id}\n   :page: {page_str}"
-
-        if assembled_blocks and _ends_mid_sentence(assembled_blocks[-1]) and _is_plain_continuation_paragraph(blocks[0]):
-            # Seamlessly join sentence split across page turn, then emit folio milestone
-            assembled_blocks[-1] = assembled_blocks[-1] + " " + blocks[0]
-            assembled_blocks.append(milestone)
-            assembled_blocks.extend(blocks[1:])
-        else:
-            assembled_blocks.append(milestone)
-            assembled_blocks.extend(blocks)
-
-    return "\n\n".join(assembled_blocks)
-
-
-def build_section_table_rst(chapter: dict[str, Any]) -> str:
-    """Render a clean RST table of chapter sections, folio spans, printed pages, and articles."""
-    sections = chapter.get("sections") or []
-    if not sections:
-        return ""
-    lines = [
-        ".. list-table::",
-        "   :header-rows: 1",
-        "   :widths: 12 48 16 12 12",
-        "",
-        "   * - Section",
-        "     - Title",
-        "     - Folios",
-        "     - Pages",
-        "     - Articles",
+    lines: list[str] = [
+        ":layout: book",
+        f":type: {item.item_type}",
+        f":order: {item.order}",
+        f":canonical_id: {item.canonical_id}",
+        f":title: {item.title}",
     ]
-    for sec in sections:
-        art = sec.get("articles")
-        art_str = f"§§ {art[0]}–{art[1]}" if isinstance(art, list) and len(art) == 2 else "—"
-        f_span = (
-            f"``{sec['folio_start']}``"
-            if sec["folio_start"] == sec["folio_end"]
-            else f"``{sec['folio_start']}``–``{sec['folio_end']}``"
-        )
-        p_span = (
-            f"{sec['page_start']}"
-            if sec["page_start"] == sec["page_end"]
-            else f"{sec['page_start']}–{sec['page_end']}"
-        )
+    if first_fid:
+        lines.append(f":folio: {first_fid}")
+        lines.append(f":page: {first_page}")
+        lines.append(f":folios: {folios_csv}")
+        lines.append(f":pages: {pages_csv}")
+    if item.excerpt:
+        lines.append(f":excerpt: {item.excerpt}")
+
+    lines.extend([
+        "",
+        f".. _{item.anchor}:",
+        "",
+        item.title,
+        "=" * len(item.title),
+        "",
+    ])
+
+    # Ensure Table of Contents item has a clean lead paragraph before its list-table
+    body_blocks = list(item.blocks)
+    if item.slug == "04-contents" and item.excerpt and body_blocks:
+        body_blocks = [FolioBlock(text=item.excerpt, folios=list(body_blocks[0].folios))] + body_blocks
+
+    if body_blocks:
+        lines.append(render_blocks_with_folios(body_blocks))
+        lines.append("")
+
+    if item.children and item.child_collection_type:
         lines.extend([
-            f"   * - ``{sec['code']}``",
-            f"     - {sec['title']}",
-            f"     - {f_span}",
-            f"     - {p_span}",
-            f"     - {art_str}",
+            ".. collection::",
+            f"   :type: {item.child_collection_type}",
+            "   :sort: order",
+            "",
         ])
-    return "\n".join(lines)
+
+    comm_anchor = f"{item.anchor}-commentary"
+    lines.extend([
+        "----",
+        "",
+        f"See :ref:`Commentary on {item.title} <{comm_anchor}>`.",
+        "",
+        ".. toctree::",
+        "   :hidden:",
+        "",
+        "   commentary",
+        "",
+    ])
+
+    (item_dir / "index.rst").write_text("\n".join(lines), encoding="utf-8")
+
+    svgs_copied, pngs_copied = copy_referenced_graphics(item.blocks, chap_res_dir, item_dir)
+
+    # Companion commentary.rst
+    comm_title = f"Commentary on {item.title}"
+    comm_lines: list[str] = [
+        ":layout: book",
+        ":type: commentary",
+        f":canonical_id: {item.canonical_id}.commentary",
+        f":title: {comm_title}",
+    ]
+    if first_fid:
+        comm_lines.extend([
+            f":folio: {first_fid}",
+            f":page: {first_page}",
+            f":folios: {folios_csv}",
+            f":pages: {pages_csv}",
+        ])
+    comm_lines.extend([
+        "",
+        f".. _{comm_anchor}:",
+        "",
+        comm_title,
+        "=" * len(comm_title),
+        "",
+        f"Back to :ref:`{item.title} <{item.anchor}>`.",
+        "",
+    ])
+
+    own_fids: list[str] = []
+    for blk in item.blocks:
+        for fid, _ in blk.folios:
+            if fid not in own_fids:
+                own_fids.append(fid)
+    if not own_fids:
+        own_fids = [fid for fid, _ in folios]
+
+    for fid in own_fids:
+        note_txt = notes_by_folio.get(fid)
+        if note_txt:
+            comm_lines.append(demote_headings(note_txt, {"=": "-", "-": "~"}))
+            comm_lines.append("")
+
+    (item_dir / "commentary.rst").write_text("\n".join(comm_lines), encoding="utf-8")
+
+    items_written = 1
+    for child in item.children:
+        c_stats = _write_codex_item(child, item_dir, chap_res_dir, notes_by_folio, folio_to_anchor)
+        items_written += c_stats["items"]
+        svgs_copied += c_stats["svgs"]
+        pngs_copied += c_stats["pngs"]
+
+    return {
+        "items": items_written,
+        "svgs": svgs_copied,
+        "pngs": pngs_copied,
+    }
+
+
+def _write_ch01_sections(
+    sections: list[CodexSection],
+    unit_dir: Path,
+    chap_res_dir: Path,
+    notes_by_folio: dict[str, str],
+    folio_to_anchor: dict[str, str],
+) -> dict[str, int]:
+    """Write Chapter I's 5 section ``index.rst`` pages and all nested leaf/locus items."""
+    total_items = 0
+    total_svgs = 0
+    total_pngs = 0
+
+    for sec in sections:
+        sec_dir = unit_dir / sec.slug
+        sec_dir.mkdir(parents=True, exist_ok=True)
+
+        sec_folios: list[tuple[str, str]] = []
+        seen_f: set[str] = set()
+        for blk in sec.intro_blocks:
+            for fp in blk.folios:
+                if fp[0] not in seen_f:
+                    seen_f.add(fp[0])
+                    sec_folios.append(fp)
+        for it in sec.items:
+            for fp in it.all_folios():
+                if fp[0] not in seen_f:
+                    seen_f.add(fp[0])
+                    sec_folios.append(fp)
+
+        first_fid = sec_folios[0][0] if sec_folios else ""
+        first_page = sec_folios[0][1] if sec_folios else ""
+        folios_csv = ", ".join(f for f, _ in sec_folios)
+        pages_csv = ", ".join(p for _, p in sec_folios)
+
+        sec_lines = [
+            ":layout: book",
+            ":type: section",
+            f":order: {sec.order}",
+            f":canonical_id: {sec.canonical_id}",
+            f":title: {sec.title}",
+            f":folio: {first_fid}",
+            f":page: {first_page}",
+            f":folios: {folios_csv}",
+            f":pages: {pages_csv}",
+            "",
+            f".. _{sec.anchor}:",
+            "",
+            sec.title,
+            "=" * len(sec.title),
+            "",
+        ]
+        if sec.intro_blocks:
+            sec_lines.append(render_blocks_with_folios(sec.intro_blocks))
+            sec_lines.append("")
+        else:
+            sec_lines.append(sec.overview)
+            sec_lines.append("")
+
+        sec_lines.extend([
+            ".. collection::",
+            "   :type: item",
+            "   :sort: order",
+            "",
+        ])
+        (sec_dir / "index.rst").write_text("\n".join(sec_lines), encoding="utf-8")
+
+        for item in sec.items:
+            stats = _write_codex_item(item, sec_dir, chap_res_dir, notes_by_folio, folio_to_anchor)
+            total_items += stats["items"]
+            total_svgs += stats["svgs"]
+            total_pngs += stats["pngs"]
+
+    return {
+        "sections": len(sections),
+        "items": total_items,
+        "svgs": total_svgs,
+        "pngs": total_pngs,
+    }
+
+
+def _write_untranscribed_sections(
+    chapter: dict[str, Any],
+    chapter_folios: list[dict[str, Any]],
+    unit_dir: Path,
+    folio_to_anchor: dict[str, str],
+) -> int:
+    """Write ``<section-slug>/index.rst`` blueprint containers for Chapters II–X, Notes, and Index."""
+    slug = chapter["slug"]
+    num = chapter.get("number")
+    chap_label = f"Chapter {num}" if num else chapter["title"]
+    folios_by_id = {f["folio"]: f for f in chapter_folios}
+    sections = chapter.get("sections") or []
+
+    for order, sec in enumerate(sections, start=1):
+        sec_slug = _section_slug(sec)
+        sec_dir = unit_dir / sec_slug
+        sec_dir.mkdir(parents=True, exist_ok=True)
+        sec_anchor = f"{slug}-{sec_slug}"
+
+        code = sec.get("code", "")
+        raw_title = sec.get("title", "")
+        sec_title = (
+            f"{code}. {raw_title}"
+            if code and code not in {"Review", "Supplementary", "BibKey", "Notes", "Names", "Index", "Endmatter"}
+            else raw_title
+        )
+        art = sec.get("articles")
+        art_phrase = f"Articles **§§ {art[0]}–{art[1]}**" if isinstance(art, list) and len(art) == 2 else "Archival Matter"
+        f_start, f_end = sec["folio_start"], sec["folio_end"]
+        p_start, p_end = sec["page_start"], sec["page_end"]
+        f_span = f"``{f_start}``" if f_start == f_end else f"``{f_start}``–``{f_end}``"
+        p_span = f"``{p_start}``" if p_start == p_end else f"``{p_start}``–``{p_end}``"
+
+        sec_folio_entries = [
+            folios_by_id[f"{n:04d}"]
+            for n in range(int(f_start), int(f_end) + 1)
+            if f"{n:04d}" in folios_by_id
+        ]
+        for fe in sec_folio_entries:
+            folio_to_anchor.setdefault(fe["folio"], sec_anchor)
+
+        overview = (
+            f"{sec_title} in {chap_label} covers {art_phrase} across archival folios "
+            f"{f_span} (printed pages {p_span}), standardized at 300 DPI in "
+            f"``resources/college_geometry/{chapter['dir']}/``."
+        )
+
+        sec_lines = [
+            ":layout: book",
+            ":type: section",
+            f":order: {order}",
+            f":title: {sec_title}",
+            f":folio: {f_start}",
+            f":page: {p_start}",
+            "",
+            f".. _{sec_anchor}:",
+            "",
+            sec_title,
+            "=" * len(sec_title),
+            "",
+            overview,
+            "",
+            ".. collection::",
+            "   :type: item",
+            "   :sort: order",
+            "",
+            "Folio Scan Allocation",
+            "---------------------",
+            "",
+            ".. list-table::",
+            "   :header-rows: 1",
+            "   :widths: 16 16 38 30",
+            "",
+            "   * - Folio",
+            "     - Page",
+            "     - Articles",
+            "     - Scan Status",
+        ]
+        for fe in sec_folio_entries:
+            arts = fe.get("articles") or []
+            arts_disp = f"§§ {arts[0]}–{arts[-1]}" if len(arts) > 1 else (f"§ {arts[0]}" if len(arts) == 1 else "—")
+            st = "blank verso" if fe.get("is_blank") else ("cover (RGB)" if fe.get("is_cover") else "300 DPI gray")
+            sec_lines.extend([
+                f"   * - ``{fe['folio']}``",
+                f"     - ``{fe['printed_page']}``",
+                f"     - {arts_disp}",
+                f"     - {st}",
+            ])
+        sec_lines.extend([
+            "",
+            "----",
+            "",
+            f"See :ref:`Commentary on {chap_label} <{slug}-commentary>`.",
+            "",
+        ])
+        (sec_dir / "index.rst").write_text("\n".join(sec_lines), encoding="utf-8")
+
+    return len(sections)
 
 
 def build_chapter_unit(
@@ -323,8 +580,9 @@ def build_chapter_unit(
     chapter_folios: list[dict[str, Any]],
     volume_dir: Path,
     book_doc_dir: Path,
+    folio_to_anchor: dict[str, str],
 ) -> dict[str, Any]:
-    """Build ``<slug>/<slug>-en.rst`` and ``<slug>/<slug>-commentary.rst`` for a single chapter unit."""
+    """Build ``<slug>/index.rst``, ``<slug>/commentary.rst``, and nested section/item collections."""
     slug = chapter["slug"]
     chap_dir = volume_dir / chapter["dir"]
     unit_dir = book_doc_dir / slug
@@ -333,24 +591,11 @@ def build_chapter_unit(
     num = chapter.get("number")
     display_title = f"Chapter {num}: {chapter['title']}" if num else chapter["title"]
     subtitle = chapter.get("subtitle", "")
-    art_range = chapter.get("article_range")
-    art_str = f"§§ {art_range[0]}–{art_range[1]}" if art_range else "Unnumbered"
     folio_span = f"{chapter['folio_start']}–{chapter['folio_end']}"
     page_span = f"{chapter['page_start']}–{chapter['page_end']}"
 
-    # Copy any calibrated .g*.png, .g*.inverted.png, and .g*.svg diagrams into unit_dir for PictureDirective
-    copied_graphics = 0
-    for g_png in sorted(chap_dir.glob("*.g*.png")):
-        shutil.copy2(g_png, unit_dir / g_png.name)
-        copied_graphics += 1
-    copied_svgs = 0
-    for g_svg in sorted(chap_dir.glob("*.g*.svg")):
-        shutil.copy2(g_svg, unit_dir / g_svg.name)
-        copied_svgs += 1
-
     transcribed_entries: list[tuple[str, str, dict[str, str], str]] = []
-    notes_entries: list[tuple[str, str, str]] = []
-    untranscribed_folios: list[dict[str, Any]] = []
+    notes_by_folio: dict[str, str] = {}
 
     for f_entry in chapter_folios:
         fid = f_entry["folio"]
@@ -359,16 +604,23 @@ def build_chapter_unit(
         if rst_path.is_file():
             meta, body = parse_folio_rst(rst_path)
             transcribed_entries.append((fid, str(f_entry["printed_page"]), meta, body))
-            if notes_path.is_file():
-                notes_entries.append((fid, str(f_entry["printed_page"]), notes_path.read_text(encoding="utf-8").strip()))
-        else:
-            untranscribed_folios.append(f_entry)
+        if notes_path.is_file():
+            notes_by_folio[fid] = notes_path.read_text(encoding="utf-8").strip()
 
-    # ---- Track 1: <slug>-en.rst (English Text / Architectural Blueprint) ----
-    en_lines: list[str] = [
+    collection_child_type = "item" if chapter["index"] == 0 else "section"
+    overview_para = CHAPTER_OVERVIEWS.get(slug, subtitle)
+
+    idx_lines: list[str] = [
         ":layout: book",
+        ":type: chapter",
+        f":order: {chapter['index']}",
         f":title: {display_title}",
+        f":folio: {chapter['folio_start']}",
+        f":page: {chapter['page_start']}",
+        f":folios: {folio_span}",
+        f":pages: {page_span}",
         "",
+        f".. _{slug}:",
         f".. _{slug}-en:",
         "",
         display_title,
@@ -376,84 +628,73 @@ def build_chapter_unit(
         "",
     ]
     if subtitle:
-        en_lines.extend([f".. rubric:: {subtitle}", ""])
+        idx_lines.extend([f".. rubric:: {subtitle}", ""])
 
-    if transcribed_entries:
-        depaginated = depaginate_folios(transcribed_entries, is_frontmatter=(chapter["index"] == 0))
-        en_lines.append(depaginated)
-        en_lines.append("")
+    idx_lines.extend([
+        overview_para,
+        "",
+        ".. collection::",
+        f"   :type: {collection_child_type}",
+        "   :sort: order",
+        "",
+        "----",
+        "",
+        f"See :ref:`Commentary on {display_title} <{slug}-commentary>`.",
+        "",
+        ".. toctree::",
+        "   :hidden:",
+        "",
+        "   commentary",
+        "",
+    ])
+    (unit_dir / "index.rst").write_text("\n".join(idx_lines), encoding="utf-8")
 
-        if untranscribed_folios:
-            first_rem = untranscribed_folios[0]
-            last_rem = untranscribed_folios[-1]
-            en_lines.extend([
-                "----",
-                "",
-                ".. note::",
-                "",
-                f"   **Editorial Continuation (Folios ``{first_rem['folio']}``–``{last_rem['folio']}``, Pages {first_rem['printed_page']}–{last_rem['printed_page']})**",
-                "",
-                "   Article **§ 15** continues onto Folio ``0041`` (p. 22): *“and therefore the angle* :math:`EAF` *is known. The altitude* :math:`AD` *of the triangle* :math:`ABC` *is also the altitude of* :math:`AEF` *... Since* :math:`BA = BE, CA = CF`, *the vertices* :math:`B, C` *are the traces on* :math:`EF` *of the mediators of* :math:`AE` *and* :math:`AF` *.”*",
-                "",
-                f"   All 300 DPI archival scans for the remainder of {display_title} (``{first_rem['folio']}.png``–``{last_rem['folio']}.png``, covering **§§ 15–22** and **Review Exercises 1–74**) are ingested in ``resources/college_geometry/{chapter['dir']}/`` and indexed below for Phase 2 transcription.",
-                "",
-                "Remaining Chapter I Architecture (Folios ``0041``–``0052``)",
-                "-----------------------------------------------------------",
-                "",
-                build_section_table_rst(chapter),
-                "",
-            ])
+    sections_compiled = 0
+    items_compiled = 0
+    copied_svgs = 0
+    copied_graphics = 0
+    frontmatter_items: list[CodexItem] = []
+    ch01_sections: list[CodexSection] = []
+
+    if chapter["index"] == 0:
+        frontmatter_items = decompose_frontmatter(transcribed_entries)
+        for item in frontmatter_items:
+            st = _write_codex_item(item, unit_dir, chap_dir, notes_by_folio, folio_to_anchor)
+            items_compiled += st["items"]
+            copied_svgs += st["svgs"]
+            copied_graphics += st["pngs"]
+    elif chapter["index"] == 1:
+        ch01_sections = decompose_chapter_one(transcribed_entries)
+        st = _write_ch01_sections(ch01_sections, unit_dir, chap_dir, notes_by_folio, folio_to_anchor)
+        sections_compiled = st["sections"]
+        items_compiled = st["items"]
+        copied_svgs = st["svgs"]
+        copied_graphics = st["pngs"]
     else:
-        en_lines.extend([
-            ".. admonition:: Digital Scriptorium Architectural Blueprint",
-            "",
-            f"   * **Archival Span**: Folios ``{folio_span}`` · Printed Pages ``{page_span}`` · Articles **{art_str}**",
-            f"   * **300 DPI Raster Scans**: ``{len(chapter_folios)}`` standardized folios ready in ``resources/college_geometry/{chapter['dir']}/``",
-            "   * **Companion Track**: Switch to the **Commentary** tab above for mathematical synthesis, triangle-center mappings, and GEOMETOR connections.",
-            "",
-            "Section & Article Conspectus",
-            "----------------------------",
-            "",
-            build_section_table_rst(chapter),
-            "",
-            "Folio Scan Allocation",
-            "---------------------",
-            "",
-            ".. list-table::",
-            "   :header-rows: 1",
-            "   :widths: 14 14 24 28 20",
-            "",
-            "   * - Folio",
-            "     - Page",
-            "     - Section",
-            "     - Articles",
-            "     - Scan Status",
-        ])
-        for f_entry in chapter_folios:
-            arts = f_entry.get("articles") or []
-            arts_disp = f"§§ {arts[0]}–{arts[-1]}" if len(arts) > 1 else (f"§ {arts[0]}" if len(arts) == 1 else "—")
-            st = "blank verso" if f_entry.get("is_blank") else ("cover (RGB)" if f_entry.get("is_cover") else "300 DPI gray")
-            en_lines.extend([
-                f"   * - ``{f_entry['folio']}``",
-                f"     - ``{f_entry['printed_page']}``",
-                f"     - {f_entry.get('section_title', '—')}",
-                f"     - {arts_disp}",
-                f"     - {st}",
-            ])
-        en_lines.append("")
+        sections_compiled = _write_untranscribed_sections(
+            chapter, chapter_folios, unit_dir, folio_to_anchor
+        )
 
-    (unit_dir / f"{slug}-en.rst").write_text("\n".join(en_lines), encoding="utf-8")
+    for f_entry in chapter_folios:
+        folio_to_anchor.setdefault(f_entry["folio"], slug)
 
-    # ---- Track 2: <slug>-commentary.rst (Commentary & Diplomatic Notes) ----
-    comm_title = f"{display_title} — Commentary"
+    # Chapter-level commentary.rst
+    comm_title = f"Commentary on {display_title}"
     comm_lines: list[str] = [
         ":layout: book",
+        ":type: commentary",
         f":title: {comm_title}",
+        f":folio: {chapter['folio_start']}",
+        f":page: {chapter['page_start']}",
+        f":folios: {folio_span}",
+        f":pages: {page_span}",
         "",
         f".. _{slug}-commentary:",
         "",
         comm_title,
         "=" * len(comm_title),
+        "",
+        f"Back to :ref:`{display_title} <{slug}>`.",
         "",
         f".. rubric:: Constructive Analysis, Historical Provenance & GEOMETOR Notes ({folio_span}, pp. {page_span})",
         "",
@@ -461,38 +702,52 @@ def build_chapter_unit(
 
     if slug == "frontmatter":
         comm_lines.extend([
-            "Editorial Overview of the Frontmatter (`0001`–`0019`)",
-            "-----------------------------------------------------",
+            "Editorial Overview of the Frontmatter (``0001``–``0019``)",
+            "---------------------------------------------------------",
             "",
             "The nineteen frontmatter folios of :person:`Nathan Altshiller-Court's <altshiller-court>` :cite:`College Geometry (1952 / Dover 2007) <court:1952>` frame both the historical triumph of synthetic geometry in twentieth-century American higher education and the pedagogical discipline required to master geometric problem solving:",
             "",
-            "* **From 1925 to 1952 (`Preface`, pp. vii–viii)**: Between the :cite:`1925 Johnson Publishing first edition <court:1925>` and the :cite:`1952 Barnes & Noble second edition <court:1952>`, college geometry evolved from an experimental elective into a staple course for mathematics majors and prospective teachers. Altshiller-Court rewrote the entire treatise, inserted Chapter IV (*The Quadrilateral*), expanded Chapter X (*Recent Geometry of the Triangle*), and moved :term:`harmonic division <harmonic-division>` forward into Chapter II/III.",
+            "* **From 1925 to 1952 (Preface, pp. vii–viii)**: Between the :cite:`1925 Johnson Publishing first edition <court:1925>` and the :cite:`1952 Barnes & Noble second edition <court:1952>`, college geometry evolved from an experimental elective into a staple course for mathematics majors and prospective teachers. Altshiller-Court rewrote the entire treatise, inserted Chapter IV (*The Quadrilateral*), expanded Chapter X (*Recent Geometry of the Triangle*), and moved :term:`harmonic division <harmonic-division>` forward into Chapter III.",
             "* **Pagination Offset Contract**: Folios ``0001``–``0019`` carry cover and Roman numerals ``[iii]``–``[xx]`` (including blank versos ``0005``, ``0009``, ``0015``, ``0019``), establishing the exact body formula ``PDF Folio = Printed Arabic Page + 19`` from Folio ``0020`` (p. ``1``) to Folio ``0332`` (p. ``313``).",
-            "* **Problem-Solving Heuristic (`To the Student`, pp. xvii–xix)**: Altshiller-Court's insistence on maintaining bidirectional marginal links to :cite:`Euclid's Elements <euclid:elements>`, memorizing exact definitions and theorems as active deductive tools, restating problems from memory, and sketching diagnostic figures directly parallels George Pólya's *How to Solve It* (1945) and motivates the GEOMETOR Digital Scriptorium.",
+            "* **Problem-Solving Heuristic (To the Student, pp. xvii–xix)**: Altshiller-Court's insistence on maintaining bidirectional marginal links to :cite:`Euclid's Elements <euclid:elements>`, memorizing exact definitions and theorems as active deductive tools, restating problems from memory, and sketching diagnostic figures directly motivates the GEOMETOR Digital Scriptorium.",
+            "",
+            "Item-by-Item Diplomatic Notes",
+            "-----------------------------",
             "",
         ])
+        for item in frontmatter_items:
+            comm_lines.append(f"* :ref:`Commentary on {item.title} <{item.anchor}-commentary>`")
+        comm_lines.append("")
     elif slug == "ch01-geometric-constructions":
         comm_lines.extend([
-            "Constructive Architecture & Symbolic Modeling (`§§ 1–22`)",
-            "---------------------------------------------------------",
+            "Constructive Architecture & Symbolic Modeling (§§ 1–22)",
+            "-------------------------------------------------------",
             "",
-            "Chapter I lays down the operational grammar of the entire book. Every ruler-and-compass construction is governed by :person:`Pappus' <pappus>` four-stage :term:`analytic method <analytic-method>` (:cite:`Collection, Book VII <pappus:collection:VII>`):",
+            "Chapter I lays down the operational grammar of the entire book across 33 verified folios (``0020``–``0052``, pp. ``1``–``33``), 22 interactive ``.euclid-graphic`` diagrams (``Figs. 1–22``), and 167 exercises. Every ruler-and-compass construction is governed by :person:`Pappus' <pappus>` four-stage :term:`analytic method <analytic-method>` (:cite:`Collection, Book VII <pappus:collection:VII>`):",
             "",
             "1. :term:`Analysis <analysis-step>` — Assume the required configuration already exists and trace algebraic/synthetic incidences back to known data.",
-            "2. :term:`Construction <construction-step>` — Execute elementary straightedge (`line(P, Q)`) and compass (`circle(A, r)`) steps in forward topological order.",
+            "2. :term:`Construction <construction-step>` — Execute elementary straightedge (``line(P, Q)``) and compass (``circle(A, r)``) steps in forward topological order.",
             "3. :term:`Proof <proof-step>` — Verify deductively that the constructed object satisfies every hypothesis.",
-            "4. :term:`Discussion <discussion-step>` (*Diorismos*) — Determine exact existence inequalities (`s < 2 OE`, `s^2 > 2a^2`), count multiplicity of solutions (`0, 1, 2, 3, 4, 6`, or :math:`\\infty`), and identify poristic degeneracies (as in § 9 when :math:`AC \\perp BD` and :math:`AC = BD`).",
+            "4. :term:`Discussion <discussion-step>` (*Diorismos*) — Determine exact existence inequalities (``s < 2 OE``, ``a < b + c``, ``a > b - c``), count multiplicity of solutions (``0, 1, 2, 3, 4, 6``, or :math:`\\infty`), and identify poristic degeneracies (as in :ref:`§ 9 <ch01-art-009>` when :math:`AC \\perp BD` and :math:`AC = BD`).",
             "",
             "Mapping Chapter I to ``geometor.model`` & ``geometor.elements``",
             "---------------------------------------------------------------",
             "",
-            "* **Symbolic DAG Representation**: Altshiller-Court's § 1 notation—circles :math:`(A, r)` and line intersections :math:`M = (PQ, RS)`—maps one-to-one onto ``geometor.model`` primitives, where every constructed point retains its exact SymPy algebraic coordinates in a quadratic extension tower of :math:`\\mathbb{Q}`.",
-            "* **The Twelve Fundamental Loci (§ 11, Folios `0030`–`0036`)**:",
-            "  - *Linear Loci*: Parallel pair (Locus 3), :term:`mediator <mediator>` (Locus 4, :cite:`Euclid I.10–11 <euclid:elements>`), angle bisectors (Locus 5), and constant difference of squares :math:`AM^2 - BM^2 = d^2` (Locus 12 — the point-circle precursor of the :term:`radical axis <radical-axis>` in Chapter VIII, § 422).",
-            "  - *Circular Loci*: Circle :math:`(A, r)` (Locus 1), concentric tangent-length & subtended-angle circles (Loci 2, 6, 9), :term:`capable arc <subtended-angle-locus>` & Thales' circle (Locus 7, :cite:`Euclid III.21, III.31 <euclid:elements>`), chord-midpoint circle on :math:`OP` (Locus 8), Apollonius' median circle :math:`OM^2 = \\tfrac{1}{2}s^2 - a^2` (Locus 10), and the :term:`Apollonian circle <apollonian-circle>` :math:`AM : MB = p : q` (Locus 11, :person:`Apollonius <apollonius>`).",
-            "* **Transformational & Unfolding Previews**: § 8 previews parallel translation (:cite:`Petersen <pt>`), § 9 previews :math:`90^\\circ` rotational congruence (:person:`Castillon <castillon>`), and § 15 introduces :term:`indirect elements <indirect-elements>` by unfolding perimeter :math:`2p` into auxiliary triangle :math:`AEF` with vertex angle :math:`90^\\circ + \\tfrac{1}{2}A`.",
+            "* **Symbolic DAG Representation**: Altshiller-Court's :ref:`§ 1 <ch01-art-001>` notation—circles :math:`(A, r)` and line intersections :math:`M = (PQ, RS)`—maps one-to-one onto ``geometor.model`` primitives, where every constructed point retains its exact SymPy algebraic coordinates in a quadratic extension tower of :math:`\\mathbb{Q}`.",
+            "* **The Twelve Fundamental Loci (:ref:`§ 11 <ch01-art-011>`, Folios ``0030``–``0036``)**:",
+            "  - *Linear Loci*: Parallel pair (:ref:`Locus 3 <ch01-locus-03>`), :term:`mediator <mediator>` (:ref:`Locus 4 <ch01-locus-04>`, :cite:`Euclid I.10–11 <euclid:elements>`), angle bisectors (:ref:`Locus 5 <ch01-locus-05>`), and constant difference of squares :math:`AM^2 - BM^2 = d^2` (:ref:`Locus 12 <ch01-locus-12>` — point-circle precursor of the :term:`radical axis <radical-axis>` in Chapter VIII, § 422).",
+            "  - *Circular Loci*: Circle :math:`(A, r)` (:ref:`Locus 1 <ch01-locus-01>`), concentric tangent-length & subtended-angle circles (:ref:`Loci 2 <ch01-locus-02>`, :ref:`6 <ch01-locus-06>`, :ref:`9 <ch01-locus-09>`), :term:`capable arc <subtended-angle-locus>` & Thales' circle (:ref:`Locus 7 <ch01-locus-07>`, :cite:`Euclid III.21, III.31 <euclid:elements>`), chord-midpoint circle on :math:`OP` (:ref:`Locus 8 <ch01-locus-08>`), Apollonius' median circle :math:`OM^2 = \\tfrac{1}{2}s^2 - a^2` (:ref:`Locus 10 <ch01-locus-10>`), and the :term:`Apollonian circle <apollonian-circle>` :math:`AM : MB = p : q` (:ref:`Locus 11 <ch01-locus-11>`, :person:`Apollonius <apollonius>`).",
+            "* **Indirect Elements & Auxiliary Triangles (:ref:`Section D <ch01-d-indirect-elements>`, §§ 15–22)**: Unfolding perimeter :math:`2p` into :math:`\\triangle AEF` (:ref:`§ 15 <ch01-art-015>`), side sums :math:`b + c` into :math:`\\triangle BCD` (:ref:`§ 17 <ch01-art-017>`), side differences :math:`b - c` into :math:`\\triangle BCD` and :math:`\\triangle BCE` (:ref:`§ 18 <ch01-art-018>`, :ref:`§ 19 <ch01-art-019>`), and altitude sums/differences :math:`h_b \\pm h_c` into right triangles :math:`\\triangle BGH` and :math:`\\triangle CGH` (:ref:`§ 20 <ch01-art-020>`, :ref:`§ 22 <ch01-art-022>`), formalizing two-element :term:`data <datum>` (:ref:`§ 21 <ch01-art-021>`).",
+            "",
+            "Section & Item Commentary Index",
+            "-------------------------------",
             "",
         ])
+        for sec in ch01_sections:
+            comm_lines.append(f"* :ref:`{sec.title} <{sec.anchor}>`")
+            for item in sec.items:
+                comm_lines.append(f"  - :ref:`Commentary on {item.title} <{item.anchor}-commentary>`")
+        comm_lines.append("")
     else:
         comm_lines.append(CHAPTER_COMMENTARY.get(slug, ""))
         comm_lines.append("")
@@ -508,36 +763,15 @@ def build_chapter_unit(
             comm_lines.append(f"* ``geometor/{gl}``")
         comm_lines.append("")
 
-    if notes_entries:
-        comm_lines.extend([
-            "Folio-by-Folio Diplomatic & Constructive Notes",
-            "----------------------------------------------",
-            "",
-        ])
-        for fid, p_str, n_text in notes_entries:
-            # Demote headings inside individual folio notes (`===` -> `~~~`, `---` -> `^^^`)
-            n_lines = n_text.splitlines()
-            demoted: list[str] = []
-            for j, ln in enumerate(n_lines):
-                s = ln.strip()
-                if j > 0 and n_lines[j - 1].strip() and len(s) >= len(n_lines[j - 1].strip()):
-                    if set(s) == {"="}:
-                        demoted.append("~" * len(n_lines[j - 1].strip()))
-                        continue
-                    if set(s) == {"-"}:
-                        demoted.append("^" * len(n_lines[j - 1].strip()))
-                        continue
-                demoted.append(ln)
-            comm_lines.append("\n".join(demoted))
-            comm_lines.append("")
-
-    (unit_dir / f"{slug}-commentary.rst").write_text("\n".join(comm_lines), encoding="utf-8")
+    (unit_dir / "commentary.rst").write_text("\n".join(comm_lines), encoding="utf-8")
 
     return {
         "slug": slug,
         "display_title": display_title,
         "transcribed_count": len(transcribed_entries),
         "total_folios": len(chapter_folios),
+        "sections_compiled": sections_compiled,
+        "items_compiled": items_compiled,
         "copied_graphics": copied_graphics,
         "copied_svgs": copied_svgs,
     }
@@ -545,24 +779,25 @@ def build_chapter_unit(
 
 def _format_occurrences_line(
     occurrences: list[dict[str, Any]],
+    folio_to_anchor: dict[str, str],
     chapter_dir_to_slug: dict[str, str],
 ) -> str:
-    """Format occurrence links to compiled chapter units."""
+    """Format occurrence back-links to exact leaf item or section pages."""
     if not occurrences:
         return ""
-    seen = set()
+    seen: set[tuple[str, str]] = set()
     parts: list[str] = []
     for occ in occurrences:
         folio = occ.get("folio", "")
         page = occ.get("page", "")
         sec = occ.get("section", "")
-        slug = chapter_dir_to_slug.get(sec)
-        key = (folio, slug)
+        target = folio_to_anchor.get(folio) or chapter_dir_to_slug.get(sec)
+        key = (folio, target or "")
         if key in seen:
             continue
         seen.add(key)
-        if slug:
-            parts.append(f":ref:`f. {folio} (p. {page}) <{slug}-en>`")
+        if target:
+            parts.append(f":ref:`f. {folio} (p. {page}) <{target}>`")
         else:
             parts.append(f"f. ``{folio}`` (p. {page})")
     return " · ".join(parts)
@@ -572,6 +807,7 @@ def build_apparatus_pages(
     volume_dir: Path,
     book_doc_dir: Path,
     structure: dict[str, Any],
+    folio_to_anchor: dict[str, str],
 ) -> dict[str, int]:
     """Generate ``bibliography.rst``, ``persons.rst``, ``glossary.rst``, and ``scan-inventory.rst``."""
     citations: dict[str, Any] = json.loads((volume_dir / "citations.json").read_text(encoding="utf-8"))
@@ -601,18 +837,21 @@ def build_apparatus_pages(
     ]
     for ck, entry in sorted(citations.items()):
         c_slug = apparatus_slug(ck)
-        occ_str = _format_occurrences_line(entry.get("occurrences", []), chapter_dir_to_slug)
+        occ_str = _format_occurrences_line(
+            entry.get("occurrences", []), folio_to_anchor, chapter_dir_to_slug
+        )
         author_key = entry.get("author_key", "")
         author_disp = entry.get("author", "")
         if author_key and author_key in persons:
             author_ref = f":person:`{author_disp} <{author_key}>`"
         else:
             author_ref = f"**{author_disp}**"
+        heading = f"``[{ck}]`` — {entry.get('work', '')}"
         bib_lines.extend([
             f".. _cite-{c_slug}:",
             "",
-            f"``[{ck}]`` — {entry.get('work', '')}",
-            "-" * len(f"``[{ck}]`` — {entry.get('work', '')}"),
+            heading,
+            "-" * len(heading),
             "",
             f"* **Author / Editor**: {author_ref}",
             f"* **Locus / Key**: {entry.get('locus', '—')}",
@@ -644,7 +883,9 @@ def build_apparatus_pages(
         arts = entry.get("articles") or []
         arts_str = ", ".join(f"§ {a}" for a in arts) if arts else "Frontmatter / Apparatus"
         works = entry.get("works") or []
-        occ_str = _format_occurrences_line(entry.get("occurrences", []), chapter_dir_to_slug)
+        occ_str = _format_occurrences_line(
+            entry.get("occurrences", []), folio_to_anchor, chapter_dir_to_slug
+        )
 
         pers_lines.extend([
             f".. _person-{p_slug}:",
@@ -677,13 +918,15 @@ def build_apparatus_pages(
         "Technical Glossary of Modern Synthetic Geometry",
         "===============================================",
         "",
-        f".. rubric:: {len(glossary)} Constructive Methods, Loci, Triangle Centers, Circles, and Projective/Conformal Transformations",
+        f".. rubric:: {len(glossary)} Constructive Methods, Loci, Data, Triangle Centers, Circles, and Projective/Conformal Transformations",
         "",
     ]
     for tk, entry in sorted(glossary.items(), key=lambda kv: kv[1].get("headword", kv[0]).lower()):
         t_slug = apparatus_slug(tk)
         head = entry.get("headword", tk)
-        occ_str = _format_occurrences_line(entry.get("occurrences", []), chapter_dir_to_slug)
+        occ_str = _format_occurrences_line(
+            entry.get("occurrences", []), folio_to_anchor, chapter_dir_to_slug
+        )
         gloss_lines.extend([
             f".. _term-{t_slug}:",
             "",
@@ -719,11 +962,11 @@ def build_apparatus_pages(
         "",
         ".. list-table::",
         "   :header-rows: 1",
-        "   :widths: 10 10 26 24 14 16",
+        "   :widths: 10 10 24 26 14 16",
         "",
         "   * - Folio",
         "     - Page",
-        "     - Chapter Directory",
+        "     - Codex Locus",
         "     - Section / Articles",
         "     - Diagrams",
         "     - Status",
@@ -753,7 +996,8 @@ def build_apparatus_pages(
 
         arts = f_entry.get("articles") or []
         arts_str = f" (§§ {arts[0]}–{arts[-1]})" if len(arts) > 1 else (f" (§ {arts[0]})" if len(arts) == 1 else "")
-        sec_disp = f"{f_entry.get('section_code', '')}{arts_str}".strip() or "—"
+        sec_label = f_entry.get("section") or f_entry.get("section_code") or ""
+        sec_disp = f"{sec_label}{arts_str}".strip() or "—"
         if svg_count:
             diag_disp = f"{svg_count} SVG + crop(s)"
         elif diag_count:
@@ -761,8 +1005,11 @@ def build_apparatus_pages(
         else:
             diag_disp = "—"
 
+        anchor = folio_to_anchor.get(fid)
+        locus_disp = f":ref:`{fid} <{anchor}>`" if anchor else f"``{fid}``"
+
         inv_lines.extend([
-            f"   * - ``{fid}``",
+            f"   * - {locus_disp}",
             f"     - ``{f_entry['printed_page']}``",
             f"     - ``{cdir}``",
             f"     - {sec_disp}",
@@ -784,7 +1031,6 @@ def build_apparatus_pages(
 
 def build_book_index(
     structure: dict[str, Any],
-    unit_summaries: list[dict[str, Any]],
     apparatus_counts: dict[str, int],
     book_doc_dir: Path,
 ) -> None:
@@ -820,34 +1066,19 @@ def build_book_index(
         "",
         "----",
         "",
-        "Conspectus of the Digital Edition",
-        "---------------------------------",
+        "Divisions of the Edition",
+        "------------------------",
         "",
-        "Each division below is published as a synchronized **2-Track Book Codex** (**English** | **Commentary**) with track-preserving navigation, marginal folio milestones, dark-mode normalized geometric figures, and interactive ``:person:``, ``:cite:``, and ``:term:`` apparatus cards.",
+        (
+            "Published as a hierarchical **Book Codex** (``Book → Chapters → Sections → Items``) with "
+            "one article, problem, locus, or exercise set per page, inline ``.euclid-graphic`` interactive "
+            "diagrams, marginal ``.. folio::`` milestones, and companion **Commentary** tracks."
+        ),
         "",
-    ]
-
-    for ch, summary in zip(structure["chapters"], unit_summaries):
-        slug = ch["slug"]
-        heading = summary["display_title"]
-        art_range = ch.get("article_range")
-        art_badge = f" · Articles **§§ {art_range[0]}–{art_range[1]}**" if art_range else ""
-        trans_badge = (
-            f" · **{summary['transcribed_count']}/{summary['total_folios']} Folios Verified**"
-            if summary["transcribed_count"] > 0
-            else f" · **{summary['total_folios']} Archival Scans Indexed**"
-        )
-        lines.extend([
-            heading,
-            "~" * len(heading),
-            "",
-            f"*{ch.get('subtitle', '')}*",
-            "",
-            f":ref:`English <{slug}-en>` · :ref:`Commentary <{slug}-commentary>` — Folios ``{ch['folio_start']}``–``{ch['folio_end']}`` (pp. ``{ch['page_start']}``–``{ch['page_end']}``){art_badge}{trans_badge}",
-            "",
-        ])
-
-    lines.extend([
+        ".. collection::",
+        "   :type: chapter",
+        "   :sort: order",
+        "",
         "Scholarly Apparatus & Concordances",
         "----------------------------------",
         "",
@@ -855,30 +1086,6 @@ def build_book_index(
         f"* :ref:`Biographical Register of Geometers & Scholars ({apparatus_counts['persons']} Persons) <persons>`",
         f"* :ref:`Technical Glossary of Synthetic Geometry ({apparatus_counts['glossary']} Terms) <glossary>`",
         f"* :ref:`334-Folio Archival Scan & Transcription Inventory ({apparatus_counts['verified']} Verified) <scan-inventory>`",
-        "",
-        ".. toctree::",
-        "   :maxdepth: 2",
-        "   :hidden:",
-        "   :caption: English Track",
-        "",
-    ])
-    for ch in structure["chapters"]:
-        slug = ch["slug"]
-        lines.append(f"   {slug}/{slug}-en")
-
-    lines.extend([
-        "",
-        ".. toctree::",
-        "   :maxdepth: 1",
-        "   :hidden:",
-        "   :caption: Commentary Track",
-        "",
-    ])
-    for ch in structure["chapters"]:
-        slug = ch["slug"]
-        lines.append(f"   {slug}/{slug}-commentary")
-
-    lines.extend([
         "",
         ".. toctree::",
         "   :maxdepth: 1",
@@ -890,7 +1097,7 @@ def build_book_index(
         "   glossary",
         "   scan-inventory",
         "",
-    ])
+    ]
 
     (book_doc_dir / "index.rst").write_text("\n".join(lines), encoding="utf-8")
 
@@ -901,6 +1108,13 @@ def compile_edition(repo_root: Path) -> dict[str, Any]:
     book_doc_dir = repo_root / "docsrc" / "college_geometry"
     book_doc_dir.mkdir(parents=True, exist_ok=True)
 
+    # Remove stale subdirectories or legacy monolithic files before regenerating
+    for existing in list(book_doc_dir.iterdir()):
+        if existing.is_dir():
+            shutil.rmtree(existing)
+        elif existing.is_file() and existing.suffix == ".rst":
+            existing.unlink()
+
     svg_info = compile_all_svgs(volume_dir)
 
     structure: dict[str, Any] = json.loads(
@@ -910,17 +1124,20 @@ def compile_edition(repo_root: Path) -> dict[str, Any]:
     for f_entry in structure["folios"]:
         folios_by_dir.setdefault(f_entry["chapter_dir"], []).append(f_entry)
 
+    folio_to_anchor: dict[str, str] = {}
     unit_summaries: list[dict[str, Any]] = []
     for ch in structure["chapters"]:
         c_folios = folios_by_dir.get(ch["dir"], [])
-        summary = build_chapter_unit(ch, c_folios, volume_dir, book_doc_dir)
+        summary = build_chapter_unit(ch, c_folios, volume_dir, book_doc_dir, folio_to_anchor)
         unit_summaries.append(summary)
 
-    apparatus_counts = build_apparatus_pages(volume_dir, book_doc_dir, structure)
-    build_book_index(structure, unit_summaries, apparatus_counts, book_doc_dir)
+    apparatus_counts = build_apparatus_pages(volume_dir, book_doc_dir, structure, folio_to_anchor)
+    build_book_index(structure, apparatus_counts, book_doc_dir)
 
     return {
         "units_compiled": len(unit_summaries),
+        "sections_compiled": sum(u["sections_compiled"] for u in unit_summaries),
+        "items_compiled": sum(u["items_compiled"] for u in unit_summaries),
         "transcribed_folios": sum(u["transcribed_count"] for u in unit_summaries),
         "total_folios": apparatus_counts["folios"],
         "verified_folios": apparatus_counts["verified"],

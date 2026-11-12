@@ -1,0 +1,45 @@
+:folio: 0045
+:page: 26
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Indirect Elements — p. 26 (§§ 20–21, Fig. 21)
+:language: en
+:status: ok
+
+.. picture:: 0045.g1.svg
+   :alt: Fig. 21 — Right auxiliary triangle BGH with leg BG = h_b + h_c, hypotenuse BH = b + c, and angle bisector HC
+   :caption: FIG. 21
+
+to :g:`BG <0045.g1:/ B G />` meeting :g:`HG <0045.g1:[ H G ]>` in the point :g:`I <0045.g1:I>`. :g:`AIGE <0045.g1:< A I G E >>` is a rectangle and therefore :eq:`AI = EG <0045.g1:/ A I / = 0045.g1:/ E G />` :math:`= h_c`. Now in the right triangles :g:`ACF <0045.g1:< A C F >>`, :g:`AHI <0045.g1:< A H I >>`, we have:
+
+.. math::
+
+   AI = CF = h_c, \qquad \angle AHI = \angle CAF = A;
+
+hence the two triangles are congruent, and :eq:`AH = AC <0045.g1:/ A H / = 0045.g1:/ A C />` :math:`= b`; therefore:
+
+.. math::
+
+   BH = BA + AH = b + c.
+
+Thus, of the required triangle :g:`ABC <0045.g1:< A B C >>` we know now: :math:`a, A, b + c`, and the problem is reduced to a known problem (§ 17).
+
+.. assertion:: [Direct Locus Recovery]
+
+   However, the passage from the auxiliary triangle :g:`BGH <0045.g1:< B G H >>` to the required triangle :g:`ABC <0045.g1:< A B C >>` may be made directly in the figure. The vertex :g:`B <0045.g1:B>` of :g:`BGH <0045.g1:< B G H >>` belongs to :g:`ABC <0045.g1:< A B C >>`. In order to find :g:`C <0045.g1:C>` we observe that in the isosceles triangle :g:`AHC <0045.g1:< A H C >>` we have:
+
+   .. math::
+
+      \angle AHC = \angle ACH = \tfrac{1}{2}\,A,
+
+   and since angle :g:`AHG <0045.g1:< A H G )>` :math:`= A`, the line :g:`HC <0045.g1:[ H C ]>` is the bisector of the angle :g:`H <0045.g1:< B H G )>`, and this line constitutes a :term:`locus <geometric-locus>` for the point :g:`C <0045.g1:C>`. The circle :math:`(B, a)` is a second locus for :g:`C <0045.g1:C>`. The vertex :g:`A <0045.g1:A>` is then determined on the side :g:`BH <0045.g1:/ B H />` of :g:`BGH <0045.g1:< B G H >>` by the :term:`mediator` of :g:`CH <0045.g1:/ C H />`.
+
+If the given angle :g:`A <0045.g1:< B A C )>` is obtuse, the triangle :g:`BGH <0045.g1:< B G H >>` will include not :g:`A <0045.g1:< B A C )>` but its supplement, and the problem may be solved in the same way.
+
+**21. Definition.** The right triangle :math:`BGH` involves the elements:
+
+.. math::
+
+   b + c, \quad h_b + h_c, \quad A;
+
+hence given any two of these elements the third one is determined. A set of elements of a triangle having this property is sometimes referred to as a :term:`datum`.

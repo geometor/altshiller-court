@@ -1,0 +1,33 @@
+:folio: 0048
+:page: 29
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Review Exercises — p. 29 (Supplementary 12–16, Constructions 1–13)
+:language: en
+:status: ok
+
+12. Given an angle and a point marked on one side, find a second point on this side which shall be equidistant from the first point and from the other side of the angle.
+13. With a given radius to describe a circle having its center on one side of a given angle and intercepting a chord of given length on the other side of this angle.
+14. With a given point as center to describe a circle which shall intercept on two given parallel lines two chords whose sum shall be equal to a given length.
+15. Draw a line parallel to the base :math:`BC` of a given triangle :math:`ABC` and meeting the sides :math:`AB, AC` in the points :math:`B', C'` so that the trapezoid :math:`BB'C'C` shall have a given perimeter.
+16. Construct a triangle so that its sides shall pass through three given noncollinear points and shall be divided by these points internally in given ratios.
+
+REVIEW EXERCISES
+----------------
+
+CONSTRUCTIONS
+~~~~~~~~~~~~~
+
+1. In a given circle to draw a diameter such that it shall subtend a :term:`given angle <subtended-angle-locus>` at a given point.
+2. Draw a line on which two given circles shall intercept chords of given lengths.
+3. Place two given circles so that their common internal (or external) tangents shall form an angle of given magnitude.
+4. Construct a right triangle given the altitude to the hypotenuse, two points on the hypotenuse, and a point on each of the two legs.
+5. Through a given point of the altitude, extended, of a right triangle to draw a secant so that the segment intercepted on that secant by the sides of the right angle shall have its midpoint on the hypotenuse.
+6. Through two given points, collinear with the center of a given circle, to draw two lines so that they shall intersect on the circle, and the chords which the circle intercepts on these lines shall be equal.
+7. Through a given point to draw a line so that the segment intercepted on it by two given parallel lines shall subtend a :term:`given angle <subtended-angle-locus>` at another given point.
+8. Construct a triangle given the base, an adjacent angle, and the trace, on the base, of the circumdiameter (i.e., the diameter of the :term:`circumscribed circle <circumcircle>`) passing through the opposite vertex.
+9. Construct a triangle given, in position, the :term:`inscribed circle <incircle>`, the midpoint of the base, and a point on the external bisector of a base angle.
+10. Construct a triangle :math:`ABC` given, in position, a line :math:`u` on which the base :math:`BC` is to lie, a point :math:`D` of the :term:`circumcircle`, a point :math:`E` of the side :math:`AB`, the circumradius :math:`R`, and the length :math:`a` of the base :math:`BC`.
+11. In a given triangle to inscribe an equilateral triangle of given area.
+12. With a given radius to draw a circle so that it shall pass through a given point and intercept on a given line a chord of given length.
+13. Draw a circle tangent to two concentric circles and passing through a given point.

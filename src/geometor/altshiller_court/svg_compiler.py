@@ -269,7 +269,7 @@ def canonical_point_ref(pt_key: str) -> str:
 
 def format_label_svg_inner(label_text: str) -> str:
     """Render primed and subscripted mathematical labels with SVG ``<tspan>`` children."""
-    m_both = re.match(r"^([A-Za-z]+)_(\d+)('+)$", label_text)
+    m_both = re.match(r"^([A-Za-z]+)_([A-Za-z0-9]+)('+)$", label_text)
     if m_both:
         base, sub, primes = m_both.groups()
         return (
@@ -277,7 +277,7 @@ def format_label_svg_inner(label_text: str) -> str:
             f'<tspan dy="3" class="geom-label-sub">{html.escape(sub)}</tspan>'
             f'<tspan dy="-3">{html.escape(primes)}</tspan>'
         )
-    m_sub = re.match(r"^([A-Za-z]+)_(\d+)$", label_text)
+    m_sub = re.match(r"^([A-Za-z]+)_([A-Za-z0-9]+)$", label_text)
     if m_sub:
         base, sub = m_sub.groups()
         return f'{html.escape(base)}<tspan dy="3" class="geom-label-sub">{html.escape(sub)}</tspan>'

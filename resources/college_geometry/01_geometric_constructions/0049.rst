@@ -1,0 +1,36 @@
+:folio: 0049
+:page: 30
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Review Exercises — p. 30 (Constructions 14–27, Propositions 28–32)
+:language: en
+:status: ok
+
+14. Construct a right triangle given the altitude to the hypotenuse and the distance of the vertex of the right angle from the trace on a leg of the internal bisector of the opposite acute angle.
+15. Construct a rectangle so that one of its vertices shall coincide with a vertex of a given triangle and the remaining three vertices shall lie on the three circles having for diameters the sides of the triangle.
+16. Construct a triangle given a median and the circumradii of the two triangles into which this median divides the required triangle.
+17. Construct a triangle :math:`ABC` given :math:`a - b, h_b + h_c, A`.
+18. On a given line :math:`AB` to find a point :math:`P` such that if :math:`PT, PT'` are the tangents from :math:`P` to a given circle, we shall have angle :math:`APT = BPT'`.
+19. On the sides :math:`AB, AC` of the triangle :math:`ABC` to mark two points :math:`P, Q` so that the line :math:`PQ` shall have a given direction and that :math:`PQ : (BP + CQ) = k`, where :math:`k` is a given number (ratio).
+20. Draw a line perpendicular to the base of a given triangle dividing the area of the triangle in the given ratio :math:`p : q`.
+21. Through a given point to draw a line bisecting the area of a given triangle.
+22. Draw a line having a given direction so that the two segments intercepted on it by a given circle and by the sides of a given angle shall have a given ratio.
+23. Through a vertex of a triangle to draw a line so that the product of its distances from the other two vertices shall have a given value, :math:`k^2`.
+24. Through two given points :math:`A, B` to draw two lines :math:`AP, BQ` meeting a given line :math:`PQ` in the points :math:`P, Q` so that :math:`AP = BQ`, and so that the lines :math:`AP, BQ` form a given angle.
+25. Through a given point :math:`R` to draw a line cutting a given line in :math:`D` and a given circle in :math:`E, F` so that :math:`RD = EF`.
+26. With a given point as center to draw a circle so that two points determined by it on two given concentric circles shall be collinear with the center of these circles.
+27. Inscribe a square in a given quadrilateral.
+
+PROPOSITIONS
+~~~~~~~~~~~~
+
+28. The circle through the vertices :math:`A, B, C` of a parallelogram :math:`ABCD` meets :math:`DA, DC` in the points :math:`A', C'`. Prove that :math:`A'D : A'C' = A'C : A'B`.
+29. Of the three lines joining the vertices of an equilateral triangle to a point on its :term:`circumcircle`, one is equal to the sum of the other two.
+30. Three parallel lines drawn through the vertices of a triangle :math:`ABC` meet the respectively opposite sides in the points :math:`X, Y, Z`. Show that:
+
+    .. math::
+
+       \operatorname{area} XYZ : \operatorname{area} ABC = 2 : 1.
+
+31. If the distance between two points is equal to the sum (or the difference) of the tangents from these points to a given circle, show that the line joining the two points is tangent to the circle.
+32. Two parallel lines :math:`AE, BD` through the vertices :math:`A, B` of the triangle :math:`ABC` meet a line through the vertex :math:`C` in the points :math:`E, D`. If the parallel through :math:`E` to :math:`BC` meets :math:`AB` in :math:`F`, show that :math:`DF` is parallel to :math:`AC`.

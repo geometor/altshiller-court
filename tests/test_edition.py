@@ -15,11 +15,14 @@ from geometor.altshiller_court.ingest import load_structure_map
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 RESOURCES_DIR = REPO_ROOT / "resources" / "college_geometry"
-DOCSRC_DIR = REPO_ROOT / "docsrc" / "college_geometry"
+DOCSRC_ROOT = REPO_ROOT / "docsrc"
+DOCSRC_DIR = DOCSRC_ROOT / "college_geometry"
 
 PERSON_RE = re.compile(r":person:`([^`]+)`")
 CITE_RE = re.compile(r":cite:`([^`]+)`")
 TERM_RE = re.compile(r":term:`([^`]+)`")
+ANCHOR_DEF_RE = re.compile(r"^\.\.\s+_([A-Za-z0-9_.\-]+):", flags=re.MULTILINE)
+REF_ROLE_RE = re.compile(r":ref:`([^`]+)`")
 
 
 def test_structure_map_integrity() -> None:
@@ -36,12 +39,14 @@ def test_structure_map_integrity() -> None:
     chapters = smap["chapters"]
     assert len(chapters) == 13
     assert chapters[0]["dir"] == "00_frontmatter"
+    assert chapters[1]["sections"][-1]["title"] == "Review Exercises (1–67)"
     assert chapters[-1]["dir"] == "12_index"
 
     # Unbroken pagination law: PDF Folio = Printed Page + 19 for body & backmatter
     by_folio = {entry["folio"]: entry for entry in folios}
     assert by_folio["0020"]["printed_page"] == "1"
     assert by_folio["0040"]["printed_page"] == "21"
+    assert by_folio["0052"]["printed_page"] == "33"
     assert by_folio["0312"]["printed_page"] == "293"
     assert by_folio["0314"]["printed_page"] == "295"
     assert by_folio["0332"]["printed_page"] == "313"
@@ -52,20 +57,22 @@ def test_structure_map_integrity() -> None:
 
 
 def test_edition_status_and_assets() -> None:
-    """Verify extracted 300 DPI scans, gold-standard transcriptions, crops, and reviews."""
+    """Verify extracted 300 DPI scans, all 52 Frontmatter + Chapter I folios, 22 crops, and 22 SVGs."""
     status = get_edition_status(REPO_ROOT)
     assert status["total_folios"] == 334
     assert status["scans_present"] == 334
-    assert status["rst_transcribed"] >= 40
-    assert status["notes_present"] >= 40
-    assert status["folios_with_graphics"] >= 15
-    assert status["diagram_crops"] >= 17
-    assert status["svg_diagrams"] >= 17
-    assert status["verified_reviews"] >= 40
+    assert status["rst_transcribed"] == 52
+    assert status["notes_present"] == 52
+    assert status["folios_with_graphics"] == 20
+    assert status["diagram_crops"] == 22
+    assert status["svg_diagrams"] == 22
+    assert status["verified_reviews"] == 52
 
 
 def test_apparatus_registries_and_role_resolution() -> None:
-    """Ensure every :person:, :cite:, and :term: role in folio RST resolves cleanly."""
+    """Ensure every :person:, :cite:, and :term: role in resources/ and docsrc/ resolves cleanly."""
+    compile_edition(REPO_ROOT)
+
     persons = json.loads((RESOURCES_DIR / "persons.json").read_text(encoding="utf-8"))
     citations = json.loads((RESOURCES_DIR / "citations.json").read_text(encoding="utf-8"))
     glossary = json.loads((RESOURCES_DIR / "glossary.json").read_text(encoding="utf-8"))
@@ -73,8 +80,9 @@ def test_apparatus_registries_and_role_resolution() -> None:
 
     assert len(persons) >= 67
     assert len(citations) >= 31
-    assert len(glossary) >= 55
-    assert len(reviews) >= 40
+    assert len(glossary) >= 56
+    assert "datum" in glossary
+    assert len(reviews) == 52
 
     person_slugs = {apparatus_slug(k) for k in persons}
     cite_slugs = {apparatus_slug(k) for k in citations}
@@ -85,48 +93,111 @@ def test_apparatus_registries_and_role_resolution() -> None:
         key = match.group(1).strip() if match else raw.strip()
         return apparatus_slug(key)
 
-    for rst_path in sorted(RESOURCES_DIR.glob("*/*.rst")):
+    all_rst = sorted(RESOURCES_DIR.glob("*/*.rst")) + sorted(DOCSRC_DIR.rglob("*.rst"))
+    for rst_path in all_rst:
         content = rst_path.read_text(encoding="utf-8")
         for m in PERSON_RE.finditer(content):
             slug = extract_slug(m.group(1))
-            assert slug in person_slugs, f"Unresolved :person:`{m.group(1)}` in {rst_path.name}"
+            assert slug in person_slugs, f"Unresolved :person:`{m.group(1)}` in {rst_path}"
         for m in CITE_RE.finditer(content):
             slug = extract_slug(m.group(1))
-            assert slug in cite_slugs, f"Unresolved :cite:`{m.group(1)}` in {rst_path.name}"
+            assert slug in cite_slugs, f"Unresolved :cite:`{m.group(1)}` in {rst_path}"
         for m in TERM_RE.finditer(content):
             slug = extract_slug(m.group(1))
-            assert slug in term_slugs, f"Unresolved :term:`{m.group(1)}` in {rst_path.name}"
+            assert slug in term_slugs, f"Unresolved :term:`{m.group(1)}` in {rst_path}"
 
 
-def test_compile_edition_codex_units() -> None:
-    """Verify 2-Track Book Codex compilation produces all 13 units and apparatus pages."""
+def test_euclid_style_collection_hierarchy_and_xrefs() -> None:
+    """Verify multi-level Book -> Chapters -> Sections -> Items -> Loci hierarchy and 100% :ref: resolution."""
     summary = compile_edition(REPO_ROOT)
     assert summary["units_compiled"] == 13
-    assert summary["svgs_compiled"] >= 17
-    assert summary["svgs_copied"] >= 17
-    assert summary["apparatus"]["citations"] >= 31
-    assert summary["apparatus"]["persons"] >= 67
-    assert summary["apparatus"]["glossary"] >= 55
+    assert summary["sections_compiled"] == 55
+    assert summary["items_compiled"] == 54
+    assert summary["transcribed_folios"] == 52
+    assert summary["verified_folios"] == 52
+    assert summary["svgs_compiled"] == 22
+    assert summary["svgs_copied"] == 22
+    assert summary["graphics_copied"] == 44
 
-    for apparatus_file in (
-        "index.rst",
-        "bibliography.rst",
-        "persons.rst",
-        "glossary.rst",
-        "scan-inventory.rst",
+    # Zero legacy monolithic *-en.rst or *-commentary.rst files anywhere in docsrc/college_geometry/
+    assert list(DOCSRC_DIR.rglob("*-en.rst")) == []
+    assert list(DOCSRC_DIR.rglob("*-commentary.rst")) == []
+
+    # Book root collection + apparatus
+    root_index = (DOCSRC_DIR / "index.rst").read_text(encoding="utf-8")
+    assert ".. collection::" in root_index
+    assert ":type: chapter" in root_index
+    for apparatus_file in ("bibliography.rst", "persons.rst", "glossary.rst", "scan-inventory.rst"):
+        assert (DOCSRC_DIR / apparatus_file).is_file()
+
+    # Frontmatter chapter + 6 leaf items
+    fm_dir = DOCSRC_DIR / "frontmatter"
+    assert ":type: item" in (fm_dir / "index.rst").read_text(encoding="utf-8")
+    assert (fm_dir / "commentary.rst").is_file()
+    for fm_slug in (
+        "01-cover",
+        "02-title-and-dedication",
+        "03-preface",
+        "04-contents",
+        "05-to-the-instructor",
+        "06-to-the-student",
     ):
-        assert (DOCSRC_DIR / apparatus_file).exists()
+        assert (fm_dir / fm_slug / "index.rst").is_file()
+        assert (fm_dir / fm_slug / "commentary.rst").is_file()
 
-    ch01_en = DOCSRC_DIR / "ch01-geometric-constructions" / "ch01-geometric-constructions-en.rst"
-    ch01_comm = (
-        DOCSRC_DIR / "ch01-geometric-constructions" / "ch01-geometric-constructions-commentary.rst"
-    )
-    assert ch01_en.exists()
-    assert ch01_comm.exists()
+    # Chapter I sections, § 11 Locus sub-collection, §§ 15-22, and Review Exercises 1-67
+    ch01_dir = DOCSRC_DIR / "ch01-geometric-constructions"
+    assert list(ch01_dir.glob("*.svg")) == []
+    assert list(ch01_dir.glob("*.png")) == []
+    assert ":type: section" in (ch01_dir / "index.rst").read_text(encoding="utf-8")
+    assert (ch01_dir / "commentary.rst").is_file()
 
-    en_text = ch01_en.read_text(encoding="utf-8")
-    assert ":layout: book" in en_text
-    assert ".. _ch01-geometric-constructions-en:" in en_text
-    assert ".. folio:: 0020" in en_text
-    assert ".. picture:: 0023.g1.svg" in en_text
-    assert ".. picture:: 0040.g1.svg" in en_text
+    for sec_slug in (
+        "a-preliminaries",
+        "b-general-method",
+        "c-geometric-loci",
+        "d-indirect-elements",
+        "review-exercises",
+    ):
+        sec_idx = (ch01_dir / sec_slug / "index.rst").read_text(encoding="utf-8")
+        assert ".. collection::" in sec_idx
+        assert ":type: item" in sec_idx
+
+    loci_dir = ch01_dir / "c-geometric-loci" / "011-important-loci"
+    assert ":type: locus" in (loci_dir / "index.rst").read_text(encoding="utf-8")
+    for n in range(1, 13):
+        assert (loci_dir / f"locus-{n:02d}" / "index.rst").is_file()
+        assert (loci_dir / f"locus-{n:02d}" / "commentary.rst").is_file()
+
+    # Verify complete § 15 (no editorial continuation truncation) and Review Exercises 1-67
+    art15_text = (ch01_dir / "d-indirect-elements" / "015-problem" / "index.rst").read_text(encoding="utf-8")
+    assert ".. folio:: 0040" in art15_text
+    assert ".. folio:: 0041" in art15_text
+    assert "Editorial Continuation" not in art15_text
+    assert "mediators <mediator>" in art15_text
+
+    loci_rev_text = (ch01_dir / "review-exercises" / "03-loci" / "index.rst").read_text(encoding="utf-8")
+    assert "67." in loci_rev_text
+    assert ".. folio:: 0052" in loci_rev_text
+
+    # Verify 100% of :ref: targets across docsrc/ resolve to a unique defined .. _label:
+    defined_labels: dict[str, Path] = {}
+    docsrc_rst_files = [
+        p for p in sorted(DOCSRC_ROOT.rglob("*.rst")) if "modules/api/" not in p.as_posix()
+    ]
+    for rst_path in docsrc_rst_files:
+        txt = rst_path.read_text(encoding="utf-8")
+        for m in ANCHOR_DEF_RE.finditer(txt):
+            lbl = m.group(1).lower()
+            assert lbl not in defined_labels, (
+                f"Duplicate anchor `{lbl}` in {rst_path} and {defined_labels[lbl]}"
+            )
+            defined_labels[lbl] = rst_path
+
+    for rst_path in docsrc_rst_files:
+        txt = rst_path.read_text(encoding="utf-8")
+        for m in REF_ROLE_RE.finditer(txt):
+            raw = m.group(1)
+            tm = re.search(r"<([^>]+)>", raw)
+            target = (tm.group(1) if tm else raw).strip().lower()
+            assert target in defined_labels, f"Broken :ref:`{raw}` in {rst_path}"

@@ -1,0 +1,38 @@
+:folio: 0044
+:page: 25
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Indirect Elements — p. 25 (§§ 19–20, Fig. 20)
+:language: en
+:status: ok
+
+*Note.* The angles of :g:`BCE <0044.g1:< B C E >>` are determined in the same way as in the triangle :math:`BCD` of the preceding problem (§ 18), and these relations may be used to solve the following problems.
+
+.. picture:: 0044.g1.svg
+   :alt: Fig. 20 — Auxiliary triangle BCE formed by producing AB beyond B to E so that AE = b and BE = b - c with altitude h_c
+   :caption: FIG. 20
+
+Other problems involving the difference of two sides of a triangle will be considered later (§§ 157–173).
+
+EXERCISES
+~~~~~~~~~
+
+Construct a triangle, given:
+
+1. :math:`b - c, h_c, B - C`.
+2. :math:`b - c, h_c, A`.
+3. :math:`b, c, B - C`. *Hint.* Either :math:`BCD` or :math:`BCE` may be used as auxiliary triangle.
+
+.. enunciation::
+
+   **20. Problem.** *Construct a* :g:`triangle <0045.g1:< A B C >>` *given the* :g:`base <0045.g1:/ B C />`\ *, the* :g:`opposite angle <0045.g1:< B A C )>`\ *, and the* :g:`sum of the altitudes <0045.g1:/ B G />` *to the other two sides* :math:`(a, A, h_b + h_c)`.
+
+Let :g:`ABC <0045.g1:< A B C >>` be the required triangle (Fig. 21). Produce the altitude :g:`BE <0045.g1:/ B E />` and lay off :eq:`EG <0045.g1:/ E G / = 0045.g1:/ C F />` equal to the altitude :g:`CF <0045.g1:/ C F />`. Through :g:`G <0045.g1:G>` draw the line :g:`GH <0045.g1:[ G H ]>` parallel to :g:`AC <0045.g1:/ A C />` meeting :g:`BA <0045.g1:[ B A ]>`, produced, in :g:`H <0045.g1:H>`. Hence:
+
+.. math::
+
+   \angle BHG = \angle BAC = A, \qquad \angle BGH = \angle BEA = 90^\circ.
+
+Thus in the right triangle :g:`BGH <0045.g1:< B G H >>` we know the leg :g:`BG <0045.g1:/ B G />` :math:`= h_b + h_c` and the acute angle :g:`BHG <0045.g1:< B H G )>` :math:`= A`; hence this triangle may be constructed and the length :g:`BH <0045.g1:/ B H />` determined.
+
+It is readily shown that :g:`BH <0045.g1:/ B H />` :math:`= b + c`. Draw the line :g:`AI <0045.g1:/ A I />` parallel

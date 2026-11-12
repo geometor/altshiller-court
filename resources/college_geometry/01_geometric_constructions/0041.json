@@ -1,0 +1,216 @@
+{
+  "folio": "0041",
+  "page": "22",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0041.g1.png",
+      "bbox": [
+        460,
+        1562,
+        502,
+        516
+      ],
+      "caption": "Fig. 18. Construction of triangle ABC given base a, vertical angle A, and sum of sides b + c via auxiliary triangle BCD (§ 17).",
+      "white_point": 238,
+      "svg_file": "0041.g1.svg",
+      "article": "17",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "A": {
+            "x": 213.38,
+            "y": 286.14,
+            "label": "A",
+            "label_x": 197,
+            "label_y": 274
+          },
+          "B": {
+            "x": 46.91,
+            "y": 473.54,
+            "label": "B",
+            "label_x": 31,
+            "label_y": 488
+          },
+          "C": {
+            "x": 455.22,
+            "y": 471.8,
+            "label": "C",
+            "label_x": 471,
+            "label_y": 487
+          },
+          "D": {
+            "x": 420.37,
+            "y": 53.13,
+            "label": "D",
+            "label_x": 423,
+            "label_y": 29
+          }
+        },
+        "elements": [
+          {
+            "id": "seg_BA",
+            "type": "segment",
+            "p1": "B",
+            "p2": "A",
+            "ref": "/ B A /",
+            "aliases": [
+              "[ B A ]"
+            ]
+          },
+          {
+            "id": "seg_AD",
+            "type": "segment",
+            "p1": "A",
+            "p2": "D",
+            "ticks": 1,
+            "tick_pos": 0.428,
+            "ref": "/ A D /"
+          },
+          {
+            "id": "seg_BC",
+            "type": "segment",
+            "p1": "B",
+            "p2": "C",
+            "ref": "/ B C /"
+          },
+          {
+            "id": "seg_CD",
+            "type": "segment",
+            "p1": "C",
+            "p2": "D",
+            "ref": "/ C D /",
+            "aliases": [
+              "/ D C /"
+            ]
+          },
+          {
+            "id": "seg_AC",
+            "type": "segment",
+            "p1": "A",
+            "p2": "C",
+            "ticks": 1,
+            "tick_pos": 0.447,
+            "ref": "/ A C /"
+          },
+          {
+            "id": "arc_D",
+            "type": "arc",
+            "center": "D",
+            "r": 76.5,
+            "start_deg": 85.24,
+            "end_deg": 131.62,
+            "ccw": false
+          },
+          {
+            "id": "arc_C",
+            "type": "arc",
+            "center": "C",
+            "r": 69.29,
+            "start_deg": -142.49,
+            "end_deg": -94.76,
+            "ccw": false
+          },
+          {
+            "id": "seg_BD",
+            "type": "segment",
+            "p1": "B",
+            "p2": "D",
+            "style": "overlay",
+            "ref": "/ B D /"
+          },
+          {
+            "id": "tri_ABC",
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ],
+            "style": "overlay",
+            "ref": "< A B C >"
+          },
+          {
+            "id": "tri_ACD",
+            "type": "polygon",
+            "points": [
+              "A",
+              "C",
+              "D"
+            ],
+            "style": "overlay",
+            "ref": "< A C D >"
+          },
+          {
+            "id": "tri_BCD",
+            "type": "polygon",
+            "points": [
+              "B",
+              "C",
+              "D"
+            ],
+            "style": "overlay",
+            "ref": "< B C D >"
+          },
+          {
+            "id": "ang_BAC",
+            "type": "angle",
+            "vertex": "A",
+            "p1": "B",
+            "p2": "C",
+            "radius": 42,
+            "ref": "< B A C )",
+            "aliases": [
+              "< A )"
+            ]
+          },
+          {
+            "id": "ang_ADC",
+            "type": "angle",
+            "vertex": "D",
+            "p1": "A",
+            "p2": "C",
+            "radius": 76.5,
+            "ref": "< A D C )",
+            "aliases": [
+              "< B D C )",
+              "< D )"
+            ]
+          },
+          {
+            "id": "ang_ACD",
+            "type": "angle",
+            "vertex": "C",
+            "p1": "A",
+            "p2": "D",
+            "radius": 69.29,
+            "ref": "< A C D )"
+          },
+          {
+            "id": "ang_BCA",
+            "type": "angle",
+            "vertex": "C",
+            "p1": "B",
+            "p2": "A",
+            "radius": 52,
+            "ref": "< B C A )",
+            "aliases": [
+              "< A C B )",
+              "< C )"
+            ]
+          },
+          {
+            "id": "ang_BCD",
+            "type": "angle",
+            "vertex": "C",
+            "p1": "B",
+            "p2": "D",
+            "radius": 82,
+            "ref": "< B C D )"
+          }
+        ]
+      }
+    }
+  ]
+}

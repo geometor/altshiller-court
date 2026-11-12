@@ -1,0 +1,23 @@
+:folio: 0050
+:page: 31
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Review Exercises — p. 31 (Propositions 33–47)
+:language: en
+:status: ok
+
+33. A variable chord :math:`AB` of a given circle is parallel to a fixed diameter passing through a given point :math:`P`. Show that the sum of the squares of the distances of :math:`P` from the ends of :math:`AB` is constant and equal to twice the square of the distance of :math:`P` from the midpoint of the arc :math:`AB`.
+34. The points :math:`A', B', C'` divide the sides :math:`BC, CA, AB` of the triangle :math:`ABC` internally in the same ratio, :math:`k`. Show that the three triangles :math:`AB'C', BC'A', CA'B'` are equivalent, and find the ratio of the areas :math:`ABC, A'B'C'`.
+35. The sides :math:`BA, CD` of the quadrilateral :math:`ABCD` meet in :math:`O`, and the sides :math:`DA, CB` meet in :math:`O'`. Along :math:`OA, OC, O'A, O'C` are measured off, respectively, :math:`OE, OF, O'E', O'F'` equal to :math:`AB, DC, AD, BC`. Prove that :math:`EF` is parallel to :math:`E'F'`.
+36. The point :math:`P` of a circle, center :math:`O`, is projected into :math:`N` upon a diameter :math:`AOB`. Along :math:`PO` lay off :math:`PQ = 2\,AN`. If :math:`AQ` meets the circle again in :math:`R`, prove that angle :math:`AOR = 3\,AOP`.
+37. If :math:`P` is any point on a semicircle, diameter :math:`AB`, and :math:`BC, CD` are two equal arcs, then if :math:`E = (CA, PB)`, :math:`F = (AD, PC)`, prove that :math:`AD` is perpendicular to :math:`EF`.
+38. In the triangle :math:`ODE` the side :math:`OD` is smaller than :math:`OE` and :math:`O` is a right angle. :math:`A, B` are two points on the hypotenuse :math:`DE` such that angle :math:`AOD = BOD = 45^\circ`. Show that the line :math:`MO` joining :math:`O` to the midpoint :math:`M` of :math:`DE` is tangent to the circle :math:`OAB`.
+39. From the point :math:`S` the two tangents :math:`SA, SB` and the secant :math:`SPQ` are drawn to the same circle. Prove that :math:`AP : AQ = BP : BQ`.
+40. On the radius :math:`OA`, produced, take any point :math:`P` and draw a tangent :math:`PT`; produce :math:`OP` to :math:`Q`, making :math:`PQ = PT`, and draw a tangent :math:`QV`; if :math:`VR` be drawn perpendicular to :math:`OA`, meeting :math:`OA` at :math:`R`, prove that :math:`PR = PQ = PT`.
+41. The parallel to the side :math:`AC` through the vertex :math:`B` of the triangle :math:`ABC` meets the tangent to the :term:`circumcircle` :math:`(O)` of :math:`ABC` at :math:`C` in :math:`B'`, and the parallel through :math:`C` to :math:`AB` meets the tangent to :math:`(O)` at :math:`B` in :math:`C'`. Prove that :math:`BC^2 = BC' \cdot B'C`.
+42. Two variable transversals :math:`PQ, P'Q'` determine on two fixed lines :math:`OPP', OQQ'` two segments :math:`PP', QQ'` of fixed lengths. If :math:`L, M` are two points on :math:`PQ, P'Q'` such that :math:`PL : LQ = P'M : MQ' = \text{a constant ratio}`, prove that :math:`LM` is fixed in magnitude and direction.
+43. If :math:`Q, R` are the projections of a point :math:`M` of the internal bisector :math:`AM` of the angle :math:`A` of the triangle :math:`ABC` upon the sides :math:`AC, AB`, show that the perpendicular :math:`MP` from :math:`M` upon :math:`BC` meets :math:`QR` in the point :math:`N` on the median :math:`AA'` of :math:`ABC`.
+44. A circle touching :math:`AB` at :math:`B` and passing through the :term:`incenter <incircle>` :math:`I` (i.e., the center :math:`I` of the inscribed circle) of the triangle :math:`ABC` meets :math:`AC` in :math:`H, K`. Prove that :math:`IC` bisects the angle :math:`HIK`.
+45. :math:`AB, CD` are two chords of the same circle, and the lines joining :math:`A, B` to the midpoint of :math:`CD` make equal angles with :math:`CD`. Show that the lines joining :math:`C, D` to the midpoint of :math:`AB` make equal angles with :math:`AB`.
+46. Three pairs of circles :math:`(B), (C)`; :math:`(C), (A)`; :math:`(A), (B)` touch each other in :math:`D, E, F`. The lines :math:`DE, DF` meet the circle :math:`(A)` again in the points :math:`G, H`. Show that :math:`GH` passes through the center of :math:`(A)` and is parallel to the line of centers of the circles :math:`(B)` and :math:`(C)`.
+47. The :term:`mediators <mediator>` of the sides :math:`AC, AB` of the triangle :math:`ABC` meet the sides :math:`AB, AC` in :math:`P, Q`. Prove that the points :math:`B, C, P, Q` lie on a circle which passes through the :term:`circumcenter <circumcircle>` (i.e., the center of the circumscribed circle) of :math:`ABC`.

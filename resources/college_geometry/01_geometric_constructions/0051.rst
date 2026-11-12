@@ -1,0 +1,27 @@
+:folio: 0051
+:page: 32
+:book: Chapter I
+:section: 01_geometric_constructions
+:title: Chapter I: Review Exercises — p. 32 (Propositions 48–58, Loci 59–62)
+:language: en
+:status: ok
+
+48. :math:`MNP, M'N'P'` are two tangents to the same circle :math:`PQP'`, and :math:`AM, BN, AM', BN'` are perpendiculars to them respectively from the two given points :math:`A, B`. If :math:`MP : PN = M'P' : P'N'`, prove that the two tangents are parallel.
+49. :math:`ABC` is a triangle inscribed in a circle; :math:`DE` is the diameter bisecting :math:`BC` at :math:`G`; from :math:`E` a perpendicular :math:`EK` is drawn to one of the sides, and the perpendicular from the vertex :math:`A` on :math:`DE` meets :math:`DE` in :math:`H`. Show that :math:`EK` touches the circle :math:`GHK`.
+50. If the internal bisector of an angle of a triangle is equal to one of the including sides, show that the projection of the other side upon this bisector is equal to half the sum of the sides considered.
+51. From two points, one on each of two opposite sides of a parallelogram, lines are drawn to the opposite vertices. Prove that the straight line through the points of intersection of these lines bisects the area of the parallelogram.
+52. The point :math:`B` being the midpoint of the segment :math:`AC`, the circle :math:`(A, AB)` is drawn, and upon an arbitrary tangent to this circle the perpendicular :math:`CD` is dropped from the point :math:`C`. Show that angle :math:`ABD = 3\,BDC`.
+53. Show that the line of centers of the two circles inscribed in the two right triangles into which a given right triangle is divided by the altitude to the hypotenuse is equal to the distance from the :term:`incenter <incircle>` of the given triangle to the vertex of its right angle.
+54. :math:`ABC` is an equilateral triangle, :math:`D` a point on :math:`BC` such that :math:`BD` is one-third of :math:`BC`, and :math:`E` is a point on :math:`AB` equidistant from :math:`A` and :math:`D`. Show that :math:`CE = EB + BD`.
+55. If a line :math:`AB` is bisected by :math:`C` and divided by :math:`D` unequally internally or externally, prove that :math:`AD^2 + DB^2 = 2(AC^2 + CD^2)`.
+56. Let :math:`M` be the midpoint of chord :math:`AB` of a circle, center :math:`O`; on :math:`OM` as diameter draw another circle, and at any point :math:`T` of this circle draw a tangent to it meeting the outer circle in :math:`E`. Prove that :math:`AE^2 + BE^2 = 4\,ET^2`.
+57. If :math:`M, N, P, Q` are the midpoints of the sides :math:`AB, BC, CD, DA` of a square :math:`ABCD`, prove that the intersections of the lines :math:`AN, BP, CQ, DM` determine a square of area one-fifth that of the given square :math:`ABCD`.
+58. If :math:`M, N` are points on the sides :math:`AC, AB` of a triangle :math:`ABC` and the lines :math:`BM, CN` intersect on the altitude :math:`AD`, show that :math:`AD` is the bisector of the angle :math:`MDN`.
+
+LOCI
+~~~~
+
+59. :math:`A, B, C, D` are fixed points on a circle :math:`(O)`. The lines joining :math:`C, D` to a variable point :math:`P` meet :math:`(O)` again in :math:`Q, R`. Find the :term:`locus <geometric-locus>` of the second point of intersection :math:`S` of the two circles :math:`PQB, PRA`.
+60. Find the :term:`locus <geometric-locus>` of a point at which two given circles subtend equal angles.
+61. Given two points :math:`A, B`, collinear with the center :math:`O` of a given circle, and a variable diameter :math:`PQ` of this circle, find the :term:`locus <geometric-locus>` of the second point of intersection of the two circles :math:`APO, BQO`.
+62. On the sides :math:`OA, OB` of a given angle :math:`O` two variable points :math:`A', B'` are marked so that the ratio :math:`AA' : BB'` is constant, and on the segment :math:`A'B'` the point :math:`I` is marked so that the ratio :math:`A'I : B'I` is constant. Prove that the :term:`locus <geometric-locus>` of the point :math:`I` is a straight line.
