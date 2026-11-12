@@ -2,6 +2,14 @@
 Changelog
 =========
 
+0.3.0 (2026-11-12)
+------------------
+
+- **fixed**: Eliminated Docutils ``(INFO/1) Enumerated list start value not ordinal-1`` runner file-path messages leaking into ``.. collection::`` card titles and opening paragraphs by formatting lettered section titles as ``Section <Code> — <Title>`` instead of bare ``B.``, ``C.``, ``D.`` prefixes.
+- **added**: Implemented ``hero_figures.py`` generating 15 exact symbolic ``geometor.model`` ``.euclid-graphic`` hero SVGs (zero ``sp.Float`` coordinates, deductively verified via ``assert_collinear``, ``assert_concyclic``, ``assert_perpendicular``, and ``cross_ratio``) plus calibrated folio hero SVGs so every Chapter and Section landing page and collection card displays a theme-adaptive hero diagram.
+- **added**: Completed multimodal-vision folio transcription, ``.notes.rst`` commentary, and ``100.0%`` Ink-to-Vector SVG calibration (``0072.g1.svg``–``0084.g1.svg``, ``FIG. 39``–``FIG. 47``) for Chapter III (*Properties of the Triangle*, folios ``0072``–``0084``, ``§§ 54–88``: *Section A — Preliminaries*, *Section B — The Circumcircle* including ``§ 84`` *Problem of Pappus*, and *Section C — Medians* centroid concurrency) as 38 one-item-per-page propositions and exercise sets.
+- **added**: Replaced scan-allocation stub tables across all remaining sections of Chapters II–X with structured scholarly synopses (``section_synopses.py``), principal theorem roadmaps, Kimberling ``X(n)`` center identifications, and cross-repository GEOMETOR links.
+
 0.2.0 (2026-11-12)
 ------------------
 

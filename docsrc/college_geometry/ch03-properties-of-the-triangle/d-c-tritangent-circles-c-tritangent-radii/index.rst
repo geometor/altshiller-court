@@ -1,73 +1,38 @@
 :layout: book
 :type: section
 :order: 6
-:title: D.c. Tritangent Circles — c. Tritangent Radii (Carnot's & Euler's Theorems)
+:title: Section D.c — Tritangent Circles: Tritangent Radii (Carnot's & Euler's Theorems)
 :folio: 0097
 :page: 78
+:folios: 0097–0106
+:pages: 78–87
+:excerpt: Derives the classic metric relations linking the inradius r, exradii r_a, r_b, r_c, circumradius R, semiperimeter s, and area S (§§ 131–155), highlighted by Carnot's  and Euler's  theorems.
 
 .. _ch03-properties-of-the-triangle-d-c-tritangent-circles-c-tritangent-radii:
 
-D.c. Tritangent Circles — c. Tritangent Radii (Carnot's & Euler's Theorems)
-===========================================================================
+Section D.c — Tritangent Circles: Tritangent Radii (Carnot's & Euler's Theorems)
+================================================================================
 
-D.c. Tritangent Circles — c. Tritangent Radii (Carnot's & Euler's Theorems) in Chapter III covers Articles **§§ 131–155** across archival folios ``0097``–``0106`` (printed pages ``78``–``87``), standardized at 300 DPI in ``resources/college_geometry/03_properties_of_the_triangle/``.
+.. rubric:: Chapter III: Properties of the Triangle • Articles §§ 131–155 (Folios 0097–0106, pp. 78–87)
 
-.. collection::
-   :type: item
-   :sort: order
+.. picture:: hero.svg
+   :alt: Triangle ABC with circumcircle, angle bisectors concurring at incenter I, incircle, and contact radii IX, IY, IZ
+   :caption: Incircle (I, r), Angle Bisectors, Contact Points X, Y, Z, and Chapple–Euler Relation
 
-Folio Scan Allocation
----------------------
+Derives the classic metric relations linking the inradius :math:`r`, exradii :math:`r_a, r_b, r_c`, circumradius :math:`R`, semiperimeter :math:`s`, and area :math:`S` (**§§ 131–155**), highlighted by :person:`Carnot's <carnot>` and :person:`Euler's <euler>` theorems.
 
-.. list-table::
-   :header-rows: 1
-   :widths: 16 16 38 30
+Principal Theorems, Constructions & Identities
+----------------------------------------------
 
-   * - Folio
-     - Page
-     - Articles
-     - Scan Status
-   * - ``0097``
-     - ``78``
-     - §§ 130–132
-     - 300 DPI gray
-   * - ``0098``
-     - ``79``
-     - §§ 133–136
-     - 300 DPI gray
-   * - ``0099``
-     - ``80``
-     - §§ 137–140
-     - 300 DPI gray
-   * - ``0100``
-     - ``81``
-     - §§ 142–143
-     - 300 DPI gray
-   * - ``0101``
-     - ``82``
-     - § 144
-     - 300 DPI gray
-   * - ``0102``
-     - ``83``
-     - §§ 145–148
-     - 300 DPI gray
-   * - ``0103``
-     - ``84``
-     - §§ 149–150
-     - 300 DPI gray
-   * - ``0104``
-     - ``85``
-     - §§ 151–152
-     - 300 DPI gray
-   * - ``0105``
-     - ``86``
-     - §§ 153–154
-     - 300 DPI gray
-   * - ``0106``
-     - ``87``
-     - §§ 156–158
-     - 300 DPI gray
+* **§§ 131–145 — Area & Reciprocal Radius Identities**: Proves :math:`S = rs = r_a(s - a) = \sqrt{r\,r_a r_b r_c}`, :math:`\frac{1}{r} = \frac{1}{r_a} + \frac{1}{r_b} + \frac{1}{r_c} = \frac{1}{h_a} + \frac{1}{h_b} + \frac{1}{h_c}`, and :math:`r_a + r_b + r_c - r = 4R`.
+* **§§ 146–149 — Carnot's Theorem**: The signed sum of distances from the circumcenter :math:`O` to the three sides of :math:`\triangle ABC` satisfies :math:`d_a + d_b + d_c = R + r` (:person:`Carnot <carnot>`).
+* **§§ 150–155 — Chapple–Euler Distance Theorem**: Proves :math:`OI^2 = R(R - 2r)` and :math:`OI_a^2 = R(R + 2r_a)` (:person:`Chapple <chapple>` 1746; :cite:`Euler 1765 <euler:1765>`), yielding Euler's inequality :math:`R \ge 2r`.
+
+Constructive & Symbolic Connections
+-----------------------------------
+
+In ``geometor/wildberger`` and ``geometor/model``, :math:`OI^2 = R(R - 2r)` provides an exact quadrance certificate and triggers Poncelet's porism for bicentric triangles.
 
 ----
 
-See :ref:`Commentary on Chapter III <ch03-properties-of-the-triangle-commentary>`.
+See :ref:`Commentary on Chapter III: Properties of the Triangle <ch03-properties-of-the-triangle-commentary>` and :ref:`334-Folio Archival Scan Inventory <scan-inventory>`.

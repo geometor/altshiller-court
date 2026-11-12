@@ -1,0 +1,46 @@
+:folio: 0078
+:page: 59
+:book: Chapter III
+:section: 03_properties_of_the_triangle
+:title: Chapter III: The Circumcircle — p. 59 (§§ 72–73, Fig. 43, Exercises 1–15)
+:language: en
+:status: ok
+
+and :math:`a` (§ 69). Thus if we place the side :math:`BC = a` in the given :g:`circle <0078.g1:( O )>`, radius :math:`R`, we have a locus for :g:`D <0078.g1:D>` (§ 11, :term:`locus 7 <subtended-angle-locus>`).
+
+.. picture:: 0078.g1.svg
+   :alt: Fig. 43 — Auxiliary triangle DBC with AD = AC and tangent DE from D to circumcircle (O)
+   :caption: FIG. 43
+
+Let :g:`DE <0078.g1:/ D E />` be the tangent from :g:`D <0078.g1:D>` to the :g:`circle <0078.g1:( O )>`. We have:
+
+.. math::
+
+   DE^2 = DA \cdot DB = b(b + c),
+
+i.e., we know the length of the tangent :g:`DE <0078.g1:/ D E />` from :g:`D <0078.g1:D>` to the circle :g:`(O) <0078.g1:( O )>`; hence we have a second :term:`locus <geometric-locus>` for :g:`D <0078.g1:D>` (§ 11, locus 2), and the auxiliary triangle :g:`DBC <0078.g1:< D B C >>` may thus be constructed. The :term:`mediator <mediator>` of :g:`CD <0078.g1:/ C D />` meets :g:`BD <0078.g1:[ B D ]>` in the third vertex :g:`A <0078.g1:A>` of the required triangle :g:`ABC <0078.g1:< A B C >>`.
+
+EXERCISES
+~~~~~~~~~
+
+Construct a triangle, given:
+
+1. :math:`R,\; A,\; b^2 + c^2`.
+2. :math:`R,\; A,\; b : c`.
+3. :math:`R,\; a,\; h_b`.
+4. :math:`R,\; a,\; b + c`.
+5. :math:`R,\; b,\; B - C`.
+6. :math:`R,\; m_b,\; C`.
+7. :math:`R,\; A,\; 2p`.
+8. :math:`R,\; A,\; a - b`.
+9. :math:`R,\; b + c,\; h_b + h_c`.
+10. :math:`R,\; b - c,\; h_c - h_b`.
+11. :math:`R,\; A,\; h_b + h_c`.
+12. :math:`R,\; a,\; B - C`.
+13. :math:`R,\; b,\; a : h_a`.
+14. :math:`a,\; A,\; b(b + c)`.
+15. :math:`R,\; b - c,\; B - C`.
+
+.. enunciation::
+
+   **73. Theorem.** *The* :g:`*angle* <0079.g1:< D A K )>` *between the* :g:`*circumdiameter* <0079.g1:/ A K />` *and the* :g:`*altitude* <0079.g1:/ A D />` *issued from the same* :g:`*vertex* <0079.g1:A>` *of a* :g:`*triangle* <0079.g1:< A B C >>` *(a) is equal to the difference of the other two angles of the triangle, and (b) is bisected by the* :g:`*bisector* <0079.g1:/ A U />` *of the angle of the triangle at the vertex considered.*

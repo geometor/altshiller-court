@@ -12,6 +12,8 @@ dynamic = ["version"]
 dependencies = [
     "Pillow",
     "PyYAML",
+    "sympy",
+    "geometor-model",
 ]
 
 [project.optional-dependencies]

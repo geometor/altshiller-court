@@ -57,16 +57,16 @@ def test_structure_map_integrity() -> None:
 
 
 def test_edition_status_and_assets() -> None:
-    """Verify extracted 300 DPI scans, all 52 Frontmatter + Chapter I folios, 22 crops, and 22 SVGs."""
+    """Verify extracted 300 DPI scans, 65 Frontmatter + Ch. I + Ch. III folios, 32 crops, and 32 SVGs."""
     status = get_edition_status(REPO_ROOT)
     assert status["total_folios"] == 334
     assert status["scans_present"] == 334
-    assert status["rst_transcribed"] == 52
-    assert status["notes_present"] == 52
-    assert status["folios_with_graphics"] == 20
-    assert status["diagram_crops"] == 22
-    assert status["svg_diagrams"] == 22
-    assert status["verified_reviews"] == 52
+    assert status["rst_transcribed"] == 65
+    assert status["notes_present"] == 65
+    assert status["folios_with_graphics"] == 29
+    assert status["diagram_crops"] == 32
+    assert status["svg_diagrams"] == 32
+    assert status["verified_reviews"] == 65
 
 
 def test_apparatus_registries_and_role_resolution() -> None:
@@ -80,9 +80,9 @@ def test_apparatus_registries_and_role_resolution() -> None:
 
     assert len(persons) >= 67
     assert len(citations) >= 31
-    assert len(glossary) >= 56
+    assert len(glossary) >= 57
     assert "datum" in glossary
-    assert len(reviews) == 52
+    assert len(reviews) == 65
 
     person_slugs = {apparatus_slug(k) for k in persons}
     cite_slugs = {apparatus_slug(k) for k in citations}
@@ -108,20 +108,35 @@ def test_apparatus_registries_and_role_resolution() -> None:
 
 
 def test_euclid_style_collection_hierarchy_and_xrefs() -> None:
-    """Verify multi-level Book -> Chapters -> Sections -> Items -> Loci hierarchy and 100% :ref: resolution."""
+    """Verify multi-level Book -> Chapters -> Sections -> Items -> Loci hierarchy, hero SVGs, clean titles, and 100% :ref: resolution."""
     summary = compile_edition(REPO_ROOT)
     assert summary["units_compiled"] == 13
     assert summary["sections_compiled"] == 55
-    assert summary["items_compiled"] == 54
-    assert summary["transcribed_folios"] == 52
-    assert summary["verified_folios"] == 52
-    assert summary["svgs_compiled"] == 22
-    assert summary["svgs_copied"] == 22
-    assert summary["graphics_copied"] == 44
+    assert summary["items_compiled"] == 94
+    assert summary["transcribed_folios"] == 65
+    assert summary["verified_folios"] == 65
+    assert summary["svgs_compiled"] == 32
+    assert summary["svgs_copied"] == 49
+    assert summary["graphics_copied"] == 98
 
     # Zero legacy monolithic *-en.rst or *-commentary.rst files anywhere in docsrc/college_geometry/
     assert list(DOCSRC_DIR.rglob("*-en.rst")) == []
     assert list(DOCSRC_DIR.rglob("*-commentary.rst")) == []
+
+    # Verify zero bare `[A-Z]. ` section/item titles that trigger Docutils (INFO/1) Enumerated list warnings
+    bare_letter_title_re = re.compile(r"^:title:\s+[A-Z](?:\.[a-z])?\.\s+", flags=re.MULTILINE)
+    for rst_path in sorted(DOCSRC_DIR.rglob("*.rst")):
+        rst_txt = rst_path.read_text(encoding="utf-8")
+        assert not bare_letter_title_re.search(rst_txt), f"Bare lettered title in {rst_path}"
+        assert "Folio Allocation in This Section" not in rst_txt, f"Stub table left in {rst_path}"
+
+    # Verify every Chapter landing page carries hero.svg + .. picture:: hero.svg
+    smap = load_structure_map(RESOURCES_DIR)
+    for ch in smap["chapters"]:
+        ch_dir = DOCSRC_DIR / ch["slug"]
+        assert (ch_dir / "hero.svg").is_file(), f"Missing chapter hero.svg in {ch_dir}"
+        ch_idx = (ch_dir / "index.rst").read_text(encoding="utf-8")
+        assert ".. picture:: hero.svg" in ch_idx
 
     # Book root collection + apparatus
     root_index = (DOCSRC_DIR / "index.rst").read_text(encoding="utf-8")
@@ -147,7 +162,7 @@ def test_euclid_style_collection_hierarchy_and_xrefs() -> None:
 
     # Chapter I sections, § 11 Locus sub-collection, §§ 15-22, and Review Exercises 1-67
     ch01_dir = DOCSRC_DIR / "ch01-geometric-constructions"
-    assert list(ch01_dir.glob("*.svg")) == []
+    assert [p.name for p in ch01_dir.glob("*.svg")] == ["hero.svg"]
     assert list(ch01_dir.glob("*.png")) == []
     assert ":type: section" in (ch01_dir / "index.rst").read_text(encoding="utf-8")
     assert (ch01_dir / "commentary.rst").is_file()
@@ -159,7 +174,9 @@ def test_euclid_style_collection_hierarchy_and_xrefs() -> None:
         "d-indirect-elements",
         "review-exercises",
     ):
+        assert (ch01_dir / sec_slug / "hero.svg").is_file()
         sec_idx = (ch01_dir / sec_slug / "index.rst").read_text(encoding="utf-8")
+        assert ".. picture:: hero.svg" in sec_idx
         assert ".. collection::" in sec_idx
         assert ":type: item" in sec_idx
 
@@ -168,6 +185,17 @@ def test_euclid_style_collection_hierarchy_and_xrefs() -> None:
     for n in range(1, 13):
         assert (loci_dir / f"locus-{n:02d}" / "index.rst").is_file()
         assert (loci_dir / f"locus-{n:02d}" / "commentary.rst").is_file()
+
+    # Verify Chapter III transcribed sections (Preliminaries, Circumcircle incl. Problem of Pappus § 84, Medians)
+    ch03_dir = DOCSRC_DIR / "ch03-properties-of-the-triangle"
+    for ch03_sec in ("a-preliminaries", "b-the-circumcircle", "c-medians"):
+        assert (ch03_dir / ch03_sec / "hero.svg").is_file()
+        s_idx = (ch03_dir / ch03_sec / "index.rst").read_text(encoding="utf-8")
+        assert ".. picture:: hero.svg" in s_idx
+        assert ":type: item" in s_idx
+    pappus_item = ch03_dir / "b-the-circumcircle" / "084-the-problem-of-pappus" / "index.rst"
+    assert pappus_item.is_file()
+    assert "0082.g1.svg" in pappus_item.read_text(encoding="utf-8")
 
     # Verify complete § 15 (no editorial continuation truncation) and Review Exercises 1-67
     art15_text = (ch01_dir / "d-indirect-elements" / "015-problem" / "index.rst").read_text(encoding="utf-8")

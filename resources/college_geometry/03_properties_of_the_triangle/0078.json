@@ -1,0 +1,192 @@
+{
+  "folio": "0078",
+  "page": "59",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0078.g1.png",
+      "bbox": [
+        486,
+        276,
+        452,
+        726
+      ],
+      "caption": "Fig. 43. Construction of triangle ABC given R, a, and b(b + c) via tangent DE from D (§ 72).",
+      "white_point": 238,
+      "svg_file": "0078.g1.svg",
+      "article": "72",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "D": {
+            "x": 313.19,
+            "y": 55.44,
+            "label": "D",
+            "label_x": 314,
+            "label_y": 30
+          },
+          "A": {
+            "x": 165.8,
+            "y": 349.46,
+            "label": "A",
+            "label_x": 155,
+            "label_y": 327
+          },
+          "B": {
+            "x": 46.63,
+            "y": 587.19,
+            "label": "B",
+            "label_x": 30,
+            "label_y": 600
+          },
+          "C": {
+            "x": 391.0,
+            "y": 584.4,
+            "label": "C",
+            "label_x": 409,
+            "label_y": 597
+          },
+          "E": {
+            "x": 397.36,
+            "y": 489.44,
+            "label": "E",
+            "label_x": 422,
+            "label_y": 486
+          },
+          "O": {
+            "x": 219.45,
+            "y": 523.37,
+            "label": "O",
+            "label_x": 203,
+            "label_y": 538
+          }
+        },
+        "elements": [
+          {
+            "id": "circ_O",
+            "type": "circle",
+            "cx": 218.32,
+            "cy": 524.52,
+            "r": 182.77,
+            "ref": "( O )",
+            "aliases": [
+              "( A B C )",
+              "( O E )"
+            ]
+          },
+          {
+            "id": "seg_BD",
+            "type": "line",
+            "p1": "B",
+            "p2": "D",
+            "ref": "[ B D ]",
+            "aliases": [
+              "/ D B /",
+              "[ B A ]"
+            ]
+          },
+          {
+            "id": "seg_BC",
+            "type": "segment",
+            "p1": "B",
+            "p2": "C",
+            "ref": "/ B C /"
+          },
+          {
+            "id": "seg_AC",
+            "type": "segment",
+            "p1": "A",
+            "p2": "C",
+            "ref": "/ A C /"
+          },
+          {
+            "id": "seg_DE",
+            "type": "segment",
+            "p1": "D",
+            "p2": "E",
+            "ref": "/ D E /"
+          },
+          {
+            "id": "seg_DO",
+            "type": "segment",
+            "p1": "D",
+            "p2": "O",
+            "ref": "/ D O /"
+          },
+          {
+            "id": "seg_OE",
+            "type": "segment",
+            "p1": "O",
+            "p2": "E",
+            "ref": "/ O E /"
+          },
+          {
+            "id": "ov_DA",
+            "type": "segment",
+            "p1": "D",
+            "p2": "A",
+            "style": "overlay",
+            "ref": "/ D A /"
+          },
+          {
+            "id": "ov_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "style": "overlay",
+            "ref": "/ A B /"
+          },
+          {
+            "id": "ov_CD",
+            "type": "segment",
+            "p1": "C",
+            "p2": "D",
+            "style": "overlay",
+            "ref": "/ C D /"
+          },
+          {
+            "id": "tri_ABC",
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ],
+            "style": "overlay",
+            "ref": "< A B C >"
+          },
+          {
+            "id": "tri_DBC",
+            "type": "polygon",
+            "points": [
+              "D",
+              "B",
+              "C"
+            ],
+            "style": "overlay",
+            "ref": "< D B C >"
+          },
+          {
+            "id": "ang_BDC",
+            "type": "angle",
+            "vertex": "D",
+            "p1": "B",
+            "p2": "C",
+            "radius": 44,
+            "ref": "< B D C )"
+          },
+          {
+            "id": "ang_BAC",
+            "type": "angle",
+            "vertex": "A",
+            "p1": "B",
+            "p2": "C",
+            "radius": 34,
+            "ref": "< B A C )"
+          }
+        ]
+      }
+    }
+  ]
+}

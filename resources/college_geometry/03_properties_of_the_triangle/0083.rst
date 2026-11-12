@@ -1,0 +1,51 @@
+:folio: 0083
+:page: 64
+:book: Chapter III
+:section: 03_properties_of_the_triangle
+:title: Chapter III: The Circumcircle — p. 64 (§§ 84–86, Exercises 1–10)
+:language: en
+:status: ok
+
+Let :g:`B <0082.g1:B>`, :g:`C <0082.g1:C>` (Fig. 46) be the traces of the required secant :math:`UBC = a` on the sides of the given angle :g:`BAC <0082.g1:< B A C )>`; the circumradius of the triangle :g:`ABC <0082.g1:< A B C >>` is determined (§ 69), and in the :g:`circumcircle <0082.g1:( A B C )>` the bisector :g:`AU <0082.g1:/ A U />` of the angle :g:`A <0082.g1:A>` passes through the midpoint :g:`E <0082.g1:E>` of the arc :math:`BEC` subtended by :math:`BC = a`. We are thus led to the following construction.
+
+On an arbitrary line lay off :math:`B'C'` equal to the given length :math:`a`, and on :math:`B'C'` as chord construct the :term:`locus <subtended-angle-locus>` of the points at which :math:`B'C'` subtends an angle equal to the given angle :g:`A <0082.g1:A>` (§ 11, locus 7). Through the midpoint :math:`E'` of the other arc of this circle draw a secant :math:`E'U'A'` meeting :math:`B'C'` in :math:`U'` and the circle again in :math:`A'`, so that :math:`U'A'` shall be equal to the given segment :g:`AU <0082.g1:/ A U />` of the bisector of the given angle (§ 83).
+
+The line through :g:`U <0082.g1:U>`, on the bisector of the given angle, making with :g:`AU <0082.g1:/ A U />` an angle equal to the angle :math:`B'U'A'`, solves the proposed problem.
+
+The problem has two solutions.
+
+EXERCISES
+~~~~~~~~~
+
+Construct a triangle, given:
+
+1. :math:`h_a, t_a, b : c`. *Hint.* Use § 57.
+2. :math:`t_a, B - C, b : c`.
+3. :math:`h_a, B - C, b : c`.
+4. :math:`h_a, t_a', b : c`.
+5. :math:`t_a', B - C, b : c`.
+6. :math:`b, c, t_a`.
+7. :math:`t_a, m_b, b : c`.
+8. If the line joining a vertex of a triangle to the :term:`circumcenter <circumcircle>` is parallel to the opposite side, show that the two bisectors of the corresponding angle are equal, and conversely.
+9. Construct a triangle given the base and an adjacent angle, so that the two bisectors of this angle shall be equal.
+10. \(a) If the two bisectors of the angle :math:`A` of the triangle :math:`ABC` are equal, and the circle having :math:`BC` for diameter cuts the sides :math:`AB, AC` in the points :math:`P, Q`, show that :math:`CP = CQ`. \(b) Construct a triangle given a side and the foot of the altitude on this side so that the two bisectors of an angle adjacent to this side shall be equal.
+
+.. enunciation::
+
+   **85. Theorem.** *The product of two sides of a* :g:`*triangle* <0079.g1:< A B C >>` *is equal to the* :g:`*altitude* <0079.g1:/ A D />` *to the third side multiplied by the* :g:`*circumdiameter* <0079.g1:/ A K />`\ *.*
+
+The angle :eq:`ABD = AKC <0079.g1:< A B D ) = 0079.g1:< A K C )>` (Fig. 44); hence, from the similar right triangles:
+
+.. math::
+
+   AB : AK = AD : AC, \quad \text{or} \quad AB \cdot AC = AK \cdot AD,
+
+i.e.,
+
+.. math::
+
+   bc = 2R \cdot h_a.
+
+.. enunciation::
+
+   **86. Corollary.** *The area of a triangle is equal to the product of its three sides divided by the double circumdiameter of the triangle.*

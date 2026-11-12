@@ -1,0 +1,213 @@
+{
+  "folio": "0076",
+  "page": "57",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0076.g1.png",
+      "bbox": [
+        468,
+        1338,
+        494,
+        488
+      ],
+      "caption": "Fig. 41. Construction of triangle ABC given base BC, vertical angle A, and ratio A'D : A'U (§ 70).",
+      "white_point": 238,
+      "svg_file": "0076.g1.svg",
+      "article": "70",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "A": {
+            "x": 127.69,
+            "y": 55.96,
+            "label": "A",
+            "label_x": 121,
+            "label_y": 31
+          },
+          "B": {
+            "x": 49.45,
+            "y": 351.33,
+            "label": "B",
+            "label_x": 31,
+            "label_y": 365
+          },
+          "D": {
+            "x": 132.88,
+            "y": 349.95,
+            "label": "D",
+            "label_x": 134,
+            "label_y": 375
+          },
+          "U": {
+            "x": 217.36,
+            "y": 348.54,
+            "label": "U",
+            "label_x": 200,
+            "label_y": 373
+          },
+          "A'": {
+            "x": 250.9,
+            "y": 347.98,
+            "label": "A'",
+            "label_x": 280,
+            "label_y": 325
+          },
+          "C": {
+            "x": 446.53,
+            "y": 344.74,
+            "label": "C",
+            "label_x": 463,
+            "label_y": 358
+          },
+          "E": {
+            "x": 254.77,
+            "y": 469.36,
+            "label": "E",
+            "label_x": 276,
+            "label_y": 443
+          },
+          "M_top": {
+            "x": 248.5,
+            "y": 254.0,
+            "hidden": true
+          }
+        },
+        "elements": [
+          {
+            "id": "circ_ABC",
+            "type": "circle",
+            "cx": 246.3,
+            "cy": 246.49,
+            "r": 223.03,
+            "ref": "( A B C )"
+          },
+          {
+            "id": "seg_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "ref": "/ A B /"
+          },
+          {
+            "id": "seg_BC",
+            "type": "segment",
+            "p1": "B",
+            "p2": "C",
+            "ref": "/ B C /",
+            "aliases": [
+              "[ B C ]"
+            ]
+          },
+          {
+            "id": "seg_AC",
+            "type": "segment",
+            "p1": "A",
+            "p2": "C",
+            "ref": "/ A C /"
+          },
+          {
+            "id": "seg_AD",
+            "type": "segment",
+            "p1": "A",
+            "p2": "D",
+            "ref": "/ A D /"
+          },
+          {
+            "id": "seg_AE",
+            "type": "segment",
+            "p1": "A",
+            "p2": "E",
+            "ref": "[ A U ]",
+            "aliases": [
+              "/ A E /"
+            ]
+          },
+          {
+            "id": "med_BC",
+            "type": "segment",
+            "p1": "M_top",
+            "p2": "E",
+            "style": "dashed",
+            "ref": "[ A' E ]"
+          },
+          {
+            "id": "ov_AU",
+            "type": "segment",
+            "p1": "A",
+            "p2": "U",
+            "style": "overlay",
+            "ref": "/ A U /"
+          },
+          {
+            "id": "ov_ApU",
+            "type": "segment",
+            "p1": "A'",
+            "p2": "U",
+            "style": "overlay",
+            "ref": "/ A' U /"
+          },
+          {
+            "id": "ov_UD",
+            "type": "segment",
+            "p1": "U",
+            "p2": "D",
+            "style": "overlay",
+            "ref": "/ U D /"
+          },
+          {
+            "id": "ov_ApE",
+            "type": "segment",
+            "p1": "A'",
+            "p2": "E",
+            "style": "overlay",
+            "ref": "/ A' E /"
+          },
+          {
+            "id": "tri_ABC",
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ],
+            "style": "overlay",
+            "ref": "< A B C >"
+          },
+          {
+            "id": "tri_ADU",
+            "type": "polygon",
+            "points": [
+              "A",
+              "D",
+              "U"
+            ],
+            "style": "overlay",
+            "ref": "< A D U >"
+          },
+          {
+            "id": "tri_EApU",
+            "type": "polygon",
+            "points": [
+              "E",
+              "A'",
+              "U"
+            ],
+            "style": "overlay",
+            "ref": "< E A' U >"
+          },
+          {
+            "id": "ang_BAC",
+            "type": "angle",
+            "vertex": "A",
+            "p1": "B",
+            "p2": "C",
+            "radius": 38,
+            "ref": "< B A C )"
+          }
+        ]
+      }
+    }
+  ]
+}

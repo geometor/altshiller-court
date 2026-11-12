@@ -1,0 +1,45 @@
+:folio: 0077
+:page: 58
+:book: Chapter III
+:section: 03_properties_of_the_triangle
+:title: Chapter III: The Circumcircle — p. 58 (§§ 70–72, Fig. 42)
+:language: en
+:status: ok
+
+.. assertion::
+
+   From the similar right triangles :g:`ADU <0076.g1:< A D U >>`, :g:`EA'U <0076.g1:< E A' U >>` we have:
+
+   .. math::
+
+      A'U : UD = A'E : AD.
+
+Now the base :g:`BC <0076.g1:/ B C />` and the angle :g:`A <0076.g1:< B A C )>` being given, the :term:`circumcircle <circumcircle>` :g:`ABC <0076.g1:( A B C )>` is determined; hence the segment :g:`A'E <0076.g1:/ A' E />` is known; also the first ratio in the above proportion is known; hence the altitude :g:`AD <0076.g1:/ A D />` may be constructed. The solution of the problem is now readily completed.
+
+.. enunciation::
+
+   **71. Problem.** *Construct a* :g:`*triangle* <0077.g1:< A B C >>` *given the circumradius, the sum of the lateral sides, and the difference of the base angles* :math:`(R,\; b + c,\; B - C)`\ *.*
+
+.. picture:: 0077.g1.svg
+   :alt: Fig. 42 — Isosceles trapezoid ABCK inscribed in circumcircle of triangle ABC with ∠ABK = B − C
+   :caption: FIG. 42
+
+Let :g:`ABC <0077.g1:< A B C >>` be the required triangle (Fig. 42). Let the parallel to :g:`BC <0077.g1:[ B C ]>` through :g:`A <0077.g1:A>` meet the circumcircle of :g:`ABC <0077.g1:( A B C )>` in :g:`K <0077.g1:K>`. In the isosceles trapezoid :g:`ABCK <0077.g1:< A B C K >>` we have:
+
+.. math::
+
+   \angle ABK = ABC - KBC = B - BKA = B - BCA = B - C.
+
+The given radius :math:`R` and the known angle :math:`ABK = B - C` determine the segment :g:`AK <0077.g1:/ A K />` (§ 69). Thus in the triangle :g:`ABK <0077.g1:< A B K >>` we know the base :g:`AK <0077.g1:/ A K />`, the opposite angle :g:`B - C <0077.g1:< A B K )>`, and the sum of the sides:
+
+.. math::
+
+   AB + BK = AB + AC = b + c;
+
+hence this :g:`triangle <0077.g1:< A B K >>` may be constructed (§ 17). The parallel to :g:`AK <0077.g1:[ A K ]>` through :g:`B <0077.g1:B>` will meet the :g:`circumcircle <0077.g1:( A B K )>` of :g:`ABK <0077.g1:< A B K >>` in the third vertex :g:`C <0077.g1:C>` of the required triangle :g:`ABC <0077.g1:< A B C >>`.
+
+.. enunciation::
+
+   **72. Problem.** *Construct a* :g:`*triangle* <0078.g1:< A B C >>` *given the circumradius, the base, and the product of the sum of the other two sides by one of them* :math:`[R,\; a,\; (b + c)b]`\ *.*
+
+Let :g:`ABC <0078.g1:< A B C >>` be the required triangle inscribed in the given :g:`circle <0078.g1:( O )>`, :term:`center <circumcircle>` :g:`O <0078.g1:O>` (Fig. 43). Produce :g:`BA <0078.g1:[ B A ]>` and lay off :eq:`AD = AC <0078.g1:/ D A / = 0078.g1:/ A C />`. We have angle :g:`BDC <0078.g1:< B D C )>` :math:`= \tfrac{1}{2}` :g:`BAC <0078.g1:< B A C )>`, and the latter angle is determined by :math:`R`

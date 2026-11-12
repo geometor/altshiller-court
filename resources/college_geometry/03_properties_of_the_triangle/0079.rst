@@ -1,0 +1,60 @@
+:folio: 0079
+:page: 60
+:book: Chapter III
+:section: 03_properties_of_the_triangle
+:title: Chapter III: The Circumcircle — p. 60 (§§ 73–76, Fig. 44)
+:language: en
+:status: ok
+
+\(a) Let :g:`AD <0079.g1:/ A D />` be the altitude and :g:`AK <0079.g1:/ A K />` the circumdiameter issued from the vertex :g:`A <0079.g1:A>` (Fig. 44). The angles :g:`B <0079.g1:< A B D )>` and :g:`K <0079.g1:< A K C )>` are equal since they subtend
+
+.. picture:: 0079.g1.svg
+   :alt: Fig. 44 — Circumdiameter AK through circumcenter O, altitude AD, bisector AU, and median AA' of triangle ABC
+   :caption: FIG. 44
+
+the same :g:`chord <0079.g1:/ A C />` of the :term:`circumcircle <circumcircle>`; hence we have from the right triangles :g:`ABD <0079.g1:< A B D >>`, :g:`ACK <0079.g1:< A C K >>`:
+
+.. math::
+
+   \angle BAD = \angle KAC = 90^\circ - B,
+
+and:
+
+.. math::
+
+   \begin{aligned}
+   \angle DAK = A - 2(90^\circ - B) = A + 2B - 180^\circ &= \\
+   A + 2B - A - B - C &= B - C.
+   \end{aligned}
+
+The student may verify that the proposition holds when one of the angles :math:`B, C` is obtuse.
+
+\(b) Let :g:`AU <0079.g1:/ A U />` be the bisector of the angle :math:`A`. Since :eq:`∠BAD = CAO <0079.g1:< B A D ) = 0079.g1:< K A C )>`, we have angle :eq:`DAU = OAU <0079.g1:< D A U ) = 0079.g1:< O A U )>`.
+
+.. enunciation::
+
+   **74. Corollary.** *In the right triangle* :g:`ADU <0079.g1:< A D U >>` *we have* :math:`AD = h_a`\ *,* :math:`AU = t_a`\ *, and angle* :math:`DAU = \tfrac{1}{2}(B - C)`\ *, i.e., we have the datum:*
+
+   .. math::
+
+      h_a,\quad t_a,\quad B - C.
+
+.. enunciation::
+
+   **75. Theorem.** *The difference of the two angles which an* :g:`*internal bisector* <0079.g1:/ A U />` *of an angle of a* :g:`*triangle* <0079.g1:< A B C >>` *makes with the* :g:`*opposite side* <0079.g1:/ B C />` *is equal to the difference of the angles adjacent to this side.*
+
+From the two triangles :g:`AUB <0079.g1:< A U B >>`, :g:`AUC <0079.g1:< A U C >>` (Fig. 44) we have:
+
+.. math::
+
+   \angle AUC = B + \tfrac{1}{2}A, \quad \angle AUB = C + \tfrac{1}{2}A;
+
+hence:
+
+.. math::
+
+   \angle AUC - \angle AUB = B - C.
+
+.. enunciation::
+
+   **76. Problem.** *Construct a* :g:`*triangle* <0079.g1:< A B C >>` *given the* :g:`*altitude* <0079.g1:/ A D />`\ *, the* :g:`*median* <0079.g1:/ A A' />`\ *, and the* :g:`*bisector* <0079.g1:/ A U />` *issued from the same* :g:`*vertex* <0079.g1:A>` :math:`(h_a,\; m_a,\; t_a)`\ *.*

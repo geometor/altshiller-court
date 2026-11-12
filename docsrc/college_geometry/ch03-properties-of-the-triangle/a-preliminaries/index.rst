@@ -1,49 +1,25 @@
 :layout: book
 :type: section
 :order: 1
-:title: A. Preliminaries (Harmonic Division of a Segment & Apollonian Circle)
+:canonical_id: Ch.III.A
+:title: Section A — Preliminaries (Harmonic Division of a Segment & Apollonian Circle)
 :folio: 0072
 :page: 53
+:folios: 0072, 0073, 0074, 0075, 0076
+:pages: 53, 54, 55, 56, 57
+:excerpt: Internal and external division of a segment in a given ratio (§§ 54–56, Fig. 39), mutual symmetry and metric identities of harmonic conjugates (§§ 57–66), graphical quadratic segment construction (§ 67, Figs. 40a–40b), and 3 harmonic exercises.
 
-.. _ch03-properties-of-the-triangle-a-preliminaries:
+.. _ch03-a-preliminaries:
 
-A. Preliminaries (Harmonic Division of a Segment & Apollonian Circle)
-=====================================================================
+Section A — Preliminaries (Harmonic Division of a Segment & Apollonian Circle)
+==============================================================================
 
-A. Preliminaries (Harmonic Division of a Segment & Apollonian Circle) in Chapter III covers Articles **§§ 54–67** across archival folios ``0072``–``0075`` (printed pages ``53``–``56``), standardized at 300 DPI in ``resources/college_geometry/03_properties_of_the_triangle/``.
+.. picture:: hero.svg
+   :alt: Calibrated Fig. 39 diagram of harmonic division of segment AB via parallel lines
+   :caption: Fig. 39 — Internal and external harmonic division of segment AB (§§ 54–66)
+
+Internal and external division of a segment in a given ratio (§§ 54–56, Fig. 39), mutual symmetry and metric identities of harmonic conjugates (§§ 57–66), graphical quadratic segment construction (§ 67, Figs. 40a–40b), and 3 harmonic exercises.
 
 .. collection::
    :type: item
    :sort: order
-
-Folio Scan Allocation
----------------------
-
-.. list-table::
-   :header-rows: 1
-   :widths: 16 16 38 30
-
-   * - Folio
-     - Page
-     - Articles
-     - Scan Status
-   * - ``0072``
-     - ``53``
-     - §§ 54–55
-     - 300 DPI gray
-   * - ``0073``
-     - ``54``
-     - §§ 56–59
-     - 300 DPI gray
-   * - ``0074``
-     - ``55``
-     - §§ 60–66
-     - 300 DPI gray
-   * - ``0075``
-     - ``56``
-     - § 67
-     - 300 DPI gray
-
-----
-
-See :ref:`Commentary on Chapter III <ch03-properties-of-the-triangle-commentary>`.

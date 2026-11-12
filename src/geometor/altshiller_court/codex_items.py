@@ -16,7 +16,8 @@ from pathlib import Path
 HEADING_CHARS = {"=", "-", "~", "^", '"', "+"}
 
 ARTICLE_INLINE_RE = re.compile(r"^\*\*(\d+)\.\s+([^*]+?)\.\*\*\s*(.*)$", flags=re.DOTALL)
-PROBLEM_ENUN_RE = re.compile(r"^(\s*)\*\*(\d+)\.\s+Problem\.\*\*\s+", flags=re.MULTILINE)
+ENUN_ARTICLE_RE = re.compile(r"^(\s*)\*\*(\d+)\.\s+([^*]+?)\.\*\*[ \t]*", flags=re.MULTILINE)
+PROBLEM_ENUN_RE = ENUN_ARTICLE_RE
 LOCUS_ENUN_RE = re.compile(r"^(\s*)LOCUS\s+(\d+)\.\s+", flags=re.MULTILINE)
 PICTURE_RE = re.compile(r"^\.\.\s+picture::\s+(\S+)", flags=re.MULTILINE)
 GEOM_GID_RE = re.compile(r"(\d{4}\.g\d+):")
@@ -231,7 +232,7 @@ CH01_SECTION_META: dict[str, tuple[str, str, str, str]] = {
     "A. PRELIMINARIES": (
         "a-preliminaries",
         "A",
-        "A. Preliminaries",
+        "Section A — Preliminaries",
         (
             "Notation conventions for polygons, circles, triangle cevians, and circum-/inradii (§ 1), "
             "ten foundational Euclidean ruler-and-compass constructions (§ 2) with 24 elementary "
@@ -241,7 +242,7 @@ CH01_SECTION_META: dict[str, tuple[str, str, str, str]] = {
     "B. GENERAL METHOD OF SOLUTION OF CONSTRUCTION PROBLEMS": (
         "b-general-method",
         "B",
-        "B. General Method of Solution of Construction Problems",
+        "Section B — General Method of Solution of Construction Problems",
         (
             "Pappus's four-stage analytic method—Analysis, Construction, Proof, and Discussion (§ 4)—"
             "illustrated through five worked construction problems (§§ 5–9, Figs. 1–7), practical "
@@ -251,7 +252,7 @@ CH01_SECTION_META: dict[str, tuple[str, str, str, str]] = {
     "C. GEOMETRIC LOCI": (
         "c-geometric-loci",
         "C",
-        "C. Geometric Loci",
+        "Section C — Geometric Loci",
         (
             "The method of intersecting geometric loci (§ 11), twelve fundamental linear and circular "
             "loci including the capable arc and Apollonian circle (Loci 1–12, Figs. 8–12), worked locus "
@@ -261,7 +262,7 @@ CH01_SECTION_META: dict[str, tuple[str, str, str, str]] = {
     "D. INDIRECT ELEMENTS": (
         "d-indirect-elements",
         "D",
-        "D. Indirect Elements",
+        "Section D — Indirect Elements",
         (
             "Auxiliary-triangle constructions introducing indirect metric and angular data—perimeter "
             "2p, side sums and differences b ± c, altitude sums and differences h_b ± h_c, and two-element "
@@ -279,6 +280,45 @@ CH01_SECTION_META: dict[str, tuple[str, str, str, str]] = {
     ),
 }
 
+CH03_SECTION_META: dict[str, tuple[str, str, str, str]] = {
+    "A. PRELIMINARIES": (
+        "a-preliminaries",
+        "A",
+        "Section A — Preliminaries (Harmonic Division of a Segment & Apollonian Circle)",
+        (
+            "Internal and external division of a segment in a given ratio (§§ 54–56, Fig. 39), mutual "
+            "symmetry and metric identities of harmonic conjugates (§§ 57–66), graphical quadratic "
+            "segment construction (§ 67, Figs. 40a–40b), and 3 harmonic exercises."
+        ),
+    ),
+    "B. THE CIRCUMCIRCLE": (
+        "b-the-circumcircle",
+        "B",
+        "Section B — The Circumcircle (incl. Problem of Pappus § 84)",
+        (
+            "Circumcircle envelope and datum (a, A, R) (§§ 68–72, Figs. 41–43), circumdiameter–altitude–"
+            "bisector–median relations (§§ 73–78, Fig. 44), antipodal chord and pedal symmetry theorems "
+            "(§§ 79–82, Fig. 45), the classical Problem of Pappus (§§ 83–84, Fig. 46), product of sides "
+            "bc = 2Rh_a and abc = 4RS (§§ 85–86), and 35 circumcircle construction exercises."
+        ),
+    ),
+    "C. MEDIANS": (
+        "c-medians",
+        "C",
+        "Section C — Medians (Centroid, Complementary & Anticomplementary Triangles)",
+        (
+            "Midline theorem (§ 87) and concurrency and 2 : 1 trisection of the three medians at the "
+            "centroid G = X(2) (§ 88, Fig. 47), inaugurating the synthetic theory of the complementary "
+            "(medial) and anticomplementary triangles (§§ 87–110)."
+        ),
+    ),
+}
+
+CHAPTER_SECTION_META_BY_INDEX: dict[int, tuple[str, str, dict[str, tuple[str, str, str, str]]]] = {
+    1: ("ch01", "I", CH01_SECTION_META),
+    3: ("ch03", "III", CH03_SECTION_META),
+}
+
 
 def _exercise_range_suffix(blocks: list[FolioBlock]) -> str:
     nums: list[int] = []
@@ -291,7 +331,7 @@ def _exercise_range_suffix(blocks: list[FolioBlock]) -> str:
 
 
 def _relocate_floated_pictures(sections: list[CodexSection]) -> None:
-    """Ensure every ``.. picture:: <gid>.svg`` sits inside the leaf item whose ``:g:`` roles reference ``<gid>``."""
+    """Ensure every leaf item referencing ``<gid>`` via ``:g:``/``:eq:`` carries ``.. picture:: <gid>.svg``."""
     leaf_items: list[CodexItem] = []
     for sec in sections:
         for item in sec.items:
@@ -300,17 +340,20 @@ def _relocate_floated_pictures(sections: list[CodexSection]) -> None:
             else:
                 leaf_items.append(item)
 
-    # Map gid -> owning leaf item via :g: / :eq: references
-    gid_owner: dict[str, CodexItem] = {}
+    # Map gid -> ordered list of ALL leaf items referencing <gid>
+    gid_owners: dict[str, list[CodexItem]] = {}
     for leaf in leaf_items:
         for blk in leaf.blocks:
             if blk.text.lstrip().startswith(".. picture::"):
                 continue
             for m in GEOM_GID_RE.finditer(blk.text):
-                gid_owner[m.group(1)] = leaf
+                gid = m.group(1)
+                owners = gid_owners.setdefault(gid, [])
+                if leaf not in owners:
+                    owners.append(leaf)
 
-    # Detach misplaced picture blocks from non-owning containers (including section intro or § 11 intro)
-    detached: list[tuple[CodexItem, FolioBlock]] = []
+    # Record canonical .. picture:: block text for each gid and detach from non-owners
+    gid_pic_block: dict[str, FolioBlock] = {}
     all_containers: list[tuple[CodexItem | None, list[FolioBlock]]] = []
     for sec in sections:
         all_containers.append((None, sec.intro_blocks))
@@ -326,31 +369,50 @@ def _relocate_floated_pictures(sections: list[CodexSection]) -> None:
             if pm:
                 pic_file = pm.group(1)
                 gid = pic_file.removesuffix(".svg")
-                owner = gid_owner.get(gid)
-                if owner is not None and owner is not holder:
-                    detached.append((owner, blk))
+                gid_pic_block.setdefault(gid, blk)
+                owners = gid_owners.get(gid)
+                if owners and holder not in owners:
                     continue
             kept.append(blk)
         blk_list[:] = kept
 
-    # Insert each detached picture block right after .. enunciation:: (or at top) in its true owner
-    for owner, pic_blk in detached:
-        insert_idx = 0
-        if owner.blocks and owner.blocks[0].text.lstrip().startswith(".. enunciation::"):
-            insert_idx = 1
-        owner.blocks.insert(insert_idx, pic_blk)
+    # Ensure every owning leaf item has .. picture:: <gid>.svg (preserving existing placement if already inside)
+    for gid, owners in gid_owners.items():
+        proto_blk = gid_pic_block.get(gid)
+        if proto_blk is None:
+            continue
+        target_pic = f"{gid}.svg"
+        for idx_owner, owner in enumerate(owners):
+            already_present = any(
+                (pm := PICTURE_RE.match(b.text.strip())) is not None and pm.group(1) == target_pic
+                for b in owner.blocks
+            )
+            if already_present:
+                continue
+            insert_idx = 0
+            if owner.blocks and owner.blocks[0].text.lstrip().startswith(".. enunciation::"):
+                insert_idx = 1
+            # Secondary owners inherit their own primary folio so shared figures don't inject earlier folio tags
+            if idx_owner == 0:
+                new_folios = list(proto_blk.folios)
+            else:
+                new_folios = [owner.blocks[0].primary_folio] if owner.blocks else list(proto_blk.folios)
+            owner.blocks.insert(insert_idx, FolioBlock(text=proto_blk.text, folios=new_folios))
 
 
-def decompose_chapter_one(
+def decompose_chapter_folios(
     folio_entries: list[tuple[str, str, dict[str, str], str]],
+    chap_prefix: str,
+    chap_roman: str,
+    section_meta_map: dict[str, tuple[str, str, str, str]],
 ) -> list[CodexSection]:
-    """Decompose Chapter I (``0020``–``0052``) into 5 ``CodexSection`` containers and leaf items."""
+    """Decompose transcribed chapter folios into ``CodexSection`` containers and leaf ``CodexItem`` units."""
     blocks = extract_depaginated_blocks(folio_entries, strip_chapter_heading=True)
 
     raw_sections: list[tuple[str, list[FolioBlock]]] = []
     for blk in blocks:
         h = heading_info(blk.text)
-        if h is not None and h[1] == "-" and h[0] in CH01_SECTION_META:
+        if h is not None and h[1] == "-" and h[0] in section_meta_map:
             raw_sections.append((h[0], []))
         else:
             if not raw_sections:
@@ -359,13 +421,13 @@ def decompose_chapter_one(
 
     sections: list[CodexSection] = []
     for sec_order, (sec_heading, sec_blocks) in enumerate(raw_sections, start=1):
-        sec_slug, sec_code, sec_title, sec_overview = CH01_SECTION_META[sec_heading]
+        sec_slug, sec_code, sec_title, sec_overview = section_meta_map[sec_heading]
         section = CodexSection(
             slug=sec_slug,
             code=sec_code,
             title=sec_title,
-            anchor=f"ch01-{sec_slug}",
-            canonical_id=f"Ch.I.{sec_code}",
+            anchor=f"{chap_prefix}-{sec_slug}",
+            canonical_id=f"Ch.{chap_roman}.{sec_code}",
             order=sec_order,
             overview=sec_overview,
         )
@@ -383,23 +445,24 @@ def decompose_chapter_one(
                 item_order = len(section.items) + 1
                 if sec_slug == "review-exercises":
                     rev_map = {
-                        "CONSTRUCTIONS": ("01-constructions", "Constructions", "ch01-review-constructions"),
-                        "PROPOSITIONS": ("02-propositions", "Propositions", "ch01-review-propositions"),
-                        "LOCI": ("03-loci", "Loci", "ch01-review-loci"),
+                        "CONSTRUCTIONS": ("01-constructions", "Constructions", f"{chap_prefix}-review-constructions"),
+                        "PROPOSITIONS": ("02-propositions", "Propositions", f"{chap_prefix}-review-propositions"),
+                        "LOCI": ("03-loci", "Loci", f"{chap_prefix}-review-loci"),
                     }
                     islug, ititle, ianchor = rev_map[sub_title]
-                    cid = f"Ch.I.Review.{item_order}"
+                    cid = f"Ch.{chap_roman}.Review.{item_order}"
                 elif sub_title == "SUPPLEMENTARY EXERCISES":
-                    islug = "022-supplementary-exercises"
+                    art_prefix = f"{last_art_num:03d}" if last_art_num else f"{item_order:03d}"
+                    islug = f"{art_prefix}-supplementary-exercises"
                     ititle = "Supplementary Exercises"
-                    ianchor = "ch01-supplementary-exercises"
-                    cid = "Ch.I.SuppEx"
+                    ianchor = f"{chap_prefix}-supplementary-exercises"
+                    cid = f"Ch.{chap_roman}.SuppEx"
                 else:
                     art_prefix = f"{last_art_num:03d}" if last_art_num else f"{item_order:03d}"
                     islug = f"{art_prefix}-exercises"
                     ititle = f"§ {last_art_num}. Exercises" if last_art_num else "Exercises"
-                    ianchor = f"ch01-art-{art_prefix}-exercises"
-                    cid = f"Ch.I.{last_art_num}.Ex" if last_art_num else f"Ch.I.{sec_code}.Ex"
+                    ianchor = f"{chap_prefix}-art-{art_prefix}-exercises"
+                    cid = f"Ch.{chap_roman}.{last_art_num}.Ex" if last_art_num else f"Ch.{chap_roman}.{sec_code}.Ex"
 
                 current_item = CodexItem(
                     slug=islug,
@@ -412,25 +475,27 @@ def decompose_chapter_one(
                 section.items.append(current_item)
                 continue
 
-            # 2. Numbered Problem .. enunciation::
-            prob_m = PROBLEM_ENUN_RE.search(text) if text.startswith(".. enunciation::") else None
-            if prob_m:
-                art_num = int(prob_m.group(2))
+            # 2. Numbered .. enunciation:: article (**N. Problem.**, **N. Theorem.**, **N. Corollary.**, etc.)
+            enun_m = ENUN_ARTICLE_RE.search(text) if text.startswith(".. enunciation::") else None
+            if enun_m:
+                art_num = int(enun_m.group(2))
+                art_label = enun_m.group(3).strip()
                 last_art_num = art_num
-                cleaned = PROBLEM_ENUN_RE.sub(r"\1", text, count=1)
+                label_slug = re.sub(r"[^a-z0-9]+", "-", art_label.lower()).strip("-")
+                cleaned = ENUN_ARTICLE_RE.sub(r"\1", text, count=1)
                 current_item = CodexItem(
-                    slug=f"{art_num:03d}-problem",
-                    title=f"§ {art_num}. Problem",
-                    anchor=f"ch01-art-{art_num:03d}",
+                    slug=f"{art_num:03d}-{label_slug}",
+                    title=f"§ {art_num}. {art_label}",
+                    anchor=f"{chap_prefix}-art-{art_num:03d}",
                     item_type="item",
                     order=len(section.items) + 1,
-                    canonical_id=f"Ch.I.{art_num}",
+                    canonical_id=f"Ch.{chap_roman}.{art_num}",
                     blocks=[FolioBlock(text=cleaned, folios=list(blk.folios))],
                 )
                 section.items.append(current_item)
                 continue
 
-            # 3. Inline bold numbered article (**1. Notation.**, **4. Analytic Method.**, **11. Important Loci.**, etc.)
+            # 3. Inline bold numbered article (**1. Notation.**, **55. Remark I.**, **59. Definitions.**, etc.)
             art_m = ARTICLE_INLINE_RE.match(text)
             if art_m:
                 art_num = int(art_m.group(1))
@@ -441,10 +506,10 @@ def decompose_chapter_one(
                 current_item = CodexItem(
                     slug=f"{art_num:03d}-{label_slug}",
                     title=f"§ {art_num}. {art_label}",
-                    anchor=f"ch01-art-{art_num:03d}",
+                    anchor=f"{chap_prefix}-art-{art_num:03d}",
                     item_type="item",
                     order=len(section.items) + 1,
-                    canonical_id=f"Ch.I.{art_num}",
+                    canonical_id=f"Ch.{chap_roman}.{art_num}",
                 )
                 if remainder:
                     current_item.blocks.append(FolioBlock(text=remainder, folios=list(blk.folios)))
@@ -468,6 +533,13 @@ def decompose_chapter_one(
 
     _relocate_floated_pictures(sections)
     return sections
+
+
+def decompose_chapter_one(
+    folio_entries: list[tuple[str, str, dict[str, str], str]],
+) -> list[CodexSection]:
+    """Decompose Chapter I (``0020``–``0052``) into 5 ``CodexSection`` containers and leaf items."""
+    return decompose_chapter_folios(folio_entries, "ch01", "I", CH01_SECTION_META)
 
 
 def _split_important_loci(item: CodexItem) -> None:

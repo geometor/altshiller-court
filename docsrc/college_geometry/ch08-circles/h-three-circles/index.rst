@@ -1,57 +1,37 @@
 :layout: book
 :type: section
 :order: 8
-:title: H. Three Circles (Radical Center & Circles of Antisimilitude)
+:title: Section H — Three Circles (Radical Center & Circles of Antisimilitude)
 :folio: 0236
 :page: 217
+:folios: 0236–0241
+:pages: 217–222
+:excerpt: Analyzes systems of three circles (§§ 491–505): the concurrency of their three pairwise radical axes  at the radical center and their orthogonal circle.
 
 .. _ch08-circles-h-three-circles:
 
-H. Three Circles (Radical Center & Circles of Antisimilitude)
-=============================================================
+Section H — Three Circles (Radical Center & Circles of Antisimilitude)
+======================================================================
 
-H. Three Circles (Radical Center & Circles of Antisimilitude) in Chapter VIII covers Articles **§§ 491–505** across archival folios ``0236``–``0241`` (printed pages ``217``–``222``), standardized at 300 DPI in ``resources/college_geometry/08_circles/``.
+.. rubric:: Chapter VIII: Circles • Articles §§ 491–505 (Folios 0236–0241, pp. 217–222)
 
-.. collection::
-   :type: item
-   :sort: order
+.. picture:: hero.svg
+   :alt: Reference circle O and orthogonal circle P intersecting perpendicularly at T1, T2 with polar chord T1 T2 through inverse point P'
+   :caption: Inverse Points P, P', Polar Line T₁T₂, and Orthogonal Circle (P, PT₁)
 
-Folio Scan Allocation
----------------------
+Analyzes systems of three circles (**§§ 491–505**): the concurrency of their three pairwise :term:`radical axes <radical-axis>` at the *radical center* and their orthogonal circle.
 
-.. list-table::
-   :header-rows: 1
-   :widths: 16 16 38 30
+Principal Theorems, Constructions & Identities
+----------------------------------------------
 
-   * - Folio
-     - Page
-     - Articles
-     - Scan Status
-   * - ``0236``
-     - ``217``
-     - §§ 491–494
-     - 300 DPI gray
-   * - ``0237``
-     - ``218``
-     - §§ 495–499
-     - 300 DPI gray
-   * - ``0238``
-     - ``219``
-     - §§ 500–502
-     - 300 DPI gray
-   * - ``0239``
-     - ``220``
-     - §§ 503–505
-     - 300 DPI gray
-   * - ``0240``
-     - ``221``
-     - —
-     - 300 DPI gray
-   * - ``0241``
-     - ``222``
-     - §§ 506–508
-     - 300 DPI gray
+* **§§ 491–497 — The Radical Center & Orthogonal Circle**: The three radical axes of three non-coaxal circles concur at the unique radical center :math:`R_c`; when :math:`R_c` lies outside the three circles, the circle centered at :math:`R_c` with radius equal to the common tangent length cuts all three given circles :term:`orthogonally <orthogonal-circles>`!
+* **§§ 498–505 — Radical Circle & Circles of Antisimilitude**: Studies circles coaxal with pairs of given circles and loci where ratios of powers remain constant.
+
+Constructive & Symbolic Connections
+-----------------------------------
+
+Applied to three point-circles at :math:`A, B, C`, the radical center recovers the circumcenter :math:`O = X(3)`; applied to the excircles, it yields the Spieker radical center!
 
 ----
 
-See :ref:`Commentary on Chapter VIII <ch08-circles-commentary>`.
+See :ref:`Commentary on Chapter VIII: Circles <ch08-circles-commentary>` and :ref:`334-Folio Archival Scan Inventory <scan-inventory>`.

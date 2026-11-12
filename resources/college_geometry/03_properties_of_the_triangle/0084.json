@@ -1,0 +1,244 @@
+{
+  "folio": "0084",
+  "page": "65",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0084.g1.png",
+      "bbox": [
+        424,
+        1326,
+        570,
+        440
+      ],
+      "caption": "Fig. 47. Concurrency and 2 : 1 trisection of the medians AA', BB', CC' at centroid G (§ 88).",
+      "white_point": 238,
+      "svg_file": "0084.g1.svg",
+      "article": "88",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "A": {
+            "x": 175.64,
+            "y": 54.82,
+            "label": "A",
+            "label_x": 175,
+            "label_y": 31
+          },
+          "B": {
+            "x": 51.78,
+            "y": 310.51,
+            "label": "B",
+            "label_x": 28,
+            "label_y": 319
+          },
+          "C": {
+            "x": 524.81,
+            "y": 312.17,
+            "label": "C",
+            "label_x": 543,
+            "label_y": 318
+          },
+          "A'": {
+            "x": 286.43,
+            "y": 311.33,
+            "label": "A'",
+            "label_x": 324,
+            "label_y": 330
+          },
+          "B'": {
+            "x": 353.46,
+            "y": 185.88,
+            "label": "B'",
+            "label_x": 368,
+            "label_y": 164
+          },
+          "C'": {
+            "x": 112.75,
+            "y": 184.64,
+            "label": "C'",
+            "label_x": 86,
+            "label_y": 175
+          },
+          "G": {
+            "x": 249.56,
+            "y": 228.16,
+            "label": "G",
+            "label_x": 266,
+            "label_y": 203
+          },
+          "M": {
+            "x": 160.02,
+            "y": 265.08,
+            "label": "M",
+            "label_x": 145,
+            "label_y": 244
+          },
+          "N": {
+            "x": 378.56,
+            "y": 268.17,
+            "label": "N",
+            "label_x": 383,
+            "label_y": 245
+          },
+          "K": {
+            "x": 323.75,
+            "y": 392.75,
+            "label": "K",
+            "label_x": 325,
+            "label_y": 417
+          }
+        },
+        "elements": [
+          {
+            "id": "seg_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "ref": "/ A B /"
+          },
+          {
+            "id": "seg_BC",
+            "type": "segment",
+            "p1": "B",
+            "p2": "C",
+            "ref": "/ B C /"
+          },
+          {
+            "id": "seg_AC",
+            "type": "segment",
+            "p1": "A",
+            "p2": "C",
+            "ref": "/ A C /"
+          },
+          {
+            "id": "seg_CpBp",
+            "type": "segment",
+            "p1": "C'",
+            "p2": "B'",
+            "ref": "/ B' C' /"
+          },
+          {
+            "id": "seg_BBp",
+            "type": "segment",
+            "p1": "B",
+            "p2": "B'",
+            "ref": "/ B B' /"
+          },
+          {
+            "id": "seg_CCp",
+            "type": "segment",
+            "p1": "C",
+            "p2": "C'",
+            "ref": "/ C C' /"
+          },
+          {
+            "id": "seg_AK",
+            "type": "segment",
+            "p1": "A",
+            "p2": "K",
+            "ref": "[ A A' ]",
+            "aliases": [
+              "/ A K /"
+            ]
+          },
+          {
+            "id": "seg_MN",
+            "type": "segment",
+            "p1": "M",
+            "p2": "N",
+            "ref": "/ M N /"
+          },
+          {
+            "id": "seg_BK",
+            "type": "segment",
+            "p1": "B",
+            "p2": "K",
+            "ref": "/ B K /"
+          },
+          {
+            "id": "seg_KC",
+            "type": "segment",
+            "p1": "K",
+            "p2": "C",
+            "ref": "/ K C /"
+          },
+          {
+            "id": "ov_AAp",
+            "type": "segment",
+            "p1": "A",
+            "p2": "A'",
+            "style": "overlay",
+            "ref": "/ A A' /"
+          },
+          {
+            "id": "ov_BG",
+            "type": "segment",
+            "p1": "B",
+            "p2": "G",
+            "style": "overlay",
+            "ref": "/ B G /"
+          },
+          {
+            "id": "ov_BpG",
+            "type": "segment",
+            "p1": "B'",
+            "p2": "G",
+            "style": "overlay",
+            "ref": "/ B' G /"
+          },
+          {
+            "id": "ov_CG",
+            "type": "segment",
+            "p1": "C",
+            "p2": "G",
+            "style": "overlay",
+            "ref": "/ C G /"
+          },
+          {
+            "id": "ov_CpG",
+            "type": "segment",
+            "p1": "C'",
+            "p2": "G",
+            "style": "overlay",
+            "ref": "/ C' G /"
+          },
+          {
+            "id": "tri_ABC",
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ],
+            "style": "overlay",
+            "ref": "< A B C >"
+          },
+          {
+            "id": "tri_GBC",
+            "type": "polygon",
+            "points": [
+              "G",
+              "B",
+              "C"
+            ],
+            "style": "overlay",
+            "ref": "< G B C >"
+          },
+          {
+            "id": "tri_GBpCp",
+            "type": "polygon",
+            "points": [
+              "G",
+              "B'",
+              "C'"
+            ],
+            "style": "overlay",
+            "ref": "< G B' C' >"
+          }
+        ]
+      }
+    }
+  ]
+}

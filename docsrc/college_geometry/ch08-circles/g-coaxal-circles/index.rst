@@ -1,101 +1,38 @@
 :layout: book
 :type: section
 :order: 7
-:title: G. Coaxal Circles (incl. Poncelet's Theorems & Casey's Theorem § 471)
+:title: Section G — Coaxal Circles (incl. Poncelet's Theorems & Casey's Theorem § 471)
 :folio: 0220
 :page: 201
+:folios: 0220–0236
+:pages: 201–217
+:excerpt: Develops the theory of coaxal pencils of circles  (§§ 440–490), Poncelet's  limiting points, conjugate orthogonal pencils, and John Casey's  generalized Ptolemy theorem (§ 471).
 
 .. _ch08-circles-g-coaxal-circles:
 
-G. Coaxal Circles (incl. Poncelet's Theorems & Casey's Theorem § 471)
-=====================================================================
+Section G — Coaxal Circles (incl. Poncelet's Theorems & Casey's Theorem § 471)
+==============================================================================
 
-G. Coaxal Circles (incl. Poncelet's Theorems & Casey's Theorem § 471) in Chapter VIII covers Articles **§§ 440–490** across archival folios ``0220``–``0236`` (printed pages ``201``–``217``), standardized at 300 DPI in ``resources/college_geometry/08_circles/``.
+.. rubric:: Chapter VIII: Circles • Articles §§ 440–490 (Folios 0220–0236, pp. 201–217)
 
-.. collection::
-   :type: item
-   :sort: order
+.. picture:: hero.svg
+   :alt: Reference circle O and orthogonal circle P intersecting perpendicularly at T1, T2 with polar chord T1 T2 through inverse point P'
+   :caption: Inverse Points P, P', Polar Line T₁T₂, and Orthogonal Circle (P, PT₁)
 
-Folio Scan Allocation
----------------------
+Develops the theory of :term:`coaxal pencils of circles <coaxal-circles>` (**§§ 440–490**), :person:`Poncelet's <poncelet>` limiting points, conjugate orthogonal pencils, and :person:`John Casey's <casey>` generalized Ptolemy theorem (**§ 471**).
 
-.. list-table::
-   :header-rows: 1
-   :widths: 16 16 38 30
+Principal Theorems, Constructions & Identities
+----------------------------------------------
 
-   * - Folio
-     - Page
-     - Articles
-     - Scan Status
-   * - ``0220``
-     - ``201``
-     - §§ 440–441
-     - 300 DPI gray
-   * - ``0221``
-     - ``202``
-     - §§ 442–446
-     - 300 DPI gray
-   * - ``0222``
-     - ``203``
-     - §§ 447–448
-     - 300 DPI gray
-   * - ``0223``
-     - ``204``
-     - §§ 449–451
-     - 300 DPI gray
-   * - ``0224``
-     - ``205``
-     - §§ 452–453
-     - 300 DPI gray
-   * - ``0225``
-     - ``206``
-     - §§ 454–456
-     - 300 DPI gray
-   * - ``0226``
-     - ``207``
-     - §§ 457–462
-     - 300 DPI gray
-   * - ``0227``
-     - ``208``
-     - §§ 463–464
-     - 300 DPI gray
-   * - ``0228``
-     - ``209``
-     - §§ 465–466
-     - 300 DPI gray
-   * - ``0229``
-     - ``210``
-     - §§ 467–469
-     - 300 DPI gray
-   * - ``0230``
-     - ``211``
-     - §§ 470–471
-     - 300 DPI gray
-   * - ``0231``
-     - ``212``
-     - §§ 472–475
-     - 300 DPI gray
-   * - ``0232``
-     - ``213``
-     - §§ 476–480
-     - 300 DPI gray
-   * - ``0233``
-     - ``214``
-     - §§ 481–483
-     - 300 DPI gray
-   * - ``0234``
-     - ``215``
-     - §§ 484–488
-     - 300 DPI gray
-   * - ``0235``
-     - ``216``
-     - §§ 489–490
-     - 300 DPI gray
-   * - ``0236``
-     - ``217``
-     - §§ 491–494
-     - 300 DPI gray
+* **§§ 440–458 — Intersecting, Tangent & Non-Intersecting Pencils**: Classifies coaxal systems sharing a common :term:`radical axis <radical-axis>`, identifies :person:`Poncelet's <poncelet>` point-circles (*limiting points* :math:`L, L'`), and proves that two conjugate orthogonal coaxal pencils swap base points and limiting points!
+* **§§ 459–470 — Poncelet's Triangle-Pencil Theorems**: Studies variable triangles inscribed in one circle whose sides touch circles of a coaxal pencil.
+* **§§ 471–490 — Casey's Theorem (§ 471)**: Four circles tangent to a fifth circle (or line) satisfy :math:`t_{12} t_{34} \pm t_{13} t_{24} \pm t_{14} t_{23} = 0` among their common tangent lengths (:cite:`Casey, Sequel to Euclid <casey:sequel:1892>`), providing an algebraic proof of Feuerbach's theorem!
+
+Constructive & Symbolic Connections
+-----------------------------------
+
+Connects projective pencils of conics in ``geometor/pappus`` with Feuerbach tangency verification in ``geometor/etc``.
 
 ----
 
-See :ref:`Commentary on Chapter VIII <ch08-circles-commentary>`.
+See :ref:`Commentary on Chapter VIII: Circles <ch08-circles-commentary>` and :ref:`334-Folio Archival Scan Inventory <scan-inventory>`.

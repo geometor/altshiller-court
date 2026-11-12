@@ -1,0 +1,59 @@
+:folio: 0073
+:page: 54
+:book: Chapter III
+:section: 03_properties_of_the_triangle
+:title: Chapter III: Preliminaries — p. 54 (§§ 55–59)
+:language: en
+:status: ok
+
+problem usually distinguishes between the points :g:`A <0072.g1:A>`, :g:`B <0072.g1:B>` and thus leads to only one pair of points of division.
+
+**56. Remark II.** If :math:`p > q`, we have :math:`AC > CB` and :math:`AD > DB`, so that the midpoint :g:`M <0072.g1:M>` of :g:`AB <0072.g1:/ A B />` lies outside the segment :g:`CD <0072.g1:/ C D />`. The same relative position of the points :g:`M <0072.g1:M>`, :g:`C <0072.g1:C>`, :g:`D <0072.g1:D>` prevails, if :math:`p < q`.
+
+If :math:`p = q`, the point :g:`C <0072.g1:C>` coincides with :g:`M <0072.g1:M>`, and there is no external point of division, since :g:`FH <0072.g1:[ F H ]>` is then parallel to :g:`AB <0072.g1:[ A B ]>`.
+
+.. enunciation::
+
+   **57. Theorem.** *If the points* :g:`C <0072.g1:C>`\ *,* :g:`D <0072.g1:D>` *divide the segment* :g:`AB <0072.g1:/ A B />` *internally and externally in the ratio* :math:`p : q`\ *, the points* :g:`B <0072.g1:B>`\ *,* :g:`A <0072.g1:A>` *divide the segment* :g:`DC <0072.g1:/ C D />` *internally and externally in the ratio* :math:`(p + q) : (p - q)`\ *.*
+
+We have (Fig. 39):
+
+.. math::
+
+   AC : CB = p : q, \quad AD : DB = p : q;
+
+hence:
+
+.. math::
+
+   \begin{aligned}
+   (1) \quad & (AC + CB) : CB = (p + q) : q, & (AD - DB) : DB &= (p - q) : q, \\
+   (2) \quad & AC : (AC + CB) = p : (p + q), & AD : (AD - DB) &= p : (p - q).
+   \end{aligned}
+
+.. assertion::
+
+   Substituting :g:`AB <0072.g1:/ A B />` for :math:`AC + CB` and for :math:`AD - DB` in (1) and (2), and combining the two proportions in each of these two lines we obtain:
+
+   .. math::
+
+      \begin{aligned}
+      DB : BC &= (p + q) : (p - q), \\
+      DA : AC &= (p + q) : (p - q).
+      \end{aligned}
+
+.. enunciation::
+
+   **58. Corollary.** *If* :math:`AB = a` *and* :math:`CD = b`\ *, we have* :math:`b = 2apq : (p^2 - q^2)`\ *.*
+
+Indeed, we have:
+
+.. math::
+
+   AD : AB = p : (p - q), \quad AC : AB = p : (p + q), \quad CD = AD - AC;
+
+hence the announced result.
+
+**59. Definitions.** Instead of saying that the points :g:`C <0072.g1:C>`, :g:`D <0072.g1:D>` (§ 57) divide the segment :g:`AB <0072.g1:/ A B />` internally and externally in the same ratio, we shall sometimes say that the points :g:`C <0072.g1:C>`, :g:`D <0072.g1:D>` *divide the segment* :math:`AB` :term:`*harmonically* <harmonic-division>`, or that the points :g:`C <0072.g1:C>`, :g:`D <0072.g1:D>` *separate the points* :math:`A, B` *harmonically*, or that the points :g:`C <0072.g1:C>`, :g:`D <0072.g1:D>` are :term:`*harmonic conjugates* <harmonic-division>` with respect to the points :g:`A <0072.g1:A>`, :g:`B <0072.g1:B>`.
+
+The preceding proposition (§ 57) states that the relation between the two pairs of points is mutual, so that the points :g:`A <0072.g1:A>`, :g:`B <0072.g1:B>`, in turn, divide the segment :g:`CD <0072.g1:/ C D />` harmonically, and the points :g:`A <0072.g1:A>`, :g:`B <0072.g1:B>` separate the points :g:`C <0072.g1:C>`, :g:`D <0072.g1:D>` harmonically. We may thus refer to the two pairs of points :math:`A, B` and :math:`C, D` as *two pairs of harmonic points*, and to the two segments :g:`AB <0072.g1:/ A B />`, :g:`CD <0072.g1:/ C D />` as *two harmonic segments*.

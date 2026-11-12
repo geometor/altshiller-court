@@ -1,0 +1,53 @@
+:folio: 0080
+:page: 61
+:book: Chapter III
+:section: 03_properties_of_the_triangle
+:title: Chapter III: The Circumcircle — p. 61 (§§ 76–78, Exercises 1–6)
+:language: en
+:status: ok
+
+The two right triangles having for their common leg :math:`AD = h_a` (Fig. 44) and for hypotenuses :math:`AA' = m_a` and :math:`AU = t_a` may be constructed. The :term:`circumcenter <circumcircle>` :g:`O <0079.g1:O>` of the required triangle :g:`ABC <0079.g1:< A B C >>` lies on the :g:`perpendicular <0079.g1:[ O A' ]>` to :g:`DA' <0079.g1:[ D A' ]>` at :g:`A' <0079.g1:Aprime>` and on the :g:`line <0079.g1:[ A K ]>` which makes with :g:`AU <0079.g1:/ A U />` an :g:`angle <0079.g1:< O A U )>` :eq:`equal <0079.g1:< O A U ) = 0079.g1:< D A U )>` to the angle :g:`DAU <0079.g1:< D A U )>` (§ 73b); hence :g:`O <0079.g1:O>` may be determined. The circle :g:`(O, OA) <0079.g1:( O A )>` meets the line :g:`DA' <0079.g1:[ D A' ]>` in the two vertices :g:`B <0079.g1:B>`, :g:`C <0079.g1:C>` of the required triangle :g:`ABC <0079.g1:< A B C >>`.
+
+.. enunciation::
+
+   **77. Problem.** *Construct a triangle given the base, the altitude to the base, and the bisector of the vertical angle* :math:`(a,\; h_a,\; t_a)`\ *.*
+
+Let :math:`ABC` be the required triangle. Let :math:`AD = h_a`, :math:`AU = t_a`. If :math:`F` is the symmetric of :math:`B` with respect to :math:`D`, we have:
+
+.. math::
+
+   \angle FAC = \angle AFD - \angle C = B - C,
+
+and this angle is known from the right triangle :math:`ADU` (§ 73).
+
+Let the perpendicular to :math:`BC` at :math:`B` meet :math:`AF` in :math:`G`. The right triangle :math:`GBC` may be constructed, for :math:`BC` is given and :math:`GB = 2h_a`. We have thus for the vertex :math:`A` two :term:`loci <geometric-locus>`: the :term:`arc of a circle <subtended-angle-locus>` at the points of which :math:`GC` subtends an angle of :math:`180^\circ - (B - C)`, and the :term:`mediator <mediator>` of :math:`BG`.
+
+.. enunciation::
+
+   **78. Problem.** *Construct a* :g:`*triangle* <0079.g1:< A B C >>` *given the* :g:`*base* <0079.g1:/ B C />`\ *, the* :g:`*median* <0079.g1:/ A A' />` *to the base, and the difference of the base angles* :math:`(a,\; m_a,\; B - C)`\ *.*
+
+Let :g:`ABC <0079.g1:< A B C >>` (Fig. 44) be the required triangle. We have angle :math:`A'OK = DAO = B - C`; hence angle :math:`AOA' = 180^\circ - (B - C)`.
+
+Let :g:`AA' <0079.g1:[ A A' ]>` produced meet the :term:`circumcircle <circumcircle>` in :g:`J <0079.g1:J>`. We have then:
+
+.. math::
+
+   A'A \cdot A'J = A'B \cdot A'C; \quad \text{hence} \quad A'J = a^2 : 4m_a.
+
+Thus the segment :g:`A'J <0079.g1:/ A' J />` may be constructed as the :term:`third proportional <fourth-proportional>` of the segments :math:`a`, :math:`4m_a`, and the :term:`circumcenter <circumcircle>` :g:`O <0079.g1:O>` lies on the :term:`mediator <mediator>` of :g:`AJ <0079.g1:/ A J />`. Hence the following construction.
+
+Place :math:`AA' = m_a` and on it construct the :term:`arc of a circle <subtended-angle-locus>` at which :g:`AA' <0079.g1:/ A A' />` subtends the angle of :math:`180^\circ - (B - C)`. Produce :g:`AA' <0079.g1:/ A A' />` by :math:`A'J = a^2 : 4m_a`. The arc is met by the mediator of :g:`AJ <0079.g1:/ A J />` in the circumcenter :g:`O <0079.g1:O>` of the required triangle. The circle :g:`(O, OA) <0079.g1:( O A )>` meets the :g:`perpendicular <0079.g1:[ D A' ]>` to :g:`OA' <0079.g1:/ O A' />` at :g:`A' <0079.g1:Aprime>` in the vertices :g:`B <0079.g1:B>`, :g:`C <0079.g1:C>` of the required triangle :g:`ABC <0079.g1:< A B C >>`.
+
+The angle subtended by :g:`AA' <0079.g1:/ A A' />` at :g:`O <0079.g1:O>` is equal to :math:`B - C`, if the points :g:`A <0079.g1:A>`, :g:`O <0079.g1:O>` lie on opposite sides of :g:`BC <0079.g1:[ B C ]>`, or, in other words, when :math:`A` is an obtuse angle.
+
+EXERCISES
+~~~~~~~~~
+
+Construct a triangle, given:
+
+1. :math:`R,\; h_a,\; B - C`.
+2. :math:`R,\; t_a,\; B - C`.
+3. :math:`A,\; h_a,\; t_a`.
+4. :math:`a,\; A,\; h_a : t_a`.
+5. :math:`R,\; h_a,\; t_a`.
+6. :math:`R,\; m_a,\; B - C`.

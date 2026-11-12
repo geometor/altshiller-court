@@ -1,49 +1,37 @@
 :layout: book
 :type: section
 :order: 2
-:title: B. Orthogonal Circles
+:title: Section B — Orthogonal Circles
 :folio: 0193
 :page: 174
+:folios: 0193–0196
+:pages: 174–177
+:excerpt: Develops the geometry of orthogonal circles  (§§ 363–372)—pairs of circles whose tangents (and radii) at their points of intersection meet at right angles.
 
 .. _ch08-circles-b-orthogonal-circles:
 
-B. Orthogonal Circles
-=====================
+Section B — Orthogonal Circles
+==============================
 
-B. Orthogonal Circles in Chapter VIII covers Articles **§§ 363–372** across archival folios ``0193``–``0196`` (printed pages ``174``–``177``), standardized at 300 DPI in ``resources/college_geometry/08_circles/``.
+.. rubric:: Chapter VIII: Circles • Articles §§ 363–372 (Folios 0193–0196, pp. 174–177)
 
-.. collection::
-   :type: item
-   :sort: order
+.. picture:: hero.svg
+   :alt: Reference circle O and orthogonal circle P intersecting perpendicularly at T1, T2 with polar chord T1 T2 through inverse point P'
+   :caption: Inverse Points P, P', Polar Line T₁T₂, and Orthogonal Circle (P, PT₁)
 
-Folio Scan Allocation
----------------------
+Develops the geometry of :term:`orthogonal circles <orthogonal-circles>` (**§§ 363–372**)—pairs of circles whose tangents (and radii) at their points of intersection meet at right angles.
 
-.. list-table::
-   :header-rows: 1
-   :widths: 16 16 38 30
+Principal Theorems, Constructions & Identities
+----------------------------------------------
 
-   * - Folio
-     - Page
-     - Articles
-     - Scan Status
-   * - ``0193``
-     - ``174``
-     - §§ 363–364
-     - 300 DPI gray
-   * - ``0194``
-     - ``175``
-     - §§ 365–369
-     - 300 DPI gray
-   * - ``0195``
-     - ``176``
-     - §§ 370–372
-     - 300 DPI gray
-   * - ``0196``
-     - ``177``
-     - § 373
-     - 300 DPI gray
+* **§§ 363–367 — Metric & Tangent Criteria**: Circles :math:`(O, R)` and :math:`(O', R')` are orthogonal if and only if :math:`OO'^2 = R^2 + R'^2`, or equivalently the radius of one to an intersection point is tangent to the other.
+* **§§ 368–372 — Fundamental Inversion-Orthogonality Theorem**: A circle cuts :math:`(O, R)` orthogonally if and only if every diameter of :math:`(O, R)` meeting it is divided harmonically—i.e., if and only if it passes through the inverse :math:`P'` of every point :math:`P` it contains!
+
+Constructive & Symbolic Connections
+-----------------------------------
+
+Verified symbolically in the ``pole_polar_coaxal`` hero figure with exact Pythagorean radii :math:`6, 8` on center distance :math:`10`.
 
 ----
 
-See :ref:`Commentary on Chapter VIII <ch08-circles-commentary>`.
+See :ref:`Commentary on Chapter VIII: Circles <ch08-circles-commentary>` and :ref:`334-Folio Archival Scan Inventory <scan-inventory>`.

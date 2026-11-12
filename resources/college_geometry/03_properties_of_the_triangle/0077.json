@@ -1,0 +1,249 @@
+{
+  "folio": "0077",
+  "page": "58",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0077.g1.png",
+      "bbox": [
+        458,
+        644,
+        506,
+        454
+      ],
+      "caption": "Fig. 42. Construction of triangle ABC given R, b + c, and B − C via isosceles trapezoid ABCK (§ 71).",
+      "white_point": 238,
+      "svg_file": "0077.g1.svg",
+      "article": "71",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "A": {
+            "x": 120.54,
+            "y": 69.76,
+            "label": "A",
+            "label_x": 107,
+            "label_y": 51
+          },
+          "K": {
+            "x": 387.06,
+            "y": 69.39,
+            "label": "K",
+            "label_x": 401,
+            "label_y": 49
+          },
+          "B": {
+            "x": 51.26,
+            "y": 268.71,
+            "label": "B",
+            "label_x": 29,
+            "label_y": 280
+          },
+          "D": {
+            "x": 121.89,
+            "y": 268.59,
+            "label": "D",
+            "label_x": 124,
+            "label_y": 296
+          },
+          "L": {
+            "x": 387.88,
+            "y": 268.14,
+            "label": "L",
+            "label_x": 384,
+            "label_y": 299
+          },
+          "C": {
+            "x": 456.92,
+            "y": 268.02,
+            "label": "C",
+            "label_x": 477,
+            "label_y": 280
+          }
+        },
+        "elements": [
+          {
+            "id": "circ_ABC",
+            "type": "circle",
+            "cx": 254.02,
+            "cy": 227.78,
+            "r": 206.85,
+            "ref": "( A B C )",
+            "aliases": [
+              "( A B K )"
+            ]
+          },
+          {
+            "id": "seg_AK",
+            "type": "segment",
+            "p1": "A",
+            "p2": "K",
+            "ref": "/ A K /",
+            "aliases": [
+              "[ A K ]"
+            ]
+          },
+          {
+            "id": "seg_BC",
+            "type": "segment",
+            "p1": "B",
+            "p2": "C",
+            "ref": "/ B C /",
+            "aliases": [
+              "[ B C ]"
+            ]
+          },
+          {
+            "id": "seg_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "ref": "/ A B /"
+          },
+          {
+            "id": "seg_KC",
+            "type": "segment",
+            "p1": "K",
+            "p2": "C",
+            "ref": "/ K C /"
+          },
+          {
+            "id": "seg_AC",
+            "type": "segment",
+            "p1": "A",
+            "p2": "C",
+            "ref": "/ A C /"
+          },
+          {
+            "id": "seg_BK",
+            "type": "segment",
+            "p1": "B",
+            "p2": "K",
+            "ref": "/ B K /"
+          },
+          {
+            "id": "seg_AD",
+            "type": "segment",
+            "p1": "A",
+            "p2": "D",
+            "ref": "/ A D /"
+          },
+          {
+            "id": "seg_KL",
+            "type": "segment",
+            "p1": "K",
+            "p2": "L",
+            "ref": "/ K L /"
+          },
+          {
+            "id": "arc_B",
+            "type": "arc",
+            "cx": 51.26,
+            "cy": 268.71,
+            "r": 43.5,
+            "start_deg": 289.2,
+            "end_deg": 359.9
+          },
+          {
+            "id": "arc_K",
+            "type": "arc",
+            "cx": 387.06,
+            "cy": 69.39,
+            "r": 44.5,
+            "start_deg": 89.76,
+            "end_deg": 179.92
+          },
+          {
+            "id": "arc_C",
+            "type": "arc",
+            "cx": 456.92,
+            "cy": 268.02,
+            "r": 41.0,
+            "start_deg": 179.9,
+            "end_deg": 250.62
+          },
+          {
+            "id": "tri_ABC",
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ],
+            "style": "overlay",
+            "ref": "< A B C >"
+          },
+          {
+            "id": "tri_ABK",
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "K"
+            ],
+            "style": "overlay",
+            "ref": "< A B K >"
+          },
+          {
+            "id": "poly_ABCK",
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C",
+              "K"
+            ],
+            "style": "overlay",
+            "ref": "< A B C K >"
+          },
+          {
+            "id": "ang_ABK",
+            "type": "angle",
+            "vertex": "B",
+            "p1": "A",
+            "p2": "K",
+            "radius": 38,
+            "ref": "< A B K )"
+          },
+          {
+            "id": "ang_ABC",
+            "type": "angle",
+            "vertex": "B",
+            "p1": "A",
+            "p2": "C",
+            "radius": 38,
+            "ref": "< A B C )"
+          },
+          {
+            "id": "ang_KBC",
+            "type": "angle",
+            "vertex": "B",
+            "p1": "K",
+            "p2": "C",
+            "radius": 38,
+            "ref": "< K B C )"
+          },
+          {
+            "id": "ang_BKA",
+            "type": "angle",
+            "vertex": "K",
+            "p1": "B",
+            "p2": "A",
+            "radius": 38,
+            "ref": "< B K A )"
+          },
+          {
+            "id": "ang_BCA",
+            "type": "angle",
+            "vertex": "C",
+            "p1": "B",
+            "p2": "A",
+            "radius": 38,
+            "ref": "< B C A )"
+          }
+        ]
+      }
+    }
+  ]
+}

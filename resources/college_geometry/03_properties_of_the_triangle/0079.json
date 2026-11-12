@@ -1,0 +1,401 @@
+{
+  "folio": "0079",
+  "page": "60",
+  "graphics": [
+    {
+      "id": "g1",
+      "type": "diagram",
+      "file": "0079.g1.png",
+      "bbox": [
+        458,
+        292,
+        510,
+        508
+      ],
+      "caption": "Fig. 44. Circumdiameter AK, altitude AD, internal bisector AU, and median AA' of triangle ABC (§§ 73–78, 85).",
+      "white_point": 238,
+      "svg_file": "0079.g1.svg",
+      "article": "73",
+      "geometry": {
+        "svg_scale": 0.5,
+        "points": {
+          "A": {
+            "x": 127.26,
+            "y": 60.45,
+            "label": "A",
+            "label_x": 109,
+            "label_y": 40
+          },
+          "B": {
+            "x": 51.43,
+            "y": 326.3,
+            "label": "B",
+            "label_x": 31,
+            "label_y": 337
+          },
+          "D": {
+            "x": 129.6,
+            "y": 325.58,
+            "label": "D",
+            "label_x": 103,
+            "label_y": 302
+          },
+          "I": {
+            "x": 130.37,
+            "y": 423.96,
+            "label": "I",
+            "label_x": 125,
+            "label_y": 451
+          },
+          "U": {
+            "x": 214.31,
+            "y": 324.8,
+            "label": "U",
+            "label_x": 192,
+            "label_y": 349
+          },
+          "L": {
+            "x": 259.91,
+            "y": 463.35,
+            "label": "L",
+            "label_x": 260,
+            "label_y": 492
+          },
+          "A'": {
+            "x": 261.02,
+            "y": 324.38,
+            "label": "A'",
+            "label_x": 292,
+            "label_y": 350
+          },
+          "O": {
+            "x": 259.78,
+            "y": 241.31,
+            "label": "O",
+            "label_x": 273,
+            "label_y": 218
+          },
+          "J": {
+            "x": 327.82,
+            "y": 451.69,
+            "label": "J",
+            "label_x": 332,
+            "label_y": 475
+          },
+          "K": {
+            "x": 389.97,
+            "y": 419.0,
+            "label": "K",
+            "label_x": 400,
+            "label_y": 438
+          },
+          "C": {
+            "x": 463.53,
+            "y": 322.52,
+            "label": "C",
+            "label_x": 481,
+            "label_y": 329
+          }
+        },
+        "elements": [
+          {
+            "id": "circ_O",
+            "type": "circle",
+            "cx": 256.72,
+            "cy": 241.11,
+            "r": 222.26,
+            "ref": "( O A )",
+            "aliases": [
+              "( A B C )",
+              "( O )"
+            ]
+          },
+          {
+            "id": "seg_AB",
+            "type": "segment",
+            "p1": "A",
+            "p2": "B",
+            "ref": "/ A B /"
+          },
+          {
+            "id": "seg_BC",
+            "type": "segment",
+            "p1": "B",
+            "p2": "C",
+            "ref": "/ B C /",
+            "aliases": [
+              "[ B C ]",
+              "[ D A' ]"
+            ]
+          },
+          {
+            "id": "seg_AC",
+            "type": "segment",
+            "p1": "A",
+            "p2": "C",
+            "ref": "/ A C /"
+          },
+          {
+            "id": "seg_AK",
+            "type": "segment",
+            "p1": "A",
+            "p2": "K",
+            "ref": "/ A K /",
+            "aliases": [
+              "[ A K ]"
+            ]
+          },
+          {
+            "id": "seg_KC",
+            "type": "segment",
+            "p1": "K",
+            "p2": "C",
+            "ref": "/ K C /"
+          },
+          {
+            "id": "seg_AD",
+            "type": "segment",
+            "p1": "A",
+            "p2": "D",
+            "ref": "/ A D /"
+          },
+          {
+            "id": "seg_DI",
+            "type": "segment",
+            "p1": "D",
+            "p2": "I",
+            "style": "dashed"
+          },
+          {
+            "id": "seg_AU",
+            "type": "segment",
+            "p1": "A",
+            "p2": "U",
+            "ref": "/ A U /"
+          },
+          {
+            "id": "seg_UL",
+            "type": "segment",
+            "p1": "U",
+            "p2": "L",
+            "style": "dashed"
+          },
+          {
+            "id": "seg_AJ",
+            "type": "segment",
+            "p1": "A",
+            "p2": "J",
+            "style": "dashed",
+            "ref": "/ A J /",
+            "aliases": [
+              "[ A A' ]"
+            ]
+          },
+          {
+            "id": "seg_OL",
+            "type": "segment",
+            "p1": "O",
+            "p2": "L",
+            "style": "dashed",
+            "ref": "[ O A' ]"
+          },
+          {
+            "id": "ov_AAp",
+            "type": "segment",
+            "p1": "A",
+            "p2": "A'",
+            "style": "overlay",
+            "ref": "/ A A' /"
+          },
+          {
+            "id": "ov_ApJ",
+            "type": "segment",
+            "p1": "A'",
+            "p2": "J",
+            "style": "overlay",
+            "ref": "/ A' J /"
+          },
+          {
+            "id": "ov_ApB",
+            "type": "segment",
+            "p1": "A'",
+            "p2": "B",
+            "style": "overlay",
+            "ref": "/ A' B /"
+          },
+          {
+            "id": "ov_ApC",
+            "type": "segment",
+            "p1": "A'",
+            "p2": "C",
+            "style": "overlay",
+            "ref": "/ A' C /"
+          },
+          {
+            "id": "ov_OA",
+            "type": "segment",
+            "p1": "O",
+            "p2": "A",
+            "style": "overlay",
+            "ref": "/ O A /"
+          },
+          {
+            "id": "ov_OAp",
+            "type": "segment",
+            "p1": "O",
+            "p2": "A'",
+            "style": "overlay",
+            "ref": "/ O A' /"
+          },
+          {
+            "id": "tri_ABC",
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ],
+            "style": "overlay",
+            "ref": "< A B C >"
+          },
+          {
+            "id": "tri_ABD",
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "D"
+            ],
+            "style": "overlay",
+            "ref": "< A B D >"
+          },
+          {
+            "id": "tri_ACK",
+            "type": "polygon",
+            "points": [
+              "A",
+              "C",
+              "K"
+            ],
+            "style": "overlay",
+            "ref": "< A C K >"
+          },
+          {
+            "id": "tri_ADU",
+            "type": "polygon",
+            "points": [
+              "A",
+              "D",
+              "U"
+            ],
+            "style": "overlay",
+            "ref": "< A D U >"
+          },
+          {
+            "id": "tri_AUB",
+            "type": "polygon",
+            "points": [
+              "A",
+              "U",
+              "B"
+            ],
+            "style": "overlay",
+            "ref": "< A U B >"
+          },
+          {
+            "id": "tri_AUC",
+            "type": "polygon",
+            "points": [
+              "A",
+              "U",
+              "C"
+            ],
+            "style": "overlay",
+            "ref": "< A U C >"
+          },
+          {
+            "id": "ang_BAD",
+            "type": "angle",
+            "vertex": "A",
+            "p1": "B",
+            "p2": "D",
+            "radius": 38,
+            "ref": "< B A D )"
+          },
+          {
+            "id": "ang_KAC",
+            "type": "angle",
+            "vertex": "A",
+            "p1": "K",
+            "p2": "C",
+            "radius": 38,
+            "ref": "< K A C )"
+          },
+          {
+            "id": "ang_DAK",
+            "type": "angle",
+            "vertex": "A",
+            "p1": "D",
+            "p2": "K",
+            "radius": 44,
+            "ref": "< D A K )"
+          },
+          {
+            "id": "ang_DAU",
+            "type": "angle",
+            "vertex": "A",
+            "p1": "D",
+            "p2": "U",
+            "radius": 48,
+            "ref": "< D A U )"
+          },
+          {
+            "id": "ang_OAU",
+            "type": "angle",
+            "vertex": "A",
+            "p1": "O",
+            "p2": "U",
+            "radius": 48,
+            "ref": "< O A U )"
+          },
+          {
+            "id": "ang_AUC",
+            "type": "angle",
+            "vertex": "U",
+            "p1": "A",
+            "p2": "C",
+            "radius": 28,
+            "ref": "< A U C )"
+          },
+          {
+            "id": "ang_AUB",
+            "type": "angle",
+            "vertex": "U",
+            "p1": "A",
+            "p2": "B",
+            "radius": 28,
+            "ref": "< A U B )"
+          },
+          {
+            "id": "ang_ABD",
+            "type": "angle",
+            "vertex": "B",
+            "p1": "A",
+            "p2": "D",
+            "radius": 32,
+            "ref": "< A B D )"
+          },
+          {
+            "id": "ang_AKC",
+            "type": "angle",
+            "vertex": "K",
+            "p1": "A",
+            "p2": "C",
+            "radius": 32,
+            "ref": "< A K C )"
+          }
+        ]
+      }
+    }
+  ]
+}
