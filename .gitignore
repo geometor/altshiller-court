@@ -38,6 +38,6 @@ docs.bak/
 docsrc/modules/api/
 .doctrees
 
-# Source PDFs and full-page 300 DPI raster scans (reproducible via `altshiller-court ingest`)
+# Source PDFs (scans are tracked)
 *.pdf
-resources/college_geometry/*/[0-9][0-9][0-9][0-9].png
+
