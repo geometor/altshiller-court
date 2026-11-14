@@ -2,6 +2,12 @@
 Changelog
 =========
 
+0.3.1 (2026-11-13)
+------------------
+
+- **added**: Tracked 334 300 DPI folio raster scans (``0001.png``–``0334.png``) across all 13 structural divisions of *College Geometry* to enable primary-source facsimile resolution via ``photon-platform-publish`` v0.4.0.
+- **changed**: Updated ``.gitignore`` to track primary-source folio PNG scans while continuing to exclude source PDFs and built documentation.
+
 0.3.0 (2026-11-12)
 ------------------
 
