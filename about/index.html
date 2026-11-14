@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nathan Altshiller-Court &amp; the Digital Scriptorium &mdash; GEOMETOR • altshiller-court</title>
+  <title>About &mdash; GEOMETOR • altshiller-court</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
@@ -46,6 +46,9 @@
           <a href="../college_geometry/bibliography.html"  >Bibliography</a>
         </li>
         <li>
+          <a href="#" class="is-active" aria-selected="true" aria-current="page">About</a>
+        </li>
+        <li>
           <a href="../usage/index.html"  >Usage</a>
         </li>
         <li>
@@ -77,29 +80,52 @@
         </div>
       </header>
       <div class="content body book-content" role="main">
-        <section class="level-1" id="nathan-altshiller-court-the-digital-scriptorium">
-        <span id="about-altshiller-court"></span><h1>Nathan Altshiller-Court &amp; the Digital Scriptorium<a class="headerlink" href="#nathan-altshiller-court-the-digital-scriptorium" title="Link to this heading">¶</a></h1>
-        <p class="rubric">Life, Geometric Pedagogy, and Symbolic Reconstruction in GEOMETOR</p>
-        <section class="level-2" id="nathan-altshiller-court-18811968">
-        <h2>Nathan Altshiller-Court (1881–1968)<a class="headerlink" href="#nathan-altshiller-court-18811968" title="Link to this heading">¶</a></h2>
-        <p>For the complete scholarly biography, academic career at the University of Oklahoma, and bibliography of published treatises for Nathan Altshiller-Court, see his profile in the <a class="reference internal" href="../college_geometry/persons.html#person-altshiller-court"><span class="std std-ref">Biographical Register</span></a>.</p>
+        <section class="level-1" id="about-altshiller-court">
+        <span id="about-index"></span><span id="about"></span><span id="id1"></span><h1>About<a class="headerlink" href="#about-altshiller-court" title="Link to this heading">¶</a></h1>
+        <p class="rubric">Extracting Historical Semantic Knowledge &amp; Repurposing It for Exact Symbolic Reasoning</p>
+        <section class="level-2" id="about-this-edition">
+        <h2>About This Edition<a class="headerlink" href="#about-this-edition" title="Link to this heading">¶</a></h2>
+        <p>This critical digital edition reconstructs Nathan Altshiller-Court’s landmark treatise, <em>College Geometry: An Introduction to the Modern Geometry of the Triangle and the Circle</em> (Second Edition, Revised and Enlarged, Barnes &amp; Noble, 1952; Dover unabridged republication, 2007). Spanning 334 archival folios and 699 numbered articles, Altshiller-Court’s work represents the pinnacle of 20th-century synthetic geometry, bridging classical Euclidean constructions with modern triangle and circle geometry, including similitude, homothecy, the Euler line, the nine-point circle, Feuerbach’s theorem, the Wallace–Simson line, Menelaus’ and Ceva’s theorems, harmonic division, inversion, and the Brocard–Lemoine configuration.</p>
+        <p>Through the GEOMETOR Digital Scriptorium methodology, this edition moves beyond flat facsimile scans into an addressable, computable semantic codex. Every article, definition, theorem, problem, locus, and exercise set is extracted into dedicated semantic entities paired with atomic folio verification (<code class="docutils literal notranslate"><span class="pre">publish</span> <span class="pre">folio</span></code>), diplomatic transcription notes, and synchronized commentary tracks. Archival line drawings are reconstructed as calibrated, resolution-independent <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> diagrams, enabling readers to interact directly with the underlying geometric constructions.</p>
+        <p>Within the broader GEOMETOR canon, this codex serves as the vital synthetic bridge between classical Euclidean foundations (<code class="docutils literal notranslate"><span class="pre">geometor.elements</span></code> and <code class="docutils literal notranslate"><span class="pre">geometor.euclid</span></code>), projective and harmonic ranges (<code class="docutils literal notranslate"><span class="pre">geometor.pappus</span></code> and <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code>), and the modern Kimberling triangle center taxonomy explored in <code class="docutils literal notranslate"><span class="pre">geometor.etc</span></code>.</p>
         </section>
-        <section class="level-2" id="digital-scriptorium-methodology">
-        <h2>Digital Scriptorium Methodology<a class="headerlink" href="#digital-scriptorium-methodology" title="Link to this heading">¶</a></h2>
+        <section class="level-2" id="the-geometor-mission">
+        <h2>The GEOMETOR Mission<a class="headerlink" href="#the-geometor-mission" title="Link to this heading">¶</a></h2>
+        <p>The GEOMETOR project, directed by <strong>phi ARCHITECT</strong>, is dedicated to the systematic recovery, exact formalization, and dynamic re-expression of foundational geometric and philosophical knowledge. The mission unfolds across three essential pillars:</p>
+        <ul class="simple">
+        <li><p><strong>Extracting Historical Semantic Knowledge</strong>: Moving beyond passive page scans and OCR to recover the living deductive structure of 2,300+ years of geometric, axiomatic, and philosophical treatises—elevating prose, marginal citations, primary-source folios (via <code class="docutils literal notranslate"><span class="pre">publish</span> <span class="pre">folio</span></code>), and calibrated Ink-to-Vector <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> diagrams into structured, machine-addressable semantic graphs.</p></li>
+        <li><p><strong>Exact Symbolic Grounding (``geometor.model``)</strong>: Anchoring geometric constructions in 100% exact symbolic algebra (using <code class="docutils literal notranslate"><span class="pre">SymPy</span></code>) and Rational Trigonometry invariants (quadrance, spread, cross-ratio) over exact algebraic fields rather than floating-point approximations.</p></li>
+        <li><p><strong>Repurposing Knowledge Across Mediums</strong>: Re-deploying extracted semantic and algebraic structures across synchronized multi-track <strong>Book Codices</strong> and EPUB 3 editions (via <code class="docutils literal notranslate"><span class="pre">photon-platform/publish</span></code>), computable deductive canons (<code class="docutils literal notranslate"><span class="pre">geometor.elements</span></code>, <code class="docutils literal notranslate"><span class="pre">geometor.etc</span></code>, <code class="docutils literal notranslate"><span class="pre">geometor.pappus</span></code>, <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code>), interactive SVG laboratories (<code class="docutils literal notranslate"><span class="pre">geometor.explorer</span></code>), QHD visual broadcasts, and neuro-symbolic program synthesis (<code class="docutils literal notranslate"><span class="pre">geometor.seer</span></code>) across <code class="docutils literal notranslate"><span class="pre">geometor.com</span></code>.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="sources-provenance-methodology">
+        <h2>Sources, Provenance &amp; Methodology<a class="headerlink" href="#sources-provenance-methodology" title="Link to this heading">¶</a></h2>
+        <section class="level-3" id="archival-source-biographical-provenance">
+        <h3>Archival Source &amp; Biographical Provenance<a class="headerlink" href="#archival-source-biographical-provenance" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Source Edition</strong>: Nathan Altshiller-Court, <em>College Geometry: An Introduction to the Modern Geometry of the Triangle and the Circle</em>, Second Edition, Revised and Enlarged. New York: Barnes &amp; Noble, Inc., 1952. Unabridged republication, Mineola, NY: Dover Publications, Inc., 2007 (ISBN <code class="docutils literal notranslate"><span class="pre">978-0-486-45805-2</span></code>, 334 folios, 699 numbered articles).</p></li>
+        <li><p><strong>Author Biography</strong>: For the complete scholarly biography, academic career at the University of Oklahoma, and bibliography of published treatises for Nathan Altshiller-Court, see his profile in the <a class="reference internal" href="../college_geometry/persons.html#person-altshiller-court"><span class="std std-ref">Biographical Register</span></a>.</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="digital-scriptorium-architecture">
+        <h3>Digital Scriptorium Architecture<a class="headerlink" href="#digital-scriptorium-architecture" title="Link to this heading">¶</a></h3>
         <p>Following the GEOMETOR Digital Scriptorium architecture established in <code class="docutils literal notranslate"><span class="pre">geometor/euclid</span></code> and <code class="docutils literal notranslate"><span class="pre">geometor/hoenen</span></code> and powered by <code class="docutils literal notranslate"><span class="pre">photon-platform/publish</span></code>:</p>
         <ol class="arabic simple">
-        <li><p><strong>Archival Fidelity (`resources/college_geometry/`)</strong>: Every PDF page (<cite>0001</cite>–<cite>0334</cite>) is rasterized at 300 DPI (<cite>1421 × 2225</cite> px) and organized into 13 structural directories (<cite>00_frontmatter</cite> through <cite>12_index</cite>) governed by <code class="docutils literal notranslate"><span class="pre">structure_map.json</span></code>.</p></li>
-        <li><p><strong>Atomic Folio Verification (`publish folio`)</strong>: Each folio is transcribed into an atomic <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.rst</span></code> file paired with diplomatic/mathematical notes in <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.notes.rst</span></code>, bounding-box figure coordinates in <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.json</span></code>, normalized light/dark diagram crops (<code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.g&lt;k&gt;.png</span></code> and <code class="docutils literal notranslate"><span class="pre">.inverted.png</span></code>), and verification checklists in <code class="docutils literal notranslate"><span class="pre">folio_reviews.json</span></code>.</p></li>
-        <li><p><strong>Interactive Semantic SVG Diagrams (`svg_compiler.py`)</strong>: Calibrated 300-DPI crops are reconstructed into exact Euclidean vector models inside <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.json</span></code> (<cite>99.97%</cite>–<cite>100.00%</cite> ink overlap) and compiled into inline <code class="docutils literal notranslate"><span class="pre">euclid-graphic</span></code> SVGs wired to <code class="docutils literal notranslate"><span class="pre">:g:</span></code>, <code class="docutils literal notranslate"><span class="pre">:eq:</span></code>, <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">enunciation::</span></code>, and <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">assertion::</span></code> roles and directives.</p></li>
-        <li><p><strong>Hierarchical Item-Per-Page Book Codex (`docsrc/college_geometry/`)</strong>: <code class="docutils literal notranslate"><span class="pre">geometor.altshiller_court.compile_edition</span></code> and <code class="docutils literal notranslate"><span class="pre">codex_items</span></code> decompose depaginated folios into a multi-level Euclid-style <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">collection::</span></code> hierarchy (<code class="docutils literal notranslate"><span class="pre">Book</span> <span class="pre">→</span> <span class="pre">Chapters</span> <span class="pre">→</span> <span class="pre">Sections</span> <span class="pre">→</span> <span class="pre">Items</span> <span class="pre">→</span> <span class="pre">Loci</span></code>), giving every article, problem, locus, and exercise set its own dedicated web page (<cite>index.rst</cite>), co-located <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> SVG(s), marginal <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">folio::</span></code> milestones, and paired <code class="docutils literal notranslate"><span class="pre">Commentary</span></code> track (<cite>commentary.rst</cite>).</p></li>
-        <li><p><strong>Bridge to Symbolic Geometry (`geometor.model`)</strong>: Altshiller-Court’s constructive problems (<cite>Analysis</cite>, <cite>Construction</cite>, <cite>Proof</cite>, <cite>Discussion</cite>) translate directly into exact algebraic ruler-and-compass DAGs in <code class="docutils literal notranslate"><span class="pre">geometor/model</span></code>, harmonic range detectors in <code class="docutils literal notranslate"><span class="pre">geometor/divine</span></code>, and Kimberling center catalogs in <code class="docutils literal notranslate"><span class="pre">geometor/etc</span></code>.</p></li>
+        <li><p><strong>Archival Fidelity (``resources/college_geometry/``)</strong>: Every PDF page (<code class="docutils literal notranslate"><span class="pre">0001</span></code>–<code class="docutils literal notranslate"><span class="pre">0334</span></code>) is rasterized at 300 DPI (<code class="docutils literal notranslate"><span class="pre">1421</span> <span class="pre">×</span> <span class="pre">2225</span></code> px) and organized into 13 structural directories (<code class="docutils literal notranslate"><span class="pre">00_frontmatter</span></code> through <code class="docutils literal notranslate"><span class="pre">12_index</span></code>) governed by <code class="docutils literal notranslate"><span class="pre">structure_map.json</span></code>.</p></li>
+        <li><p><strong>Atomic Folio Verification (``publish folio``)</strong>: Each folio is transcribed into an atomic <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.rst</span></code> file paired with diplomatic/mathematical notes in <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.notes.rst</span></code>, bounding-box figure coordinates in <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.json</span></code>, normalized light/dark diagram crops (<code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.g&lt;k&gt;.png</span></code> and <code class="docutils literal notranslate"><span class="pre">.inverted.png</span></code>), and verification checklists in <code class="docutils literal notranslate"><span class="pre">folio_reviews.json</span></code>.</p></li>
+        <li><p><strong>Interactive Semantic SVG Diagrams (``svg_compiler.py``)</strong>: Calibrated 300-DPI crops are reconstructed into exact Euclidean vector models inside <code class="docutils literal notranslate"><span class="pre">&lt;NNNN&gt;.json</span></code> (<code class="docutils literal notranslate"><span class="pre">99.97%</span></code>–<code class="docutils literal notranslate"><span class="pre">100.00%</span></code> ink overlap) and compiled into inline <code class="docutils literal notranslate"><span class="pre">euclid-graphic</span></code> SVGs wired to <code class="docutils literal notranslate"><span class="pre">:g:</span></code>, <code class="docutils literal notranslate"><span class="pre">:eq:</span></code>, <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">enunciation::</span></code>, and <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">assertion::</span></code> roles and directives.</p></li>
+        <li><p><strong>Hierarchical Item-Per-Page Book Codex (``docsrc/college_geometry/``)</strong>: <code class="docutils literal notranslate"><span class="pre">geometor.altshiller_court.compile_edition</span></code> and <code class="docutils literal notranslate"><span class="pre">codex_items</span></code> decompose depaginated folios into a multi-level Euclid-style <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">collection::</span></code> hierarchy (<code class="docutils literal notranslate"><span class="pre">Book</span> <span class="pre">→</span> <span class="pre">Chapters</span> <span class="pre">→</span> <span class="pre">Sections</span> <span class="pre">→</span> <span class="pre">Items</span> <span class="pre">→</span> <span class="pre">Loci</span></code>), giving every article, problem, locus, and exercise set its own dedicated web page (<code class="docutils literal notranslate"><span class="pre">index.rst</span></code>), co-located <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> SVG(s), marginal <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">folio::</span></code> milestones, and paired <code class="docutils literal notranslate"><span class="pre">Commentary</span></code> track (<code class="docutils literal notranslate"><span class="pre">commentary.rst</span></code>).</p></li>
+        <li><p><strong>Bridge to Symbolic Geometry (``geometor.model``)</strong>: Altshiller-Court’s constructive problems (<em>Analysis</em>, <em>Construction</em>, <em>Proof</em>, <em>Discussion</em>) translate directly into exact algebraic ruler-and-compass DAGs in <code class="docutils literal notranslate"><span class="pre">geometor/model</span></code>, harmonic range detectors in <code class="docutils literal notranslate"><span class="pre">geometor/divine</span></code>, and Kimberling center catalogs in <code class="docutils literal notranslate"><span class="pre">geometor/etc</span></code>.</p></li>
         </ol>
-        <div class="toctree-wrapper compound">
-        <p class="caption" role="heading"><span class="caption-text">Methodology Guides</span></p>
-        <ul>
-        <li class="toctree-l1"><a class="reference internal" href="pdf-parsing-guide.html">Scanned PDF Optical Ingestion &amp; Interactive SVG Vectorization</a></li>
+        </section>
+        <section class="level-3" id="methodology-guides-essays">
+        <h3>Methodology Guides &amp; Essays<a class="headerlink" href="#methodology-guides-essays" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><a class="reference internal" href="pdf-parsing-guide.html#pdf-parsing-guide"><span class="std std-ref">Scanned PDF Optical Ingestion &amp; Interactive SVG Vectorization Guide</span></a></p></li>
         </ul>
+        <div class="toctree-wrapper compound">
         </div>
+        </section>
         </section>
         </section>
 
@@ -151,11 +177,6 @@
     </aside>
   </div>
   <footer>
-    <div class="footer-nav">
-      <ul>
-        <li><a href="#" class="is-active" aria-selected="true" aria-current="page">About</a></li>
-      </ul>
-    </div>
     <hr />
     <div role="contentinfo">
       <p>
@@ -166,7 +187,7 @@
 
   <script src="../_static/jquery.js?v=5d32c60e"></script>
   <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../_static/documentation_options.js?v=71d9d8e6"></script>
+  <script src="../_static/documentation_options.js?v=d5a15cff"></script>
   <script src="../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>
