@@ -1,4 +1,3 @@
-:order: 30
 :title: PDF Parsing & SVG Guide
 
 .. _pdf-parsing-guide:
