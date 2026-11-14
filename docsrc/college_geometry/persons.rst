@@ -1,14 +1,20 @@
+:navigation: header
+:order: 5
+:nav_title: People
 :layout: book
-:title: Index of Persons
+:title: People
 
 .. _persons:
 
-Biographical Register of Geometers & Scholars
-=============================================
+People
+======
 
-.. rubric:: Prosopographical Apparatus (67 Historical Geometers, Editors, and Contemporaries)
+.. rubric:: Biographical Register of Geometers, Translators, and Scholars (67 Historical Figures)
 
 Synthesizes Altshiller-Court's *List of Names* (pp. 307–309), *Historical and Bibliographical Notes* (pp. 295–306), and Frontmatter acknowledgments.
+
+Authors, Translators & Editors
+------------------------------
 
 .. _person-altshiller-court:
 
@@ -20,7 +26,28 @@ Altshiller-Court, Nathan (1881–1968)
 * **Principal Works**: *College Geometry (1925; 2nd ed. 1952)*; *Modern Pure Solid Geometry (1935)*; *Mathematics in Fun and in Earnest (1958)*
 * **Edition Loci**: :ref:`f. 0001 (p. [cover]) <frontmatter-01-cover>` · :ref:`f. 0002 (p. [iii]) <frontmatter-02-title-and-dedication>` · :ref:`f. 0003 (p. [iv]) <frontmatter-02-title-and-dedication>` · :ref:`f. 0007 (p. viii) <frontmatter-03-preface>` · :ref:`f. 0008 (p. ix) <frontmatter-03-preface>` · :ref:`f. 0326 (p. 307) <historical-and-bibliographical-notes-names-list-of-names>`
 
-Polish-born, Belgian-educated mathematician (D.Sc., University of Ghent, 1911) who taught at the University of Oklahoma for over thirty years. His College Geometry (1925; 2nd ed. 1952) and Modern Pure Solid Geometry (1935) established the standard English-language synthesis of modern synthetic triangle and circle geometry.
+Born in Warsaw on January 22, 1881, **Nathan Altshiller-Court** pursued his mathematical studies in Belgium at the **University of Ghent**, earning his *Doctor of Science* in 1911 within the vibrant Franco-Belgian synthetic geometry tradition shaped by **Paul Mansion** and **Joseph Neuberg** (*Mathesis*). Emigrating to the United States, he studied at Columbia University and taught briefly at the University of Washington and the University of Colorado before joining the **University of Oklahoma** in Norman in 1916, where he served as Professor of Mathematics until his retirement in 1951.
+
+Across half a century of scholarship, Altshiller-Court authored three enduring works:
+
+1. *College Geometry: A Second Course in Plane Geometry for Colleges and Normal Schools* (Richmond: Johnson Publishing Co., 1925), thoroughly rewritten and expanded as *College Geometry: An Introduction to the Modern Geometry of the Triangle and the Circle* (New York: Barnes & Noble, 1952; Dover republication, 2007).
+2. *Modern Pure Solid Geometry* (New York: Macmillan, 1935; 2nd ed. Chelsea, 1964), extending synthetic methods to the tetrahedron and sphere.
+3. *Mathematics in Fun and in Earnest* (New York: Dial Press, 1958), philosophical and historical essays on mathematical invention and intuition.
+
+.. _person-bernhart:
+
+Bernhart, Arthur (1908–1996)
+----------------------------
+
+* **Role**: Mathematician, University of Oklahoma
+* **Articles in College Geometry**: Frontmatter / Apparatus
+* **Principal Works**: *Curves of Pursuit (Scripta Mathematica, 1954–1959)*
+* **Edition Loci**: :ref:`f. 0008 (p. ix) <frontmatter-03-preface>`
+
+Colleague of Nathan Altshiller-Court in the Department of Mathematics at the University of Oklahoma; acknowledged in the 1952 Preface/Acknowledgments (p. ix) for reading the proofs of the Second Edition.
+
+Cited Geometers, Philosophers & Scholars
+----------------------------------------
 
 .. _person-apollonius:
 
@@ -45,18 +72,6 @@ Archimedes of Syracuse (c. 287 – 212 BC)
 * **Edition Loci**: :ref:`f. 0326 (p. 307) <historical-and-bibliographical-notes-names-list-of-names>`
 
 Greatest mathematician of antiquity, cited by Altshiller-Court for theorems on chords, circles, the arbelos (shoemaker's knife), and precursors to harmonic and metric relations.
-
-.. _person-bernhart:
-
-Bernhart, Arthur (1908–1996)
-----------------------------
-
-* **Role**: Mathematician, University of Oklahoma
-* **Articles in College Geometry**: Frontmatter / Apparatus
-* **Principal Works**: *Curves of Pursuit (Scripta Mathematica, 1954–1959)*
-* **Edition Loci**: :ref:`f. 0008 (p. ix) <frontmatter-03-preface>`
-
-Colleague of Nathan Altshiller-Court in the Department of Mathematics at the University of Oklahoma; acknowledged in the 1952 Preface/Acknowledgments (p. ix) for reading the proofs of the Second Edition.
 
 .. _person-bobillier:
 

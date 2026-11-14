@@ -1,10 +1,13 @@
+:navigation: header
+:order: 6
+:nav_title: Bibliography
 :layout: book
 :title: Systematic Bibliography
 
 .. _bibliography:
 
-Systematic Bibliography & Abbreviations
-=======================================
+Bibliography
+============
 
 .. rubric:: 31 Editions, Classical Treatises, and Mathematical Periodicals Cited in *College Geometry*
 
