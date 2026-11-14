@@ -19,14 +19,26 @@ Featured Treatise
 
 The definitive English-language treatise bridging classical Euclidean constructions (``geometor/elements``, ``geometor/euclid``) with modern synthetic triangle and circle geometry: similitude and homothecy, the Euler line and nine-point circle, Feuerbach's theorem, the Wallace–Simson line, Menelaus' and Ceva's theorems, harmonic cross-ratios (``geometor/pappus``, ``geometor/divine``), orthogonal and coaxal circles, the Problem of Apollonius, circular inversion, and Lemoine–Brocard–orthopole triangle geometry (``geometor/etc``).
 
-* **2-Track Book Codex**: :ref:`Conspectus of the Digital Edition <college-geometry-index>` · :ref:`Frontmatter (6 Units + Commentary) <frontmatter>` · :ref:`Chapter I: Geometric Constructions (5 Sections, §§ 1–22, 12 Loci, 22 SVGs & 167 Exercises) <ch01-geometric-constructions>` · :ref:`Chapters II–X Architectural Blueprints & Commentaries <ch02-similitude-and-homothecy>`.
-* **Scholarly Apparatus**: :ref:`Systematic Bibliography <bibliography>` · :ref:`Index of Persons <persons>` · :ref:`Technical Glossary <glossary>` · :ref:`334-Folio Archival Scan Inventory (52 Verified) <scan-inventory>`.
+* **2-Track Book Codex**: :ref:`Table of Contents <college-geometry-index>` · :ref:`Frontmatter (6 Units + Commentary) <frontmatter>` · :ref:`Chapter I: Geometric Constructions (5 Sections, §§ 1–22, 12 Loci, 22 SVGs & 167 Exercises) <ch01-geometric-constructions>` · :ref:`Chapters II–X Architectural Blueprints & Commentaries <ch02-similitude-and-homothecy>`.
+* **Scholarly Apparatus**: :ref:`Bibliography <bibliography>` · :ref:`People <persons>` · :ref:`Technical Glossary <glossary>` · :ref:`334-Folio Archival Scan Inventory (52 Verified) <scan-inventory>`.
 
 ----
 
-Historical Context & Architecture
----------------------------------
+Reader's Guide & Architecture
+-----------------------------
 
+* :doc:`Using This Edition: Interactive Features & Reader's Guide <usage/index>`
 * :ref:`Nathan Altshiller-Court (1881–1968) & Digital Scriptorium Methodology <about-altshiller-court>`
 * :ref:`Scanned PDF Optical Ingestion & Interactive SVG Vectorization Guide <pdf-parsing-guide>`
 * :doc:`Python Pipeline API Reference <modules/index>`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   college_geometry/index
+   college_geometry/persons
+   college_geometry/bibliography
+   usage/index
+   about/index
+   modules/index

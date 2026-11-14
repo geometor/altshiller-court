@@ -1,5 +1,5 @@
-:navigation: header
-:order: 20
+:navigation: footer
+:nav_title: About
 :title: About
 
 .. _about-altshiller-court:
@@ -9,16 +9,10 @@ Nathan Altshiller-Court & the Digital Scriptorium
 
 .. rubric:: Life, Geometric Pedagogy, and Symbolic Reconstruction in GEOMETOR
 
-Biography of Nathan Altshiller-Court (1881–1968)
-------------------------------------------------
+Nathan Altshiller-Court (1881–1968)
+-----------------------------------
 
-Born in Warsaw on January 22, 1881, **Nathan Altshiller-Court** pursued his mathematical studies in Belgium at the **University of Ghent**, earning his *Doctor of Science* in 1911 within the vibrant Franco-Belgian synthetic geometry tradition shaped by **Paul Mansion** and **Joseph Neuberg** (*Mathesis*). Emigrating to the United States, he studied at Columbia University and taught briefly at the University of Washington and the University of Colorado before joining the **University of Oklahoma** in Norman in 1916, where he served as Professor of Mathematics until his retirement in 1951.
-
-Across half a century of scholarship, Altshiller-Court authored three enduring works:
-
-1. *College Geometry: A Second Course in Plane Geometry for Colleges and Normal Schools* (Richmond: Johnson Publishing Co., 1925), thoroughly rewritten and expanded as *College Geometry: An Introduction to the Modern Geometry of the Triangle and the Circle* (New York: Barnes & Noble, 1952; Dover republication, 2007).
-2. *Modern Pure Solid Geometry* (New York: Macmillan, 1935; 2nd ed. Chelsea, 1964), extending synthetic methods to the tetrahedron and sphere.
-3. *Mathematics in Fun and in Earnest* (New York: Dial Press, 1958), philosophical and historical essays on mathematical invention and intuition.
+For the complete scholarly biography, academic career at the University of Oklahoma, and bibliography of published treatises for Nathan Altshiller-Court, see his profile in the :ref:`Biographical Register <person-altshiller-court>`.
 
 Digital Scriptorium Methodology
 -------------------------------
