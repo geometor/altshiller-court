@@ -926,13 +926,16 @@ def build_apparatus_pages(
 
     # 1. bibliography.rst
     bib_lines = [
+        ":navigation: header",
+        ":order: 6",
+        ":nav_title: Bibliography",
         ":layout: book",
         ":title: Systematic Bibliography",
         "",
         ".. _bibliography:",
         "",
-        "Systematic Bibliography & Abbreviations",
-        "=======================================",
+        "Bibliography",
+        "============",
         "",
         f".. rubric:: {len(citations)} Editions, Classical Treatises, and Mathematical Periodicals Cited in *College Geometry*",
         "",
@@ -968,20 +971,100 @@ def build_apparatus_pages(
 
     # 2. persons.rst
     pers_lines = [
+        ":navigation: header",
+        ":order: 5",
+        ":nav_title: People",
         ":layout: book",
-        ":title: Index of Persons",
+        ":title: People",
         "",
         ".. _persons:",
         "",
-        "Biographical Register of Geometers & Scholars",
-        "=============================================",
+        "People",
+        "======",
         "",
-        f".. rubric:: Prosopographical Apparatus ({len(persons)} Historical Geometers, Editors, and Contemporaries)",
+        f".. rubric:: Biographical Register of Geometers, Translators, and Scholars ({len(persons)} Historical Figures)",
         "",
         "Synthesizes Altshiller-Court's *List of Names* (pp. 307–309), *Historical and Bibliographical Notes* (pp. 295–306), and Frontmatter acknowledgments.",
         "",
+        "Authors, Translators & Editors",
+        "------------------------------",
+        "",
     ]
+
+    # Primary author profile first
+    if "altshiller-court" in persons:
+        entry = persons["altshiller-court"]
+        p_slug = apparatus_slug("altshiller-court")
+        arts = entry.get("articles") or []
+        arts_str = ", ".join(f"§ {a}" for a in arts) if arts else "Frontmatter / Apparatus"
+        works = entry.get("works") or []
+        occ_str = _format_occurrences_line(
+            entry.get("occurrences", []), folio_to_anchor, chapter_dir_to_slug
+        )
+        heading = f"{entry['name']} ({entry.get('dates', '')})" if entry.get("dates") else entry["name"]
+        pers_lines.extend([
+            f".. _person-{p_slug}:",
+            "",
+            heading,
+            "-" * len(heading),
+            "",
+            f"* **Role**: {entry.get('role', '')}",
+            f"* **Articles in College Geometry**: {arts_str}",
+        ])
+        if works:
+            pers_lines.append("* **Principal Works**: " + "; ".join(f"*{w}*" for w in works))
+        if occ_str:
+            pers_lines.append(f"* **Edition Loci**: {occ_str}")
+        pers_lines.extend([
+            "",
+            "Born in Warsaw on January 22, 1881, **Nathan Altshiller-Court** pursued his mathematical studies in Belgium at the **University of Ghent**, earning his *Doctor of Science* in 1911 within the vibrant Franco-Belgian synthetic geometry tradition shaped by **Paul Mansion** and **Joseph Neuberg** (*Mathesis*). Emigrating to the United States, he studied at Columbia University and taught briefly at the University of Washington and the University of Colorado before joining the **University of Oklahoma** in Norman in 1916, where he served as Professor of Mathematics until his retirement in 1951.",
+            "",
+            "Across half a century of scholarship, Altshiller-Court authored three enduring works:",
+            "",
+            "1. *College Geometry: A Second Course in Plane Geometry for Colleges and Normal Schools* (Richmond: Johnson Publishing Co., 1925), thoroughly rewritten and expanded as *College Geometry: An Introduction to the Modern Geometry of the Triangle and the Circle* (New York: Barnes & Noble, 1952; Dover republication, 2007).",
+            "2. *Modern Pure Solid Geometry* (New York: Macmillan, 1935; 2nd ed. Chelsea, 1964), extending synthetic methods to the tetrahedron and sphere.",
+            "3. *Mathematics in Fun and in Earnest* (New York: Dial Press, 1958), philosophical and historical essays on mathematical invention and intuition.",
+            "",
+        ])
+
+    if "bernhart" in persons:
+        entry = persons["bernhart"]
+        p_slug = apparatus_slug("bernhart")
+        arts = entry.get("articles") or []
+        arts_str = ", ".join(f"§ {a}" for a in arts) if arts else "Frontmatter / Apparatus"
+        works = entry.get("works") or []
+        occ_str = _format_occurrences_line(
+            entry.get("occurrences", []), folio_to_anchor, chapter_dir_to_slug
+        )
+        heading = f"{entry['name']} ({entry.get('dates', '')})" if entry.get("dates") else entry["name"]
+        pers_lines.extend([
+            f".. _person-{p_slug}:",
+            "",
+            heading,
+            "-" * len(heading),
+            "",
+            f"* **Role**: {entry.get('role', '')}",
+            f"* **Articles in College Geometry**: {arts_str}",
+        ])
+        if works:
+            pers_lines.append("* **Principal Works**: " + "; ".join(f"*{w}*" for w in works))
+        if occ_str:
+            pers_lines.append(f"* **Edition Loci**: {occ_str}")
+        pers_lines.extend([
+            "",
+            entry.get("bio", ""),
+            "",
+        ])
+
+    pers_lines.extend([
+        "Cited Geometers, Philosophers & Scholars",
+        "----------------------------------------",
+        "",
+    ])
+
     for pk, entry in sorted(persons.items(), key=lambda kv: kv[1].get("name", kv[0]).lower()):
+        if pk in ("altshiller-court", "bernhart"):
+            continue
         p_slug = apparatus_slug(pk)
         heading = f"{entry['name']} ({entry.get('dates', '')})" if entry.get("dates") else entry["name"]
         arts = entry.get("articles") or []
@@ -1143,6 +1226,7 @@ def build_book_index(
     lines = [
         ":navigation: header",
         ":order: 1",
+        ":nav_title: College Geometry",
         ":layout: book",
         f":title: {work['title']}",
         f":book_title: {work['title']}",
@@ -1156,22 +1240,22 @@ def build_book_index(
         ".. _altshiller-court-index:",
         ".. _college-geometry-index:",
         "",
-        "COLLEGE GEOMETRY",
+        "College Geometry",
         "================",
         "",
         f".. rubric:: {work['subtitle']} ({work['original_year']} / Dover {work['reprint_year']})",
         "",
         ".. container:: title-page",
         "",
-        "   | :person:`NATHAN ALTSHILLER-COURT <altshiller-court>` (1881–1968)",
+        "   | :person:`Nathan Altshiller-Court <altshiller-court>` (1881–1968)",
         "   | *Professor of Mathematics, University of Oklahoma*",
         "   | *Second Edition, Revised and Enlarged* — Barnes & Noble, Inc., New York, 1952",
         "   | *Unabridged Dover Republication* — Dover Publications, Inc., Mineola, N.Y., 2007 (ISBN ``978-0-486-45805-2``)",
         "",
         "----",
         "",
-        "Divisions of the Edition",
-        "------------------------",
+        "Table of Contents",
+        "-----------------",
         "",
         (
             "Published as a hierarchical **Book Codex** (``Book → Chapters → Sections → Items``) with "
@@ -1183,8 +1267,8 @@ def build_book_index(
         "   :type: chapter",
         "   :sort: order",
         "",
-        "Scholarly Apparatus & Concordances",
-        "----------------------------------",
+        "Scholarly Apparatus",
+        "-------------------",
         "",
         f"* :ref:`Systematic Bibliography & Periodical Key ({apparatus_counts['citations']} Entries) <bibliography>`",
         f"* :ref:`Biographical Register of Geometers & Scholars ({apparatus_counts['persons']} Persons) <persons>`",
