@@ -2,6 +2,11 @@
 Changelog
 =========
 
+0.3.4 (2026-11-15)
+------------------
+
+- Ensure canonical GEOMETOR ``logo.png`` and ``favicon.ico`` brand assets are provisioned in ``docsrc/_static/`` and rendered in site headers and browser tabs.
+
 0.3.3 (2026-11-14)
 ------------------
 
