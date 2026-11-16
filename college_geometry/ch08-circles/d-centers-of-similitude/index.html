@@ -6,12 +6,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Section D — Centers of Similitude (incl. Monge’s Circle Theorem § 405) &mdash; College Geometry</title>
+
+  <title>Section D — Centers of Similitude (incl. Monge’s Circle Theorem § 405) — College Geometry • GEOMETOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="canonical" href="https://geometor.github.io/altshiller-court/college_geometry/ch08-circles/d-centers-of-similitude/" />
+  <meta name="description" content="Extends Chapter II’s centers of similitude to systems of two and three circles (§§ 394–409), culminating in Gaspard Monge’s theorem on axes of similitude." />
+  <meta property="og:site_name" content="GEOMETOR" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Section D — Centers of Similitude (incl. Monge’s Circle Theorem § 405) — College Geometry • GEOMETOR" />
+  <meta property="og:description" content="Extends Chapter II’s centers of similitude to systems of two and three circles (§§ 394–409), culminating in Gaspard Monge’s theorem on axes of similitude." />
+  <meta property="og:url" content="https://geometor.github.io/altshiller-court/college_geometry/ch08-circles/d-centers-of-similitude/" />
+  <meta property="og:image" content="https://geometor.github.io/altshiller-court/_static/social/college_geometry.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Nathan Altshiller-Court — GEOMETOR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Section D — Centers of Similitude (incl. Monge’s Circle Theorem § 405) — College Geometry • GEOMETOR" />
+  <meta name="twitter:description" content="Extends Chapter II’s centers of similitude to systems of two and three circles (§§ 394–409), culminating in Gaspard Monge’s theorem on axes of similitude." />
+  <meta name="twitter:image" content="https://geometor.github.io/altshiller-court/_static/social/college_geometry.png" />
+  <meta name="twitter:image:alt" content="Nathan Altshiller-Court — GEOMETOR" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../../_static/css/styles.css?v=8713e751" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/css/styles.css?v=81e79cc0" />
   <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -23,14 +43,14 @@
 <body class="is-book-page book-theme-classical-serif" data-folio="0203">
   <header>
     <div class="logo">
-      <a href="../../../index.html">
-        <img src="../../../_static/logo.png" class="logo" alt="Logo"/>
+      <a href="../../../index.html" title="Home">
+        <img src="../../../_static/logo.png" class="logo" alt="GEOMETOR altshiller-court"/>
+        <div class="org-repo">
+          <span class="org">GEOMETOR</span>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <span class="repo">altshiller-court</span>
+        </div>
       </a>
-      <div class="org-repo">
-        <span class="org">GEOMETOR</span>
-        •
-        <span class="repo">altshiller-court</span>
-      </div>
     </div>
     <nav aria-label="Header">
       <input type="checkbox" id="nav-Header-toggle" >
@@ -62,14 +82,14 @@
     <article class="book-layout book-reading-pane" data-folio="0203">
       <header class="book-header">
         <div class="book-header-bar">
-          <div class="book-header-identity">
-            <a class="book-portal-link" href="../../../index.html" title="Return to Project Portal">&larr; altshiller-court</a>
-            <span class="book-header-sep">/</span>
-            <a class="book-title-link" href="../../index.html">College Geometry</a>
-          </div>
-          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Book Breadcrumbs">
+          <nav class="book-breadcrumbs" aria-label="Breadcrumb">
+            <a class="book-section-home-link" href="../../index.html">College Geometry</a>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
             <a class="book-crumb-link" href="../index.html">Chapter VIII</a>
-            <span class="book-crumb-sep">/</span>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
+            <span class="book-crumb-current" aria-current="page">Section D</span>
+          </nav>
+          <div class="book-provenance-badges">
             <a class="book-badge folio-badge folio-link" href="https://raw.githubusercontent.com/geometor/altshiller-court/main/resources/college_geometry/08_circles/0203.png" target="_blank" rel="noopener" title="View Folio 0203 (p. 184)">Folio 0203 | p. 184</a>
           </div>
         </div>
@@ -89,7 +109,18 @@
         <span id="ch08-circles-d-centers-of-similitude"></span><h1>Section D — Centers of Similitude (incl. Monge’s Circle Theorem § 405)<a class="headerlink" href="#section-d-centers-of-similitude-incl-monge-s-circle-theorem-405" title="Link to this heading">¶</a></h1>
         <p class="rubric">Chapter VIII: Circles • Articles §§ 394–409 (Folios 0203–0209, pp. 184–190)</p>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic" data-graphic-id="hero-homothecy_circles.homothecy_circles" data-folio="hero-homothecy_circles" data-graphic="homothecy_circles">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" data-graphic-id="hero-homothecy_circles.homothecy_circles" data-folio="hero-homothecy_circles" data-graphic="homothecy_circles" data-svg-scope="s-36403b6a">
+          <style>
+            svg[data-svg-scope="s-36403b6a"] .geom-polygon:hover, svg[data-svg-scope="s-36403b6a"] .geom-polygon.highlight, svg[data-svg-scope="s-36403b6a"] .geom-polygon-bordered:hover, svg[data-svg-scope="s-36403b6a"] .geom-polygon-bordered.highlight, svg[data-svg-scope="s-36403b6a"] polygon.geom-highlight-active, svg[data-svg-scope="s-36403b6a"] path.geom-polygon.geom-highlight-active, svg[data-svg-scope="s-36403b6a"] .wedge:hover, svg[data-svg-scope="s-36403b6a"] .wedge.highlight, svg[data-svg-scope="s-36403b6a"] .wedge.angle:hover, svg[data-svg-scope="s-36403b6a"] .wedge.angle.highlight, svg[data-svg-scope="s-36403b6a"] .wedge.angle.geom-highlight-active, svg[data-svg-scope="s-36403b6a"] path.wedge.geom-highlight-active, svg[data-svg-scope="s-36403b6a"] path.angle.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: #c88a1e !important; stroke: #c88a1e !important }
+            svg[data-svg-scope="s-36403b6a"] .geom-assert-active { opacity: 1 !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-36403b6a"] text.geom-assert-active, svg[data-svg-scope="s-36403b6a"] text.geom-assert-secondary, svg[data-svg-scope="s-36403b6a"] text.geom-assert-active *, svg[data-svg-scope="s-36403b6a"] text.geom-assert-secondary * { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-36403b6a"] polygon.geom-assert-active, svg[data-svg-scope="s-36403b6a"] path.geom-polygon.geom-assert-active, svg[data-svg-scope="s-36403b6a"] .wedge.angle.geom-assert-active, svg[data-svg-scope="s-36403b6a"] path.wedge.geom-assert-active, svg[data-svg-scope="s-36403b6a"] path.angle.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: #16a34a !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-36403b6a"] path.geom-ang-arc.geom-assert-active { opacity: 1 !important; fill: none !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-36403b6a"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-36403b6a"] circle.geom-assert-active { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-36403b6a"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-36403b6a"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-36403b6a"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
           <defs>
             <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -170,13 +201,13 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../c-poles-and-polars/index.html" title="Section C — Poles and Polars">&larr; <span class="nav-label">Section C — Poles and Polars</span></a>
+            <a class="book-nav-btn" href="../c-poles-and-polars/index.html" title="Section C — Poles and Polars">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
             <a class="book-toc-link" href="../../index.html">College Geometry</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../e-power-of-a-point-with-respect-to-a-circle/index.html" title="Section E — Power of a Point with Respect to a Circle"><span class="nav-label">Section E — Power of a Point with Respect to a Circle</span> &rarr;</a>
+            <a class="book-nav-btn" href="../e-power-of-a-point-with-respect-to-a-circle/index.html" title="Section E — Power of a Point with Respect to a Circle"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -204,6 +235,7 @@
     <aside class="aside-types">
       <h3>Types</h3>
       <ul>
+        <li><a href="../../../types/book.html">book</a></li>
         <li><a href="../../../types/chapter.html">chapter</a></li>
         <li><a href="../../../types/commentary.html">commentary</a></li>
         <li><a href="../../../types/item.html">item</a></li>

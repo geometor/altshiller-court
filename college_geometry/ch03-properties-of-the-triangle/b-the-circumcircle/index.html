@@ -6,12 +6,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Section B — The Circumcircle (incl. Problem of Pappus § 84) &mdash; College Geometry</title>
+
+  <title>Ch.III.B: Section B — The Circumcircle (incl. Problem of Pappus § 84) — College Geometry • GEOMETOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="canonical" href="https://geometor.github.io/altshiller-court/college_geometry/ch03-properties-of-the-triangle/b-the-circumcircle/" />
+  <meta name="description" content="Circumcircle envelope and datum (a, A, R) (§§ 68–72, Figs. 41–43), circumdiameter–altitude–bisector–median relations (§§ 73–78, Fig. 44), antipodal chord and pedal symmetry theorems (§§ 79–82…" />
+  <meta property="og:site_name" content="GEOMETOR" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Ch.III.B: Section B — The Circumcircle (incl. Problem of Pappus § 84) — College Geometry • GEOMETOR" />
+  <meta property="og:description" content="Circumcircle envelope and datum (a, A, R) (§§ 68–72, Figs. 41–43), circumdiameter–altitude–bisector–median relations (§§ 73–78, Fig. 44), antipodal chord and pedal symmetry theorems (§§ 79–82…" />
+  <meta property="og:url" content="https://geometor.github.io/altshiller-court/college_geometry/ch03-properties-of-the-triangle/b-the-circumcircle/" />
+  <meta property="og:image" content="https://geometor.github.io/altshiller-court/_static/social/college_geometry.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Nathan Altshiller-Court — GEOMETOR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ch.III.B: Section B — The Circumcircle (incl. Problem of Pappus § 84) — College Geometry • GEOMETOR" />
+  <meta name="twitter:description" content="Circumcircle envelope and datum (a, A, R) (§§ 68–72, Figs. 41–43), circumdiameter–altitude–bisector–median relations (§§ 73–78, Fig. 44), antipodal chord and pedal symmetry theorems (§§ 79–82…" />
+  <meta name="twitter:image" content="https://geometor.github.io/altshiller-court/_static/social/college_geometry.png" />
+  <meta name="twitter:image:alt" content="Nathan Altshiller-Court — GEOMETOR" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../../_static/css/styles.css?v=8713e751" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/css/styles.css?v=81e79cc0" />
   <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -23,14 +43,14 @@
 <body class="is-book-page book-theme-classical-serif" data-folio="0076">
   <header>
     <div class="logo">
-      <a href="../../../index.html">
-        <img src="../../../_static/logo.png" class="logo" alt="Logo"/>
+      <a href="../../../index.html" title="Home">
+        <img src="../../../_static/logo.png" class="logo" alt="GEOMETOR altshiller-court"/>
+        <div class="org-repo">
+          <span class="org">GEOMETOR</span>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <span class="repo">altshiller-court</span>
+        </div>
       </a>
-      <div class="org-repo">
-        <span class="org">GEOMETOR</span>
-        •
-        <span class="repo">altshiller-court</span>
-      </div>
     </div>
     <nav aria-label="Header">
       <input type="checkbox" id="nav-Header-toggle" >
@@ -62,15 +82,14 @@
     <article class="book-layout book-reading-pane" data-folio="0076" data-canonical-id="Ch.III.B">
       <header class="book-header">
         <div class="book-header-bar">
-          <div class="book-header-identity">
-            <a class="book-portal-link" href="../../../index.html" title="Return to Project Portal">&larr; altshiller-court</a>
-            <span class="book-header-sep">/</span>
-            <a class="book-title-link" href="../../index.html">College Geometry</a>
-          </div>
-          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Book Breadcrumbs">
+          <nav class="book-breadcrumbs" aria-label="Breadcrumb">
+            <a class="book-section-home-link" href="../../index.html">College Geometry</a>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
             <a class="book-crumb-link" href="../index.html">Chapter III</a>
-            <span class="book-crumb-sep">/</span>
-            <span class="book-badge canonical-badge">Ch.III.B</span>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
+            <span class="book-crumb-current" aria-current="page">Ch.III.B</span>
+          </nav>
+          <div class="book-provenance-badges">
             <a class="book-badge folio-badge folio-link" href="https://raw.githubusercontent.com/geometor/altshiller-court/main/resources/college_geometry/03_properties_of_the_triangle/0076.png" target="_blank" rel="noopener" title="View Folio 0076 (p. 57)">Folio 0076 | p. 57</a>
           </div>
         </div>
@@ -89,7 +108,18 @@
         <section class="level-1" id="section-b-the-circumcircle-incl-problem-of-pappus-84">
         <span id="ch03-b-the-circumcircle"></span><h1>Section B — The Circumcircle (incl. Problem of Pappus § 84)<a class="headerlink" href="#section-b-the-circumcircle-incl-problem-of-pappus-84" title="Link to this heading">¶</a></h1>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255 254" width="255" height="254" class="euclid-graphic" data-graphic-id="0079.g1" data-folio="0079" data-graphic="g1" data-article="73">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255 254" width="255" height="254" data-graphic-id="0079.g1" data-folio="0079" data-graphic="g1" data-article="73" data-svg-scope="s-19582660">
+          <style>
+            svg[data-svg-scope="s-19582660"] .geom-polygon:hover, svg[data-svg-scope="s-19582660"] .geom-polygon.highlight, svg[data-svg-scope="s-19582660"] .geom-polygon-bordered:hover, svg[data-svg-scope="s-19582660"] .geom-polygon-bordered.highlight, svg[data-svg-scope="s-19582660"] polygon.geom-highlight-active, svg[data-svg-scope="s-19582660"] path.geom-polygon.geom-highlight-active, svg[data-svg-scope="s-19582660"] .wedge:hover, svg[data-svg-scope="s-19582660"] .wedge.highlight, svg[data-svg-scope="s-19582660"] .wedge.angle:hover, svg[data-svg-scope="s-19582660"] .wedge.angle.highlight, svg[data-svg-scope="s-19582660"] .wedge.angle.geom-highlight-active, svg[data-svg-scope="s-19582660"] path.wedge.geom-highlight-active, svg[data-svg-scope="s-19582660"] path.angle.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: #c88a1e !important; stroke: #c88a1e !important }
+            svg[data-svg-scope="s-19582660"] .geom-assert-active { opacity: 1 !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-19582660"] text.geom-assert-active, svg[data-svg-scope="s-19582660"] text.geom-assert-secondary, svg[data-svg-scope="s-19582660"] text.geom-assert-active *, svg[data-svg-scope="s-19582660"] text.geom-assert-secondary * { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-19582660"] polygon.geom-assert-active, svg[data-svg-scope="s-19582660"] path.geom-polygon.geom-assert-active, svg[data-svg-scope="s-19582660"] .wedge.angle.geom-assert-active, svg[data-svg-scope="s-19582660"] path.wedge.geom-assert-active, svg[data-svg-scope="s-19582660"] path.angle.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: #16a34a !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-19582660"] path.geom-ang-arc.geom-assert-active { opacity: 1 !important; fill: none !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-19582660"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-19582660"] circle.geom-assert-active { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-19582660"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-19582660"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-19582660"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
           <defs>
             <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -208,7 +238,12 @@
                 <div class="content">
                   <section>
                     <h2><a href="068-theorem/index.html">§ 68. Theorem</a></h2>
-                      <div class="enunciation"><em>If a triangle inscribed in a given</em> <span class="glossary-term" data-term="circumcircle" title="Term: circumcircle"><em>circle</em></span> <em>has a constant angle, then the opposite side is tangent to a fixed circle concentric with the given circle.</em></div>
+                      <p>If a triangle inscribed in a given *circle* has a constant angle, then the opposite side is tangent to a fixed circle concentric with the given circle.</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="068-theorem/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="068-theorem/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -216,11 +251,14 @@
                 <div class="content">
                   <section>
                     <h2><a href="069-corollary/index.html">§ 69. Corollary</a></h2>
-                      <div class="enunciation">
-                      <p><em>We have the datum:</em></p>
-                      <div class="math notranslate nohighlight">
-                      \[a,\; A,\; R.\]</div>
-                      </div>
+                      <p>We have the datum:
+
+                      a,\; A,\; R.</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="069-corollary/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="069-corollary/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -228,7 +266,18 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="070-problem/index.html" aria-label="Fig. 41 — Triangle ABC inscribed in its circumcircle with altitude AD, bisector AU, midpoint A', and arc midpoint E">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 247 244" width="247" height="244" class="euclid-graphic euclid-thumbnail" data-graphic-id="0076.g1" data-folio="0076" data-graphic="g1" data-article="70">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 247 244" width="247" height="244" data-graphic-id="0076.g1" data-folio="0076" data-graphic="g1" data-article="70" data-svg-scope="s-66c3038f">
+          <style>
+            svg[data-svg-scope="s-66c3038f"] .geom-polygon:hover, svg[data-svg-scope="s-66c3038f"] .geom-polygon.highlight, svg[data-svg-scope="s-66c3038f"] .geom-polygon-bordered:hover, svg[data-svg-scope="s-66c3038f"] .geom-polygon-bordered.highlight, svg[data-svg-scope="s-66c3038f"] polygon.geom-highlight-active, svg[data-svg-scope="s-66c3038f"] path.geom-polygon.geom-highlight-active, svg[data-svg-scope="s-66c3038f"] .wedge:hover, svg[data-svg-scope="s-66c3038f"] .wedge.highlight, svg[data-svg-scope="s-66c3038f"] .wedge.angle:hover, svg[data-svg-scope="s-66c3038f"] .wedge.angle.highlight, svg[data-svg-scope="s-66c3038f"] .wedge.angle.geom-highlight-active, svg[data-svg-scope="s-66c3038f"] path.wedge.geom-highlight-active, svg[data-svg-scope="s-66c3038f"] path.angle.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: #c88a1e !important; stroke: #c88a1e !important }
+            svg[data-svg-scope="s-66c3038f"] .geom-assert-active { opacity: 1 !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-66c3038f"] text.geom-assert-active, svg[data-svg-scope="s-66c3038f"] text.geom-assert-secondary, svg[data-svg-scope="s-66c3038f"] text.geom-assert-active *, svg[data-svg-scope="s-66c3038f"] text.geom-assert-secondary * { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-66c3038f"] polygon.geom-assert-active, svg[data-svg-scope="s-66c3038f"] path.geom-polygon.geom-assert-active, svg[data-svg-scope="s-66c3038f"] .wedge.angle.geom-assert-active, svg[data-svg-scope="s-66c3038f"] path.wedge.geom-assert-active, svg[data-svg-scope="s-66c3038f"] path.angle.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: #16a34a !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-66c3038f"] path.geom-ang-arc.geom-assert-active { opacity: 1 !important; fill: none !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-66c3038f"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-66c3038f"] circle.geom-assert-active { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-66c3038f"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-66c3038f"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-66c3038f"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
           <defs>
             <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -285,7 +334,12 @@
                   </figure>
                   <section>
                     <h2><a href="070-problem/index.html">§ 70. Problem</a></h2>
-                      <div class="enunciation"><em>Construct a</em> <span class="geom-ref" data-ref="0076.g1:&lt; A B C &gt;" title="&lt; A B C &gt;">*triangle*</span> <em>given the</em> <span class="geom-ref" data-ref="0076.g1:/ B C /" title="/ B C /">*base*</span><em>, the</em> <span class="geom-ref" data-ref="0076.g1:&lt; B A C )" title="&lt; B A C )">*vertical angle*</span><em>, and the ratio of the distances of the</em> <span class="geom-ref" data-ref="0076.g1:Aprime" title="Aprime">*midpoint*</span> <em>of the base from the traces, on the base, of the</em> <span class="geom-ref" data-ref="0076.g1:/ A D /" title="/ A D /">*altitude*</span> <em>and of the</em> <span class="geom-ref" data-ref="0076.g1:/ A U /" title="/ A U /">*bisector*</span> <em>of the vertical angle.</em></div>
+                      <p>Construct a *triangle* given the *base*, the *vertical angle*, and the ratio of the distances of the *midpoint* of the base from the traces, on the base, of the *altitude* and of the *bisector* of the vertical angle.</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="070-problem/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="070-problem/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -293,7 +347,18 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="071-problem/index.html" aria-label="Fig. 42 — Isosceles trapezoid ABCK inscribed in circumcircle of triangle ABC with ∠ABK = B − C">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 253 227" width="253" height="227" class="euclid-graphic euclid-thumbnail" data-graphic-id="0077.g1" data-folio="0077" data-graphic="g1" data-article="71">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 253 227" width="253" height="227" data-graphic-id="0077.g1" data-folio="0077" data-graphic="g1" data-article="71" data-svg-scope="s-dd0332cf">
+          <style>
+            svg[data-svg-scope="s-dd0332cf"] .geom-polygon:hover, svg[data-svg-scope="s-dd0332cf"] .geom-polygon.highlight, svg[data-svg-scope="s-dd0332cf"] .geom-polygon-bordered:hover, svg[data-svg-scope="s-dd0332cf"] .geom-polygon-bordered.highlight, svg[data-svg-scope="s-dd0332cf"] polygon.geom-highlight-active, svg[data-svg-scope="s-dd0332cf"] path.geom-polygon.geom-highlight-active, svg[data-svg-scope="s-dd0332cf"] .wedge:hover, svg[data-svg-scope="s-dd0332cf"] .wedge.highlight, svg[data-svg-scope="s-dd0332cf"] .wedge.angle:hover, svg[data-svg-scope="s-dd0332cf"] .wedge.angle.highlight, svg[data-svg-scope="s-dd0332cf"] .wedge.angle.geom-highlight-active, svg[data-svg-scope="s-dd0332cf"] path.wedge.geom-highlight-active, svg[data-svg-scope="s-dd0332cf"] path.angle.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: #c88a1e !important; stroke: #c88a1e !important }
+            svg[data-svg-scope="s-dd0332cf"] .geom-assert-active { opacity: 1 !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-dd0332cf"] text.geom-assert-active, svg[data-svg-scope="s-dd0332cf"] text.geom-assert-secondary, svg[data-svg-scope="s-dd0332cf"] text.geom-assert-active *, svg[data-svg-scope="s-dd0332cf"] text.geom-assert-secondary * { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-dd0332cf"] polygon.geom-assert-active, svg[data-svg-scope="s-dd0332cf"] path.geom-polygon.geom-assert-active, svg[data-svg-scope="s-dd0332cf"] .wedge.angle.geom-assert-active, svg[data-svg-scope="s-dd0332cf"] path.wedge.geom-assert-active, svg[data-svg-scope="s-dd0332cf"] path.angle.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: #16a34a !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-dd0332cf"] path.geom-ang-arc.geom-assert-active { opacity: 1 !important; fill: none !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-dd0332cf"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-dd0332cf"] circle.geom-assert-active { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-dd0332cf"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-dd0332cf"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-dd0332cf"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
           <defs>
             <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -353,7 +418,12 @@
                   </figure>
                   <section>
                     <h2><a href="071-problem/index.html">§ 71. Problem</a></h2>
-                      <div class="enunciation"><em>Construct a</em> <span class="geom-ref" data-ref="0077.g1:&lt; A B C &gt;" title="&lt; A B C &gt;">*triangle*</span> <em>given the circumradius, the sum of the lateral sides, and the difference of the base angles</em> <span class="math notranslate nohighlight">\((R,\; b + c,\; B - C)\)</span><em>.</em></div>
+                      <p>Construct a *triangle* given the circumradius, the sum of the lateral sides, and the difference of the base angles (R,\; b + c,\; B - C).</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="071-problem/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="071-problem/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -361,7 +431,18 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="072-problem/index.html" aria-label="Fig. 43 — Auxiliary triangle DBC with AD = AC and tangent DE from D to circumcircle (O)">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226 363" width="226" height="363" class="euclid-graphic euclid-thumbnail" data-graphic-id="0078.g1" data-folio="0078" data-graphic="g1" data-article="72">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226 363" width="226" height="363" data-graphic-id="0078.g1" data-folio="0078" data-graphic="g1" data-article="72" data-svg-scope="s-48bb14ee">
+          <style>
+            svg[data-svg-scope="s-48bb14ee"] .geom-polygon:hover, svg[data-svg-scope="s-48bb14ee"] .geom-polygon.highlight, svg[data-svg-scope="s-48bb14ee"] .geom-polygon-bordered:hover, svg[data-svg-scope="s-48bb14ee"] .geom-polygon-bordered.highlight, svg[data-svg-scope="s-48bb14ee"] polygon.geom-highlight-active, svg[data-svg-scope="s-48bb14ee"] path.geom-polygon.geom-highlight-active, svg[data-svg-scope="s-48bb14ee"] .wedge:hover, svg[data-svg-scope="s-48bb14ee"] .wedge.highlight, svg[data-svg-scope="s-48bb14ee"] .wedge.angle:hover, svg[data-svg-scope="s-48bb14ee"] .wedge.angle.highlight, svg[data-svg-scope="s-48bb14ee"] .wedge.angle.geom-highlight-active, svg[data-svg-scope="s-48bb14ee"] path.wedge.geom-highlight-active, svg[data-svg-scope="s-48bb14ee"] path.angle.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: #c88a1e !important; stroke: #c88a1e !important }
+            svg[data-svg-scope="s-48bb14ee"] .geom-assert-active { opacity: 1 !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-48bb14ee"] text.geom-assert-active, svg[data-svg-scope="s-48bb14ee"] text.geom-assert-secondary, svg[data-svg-scope="s-48bb14ee"] text.geom-assert-active *, svg[data-svg-scope="s-48bb14ee"] text.geom-assert-secondary * { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-48bb14ee"] polygon.geom-assert-active, svg[data-svg-scope="s-48bb14ee"] path.geom-polygon.geom-assert-active, svg[data-svg-scope="s-48bb14ee"] .wedge.angle.geom-assert-active, svg[data-svg-scope="s-48bb14ee"] path.wedge.geom-assert-active, svg[data-svg-scope="s-48bb14ee"] path.angle.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: #16a34a !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-48bb14ee"] path.geom-ang-arc.geom-assert-active { opacity: 1 !important; fill: none !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-48bb14ee"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-48bb14ee"] circle.geom-assert-active { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-48bb14ee"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-48bb14ee"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-48bb14ee"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
           <defs>
             <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -415,7 +496,12 @@
                   </figure>
                   <section>
                     <h2><a href="072-problem/index.html">§ 72. Problem</a></h2>
-                      <div class="enunciation"><em>Construct a</em> <span class="geom-ref" data-ref="0078.g1:&lt; A B C &gt;" title="&lt; A B C &gt;">*triangle*</span> <em>given the circumradius, the base, and the product of the sum of the other two sides by one of them</em> <span class="math notranslate nohighlight">\([R,\; a,\; (b + c)b]\)</span><em>.</em></div>
+                      <p>Construct a *triangle* given the circumradius, the base, and the product of the sum of the other two sides by one of them [R,\; a,\; (b + c)b].</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="072-problem/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="072-problem/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -424,6 +510,11 @@
                   <section>
                     <h2><a href="072-exercises/index.html">§ 72. Exercises (1–15)</a></h2>
                       <p>Construct a triangle, given:</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="072-exercises/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="072-exercises/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -431,7 +522,18 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="073-theorem/index.html" aria-label="Fig. 44 — Circumdiameter AK through circumcenter O, altitude AD, bisector AU, and median AA' of triangle ABC">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255 254" width="255" height="254" class="euclid-graphic euclid-thumbnail" data-graphic-id="0079.g1" data-folio="0079" data-graphic="g1" data-article="73">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255 254" width="255" height="254" data-graphic-id="0079.g1" data-folio="0079" data-graphic="g1" data-article="73" data-svg-scope="s-0dba2e44">
+          <style>
+            svg[data-svg-scope="s-0dba2e44"] .geom-polygon:hover, svg[data-svg-scope="s-0dba2e44"] .geom-polygon.highlight, svg[data-svg-scope="s-0dba2e44"] .geom-polygon-bordered:hover, svg[data-svg-scope="s-0dba2e44"] .geom-polygon-bordered.highlight, svg[data-svg-scope="s-0dba2e44"] polygon.geom-highlight-active, svg[data-svg-scope="s-0dba2e44"] path.geom-polygon.geom-highlight-active, svg[data-svg-scope="s-0dba2e44"] .wedge:hover, svg[data-svg-scope="s-0dba2e44"] .wedge.highlight, svg[data-svg-scope="s-0dba2e44"] .wedge.angle:hover, svg[data-svg-scope="s-0dba2e44"] .wedge.angle.highlight, svg[data-svg-scope="s-0dba2e44"] .wedge.angle.geom-highlight-active, svg[data-svg-scope="s-0dba2e44"] path.wedge.geom-highlight-active, svg[data-svg-scope="s-0dba2e44"] path.angle.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: #c88a1e !important; stroke: #c88a1e !important }
+            svg[data-svg-scope="s-0dba2e44"] .geom-assert-active { opacity: 1 !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-0dba2e44"] text.geom-assert-active, svg[data-svg-scope="s-0dba2e44"] text.geom-assert-secondary, svg[data-svg-scope="s-0dba2e44"] text.geom-assert-active *, svg[data-svg-scope="s-0dba2e44"] text.geom-assert-secondary * { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-0dba2e44"] polygon.geom-assert-active, svg[data-svg-scope="s-0dba2e44"] path.geom-polygon.geom-assert-active, svg[data-svg-scope="s-0dba2e44"] .wedge.angle.geom-assert-active, svg[data-svg-scope="s-0dba2e44"] path.wedge.geom-assert-active, svg[data-svg-scope="s-0dba2e44"] path.angle.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: #16a34a !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-0dba2e44"] path.geom-ang-arc.geom-assert-active { opacity: 1 !important; fill: none !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-0dba2e44"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-0dba2e44"] circle.geom-assert-active { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-0dba2e44"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-0dba2e44"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-0dba2e44"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
           <defs>
             <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -514,7 +616,12 @@
                   </figure>
                   <section>
                     <h2><a href="073-theorem/index.html">§ 73. Theorem</a></h2>
-                      <div class="enunciation"><em>The</em> <span class="geom-ref" data-ref="0079.g1:&lt; D A K )" title="&lt; D A K )">*angle*</span> <em>between the</em> <span class="geom-ref" data-ref="0079.g1:/ A K /" title="/ A K /">*circumdiameter*</span> <em>and the</em> <span class="geom-ref" data-ref="0079.g1:/ A D /" title="/ A D /">*altitude*</span> <em>issued from the same</em> <span class="geom-ref" data-ref="0079.g1:A" title="A">*vertex*</span> <em>of a</em> <span class="geom-ref" data-ref="0079.g1:&lt; A B C &gt;" title="&lt; A B C &gt;">*triangle*</span> <em>(a) is equal to the difference of the other two angles of the triangle, and (b) is bisected by the</em> <span class="geom-ref" data-ref="0079.g1:/ A U /" title="/ A U /">*bisector*</span> <em>of the angle of the triangle at the vertex considered.</em></div>
+                      <p>The *angle* between the *circumdiameter* and the *altitude* issued from the same *vertex* of a *triangle* (a) is equal to the difference of the other two angles of the triangle, and (b) is bisected by the *bisector* of the angle of the triangle at the vertex considered.</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="073-theorem/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="073-theorem/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -522,7 +629,18 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="074-corollary/index.html" aria-label="Fig. 44 — Circumdiameter AK through circumcenter O, altitude AD, bisector AU, and median AA' of triangle ABC">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255 254" width="255" height="254" class="euclid-graphic euclid-thumbnail" data-graphic-id="0079.g1" data-folio="0079" data-graphic="g1" data-article="73">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255 254" width="255" height="254" data-graphic-id="0079.g1" data-folio="0079" data-graphic="g1" data-article="73" data-svg-scope="s-600b08cc">
+          <style>
+            svg[data-svg-scope="s-600b08cc"] .geom-polygon:hover, svg[data-svg-scope="s-600b08cc"] .geom-polygon.highlight, svg[data-svg-scope="s-600b08cc"] .geom-polygon-bordered:hover, svg[data-svg-scope="s-600b08cc"] .geom-polygon-bordered.highlight, svg[data-svg-scope="s-600b08cc"] polygon.geom-highlight-active, svg[data-svg-scope="s-600b08cc"] path.geom-polygon.geom-highlight-active, svg[data-svg-scope="s-600b08cc"] .wedge:hover, svg[data-svg-scope="s-600b08cc"] .wedge.highlight, svg[data-svg-scope="s-600b08cc"] .wedge.angle:hover, svg[data-svg-scope="s-600b08cc"] .wedge.angle.highlight, svg[data-svg-scope="s-600b08cc"] .wedge.angle.geom-highlight-active, svg[data-svg-scope="s-600b08cc"] path.wedge.geom-highlight-active, svg[data-svg-scope="s-600b08cc"] path.angle.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: #c88a1e !important; stroke: #c88a1e !important }
+            svg[data-svg-scope="s-600b08cc"] .geom-assert-active { opacity: 1 !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-600b08cc"] text.geom-assert-active, svg[data-svg-scope="s-600b08cc"] text.geom-assert-secondary, svg[data-svg-scope="s-600b08cc"] text.geom-assert-active *, svg[data-svg-scope="s-600b08cc"] text.geom-assert-secondary * { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-600b08cc"] polygon.geom-assert-active, svg[data-svg-scope="s-600b08cc"] path.geom-polygon.geom-assert-active, svg[data-svg-scope="s-600b08cc"] .wedge.angle.geom-assert-active, svg[data-svg-scope="s-600b08cc"] path.wedge.geom-assert-active, svg[data-svg-scope="s-600b08cc"] path.angle.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: #16a34a !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-600b08cc"] path.geom-ang-arc.geom-assert-active { opacity: 1 !important; fill: none !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-600b08cc"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-600b08cc"] circle.geom-assert-active { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-600b08cc"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-600b08cc"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-600b08cc"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
           <defs>
             <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -605,11 +723,14 @@
                   </figure>
                   <section>
                     <h2><a href="074-corollary/index.html">§ 74. Corollary</a></h2>
-                      <div class="enunciation">
-                      <p><em>In the right triangle</em> <span class="geom-ref" data-ref="0079.g1:&lt; A D U &gt;" title="&lt; A D U &gt;">ADU</span> <em>we have</em> <span class="math notranslate nohighlight">\(AD = h_a\)</span><em>,</em> <span class="math notranslate nohighlight">\(AU = t_a\)</span><em>, and angle</em> <span class="math notranslate nohighlight">\(DAU = \tfrac{1}{2}(B - C)\)</span><em>, i.e., we have the datum:</em></p>
-                      <div class="math notranslate nohighlight">
-                      \[h_a,\quad t_a,\quad B - C.\]</div>
-                      </div>
+                      <p>In the right triangle ADU we have AD = h_a, AU = t_a, and angle DAU = \tfrac{1}{2}(B - C), i.e., we have the datum:
+
+                      h_a,\quad t_a,\quad B - C.</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="074-corollary/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="074-corollary/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -617,7 +738,18 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="075-theorem/index.html" aria-label="Fig. 44 — Circumdiameter AK through circumcenter O, altitude AD, bisector AU, and median AA' of triangle ABC">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255 254" width="255" height="254" class="euclid-graphic euclid-thumbnail" data-graphic-id="0079.g1" data-folio="0079" data-graphic="g1" data-article="73">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255 254" width="255" height="254" data-graphic-id="0079.g1" data-folio="0079" data-graphic="g1" data-article="73" data-svg-scope="s-bd4f9e79">
+          <style>
+            svg[data-svg-scope="s-bd4f9e79"] .geom-polygon:hover, svg[data-svg-scope="s-bd4f9e79"] .geom-polygon.highlight, svg[data-svg-scope="s-bd4f9e79"] .geom-polygon-bordered:hover, svg[data-svg-scope="s-bd4f9e79"] .geom-polygon-bordered.highlight, svg[data-svg-scope="s-bd4f9e79"] polygon.geom-highlight-active, svg[data-svg-scope="s-bd4f9e79"] path.geom-polygon.geom-highlight-active, svg[data-svg-scope="s-bd4f9e79"] .wedge:hover, svg[data-svg-scope="s-bd4f9e79"] .wedge.highlight, svg[data-svg-scope="s-bd4f9e79"] .wedge.angle:hover, svg[data-svg-scope="s-bd4f9e79"] .wedge.angle.highlight, svg[data-svg-scope="s-bd4f9e79"] .wedge.angle.geom-highlight-active, svg[data-svg-scope="s-bd4f9e79"] path.wedge.geom-highlight-active, svg[data-svg-scope="s-bd4f9e79"] path.angle.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: #c88a1e !important; stroke: #c88a1e !important }
+            svg[data-svg-scope="s-bd4f9e79"] .geom-assert-active { opacity: 1 !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-bd4f9e79"] text.geom-assert-active, svg[data-svg-scope="s-bd4f9e79"] text.geom-assert-secondary, svg[data-svg-scope="s-bd4f9e79"] text.geom-assert-active *, svg[data-svg-scope="s-bd4f9e79"] text.geom-assert-secondary * { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-bd4f9e79"] polygon.geom-assert-active, svg[data-svg-scope="s-bd4f9e79"] path.geom-polygon.geom-assert-active, svg[data-svg-scope="s-bd4f9e79"] .wedge.angle.geom-assert-active, svg[data-svg-scope="s-bd4f9e79"] path.wedge.geom-assert-active, svg[data-svg-scope="s-bd4f9e79"] path.angle.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: #16a34a !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-bd4f9e79"] path.geom-ang-arc.geom-assert-active { opacity: 1 !important; fill: none !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-bd4f9e79"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-bd4f9e79"] circle.geom-assert-active { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-bd4f9e79"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-bd4f9e79"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-bd4f9e79"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
           <defs>
             <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -700,7 +832,12 @@
                   </figure>
                   <section>
                     <h2><a href="075-theorem/index.html">§ 75. Theorem</a></h2>
-                      <div class="enunciation"><em>The difference of the two angles which an</em> <span class="geom-ref" data-ref="0079.g1:/ A U /" title="/ A U /">*internal bisector*</span> <em>of an angle of a</em> <span class="geom-ref" data-ref="0079.g1:&lt; A B C &gt;" title="&lt; A B C &gt;">*triangle*</span> <em>makes with the</em> <span class="geom-ref" data-ref="0079.g1:/ B C /" title="/ B C /">*opposite side*</span> <em>is equal to the difference of the angles adjacent to this side.</em></div>
+                      <p>The difference of the two angles which an *internal bisector* of an angle of a *triangle* makes with the *opposite side* is equal to the difference of the angles adjacent to this side.</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="075-theorem/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="075-theorem/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -708,7 +845,18 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="076-problem/index.html" aria-label="Fig. 44 — Circumdiameter AK through circumcenter O, altitude AD, bisector AU, and median AA' of triangle ABC">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255 254" width="255" height="254" class="euclid-graphic euclid-thumbnail" data-graphic-id="0079.g1" data-folio="0079" data-graphic="g1" data-article="73">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255 254" width="255" height="254" data-graphic-id="0079.g1" data-folio="0079" data-graphic="g1" data-article="73" data-svg-scope="s-f6f26027">
+          <style>
+            svg[data-svg-scope="s-f6f26027"] .geom-polygon:hover, svg[data-svg-scope="s-f6f26027"] .geom-polygon.highlight, svg[data-svg-scope="s-f6f26027"] .geom-polygon-bordered:hover, svg[data-svg-scope="s-f6f26027"] .geom-polygon-bordered.highlight, svg[data-svg-scope="s-f6f26027"] polygon.geom-highlight-active, svg[data-svg-scope="s-f6f26027"] path.geom-polygon.geom-highlight-active, svg[data-svg-scope="s-f6f26027"] .wedge:hover, svg[data-svg-scope="s-f6f26027"] .wedge.highlight, svg[data-svg-scope="s-f6f26027"] .wedge.angle:hover, svg[data-svg-scope="s-f6f26027"] .wedge.angle.highlight, svg[data-svg-scope="s-f6f26027"] .wedge.angle.geom-highlight-active, svg[data-svg-scope="s-f6f26027"] path.wedge.geom-highlight-active, svg[data-svg-scope="s-f6f26027"] path.angle.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: #c88a1e !important; stroke: #c88a1e !important }
+            svg[data-svg-scope="s-f6f26027"] .geom-assert-active { opacity: 1 !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-f6f26027"] text.geom-assert-active, svg[data-svg-scope="s-f6f26027"] text.geom-assert-secondary, svg[data-svg-scope="s-f6f26027"] text.geom-assert-active *, svg[data-svg-scope="s-f6f26027"] text.geom-assert-secondary * { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-f6f26027"] polygon.geom-assert-active, svg[data-svg-scope="s-f6f26027"] path.geom-polygon.geom-assert-active, svg[data-svg-scope="s-f6f26027"] .wedge.angle.geom-assert-active, svg[data-svg-scope="s-f6f26027"] path.wedge.geom-assert-active, svg[data-svg-scope="s-f6f26027"] path.angle.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: #16a34a !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-f6f26027"] path.geom-ang-arc.geom-assert-active { opacity: 1 !important; fill: none !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-f6f26027"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-f6f26027"] circle.geom-assert-active { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-f6f26027"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-f6f26027"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-f6f26027"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
           <defs>
             <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -791,7 +939,12 @@
                   </figure>
                   <section>
                     <h2><a href="076-problem/index.html">§ 76. Problem</a></h2>
-                      <div class="enunciation"><em>Construct a</em> <span class="geom-ref" data-ref="0079.g1:&lt; A B C &gt;" title="&lt; A B C &gt;">*triangle*</span> <em>given the</em> <span class="geom-ref" data-ref="0079.g1:/ A D /" title="/ A D /">*altitude*</span><em>, the</em> <span class="geom-ref" data-ref="0079.g1:/ A A' /" title="/ A A&#x27; /">*median*</span><em>, and the</em> <span class="geom-ref" data-ref="0079.g1:/ A U /" title="/ A U /">*bisector*</span> <em>issued from the same</em> <span class="geom-ref" data-ref="0079.g1:A" title="A">*vertex*</span> <span class="math notranslate nohighlight">\((h_a,\; m_a,\; t_a)\)</span><em>.</em></div>
+                      <p>Construct a *triangle* given the *altitude*, the *median*, and the *bisector* issued from the same *vertex* (h_a,\; m_a,\; t_a).</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="076-problem/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="076-problem/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -799,7 +952,12 @@
                 <div class="content">
                   <section>
                     <h2><a href="077-problem/index.html">§ 77. Problem</a></h2>
-                      <div class="enunciation"><em>Construct a triangle given the base, the altitude to the base, and the bisector of the vertical angle</em> <span class="math notranslate nohighlight">\((a,\; h_a,\; t_a)\)</span><em>.</em></div>
+                      <p>Construct a triangle given the base, the altitude to the base, and the bisector of the vertical angle (a,\; h_a,\; t_a).</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="077-problem/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="077-problem/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -807,7 +965,18 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="078-problem/index.html" aria-label="Fig. 44 — Circumdiameter AK through circumcenter O, altitude AD, bisector AU, and median AA' of triangle ABC">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255 254" width="255" height="254" class="euclid-graphic euclid-thumbnail" data-graphic-id="0079.g1" data-folio="0079" data-graphic="g1" data-article="73">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255 254" width="255" height="254" data-graphic-id="0079.g1" data-folio="0079" data-graphic="g1" data-article="73" data-svg-scope="s-1a5cea9d">
+          <style>
+            svg[data-svg-scope="s-1a5cea9d"] .geom-polygon:hover, svg[data-svg-scope="s-1a5cea9d"] .geom-polygon.highlight, svg[data-svg-scope="s-1a5cea9d"] .geom-polygon-bordered:hover, svg[data-svg-scope="s-1a5cea9d"] .geom-polygon-bordered.highlight, svg[data-svg-scope="s-1a5cea9d"] polygon.geom-highlight-active, svg[data-svg-scope="s-1a5cea9d"] path.geom-polygon.geom-highlight-active, svg[data-svg-scope="s-1a5cea9d"] .wedge:hover, svg[data-svg-scope="s-1a5cea9d"] .wedge.highlight, svg[data-svg-scope="s-1a5cea9d"] .wedge.angle:hover, svg[data-svg-scope="s-1a5cea9d"] .wedge.angle.highlight, svg[data-svg-scope="s-1a5cea9d"] .wedge.angle.geom-highlight-active, svg[data-svg-scope="s-1a5cea9d"] path.wedge.geom-highlight-active, svg[data-svg-scope="s-1a5cea9d"] path.angle.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: #c88a1e !important; stroke: #c88a1e !important }
+            svg[data-svg-scope="s-1a5cea9d"] .geom-assert-active { opacity: 1 !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-1a5cea9d"] text.geom-assert-active, svg[data-svg-scope="s-1a5cea9d"] text.geom-assert-secondary, svg[data-svg-scope="s-1a5cea9d"] text.geom-assert-active *, svg[data-svg-scope="s-1a5cea9d"] text.geom-assert-secondary * { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-1a5cea9d"] polygon.geom-assert-active, svg[data-svg-scope="s-1a5cea9d"] path.geom-polygon.geom-assert-active, svg[data-svg-scope="s-1a5cea9d"] .wedge.angle.geom-assert-active, svg[data-svg-scope="s-1a5cea9d"] path.wedge.geom-assert-active, svg[data-svg-scope="s-1a5cea9d"] path.angle.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: #16a34a !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-1a5cea9d"] path.geom-ang-arc.geom-assert-active { opacity: 1 !important; fill: none !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-1a5cea9d"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-1a5cea9d"] circle.geom-assert-active { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-1a5cea9d"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-1a5cea9d"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-1a5cea9d"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
           <defs>
             <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -890,7 +1059,12 @@
                   </figure>
                   <section>
                     <h2><a href="078-problem/index.html">§ 78. Problem</a></h2>
-                      <div class="enunciation"><em>Construct a</em> <span class="geom-ref" data-ref="0079.g1:&lt; A B C &gt;" title="&lt; A B C &gt;">*triangle*</span> <em>given the</em> <span class="geom-ref" data-ref="0079.g1:/ B C /" title="/ B C /">*base*</span><em>, the</em> <span class="geom-ref" data-ref="0079.g1:/ A A' /" title="/ A A&#x27; /">*median*</span> <em>to the base, and the difference of the base angles</em> <span class="math notranslate nohighlight">\((a,\; m_a,\; B - C)\)</span><em>.</em></div>
+                      <p>Construct a *triangle* given the *base*, the *median* to the base, and the difference of the base angles (a,\; m_a,\; B - C).</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="078-problem/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="078-problem/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -899,6 +1073,11 @@
                   <section>
                     <h2><a href="078-exercises/index.html">§ 78. Exercises (1–6)</a></h2>
                       <p>Construct a triangle, given:</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="078-exercises/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="078-exercises/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -906,7 +1085,18 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="079-theorem/index.html" aria-label="Fig. 45 — Internal and external bisectors AU, AU', circumdiameter LL' perpendicular to BC, and tangent AT">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 399 270" width="399" height="270" class="euclid-graphic euclid-thumbnail" data-graphic-id="0081.g1" data-folio="0081" data-graphic="g1" data-article="79">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 399 270" width="399" height="270" data-graphic-id="0081.g1" data-folio="0081" data-graphic="g1" data-article="79" data-svg-scope="s-fdc054f3">
+          <style>
+            svg[data-svg-scope="s-fdc054f3"] .geom-polygon:hover, svg[data-svg-scope="s-fdc054f3"] .geom-polygon.highlight, svg[data-svg-scope="s-fdc054f3"] .geom-polygon-bordered:hover, svg[data-svg-scope="s-fdc054f3"] .geom-polygon-bordered.highlight, svg[data-svg-scope="s-fdc054f3"] polygon.geom-highlight-active, svg[data-svg-scope="s-fdc054f3"] path.geom-polygon.geom-highlight-active, svg[data-svg-scope="s-fdc054f3"] .wedge:hover, svg[data-svg-scope="s-fdc054f3"] .wedge.highlight, svg[data-svg-scope="s-fdc054f3"] .wedge.angle:hover, svg[data-svg-scope="s-fdc054f3"] .wedge.angle.highlight, svg[data-svg-scope="s-fdc054f3"] .wedge.angle.geom-highlight-active, svg[data-svg-scope="s-fdc054f3"] path.wedge.geom-highlight-active, svg[data-svg-scope="s-fdc054f3"] path.angle.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: #c88a1e !important; stroke: #c88a1e !important }
+            svg[data-svg-scope="s-fdc054f3"] .geom-assert-active { opacity: 1 !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-fdc054f3"] text.geom-assert-active, svg[data-svg-scope="s-fdc054f3"] text.geom-assert-secondary, svg[data-svg-scope="s-fdc054f3"] text.geom-assert-active *, svg[data-svg-scope="s-fdc054f3"] text.geom-assert-secondary * { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-fdc054f3"] polygon.geom-assert-active, svg[data-svg-scope="s-fdc054f3"] path.geom-polygon.geom-assert-active, svg[data-svg-scope="s-fdc054f3"] .wedge.angle.geom-assert-active, svg[data-svg-scope="s-fdc054f3"] path.wedge.geom-assert-active, svg[data-svg-scope="s-fdc054f3"] path.angle.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: #16a34a !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-fdc054f3"] path.geom-ang-arc.geom-assert-active { opacity: 1 !important; fill: none !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-fdc054f3"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-fdc054f3"] circle.geom-assert-active { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-fdc054f3"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-fdc054f3"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-fdc054f3"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
           <defs>
             <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -980,7 +1170,12 @@
                   </figure>
                   <section>
                     <h2><a href="079-theorem/index.html">§ 79. Theorem</a></h2>
-                      <div class="enunciation"><em>The</em> <span class="geom-ref" data-ref="0081.g1:[ A U ]" title="[ A U ]">*internal*</span> <em>and</em> <span class="geom-ref" data-ref="0081.g1:[ A U' ]" title="[ A U&#x27; ]">*external*</span> <em>bisectors of an angle of a</em> <span class="geom-ref" data-ref="0081.g1:&lt; A B C &gt;" title="&lt; A B C &gt;">*triangle*</span> <em>pass through the ends of the</em> <span class="geom-ref" data-ref="0081.g1:/ L L' /" title="/ L L&#x27; /">*circumdiameter*</span> <em>which is perpendicular to the</em> <span class="geom-ref" data-ref="0081.g1:/ B C /" title="/ B C /">*side*</span> <em>opposite the</em> <span class="geom-ref" data-ref="0081.g1:A" title="A">*vertex*</span> <em>considered.</em></div>
+                      <p>The *internal* and *external* bisectors of an angle of a *triangle* pass through the ends of the *circumdiameter* which is perpendicular to the *side* opposite the *vertex* considered.</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="079-theorem/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="079-theorem/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -988,7 +1183,18 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="080-theorem/index.html" aria-label="Fig. 45 — Internal and external bisectors AU, AU', circumdiameter LL' perpendicular to BC, and tangent AT">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 399 270" width="399" height="270" class="euclid-graphic euclid-thumbnail" data-graphic-id="0081.g1" data-folio="0081" data-graphic="g1" data-article="79">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 399 270" width="399" height="270" data-graphic-id="0081.g1" data-folio="0081" data-graphic="g1" data-article="79" data-svg-scope="s-7c85416d">
+          <style>
+            svg[data-svg-scope="s-7c85416d"] .geom-polygon:hover, svg[data-svg-scope="s-7c85416d"] .geom-polygon.highlight, svg[data-svg-scope="s-7c85416d"] .geom-polygon-bordered:hover, svg[data-svg-scope="s-7c85416d"] .geom-polygon-bordered.highlight, svg[data-svg-scope="s-7c85416d"] polygon.geom-highlight-active, svg[data-svg-scope="s-7c85416d"] path.geom-polygon.geom-highlight-active, svg[data-svg-scope="s-7c85416d"] .wedge:hover, svg[data-svg-scope="s-7c85416d"] .wedge.highlight, svg[data-svg-scope="s-7c85416d"] .wedge.angle:hover, svg[data-svg-scope="s-7c85416d"] .wedge.angle.highlight, svg[data-svg-scope="s-7c85416d"] .wedge.angle.geom-highlight-active, svg[data-svg-scope="s-7c85416d"] path.wedge.geom-highlight-active, svg[data-svg-scope="s-7c85416d"] path.angle.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: #c88a1e !important; stroke: #c88a1e !important }
+            svg[data-svg-scope="s-7c85416d"] .geom-assert-active { opacity: 1 !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-7c85416d"] text.geom-assert-active, svg[data-svg-scope="s-7c85416d"] text.geom-assert-secondary, svg[data-svg-scope="s-7c85416d"] text.geom-assert-active *, svg[data-svg-scope="s-7c85416d"] text.geom-assert-secondary * { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-7c85416d"] polygon.geom-assert-active, svg[data-svg-scope="s-7c85416d"] path.geom-polygon.geom-assert-active, svg[data-svg-scope="s-7c85416d"] .wedge.angle.geom-assert-active, svg[data-svg-scope="s-7c85416d"] path.wedge.geom-assert-active, svg[data-svg-scope="s-7c85416d"] path.angle.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: #16a34a !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-7c85416d"] path.geom-ang-arc.geom-assert-active { opacity: 1 !important; fill: none !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-7c85416d"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-7c85416d"] circle.geom-assert-active { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-7c85416d"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-7c85416d"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-7c85416d"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
           <defs>
             <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -1062,7 +1268,12 @@
                   </figure>
                   <section>
                     <h2><a href="080-theorem/index.html">§ 80. Theorem</a></h2>
-                      <div class="enunciation"><em>The angle which the</em> <span class="geom-ref" data-ref="0081.g1:[ A U' ]" title="[ A U&#x27; ]">*external bisector*</span> <em>makes with the</em> <span class="geom-ref" data-ref="0081.g1:[ B C ]" title="[ B C ]">*opposite side*</span> <em>is equal to half the difference of the two angles adjacent to this side.</em></div>
+                      <p>The angle which the *external bisector* makes with the *opposite side* is equal to half the difference of the two angles adjacent to this side.</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="080-theorem/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="080-theorem/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -1070,7 +1281,18 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="081-corollary-i/index.html" aria-label="Fig. 45 — Internal and external bisectors AU, AU', circumdiameter LL' perpendicular to BC, and tangent AT">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 399 270" width="399" height="270" class="euclid-graphic euclid-thumbnail" data-graphic-id="0081.g1" data-folio="0081" data-graphic="g1" data-article="79">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 399 270" width="399" height="270" data-graphic-id="0081.g1" data-folio="0081" data-graphic="g1" data-article="79" data-svg-scope="s-90535c7d">
+          <style>
+            svg[data-svg-scope="s-90535c7d"] .geom-polygon:hover, svg[data-svg-scope="s-90535c7d"] .geom-polygon.highlight, svg[data-svg-scope="s-90535c7d"] .geom-polygon-bordered:hover, svg[data-svg-scope="s-90535c7d"] .geom-polygon-bordered.highlight, svg[data-svg-scope="s-90535c7d"] polygon.geom-highlight-active, svg[data-svg-scope="s-90535c7d"] path.geom-polygon.geom-highlight-active, svg[data-svg-scope="s-90535c7d"] .wedge:hover, svg[data-svg-scope="s-90535c7d"] .wedge.highlight, svg[data-svg-scope="s-90535c7d"] .wedge.angle:hover, svg[data-svg-scope="s-90535c7d"] .wedge.angle.highlight, svg[data-svg-scope="s-90535c7d"] .wedge.angle.geom-highlight-active, svg[data-svg-scope="s-90535c7d"] path.wedge.geom-highlight-active, svg[data-svg-scope="s-90535c7d"] path.angle.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: #c88a1e !important; stroke: #c88a1e !important }
+            svg[data-svg-scope="s-90535c7d"] .geom-assert-active { opacity: 1 !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-90535c7d"] text.geom-assert-active, svg[data-svg-scope="s-90535c7d"] text.geom-assert-secondary, svg[data-svg-scope="s-90535c7d"] text.geom-assert-active *, svg[data-svg-scope="s-90535c7d"] text.geom-assert-secondary * { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-90535c7d"] polygon.geom-assert-active, svg[data-svg-scope="s-90535c7d"] path.geom-polygon.geom-assert-active, svg[data-svg-scope="s-90535c7d"] .wedge.angle.geom-assert-active, svg[data-svg-scope="s-90535c7d"] path.wedge.geom-assert-active, svg[data-svg-scope="s-90535c7d"] path.angle.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: #16a34a !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-90535c7d"] path.geom-ang-arc.geom-assert-active { opacity: 1 !important; fill: none !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-90535c7d"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-90535c7d"] circle.geom-assert-active { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-90535c7d"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-90535c7d"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-90535c7d"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
           <defs>
             <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -1144,7 +1366,12 @@
                   </figure>
                   <section>
                     <h2><a href="081-corollary-i/index.html">§ 81. Corollary I</a></h2>
-                      <div class="enunciation"><em>If the</em> <span class="geom-ref" data-ref="0081.g1:/ T A /" title="/ T A /">*tangent*</span> <em>at</em> <span class="geom-ref" data-ref="0081.g1:A" title="A">A</span> <em>to the</em> <span class="geom-ref" data-ref="0081.g1:( A B C )" title="( A B C )">*circumcircle*</span> <em>meets</em> <span class="geom-ref" data-ref="0081.g1:[ B C ]" title="[ B C ]">BC</span> <em>in</em> <span class="geom-ref" data-ref="0081.g1:T" title="T">T</span><em>, we have</em> <span class="geom-eq-ref" data-assert-equal="0081.g1:/ T A / = 0081.g1:/ T U /" title="/ T A / = / T U /">TA = TU</span> <span class="math notranslate nohighlight">\(=\)</span> <span class="geom-ref" data-ref="0081.g1:/ T U' /" title="/ T U&#x27; /">TU'</span><em>.</em></div>
+                      <p>If the *tangent* at A to the *circumcircle* meets BC in T, we have TA = TU = TU'.</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="081-corollary-i/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="081-corollary-i/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -1152,7 +1379,18 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="082-corollary-ii/index.html" aria-label="Fig. 45 — Internal and external bisectors AU, AU', circumdiameter LL' perpendicular to BC, and tangent AT">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 399 270" width="399" height="270" class="euclid-graphic euclid-thumbnail" data-graphic-id="0081.g1" data-folio="0081" data-graphic="g1" data-article="79">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 399 270" width="399" height="270" data-graphic-id="0081.g1" data-folio="0081" data-graphic="g1" data-article="79" data-svg-scope="s-7c34da5f">
+          <style>
+            svg[data-svg-scope="s-7c34da5f"] .geom-polygon:hover, svg[data-svg-scope="s-7c34da5f"] .geom-polygon.highlight, svg[data-svg-scope="s-7c34da5f"] .geom-polygon-bordered:hover, svg[data-svg-scope="s-7c34da5f"] .geom-polygon-bordered.highlight, svg[data-svg-scope="s-7c34da5f"] polygon.geom-highlight-active, svg[data-svg-scope="s-7c34da5f"] path.geom-polygon.geom-highlight-active, svg[data-svg-scope="s-7c34da5f"] .wedge:hover, svg[data-svg-scope="s-7c34da5f"] .wedge.highlight, svg[data-svg-scope="s-7c34da5f"] .wedge.angle:hover, svg[data-svg-scope="s-7c34da5f"] .wedge.angle.highlight, svg[data-svg-scope="s-7c34da5f"] .wedge.angle.geom-highlight-active, svg[data-svg-scope="s-7c34da5f"] path.wedge.geom-highlight-active, svg[data-svg-scope="s-7c34da5f"] path.angle.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: #c88a1e !important; stroke: #c88a1e !important }
+            svg[data-svg-scope="s-7c34da5f"] .geom-assert-active { opacity: 1 !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-7c34da5f"] text.geom-assert-active, svg[data-svg-scope="s-7c34da5f"] text.geom-assert-secondary, svg[data-svg-scope="s-7c34da5f"] text.geom-assert-active *, svg[data-svg-scope="s-7c34da5f"] text.geom-assert-secondary * { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-7c34da5f"] polygon.geom-assert-active, svg[data-svg-scope="s-7c34da5f"] path.geom-polygon.geom-assert-active, svg[data-svg-scope="s-7c34da5f"] .wedge.angle.geom-assert-active, svg[data-svg-scope="s-7c34da5f"] path.wedge.geom-assert-active, svg[data-svg-scope="s-7c34da5f"] path.angle.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: #16a34a !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-7c34da5f"] path.geom-ang-arc.geom-assert-active { opacity: 1 !important; fill: none !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-7c34da5f"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-7c34da5f"] circle.geom-assert-active { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-7c34da5f"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-7c34da5f"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-7c34da5f"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
           <defs>
             <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -1226,12 +1464,16 @@
                   </figure>
                   <section>
                     <h2><a href="082-corollary-ii/index.html">§ 82. Corollary II</a></h2>
-                      <div class="enunciation">
-                      <p><em>The altitude</em> <span class="geom-ref" data-ref="0081.g1:/ A D /" title="/ A D /">AD</span> <em>of</em> <span class="geom-ref" data-ref="0081.g1:&lt; A B C &gt;" title="&lt; A B C &gt;">ABC</span> <em>is also an altitude of the triangle</em> <span class="geom-ref" data-ref="0081.g1:&lt; U A U' &gt;" title="&lt; U A U&#x27; &gt;">UAU'</span><em>; hence:</em></p>
-                      <div class="math notranslate nohighlight">
-                      \[t_a,\; t_a',\; h_a,\; B - C\]</div>
-                      <p><em>constitute a</em> <span class="glossary-term" data-term="datum" title="Term: datum"><em>datum</em></span> <em>such that any two of these four magnitudes being given, the remaining two are determined.</em></p>
-                      </div>
+                      <p>The altitude AD of ABC is also an altitude of the triangle UAU'; hence:
+
+                      t_a,\; t_a',\; h_a,\; B - C
+
+                      constitute a *datum* such that any two of these four magnitudes being given, the remaining two are determined.</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="082-corollary-ii/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="082-corollary-ii/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -1239,7 +1481,18 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="083-problem/index.html" aria-label="Fig. 46 — Secant EUA through arc midpoint E meeting chord BC in U with intercepted segment AU = t">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 263 273" width="263" height="273" class="euclid-graphic euclid-thumbnail" data-graphic-id="0082.g1" data-folio="0082" data-graphic="g1" data-article="83">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 263 273" width="263" height="273" data-graphic-id="0082.g1" data-folio="0082" data-graphic="g1" data-article="83" data-svg-scope="s-f35d1332">
+          <style>
+            svg[data-svg-scope="s-f35d1332"] .geom-polygon:hover, svg[data-svg-scope="s-f35d1332"] .geom-polygon.highlight, svg[data-svg-scope="s-f35d1332"] .geom-polygon-bordered:hover, svg[data-svg-scope="s-f35d1332"] .geom-polygon-bordered.highlight, svg[data-svg-scope="s-f35d1332"] polygon.geom-highlight-active, svg[data-svg-scope="s-f35d1332"] path.geom-polygon.geom-highlight-active, svg[data-svg-scope="s-f35d1332"] .wedge:hover, svg[data-svg-scope="s-f35d1332"] .wedge.highlight, svg[data-svg-scope="s-f35d1332"] .wedge.angle:hover, svg[data-svg-scope="s-f35d1332"] .wedge.angle.highlight, svg[data-svg-scope="s-f35d1332"] .wedge.angle.geom-highlight-active, svg[data-svg-scope="s-f35d1332"] path.wedge.geom-highlight-active, svg[data-svg-scope="s-f35d1332"] path.angle.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: #c88a1e !important; stroke: #c88a1e !important }
+            svg[data-svg-scope="s-f35d1332"] .geom-assert-active { opacity: 1 !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-f35d1332"] text.geom-assert-active, svg[data-svg-scope="s-f35d1332"] text.geom-assert-secondary, svg[data-svg-scope="s-f35d1332"] text.geom-assert-active *, svg[data-svg-scope="s-f35d1332"] text.geom-assert-secondary * { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-f35d1332"] polygon.geom-assert-active, svg[data-svg-scope="s-f35d1332"] path.geom-polygon.geom-assert-active, svg[data-svg-scope="s-f35d1332"] .wedge.angle.geom-assert-active, svg[data-svg-scope="s-f35d1332"] path.wedge.geom-assert-active, svg[data-svg-scope="s-f35d1332"] path.angle.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: #16a34a !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-f35d1332"] path.geom-ang-arc.geom-assert-active { opacity: 1 !important; fill: none !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-f35d1332"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-f35d1332"] circle.geom-assert-active { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-f35d1332"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-f35d1332"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-f35d1332"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
           <defs>
             <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -1295,7 +1548,12 @@
                   </figure>
                   <section>
                     <h2><a href="083-problem/index.html">§ 83. Problem</a></h2>
-                      <div class="enunciation"><em>Through the midpoint</em> <span class="geom-ref" data-ref="0082.g1:E" title="E">E</span> <em>of the arc</em> <span class="math notranslate nohighlight">\(BEC\)</span> <em>of a</em> <span class="geom-ref" data-ref="0082.g1:( B E C )" title="( B E C )">*circle*</span> <em>to draw a</em> <span class="geom-ref" data-ref="0082.g1:[ E U A ]" title="[ E U A ]">*secant*</span> <em>meeting the chord</em> <span class="geom-ref" data-ref="0082.g1:/ B C /" title="/ B C /">BC</span> <em>in</em> <span class="geom-ref" data-ref="0082.g1:U" title="U">U</span> <em>and the circle again in</em> <span class="geom-ref" data-ref="0082.g1:A" title="A">A</span><em>, so that</em> <span class="geom-ref" data-ref="0082.g1:/ A U /" title="/ A U /">AU</span> <em>shall have a given length,</em> <span class="math notranslate nohighlight">\(t\)</span><em>.</em></div>
+                      <p>Through the midpoint E of the arc BEC of a *circle* to draw a *secant* meeting the chord BC in U and the circle again in A, so that AU shall have a given length, t.</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="083-problem/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="083-problem/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -1303,7 +1561,18 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="084-the-problem-of-pappus/index.html" aria-label="Fig. 46 — Secant EUA through arc midpoint E meeting chord BC in U with intercepted segment AU = t">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 263 273" width="263" height="273" class="euclid-graphic euclid-thumbnail" data-graphic-id="0082.g1" data-folio="0082" data-graphic="g1" data-article="83">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 263 273" width="263" height="273" data-graphic-id="0082.g1" data-folio="0082" data-graphic="g1" data-article="83" data-svg-scope="s-59ed148b">
+          <style>
+            svg[data-svg-scope="s-59ed148b"] .geom-polygon:hover, svg[data-svg-scope="s-59ed148b"] .geom-polygon.highlight, svg[data-svg-scope="s-59ed148b"] .geom-polygon-bordered:hover, svg[data-svg-scope="s-59ed148b"] .geom-polygon-bordered.highlight, svg[data-svg-scope="s-59ed148b"] polygon.geom-highlight-active, svg[data-svg-scope="s-59ed148b"] path.geom-polygon.geom-highlight-active, svg[data-svg-scope="s-59ed148b"] .wedge:hover, svg[data-svg-scope="s-59ed148b"] .wedge.highlight, svg[data-svg-scope="s-59ed148b"] .wedge.angle:hover, svg[data-svg-scope="s-59ed148b"] .wedge.angle.highlight, svg[data-svg-scope="s-59ed148b"] .wedge.angle.geom-highlight-active, svg[data-svg-scope="s-59ed148b"] path.wedge.geom-highlight-active, svg[data-svg-scope="s-59ed148b"] path.angle.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: #c88a1e !important; stroke: #c88a1e !important }
+            svg[data-svg-scope="s-59ed148b"] .geom-assert-active { opacity: 1 !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-59ed148b"] text.geom-assert-active, svg[data-svg-scope="s-59ed148b"] text.geom-assert-secondary, svg[data-svg-scope="s-59ed148b"] text.geom-assert-active *, svg[data-svg-scope="s-59ed148b"] text.geom-assert-secondary * { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-59ed148b"] polygon.geom-assert-active, svg[data-svg-scope="s-59ed148b"] path.geom-polygon.geom-assert-active, svg[data-svg-scope="s-59ed148b"] .wedge.angle.geom-assert-active, svg[data-svg-scope="s-59ed148b"] path.wedge.geom-assert-active, svg[data-svg-scope="s-59ed148b"] path.angle.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: #16a34a !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-59ed148b"] path.geom-ang-arc.geom-assert-active { opacity: 1 !important; fill: none !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-59ed148b"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-59ed148b"] circle.geom-assert-active { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-59ed148b"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-59ed148b"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-59ed148b"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
           <defs>
             <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -1359,7 +1628,12 @@
                   </figure>
                   <section>
                     <h2><a href="084-the-problem-of-pappus/index.html">§ 84. The Problem of Pappus</a></h2>
-                      <div class="enunciation"><em>Through a given point on the bisector of a given angle to draw a secant on which the given angle shall intercept a segment of given length.</em></div>
+                      <p>Through a given point on the bisector of a given angle to draw a secant on which the given angle shall intercept a segment of given length.</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="084-the-problem-of-pappus/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="084-the-problem-of-pappus/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -1368,6 +1642,11 @@
                   <section>
                     <h2><a href="084-exercises/index.html">§ 84. Exercises (1–10)</a></h2>
                       <p>Construct a triangle, given:</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="084-exercises/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="084-exercises/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -1375,7 +1654,18 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="085-theorem/index.html" aria-label="Fig. 44 — Circumdiameter AK through circumcenter O, altitude AD, bisector AU, and median AA' of triangle ABC">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255 254" width="255" height="254" class="euclid-graphic euclid-thumbnail" data-graphic-id="0079.g1" data-folio="0079" data-graphic="g1" data-article="73">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255 254" width="255" height="254" data-graphic-id="0079.g1" data-folio="0079" data-graphic="g1" data-article="73" data-svg-scope="s-bc7194d2">
+          <style>
+            svg[data-svg-scope="s-bc7194d2"] .geom-polygon:hover, svg[data-svg-scope="s-bc7194d2"] .geom-polygon.highlight, svg[data-svg-scope="s-bc7194d2"] .geom-polygon-bordered:hover, svg[data-svg-scope="s-bc7194d2"] .geom-polygon-bordered.highlight, svg[data-svg-scope="s-bc7194d2"] polygon.geom-highlight-active, svg[data-svg-scope="s-bc7194d2"] path.geom-polygon.geom-highlight-active, svg[data-svg-scope="s-bc7194d2"] .wedge:hover, svg[data-svg-scope="s-bc7194d2"] .wedge.highlight, svg[data-svg-scope="s-bc7194d2"] .wedge.angle:hover, svg[data-svg-scope="s-bc7194d2"] .wedge.angle.highlight, svg[data-svg-scope="s-bc7194d2"] .wedge.angle.geom-highlight-active, svg[data-svg-scope="s-bc7194d2"] path.wedge.geom-highlight-active, svg[data-svg-scope="s-bc7194d2"] path.angle.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: #c88a1e !important; stroke: #c88a1e !important }
+            svg[data-svg-scope="s-bc7194d2"] .geom-assert-active { opacity: 1 !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-bc7194d2"] text.geom-assert-active, svg[data-svg-scope="s-bc7194d2"] text.geom-assert-secondary, svg[data-svg-scope="s-bc7194d2"] text.geom-assert-active *, svg[data-svg-scope="s-bc7194d2"] text.geom-assert-secondary * { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-bc7194d2"] polygon.geom-assert-active, svg[data-svg-scope="s-bc7194d2"] path.geom-polygon.geom-assert-active, svg[data-svg-scope="s-bc7194d2"] .wedge.angle.geom-assert-active, svg[data-svg-scope="s-bc7194d2"] path.wedge.geom-assert-active, svg[data-svg-scope="s-bc7194d2"] path.angle.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: #16a34a !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-bc7194d2"] path.geom-ang-arc.geom-assert-active { opacity: 1 !important; fill: none !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-bc7194d2"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-bc7194d2"] circle.geom-assert-active { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-bc7194d2"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-bc7194d2"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-bc7194d2"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
           <defs>
             <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -1458,7 +1748,12 @@
                   </figure>
                   <section>
                     <h2><a href="085-theorem/index.html">§ 85. Theorem</a></h2>
-                      <div class="enunciation"><em>The product of two sides of a</em> <span class="geom-ref" data-ref="0079.g1:&lt; A B C &gt;" title="&lt; A B C &gt;">*triangle*</span> <em>is equal to the</em> <span class="geom-ref" data-ref="0079.g1:/ A D /" title="/ A D /">*altitude*</span> <em>to the third side multiplied by the</em> <span class="geom-ref" data-ref="0079.g1:/ A K /" title="/ A K /">*circumdiameter*</span><em>.</em></div>
+                      <p>The product of two sides of a *triangle* is equal to the *altitude* to the third side multiplied by the *circumdiameter*.</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="085-theorem/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="085-theorem/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -1466,7 +1761,12 @@
                 <div class="content">
                   <section>
                     <h2><a href="086-corollary/index.html">§ 86. Corollary</a></h2>
-                      <div class="enunciation"><em>The area of a triangle is equal to the product of its three sides divided by the double circumdiameter of the triangle.</em></div>
+                      <p>The area of a triangle is equal to the product of its three sides divided by the double circumdiameter of the triangle.</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="086-corollary/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="086-corollary/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -1475,6 +1775,11 @@
                   <section>
                     <h2><a href="086-exercises/index.html">§ 86. Exercises (1–4)</a></h2>
                       <p>Construct a triangle, given:</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="086-exercises/index.html">Proposition</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="086-exercises/commentary.html">Commentary</a>
+                    </nav>
                   </section>
                 </div>
               </article>
@@ -1485,13 +1790,13 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../a-preliminaries/067-exercises/index.html" title="§ 67. Exercises (1–3)">&larr; <span class="nav-label">§ 67. Exercises (1–3)</span></a>
+            <a class="book-nav-btn" href="../a-preliminaries/067-exercises/index.html" title="§ 67. Exercises (1–3)">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
             <a class="book-toc-link" href="../../index.html">College Geometry</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="068-theorem/index.html" title="§ 68. Theorem"><span class="nav-label">§ 68. Theorem</span> &rarr;</a>
+            <a class="book-nav-btn" href="068-theorem/index.html" title="§ 68. Theorem"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -1519,6 +1824,7 @@
     <aside class="aside-types">
       <h3>Types</h3>
       <ul>
+        <li><a href="../../../types/book.html">book</a></li>
         <li><a href="../../../types/chapter.html">chapter</a></li>
         <li><a href="../../../types/commentary.html">commentary</a></li>
         <li><a href="../../../types/item.html">item</a></li>
@@ -1543,7 +1849,6 @@
   <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../../_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="../../../_static/js/geometor_interactive.js?v=b2892320"></script>
-  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="../../../_static/js/search_highlight.js"></script>
 
 </body>

@@ -6,12 +6,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chapter VI: Transversals &mdash; College Geometry</title>
+
+  <title>Chapter VI: Transversals — College Geometry • GEOMETOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="canonical" href="https://geometor.github.io/altshiller-court/college_geometry/ch06-transversals/" />
+  <meta name="description" content="Directed segments and signed ratio criteria for collinearity and concurrency (§§ 306–344, Folios 0170–0184, pp. 151–165): Euler’s four-point identity, Stewart’s theorem, Menelaus’s transversal…" />
+  <meta property="og:site_name" content="GEOMETOR" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Chapter VI: Transversals — College Geometry • GEOMETOR" />
+  <meta property="og:description" content="Directed segments and signed ratio criteria for collinearity and concurrency (§§ 306–344, Folios 0170–0184, pp. 151–165): Euler’s four-point identity, Stewart’s theorem, Menelaus’s transversal…" />
+  <meta property="og:url" content="https://geometor.github.io/altshiller-court/college_geometry/ch06-transversals/" />
+  <meta property="og:image" content="https://geometor.github.io/altshiller-court/_static/social/college_geometry.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Nathan Altshiller-Court — GEOMETOR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Chapter VI: Transversals — College Geometry • GEOMETOR" />
+  <meta name="twitter:description" content="Directed segments and signed ratio criteria for collinearity and concurrency (§§ 306–344, Folios 0170–0184, pp. 151–165): Euler’s four-point identity, Stewart’s theorem, Menelaus’s transversal…" />
+  <meta name="twitter:image" content="https://geometor.github.io/altshiller-court/_static/social/college_geometry.png" />
+  <meta name="twitter:image:alt" content="Nathan Altshiller-Court — GEOMETOR" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=8713e751" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=81e79cc0" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -23,14 +43,14 @@
 <body class="is-book-page book-theme-classical-serif" data-folio="0170">
   <header>
     <div class="logo">
-      <a href="../../index.html">
-        <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+      <a href="../../index.html" title="Home">
+        <img src="../../_static/logo.png" class="logo" alt="GEOMETOR altshiller-court"/>
+        <div class="org-repo">
+          <span class="org">GEOMETOR</span>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <span class="repo">altshiller-court</span>
+        </div>
       </a>
-      <div class="org-repo">
-        <span class="org">GEOMETOR</span>
-        •
-        <span class="repo">altshiller-court</span>
-      </div>
     </div>
     <nav aria-label="Header">
       <input type="checkbox" id="nav-Header-toggle" >
@@ -62,12 +82,12 @@
     <article class="book-layout book-reading-pane" data-folio="0170">
       <header class="book-header">
         <div class="book-header-bar">
-          <div class="book-header-identity">
-            <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; altshiller-court</a>
-            <span class="book-header-sep">/</span>
-            <a class="book-title-link" href="../index.html">College Geometry</a>
-          </div>
-          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Book Breadcrumbs">
+          <nav class="book-breadcrumbs" aria-label="Breadcrumb">
+            <a class="book-section-home-link" href="../index.html">College Geometry</a>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
+            <span class="book-crumb-current" aria-current="page">Chapter VI</span>
+          </nav>
+          <div class="book-provenance-badges">
             <a class="book-badge folio-badge folio-link" href="https://raw.githubusercontent.com/geometor/altshiller-court/main/resources/college_geometry/06_transversals/0170.png" target="_blank" rel="noopener" title="View Folio 0170 (p. 151)">Folio 0170 | p. 151</a>
           </div>
         </div>
@@ -92,7 +112,18 @@
         <span id="ch06-transversals-en"></span><span id="ch06-transversals"></span><h1>Chapter VI: Transversals<a class="headerlink" href="#chapter-vi-transversals" title="Link to this heading">¶</a></h1>
         <p class="rubric">Directed Segments, Stewart’s Theorem, Menelaus’ Theorem, Ceva’s Theorem, Gergonne &amp; Nagel Points, Isotomic Conjugates, Desargues’ Theorem</p>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic" data-graphic-id="hero-menelaus_ceva.menelaus_ceva" data-folio="hero-menelaus_ceva" data-graphic="menelaus_ceva">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" data-graphic-id="hero-menelaus_ceva.menelaus_ceva" data-folio="hero-menelaus_ceva" data-graphic="menelaus_ceva" data-svg-scope="s-cc94f56b">
+          <style>
+            svg[data-svg-scope="s-cc94f56b"] .geom-polygon:hover, svg[data-svg-scope="s-cc94f56b"] .geom-polygon.highlight, svg[data-svg-scope="s-cc94f56b"] .geom-polygon-bordered:hover, svg[data-svg-scope="s-cc94f56b"] .geom-polygon-bordered.highlight, svg[data-svg-scope="s-cc94f56b"] polygon.geom-highlight-active, svg[data-svg-scope="s-cc94f56b"] path.geom-polygon.geom-highlight-active, svg[data-svg-scope="s-cc94f56b"] .wedge:hover, svg[data-svg-scope="s-cc94f56b"] .wedge.highlight, svg[data-svg-scope="s-cc94f56b"] .wedge.angle:hover, svg[data-svg-scope="s-cc94f56b"] .wedge.angle.highlight, svg[data-svg-scope="s-cc94f56b"] .wedge.angle.geom-highlight-active, svg[data-svg-scope="s-cc94f56b"] path.wedge.geom-highlight-active, svg[data-svg-scope="s-cc94f56b"] path.angle.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: #c88a1e !important; stroke: #c88a1e !important }
+            svg[data-svg-scope="s-cc94f56b"] .geom-assert-active { opacity: 1 !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-cc94f56b"] text.geom-assert-active, svg[data-svg-scope="s-cc94f56b"] text.geom-assert-secondary, svg[data-svg-scope="s-cc94f56b"] text.geom-assert-active *, svg[data-svg-scope="s-cc94f56b"] text.geom-assert-secondary * { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-cc94f56b"] polygon.geom-assert-active, svg[data-svg-scope="s-cc94f56b"] path.geom-polygon.geom-assert-active, svg[data-svg-scope="s-cc94f56b"] .wedge.angle.geom-assert-active, svg[data-svg-scope="s-cc94f56b"] path.wedge.geom-assert-active, svg[data-svg-scope="s-cc94f56b"] path.angle.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: #16a34a !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-cc94f56b"] path.geom-ang-arc.geom-assert-active { opacity: 1 !important; fill: none !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-cc94f56b"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-cc94f56b"] circle.geom-assert-active { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-cc94f56b"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-cc94f56b"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-cc94f56b"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
           <defs>
             <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -154,7 +185,18 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="a-introductory/index.html" aria-label="Triangle ABC with concurrent cevians AX, BY, CZ at Gergonne point Ge and Menelaus transversal UZY">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-menelaus_ceva.menelaus_ceva" data-folio="hero-menelaus_ceva" data-graphic="menelaus_ceva">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" data-graphic-id="hero-menelaus_ceva.menelaus_ceva" data-folio="hero-menelaus_ceva" data-graphic="menelaus_ceva" data-svg-scope="s-7f0bbedd">
+          <style>
+            svg[data-svg-scope="s-7f0bbedd"] .geom-polygon:hover, svg[data-svg-scope="s-7f0bbedd"] .geom-polygon.highlight, svg[data-svg-scope="s-7f0bbedd"] .geom-polygon-bordered:hover, svg[data-svg-scope="s-7f0bbedd"] .geom-polygon-bordered.highlight, svg[data-svg-scope="s-7f0bbedd"] polygon.geom-highlight-active, svg[data-svg-scope="s-7f0bbedd"] path.geom-polygon.geom-highlight-active, svg[data-svg-scope="s-7f0bbedd"] .wedge:hover, svg[data-svg-scope="s-7f0bbedd"] .wedge.highlight, svg[data-svg-scope="s-7f0bbedd"] .wedge.angle:hover, svg[data-svg-scope="s-7f0bbedd"] .wedge.angle.highlight, svg[data-svg-scope="s-7f0bbedd"] .wedge.angle.geom-highlight-active, svg[data-svg-scope="s-7f0bbedd"] path.wedge.geom-highlight-active, svg[data-svg-scope="s-7f0bbedd"] path.angle.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: #c88a1e !important; stroke: #c88a1e !important }
+            svg[data-svg-scope="s-7f0bbedd"] .geom-assert-active { opacity: 1 !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-7f0bbedd"] text.geom-assert-active, svg[data-svg-scope="s-7f0bbedd"] text.geom-assert-secondary, svg[data-svg-scope="s-7f0bbedd"] text.geom-assert-active *, svg[data-svg-scope="s-7f0bbedd"] text.geom-assert-secondary * { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-7f0bbedd"] polygon.geom-assert-active, svg[data-svg-scope="s-7f0bbedd"] path.geom-polygon.geom-assert-active, svg[data-svg-scope="s-7f0bbedd"] .wedge.angle.geom-assert-active, svg[data-svg-scope="s-7f0bbedd"] path.wedge.geom-assert-active, svg[data-svg-scope="s-7f0bbedd"] path.angle.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: #16a34a !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-7f0bbedd"] path.geom-ang-arc.geom-assert-active { opacity: 1 !important; fill: none !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-7f0bbedd"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-7f0bbedd"] circle.geom-assert-active { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-7f0bbedd"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-7f0bbedd"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-7f0bbedd"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
           <defs>
             <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -204,7 +246,7 @@
                   </figure>
                   <section>
                     <h2><a href="a-introductory/index.html">Section A — Introductory (Directed Segments & Euler’s Identity)</a></h2>
-                      <p>Introduces signed <span class="glossary-term" data-term="directed-segments" title="Term: directed-segments">directed segments</span> on an oriented line (<strong>§§ 306–307</strong>, <span class="person-ref" data-person="mobius" title="Person: mobius">Möbius</span>, <span class="person-ref" data-person="chasles" title="Person: chasles">Chasles</span>), eliminating case-splitting between internal and external points of division.</p>
+                      <p>Introduces signed directed segments  on an oriented line (§§ 306–307, Möbius , Chasles ), eliminating case-splitting between internal and external points of division.</p>
                   </section>
                 </div>
               </article>
@@ -212,7 +254,18 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="b-stewart-s-theorem/index.html" aria-label="Triangle ABC with concurrent cevians AX, BY, CZ at Gergonne point Ge and Menelaus transversal UZY">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-menelaus_ceva.menelaus_ceva" data-folio="hero-menelaus_ceva" data-graphic="menelaus_ceva">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" data-graphic-id="hero-menelaus_ceva.menelaus_ceva" data-folio="hero-menelaus_ceva" data-graphic="menelaus_ceva" data-svg-scope="s-dbbc1006">
+          <style>
+            svg[data-svg-scope="s-dbbc1006"] .geom-polygon:hover, svg[data-svg-scope="s-dbbc1006"] .geom-polygon.highlight, svg[data-svg-scope="s-dbbc1006"] .geom-polygon-bordered:hover, svg[data-svg-scope="s-dbbc1006"] .geom-polygon-bordered.highlight, svg[data-svg-scope="s-dbbc1006"] polygon.geom-highlight-active, svg[data-svg-scope="s-dbbc1006"] path.geom-polygon.geom-highlight-active, svg[data-svg-scope="s-dbbc1006"] .wedge:hover, svg[data-svg-scope="s-dbbc1006"] .wedge.highlight, svg[data-svg-scope="s-dbbc1006"] .wedge.angle:hover, svg[data-svg-scope="s-dbbc1006"] .wedge.angle.highlight, svg[data-svg-scope="s-dbbc1006"] .wedge.angle.geom-highlight-active, svg[data-svg-scope="s-dbbc1006"] path.wedge.geom-highlight-active, svg[data-svg-scope="s-dbbc1006"] path.angle.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: #c88a1e !important; stroke: #c88a1e !important }
+            svg[data-svg-scope="s-dbbc1006"] .geom-assert-active { opacity: 1 !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-dbbc1006"] text.geom-assert-active, svg[data-svg-scope="s-dbbc1006"] text.geom-assert-secondary, svg[data-svg-scope="s-dbbc1006"] text.geom-assert-active *, svg[data-svg-scope="s-dbbc1006"] text.geom-assert-secondary * { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-dbbc1006"] polygon.geom-assert-active, svg[data-svg-scope="s-dbbc1006"] path.geom-polygon.geom-assert-active, svg[data-svg-scope="s-dbbc1006"] .wedge.angle.geom-assert-active, svg[data-svg-scope="s-dbbc1006"] path.wedge.geom-assert-active, svg[data-svg-scope="s-dbbc1006"] path.angle.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: #16a34a !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-dbbc1006"] path.geom-ang-arc.geom-assert-active { opacity: 1 !important; fill: none !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-dbbc1006"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-dbbc1006"] circle.geom-assert-active { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-dbbc1006"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-dbbc1006"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-dbbc1006"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
           <defs>
             <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -262,7 +315,7 @@
                   </figure>
                   <section>
                     <h2><a href="b-stewart-s-theorem/index.html">Section B — Stewart’s Theorem</a></h2>
-                      <p>Establishes <span class="person-ref" data-person="stewart" title="Person: stewart">Matthew Stewart's</span> 1746 cevian theorem (<strong>§§ 308–309</strong>, <span class="citation-ref" data-cite="stewart:1746" title="Citation: stewart:1746">Stewart 1746</span>), expressing the length of <em>any</em> segment from vertex <span class="math notranslate nohighlight">\(A\)</span> to line <span class="math notranslate nohighlight">\(BC\)</span> in terms of the side lengths and base segments.</p>
+                      <p>Establishes Matthew Stewart’s  1746 cevian theorem (§§ 308–309, Stewart 1746 ), expressing the length of any segment from vertex A to line BC in terms of the side lengths and base segments.</p>
                   </section>
                 </div>
               </article>
@@ -270,7 +323,18 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="c-menelaus-theorem/index.html" aria-label="Triangle ABC with concurrent cevians AX, BY, CZ at Gergonne point Ge and Menelaus transversal UZY">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-menelaus_ceva.menelaus_ceva" data-folio="hero-menelaus_ceva" data-graphic="menelaus_ceva">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" data-graphic-id="hero-menelaus_ceva.menelaus_ceva" data-folio="hero-menelaus_ceva" data-graphic="menelaus_ceva" data-svg-scope="s-4f9f9607">
+          <style>
+            svg[data-svg-scope="s-4f9f9607"] .geom-polygon:hover, svg[data-svg-scope="s-4f9f9607"] .geom-polygon.highlight, svg[data-svg-scope="s-4f9f9607"] .geom-polygon-bordered:hover, svg[data-svg-scope="s-4f9f9607"] .geom-polygon-bordered.highlight, svg[data-svg-scope="s-4f9f9607"] polygon.geom-highlight-active, svg[data-svg-scope="s-4f9f9607"] path.geom-polygon.geom-highlight-active, svg[data-svg-scope="s-4f9f9607"] .wedge:hover, svg[data-svg-scope="s-4f9f9607"] .wedge.highlight, svg[data-svg-scope="s-4f9f9607"] .wedge.angle:hover, svg[data-svg-scope="s-4f9f9607"] .wedge.angle.highlight, svg[data-svg-scope="s-4f9f9607"] .wedge.angle.geom-highlight-active, svg[data-svg-scope="s-4f9f9607"] path.wedge.geom-highlight-active, svg[data-svg-scope="s-4f9f9607"] path.angle.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: #c88a1e !important; stroke: #c88a1e !important }
+            svg[data-svg-scope="s-4f9f9607"] .geom-assert-active { opacity: 1 !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-4f9f9607"] text.geom-assert-active, svg[data-svg-scope="s-4f9f9607"] text.geom-assert-secondary, svg[data-svg-scope="s-4f9f9607"] text.geom-assert-active *, svg[data-svg-scope="s-4f9f9607"] text.geom-assert-secondary * { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-4f9f9607"] polygon.geom-assert-active, svg[data-svg-scope="s-4f9f9607"] path.geom-polygon.geom-assert-active, svg[data-svg-scope="s-4f9f9607"] .wedge.angle.geom-assert-active, svg[data-svg-scope="s-4f9f9607"] path.wedge.geom-assert-active, svg[data-svg-scope="s-4f9f9607"] path.angle.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: #16a34a !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-4f9f9607"] path.geom-ang-arc.geom-assert-active { opacity: 1 !important; fill: none !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-4f9f9607"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-4f9f9607"] circle.geom-assert-active { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-4f9f9607"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-4f9f9607"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-4f9f9607"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
           <defs>
             <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -320,7 +384,7 @@
                   </figure>
                   <section>
                     <h2><a href="c-menelaus-theorem/index.html">Section C — Menelaus’ Theorem</a></h2>
-                      <p>Proves <span class="person-ref" data-person="menelaus" title="Person: menelaus">Menelaus of Alexandria's</span> <em>Sphaerica</em> transversal theorem and its converse (<strong>§§ 310–325</strong>), turning collinearity proofs across synthetic geometry into concise products of three signed ratios.</p>
+                      <p>Proves Menelaus of Alexandria’s  Sphaerica transversal theorem and its converse (§§ 310–325), turning collinearity proofs across synthetic geometry into concise products of three signed ratios.</p>
                   </section>
                 </div>
               </article>
@@ -328,7 +392,18 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="d-ceva-s-theorem/index.html" aria-label="Triangle ABC with concurrent cevians AX, BY, CZ at Gergonne point Ge and Menelaus transversal UZY">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" class="euclid-graphic euclid-thumbnail" data-graphic-id="hero-menelaus_ceva.menelaus_ceva" data-folio="hero-menelaus_ceva" data-graphic="menelaus_ceva">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" data-graphic-id="hero-menelaus_ceva.menelaus_ceva" data-folio="hero-menelaus_ceva" data-graphic="menelaus_ceva" data-svg-scope="s-56587226">
+          <style>
+            svg[data-svg-scope="s-56587226"] .geom-polygon:hover, svg[data-svg-scope="s-56587226"] .geom-polygon.highlight, svg[data-svg-scope="s-56587226"] .geom-polygon-bordered:hover, svg[data-svg-scope="s-56587226"] .geom-polygon-bordered.highlight, svg[data-svg-scope="s-56587226"] polygon.geom-highlight-active, svg[data-svg-scope="s-56587226"] path.geom-polygon.geom-highlight-active, svg[data-svg-scope="s-56587226"] .wedge:hover, svg[data-svg-scope="s-56587226"] .wedge.highlight, svg[data-svg-scope="s-56587226"] .wedge.angle:hover, svg[data-svg-scope="s-56587226"] .wedge.angle.highlight, svg[data-svg-scope="s-56587226"] .wedge.angle.geom-highlight-active, svg[data-svg-scope="s-56587226"] path.wedge.geom-highlight-active, svg[data-svg-scope="s-56587226"] path.angle.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: #c88a1e !important; stroke: #c88a1e !important }
+            svg[data-svg-scope="s-56587226"] .geom-assert-active { opacity: 1 !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-56587226"] text.geom-assert-active, svg[data-svg-scope="s-56587226"] text.geom-assert-secondary, svg[data-svg-scope="s-56587226"] text.geom-assert-active *, svg[data-svg-scope="s-56587226"] text.geom-assert-secondary * { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-56587226"] polygon.geom-assert-active, svg[data-svg-scope="s-56587226"] path.geom-polygon.geom-assert-active, svg[data-svg-scope="s-56587226"] .wedge.angle.geom-assert-active, svg[data-svg-scope="s-56587226"] path.wedge.geom-assert-active, svg[data-svg-scope="s-56587226"] path.angle.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: #16a34a !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-56587226"] path.geom-ang-arc.geom-assert-active { opacity: 1 !important; fill: none !important; stroke: #16a34a !important }
+            svg[data-svg-scope="s-56587226"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-56587226"] circle.geom-assert-active { opacity: 1 !important; fill: #16a34a !important; stroke: none !important }
+            svg[data-svg-scope="s-56587226"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-56587226"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-56587226"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
           <defs>
             <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -378,7 +453,7 @@
                   </figure>
                   <section>
                     <h2><a href="d-ceva-s-theorem/index.html">Section D — Ceva’s Theorem (incl. Gergonne § 331, Nagel § 333, Desargues § 343)</a></h2>
-                      <p>Presents <span class="person-ref" data-person="ceva" title="Person: ceva">Giovanni Ceva's</span> 1678 concurrency theorem (<strong>§§ 326–344</strong>, <span class="citation-ref" data-cite="ceva:1678" title="Citation: ceva:1678">Ceva 1678</span>), pairing Menelaus collinearity with cevian concurrency and culminating in <span class="person-ref" data-person="desargues" title="Person: desargues">Desargues'</span> two-triangle theorem.</p>
+                      <p>Presents Giovanni Ceva’s  1678 concurrency theorem (§§ 326–344, Ceva 1678 ), pairing Menelaus collinearity with cevian concurrency and culminating in Desargues’  two-triangle theorem.</p>
                   </section>
                 </div>
               </article>
@@ -393,13 +468,13 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../ch05-the-simson-line/main-the-simson-line/index.html" title="The Simson Line (Wallace-Simson Theorems &amp; Exercises)">&larr; <span class="nav-label">The Simson Line (Wallace-Simson Theorems & Exercises)</span></a>
+            <a class="book-nav-btn" href="../ch05-the-simson-line/main-the-simson-line/index.html" title="The Simson Line (Wallace-Simson Theorems &amp; Exercises)">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
             <a class="book-toc-link" href="../index.html">College Geometry</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="a-introductory/index.html" title="Section A — Introductory (Directed Segments &amp; Euler’s Identity)"><span class="nav-label">Section A — Introductory (Directed Segments & Euler’s Identity)</span> &rarr;</a>
+            <a class="book-nav-btn" href="a-introductory/index.html" title="Section A — Introductory (Directed Segments &amp; Euler’s Identity)"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -427,6 +502,7 @@
     <aside class="aside-types">
       <h3>Types</h3>
       <ul>
+        <li><a href="../../types/book.html">book</a></li>
         <li><a href="../../types/chapter.html">chapter</a></li>
         <li><a href="../../types/commentary.html">commentary</a></li>
         <li><a href="../../types/item.html">item</a></li>
@@ -451,7 +527,6 @@
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
-  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>
