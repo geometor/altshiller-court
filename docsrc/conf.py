@@ -22,6 +22,8 @@ autoapi_dirs = [os.path.abspath("../src/geometor")]
 if "modules/api/geometor/altshiller_court/index.rst" not in exclude_patterns:
     exclude_patterns.append("modules/api/geometor/altshiller_court/index.rst")
 
-project = "GEOMETOR • altshiller-court"
+site_title = "Nathan Altshiller-Court"
+project = site_title
+html_title = f"{site_title} • {org_name}"
 author = "Nathan Altshiller-Court • Digital Edition GEOMETOR"
 copyright = "1952 Nathan Altshiller-Court; 2007 Dover Publications • Digital Apparatus GEOMETOR"

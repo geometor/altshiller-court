@@ -1,40 +1,22 @@
-:title: GEOMETOR • altshiller-court
+:site_title: Nathan Altshiller-Court
 
-GEOMETOR • altshiller-court
-===========================
+.. container:: author-overline
 
-.. rubric:: Digital Scriptorium & Constructive Synthesis of Nathan Altshiller-Court's *College Geometry* (1952 / Dover 2007)
+   the works of
 
-Digital critical edition, calibrated geometric diagrams, constructive analysis, and prosopographical, bibliographic, and technical glossary apparatus for **Nathan Altshiller-Court** (1881–1968), Professor of Mathematics at the University of Oklahoma, published natively with the **2-Track Book Codex** engine of ``photon-platform/publish``.
+=======================
+Nathan Altshiller-Court
+=======================
 
-----
+The mission of this project is to capture a semantic digital library of the works of :person:`Nathan Altshiller-Court <altshiller-court>` (1881–1968), Professor of Mathematics at the University of Oklahoma and author of landmark treatises in modern synthetic geometry of the triangle and circle.
 
-Featured Treatise
------------------
-
-:doc:`College Geometry: An Introduction to the Modern Geometry of the Triangle and the Circle (1952) <college_geometry/index>`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-*Second Edition, Revised and Enlarged*. New York: Barnes & Noble, Inc., 1952; unabridged republication, Mineola, NY: Dover Publications, Inc., 2007 (ISBN ``978-0-486-45805-2``, 334 folios, 699 numbered articles).
-
-The definitive English-language treatise bridging classical Euclidean constructions (``geometor/elements``, ``geometor/euclid``) with modern synthetic triangle and circle geometry: similitude and homothecy, the Euler line and nine-point circle, Feuerbach's theorem, the Wallace–Simson line, Menelaus' and Ceva's theorems, harmonic cross-ratios (``geometor/pappus``, ``geometor/divine``), orthogonal and coaxal circles, the Problem of Apollonius, circular inversion, and Lemoine–Brocard–orthopole triangle geometry (``geometor/etc``).
-
-* **2-Track Book Codex**: :ref:`Table of Contents <college-geometry-index>` · :ref:`Frontmatter (6 Units + Commentary) <frontmatter>` · :ref:`Chapter I: Geometric Constructions (5 Sections, §§ 1–22, 12 Loci, 22 SVGs & 167 Exercises) <ch01-geometric-constructions>` · :ref:`Chapters II–X Architectural Blueprints & Commentaries <ch02-similitude-and-homothecy>`.
-* **Scholarly Apparatus**: :ref:`Bibliography <bibliography>` · :ref:`People <persons>` · :ref:`Technical Glossary <glossary>` · :ref:`334-Folio Archival Scan Inventory (52 Verified) <scan-inventory>`.
-
-----
-
-Reader's Guide & Architecture
------------------------------
-
-* :doc:`Using This Edition: Interactive Features & Reader's Guide <usage/index>`
-* :ref:`Nathan Altshiller-Court (1881–1968) & Digital Scriptorium Methodology <about-altshiller-court>`
-* :ref:`Scanned PDF Optical Ingestion & Interactive SVG Vectorization Guide <pdf-parsing-guide>`
-* :doc:`Python Pipeline API Reference <modules/index>`
+.. collection::
+   :type: book
+   :sort: order
 
 .. toctree::
-   :maxdepth: 2
    :hidden:
+   :maxdepth: 2
 
    college_geometry/index
    college_geometry/persons
