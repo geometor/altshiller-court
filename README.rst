@@ -20,6 +20,21 @@ Books in This Archive
 
 - `College Geometry <https://geometor.github.io/altshiller-court/college_geometry/>`_ — An Introduction to the Modern Geometry of the Triangle and the Circle (1952), featuring 699 numbered articles, synthetic proofs, and reconstructed Euclidean diagrams.
 
+Python Package & Modules
+------------------------
+
+The ``geometor-altshiller-court`` Python package (``import geometor.altshiller_court``) provides the executable symbolic geometry, construction, and compilation modules powering this archive:
+
+- ``codex_items.py`` — Folio depagination and item-per-page decomposition for *College Geometry*.
+- ``compile_edition.py`` — Book Codex compiler and scholarly apparatus builder for *College Geometry* (1952).
+- ``graphics.py`` — Bounding-box figure cropper and dark-mode inverter for College Geometry folios.
+- ``hero_figures.py`` — Exact symbolic ``.euclid-graphic`` hero diagram generator for *College Geometry*.
+- ``ingest.py`` — Standardized 300 DPI folio ingestion for Altshiller-Court's College Geometry.
+- ``section_synopses.py`` — Scholarly section synopses and theorem roadmaps for *College Geometry* (1952).
+- ``svg_compiler.py`` — Semantic Ink-to-Vector SVG compiler and overlap verifier for Altshiller-Court's College Geometry.
+
+See the `API Reference <https://geometor.github.io/altshiller-court/modules/>`_ for full module documentation.
+
 Repository Contents
 -------------------
 
