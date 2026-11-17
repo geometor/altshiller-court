@@ -18,7 +18,7 @@ Mission
 Books in This Archive
 ---------------------
 
-- **`College Geometry <https://geometor.github.io/altshiller-court/college_geometry/>`_** — An Introduction to the Modern Geometry of the Triangle and the Circle (1952), featuring 699 numbered articles, synthetic proofs, and reconstructed Euclidean diagrams.
+- `College Geometry <https://geometor.github.io/altshiller-court/college_geometry/>`_ — An Introduction to the Modern Geometry of the Triangle and the Circle (1952), featuring 699 numbered articles, synthetic proofs, and reconstructed Euclidean diagrams.
 
 Repository Contents
 -------------------
