@@ -51,6 +51,6 @@ Scholarly Apparatus
    :caption: Scholarly Apparatus
 
    bibliography
-   persons
+   people/index
    glossary
    scan-inventory
