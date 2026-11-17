@@ -969,8 +969,14 @@ def build_apparatus_pages(
 
     (book_doc_dir / "bibliography.rst").write_text("\n".join(bib_lines), encoding="utf-8")
 
-    # 2. persons.rst
-    pers_lines = [
+    # 2. people/index.rst + people/<slug>.rst
+    people_dir = book_doc_dir / "people"
+    people_dir.mkdir(parents=True, exist_ok=True)
+    stale_persons = book_doc_dir / "persons.rst"
+    if stale_persons.exists():
+        stale_persons.unlink()
+
+    people_index_lines = [
         ":navigation: header",
         ":order: 5",
         ":nav_title: People",
@@ -986,114 +992,61 @@ def build_apparatus_pages(
         "",
         "Synthesizes Altshiller-Court's *List of Names* (pp. 307–309), *Historical and Bibliographical Notes* (pp. 295–306), and Frontmatter acknowledgments.",
         "",
-        "Authors, Translators & Editors",
-        "------------------------------",
+        ".. people-directory::",
+        "   :sort: death_year",
+        "",
+        ".. toctree::",
+        "   :maxdepth: 1",
+        "   :hidden:",
+        "   :glob:",
+        "",
+        "   *",
         "",
     ]
-
-    # Primary author profile first
-    if "altshiller-court" in persons:
-        entry = persons["altshiller-court"]
-        p_slug = apparatus_slug("altshiller-court")
-        arts = entry.get("articles") or []
-        arts_str = ", ".join(f"§ {a}" for a in arts) if arts else "Frontmatter / Apparatus"
-        works = entry.get("works") or []
-        occ_str = _format_occurrences_line(
-            entry.get("occurrences", []), folio_to_anchor, chapter_dir_to_slug
-        )
-        heading = f"{entry['name']} ({entry.get('dates', '')})" if entry.get("dates") else entry["name"]
-        pers_lines.extend([
-            f".. _person-{p_slug}:",
-            "",
-            heading,
-            "-" * len(heading),
-            "",
-            f"* **Role**: {entry.get('role', '')}",
-            f"* **Articles in College Geometry**: {arts_str}",
-        ])
-        if works:
-            pers_lines.append("* **Principal Works**: " + "; ".join(f"*{w}*" for w in works))
-        if occ_str:
-            pers_lines.append(f"* **Edition Loci**: {occ_str}")
-        pers_lines.extend([
-            "",
-            "Born in Warsaw on January 22, 1881, **Nathan Altshiller-Court** pursued his mathematical studies in Belgium at the **University of Ghent**, earning his *Doctor of Science* in 1911 within the vibrant Franco-Belgian synthetic geometry tradition shaped by **Paul Mansion** and **Joseph Neuberg** (*Mathesis*). Emigrating to the United States, he studied at Columbia University and taught briefly at the University of Washington and the University of Colorado before joining the **University of Oklahoma** in Norman in 1916, where he served as Professor of Mathematics until his retirement in 1951.",
-            "",
-            "Across half a century of scholarship, Altshiller-Court authored three enduring works:",
-            "",
-            "1. *College Geometry: A Second Course in Plane Geometry for Colleges and Normal Schools* (Richmond: Johnson Publishing Co., 1925), thoroughly rewritten and expanded as *College Geometry: An Introduction to the Modern Geometry of the Triangle and the Circle* (New York: Barnes & Noble, 1952; Dover republication, 2007).",
-            "2. *Modern Pure Solid Geometry* (New York: Macmillan, 1935; 2nd ed. Chelsea, 1964), extending synthetic methods to the tetrahedron and sphere.",
-            "3. *Mathematics in Fun and in Earnest* (New York: Dial Press, 1958), philosophical and historical essays on mathematical invention and intuition.",
-            "",
-        ])
-
-    if "bernhart" in persons:
-        entry = persons["bernhart"]
-        p_slug = apparatus_slug("bernhart")
-        arts = entry.get("articles") or []
-        arts_str = ", ".join(f"§ {a}" for a in arts) if arts else "Frontmatter / Apparatus"
-        works = entry.get("works") or []
-        occ_str = _format_occurrences_line(
-            entry.get("occurrences", []), folio_to_anchor, chapter_dir_to_slug
-        )
-        heading = f"{entry['name']} ({entry.get('dates', '')})" if entry.get("dates") else entry["name"]
-        pers_lines.extend([
-            f".. _person-{p_slug}:",
-            "",
-            heading,
-            "-" * len(heading),
-            "",
-            f"* **Role**: {entry.get('role', '')}",
-            f"* **Articles in College Geometry**: {arts_str}",
-        ])
-        if works:
-            pers_lines.append("* **Principal Works**: " + "; ".join(f"*{w}*" for w in works))
-        if occ_str:
-            pers_lines.append(f"* **Edition Loci**: {occ_str}")
-        pers_lines.extend([
-            "",
-            entry.get("bio", ""),
-            "",
-        ])
-
-    pers_lines.extend([
-        "Cited Geometers, Philosophers & Scholars",
-        "----------------------------------------",
-        "",
-    ])
+    (people_dir / "index.rst").write_text("\n".join(people_index_lines), encoding="utf-8")
 
     for pk, entry in sorted(persons.items(), key=lambda kv: kv[1].get("name", kv[0]).lower()):
-        if pk in ("altshiller-court", "bernhart"):
-            continue
         p_slug = apparatus_slug(pk)
-        heading = f"{entry['name']} ({entry.get('dates', '')})" if entry.get("dates") else entry["name"]
+        name = entry.get("name", pk)
+        dates = entry.get("dates", "")
         arts = entry.get("articles") or []
         arts_str = ", ".join(f"§ {a}" for a in arts) if arts else "Frontmatter / Apparatus"
         works = entry.get("works") or []
         occ_str = _format_occurrences_line(
             entry.get("occurrences", []), folio_to_anchor, chapter_dir_to_slug
         )
-
-        pers_lines.extend([
+        rec_lines = [
+            ":type: person",
+            ":layout: book",
+            f":title: {name}",
+        ]
+        if dates:
+            rec_lines.append(f":lifespan: {dates}")
+        rec_lines.extend([
+            "",
             f".. _person-{p_slug}:",
             "",
-            heading,
-            "-" * len(heading),
+            name,
+            "=" * len(name),
             "",
+        ])
+        if dates:
+            rec_lines.append(f"*{dates}*")
+            rec_lines.append("")
+        rec_lines.extend([
             f"* **Role**: {entry.get('role', '')}",
             f"* **Articles in College Geometry**: {arts_str}",
         ])
         if works:
-            pers_lines.append("* **Principal Works**: " + "; ".join(f"*{w}*" for w in works))
+            rec_lines.append("* **Principal Works**: " + "; ".join(f"*{w}*" for w in works))
         if occ_str:
-            pers_lines.append(f"* **Edition Loci**: {occ_str}")
-        pers_lines.extend([
+            rec_lines.append(f"* **Edition Loci**: {occ_str}")
+        rec_lines.extend([
             "",
             entry.get("bio", ""),
             "",
         ])
-
-    (book_doc_dir / "persons.rst").write_text("\n".join(pers_lines), encoding="utf-8")
+        (people_dir / f"{p_slug}.rst").write_text("\n".join(rec_lines), encoding="utf-8")
 
     # 3. glossary.rst
     gloss_lines = [
@@ -1281,7 +1234,7 @@ def build_book_index(
         "   :caption: Scholarly Apparatus",
         "",
         "   bibliography",
-        "   persons",
+        "   people/index",
         "   glossary",
         "   scan-inventory",
         "",

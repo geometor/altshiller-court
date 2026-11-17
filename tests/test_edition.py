@@ -142,7 +142,7 @@ def test_euclid_style_collection_hierarchy_and_xrefs() -> None:
     root_index = (DOCSRC_DIR / "index.rst").read_text(encoding="utf-8")
     assert ".. collection::" in root_index
     assert ":type: chapter" in root_index
-    for apparatus_file in ("bibliography.rst", "persons.rst", "glossary.rst", "scan-inventory.rst"):
+    for apparatus_file in ("bibliography.rst", "people/index.rst", "glossary.rst", "scan-inventory.rst"):
         assert (DOCSRC_DIR / apparatus_file).is_file()
 
     # Frontmatter chapter + 6 leaf items
