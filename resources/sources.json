@@ -1,0 +1,22 @@
+{
+  "repository": "geometor/altshiller-court",
+  "rights_category": "verify-copyright",
+  "sources": [
+    {
+      "id": "altshiller-court-1952-dover",
+      "title": "College Geometry: An Introduction to the Modern Geometry of the Triangle and the Circle (2nd ed., 1952 / 2007 Dover)",
+      "author": "Nathan Altshiller-Court",
+      "year": "1952",
+      "era": "Dover / Local Study PDF",
+      "languages": [
+        "English"
+      ],
+      "site_url": "https://store.doverpublications.com/products/9780486458052",
+      "local_path": "resources/college_geometry/pdfs/college_geometry.pdf",
+      "pages": 334,
+      "publisher": "Barnes & Noble (1952) / Dover Publications (2007)",
+      "rights": "Verify US renewal on 1952 2nd ed. (1925 1st ed. is US Public Domain)",
+      "excerpt": "334-page 2nd edition (1952) / Dover 2007 reprint; primary local study PDF."
+    }
+  ]
+}
