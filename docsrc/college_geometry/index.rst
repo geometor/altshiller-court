@@ -2,6 +2,7 @@
 :order: 1
 :nav_title: College Geometry
 :layout: book
+:type: book
 :title: College Geometry
 :book_title: College Geometry
 :book_subtitle: An Introduction to the Modern Geometry of the Triangle and the Circle

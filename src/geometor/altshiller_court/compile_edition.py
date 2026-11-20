@@ -1181,6 +1181,7 @@ def build_book_index(
         ":order: 1",
         ":nav_title: College Geometry",
         ":layout: book",
+        ":type: book",
         f":title: {work['title']}",
         f":book_title: {work['title']}",
         f":book_subtitle: {work['subtitle']}",
