@@ -3,6 +3,12 @@ GEOMETOR • altshiller-court
 
 **Visit the Online Archive:** https://geometor.github.io/altshiller-court/
 
+.. image:: docsrc/_static/logo.png
+   :alt: GEOMETOR • altshiller-court Medallion
+   :target: https://geometor.github.io/altshiller-court/
+   :width: 180px
+   :align: center
+
 .. image:: docsrc/college_geometry/ch01-geometric-constructions/a-preliminaries/hero.svg
    :alt: GEOMETOR • altshiller-court featured geometric construction
    :target: https://geometor.github.io/altshiller-court/
