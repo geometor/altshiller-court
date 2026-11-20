@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "geometor-altshiller-court"
 authors = [{name = "phi ARCHITECT", email = "phi@geometor.com"}]
 description = "Digital scholarly edition and constructive analysis of Nathan Altshiller-Court's College Geometry (1952)."
-readme = "README.rst"
+readme = "README.md"
 requires-python = ">=3.11"
 dynamic = ["version"]
 dependencies = [
